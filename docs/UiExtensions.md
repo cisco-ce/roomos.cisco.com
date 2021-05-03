@@ -7,5 +7,5 @@ The UI Extensions editor is available on the web interface on each device, but y
 <a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>
 
 <a href="https://custom-collab.cisco.com/uieditor/" target="_blank">
-  <img src="/markdown/images/ui-extensions-editor.png" />
+  <img src="/docs/images/ui-extensions-editor.png" />
 </a>

@@ -1,6 +1,74 @@
 [
   {
-    "name": "UI Extensions",
-    "link": "/docs/UiExtensions.md"
+    "name": "Get started",
+    "items": [
+      {
+        "name": "Creating a user",
+        "link": "/docs/LocalAdminUser"
+      }
+    ]
+  },
+  {
+    "name": "Technologies",
+    "items": [
+      {
+        "name": "Terminal / SSH",
+        "link": "/docs/CommandLine"
+      },
+      {
+        "name": "Macros",
+        "link": "/docs/Macro/Introduction"
+      },
+      {
+        "name": "Node.js",
+        "link": "/docs/JSXAPI/Intro"
+      },
+      {
+        "name": "Web browser",
+        "link": "/docs/JSXAPI/Browser"
+      },
+      {
+        "name": "Web Engine",
+        "link": "/docs/WebEngine"
+      },
+      {
+        "name": "UI Extensions",
+        "link": "/docs/UiExtensions"
+      }
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "items": [
+      {
+        "name": "Tutorial",
+        "link": "/docs/Macro/Tutorial"
+      },
+      {
+        "name": "Code style",
+        "link": "/docs/JSXAPI/Styles"
+      },
+      {
+        "name": "xAPI to JavaScript",
+        "link": "/docs/JSXAPI/XapiToJs"
+      }
+    ]
+  },
+  {
+    "name": "Updates",
+    "items": [
+      {
+        "name": "RoomOS 10",
+        "link": "/docs/ReleaseNotes/RoomOS_10"
+      },
+      {
+        "name": "Site News",
+        "link": "/docs/WhatsNew"
+      }
+    ]
+  },
+  {
+    "name": "Useful Links",
+    "link": "/docs/Resources"
   }
 ]

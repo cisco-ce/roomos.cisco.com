@@ -1,3 +1,4 @@
 [
-  { "name": "Dummy", "url": "dummy.json" }
+  { "name": "Dummy", "url": "dummy.json" },
+  { "name": "Dummy2", "url": "dummy.json" }
 ]

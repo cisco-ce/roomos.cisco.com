@@ -4,7 +4,7 @@
     "items": [
       {
         "name": "Creating a user",
-        "link": "/docs/LocalAdminUser"
+        "link": "/docs/LocalAdminUser.md"
       }
     ]
   },
@@ -13,27 +13,27 @@
     "items": [
       {
         "name": "Terminal / SSH",
-        "link": "/docs/CommandLine"
+        "link": "/docs/CommandLine.md"
       },
       {
         "name": "Macros",
-        "link": "/docs/Macro/Introduction"
+        "link": "/docs/Macro/Introduction.md"
       },
       {
         "name": "Node.js",
-        "link": "/docs/JSXAPI/Intro"
+        "link": "/docs/JSXAPI/Intro.md"
       },
       {
         "name": "Web browser",
-        "link": "/docs/JSXAPI/Browser"
+        "link": "/docs/JSXAPI/Browser.md"
       },
       {
         "name": "Web Engine",
-        "link": "/docs/WebEngine"
+        "link": "/docs/WebEngine.md"
       },
       {
         "name": "UI Extensions",
-        "link": "/docs/UiExtensions"
+        "link": "/docs/UiExtensions.md"
       }
     ]
   },
@@ -42,15 +42,15 @@
     "items": [
       {
         "name": "Tutorial",
-        "link": "/docs/Macro/Tutorial"
+        "link": "/docs/Macro/Tutorial.md"
       },
       {
         "name": "Code style",
-        "link": "/docs/JSXAPI/Styles"
+        "link": "/docs/JSXAPI/Styles.md"
       },
       {
         "name": "xAPI to JavaScript",
-        "link": "/docs/JSXAPI/XapiToJs"
+        "link": "/docs/JSXAPI/XapiToJs.md"
       }
     ]
   },
@@ -59,16 +59,16 @@
     "items": [
       {
         "name": "RoomOS 10",
-        "link": "/docs/ReleaseNotes/RoomOS_10"
+        "link": "/docs/ReleaseNotes/RoomOS_1.md0"
       },
       {
         "name": "Site News",
-        "link": "/docs/WhatsNew"
+        "link": "/docs/WhatsNew.md"
       }
     ]
   },
   {
     "name": "Useful Links",
-    "link": "/docs/Resources"
+    "link": "/docs/Resources.md"
   }
 ]

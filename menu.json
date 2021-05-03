@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Introduction",
+    "link": "/article/Introduction"
+  },
+  {
+    "name": "Overview",
+    "items": [
+      {
+        "name": "Creating a user",
+        "link": "/article/LocalAdminUser"
+      }
+    ]
+  },
+  {
+    "name": "Technologies",
+    "items": [
+      {
+        "name": "Terminal / SSH",
+        "link": "/article/CommandLine"
+      },
+      {
+        "name": "Macros",
+        "link": "/article/Macro/Introduction"
+      },
+      {
+        "name": "Node.js",
+        "link": "/article/JSXAPI/Intro"
+      },
+      {
+        "name": "Web browser",
+        "link": "/article/JSXAPI/Browser"
+      },
+      {
+        "name": "Web Engine",
+        "link": "/article/WebEngine"
+      },
+      {
+        "name": "UI Extensions",
+        "link": "/article/UiExtensions"
+      }
+    ]
+  },
+  {
+    "name": "JavaScript",
+    "items": [
+      {
+        "name": "Tutorial",
+        "link": "/article/Macro/Tutorial"
+      },
+      {
+        "name": "Code style",
+        "link": "/article/JSXAPI/Styles"
+      },
+      {
+        "name": "xAPI to JavaScript",
+        "link": "/article/JSXAPI/XapiToJs"
+      }
+    ]
+  },
+  {
+    "name": "Updates",
+    "items": [
+      {
+        "name": "RoomOS 10",
+        "link": "/article/ReleaseNotes/RoomOS_10"
+      },
+      {
+        "name": "Site News",
+        "link": "/article/WhatsNew"
+      }
+    ]
+  },
+  {
+    "name": "Useful Links",
+    "link": "/article/Resources"
+  }
+]

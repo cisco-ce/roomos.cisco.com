@@ -1,5 +1,9 @@
 [
   {
+    "name": "Welcome",
+    "link": "/docs/Introduction.md"
+  },
+  {
     "name": "Get started",
     "items": [
       {

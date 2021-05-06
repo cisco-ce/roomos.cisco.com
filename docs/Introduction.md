@@ -17,3 +17,5 @@ It is an open platform with a powerful API (the xAPI) that let's you tweak and t
 * Digital signage
 
 Discover the APIs here, read the docs, try the examples and join the vibrant community on Webex Teams.
+
+Also see [developer.webex.com](https://developer.webex.com) for APIs for the Webex platform.

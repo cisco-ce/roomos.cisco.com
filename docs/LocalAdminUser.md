@@ -6,7 +6,13 @@ Having admin access to your video device is required if you want to tweak it wit
 
 This guide applies to every Webex video device in the market today, such as Desk Pro, Webex Board, Room Kit, Room 70 etc. It will only work for cloud registered systems.
 
-**Note:** Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
+```alert
+Note 1: Do NOT follow this procedure if your device is registered on Webex Edge.
+```
+
+```alert
+Note 2: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
+```
 
 ## First time user
 

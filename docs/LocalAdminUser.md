@@ -77,6 +77,7 @@ With the web interface still open:
 xCommand Webex Registration Start ActivationCode: 0123456789 SecurityAction: NoAction
 ```
 
+* Be sure to enter the command on **one line**.
 * Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
 * Click **Execute**
 

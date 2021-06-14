@@ -40,18 +40,41 @@ Connect to the xAPI with REST APIs on the Webex platform over cloud, which means
 
 Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom userinterface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/docs/MacroTutorial) to get started.
 
-### HTTP(S)
+## HTTP(S)
 
 This is a stateless HTTP API that was created before the days of REST APIs. It lets you access the xAPI with HTTP requests containing XML data. Getting feedback from the video device is also possible using HTTP Feedback, a mechanism similar to web hooks. HTTP GetXML requires you to be on the same network as the video device and a local user for authentication. See the [POSTMAN examples](https://github.com/CiscoDevNet/postman-xapi) to get started.
 
-### RS232
+## RS232
 
 Traditional meeting room equipment such as Crestron and AMX can talk directly to Webex devices over serial cable. The integration then typically needs to be in the same room as the video device.
 
-
-<--
-## Deployments (onprem, cloud, edge)
 ## User roles
 
+xAPI supports different user roles. Some of the APIs are limited to admin only. These are the public roles supported:
+
+**Admin**
+
+An admin can create new users, change most settings, make calls, and search the contact list. The user cannot upload audit certificates and change the security audit settings.
+
+**User**
+
+A user with this role can make calls and search  the contact lists. The user can modify a few settings, of example adjust the ringtone volume and set the timezone and date format.
+
+**Audit**
+
+A user with this role can change the security audit settings and upload audit certificates.
+
+**Roomcontrol**
+
+A roomcontrol user can create customized UI panels (for example UI extension panels). The user has access to the UI Extensions editor and associated development tools.
+
+**Integrator**
+
+An integrator has access to settings, commands, and status that are required to set up advanced A/V scenarios, and to integrate the Webex devices with third-party equipment, in addition to the same features as roomcontrol user.
+
+
+<!--
+## Deployments (onprem, cloud, edge)
+## User roles
 -->
 

@@ -1,13 +1,17 @@
 [
   {
-    "name": "Welcome",
+    "name": "Platform Introduction",
     "link": "/docs/Introduction.md"
   },
   {
     "name": "Get started",
     "items": [
       {
-        "name": "Creating a user",
+        "name": "The xAPI",
+        "link": "/docs/xAPI.md"
+      },
+      {
+        "name": "Creating a local user",
         "link": "/docs/LocalAdminUser.md"
       }
     ]
@@ -15,10 +19,6 @@
   {
     "name": "Technologies",
     "items": [
-      {
-        "name": "Terminal / SSH",
-        "link": "/docs/CommandLine.md"
-      },
       {
         "name": "Macros",
         "link": "/docs/Macro/Introduction.md"
@@ -42,7 +42,7 @@
     ]
   },
   {
-    "name": "JavaScript",
+    "name": "JavaScript SDK",
     "items": [
       {
         "name": "Tutorial",
@@ -59,7 +59,7 @@
     ]
   },
   {
-    "name": "Updates",
+    "name": "News",
     "items": [
       {
         "name": "RoomOS 10",

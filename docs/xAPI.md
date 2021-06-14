@@ -1,5 +1,11 @@
 <!-- Copy / paste from API command reference CE 9.14 PDF -->
-# Using the command line
+# The xAPI
+
+This guide describes the xAPI by showing examples using the command line. The concepts described here applies to all other integration types too such as macros, HTTP, web sockets, RS232 etc.
+
+### Getting started
+
+Connect to your video device by opening a terminal window and type `ssh admin@<mydevice>`. Replace `admin` and `<mydevice>` with the values for you device. If you have a device in personal mode and don't have your own admin user, see [Creating a local user](./docs/LocalAdminUser.md) for instructions.
 
 ### Help
 

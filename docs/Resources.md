@@ -52,6 +52,13 @@
     </tr>
     <tr>
       <td>
+        <a href="https://momentum.design/" target="_blank">Momentum design</a>
+      <td>Cisco / Webex design guideslines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
+      <td><img class="logo" src="https://momentum.design/apple-touch-icon-57x57.png" /></td>
+      </td>
+    </tr>    
+    <tr>
+      <td>
         <a href="https://github.com/voipnorm/CE-Deploy" target="_blank">CE Deploy</a>
       </td>
       <td>Tool to mass deploy customisations to Webex Room devices.</td>

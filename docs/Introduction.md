@@ -1,6 +1,6 @@
 # Welcome
 
-RoomOS is the operating system powering the Webex Devices such as Room Kit, Desk Pro, Webex Board, Webex Panorama and [many others](https://projectworkplace.cisco.com/).
+RoomOS is the operating system that powers the Webex Devices such as Room Kit, Desk Pro, Webex Board, Webex Panorama and [many others](https://projectworkplace.cisco.com/).
 
 It is an open platform with a powerful API (the xAPI) that let's you tweak and tune any part of it, as well as adding integrations, web applications, reading sensor data and much more:
 
@@ -22,31 +22,35 @@ The best way to understand the xAPI is to play with it yourself from a terminal.
 
 <img src="/docs/images/integrations.png" />
 
-RoomOS supports a wide variety of integrations types. You can connect to the video devices with different protocols and technologies, depending on your requirements or preference. The most important types are:
+RoomOS supports a wide variety of ways of connecting to the video device. Depending on your infrastructure, requirements or preference, you can choose the one that best fits the task you are solving. The most important protocols are:
 
-### Terminal / SSH
+## Terminal / SSH
 
 Use a terminal window to SSH into your device. This is typically done to explore they xAPI, debug and and learn the xAPI quickly and manually. You need a local user to log in.
 
-### Web socket
+## Web socket
 
-Connect with web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/docs/JSXAPI/Intro.md) if you want to use this integration type.
+Connect with full-duplex web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/docs/JSXAPI/Intro.md) if you want to use this integration type.
 
-### Webex API (cloud)
+## Webex API (cloud)
 
 Connect to the xAPI with REST APIs on the Webex platform over cloud, which means your integration can be on a different network than the video device. This is not possible for devices using an on-premise deployment. See more info on [developer.webex.com](https://developer.webex.com/docs/api/v1/xapi).
 
-### Macros
+## Macros
 
-Macros are user scripts that run on the device itself. This makes it easy to automate tasks, control other hardware in the room or make custom userinterface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. See the [tutorial](/docs/MacroTutorial) to get started.
+Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom userinterface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/docs/MacroTutorial) to get started.
 
-### HTTP GetXML
+### HTTP(S)
 
-This is a HTTP api that was created before the days of REST APIs. It lets you access the xAPI with HTTP requests containing XML data. Getting feedback from the video device is also possible using HTTP Feedback, a mechanism similar to web hooks. HTTP GetXML requires you to be on the same network as the video device and a local user for authentication.
+This is a stateless HTTP API that was created before the days of REST APIs. It lets you access the xAPI with HTTP requests containing XML data. Getting feedback from the video device is also possible using HTTP Feedback, a mechanism similar to web hooks. HTTP GetXML requires you to be on the same network as the video device and a local user for authentication. See the [POSTMAN examples](https://github.com/CiscoDevNet/postman-xapi) to get started.
 
-<!--
 ### RS232
 
+Traditional meeting room equipment such as Crestron and AMX can talk directly to Webex devices over serial cable. The integration then typically needs to be in the same room as the video device.
+
+
+<--
+## Deployments (onprem, cloud, edge)
 ## User roles
 
 -->

@@ -20,18 +20,6 @@
     "name": "Technologies",
     "items": [
       {
-        "name": "Macros",
-        "link": "/docs/Macro/Introduction.md"
-      },
-      {
-        "name": "Node.js",
-        "link": "/docs/JSXAPI/Intro.md"
-      },
-      {
-        "name": "Web browser",
-        "link": "/docs/JSXAPI/Browser.md"
-      },
-      {
         "name": "Web Engine",
         "link": "/docs/WebEngine.md"
       },
@@ -42,10 +30,14 @@
     ]
   },
   {
-    "name": "JavaScript SDK",
+    "name": "Macros & JSXAPI",
     "items": [
       {
-        "name": "Tutorial",
+        "name": "Macros",
+        "link": "/docs/Macro/Introduction.md"
+      },
+      {
+        "name": "Macro Tutorial",
         "link": "/docs/Macro/Tutorial.md"
       },
       {
@@ -55,6 +47,14 @@
       {
         "name": "xAPI to JavaScript",
         "link": "/docs/JSXAPI/XapiToJs.md"
+      },
+      {
+        "name": "Node.js",
+        "link": "/docs/JSXAPI/Intro.md"
+      },
+      {
+        "name": "Web browser",
+        "link": "/docs/JSXAPI/Browser.md"
       }
     ]
   },

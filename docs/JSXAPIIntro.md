@@ -1,8 +1,6 @@
-# JSXAPI
+# Node.js
 
-The JSXAPI is a JavaScript SDK for talking xAPI to the Webex Room devices.
-
-It can be used both in the scripts running on the video devices themselves (macros), standalone on a Node.js server, or in a web browser.
+If you want to create integrations that run on a separate device with Node.js, such as a Linux server or a Raspberry Pi, the JSXAPI is a mature and well-documented SDK. This is the same xAPI SDK that the macros use, so code and knowledge can easily be transferred. The main difference is that the Node.js integration needs to establish a connection and authenticate, whereas the the macros get this automatically.
 
 Example snippet:
 

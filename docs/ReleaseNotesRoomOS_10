@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.01 - April 2021
+D15463.02 - June 2021
 
 ## Document revision history
 
@@ -11,7 +11,10 @@ D15463.01 - April 2021
 		<th>Revision</th> <th>Date</th> <th>Description</th>
 	</tr>
 	<tr>
-		<td>1</td> <td>April 29th 2021</td> <td>Release of Cisco Webex RoomOS 10.3.2.0 85049347ae0</td>
+		<td>2</td> <td>June 24th 2021</td> <td>Release of Cisco Webex RoomOS 10.3.3.0 e383f779e98, patch</td>
+	</tr>
+	<tr>
+		<td>1</td> <td>April 29th 2021</td> <td>Release of Cisco Webex RoomOS 10.3.2.0 85049347ae0, major</td>
 	</tr>
 </table>
 
@@ -57,8 +60,30 @@ This means that the first release of RoomOS 10 inherits the same features as CE9
 Note: You will still find “ce” notations in provisioning services (TMS, UCM etc.), xAPI and on the software packages. If you look at the software version on the Touch panel bug you will see that the name has changed from CE to RoomOS. 
 
 Cisco Webex RoomOS 10 can be downloaded [here](https://software.cisco.com/download/home/283611944?catid=280789323).
-<br><br>
+<br><br> 
+
 # Release summary for RoomOS 10.3
+
+## Notes and warnings for this release
+
+### The legacy media resillience protocol (FLUX) will soon be deprecated
+
+Predicted version where this feature will be deprecated: **RoomOS 10.7.x**
+
+A media resillience protocol is present to make the media resillient to loss in lossy network conditions. RoomOS 10 has support for a much more effective protocol (Media Assurance) which is also supported by CE9 and is used in all supported backends. This is the primary resillience protocol used today.
+
+**How this change will affect you**
+
+FLUX has been kept for backwards compatibility with endpoints that is runnning TC7.x software. This upcoming change means that 1:1 calling between a TC7.x and RoomOS 10.7.x+ devices, may in lossy network conditions experience degraded media quality.
+
+## RoomOS 10.3.3.0
+
+This is a patch release and contains bugfixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.3.3.0](https://bst.cloudapps.cisco.com/bugsearch/search?kw=*&pf=prdNm&pfVal=283661039&rls=10.3.3.0&sb=fr&sts=fd&bt=custV)
+
+<br>
 
 ## RoomOS 10.3.2.0 
 * [Initial feature parity with Collaboration Endpoint Software CE9.15.3.17](#10320-1) 
@@ -70,8 +95,10 @@ Cisco Webex RoomOS 10 can be downloaded [here](https://software.cisco.com/downlo
 * [Important notes and warnings for this software release](#10320-5)
     * [RoomOS 10 do not support older device models](#10320-51)
     * [ISDN Link is no longer supported](#10320-52)
-* Bug fixes
+* <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 10.3.2.0](https://bst.cloudapps.cisco.com/bugsearch/search?kw=*&pf=prdNm&pfVal=283661039&rls=10.3.2.0&sb=fr&sts=fd&bt=custV)
+    
+<br>
 
 ## RoomOS 10.3.2.0 feature descriptions 
 
@@ -149,6 +176,10 @@ If you have enabled any Room Analytics features on your Cisco Webex Device, a Ro
 **ISDN Link is no longer supported <a name='10320-52'></a>**
 
 Software support for ISDN Link has been removed in RoomOS 10. If you require to use ISDN Link, please use the latest Collaboration Endpoint Software version supported by the Room Devices.
+
+**Cisco Proximity Share To Clients Removed <a name='10320-53'></a>**
+
+The Cisco Proximity for Mobile app is being phased out, and no further development is planned on these apps. As a step in this process the "share to clients" functionality has been removed from RoomOS 10.3.2.0. The Cisco Proximity for Desktop version is still supported (share from clients) and will receive updates going forward.
 <br><br>
 # Software upgrade and downgrade
 
@@ -167,16 +198,16 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_3_2_0.k3.cop.sgn</b></td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_3_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_3_3_0.k3.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_3_2_0.k3.cop.sgn</b></td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_3_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_3_3_0.k3.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_3_2_0.k3.cop.sgn</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_3_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_3_3_0.k3.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.</th>
+		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above</th>
 	</tr>
 </table>
 
@@ -242,11 +273,11 @@ Go into the device default loads on the UCM administration page and make sure th
 For Cisco Webex Room devices s53200 and s53300, the load file name should not contain any extension at all if the device is running software >= CE9.8.2. For example:
 
 Platform Specific packages:<br>
-s53200ce10_3_2_0.pkg (**wrong**)<br>
-s53200ce10_3_2_0 (**correct**)
+s53200ce10_X_X_X.pkg (**wrong**)<br>
+s53200ce10_X_X_X (**correct**)
 
 All products (containing all software versions for all products):<br>
-ce10_3_2_0 (**correct**)
+ce10_X_X_X (**correct**)
 
 If the device is running software lower than CE9.8.2 the above method may not work, please use the xAPI method to upgrade. See below. 
 
@@ -333,6 +364,8 @@ There is currently no diagnostic message for expired certificates
 **CA Certificates**<br>
 CA certificates must be uploaded per endpoint. There is currently no way to mass-distribute certificates to endpoints running software version < CE9.2.1. Please also note that the endpoint must be connected to a wired or WPA2-PSK wireless network in order to upload a certificate before attempting to connect to a WPA-EAP enabled network that requires a CA certificate. 
 
+Devices flagged with "NR" (No Radio) do not have Wi-Fi capability. 
+
 **Network paired Cisco Touch 10 not supported when the video system is connected through Wi-Fi**<br>
 Even though this connectivity works, you may end up in cumbersome scenarios if the Wi-Fi connectivity is lost for any reason, for example when the Wi-Fi password is changed. In order to reconfigure the Wi-Fi connection, you need to setup a direct pairing between the video system and the Touch 10 before reconnecting the Cisco Touch 10. When the video system is using Wi-Fi connectivity Cisco recommends that you have the Touch 10 directly paired with the video system.  
 
@@ -345,7 +378,11 @@ Note: In newer versions you can now create new user accounts to pair the touch d
 We recommend that you upgrade to the latest available RoomOS version before activating your device on Webex Teams. 
 
 **Encryption is required to activate a Room Device on Webex**<br>
-A Room Device with support for encryption is required to activate the device on Webex and Webex Edge for Devices. Cisco Webex Room Devices with the "No Radio" or "NR" flag, do not have support for encryption and cannot be registered or linked to Webex. Encryption support for Cisco Webex Room Devices are determined by hardware and are not using encryption option keys. 
+A Room Device with support for encryption is required to activate the device on Webex and Webex Edge for Devices. Cisco Webex Room Devices with the K7 flag in the partnumber, do not have support for encryption and cannot be registered or linked to Webex. Encryption support for Cisco Webex Room Devices are determined by hardware and are not using encryption option keys. 
+
+If the device do not have the entryption option, then the device is a K7 device. Devices flagged with K9 in the partnumber have support for encryption. 
+
+You can check if the device have the encryption option key from the web interface under "option keys". This key can neither be added or removed as it is based on the hardware model you have with K7 (no crypto) or K9 (crypto) notation. 
  
 ### Peripherals
 
@@ -772,4 +809,3 @@ All printed copies and duplicate soft copies are considered un-Controlled copies
 Cisco has more than 200 offices worldwide. Addresses, phone numbers, and fax numbers are listed on the Cisco website at www.cisco.com/go/offices.
 
 Cisco and the Cisco logo are trademarks or registered trademarks of Cisco and/or its affiliates in the U.S. and other countries. To view a list of Cisco trademarks, go to this URL: www.cisco.com/go/trademarks. Third-party trademarks mentioned are the property of their respective owners. The use of the word partner does not imply a partnership relationship between Cisco and any other company. (1110R)
-

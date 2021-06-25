@@ -16,6 +16,8 @@ Warning: Do NOT follow this procedure if your device is registered on Webex Edge
 Warning: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
 </div>
 
+Tip: open this guide on your phone, so don't need to switch between these instructions and the device web interface all the time.
+
 ## First time user
 
 If the Desk Pro is straight out of the box, you need to boot it up first and connect it to a network, and let it upgrade.

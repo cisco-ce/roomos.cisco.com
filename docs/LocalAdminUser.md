@@ -1,18 +1,20 @@
 # Creating a local admin user
 
-Having admin access to your video device is required if you want to tweak it with web apps, macros, user interface extensions etc.
+If you want to do fun stuff with your device, such as adding web apps, creating macros, adding your own user interface elemtents or setting custom wallpapers, you need a local admin username and password to the device.
 
 🎉 Great news: This is possible for all cloud devices in personal mode.
 
 This guide applies to every Webex video device in the market today, such as Desk Pro, Webex Board, Room Kit, Room 70 etc. It will only work for cloud registered systems.
 
-```alert
-Note 1: Do NOT follow this procedure if your device is registered on Webex Edge.
-```
+This guide will show you how to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take less than 10 minutes, and will give you lot's of super powers.
 
-```alert
-Note 2: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
-```
+<div style="color: red; background: #ffe8e3">
+**Warning:** Do NOT follow this procedure if your device is registered on Webex Edge.
+</div>
+
+<div style="color: red; background: #ffe8e3">
+**Warning:** Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
+</div>
 
 ## First time user
 
@@ -63,7 +65,7 @@ Now we need to create a local admin user, while the system is unlocked. Find the
 
 ## Registering your device
 
-You will now register the device, but from the web admin interface instead of on the devic itself.
+You will now register the device, but from the web admin interface instead of on the device itself.
 
 <img src="/docs/images/localadmin/register-webex.png" />
 

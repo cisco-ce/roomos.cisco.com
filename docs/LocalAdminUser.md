@@ -79,22 +79,6 @@ With the device's web interface:
 
 **Note:** If your device software for some reason is older than May 2021, you may not have the **Register device** menu. That's ok, see bottom of this document for an alternative.
 
-* Go to **Developer API**
-* Copy and paste the following command into the text area that says **Enter commands**.
-
-<img src="/docs/images/localadmin/register-code.png" />
-
-```
-xCommand Webex Registration Start ActivationCode: 0123456789 SecurityAction: NoAction
-```
-
-* Be sure to enter the command on **one line**.
-* Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
-* Click **Execute**
-
-There should now be an answer saying "1 of 1 applied succesfully".
-That means your has been registered again, and that the user you created is not disabled.
-
 ## Finish the registration on your device
 
 Your device should now be registered, but it might still be on the network page. Click next to proceed, and select timezone. You should now be able to tap next, set timezone etc and be ready.
@@ -107,6 +91,7 @@ On the web interface on your laptop, tap the avatar in the top right corner and 
 
 🥳 Congratulations! You are now the master of your own video device. You should now be able to change wallpapers, configure advanced settings, add macros, user interface extensions, web applications, create external integrations etc. But remember, with great power comes great responsibility.
 
+---
 
 ## Appendix - alternative registration
 

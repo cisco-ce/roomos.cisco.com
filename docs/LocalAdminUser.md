@@ -6,13 +6,13 @@ If you want to do fun stuff with your device, such as adding web apps, creating 
 
 This guide applies to every Webex video device in the market today, such as Desk Pro, Webex Board, Room Kit, Room 70 etc. It will only work for cloud registered systems.
 
-This guide will show you how to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take less than 10 minutes, and will give you lot's of super powers.
+This guide will show you how to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take less than 10 minutes, and will give you lots of super powers.
 
-<div style="color: red; background: #ffe8e3">
+<div style="color: red; background: #ffe8e3; padding: 1em">
 Warning: Do NOT follow this procedure if your device is registered on Webex Edge.
 </div>
 
-<div style="color: red; background: #ffe8e3; margin-top: 1em">
+<div style="color: red; background: #ffe8e3; margin-top: 1em; padding: 1em">
 Warning: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
 </div>
 
@@ -77,7 +77,7 @@ With the device's web interface:
 * Uncheck **Disable local users and integrations**. This means your admin user will be still active after registering your device
 * Enter the registration code you obtained earlier, and click **Register**.
 
-Note: If your device software for some reason is older than May 2021, you may not have the **Register device menu**. In that case, you can do the following instead:
+**Note:** If your device software for some reason is older than May 2021, you may not have the **Register device** menu. That's ok, see bottom of this document for an alternative.
 
 * Go to **Developer API**
 * Copy and paste the following command into the text area that says **Enter commands**.
@@ -106,3 +106,26 @@ Your device should now be registered, but it might still be on the network page.
 On the web interface on your laptop, tap the avatar in the top right corner and log out, then back in with your new user.
 
 🥳 Congratulations! You are now the master of your own video device. You should now be able to change wallpapers, configure advanced settings, add macros, user interface extensions, web applications, create external integrations etc. But remember, with great power comes great responsibility.
+
+
+## Appendix - alternative registration
+
+If you don't have the **Register device** button on the home screen of your device's local web interface, you can register with a command instead:
+
+* Go to **Developer API**
+* Copy and paste the following command into the text area that says **Enter commands**.
+
+<img src="/docs/images/localadmin/register-code.png" />
+
+
+```
+xCommand Webex Registration Start ActivationCode: 0123456789 SecurityAction: NoAction
+```
+
+* Be sure to enter the command on **one line**.
+* Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
+* Click **Execute**
+
+There should now be an answer saying "1 of 1 applied succesfully".
+That means your has been registered again, and that the user you created is not disabled.
+

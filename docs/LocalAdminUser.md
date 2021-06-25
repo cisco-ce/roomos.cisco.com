@@ -65,11 +65,20 @@ Now we need to create a local admin user, while the system is unlocked. Find the
 
 You will now register the device, but from the web admin interface instead of on the devic itself.
 
+<img src="/docs/images/localadmin/register-webex.png" />
 
-With the web interface still open:
+
+With the device's web interface:
+
+* Go to **Home**
+* Click **Register device**
+* Uncheck **Disable local users and integrations**. This means your admin user will be still active after registering your device
+* Enter the registration code you obtained earlier, and click **Register**.
+
+Note: If your device software for some reason is older than May 2021, you may not have the **Register device menu**. In that case, you can do the following instead:
 
 * Go to **Developer API**
-* Copy and paste the following command into the text area that says **Enter commands**. (This will soon become easier in May 2021 with a dedicated user interface)
+* Copy and paste the following command into the text area that says **Enter commands**.
 
 <img src="/docs/images/localadmin/register-code.png" />
 

@@ -6,7 +6,7 @@ If you want to do fun stuff with your device, such as adding web apps, creating 
 
 This guide applies to every Webex video device in the market today, such as Desk Pro, Webex Board, Room Kit, Room 70 etc. It will only work for cloud registered systems.
 
-This guide will show you how to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take less than 10 minutes, and will give you lots of super powers.
+You will factory reset your device, create a local user and register it to Webex, using only your web browser. It should take approximately 15 minutes, and will give you lots of super powers. If your video device is on your home network, make sure your laptop is not connected to VPN, otherwise you will not be able to access the web interface of your device.
 
 <div style="color: red; background: #ffe8e3; padding: 1em">
 Warning: Do NOT follow this procedure if your device is registered on Webex Edge.

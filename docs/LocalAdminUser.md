@@ -9,11 +9,11 @@ This guide applies to every Webex video device in the market today, such as Desk
 This guide will show you how to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take less than 10 minutes, and will give you lot's of super powers.
 
 <div style="color: red; background: #ffe8e3">
-**Warning:** Do NOT follow this procedure if your device is registered on Webex Edge.
+Warning: Do NOT follow this procedure if your device is registered on Webex Edge.
 </div>
 
-<div style="color: red; background: #ffe8e3">
-**Warning:** Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
+<div style="color: red; background: #ffe8e3; margin-top: 1em">
+Warning: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
 </div>
 
 ## First time user

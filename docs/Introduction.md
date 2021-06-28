@@ -26,7 +26,7 @@ RoomOS supports a wide variety of ways of connecting to the video device. Depend
 
 ## Terminal / SSH
 
-Use a terminal window to SSH into your device. This is typically done to explore they xAPI, debug and and learn the xAPI quickly and manually. You need a local user to log in.
+Use a terminal window to SSH into your device. This is typically done to explore the xAPI, debug and learn the xAPI quickly and manually. You need a local user to log in.
 
 ## Web socket
 
@@ -42,7 +42,7 @@ Macros are user scripts that run on the device itself. They are written in JavaS
 
 ## HTTP(S)
 
-This is a stateless HTTP API that was created before the days of REST APIs. It lets you access the xAPI with HTTP requests containing XML data. Getting feedback from the video device is also possible using HTTP Feedback, a mechanism similar to web hooks. HTTP GetXML requires you to be on the same network as the video device and a local user for authentication. See the [POSTMAN examples](https://github.com/CiscoDevNet/postman-xapi) to get started.
+This is a stateless HTTP API that was created before the days of REST APIs. It lets you access the xAPI with HTTP requests containing XML data. Getting feedback from the video device is also possible using HTTP Feedback, a mechanism similar to webhooks. HTTP GetXML requires you to be on the same network as the video device and a local user for authentication. See the [POSTMAN examples](https://github.com/CiscoDevNet/postman-xapi) to get started.
 
 ## RS232
 
@@ -58,7 +58,7 @@ An admin can create new users, change most settings, make calls, and search the 
 
 **User**
 
-A user with this role can make calls and search  the contact lists. The user can modify a few settings, of example adjust the ringtone volume and set the timezone and date format.
+A user with this role can make calls and search the contact lists. The user can modify a limited group of settings, such as the ringtone volume or timezone and date format.
 
 **Audit**
 

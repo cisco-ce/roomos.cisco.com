@@ -1,0 +1,4 @@
+#!/bin/bash
+# Git pre-commit hook to check that no file contains internal APIs
+# Copy this file to .git/hooks/ to use it, also make sure its runnable
+node schemas/check-schemas.js

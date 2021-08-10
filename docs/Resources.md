@@ -78,5 +78,13 @@
       <td>Extron have In-room control drivers for all CE based room devices with for their IP Link Pro Control Control systems</td>
       <td><img class="logo" src="/docs/images/logos/extron.png" /></td>
     </tr>
-  </tbody>
+    <tr>
+      <td>
+        <a href="https://lightware.com/cisco-integration-lightware" target="_blank">Lightware</a>
+      </td>
+      <td>Modern AV solutions provider with eg video switches that work nicely with Cisco video devices.</td>
+      <td></td>
+    </tr>
+
+</tbody>
 </table>

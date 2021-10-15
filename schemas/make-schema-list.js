@@ -13,7 +13,7 @@ function makeList() {
       list.push({ name, url: file });
     }
   });
-  console.log(list);
+  console.log(JSON.stringify(list, null, 2));
 }
 
 makeList();

@@ -1,5 +1,6 @@
 [
-  { "name": "Cloud: 10.8.1.7 [Stable]", "url": "ce-10.8.1.7.json" },
-  { "name": "On-Prem: 10.3.3.0", "url": "ce-10.3.3.0.json" },
-  { "name": "On-Prem: 9.15.3.17", "url": "ce-9.15.3.17.json" }
+  { name: '10.3.3.0', url: 'ce-10.3.3.0.json' },
+  { name: '10.8.1.6', url: 'ce-10.8.1.6.json' },
+  { name: '9.15.3.22', url: 'ce-9.15.3.22.json' },
+  { name: '9.15.8.10', url: 'ce-9.15.8.10.json' }
 ]

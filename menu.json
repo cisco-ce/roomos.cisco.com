@@ -17,15 +17,24 @@
     ]
   },
   {
-    "name": "Technologies",
+    "name": "UI Extensions",
+    "items": [
+      {
+        "name": "Overview",
+        "link": "/docs/UiExtensions.md"
+      },
+      {
+        "name": "Panels & Widgets",
+        "link": "/docs/UiExtensions-Panels.md"
+      }
+    ]
+  },
+  {
+    "name": "Web Engine",
     "items": [
       {
         "name": "Web Engine",
         "link": "/docs/WebEngine.md"
-      },
-      {
-        "name": "UI Extensions",
-        "link": "/docs/UiExtensions.md"
       }
     ]
   },

@@ -47,7 +47,7 @@ The `xapi` library lets the macros talk to the video system. To import it, simpl
 import xapi from 'xapi';
 ```
 
-You are now able to able to use the `xapi` object in your code to invoke command, get status values, listen for events and edit configurations. You should only import it once per macro.
+You are now able to use the `xapi` object in your code to invoke command, get status values, listen for events and edit configurations. You should only import it once per macro.
 
 All the following examples require you to do this import first.
 

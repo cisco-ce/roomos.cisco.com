@@ -36,6 +36,7 @@ All 'newer' devices, such as:
 * Webex Board 55, 70 and 85 (touch enabled)
 * RoomKit, RoomKit Pro, RoomKit Plus, RoomKit Mini
 * Room 55 and Dual, Room 70 and Dual
+* Webex Desk Pro, Desk, Desk Mini and Desk Hub
 
 As of CE 9.9, the web engine is available on both cloud and on-premise deployments.
 
@@ -47,7 +48,7 @@ In this mode, data is persisted (cache, cookies, localstorage etc).
 
 ### 2. Web Apps
 
-Web apps are available as activity icons on the home screen. The admin can configure a list of URLs and names. The app launches in full screen, and will time out after 15 minutes of not being in use.
+Web apps are available as activity icons on the home screen. The admin can configure a list of URLs and names. The app launches in full screen, and will time out after 60 minutes of not being in use.
 
 Typical apps can be Office 365, Trello, Wikipedia, YouTube, or company internal web pages and tools.
 
@@ -91,7 +92,7 @@ When enabled, all web views will display a prominent warning, to warn the user t
 
 Most of the currently supported video systems, including the Webex Board, is based on the Nvidia Tegra chip set, with 4 GB of total memory.
 
-However, the web engine has lower priority than the main video features and is restricted. Currently it will be limited to roughly 650 MB of memory (excluding GPU usage). If the web page requires more memory than allowed, Chromium will try to optimise usage with the memory pressure handler. Failing this, the web view will eventually be terminated and show an error page. The web view may also be terminated the if the video system is running low on memory in general.
+However, the web engine has lower priority than the main video features and is restricted. Currently it will be limited to roughly 650 MB of memory (excluding GPU usage). If the web page requires more memory than allowed, Chromium will try to optimise usage with the memory pressure handler. Failing this, the web view will eventually be terminated and show an error page. The web view may also be terminated if the video system is running low on memory in general.
 
 For the Room Kit Pro, there are 6 cores and 8 GB of memory, but the restrictions are currently the same as the other devices.
 
@@ -107,7 +108,6 @@ Notably, these features are not currently supported:
 
 * PDF
 * WebGL (disabled for now)
-* WebRTC
 * Password manager
 * Plugins (Flash, etc)
 * Downloading and uploading files
@@ -219,7 +219,7 @@ div {
 
 When adding web apps to the home screen, by default RoomOS will try to fetch the web sites icon automatically ("fav icons"). The web engine's own fav-icon mechanism is used, but the general rule is that it looks for touch icon first (<link rel="apple-touch-icon" href="..." />), then rel="icon", then finally the domain favicon, eg trello.com/favicon.ico.
 
-If a icon url is specified in the provisioning, that one is preferred. But in all cases the icon size must larger than 60 pixels in either direction, and less than 1200 pixels.
+If a icon url is specified in the provisioning, that one is preferred. But in all cases the icon size must be larger than 60 pixels in either direction, and less than 1200 pixels.
 
 All major formats are supported, such as jpg, png, gif, png and svg.
 
@@ -264,7 +264,7 @@ The web engine sends the language header of the current language in each HTTP re
 
 ## Non-fullscreen windows?
 
-Currently only fullscreen web views are supported. In the future we may support different types such as web dialogs and side-bars.
+Both fullscreen and non-fullscreen web views are supported througth the use of webpanels that opens the webpages in web dialogs.
 
 ## What about multiple screens?
 
@@ -301,7 +301,7 @@ For more info about these, see separate RoomOS developer documentation. Be caref
 
 ## What about non-touch devices?
 
-At the moment, only the Webex Board has touch screen capability, but all the new Cisco video devices such as Room Kit, Room Kit Mini, Room 55 etc also support web view. The most obvious use case is digital signage, but soon you will also be able to open web views programatically through the xAPI. See the section on API-driven web views above.
+Webex Boards and Webex Desk series have touch screen capability, but all the new Cisco video devices such as Room Kit, Room Kit Mini, Room 55 etc also support web view. The most obvious use case is digital signage, but you can also open web views programatically through the xAPI. See the section on API-driven web views above.
 
 # Trouble shooting
 

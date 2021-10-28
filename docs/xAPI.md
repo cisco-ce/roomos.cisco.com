@@ -5,7 +5,7 @@ This guide describes the xAPI by showing examples using the command line. The co
 
 ### Getting started
 
-Connect to your video device by opening a terminal window and type `ssh admin@<mydevice>`. Replace `admin` and `<mydevice>` with the values for you device. If you have a device in personal mode and don't have your own admin user, see [Creating a local user](./docs/LocalAdminUser.md) for instructions.
+Connect to your video device by opening a terminal window and type `ssh admin@<mydevice>`. Replace `admin` and `<mydevice>` with the values for you device. If you have a device in personal mode and don't have your own admin user, see [Creating a local user](./LocalAdminUser.md) for instructions.
 
 ### Help
 

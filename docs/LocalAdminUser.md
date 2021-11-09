@@ -8,6 +8,15 @@ This guide applies to every Webex video device in the market today, such as Desk
 
 You will factory reset your device, create a local user and register it to Webex, using only your web browser. It should take approximately 15 minutes, and will give you lots of super powers. If your video device is on your home network, make sure your laptop is not connected to VPN, otherwise you will not be able to access the web interface of your device.
 
+This guide is also available as a step-by-step video:
+
+<div style="padding-bottom:60.25%; position:relative; display:block; width: 100%; margin-bottom: 1em">
+	<iframe src="https://app.vidcast.io/share/embed/0a9d3df5-58da-40b1-aaca-71ffcd922463"
+    width="100%" height="100%" title="Webex Device: Getting Local Admin Access" frameborder="0"
+    loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
+</div>
+
+
 <div style="color: red; background: #ffe8e3; padding: 1em">
 Warning: Do NOT follow this procedure if your device is registered on Webex Edge.
 </div>

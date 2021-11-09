@@ -1,6 +1,6 @@
 # Creating a local admin user
 
-If you want to do fun stuff with your device, such as adding web apps, creating macros, adding your own user interface elemtents or setting custom wallpapers, you need a local admin username and password to the device.
+If you want to do fun stuff with your personal Webex device, such as adding web apps, extensions, creating your own macros, or user interface elements or setting custom wallpapers, you need local admin access to the device.
 
 🎉 Great news: This is possible for all cloud devices in personal mode.
 
@@ -59,7 +59,15 @@ DO NOT register your device yet.
 
 <img src="/docs/images/localadmin/network-settings.png" />
 
-Now we need to create a local admin user, while the system is unlocked. Find the IP address of your system under **Settings** on your video device, and enter it in the URL bar of your web browser (accept the certificate security warnings - we are the good guys). This will take you to the local web admin interface of the video device.
+Now we need to create a local admin user, while the system is unlocked. Find the IP address of your system under **Settings** on your video device, and enter it in the URL bar of your web browser.
+
+```alert
+DO NOT register your device yet.
+```
+
+Your browser will most likely show you a warning because the web site uses a self signed certificate. You need to accept this (the various browsers are making this increasingly cumbersome, so be sure to read the warning text carefully).
+
+You should then see the login page of the web interface of your video device.
 
 <img src="/docs/images/localadmin/login-vega.png" />
 

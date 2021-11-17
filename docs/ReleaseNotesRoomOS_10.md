@@ -2,13 +2,16 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.03 - October 2021
+D15463.04 - November 2021
 
 ## Document revision history
 
 <table class=''>
 	<tr>
 		<th>Revision</th> <th>Date</th> <th>Description</th>
+	</tr>
+	<tr>
+		<td>4</td> <td>November 17th 2021</td> <td>Release of <a href='#10.3' title='Jump to section'>Cisco Webex RoomOS 10.3.4.0</a> e47befa1e68, patch</td>
 	</tr>
 	<tr>
 		<td>3</td> <td>October 27th 2021</td> <td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.2.5</a> ed4f9434f88, minor</td>
@@ -63,14 +66,21 @@ This means that the first release of RoomOS 10 inherits the same features as CE9
 Note: You will still find “ce” notations in provisioning services (TMS, UCM etc.), xAPI and on the software packages. If you look at the software version on the Touch panel bug you will see that the name has changed from CE to RoomOS. 
 
 Cisco Webex RoomOS 10 can be downloaded [here](https://software.cisco.com/download/home/283611944?catid=280789323).
-<br><br> 
 
+## Notes and warnings for the next major release RoomOS 11
+These notes are to prepare you for the upcoming changes in RoomOS 11.
+
+**RoomOS 11 will have a new UI**
+In RoomOS 11 we are introducing a new graphical user interface that changes the current user interaction flow. The UI will become available in cloud a couple of months before released for on-premises. 
+
+**RoomOS 11 will no longer support SNMP**
+We have only had a basic implementation of SNMPv2 in previous software and have decided to remove it completely. In previous versions SNMP has been disabled by default.
+<br><br>
 # Release summary for RoomOS 10.8 <a name='10.8'></a>
 
 ## Notes and warnings for this software release
 
 **Cisco Webex Desk software upgrade**
-
 Please note that Cisco Webex Desk use a new software package with **l4t** in the package name. This is part of a transition that will eventually apply to all the devices. This message is just to make you aware of the current package name difference. You cannot currently upgrade the Cisco Webex Desk using the non-l4t s53300 software package even though they are the same platform. 
 
 Note: Cisco Webex Desk do not have support for WebRTC in RoomOS 10.8.2.5, this will be added in a future release. 
@@ -339,6 +349,15 @@ A media resilience protocol is present to make the media resilient to loss in lo
 **How this change will affect you**
 
 FLUX has been kept for backwards compatibility with endpoints that is running TC7.x software. This upcoming change means that 1:1 calling between a TC7.x and RoomOS 10.8.x+ devices, may in lossy network conditions experience degraded media quality.
+
+## RoomOS 10.3.4.0
+
+This is a patch release and contains bugfixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.3.4.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.3.4.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.3.3.0
 

@@ -12,7 +12,7 @@ For developer documention for the Webex platform itself, see [developer.webex.co
 
 ## The xAPI
 
-The xAPI is the language-independent API of RoomOS that let's you interact with the system, such as for placing calls, changing configurations, reading sensor data and automating tasks.
+The xAPI is the language-independent API of RoomOS that lets you interact with the system, such as for placing calls, changing configurations, reading sensor data and automating tasks.
 
 <img src="/docs/images/tshell.png" />
 
@@ -38,7 +38,7 @@ Connect to the xAPI with REST APIs on the Webex platform over cloud, which means
 
 ## Macros
 
-Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom userinterface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/docs/MacroTutorial) to get started.
+Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom user interface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/docs/MacroTutorial) to get started.
 
 ## HTTP(S)
 

@@ -1,18 +1,5 @@
 
-<!--
-Intro
-Use cases (video use cases, other use cases)
-The three types
-The event model / two-way sync
-Panels, pages, rows and widgets
-  - layout
-  - events
-  - programmatic access
-The editor
-Touch panel vs osd
-Limitations
-Legacy api
--->
+# Widgets and panels
 
 UI panels and widgets allows you to create custom user interfaces, for example to:
 

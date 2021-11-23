@@ -1,5 +1,5 @@
 
-
+<!--
 Intro
 Use cases (video use cases, other use cases)
 The three types
@@ -12,7 +12,33 @@ The editor
 Touch panel vs osd
 Limitations
 Legacy api
+-->
 
+UI panels and widgets allows you to create custom user interfaces, for example to:
+
+* Control other equipment in the room such as lights, blinds, temperature, projectors, etc
+* Create automated tasks for tasks you do often with the video device
+* Give instructions and info to first-time users
+
+The user interface works on all Webex Devices, such as the touch controllers (Room Kits etc) and touch screens (Desk Series, Boards, etc).
+
+## Event model
+
+UI Extensions provide general user interface elements such as buttons and sliders. When the user interacts with those,
+evens are created. It is then up to you to create actions associated with those events, such as controlling the lights, sending data to the cloud,
+turning on screens etc. You can listen to these events and react internally with macros, or with external integrations such as virtual servers and Raspberry Pis.
+
+The API for UI extensions are fully bi-directional, so you can update the widgets when eg someone turns off the light with a physical light switch.
+
+This guide describes the widghet that are available, and the API to listen to and control them.
+
+To quickly see and learn the events that are generaeted, you can log on to the device with TShell and type:
+
+```
+xFeedback Register event/userinterface/extensions/*
+```
+
+Now, everytime you press a button or move a slider, the command line will show you the evens in real time.
 
 ## Widgets
 

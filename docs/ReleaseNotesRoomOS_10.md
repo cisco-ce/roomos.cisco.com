@@ -2,13 +2,16 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.04 - November 2021
+D15463.05 - December 2021
 
 ## Document revision history
 
 <table class=''>
 	<tr>
 		<th>Revision</th> <th>Date</th> <th>Description</th>
+	</tr>
+	<tr>
+		<td>5</td> <td>December 14th 2021</td> <td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.3.1</a> 6d131e0418f, patch</td>
 	</tr>
 	<tr>
 		<td>4</td> <td>November 17th 2021</td> <td>Release of <a href='#10.3' title='Jump to section'>Cisco Webex RoomOS 10.3.4.0</a> e47befa1e68, patch</td>
@@ -86,6 +89,16 @@ Please note that Cisco Webex Desk use a new software package with **l4t** in the
 Note: Cisco Webex Desk do not have support for WebRTC in RoomOS 10.8.2.5, this will be added in a future release. 
 
 See the [software upgrade section](#software)
+
+## RoomOS 10.8.3.1
+
+This is a patch release and contains stability adjustments for the Cisco Webex Room Navigator.<br> 
+Added support for new [compatibility level](#compatibility-desk) for Cisco Webex Desk. 
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.8.3.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.8.3.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.8.2.5 
 * [Support for Cisco Webex Desk](#10825-1) 
@@ -481,16 +494,16 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_8_2_5.k3.cop.sgn</b><br><b>cmterm-s53200ce10_8_2_5.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_8_3_1.k3.cop.sgn</b><br><b>cmterm-s53200ce10_8_3_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_8_2_5.k3.cop.sgn</b><br><b>cmterm-s53300ce10_8_2_5.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_8_3_1.k3.cop.sgn</b><br><b>cmterm-s53300ce10_8_3_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk**</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_8_2_5-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_8_2_5-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk**</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_8_3_1-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_8_3_1-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_8_2_5.k3.cop.sgn</b><br><b>cmterm-ce10_8_2_5.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_8_3_1.k3.cop.sgn</b><br><b>cmterm-ce10_8_3_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk requires s53300 l4t package.</th>
@@ -694,10 +707,12 @@ The collaboration endpoints do not support broadcast NTP servers from CUCM, unic
 		</td> 
 	</tr>
 	<tr>
-		<td>SIP</td>
+		<td>SIP / H323</td>
 		<td>
 			<b>SIP Listen Port diagnostics warning</b><br>
-			When registered to a SIP proxy and SIP Listen Port is enabled, a diagnostics warning will be displayed in the web interface 			“SIPListenPortAndRegistration”. We recommend that SIP Listen Port is turned off when registered to a SIP proxy
+			When registered to a SIP proxy and SIP Listen Port is enabled, a diagnostics warning will be displayed in the web interface “SIPListenPortAndRegistration”. We recommend that SIP Listen Port is turned off when registered to a SIP proxy<br><br>
+			<b>Dual protocol enablement for SIP and H323 is not supported</b><br>
+			Having SIP and H323 enabled at the same time will generate a warning message on-screen indicating that having both protocols enabled (SIP and H323) is not supported. This message cannot be removed unless you disable one of the protocols. Having both protocols enabled and using them at the same time in different scenarios may introduce unexpected behavior. TAC will not support call scenarios where both protocols are enabled. 
 		</td>
 	</tr>
 	<tr>
@@ -995,7 +1010,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	</tr>
 </table>
 
-## Cisco Webex Desk Series Software Compatibility Matrix 
+## Cisco Webex Desk Series Software Compatibility Matrix <a name="compatibility-desk"></a>
 
 <table  width="100%">
 	<tr>
@@ -1007,12 +1022,18 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	</tr>
 	<tr>
 		<td>Cisco Webex Desk Limited Edition</td> 
-		<td>0</td> <td>All</td> 
+		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk </td> 
-		<td>0</td> <td>10.8.2.5</td> 
+		<td rowspan="3">Cisco Webex Desk </td> 
 	</tr>
+	<tr>
+		<td>0</td> <td>10.8.2.5</td>
+	</tr>
+	<tr>
+		<td>1</td> <td>10.8.3.1</td>
+	</tr>
+
 </table>
 
 ## Cisco Peripheral Software Compatibility Matrix 

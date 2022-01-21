@@ -6,6 +6,11 @@ Kiosk mode let's you replace the home screen of your Webex Device with your own 
 
 The typical use case is reception areas, where you want to tightly control how visitors use the Webex devices, as well as provide your own branding to the first-time experience. Setting the device in kiosk mode makes it possible to disable all non-video functions such as whiteboarding, screensharing etc and disabling users from meddling with the settings of the video device.
 
+*Typical flow of a kiosk use case:*
+
+<img src="/docs/images/kiosk/flow.png" />
+
+
 Kiosk mode still allows you to call with the device. In call, the user experience is the same as in any call, but as soon as the call is ended, the device goes back to the kiosk web page.
 
 Typical use cases could be:
@@ -33,6 +38,12 @@ xConfiguration UserInterface Kiosk URL: <S: 0, 255>
 
 Set the **URL** to the web site you want to display, then set **Mode** to **On**. The device should now immediately show the web app as your new home page. Notice that you cannot swipe or tap anywhere to exit the kiosk mode. As a kiosk admin, it's your responsibility to create a kiosk that gives the user a good user experience.
 
+Web engine obviously need to be on as well (default):
+
+```
+xConfiguration WebEngine Mode: On
+```
+
 ## Placing a call
 
 To create buttons to start calls, you can add link on your web page using the `sip` protocol. For example:
@@ -59,7 +70,9 @@ This should open the settings menu, so you can find the IP address of the device
 
 <img src="/docs/images/kiosk/settings.png">
 
-## Recommended settings
+Note that the secret gesture is more of a child safety mechanism to reduce the chance of the kiosk being in a bad state after some adventurous users have played with it, not a security feature.
+
+## Recommended setup
 
 The kiosk mode itself only replaces the standard Webex Device home screen with a web app. In most scenarios, you probably want to set these configurations as well, to prevent users from tampering (accidentally) with the devicee:
 
@@ -71,9 +84,18 @@ xConfiguration Audio Ultrasound MaxVolume: 0
 xConfiguration UserInterface Assistant Mode: Off
 ```
 
+If you want to limit the settings menu so that even users who knows about the gesture for accessing settings, can't factory reset the device etc, you can lock it:
+
+```
+xConfiguration UserInterface SettingsMenu Mode: Locked
+```
+
 If you want to prevent the users from ending the call (only let far end do it), or disable other in-call features, you can do that by changing the [UserInterface Features configs](/xapi/search?domain=UserInterface+feat&search=userinterface+features&Type=Configuration)
 
 You might also want to review the [Standby configurations](/xapi/search?search=standby&Type=Configuration). In kiosk mode, the system will never enter half wake state, but it will go to standby after the specified amount of minutes, just like in normal mode.
+
+You may also want to tune the microphone and camera settings to whatever makes sense for the location and use case of your particular kiosk, for example make sure [noise reduction](/xapi/Configuration.Audio.Microphones.NoiseRemoval.Mode/?search=noise) is active, that [speaker track](/xapi/search?search=speakertrack&Type=Configuration) is off and that the camera zoomed and panned appropriately.
+
 
 ## Out of service mode
 
@@ -84,6 +106,13 @@ If the kiosk is not able to access the URL, it will display a service mode page 
 ## Accessing the xAPI
 
 Currently (January 2022) it is not possible for the kiosk web app to access the xAPI of the video device. That means that the only video features you can use from the kiosk is to place calls.
+
+## Automatic reset / timeout
+
+The kiosk web app itself is responsible for 'cleaning up' the kiosk after the user, for example after a few minutes of inactivity.
+
+This can be done with common web patterns, such as listening for touch events on the the body element of the web page, resetting a timer each time a user touches the screen, and resetting the kiosk if the timer reaches zero.
+
 
 <!--
 ## Integrating with macros (esp auto-call)

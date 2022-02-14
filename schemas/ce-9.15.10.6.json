@@ -23766,6 +23766,128 @@
         "backend": "any",
         "params": [
           {
+            "name": "Url",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "2048",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "read": [],
+        "role": [
+          "Admin",
+          "Integrator",
+          "RoomControl",
+          "User"
+        ]
+      },
+      "id": 35389,
+      "normPath": "UserInterface Extensions Icon Download",
+      "path": "UserInterface Extensions Icon Download",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "dx70",
+        "dx80",
+        "havella",
+        "hopen",
+        "mx200_g2",
+        "mx300_g2",
+        "mx700",
+        "mx700st",
+        "mx800",
+        "mx800d",
+        "mx800st",
+        "octavio",
+        "polaris",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s",
+        "sx20",
+        "sx80"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Url",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "2048",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "read": [],
+        "role": [
+          "Admin",
+          "Integrator",
+          "RoomControl",
+          "User"
+        ]
+      },
+      "id": 35390,
+      "normPath": "UserInterface Extensions Icon Fetch",
+      "path": "UserInterface Extensions Icon Fetch",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "dx70",
+        "dx80",
+        "havella",
+        "hopen",
+        "mx200_g2",
+        "mx300_g2",
+        "mx700",
+        "mx700st",
+        "mx800",
+        "mx800d",
+        "mx800st",
+        "octavio",
+        "polaris",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s",
+        "sx20",
+        "sx80"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
             "name": "Id",
             "required": true,
             "valuespace": {
@@ -24063,6 +24185,130 @@
         "darling_15_70",
         "darling_15_85",
         "polaris"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "PageId",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "255",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "read": [],
+        "role": [
+          "Admin",
+          "Integrator",
+          "RoomControl",
+          "User"
+        ]
+      },
+      "id": 35391,
+      "normPath": "UserInterface Extensions Page Closed",
+      "path": "UserInterface Extensions Page Closed",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "dx70",
+        "dx80",
+        "havella",
+        "hopen",
+        "mx200_g2",
+        "mx300_g2",
+        "mx700",
+        "mx700st",
+        "mx800",
+        "mx800d",
+        "mx800st",
+        "octavio",
+        "polaris",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s",
+        "sx10",
+        "sx20",
+        "sx80"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "PageId",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "255",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "read": [],
+        "role": [
+          "Admin",
+          "Integrator",
+          "RoomControl",
+          "User"
+        ]
+      },
+      "id": 35392,
+      "normPath": "UserInterface Extensions Page Opened",
+      "path": "UserInterface Extensions Page Opened",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "dx70",
+        "dx80",
+        "havella",
+        "hopen",
+        "mx200_g2",
+        "mx300_g2",
+        "mx700",
+        "mx700st",
+        "mx800",
+        "mx800d",
+        "mx800st",
+        "octavio",
+        "polaris",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s",
+        "sx10",
+        "sx20",
+        "sx80"
       ],
       "type": "Command"
     },
@@ -33049,46 +33295,6 @@
         "sx10",
         "sx20",
         "sx80"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "This is not supported in CE9.15.3. Sends diagnostics from the Microsoft Teams meeting web app (WebRTC) to the WebRTC provider. WebRTC is only available for devices that are registered to an on-premises service and linked to Webex Edge for Devices, and for devices that are registered to the Webex cloud service.",
-        "params": [],
-        "read": [],
-        "role": [
-          "Admin",
-          "Integrator",
-          "User"
-        ]
-      },
-      "id": 34096,
-      "normPath": "WebRTC Provider Current Diagnostics Send",
-      "path": "WebRTC Provider Current Diagnostics Send",
-      "products": [
-        "bandai",
-        "barents",
-        "barents_70d",
-        "barents_70i",
-        "barents_70s",
-        "barents_82i",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "havella",
-        "hopen",
-        "octavio",
-        "polaris",
-        "spitsbergen",
-        "svea",
-        "svea_55d",
-        "svea_70d",
-        "svea_70s"
       ],
       "type": "Command"
     },
@@ -60147,6 +60353,7 @@
             "Pacific/Guam",
             "Pacific/Honolulu",
             "Pacific/Johnston",
+            "Pacific/Kanton",
             "Pacific/Kiritimati",
             "Pacific/Kosrae",
             "Pacific/Kwajalein",
@@ -60201,7 +60408,7 @@
           "type": "Literal"
         }
       },
-      "id": 30604,
+      "id": 35622,
       "normPath": "Time Zone",
       "path": "Time Zone",
       "products": [
@@ -81311,12 +81518,14 @@
             "None",
             "HostPinOrGuest",
             "HostPinOrGuestPin",
-            "PanelistPin"
+            "AnyHostPinOrGuestPin",
+            "PanelistPin",
+            "GuestPin"
           ],
           "type": "Literal"
         }
       },
-      "id": 33833,
+      "id": 36262,
       "normPath": "Conference Call AuthenticationRequest",
       "path": "Conference Call[n] AuthenticationRequest",
       "products": [

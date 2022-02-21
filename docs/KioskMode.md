@@ -44,6 +44,12 @@ Web engine obviously need to be on as well (default):
 xConfiguration WebEngine Mode: On
 ```
 
+## Sample kiosk
+
+To try the feature yourself, we provide a hosted sample kiosk "Webex Bank" that you can quickly configure to test or demo the feature. It looks like the kiosk shown in the screenshots in this guide.
+
+Public URL: https://cisco-ce.github.io/roomos-samples/kiosk-example/
+
 ## Placing a call
 
 To create buttons to start calls, you can add link on your web page using the `sip` protocol. For example:

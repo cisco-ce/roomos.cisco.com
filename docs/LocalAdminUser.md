@@ -92,7 +92,7 @@ You will now register the device, but from the web admin interface instead of on
 With the device's web interface:
 
 * Go to **Home**
-* Click **Register device**
+* Under **Register device**, click **Register to Webex**
 * Uncheck **Disable local users and integrations**. This means your admin user will be still active after registering your device
 * Enter the registration code you obtained earlier, and click **Register**.
 

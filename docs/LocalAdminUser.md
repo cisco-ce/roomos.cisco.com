@@ -75,9 +75,9 @@ You should then see the login page of the web interface of your video device.
 * Go to **Users > Create User**
 * Choose a user name, make sure all the roles are selected
 * Set Status **Active**
-* Un-select **Require password change**
-* Select a password, add it again in the **Repeat passphrase** field
-* Leave **Your password** field empty
+* Un-select **Require passphrase change**
+* Select a passphrase, add it again in the **Repeat passphrase** field
+* Leave **Your passphrase** field empty
 * Click **Create**. Scroll up and verify that there is a message confirming that the user was created.
 
 <img src="/docs/images/localadmin/create-user.png" />

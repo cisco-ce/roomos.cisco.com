@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.06 - February 2022
+D15463.07 - March 2022
 
 ## Document revision history
 
@@ -11,6 +11,11 @@ D15463.06 - February 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>7</td> 
+		<td>March 3rd 2022</td> 
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.3.0</a> 6426fe09359, patch</td>
 	</tr>
 	<tr>
 		<td>6</td> 
@@ -128,7 +133,7 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 
 **Known limitations**<a name='101121-52'></a>
 
-<font color="red"><b>NOTE: The limitations listed here are <u>ONLY</u> related to the new products (Webex Desk Hub, Desk Mini and Board Pro 55 and 75) with the new UI. The limitations are specific to the 10.11.2.2 release and will be corrected in a future release. The list will be updated continuously.</b></font>
+<font color="red"><b>NOTE: The limitations listed here are <u>ONLY</u> related to the new products (Webex Desk Hub, Desk Mini and Board Pro 55 and 75) with the new UI. The limitations are specific to the 10.11.2.2 release and will be patched in a future release. The list will be updated continuously.</b></font>
 
 <table width="100%" >
 	<tr>
@@ -182,8 +187,10 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 			MultiSite
 		</td>
 		<td style="border-bottom: 1px solid black;">
-			<li>When in a full MultiSite call, the layouts other than grid layout is not working as expected unless content is shared. </li><br>
+			<li>When in a full MultiSite call, the layouts other than grid layout is not working as expected unless content is shared. </li>
+			<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li><br>
 			<li>When in a full MultiSite call, the "More" button containing the hold / resume buttons are missing</li>
+			<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
 		</td>
 	</tr>
 	<tr>
@@ -194,7 +201,7 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 			Mute button
 		</td>
 		<td>
-			First press after reboot has no effect
+			First press after reboot has no effect <br><li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
 		</td>
 	</tr>
 	<tr>
@@ -202,7 +209,7 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 			Add button
 		</td>
 		<td style="border-bottom: 1px solid black;">
-			Add button for adding more participants to the call is missing in CMS calls.
+			Add button for adding more participants to the call is missing in CMS calls. <br><li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
 		</td>
 	</tr>
 	<tr>
@@ -233,11 +240,14 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 			Calling
 		</td>
 		<td>
-			<li>Transfer call is currently not implemented</li><br>
-			<li>Shared lines is not working as expected</li>  <br>
-			<li>Some layouts in on-premises conferences are not working as expected</li><br>
-			<li>Audio from connected input source or receiving an incoming call while being in an existing call is not dampened</li>
-			<li>In-call UI extensions do not appear in the in-call menu</li><br>
+			<ul>
+				<li>Transfer call is currently not implemented</li><br>
+				<li>Shared lines is not working as expected</li>  <br>
+				<li>Some layouts in on-premises conferences are not working as expected </li>
+				<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li><br>
+				<li>Audio from connected input source or receiving an incoming call while being in an existing call is not dampened</li>
+				<li>In-call UI extensions do not appear in the in-call menu</li><br>
+			</ul>
 		</td> 
 	</tr>
 	<tr>
@@ -246,6 +256,7 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 		</td>
 		<td>
 			When initiating a CAPF install / upgrade operation on Unified CM with AuthString authentication, a dialog should appear on the endpoint asking the user to enter the string. This dialog do not appear in the new UI. Factory reset and re-provision is the workaround. 
+			<li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
 		</td>
 	</tr>
 	<tr>
@@ -283,6 +294,15 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 </table>
 
 See the [software upgrade section](#software)
+
+## RoomOS 10.11.3.0
+
+This is a patch release and contains patches for some of the known limitations for the new device support introduced in RoomOS 10.11.2.2. Please refer to the above [list of known limitations](#101121-52) for the new products in RoomOS 10.11.x<br> 
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.11.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.11.3.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.11.2.2 
 
@@ -476,7 +496,7 @@ Cisco Webex Board Series
 
 Added extended support for third party USB microphone and audio interfaces in addition to the existing USB headset support depending on how you configure the [xConfiguration Audio USB Mode](https://roomos.cisco.com/xapi/Configuration.Audio.USB.Mode). 
 
-Set the configuration to "Speaker" for use with an audio interface or "Microphone" to use with a USB microphone. To use with a headset it has to be configured as "MicrophoneAndSpeaker".
+The USB Mode configures whether the input or output (or both) should be used to/from the connected USB audio device. Set the configuration to "Speaker" to use the output only, "Microphone" to use input only or "SpeakerAndMicrophone" for both input and output.
 
 The below list of devices is not exhaustive, but have been tested and are known to work. 
 
@@ -762,19 +782,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_11_2_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_11_2_2.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_11_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_2_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_2_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_2_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_2_2-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_3_0-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_11_2_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_11_2_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_11_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_11_2_2.k3.cop.sgn</b><br><b>cmterm-ce10_11_2_2.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_11_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>

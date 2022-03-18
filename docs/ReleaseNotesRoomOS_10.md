@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.07 - March 2022
+D15463.08 - March 2022
 
 ## Document revision history
 
@@ -11,6 +11,11 @@ D15463.07 - March 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>8</td> 
+		<td>March 18th 2022</td> 
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.4.1</a> 99a0337a074, patch</td>
 	</tr>
 	<tr>
 		<td>7</td> 
@@ -294,6 +299,15 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 </table>
 
 See the [software upgrade section](#software)
+
+## RoomOS 10.11.4.1
+
+This is a patch release and contains bug fixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.11.4.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.11.4.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.11.3.0
 
@@ -782,19 +796,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_11_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_11_4_1.k3.cop.sgn</b><br><b>cmterm-s53200ce10_11_4_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_4_1.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_3_0-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_4_1-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_4_1-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_11_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_11_4_1.k3.cop.sgn</b><br><b>cmterm-s53400ce10_11_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_11_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_11_3_0.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_11_4_1.k3.cop.sgn</b><br><b>cmterm-ce10_11_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
@@ -1380,7 +1394,7 @@ If you see an error on the touch screen about the software not being compatible 
 	</tr>
 	<tr>
 		<td>Cisco Webex Quad Camera</td> 
-		<td>73-100746-0<br>73-100746-1</td> <td>All</td> 
+		<td>73-100746-0<br>73-100746-1<br>73-100746-2<br>73-100746-3</td> <td>All</td> 
 	</tr>
 	<tr>
 		<td>Cisco TelePresence Precision 60</td> 

@@ -625,6 +625,8 @@ We have introduced complete keyboard language support in an earlier version but 
 
 You always have access to a keyboard with english letters by clicking the globe icon next to the space bar. The globe icon is only visible if a non-english device language has been selected. 
 
+Please note that this change includes minor modifications to the keyboard layout.
+
 <i>All products</i>
 
 **WPA1 is no longer supported (Wi-Fi)** <a name='10825-112'></a>

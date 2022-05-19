@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.09 - April 2022
+D15463.10 - May 2022
 
 ## Document revision history
 
@@ -11,6 +11,11 @@ D15463.09 - April 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>10</td> 
+		<td>May 19th 2022</td> 
+		<td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.4.0</a> dc63a82915b, patch</td>
 	</tr>
 	<tr>
 		<td>9</td> 
@@ -403,6 +408,15 @@ Please note that Webex Desk use a new software package with **l4t** in the packa
 Note: Webex Desk do not have support for WebRTC in RoomOS 10.8.2.5, this will be added in a future release. 
 
 See the [software upgrade section](#software)
+
+## RoomOS 10.8.4.0
+
+This is a patch release and contains bug fixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.8.4.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.8.4.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.8.3.1
 
@@ -934,7 +948,7 @@ When downgrading from RoomOS 10 to CE9.12.x or lower, the provisioning mode sett
 
 A software version is deferred when we find critical issues within the software. This is to prevent users from downloading and installing affected software versions. Replacement software will always be in place before a software version is deferred.
 
-Older software versions will be deferred on a regular basis from the download section on https://www.cisco.com to avoid providing potential vulnerable software after security fixes. As a general rule you will be able to download the latest release and the version before. Older software versions will be removed from cisco.com regularly. 
+Older software versions will be deferred on a regular basis from the download section on https://www.cisco.com to avoid providing potential vulnerable software after security fixes. As a general rule you will be able to download the latest release and the version before. Older software versions will be removed from cisco.com regularly. Cisco always recommend using the latest available software. 
 
 **Example:**
 
@@ -947,6 +961,20 @@ If for example, RoomOS 10.3.2.x and RoomOS 10.6.2.x is released and RoomOS 10.9.
 Cisco supports the latest minor release and the previous minor release (i.e. RoomOS 10.3.2.x) and the newest (i.e. RoomOS 10.6.2.x) as a general rule. 
 
 Exceptions are made if supported hardware or particular feature deployments are depending on a major release. Deferral of older maintenance releases still applies. 
+
+## Deferred software
+<table width="100%">
+	<tr>
+		<th style="background-color: gray;"><b>Deferral date</b></th>
+		<th style="background-color: gray;"><b>Versions</b></th>
+		<th style="background-color: gray;"><b>Note</b></th>
+	</tr>
+	<tr>
+		<td>May 5th 2022</td>
+		<td>10.3.2.0<br>10.3.3.0<br>10.3.4.0<br>10.11.2.2<br>10.11.3.0</td>
+		<td>Deferred according to policy</td>
+	</tr>
+</table>
 
 ## Open and resolved caveats in RoomOS 10 <a name='defects'></a>
 

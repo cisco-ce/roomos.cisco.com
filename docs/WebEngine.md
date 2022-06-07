@@ -18,7 +18,7 @@ Oh - and remember to test on the intended devices early!
 
 * Third party web apps (Miro, Jira, Trello, Realtime Board, ...)
 * Digital signage
-* WebRTC third party calling (Zoom, Microsoft Teams, ...)
+* WebRTC third party calling (Microsoft Teams, Google, ...)
 * Webex embedded apps
 * Web views opened from macros and third party extensions (buidling maps, evacuation maps, instructional videos, ...)
 * Enterprise Content Management (cloud documents available as integration)
@@ -33,16 +33,11 @@ The web engine is based on Chromium / Qt WebEngine with V8 JavaScript. The Chrom
 
 You can inspect the version at any time by looking at the user agent, eg by visiting http://whatsmyuseragent.org/ on your device.
 
-As of May 2022, the Chrome version is 87.
+As of May 2022, the Chromium version is 87.
 
 ## Which Cisco devices are web compatible?
 
-All 'newer' devices, such as:
-
-* Boards (Webex Board, Board Pro)
-* Room Kits
-* Room systems
-* Desk series
+Any 'newer' devices, such as Boards (Webex Board, Board Pro), Room Kits, Room systems and Desk series. For a complete list, 
 
 As of CE 9.9, the web engine is available on both cloud and on-premise deployments.
 

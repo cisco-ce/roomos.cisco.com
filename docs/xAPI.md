@@ -41,7 +41,7 @@ A status contains the current state of the device, such as connected calls, the 
 
 ### xFeedback
 
-The Feedback commands are used to specify what parts of the configuration and status hierarchies to monitor. Feedback is only issued on the RS-232, Telnet or SSH session for which it is specified. If you are connecting to the device with multiple sessions, you have to define feedback individually for each session. Refer to the [Feedback mechanism](#feedback-mechanism) section.
+The Feedback commands are used to specify what parts of the configuration and status hierarchies to monitor. Feedback is only issued on the RS-232, Telnet or SSH session for which it is specified. If you are connecting to the device with multiple sessions, you have to define feedback individually for each session.
 
 ### xPreferences
 

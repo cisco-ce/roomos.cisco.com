@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.10 - May 2022
+D15463.11 - June 2022
 
 ## Document revision history
 
@@ -11,6 +11,11 @@ D15463.10 - May 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>11</td> 
+		<td>June 17th 2022</td> 
+		<td>Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.2.2</a> 5c5c0acc9e0, minor</td>
 	</tr>
 	<tr>
 		<td>10</td> 
@@ -127,7 +132,183 @@ These notes are to prepare you for the upcoming changes in RoomOS 11.
 In RoomOS 11 we are introducing a new graphical user interface that changes the current user interaction flow. The UI will become available in cloud a couple of months before released for on-premises. 
 
 NOTE: We previously announced that SNMP would be removed from RoomOS 11. RoomOS 11 will continue to support basic SNMP as before until further notice. 
+
 <br><br>
+
+# Release summary for RoomOS 10.15 <a name='10.15'></a>
+
+## Notes and warnings for this software release
+
+### The legacy media resilience protocol (FLUX) is now removed from RoomOS 10.15
+
+As mentioned in the RoomOS 10.3 release, we planned to deprecate the FLUX media resilience protocol. This change has now been committed and FLUX is no longer supported. 
+
+### Input connector quality configuration
+
+We have changed the value space of the *[xConfiguration Video Input Connector[x] Quality](https://roomos.cisco.com/xapi/Configuration.Video.Input.Connector[1].Quality/?search=Quality)* to make it more specific. Previously we had *Motion* and *Sharpness* only. We have added *Auto* that will start with sharpness quality and move towards motion if motion is detected. In previous versions *Sharpness* acted the same way as the new *Auto* configuration but is now providing *Sharpness* quality exclusively. 
+
+### Brightness reduction on Cisco Webex Room 70D
+
+Due to an issue with some of the backlight LED burning out on the Cisco Webex Room 70D screens, we have slightly lowered the brightness on these LEDs to increase their life expectancy. 
+
+### Some features are only supported with the RoomOS 11 UI Experience
+
+For this release we have some features that will only be available for the RoomOS 11 UI Experience. This means that some devices that do not have support for the new UI yet in an on-premises deployment, will have to wait in order to use those features described in the next section. This is the reason why only a select few devices is mentioned under "Supported products" for now.
+
+## RoomOS 10.15.2.2
+
+* [WebEngine Kiosk Mode](#101522-1)
+* [Persistent Web Apps on Webex Room Navigator](#101522-2)
+* [Alarm Detection on xAPI](#101522-3)
+* [Open Microsoft OneDrive whiteboards](#101522-4)
+* [Portrait cropping on Desk and Board devices](#101522-5)
+* [Added support for SNMPv3](#101522-6)
+* [USB Forwarding support added for Desk Hub](#101522-7)
+* [Test microphone with self-hear](#101522-8)
+* [Webex Edge for Devices only](#101522-9)
+    * [Webex Panorama: Support for Panorama Video in cloud calls](#101522-91)
+    * [Hot desk support](#101522-92)
+    * [Webex Client pairing using USB-C](#101522-93)
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.15.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.15.2.2&bt=custV&sts=fd&sb=fr)
+
+# RoomOS 10.15.2.2 feature descriptions 
+
+## WebEngine Kiosk Mode<a name='101522-1'></a>
+
+WebEngine Kiosk mode allow you to hide the normal user interface and render a full screen web app, tailored for your company needs. This feature is ideal for self service terminals located in a reception area or similar. The device is configured to open a URL pointing to your Web App. 
+
+[Click here for more information to get started](https://help.webex.com/en-us/article/ol1th3/Configure-Kiosk-mode-on-Board-and-Desk-Series-devices)
+
+**Supported products**
+
+Cisco Webex Board Pro Series and Desk Mini*
+
+## Persistent Web Apps on Webex Room Navigator<a name='101522-2'></a>
+
+Persistent Web Apps on a Webex Room Navigator is similar to the Kiosk Mode described above but for the Webex Room Navigator. This feature has native integration with the device xAPI. With this integration you may have one single Web App that is adapting to the device connecting to the Web App, which is suitable for multiple room deployments. This feature is great for custom user or room booking interfaces. Persistent Web App is a new mode you can select when setting up the Room Navigator for the first time.
+
+The Room Navigator must be paired to the device remotely in order to use this feature. 
+
+[Click here for more information to get started](https://help.webex.com/en-us/article/ohq3u6/Configure-a-persistent-web-app-on-Webex-Room-Navigator)
+
+**Supported products**
+
+Cisco Webex Room Navigator*
+
+## Alarm detection on xAPI<a name='101522-3'></a>
+
+When enabled, the device can detect a T3 standard alarm signal, which is the industry-standard alarm pattern in the United States, and change the [xStatus RoomAnalytics T3AlarmDetected]() from False to True. Using a macro, you can configure the device to enhance safety and security by display a web page containing instructions on how to exit the building in case of a fire alarm for example. Keep in mind that it is not guaranteed that the device will detect an alarm signal (for example, having low microphone levels may not be able to detect the signal) and you should not use this feature as a replacement for any other safety and security measures and documentation.   
+
+[Click here for more information](https://help.webex.com/en-us/article/n76l9zbb/Alarm-detection-on-Webex-Board,-Desk,-and-Room-devices)
+
+**Supported products**
+
+All products
+
+## Open Microsoft OneDrive whitebaords<a name='101522-4'></a>
+
+Store and open whiteboards from Microsoft OneDrive directly from the "Files" button on your device. 
+
+**Supported products**
+
+Cisco Webex Board Pro, Cisco Webex Desk Mini*
+
+## Portrait cropping on Desk and Board devices <a name='101522-5'></a>
+
+Portrait cropping or "People focus" is a new layout option that can be applied in any layout family. People focus optimizes the available space on the screen by removing parts of the background from the image frame, keeping the person in focus. 
+
+**Supported products**
+
+Cisco Webex Board Pro, Cisco Webex Desk Mini*
+
+[Click here for more information](https://help.webex.com/en-us/article/n997hz9/People-Focus)
+
+## Added support for SNMPv3 <a name='101522-6'></a>
+
+Cisco previously announced that SNMPv2 was going away but this was reverted. We landed on keeping the SNMPv2 implementation but also adding support for SNMPv3, which is more secure than SNMPv2. There are no changes to the MIB used (both SystemContact and SystemLocation are used by v2c and v3), so the feature is the same functionality wise. 
+
+The existing xAPI configuration is the same and the xConfiguration NetworkServices SNMP Mode applies to both SNMPv2 and SNMPv3. In order to use SNMPv3 only, you can set the xConfiguration NetworkServices SNMP CommunityName to "" (empty string). 
+
+The following new commands adds support for SNMPv3 USM (User-based Security Model)
+
+[xCommand Network SNMP USM User Add]()<br>
+[xCommand Network USM User Delete]()<br>
+[xCommand Network SNMP USM User List]()
+
+Note: 
+- The authentication protocol must be selected between SHA-224, SHA-256, SHA-384 and SHA-512
+- The PrivacyPassword is optional and will if not set, default to the AuthenticationPassword
+- The protocol is always AES
+- Authentication and privacy is always on (security level authPriv)
+
+- We do not support MD or SHA1 for authentication protocol
+- We do not support DES for privacy protocol
+- We do not support authNoPriv or noAuthNoPriv as security level
+
+**Example**
+
+On device:
+xConfiguration NetworkServices SNMP Mode: ReadWrite
+xCommand Network SNMP USM User Add Name: Name AuthenticationProtocol: SHA-512 AuthenticationPassword: myAuthenticationPassword PrivacyPassword: myPrivacyPassword
+ 
+On linux with net-snmp installed:
+snmpwalk -u Name -l authPriv -a SHA-512 -A myAuthenticationPassword -x AES -X myPrivacyPassword <endpointAddress>
+ 
+NET-SNMP version: 5.9.1 and above
+
+**Supported products**
+
+All products 
+
+## USB Forwarding support added for Desk Hub <a name='101522-7'></a>
+
+You can turn on USB forwarding for the Desk Hub's USB-A port or left USB-C port (seen from the back) using the BYOD USBForwarding configurations. When USB forwarding is enabled for a USB port, only a computer connected to the Desk Hub can use peripherals that are connected to that port; the Desk Hub itself can't find or use these peripherals.
+
+A common use case is to connect a keyboard and mouse to use with the laptop to a port with USB forwarding enabled. Alternatively, you can connect the laptop peripherals to a screen's built-in USB hub, and then connect the screen to a port with USB forwarding enabled. In both cases this allows you to connect and disconnect only one cable (the blue USB-C) when you come or leave the desk. This may also be convenient in a hot desking type of environment.
+
+## Test microphone with self-hear <a name='101522-8'></a>
+
+Self-hear is a new feature under microphone options that allows a user to test the microphone by taking a short recording of your voice and playing it back to you. Just like self-view, only with audio. This is useful to identify if you need to enable noise cancellation or voice optimization.
+
+**Supported products**
+
+Cisco Webex Desk Mini, Desk Hub, Board Pro*
+
+
+## Webex Edge for Devices only <a name='101522-9'></a>
+
+This section describes features you gain by linking the device to the cloud via Webex Edge for Devices.
+
+
+## Webex Panorama: Support for Panorama Video in cloud calls <a name='101522-91'></a>
+
+Cisco Webex Panorama now supports panorama video in cloud calls. 
+
+**Supported products**
+
+Cisco Webex Room Panorama, Room 70 Panorama
+
+
+## Hot desk support <a name='101522-92'></a>
+
+A device in Hot Desk mode allows you to sign in using your Webex Identity and convert the device into your personal device for a selected time frame or the whole day. The device automatically signs out when the booking ends, making it available for the next person. The device must have RoomOS 11 UI Experience enabled for this feature to work.  
+
+**Supported products**
+
+Cisco Webex Desk Mini, Desk Hub*
+
+
+## Webex Client pairing using USB-C <a name='101522-93'></a>
+
+When pairing a USB-C cable from your Webex Desk device to your laptop, your Webex client will automatically pair to the device, so you can make calls from the device. This creates a more consistent pairing method (compared to ultrasound or manual pairing over the network) where everything goes over the USB-C cable, audio, video and pairing signal. 
+
+Also note: Connecting a USB-C cable to a device in hot desk mode will automatically start the booking sequence and the registration process. 
+
+
+<font size='2'>* Requires RoomOS 11 UI Experience</font>
+
+<hr>
 
 # Release summary for RoomOS 10.11 <a name='10.11'></a>
 

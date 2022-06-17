@@ -232,9 +232,9 @@ The existing xAPI configuration is the same and the xConfiguration NetworkServic
 
 The following new commands adds support for SNMPv3 USM (User-based Security Model)
 
-[xCommand Network SNMP USM User Add]()<br>
-[xCommand Network USM User Delete]()<br>
-[xCommand Network SNMP USM User List]()
+[xCommand Network SNMP USM User Add](https://roomos.cisco.com/xapi/Command.Network.SNMP.USM.User.Add/)<br>
+[xCommand Network SNMP USM User Delete](https://roomos.cisco.com/xapi/Command.Network.SNMP.USM.User.Delete/)<br>
+[xCommand Network SNMP USM User List](https://roomos.cisco.com/xapi/Command.Network.SNMP.USM.User.List/)
 
 Note: 
 - The authentication protocol must be selected between SHA-224, SHA-256, SHA-384 and SHA-512

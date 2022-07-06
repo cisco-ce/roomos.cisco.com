@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.11 - June 2022
+D15463.12 - July 2022
 
 ## Document revision history
 
@@ -11,6 +11,11 @@ D15463.11 - June 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>12</td> 
+		<td>July 6th 2022</td> 
+		<td>Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.3.0</a> 7c44f1ceb87, patch</td>
 	</tr>
 	<tr>
 		<td>11</td> 
@@ -154,6 +159,15 @@ Due to an issue with some of the backlight LED burning out on the Cisco Webex Ro
 ### Some features are only supported with the RoomOS 11 UI Experience
 
 For this release we have some features that will only be available for the RoomOS 11 UI Experience. This means that some devices that do not have support for the new UI yet in an on-premises deployment, will have to wait in order to use those features described in the next section. This is the reason why only a select few devices is mentioned under "Supported products" for now.
+
+## RoomOS 10.15.3.0
+
+RoomOS 10.15.3.0 is a patch release to add support for Cisco Webex Desk Mini with compatibility level **1**, and will also be the minimum software version for this device. Please refer to the [desk compatibility matrix](#compatibility-desk) in this release note.<br> 
+
+* <b>Bug fixes</b>
+    * No bugfixes in this release
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.15.2.2
 
@@ -1007,19 +1021,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_11_5_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_11_5_2.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_15_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_5_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_5_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_11_5_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_11_5_2-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_3_0-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_11_5_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_11_5_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_15_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_11_5_2.k3.cop.sgn</b><br><b>cmterm-ce10_11_5_2.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_15_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
@@ -1557,7 +1571,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 
 ## Cisco Webex Desk Series Software Compatibility Matrix <a name="compatibility-desk"></a>
 
-<table  width="100%">
+<table width="100%">
 	<tr>
 		<th>Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
@@ -1566,11 +1580,11 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Limited Edition</td> 
+		<td style="border-bottom: 1px solid black;">Cisco Webex Desk Limited Edition</td> 
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td rowspan="3">Cisco Webex Desk </td> 
+		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Webex Desk </td> 
 	</tr>
 	<tr>
 		<td>0</td> <td>10.8.2.5</td>
@@ -1579,8 +1593,13 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>1</td> <td>10.8.3.1</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Mini</td> 
-		<td>0</td> <td>10.11.2.2</td> 
+		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Webex Desk Mini</td>
+	</tr>
+	<tr>
+		<td>0</td> <td>10.11.2.2</td>
+	</tr>
+	<tr>
+		<td>1</td> <td>10.15.3.0</td>
 	</tr>
 	<tr>
 		<td>Cisco Webex Desk Hub</td> 

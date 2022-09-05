@@ -13,7 +13,10 @@ function makeList() {
       list.push({ name, url: file });
     }
   });
-  console.log(JSON.stringify(list, null, 2));
+//  console.log(JSON.stringify(list, null, 2));
+  fs.writeFileSync('./schemas.json', JSON.stringify(list, null, 2));
+  const names = list.map(i => i.name).join(', ');
+  console.log('wrote schemas.json with', names);
 }
 
 makeList();

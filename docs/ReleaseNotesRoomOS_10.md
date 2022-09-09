@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.12 - July 2022
+D15463.13 - September 2022
 
 ## Document revision history
 
@@ -11,6 +11,14 @@ D15463.12 - July 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>13</td> 
+		<td>September 9th 2022</td> 
+		<td>
+			Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.4.1</a> a4d3db640f0, patch<br>
+			Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.6.0</a> cb912c2adbe, patch
+		</td>
 	</tr>
 	<tr>
 		<td>12</td> 
@@ -138,6 +146,8 @@ In RoomOS 11 we are introducing a new graphical user interface that changes the 
 
 NOTE: We previously announced that SNMP would be removed from RoomOS 11. RoomOS 11 will continue to support basic SNMP as before until further notice. 
 
+NOTE: Facility Service will soon be deprecated from newer software as quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel). 
+
 <br><br>
 
 # Release summary for RoomOS 10.15 <a name='10.15'></a>
@@ -159,6 +169,15 @@ Due to an issue with some of the backlight LED burning out on the Cisco Webex Ro
 ### Some features are only supported with the RoomOS 11 UI Experience
 
 For this release we have some features that will only be available for the RoomOS 11 UI Experience. This means that some devices that do not have support for the new UI yet in an on-premises deployment, will have to wait in order to use those features described in the next section. This is the reason why only a select few devices is mentioned under "Supported products" for now.
+
+## RoomOS 10.15.4.1
+
+This is a patch release and contains bugfixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.15.4.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.15.4.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.15.3.0
 
@@ -504,6 +523,15 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 </table>
 
 See the [software upgrade section](#software)
+
+## RoomOS 10.11.6.0
+
+This is a patch release and contains bugfixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.11.6.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.11.6.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.11.5.2
 
@@ -1021,19 +1049,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_15_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53200ce10_15_4_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_3_0-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_4_1-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_4_1-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_15_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53400ce10_15_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_15_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_15_3_0.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-ce10_15_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
@@ -1163,6 +1191,11 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<th style="background-color: gray;"><b>Deferral date</b></th>
 		<th style="background-color: gray;"><b>Versions</b></th>
 		<th style="background-color: gray;"><b>Note</b></th>
+	</tr>
+	<tr>
+		<td>September 9th 2022</td>
+		<td>10.8.4.0<br>10.8.3.1<br>10.8.2.5</td>
+		<td>Deferred according to policy</td>
 	</tr>
 	<tr>
 		<td>May 5th 2022</td>
@@ -1339,6 +1372,18 @@ You will see yourself on the screen as an indication of being filmed by the came
 		<td>Cisco Webex Room Navigator</td> <td>
 <b>Keyboard clicks inaudible on some units</b><br>
 Some units will not produce audible key clicks when tapping on the keyboard. This is not an issue from RoomOS 10.8.2.5.
+		</td>
+	</tr>
+	<tr>
+		<td>Cisco Webex Room Panorama</td> <td>
+<b>Cisco Precision 60 camera</b><br>
+Cisco Webex Room Panorama do not have support for Precision 60 cameras. Please note this when upgrading a Room 70 into a Room 70 Panorama, in case you have one connected and want to keep using it. 
+		</td>
+	</tr>
+		<tr>
+		<td>Encryption and Ciphers</td> <td>
+<b>Supported Ciphers</b><br>
+You can check which ciphers that the device supports for its different services (HTTPS Server, SIP TLS, Syslog TLS, HTTPS Client) by typing [xCommand Security Ciphers List](https://roomos.cisco.com/xapi/Command.Security.Ciphers.List/) in the xAPI. The supported ciphers may change between versions. 
 		</td>
 	</tr>
 </table>

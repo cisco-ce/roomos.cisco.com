@@ -45,6 +45,13 @@
     </tr>
     <tr>
       <td>
+        <a href="https://devnetsandbox.cisco.com/RM/Diagram/Index/d454dc40-f2f2-45d0-b5f4-d61f77e5b14e?diagramType=Topology" target="_blank">DevNet Sandboxes</a>
+      <td>Book and try a real-life video device from remote withouth actually owning one.</td>
+      <td><img class="logo" src="/docs/images/logos/devnet.png" /></td>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="https://github.com/CiscoDevNet/roomdevices-macros-samples/" target="_blank">Macro examples</a>
       <td>Git repository with relevant macro examples.</td>
       <td><img class="logo" src="/docs/images/logos/github.png" /></td>

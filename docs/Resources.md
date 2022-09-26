@@ -59,6 +59,13 @@
     </tr>
     <tr>
       <td>
+        <a href="https://cisco-ce.github.io/roomos-samples/" target="_blank">Web app examples</a>
+      <td>Git repository with relevant, hosted web app examples.</td>
+      <td><img class="logo" src="/docs/images/logos/github.png" /></td>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="https://momentum.design/" target="_blank">Momentum design</a>
       <td>Cisco / Webex design guideslines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
       <td><img class="logo" src="https://momentum.design/apple-touch-icon-57x57.png" /></td>

@@ -808,66 +808,6 @@
                 "Microphone",
                 "ARC",
                 "WebView",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier of the local input. It was generated when the local input was created with the xCommand Audio LocalInput Add command.",
-            "name": "InputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38762,
-      "normPath": "Audio LocalInput AddConnector",
-      "path": "Audio LocalInput AddConnector",
-      "products": [
-        "barents",
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Attach an input connector to the local input given by the input ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. A connector can only be attached to one local input. Run xStatus Audio Input LocalInput to get an overview of all local inputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type. ARC: Receives audio from the ARC (Audio Return Channel) on the corresponding HDMI output. HDMI: Receives audio from an HDMI input. Microphone: Receives audio from an analog microphone input. USBInterface: Receives audio from a microphone or audio interface connected to a USB connector. WebView: Receives audio from the embedded web browser.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Microphone",
-                "ARC",
-                "WebView",
                 "Ethernet",
                 "USBInterface"
               ],
@@ -896,7 +836,10 @@
       "normPath": "Audio LocalInput AddConnector",
       "path": "Audio LocalInput AddConnector",
       "products": [
+        "barents",
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
       ],
       "type": "Command"
@@ -964,66 +907,6 @@
                 "Microphone",
                 "ARC",
                 "WebView",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier for the local input. It was generated when the local input was created with the xCommand Audio LocalInput Add command.",
-            "name": "InputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38765,
-      "normPath": "Audio LocalInput RemoveConnector",
-      "path": "Audio LocalInput RemoveConnector",
-      "products": [
-        "barents",
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Detach an input connector from the local input given by the input ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. Run xStatus Audio Input LocalInput to get an overview of all local inputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type. ARC: Receives audio from the ARC (Audio Return Channel) on the corresponding HDMI output. HDMI: Receives audio from an HDMI input. Microphone: Receives audio from an analog microphone input. USBInterface: Receives audio from a microphone or audio interface connected to a USB connector. WebView: Receives audio from the embedded web browser.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Microphone",
-                "ARC",
-                "WebView",
                 "Ethernet",
                 "USBInterface"
               ],
@@ -1052,7 +935,10 @@
       "normPath": "Audio LocalInput RemoveConnector",
       "path": "Audio LocalInput RemoveConnector",
       "products": [
+        "barents",
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
       ],
       "type": "Command"
@@ -1280,122 +1166,6 @@
             }
           },
           {
-            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Line",
-                "ARC",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
-            "name": "OutputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38769,
-      "normPath": "Audio LocalOutput AddConnector",
-      "path": "Audio LocalOutput AddConnector",
-      "products": [
-        "barents"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Attach an output connector to the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. A connector can only be attached to one local output. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. InternalSpeaker: Delivers audio to the device's internal speakers. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Line",
-                "InternalSpeaker",
-                "ARC",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
-            "name": "OutputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38918,
-      "normPath": "Audio LocalOutput AddConnector",
-      "path": "Audio LocalOutput AddConnector",
-      "products": [
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Attach an output connector to the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. A connector can only be attached to one local output. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
             "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. InternalSpeaker: Delivers audio to the device's internal speakers. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
             "name": "ConnectorType",
             "required": true,
@@ -1433,8 +1203,68 @@
       "normPath": "Audio LocalOutput AddConnector",
       "path": "Audio LocalOutput AddConnector",
       "products": [
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "description": "Attach an output connector to the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. A connector can only be attached to one local output. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
+        "params": [
+          {
+            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
+            "name": "ConnectorId",
+            "required": true,
+            "valuespace": {
+              "Max": "8",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          },
+          {
+            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
+            "name": "ConnectorType",
+            "required": true,
+            "valuespace": {
+              "Values": [
+                "ARC",
+                "Ethernet",
+                "HDMI",
+                "Line",
+                "USBInterface"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
+            "name": "OutputId",
+            "required": true,
+            "valuespace": {
+              "Max": "65534",
+              "Min": "0",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin"
+        ]
+      },
+      "id": 41605,
+      "normPath": "Audio LocalOutput AddConnector",
+      "path": "Audio LocalOutput AddConnector",
+      "products": [
+        "barents"
       ],
       "type": "Command"
     },
@@ -1598,122 +1428,6 @@
             }
           },
           {
-            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Line",
-                "ARC",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
-            "name": "OutputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38773,
-      "normPath": "Audio LocalOutput RemoveConnector",
-      "path": "Audio LocalOutput RemoveConnector",
-      "products": [
-        "barents"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Detach an output connector from the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. InternalSpeaker: Delivers audio to the device's internal speakers. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
-                "HDMI",
-                "Line",
-                "InternalSpeaker",
-                "ARC",
-                "USBInterface"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
-            "name": "OutputId",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 38919,
-      "normPath": "Audio LocalOutput RemoveConnector",
-      "path": "Audio LocalOutput RemoveConnector",
-      "products": [
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Detach an output connector from the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
-        "params": [
-          {
-            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
             "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. InternalSpeaker: Delivers audio to the device's internal speakers. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
             "name": "ConnectorType",
             "required": true,
@@ -1751,8 +1465,68 @@
       "normPath": "Audio LocalOutput RemoveConnector",
       "path": "Audio LocalOutput RemoveConnector",
       "products": [
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "description": "Detach an output connector from the local output given by the output ID. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector. Run xStatus Audio Output LocalOutput to get an overview of all local outputs. This command is mainly intended for internal use by the Audio Console. If you don't use Audio Console, you need to manually add the command in a startup script, or use the macro framework, to make the definition persistent over a reboot.",
+        "params": [
+          {
+            "description": "Select a connector. The connectors' numbers are printed on the codec connector panel.",
+            "name": "ConnectorId",
+            "required": true,
+            "valuespace": {
+              "Max": "8",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          },
+          {
+            "description": "Select the connector type. ARC: Delivers audio to the ARC (Audio Return Channel) on the corresponding HDMI input. HDMI: Delivers audio to an HDMI output. Line: Delivers audio to an analog audio line output. USBInterface: Delivers audio to an audio interface connected to a USB connector.",
+            "name": "ConnectorType",
+            "required": true,
+            "valuespace": {
+              "Values": [
+                "ARC",
+                "Ethernet",
+                "HDMI",
+                "Line",
+                "USBInterface"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "description": "The unique identifier of the local output. It was generated when the local output was created with the xCommand Audio LocalOutput Add command.",
+            "name": "OutputId",
+            "required": true,
+            "valuespace": {
+              "Max": "65534",
+              "Min": "0",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin"
+        ]
+      },
+      "id": 41606,
+      "normPath": "Audio LocalOutput RemoveConnector",
+      "path": "Audio LocalOutput RemoveConnector",
+      "products": [
+        "barents"
       ],
       "type": "Command"
     },
@@ -3205,7 +2979,9 @@
                 "TelephoneCall",
                 "VideoCall",
                 "VolumeAdjust",
-                "WakeUp"
+                "WakeUp",
+                "RecordingStart",
+                "WebexAssistantCapturingNotes"
               ],
               "type": "Literal"
             }
@@ -3219,7 +2995,7 @@
           "User"
         ]
       },
-      "id": 36348,
+      "id": 41987,
       "normPath": "Audio Sound Play",
       "path": "Audio Sound Play",
       "products": [
@@ -3511,95 +3287,6 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "default": "5",
-            "description": "Choose the number of steps to decrease the volume with. One step is 0.5 dB.",
-            "name": "Steps",
-            "required": false,
-            "valuespace": {
-              "Max": "10",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36355,
-      "normPath": "Audio Volume Decrease",
-      "path": "Audio Volume Decrease",
-      "products": [
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "name": "Device",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "Internal",
-                "HeadsetBluetooth",
-                "HeadsetUSB",
-                "HandsetUSB"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "default": "5",
-            "description": "Choose the number of steps to decrease the volume with. One step is 0.5 dB.",
-            "name": "Steps",
-            "required": false,
-            "valuespace": {
-              "Max": "10",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 38523,
-      "normPath": "Audio Volume Decrease",
-      "path": "Audio Volume Decrease",
-      "products": [
-        "bandai",
-        "baymax",
-        "helix_55",
-        "helix_75",
-        "octavio"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
         "description": "Decrease the volume on the device. By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior.",
         "params": [
           {
@@ -3691,7 +3378,95 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
+        "params": [
+          {
+            "default": "5",
+            "description": "Choose the number of steps to decrease the volume with. One step is 0.5 dB.",
+            "name": "Steps",
+            "required": false,
+            "valuespace": {
+              "Max": "10",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41735,
+      "normPath": "Audio Volume Decrease",
+      "path": "Audio Volume Decrease",
+      "products": [
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Device",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "Internal",
+                "HeadsetBluetooth",
+                "HeadsetUSB",
+                "HandsetUSB"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "default": "5",
+            "description": "Choose the number of steps to decrease the volume with. One step is 0.5 dB.",
+            "name": "Steps",
+            "required": false,
+            "valuespace": {
+              "Max": "10",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41750,
+      "normPath": "Audio Volume Decrease",
+      "path": "Audio Volume Decrease",
+      "products": [
+        "bandai",
+        "baymax",
+        "helix_55",
+        "helix_75",
+        "octavio"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "params": [
           {
             "name": "Device",
@@ -3725,103 +3500,15 @@
         "role": [
           "Admin",
           "User"
-        ]
+        ],
+        "description": "Decrease the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is decreased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
       },
-      "id": 39383,
+      "id": 41857,
       "normPath": "Audio Volume Decrease",
       "path": "Audio Volume Decrease",
       "products": [
         "polaris",
         "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "default": "5",
-            "description": "Choose the number of steps to increase the volume with. One step is 0.5 dB.",
-            "name": "Steps",
-            "required": false,
-            "valuespace": {
-              "Max": "10",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36356,
-      "normPath": "Audio Volume Increase",
-      "path": "Audio Volume Increase",
-      "products": [
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "name": "Device",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "Internal",
-                "HeadsetBluetooth",
-                "HeadsetUSB",
-                "HandsetUSB"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "default": "5",
-            "description": "Choose the number of steps to increase the volume with. One step is 0.5 dB.",
-            "name": "Steps",
-            "required": false,
-            "valuespace": {
-              "Max": "10",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 38524,
-      "normPath": "Audio Volume Increase",
-      "path": "Audio Volume Increase",
-      "products": [
-        "bandai",
-        "baymax",
-        "helix_55",
-        "helix_75",
-        "octavio"
       ],
       "type": "Command"
     },
@@ -3920,7 +3607,95 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
+        "params": [
+          {
+            "default": "5",
+            "description": "Choose the number of steps to increase the volume with. One step is 0.5 dB.",
+            "name": "Steps",
+            "required": false,
+            "valuespace": {
+              "Max": "10",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41736,
+      "normPath": "Audio Volume Increase",
+      "path": "Audio Volume Increase",
+      "products": [
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Device",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "Internal",
+                "HeadsetBluetooth",
+                "HeadsetUSB",
+                "HandsetUSB"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "default": "5",
+            "description": "Choose the number of steps to increase the volume with. One step is 0.5 dB.",
+            "name": "Steps",
+            "required": false,
+            "valuespace": {
+              "Max": "10",
+              "Min": "1",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41751,
+      "normPath": "Audio Volume Increase",
+      "path": "Audio Volume Increase",
+      "products": [
+        "bandai",
+        "baymax",
+        "helix_55",
+        "helix_75",
+        "octavio"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "params": [
           {
             "name": "Device",
@@ -3954,44 +3729,13 @@
         "role": [
           "Admin",
           "User"
-        ]
+        ],
+        "description": "Increase the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset). By default, the volume is increased by 5 steps (each step is 0.5 dB). Use the Steps parameter if you want to override the default behavior. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
       },
-      "id": 39384,
+      "id": 41858,
       "normPath": "Audio Volume Increase",
       "path": "Audio Volume Increase",
       "products": [
-        "polaris",
-        "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Mute the volume on the selected audio unit (built-in loudspeakers, headsets, or handset). Refer to the xStatus Audio SelectedDevice and xCommand Audio Select commands for more information about the selected audio unit.",
-        "params": [],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36357,
-      "normPath": "Audio Volume Mute",
-      "path": "Audio Volume Mute",
-      "products": [
-        "bandai",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "helix_55",
-        "helix_75",
-        "octavio",
         "polaris",
         "polaris_light"
       ],
@@ -4053,86 +3797,31 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "description": "Select the gain level. 70 equals 0 dB gain, and 100 equals 15 dB gain.",
-            "name": "Level",
-            "required": true,
-            "valuespace": {
-              "Max": "100",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
+        "params": [],
         "privacyimpact": "False",
         "read": [],
         "role": [
           "Admin",
           "User"
-        ]
+        ],
+        "description": "Mute the volume on the selected audio unit (built-in loudspeakers, headsets, or handset). Refer to the xStatus Audio SelectedDevice and xCommand Audio Select commands for more information about the selected audio unit."
       },
-      "id": 36358,
-      "normPath": "Audio Volume Set",
-      "path": "Audio Volume Set",
+      "id": 41737,
+      "normPath": "Audio Volume Mute",
+      "path": "Audio Volume Mute",
       "products": [
+        "bandai",
+        "baymax",
         "darling_10_55",
         "darling_10_70",
         "darling_15_55",
         "darling_15_70",
-        "darling_15_85"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "name": "Device",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "Internal",
-                "HeadsetBluetooth",
-                "HeadsetUSB",
-                "HandsetUSB"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "description": "Select the gain level. 70 equals 0 dB gain, and 100 equals 15 dB gain.",
-            "name": "Level",
-            "required": true,
-            "valuespace": {
-              "Max": "100",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 38525,
-      "normPath": "Audio Volume Set",
-      "path": "Audio Volume Set",
-      "products": [
-        "bandai",
-        "baymax",
+        "darling_15_85",
         "helix_55",
         "helix_75",
-        "octavio"
+        "octavio",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Command"
     },
@@ -4229,7 +3918,93 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
+        "params": [
+          {
+            "description": "Select the gain level. 70 equals 0 dB gain, and 100 equals 15 dB gain.",
+            "name": "Level",
+            "required": true,
+            "valuespace": {
+              "Max": "100",
+              "Min": "0",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41738,
+      "normPath": "Audio Volume Set",
+      "path": "Audio Volume Set",
+      "products": [
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Device",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "Internal",
+                "HeadsetBluetooth",
+                "HeadsetUSB",
+                "HandsetUSB"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "description": "Select the gain level. 70 equals 0 dB gain, and 100 equals 15 dB gain.",
+            "name": "Level",
+            "required": true,
+            "valuespace": {
+              "Max": "100",
+              "Min": "0",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41752,
+      "normPath": "Audio Volume Set",
+      "path": "Audio Volume Set",
+      "products": [
+        "bandai",
+        "baymax",
+        "helix_55",
+        "helix_75",
+        "octavio"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "params": [
           {
             "name": "Device",
@@ -4262,78 +4037,15 @@
         "role": [
           "Admin",
           "User"
-        ]
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to a specified level. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
       },
-      "id": 39385,
+      "id": 41859,
       "normPath": "Audio Volume Set",
       "path": "Audio Volume Set",
       "products": [
         "polaris",
         "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36359,
-      "normPath": "Audio Volume SetToDefault",
-      "path": "Audio Volume SetToDefault",
-      "products": [
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
-        "params": [
-          {
-            "name": "Device",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "Internal",
-                "HeadsetBluetooth",
-                "HeadsetUSB",
-                "HandsetUSB"
-              ],
-              "type": "Literal"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 38526,
-      "normPath": "Audio Volume SetToDefault",
-      "path": "Audio Volume SetToDefault",
-      "products": [
-        "bandai",
-        "baymax",
-        "helix_55",
-        "helix_75",
-        "octavio"
       ],
       "type": "Command"
     },
@@ -4407,7 +4119,70 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select.",
+        "params": [],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41739,
+      "normPath": "Audio Volume SetToDefault",
+      "path": "Audio Volume SetToDefault",
+      "products": [
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Device",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "Internal",
+                "HeadsetBluetooth",
+                "HeadsetUSB",
+                "HandsetUSB"
+              ],
+              "type": "Literal"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
+      },
+      "id": 41753,
+      "normPath": "Audio Volume SetToDefault",
+      "path": "Audio Volume SetToDefault",
+      "products": [
+        "bandai",
+        "baymax",
+        "helix_55",
+        "helix_75",
+        "octavio"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "params": [
           {
             "name": "Device",
@@ -4429,9 +4204,10 @@
         "role": [
           "Admin",
           "User"
-        ]
+        ],
+        "description": "Set the volume on one of the video conferencing device's audio units (built-in loudspeakers, headsets, or handset) to the default level as defined in the xConfiguration Audio DefaultVolume setting. You can use the optional Device parameter to specify which audio unit to address. The most recently selected unit is chosen if you don't specify a unit (see xStatus Audio SelectedDevice). Also refer to xCommand Audio Select."
       },
-      "id": 39386,
+      "id": 41860,
       "normPath": "Audio Volume SetToDefault",
       "path": "Audio Volume SetToDefault",
       "products": [
@@ -4637,90 +4413,6 @@
             "required": true,
             "valuespace": {
               "Values": [
-                "Microphone"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "default": "Off",
-            "description": "The device can measure the pairing quality (value 0 to 100). With no other ultrasound sources in the same room this value will be high, but if there are other ultrasound sources in the same room the value will be low. If using the device's local web interface to monitor the signal levels, you must check Show Pairing Rate to see the pairing quality.",
-            "name": "IncludePairingQuality",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "On",
-                "Off"
-              ],
-              "type": "Literal"
-            }
-          },
-          {
-            "default": "100",
-            "description": "Specifies the update interval in milliseconds of the VuMeter values. The values can be specified in 10 ms steps.",
-            "name": "IntervalMs",
-            "required": false,
-            "valuespace": {
-              "Max": "1000",
-              "Min": "10",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "default": "BeforeAEC",
-            "description": "Determines whether the VU meter should measure the audio signal level before or after acoustic echo cancellation processing (AEC). If measured before AEC, the signal includes both the sound played out by the device's loudspeakers and the sound generated locally in the room. If measured after AEC, only sound generated locally in the room is included. A local presentation audio track and remote participants' voices are examples of sound played out by the device's loudspeakers, while local participants' voices are examples of sound generated locally in the room.",
-            "name": "Source",
-            "required": false,
-            "valuespace": {
-              "Values": [
-                "BeforeAEC",
-                "AfterAEC"
-              ],
-              "type": "Literal"
-            }
-          }
-        ],
-        "privacyimpact": "True",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 41475,
-      "normPath": "Audio VuMeter Start",
-      "path": "Audio VuMeter Start",
-      "products": [
-        "barents",
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Start a VU meter to measure the audio signal level on the specified connector. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector and behavior. The VU meter measures the input level for frequencies below 20 kHz. You can monitor the measured signal levels on the device's local web interface (Settings > Audio and Video), or you can use the xFeedback and xEvents commands. ",
-        "params": [
-          {
-            "description": "The meaning of the connector number depends on the ConnectorType. Refer to the ConnectorType description for details.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
                 "Microphone",
                 "Ethernet"
               ],
@@ -4777,7 +4469,10 @@
       "normPath": "Audio VuMeter Start",
       "path": "Audio VuMeter Start",
       "products": [
+        "barents",
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
       ],
       "type": "Command"
@@ -5194,52 +4889,6 @@
             "required": true,
             "valuespace": {
               "Values": [
-                "Microphone"
-              ],
-              "type": "Literal"
-            }
-          }
-        ],
-        "privacyimpact": "True",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 41476,
-      "normPath": "Audio VuMeter Stop",
-      "path": "Audio VuMeter Stop",
-      "products": [
-        "barents",
-        "barents_70d",
-        "barents_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Stop the VU meter on the specified connector. You must specify both the connector's type and number (ConnectorType, ConnectorId) to uniquely identify the connector.",
-        "params": [
-          {
-            "description": "Specify the connector number. In general, the connector number is a unique ID that identifies the microphone input. The connector numbers available depend on the device. Refer to the Audio VuMeter Start command for a detailed description.",
-            "name": "ConnectorId",
-            "required": true,
-            "valuespace": {
-              "Max": "8",
-              "Min": "1",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
-            "description": "Select the connector type. The connector types available depend on the device. Refer to the Audio VuMeter Start command for a detailed description.",
-            "name": "ConnectorType",
-            "required": true,
-            "valuespace": {
-              "Values": [
                 "Microphone",
                 "Ethernet"
               ],
@@ -5258,7 +4907,10 @@
       "normPath": "Audio VuMeter Stop",
       "path": "Audio VuMeter Stop",
       "products": [
+        "barents",
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
       ],
       "type": "Command"
@@ -7360,7 +7012,7 @@
     {
       "attributes": {
         "access": "public-api",
-        "backend": "onprem",
+        "backend": "any",
         "description": "Put a call on hold.",
         "params": [
           {
@@ -7397,7 +7049,7 @@
           "User"
         ]
       },
-      "id": 41359,
+      "id": 41882,
       "normPath": "Call Hold",
       "path": "Call Hold",
       "products": [
@@ -7601,7 +7253,7 @@
     {
       "attributes": {
         "access": "public-api",
-        "backend": "onprem",
+        "backend": "any",
         "description": "Resume a call that have been put on hold.",
         "params": [
           {
@@ -7624,7 +7276,7 @@
           "User"
         ]
       },
-      "id": 40014,
+      "id": 41883,
       "normPath": "Call Resume",
       "path": "Call Resume",
       "products": [
@@ -9963,38 +9615,6 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Activate Best Overview mode. Requires that xConfiguration Cameras SpeakerTrack Mode is set to Auto (default).",
-        "params": [],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36424,
-      "normPath": "Cameras SpeakerTrack Activate",
-      "path": "Cameras SpeakerTrack Activate",
-      "products": [
-        "bandai",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "helix_55",
-        "helix_75",
-        "octavio",
-        "polaris",
-        "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
         "description": "Activate SpeakerTrack mode. Requires that xConfiguration Cameras SpeakerTrack Mode is set to Auto (default). This command applies only to devices with cameras that support speaker tracking.",
         "params": [],
         "privacyimpact": "False",
@@ -10060,6 +9680,38 @@
       "path": "Cameras SpeakerTrack Activate",
       "products": [
         "havella"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Activate Best Overview mode. Requires that xConfiguration Cameras SpeakerTrack Mode is set to Auto (default)."
+      },
+      "id": 41740,
+      "normPath": "Cameras SpeakerTrack Activate",
+      "path": "Cameras SpeakerTrack Activate",
+      "products": [
+        "bandai",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "helix_55",
+        "helix_75",
+        "octavio",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Command"
     },
@@ -10149,38 +9801,6 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Dectivate Best Overview mode.",
-        "params": [],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 36425,
-      "normPath": "Cameras SpeakerTrack Deactivate",
-      "path": "Cameras SpeakerTrack Deactivate",
-      "products": [
-        "bandai",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "helix_55",
-        "helix_75",
-        "octavio",
-        "polaris",
-        "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
         "description": "Deactivate SpeakerTrack mode. This command applies only to devices with cameras that support speaker tracking.",
         "params": [],
         "privacyimpact": "False",
@@ -10246,6 +9866,38 @@
       "path": "Cameras SpeakerTrack Deactivate",
       "products": [
         "havella"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "description": "Dectivate Best Overview mode."
+      },
+      "id": 41741,
+      "normPath": "Cameras SpeakerTrack Deactivate",
+      "path": "Cameras SpeakerTrack Deactivate",
+      "products": [
+        "bandai",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "helix_55",
+        "helix_75",
+        "octavio",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Command"
     },
@@ -12535,17 +12187,6 @@
             }
           },
           {
-            "description": "You can select a skin tone for reactions that use hand gestures, such as thumbs up and clapping hands. 1 is no skin tone, 2 is the lightest skin tone, and 6 the darkest skin tone option.",
-            "name": "ReactionTone",
-            "required": false,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          },
-          {
             "description": "Choose the type of emoji to send.",
             "name": "ReactionType",
             "required": true,
@@ -12576,65 +12217,9 @@
           "User"
         ]
       },
-      "id": 41453,
+      "id": 41633,
       "normPath": "Conference Reaction Send",
       "path": "Conference Reaction Send",
-      "products": [
-        "bandai",
-        "barents",
-        "barents_70d",
-        "barents_70i",
-        "barents_70s",
-        "barents_82i",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "havella",
-        "helix_55",
-        "helix_75",
-        "hopen",
-        "octavio",
-        "polaris",
-        "polaris_light",
-        "spitsbergen",
-        "svea",
-        "svea_55d",
-        "svea_70d",
-        "svea_70s"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "description": "Selects the skin tone to be used for the emojis sent hereafter. Skin tones are available for reactions that use hand gestures, such as thumbs up and clapping hands. For personal mode devices the skin tone will persist between calls; for shared mode devices it will be reset when a call ends. The device must either be registered to the Webex cloud service or linked to Webex Edge for Devices.",
-        "params": [
-          {
-            "description": "1 is no skin tone, 2 is the lightest skin tone, and 6 the darkest skin tone option.",
-            "name": "ReactionTone",
-            "required": true,
-            "valuespace": {
-              "Max": "65534",
-              "Min": "0",
-              "Step": "1",
-              "type": "Integer"
-            }
-          }
-        ],
-        "privacyimpact": "True",
-        "read": [],
-        "role": [
-          "Admin",
-          "User"
-        ]
-      },
-      "id": 41454,
-      "normPath": "Conference Reaction Tone",
-      "path": "Conference Reaction Tone",
       "products": [
         "bandai",
         "barents",
@@ -12859,6 +12444,60 @@
       "id": 40098,
       "normPath": "Conference Recording Stop",
       "path": "Conference Recording Stop",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "SkinTone",
+            "required": true,
+            "valuespace": {
+              "Max": "65534",
+              "Min": "0",
+              "Step": "1",
+              "type": "Integer"
+            }
+          }
+        ],
+        "privacyimpact": "True",
+        "read": [],
+        "role": [
+          "Admin",
+          "User"
+        ]
+      },
+      "id": 42001,
+      "normPath": "Conference SkinTone",
+      "path": "Conference SkinTone",
       "products": [
         "bandai",
         "barents",
@@ -14846,7 +14485,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -14858,7 +14497,7 @@
           "Admin"
         ]
       },
-      "id": 38608,
+      "id": 41594,
       "normPath": "Macros Macro Activate",
       "path": "Macros Macro Activate",
       "products": [
@@ -14900,7 +14539,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -14912,7 +14551,7 @@
           "Admin"
         ]
       },
-      "id": 38609,
+      "id": 41595,
       "normPath": "Macros Macro Deactivate",
       "path": "Macros Macro Deactivate",
       "products": [
@@ -14967,7 +14606,7 @@
             "name": "Name",
             "required": false,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -14979,7 +14618,7 @@
           "Admin"
         ]
       },
-      "id": 41455,
+      "id": 41596,
       "normPath": "Macros Macro Get",
       "path": "Macros Macro Get",
       "products": [
@@ -15021,7 +14660,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -15033,7 +14672,7 @@
           "Admin"
         ]
       },
-      "id": 38611,
+      "id": 41597,
       "normPath": "Macros Macro Remove",
       "path": "Macros Macro Remove",
       "products": [
@@ -15118,7 +14757,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -15128,7 +14767,7 @@
             "name": "NewName",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -15153,7 +14792,7 @@
           "Admin"
         ]
       },
-      "id": 38613,
+      "id": 41598,
       "normPath": "Macros Macro Rename",
       "path": "Macros Macro Rename",
       "products": [
@@ -15195,7 +14834,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -15223,7 +14862,7 @@
           "Admin"
         ]
       },
-      "id": 38614,
+      "id": 41599,
       "normPath": "Macros Macro Roles Set",
       "path": "Macros Macro Roles Set",
       "products": [
@@ -15266,7 +14905,7 @@
             "name": "Name",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "250",
               "MinLength": "0",
               "type": "String"
             }
@@ -15304,7 +14943,7 @@
           "Admin"
         ]
       },
-      "id": 38615,
+      "id": 41600,
       "normPath": "Macros Macro Save",
       "path": "Macros Macro Save",
       "products": [
@@ -21558,6 +21197,7 @@
             "required": true,
             "valuespace": {
               "Values": [
+                "ESPERANCA",
                 "ROOM55D",
                 "ROOM70S",
                 "ROOM70D"
@@ -21572,7 +21212,7 @@
           "Admin"
         ]
       },
-      "id": 39426,
+      "id": 41589,
       "normPath": "SystemUnit ProductPlatform Set",
       "path": "SystemUnit ProductPlatform Set",
       "products": [
@@ -21793,7 +21433,7 @@
             "name": "URL",
             "required": true,
             "valuespace": {
-              "MaxLength": "255",
+              "MaxLength": "1024",
               "MinLength": "0",
               "type": "String"
             }
@@ -21806,7 +21446,7 @@
           "TouchUser"
         ]
       },
-      "id": 36644,
+      "id": 41621,
       "normPath": "SystemUnit SoftwareUpgrade",
       "path": "SystemUnit SoftwareUpgrade",
       "products": [
@@ -23580,6 +23220,19 @@
             }
           },
           {
+            "name": "Location",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "HomeScreen",
+                "CallControls",
+                "HomeScreenAndCallControls",
+                "Hidden"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
             "description": "The new name of the custom panel.",
             "name": "Name",
             "required": false,
@@ -23621,7 +23274,7 @@
           "User"
         ]
       },
-      "id": 41463,
+      "id": 41880,
       "normPath": "UserInterface Extensions Panel Update",
       "path": "UserInterface Extensions Panel Update",
       "products": [
@@ -23681,6 +23334,91 @@
       "id": 38667,
       "normPath": "UserInterface Extensions Set",
       "path": "UserInterface Extensions Set",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "name": "Location",
+            "required": false,
+            "valuespace": {
+              "Values": [
+                "HomeScreen",
+                "CallControls",
+                "HomeScreenAndCallControls",
+                "Hidden"
+              ],
+              "type": "Literal"
+            }
+          },
+          {
+            "name": "Name",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "40",
+              "MinLength": "0",
+              "type": "String"
+            }
+          },
+          {
+            "name": "PanelId",
+            "required": false,
+            "valuespace": {
+              "MaxLength": "255",
+              "MinLength": "0",
+              "type": "String"
+            }
+          },
+          {
+            "name": "URL",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "2048",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "privacyimpact": "True",
+        "read": [],
+        "role": [
+          "Admin",
+          "Integrator",
+          "RoomControl"
+        ]
+      },
+      "id": 42039,
+      "normPath": "UserInterface Extensions WebApp Save",
+      "path": "UserInterface Extensions WebApp Save",
       "products": [
         "bandai",
         "barents",
@@ -25924,15 +25662,15 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Stop displaying the wallpaper bundle and return to the default background.",
         "params": [],
         "privacyimpact": "False",
         "read": [],
         "role": [
           "Admin"
-        ]
+        ],
+        "description": "Stop displaying the wallpaper bundle and return to the default background."
       },
-      "id": 40029,
+      "id": 36707,
       "normPath": "UserInterface WallpaperBundle Clear",
       "path": "UserInterface WallpaperBundle Clear",
       "products": [
@@ -26005,15 +25743,15 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "List the pre-installed wallpaper bundles.",
         "params": [],
         "privacyimpact": "False",
         "read": [],
         "role": [
           "Admin"
-        ]
+        ],
+        "description": "List the pre-installed wallpaper bundles."
       },
-      "id": 40030,
+      "id": 36708,
       "normPath": "UserInterface WallpaperBundle List",
       "path": "UserInterface WallpaperBundle List",
       "products": [
@@ -26086,48 +25824,6 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Select one of the pre-installed wallpaper bundles. The wallpaper bundle is shown when the system is in awake state. Each wallpaper bundle contains one or more images of a specific type or types. Specify one of the bundles that had a corresponding type (for example, single) that matches your device type (for example, single screen). You can see the list of bundles by running the UserInterface WallpaperBundle List command.",
-        "params": [
-          {
-            "description": "The name of the wallpaper bundle.",
-            "name": "Name",
-            "required": true,
-            "valuespace": {
-              "MaxLength": "255",
-              "MinLength": "0",
-              "type": "String"
-            }
-          }
-        ],
-        "privacyimpact": "False",
-        "read": [],
-        "role": [
-          "Admin"
-        ]
-      },
-      "id": 40031,
-      "normPath": "UserInterface WallpaperBundle Set",
-      "path": "UserInterface WallpaperBundle Set",
-      "products": [
-        "bandai",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "helix_55",
-        "helix_75",
-        "octavio",
-        "polaris",
-        "polaris_light"
-      ],
-      "type": "Command"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
         "description": "Not applicable in this release.",
         "params": [
           {
@@ -26193,6 +25889,48 @@
         "svea_55d",
         "svea_70d",
         "svea_70s"
+      ],
+      "type": "Command"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "params": [
+          {
+            "description": "The name of the wallpaper bundle.",
+            "name": "Name",
+            "required": true,
+            "valuespace": {
+              "MaxLength": "255",
+              "MinLength": "0",
+              "type": "String"
+            }
+          }
+        ],
+        "privacyimpact": "False",
+        "read": [],
+        "role": [
+          "Admin"
+        ],
+        "description": "Select one of the pre-installed wallpaper bundles. The wallpaper bundle is shown when the system is in awake state. Each wallpaper bundle contains one or more images of a specific type or types. Specify one of the bundles that had a corresponding type (for example, single) that matches your device type (for example, single screen). You can see the list of bundles by running the UserInterface WallpaperBundle List command."
+      },
+      "id": 41743,
+      "normPath": "UserInterface WallpaperBundle Set",
+      "path": "UserInterface WallpaperBundle Set",
+      "products": [
+        "bandai",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "helix_55",
+        "helix_75",
+        "octavio",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Command"
     },
@@ -30904,6 +30642,83 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
+        "default": "On",
+        "read": [
+          "Admin",
+          "User"
+        ],
+        "role": [
+          "Admin"
+        ],
+        "valuespace": {
+          "Values": [
+            "Off",
+            "On"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 42020,
+      "normPath": "Apps Homescreen Dashboard",
+      "path": "Apps Homescreen Dashboard",
+      "products": [
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "havella",
+        "hopen",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "default": "On",
+        "read": [
+          "Admin",
+          "User"
+        ],
+        "role": [
+          "Admin"
+        ],
+        "valuespace": {
+          "Values": [
+            "On"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 42022,
+      "normPath": "Apps Homescreen Dashboard",
+      "path": "Apps Homescreen Dashboard",
+      "products": [
+        "bandai",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "helix_55",
+        "helix_75",
+        "octavio",
+        "polaris",
+        "polaris_light"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "default": "50",
         "description": "Define the default volume for the speakers. The volume is set to this value when you switch on or restart the video conferencing device. Use the controls on the user interface to change the volume while it is running. You may also use API commands (xCommand Audio Volume) to change the volume while the device is running, and to reset to default value.",
         "read": [
@@ -33607,6 +33422,40 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
+        "default": "Inactive",
+        "read": [
+          "Admin",
+          "Integrator",
+          "User"
+        ],
+        "role": [
+          "Admin",
+          "Integrator"
+        ],
+        "valuespace": {
+          "Values": [
+            "Active",
+            "Inactive"
+          ],
+          "type": "Literal"
+        },
+        "description": "When using a device (for example, its camera, microphone, and loudspeaker) as a USB Passthrough device for a soft client running on a computer, the default behavior is that there is no microphone mute button active on the touch controller. This is to prevent confusion for the end user if the device is muted and the soft client is not or vice versa. This configuration provides an override for the default behaviour and allows users to have the ability to mute the microphone from the touch controller even while USB Passthrough is active."
+      },
+      "id": 41885,
+      "normPath": "Audio Microphones UsbPassthrough MuteButton",
+      "path": "Audio Microphones UsbPassthrough MuteButton",
+      "products": [
+        "bandai",
+        "octavio",
+        "polaris",
+        "polaris_light"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "default": "0",
         "description": "To obtain lip-synchronization, you can configure each ARC output with an extra delay that compensates for delay in other connected devices, for example TVs and external loudspeakers. The delay that you set here is either fixed or relative to the delay measured on or reported by an external monitor, as defined in the Audio Output ARC [n] Delay Mode setting.",
         "read": [
@@ -33888,7 +33737,10 @@
       "normPath": "Audio Output Ethernet Mode",
       "path": "Audio Output Ethernet[1] Mode",
       "products": [
-        "barents_70i"
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s"
       ],
       "type": "Configuration"
     },
@@ -35519,6 +35371,38 @@
       "path": "BYOD NFCPairing",
       "products": [
         "baymax"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "default": "Enabled",
+        "read": [
+          "Admin",
+          "User"
+        ],
+        "role": [
+          "Admin"
+        ],
+        "valuespace": {
+          "Values": [
+            "Disabled",
+            "Enabled"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41887,
+      "normPath": "BYOD QRCodePairing",
+      "path": "BYOD QRCodePairing",
+      "products": [
+        "bandai",
+        "baymax",
+        "octavio",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Configuration"
     },
@@ -48714,13 +48598,12 @@
             "Off",
             "TMS",
             "VCS",
-            "Webex",
-            "WebexCalling"
+            "Webex"
           ],
           "type": "Literal"
         }
       },
-      "id": 33135,
+      "id": 30585,
       "normPath": "Provisioning Mode",
       "path": "Provisioning Mode",
       "products": [
@@ -50249,7 +50132,7 @@
         "access": "public-api",
         "backend": "any",
         "default": "Off",
-        "description": "If required, you can set the device in FIPS mode (Federal Information Processing Standard (FIPS) Publication 140-3, Security Requirements for Cryptographic Modules). While in FIPS mode the remote support user is not available, and Digest access authentication is not supported between the device and an HTTP Proxy, because Digest access authentication is using MD5 cryptographic hashing, which is not allowed in FIPS. This last limitation only affects Webex registered devices, since an HTTP Proxy is used only for the Webex solution. You should allow only HTTPS, and do not switch on SNMP or IEEE8021X in FIPS mode (keep the default values). For changes to this setting to take full effect, you must restart the device.",
+        "description": "If required, you can set the device in FIPS mode (Federal Information Processing Standard (FIPS) Publication 140-3, Security Requirements for Cryptographic Modules). While in FIPS mode Digest access authentication is not supported between the device and an HTTP Proxy, because Digest access authentication is using MD5 cryptographic hashing, which is not allowed in FIPS. This last limitation only affects Webex registered devices, since an HTTP Proxy is used only for the Webex solution. You should allow only HTTPS, and do not switch on SNMP or IEEE8021X in FIPS mode (keep the default values). For changes to this setting to take full effect, you must restart the device.",
         "read": [
           "Admin",
           "User"
@@ -50265,7 +50148,7 @@
           "type": "Literal"
         }
       },
-      "id": 33791,
+      "id": 41892,
       "normPath": "Security Fips Mode",
       "path": "Security Fips Mode",
       "products": [
@@ -53114,7 +52997,7 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "default": "False",
+        "default": "True",
         "read": [
           "Admin",
           "User"
@@ -53130,7 +53013,7 @@
           "type": "Literal"
         }
       },
-      "id": 41106,
+      "id": 42013,
       "normPath": "Time OfficeHours Enabled",
       "path": "Time OfficeHours Enabled",
       "products": [
@@ -54239,6 +54122,7 @@
             "Europe/Kaliningrad",
             "Europe/Kiev",
             "Europe/Kirov",
+            "Europe/Kyiv",
             "Europe/Lisbon",
             "Europe/Ljubljana",
             "Europe/London",
@@ -54388,7 +54272,7 @@
           "type": "Literal"
         }
       },
-      "id": 35622,
+      "id": 42003,
       "normPath": "Time Zone",
       "path": "Time Zone",
       "products": [
@@ -55104,6 +54988,61 @@
       "id": 35812,
       "normPath": "UserInterface Features Call JoinWebex",
       "path": "UserInterface Features Call JoinWebex",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "default": "Hidden",
+        "read": [
+          "Admin",
+          "Integrator",
+          "TouchUser",
+          "User"
+        ],
+        "role": [
+          "Admin",
+          "Integrator",
+          "TouchUser"
+        ],
+        "valuespace": {
+          "Values": [
+            "Auto",
+            "Hidden"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41982,
+      "normPath": "UserInterface Features Call JoinZoom",
+      "path": "UserInterface Features Call JoinZoom",
       "products": [
         "bandai",
         "barents",
@@ -56246,6 +56185,58 @@
         "access": "public-api",
         "backend": "any",
         "default": "Auto",
+        "description": "You can configure a device to hide all name and site labels for remote participants in a meeting.",
+        "read": [
+          "Admin",
+          "User"
+        ],
+        "role": [
+          "Admin"
+        ],
+        "valuespace": {
+          "Values": [
+            "Auto",
+            "Hidden"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41968,
+      "normPath": "UserInterface NameAndSiteLabels Mode",
+      "path": "UserInterface NameAndSiteLabels Mode",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "default": "Auto",
         "description": "Define for how long the encryption indicator is shown on screen. The icon for encrypted calls is a locked padlock.",
         "read": [
           "Admin",
@@ -56996,6 +56987,57 @@
       "id": 35750,
       "normPath": "UserInterface Theme Name",
       "path": "UserInterface Theme Name",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Configuration"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "default": "On",
+        "read": [
+          "Admin",
+          "User"
+        ],
+        "role": [
+          "Admin"
+        ],
+        "valuespace": {
+          "Values": [
+            "Off",
+            "On"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 42021,
+      "normPath": "UserInterface WallpaperOverlay",
+      "path": "UserInterface WallpaperOverlay",
       "products": [
         "bandai",
         "barents",
@@ -60493,8 +60535,7 @@
         "barents_70i",
         "barents_70s",
         "barents_82i",
-        "octavio",
-        "polaris_light"
+        "octavio"
       ],
       "type": "Configuration"
     },
@@ -60529,7 +60570,8 @@
       "products": [
         "helix_55",
         "helix_75",
-        "polaris"
+        "polaris",
+        "polaris_light"
       ],
       "type": "Configuration"
     },
@@ -61074,6 +61116,10 @@
       "normPath": "Video Input Connector Visibility",
       "path": "Video Input Connector[2] Visibility",
       "products": [
+        "bandai",
+        "octavio",
+        "polaris",
+        "polaris_light",
         "svea",
         "svea_55d",
         "svea_70d",
@@ -61109,7 +61155,6 @@
       "normPath": "Video Input Connector Visibility",
       "path": "Video Input Connector[2] Visibility",
       "products": [
-        "bandai",
         "barents",
         "barents_70d",
         "barents_70s",
@@ -61119,10 +61164,7 @@
         "darling_15_70",
         "darling_15_85",
         "helix_55",
-        "helix_75",
-        "octavio",
-        "polaris",
-        "polaris_light"
+        "helix_75"
       ],
       "type": "Configuration"
     },
@@ -62082,8 +62124,7 @@
       "normPath": "Video Input Connector PreferredResolution",
       "path": "Video Input Connector[3] PreferredResolution",
       "products": [
-        "octavio",
-        "polaris_light"
+        "octavio"
       ],
       "type": "Configuration"
     },
@@ -62116,7 +62157,8 @@
       "normPath": "Video Input Connector PreferredResolution",
       "path": "Video Input Connector[3] PreferredResolution",
       "products": [
-        "polaris"
+        "polaris",
+        "polaris_light"
       ],
       "type": "Configuration"
     },
@@ -62515,10 +62557,7 @@
         "barents_70s",
         "barents_82i",
         "helix_55",
-        "helix_75",
-        "octavio",
-        "polaris",
-        "polaris_light"
+        "helix_75"
       ],
       "type": "Configuration"
     },
@@ -62582,6 +62621,9 @@
       "normPath": "Video Input Connector Visibility",
       "path": "Video Input Connector[3] Visibility",
       "products": [
+        "octavio",
+        "polaris",
+        "polaris_light",
         "svea",
         "svea_55d",
         "svea_70d",
@@ -65025,7 +65067,9 @@
         "barents_70d",
         "barents_70i",
         "barents_70s",
-        "barents_82i"
+        "barents_82i",
+        "polaris",
+        "polaris_light"
       ],
       "type": "Configuration"
     },
@@ -65058,8 +65102,6 @@
         "baymax",
         "helix_55",
         "helix_75",
-        "polaris",
-        "polaris_light",
         "spitsbergen",
         "svea",
         "svea_55d",
@@ -77347,7 +77389,10 @@
       "normPath": "Audio Input Connectors Ethernet Mute",
       "path": "Audio Input Connectors Ethernet[n] Mute",
       "products": [
+        "barents",
+        "barents_70d",
         "barents_70i",
+        "barents_70s",
         "barents_82i"
       ],
       "type": "Status"
@@ -78131,6 +78176,54 @@
       "id": 36917,
       "normPath": "Audio Microphones Mute",
       "path": "Audio Microphones Mute",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Status"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "privacyimpact": "False",
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "valuespace": {
+          "Values": [
+            "On",
+            "Off"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41954,
+      "normPath": "Audio Microphones NoiseRemoval",
+      "path": "Audio Microphones NoiseRemoval",
       "products": [
         "bandai",
         "barents",
@@ -80313,7 +80406,7 @@
     {
       "attributes": {
         "access": "public-api",
-        "backend": "onprem",
+        "backend": "any",
         "description": "Shows the reason the current outgoing call was put on hold.",
         "privacyimpact": "True",
         "role": [
@@ -80329,7 +80422,7 @@
           "type": "Literal"
         }
       },
-      "id": 36971,
+      "id": 41967,
       "normPath": "Call HoldReason",
       "path": "Call[n] HoldReason",
       "products": [
@@ -86194,6 +86287,7 @@
             "SelectedVideoInputSourceConnected",
             "SipIceAndAnatConflict",
             "SIPListenPortAndRegistration",
+            "StandbyCtrlOfficeHoursConfiguration",
             "TCPMediaFallback",
             "TemperatureCheck",
             "TLSVerifyRequiredCerts",
@@ -86310,12 +86404,13 @@
             "HotdeskConfiguration",
             "PersistentWebAppURLConfiguration",
             "XapiApiKeyWebsocketHttpsDisabled",
-            "HotdeskKioskExclusivity"
+            "HotdeskKioskExclusivity",
+            "HttpProxyStatus"
           ],
           "type": "Literal"
         }
       },
-      "id": 41037,
+      "id": 41879,
       "normPath": "Diagnostics Message Type",
       "path": "Diagnostics Message[n] Type",
       "products": [
@@ -93119,6 +93214,59 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
+        "privacyimpact": "False",
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "valuespace": {
+          "Values": [
+            "AuthenticationFailed",
+            "ConfigError",
+            "Failed",
+            "Idle",
+            "NeedConfig",
+            "Provisioning",
+            "Provisioned"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41955,
+      "normPath": "Provisioning WebexCalling Status",
+      "path": "Provisioning WebexCalling Status",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Status"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
         "description": "Shows whether proximity services are available on the device.",
         "privacyimpact": "False",
         "role": [
@@ -97518,7 +97666,6 @@
         "barents_70i",
         "barents_70s",
         "barents_82i",
-        "baymax",
         "darling_10_55",
         "darling_10_70",
         "darling_15_55",
@@ -97951,55 +98098,6 @@
         "barents_70s",
         "barents_82i",
         "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "havella",
-        "helix_55",
-        "helix_75",
-        "hopen",
-        "octavio",
-        "polaris",
-        "polaris_light",
-        "spitsbergen",
-        "svea",
-        "svea_55d",
-        "svea_70d",
-        "svea_70s"
-      ],
-      "type": "Status"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
-        "privacyimpact": "False",
-        "role": [
-          "Admin",
-          "User"
-        ],
-        "valuespace": {
-          "Values": [
-            "Stopped",
-            "Starting",
-            "Started",
-            "Error"
-          ],
-          "type": "Literal"
-        }
-      },
-      "id": 40975,
-      "normPath": "Video Input AirPlay Status",
-      "path": "Video Input AirPlay Status",
-      "products": [
-        "bandai",
-        "barents",
-        "barents_70d",
-        "barents_70i",
-        "barents_70s",
-        "barents_82i",
         "darling_10_55",
         "darling_10_70",
         "darling_15_55",
@@ -99003,63 +99101,6 @@
       "attributes": {
         "access": "public-api",
         "backend": "any",
-        "description": "Shows the resolution format type for the video input source.",
-        "privacyimpact": "False",
-        "role": [
-          "Admin",
-          "Integrator",
-          "User"
-        ],
-        "valuespace": {
-          "Values": [
-            "AnalogCEABlanking",
-            "AnalogCVTBlanking",
-            "AnalogCVTReducedBlanking",
-            "AnalogDMTBlanking",
-            "AnalogDiscreteTiming",
-            "AnalogGTFDefault",
-            "AnalogGTFSecondary",
-            "Digital",
-            "Unknown"
-          ],
-          "type": "Literal"
-        }
-      },
-      "id": 38319,
-      "normPath": "Video Input Source FormatType",
-      "path": "Video Input Source[n] FormatType",
-      "products": [
-        "bandai",
-        "barents",
-        "barents_70d",
-        "barents_70i",
-        "barents_70s",
-        "barents_82i",
-        "baymax",
-        "darling_10_55",
-        "darling_10_70",
-        "darling_15_55",
-        "darling_15_70",
-        "darling_15_85",
-        "havella",
-        "helix_55",
-        "helix_75",
-        "hopen",
-        "octavio",
-        "polaris",
-        "polaris_light",
-        "spitsbergen",
-        "svea",
-        "svea_55d",
-        "svea_70d",
-        "svea_70s"
-      ],
-      "type": "Status"
-    },
-    {
-      "attributes": {
-        "access": "public-api",
-        "backend": "any",
         "description": "Only for Cisco internal use.",
         "privacyimpact": "False",
         "role": [
@@ -99906,6 +99947,55 @@
       "id": 38412,
       "normPath": "Video Output Connector ConnectedDevice ScreenSize",
       "path": "Video Output Connector[n] ConnectedDevice ScreenSize",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Status"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "privacyimpact": "False",
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "valuespace": {
+          "Values": [
+            "Unsupported",
+            "Unauthenticated",
+            "Authenticated"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 41634,
+      "normPath": "Video Output Connector Hdcp",
+      "path": "Video Output Connector[n] Hdcp",
       "products": [
         "bandai",
         "barents",
@@ -101300,6 +101390,54 @@
       "id": 38477,
       "normPath": "Webex DeveloperId",
       "path": "Webex DeveloperId",
+      "products": [
+        "bandai",
+        "barents",
+        "barents_70d",
+        "barents_70i",
+        "barents_70s",
+        "barents_82i",
+        "baymax",
+        "darling_10_55",
+        "darling_10_70",
+        "darling_15_55",
+        "darling_15_70",
+        "darling_15_85",
+        "havella",
+        "helix_55",
+        "helix_75",
+        "hopen",
+        "octavio",
+        "polaris",
+        "polaris_light",
+        "spitsbergen",
+        "svea",
+        "svea_55d",
+        "svea_70d",
+        "svea_70s"
+      ],
+      "type": "Status"
+    },
+    {
+      "attributes": {
+        "access": "public-api",
+        "backend": "any",
+        "privacyimpact": "False",
+        "role": [
+          "Admin",
+          "User"
+        ],
+        "valuespace": {
+          "Values": [
+            "Available",
+            "Reserved"
+          ],
+          "type": "Literal"
+        }
+      },
+      "id": 42023,
+      "normPath": "Webex DevicePersonalization Hotdesking SessionStatus",
+      "path": "Webex DevicePersonalization Hotdesking SessionStatus",
       "products": [
         "bandai",
         "barents",

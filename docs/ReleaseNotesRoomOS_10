@@ -287,6 +287,13 @@ For all other issues, please contact the Cisco Technical Assistance Center.
 	</tr>
 </table>
 
+<a name='desk-limited-upgrade'></a>
+### Cisco Webex Desk Limited Edition - Product Upgrade
+
+If you have a **Cisco Webex Desk Limited Edition** and upgrade it to RoomOS 10.19.2.2 it will become a **Cisco Webex Desk Pro**. It will stay as a Webex Desk Pro as long as it is running software 10.19.2.2 or above. If you choose to downgrade to a version lower than 10.19.2.2 it will again identify itself as a Cisco Webex Desk Limited Edition. This is a free but mandatory upgrade and you cannot choose to keep it as a Webex Desk Limited Edition on software that is equal to or higher than 10.19.2.2. 
+
+Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
+
 ## RoomOS 10.19.2.2
 
 * [RoomOS 11 UI Experience (optional enablement)](#101922-1)
@@ -303,6 +310,7 @@ For all other issues, please contact the Cisco Technical Assistance Center.
 	* [Hot desk with QR code support](#101922-75)
 * <b>Other</b>
     * [Added support for a new hardware revision of Room Kit](#cisco-webex-room-series-software-compatibility-matrix)
+	* [All Webex Desk Limited Editions that upgrades to this software will become a Webex Desk Pro](#desk-limited-upgrade)
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 10.19.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.2.2&bt=custV&sts=fd&sb=fr)
 

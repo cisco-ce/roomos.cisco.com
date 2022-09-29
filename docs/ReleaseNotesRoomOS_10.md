@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.13 - September 2022
+D15463.14 - September 2022
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.13 - September 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>14</td> 
+		<td>September 29th 2022</td> 
+		<td>
+			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.2.2</a> 7c9a4721f0d, minor
+		</td>
 	</tr>
 	<tr>
 		<td>13</td> 
@@ -94,7 +101,7 @@ This release note describes new software features and capabilities included in R
 	</tr>
 	<tr>
 		<td>
-			Cisco Webex Room USB, Room Kit Mini, Room Kit, Room 55<br> 
+			Cisco Webex Room USB, Room Kit Mini, Room Kit, Room Bar, Room 55<br> 
 			Cisco Webex Codec Plus, Codec Pro<br>
 			Cisco Webex Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
 			Cisco Webex Room Panorama, Room 70 Panorama 
@@ -149,6 +156,358 @@ NOTE: We previously announced that SNMP would be removed from RoomOS 11. RoomOS 
 NOTE: Facility Service will soon be deprecated from newer software as quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel). 
 
 <br><br>
+
+# Release summary for RoomOS 10.19 <a name='10.19'></a>
+
+## Notes and warnings for this software release
+
+### RoomOS 11 UI Experience can be enabled on all supported devices from RoomOS 10.19.2.2 
+
+Several of the features we announce with RoomOS 10.19.2.2 requires that you enable the RoomOS 11 UI Experience. It is completely optional to enable the RoomOS 11 UI in RoomOS 10.19.2.2 but as RoomOS 11 is around the corner we recommend that you enable a few devices to get familiar with the new UI and also confirm that your existing deployments will still work with this UI. You enable the RoomOS 11 UI Experience on a per device basis or using Control Hub if you have devices on Webex Edge for Devices. 
+
+For feedback regarding the RoomOS 11 UI Experience you can send us an e-mail to [webex-roomos11-ui-feedback@cisco.com](mailto:webex-roomos11-ui-feedback@cisco.com). We appreciate your feedback and will help us create the best experience for everyone but we have a particular interest for functionality in custom integration scenarios. Please note that the feedback mailer is temporary and will be decommissioned without notice early CY2023. 
+
+For all other issues, please contact the Cisco Technical Assistance Center. 
+
+<a name="10.19-limitations-roomos11"></a>
+
+**RoomOS 11 UI Experience - Limitations**
+
+<table width="100%" >
+	<tr>
+		<th style="border-bottom: 1px solid black;">
+			<b>What</b>
+		</th>
+		<th style="border-bottom: 1px solid black;" colspan="2">
+			<b>Description</b>
+		</th>
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid black;">
+			Current limitations with RoomOS 11 UI Experience (10.19)
+		</td>
+		<td colspan="2" style="border-bottom: 1px solid black;">
+			<li>Creating and editing camera presets currently has to be done via the xAPI</li>
+			<li>Room booking functionality (inside rooms) is not yet supported.</li>
+			<li>Room signage on multi-screen systems shows on one screen only</li>
+			<li>People focus works on single screen systems only</li>
+			<li>No support yet for video stitching and video matrix</li>
+			<li>Board Pro not supported in companion mode yet</li>
+			<li>Room Panorama, Room USB, and Samsung Flip not supported yet</li>
+			<li>Classroom/briefing room/presenter track features not supported yet</li>
+			<li>Unbind feature missing from Room Navigator</li>
+			<li>Barging shared line calls and remote resume is not supported</li>
+			<li>Broadcast / Unobstructed mode is not supported yet</li>
+			<li>Snap to whiteboard is not supported and is not planned for implementation in RoomOS 11</li>
+		</td>		
+	</tr>
+	<tr>
+		<td rowspan="9" style="border-bottom: 1px solid black;">
+			xAPI
+		</td>
+		<td>
+			xCommand UserInterface Extensions: Clear / Panel Remove
+		</td>
+		<td>
+			Not working on touch controller, so no method of removing extensions
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xCommand UserInterface Message Alert Display
+		</td>
+		<td>
+			Alert shows up only on controller. Should be visible on both controller and screen.
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xCommand UserInterface Message TextInput Display
+		</td>
+		<td>
+			TextInput: not able to see what you are typing as the keyboard pops up and input field disappears. Padding is incorrect. 
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xCommand UserInterface Message TextLine Display
+		</td>
+		<td>
+			TextLine only visible on controller. It should only be shown on passive screen. On Desk Series TextLine disappears when you tap the screen.
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xCommand Video Selfview Set OnMonitorRole: Second/third
+		</td>
+		<td>
+			Doesn't move selfview to second and third screen.
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xConfiguration Audio Input ... VideoAssociation
+		</td>
+		<td>
+			Inputs not muted if associated video input is not shown in any layout.
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xConfiguration Video Selfview Default OnMonitorRole
+		</td>
+		<td>
+			Not able to move fullscreen selfview from screen 1.<br>Not able to move selfview pip from screen 1.
+		</td> 
+	</tr>
+	<tr>
+		<td>
+			xStatus Video Selfview
+		</td>
+		<td>
+			Selfview xstatus is not always in sync with the actual selfview state.
+		</td> 
+	</tr>
+	<tr>
+		<td style="border-bottom: 1px solid black;">
+			Work in Progress
+		</td>
+		<td style="border-bottom: 1px solid black;">
+			xCommand Video Matrix<br>
+			xCommand Presentation Start PresentationSource: n PresentationSource: o PresentationSource: p<br>
+			xConfiguration UserInterface Accessibility IncomingCallNotification<br>
+			xConfiguration UserInterface OSD Mode<br>
+			xConfiguration UserInterface OSD Output<br>
+			xConfiguration UserInterface Security Mode: Strong<br>
+			xConfiguration UserInterface SettingsMenu Visibility<br>
+			xConfiguration Video Presentation DefaultPIPPosition<br>
+			xConfiguration Video Selfview Default Mode<br>
+			xConfiguration Video Selfview OnCall Mode/Duration<br>
+		</td> 
+	</tr>
+</table>
+
+<a name='desk-limited-upgrade'></a>
+### Cisco Webex Desk Limited Edition - Product Upgrade
+
+If you have a **Cisco Webex Desk Limited Edition** and upgrade it to RoomOS 10.19.2.2 it will become a **Cisco Webex Desk Pro**. It will stay as a Webex Desk Pro as long as it is running software 10.19.2.2 or above. If you choose to downgrade to a version lower than 10.19.2.2 it will again identify itself as a Cisco Webex Desk Limited Edition. This is a free but mandatory upgrade and you cannot choose to keep it as a Webex Desk Limited Edition on software that is equal to or higher than 10.19.2.2. 
+
+Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
+
+## RoomOS 10.19.2.2
+
+* [RoomOS 11 UI Experience (optional enablement)](#101922-1)
+* [Standby Control / Energy Saving - Office hours](#101922-2)
+* [Frames](#101922-3)
+* [Support for Cisco Webex Room Bar](#101922-4)
+* [Call from laptop](#101922-5)
+* [Wireless share with Miracast®](#101922-6)
+* [Webex Edge for Devices only](#101922-7)
+    * [Embedded apps support](#101922-71)
+	* [Hide tentative meetings from UI](#101922-72)
+    * [Support for immersive share from Webex client](#101922-73)
+	* [People presence for personal mode](#101922-74)
+	* [Hot desk with QR code support](#101922-75)
+* <b>Other</b>
+    * [Added support for a new hardware revision of Room Kit](#cisco-webex-room-series-software-compatibility-matrix)
+	* [All Webex Desk Limited Editions that upgrades to this software will become a Webex Desk Pro](#desk-limited-upgrade)
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.19.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.2.2&bt=custV&sts=fd&sb=fr)
+
+# RoomOS 10.19.2.2 feature descriptions 
+
+<a name='101922-1'></a>
+
+## RoomOS 11 UI Experience (optional enablement)
+
+As already announced many times, RoomOS 11 will come with a new user interface. Some devices like Cisco Webex Board Pro, Desk Mini, Room Bar and Desk Hub already requires the use of RoomOS 11 UI and devices with a cloud deployment has been able to enable this UI for a while. But with RoomOS 10.19.2.2 we invite everyone with a supported device to try it out! With a configuration you can now enable the new UI and experience it first hand. 
+
+From the web interface:
+Go to configurations and search for "concept" and set the UserInterface Concept Mode to "Compositor".
+
+From the xAPI: 
+For Board, Desk, and Room Series devices set xConfiguration UserInterface Concept Mode to "Compositor".
+
+Set the configurations to "Desktop" to switch back to the RoomOS 10 UI.
+
+Please make sure you read the [list of known limitations](#10.19-limitations-roomos11) before enabling the RoomOS 11 UI Experience. Also note that many of the new features coming will only work with the RoomOS 11 UI. 
+
+[Click here to learn mode](https://help.webex.com/en-us/article/n01kjh1/New-user-experience-with-RoomOS-11)
+
+**Supported products**
+
+All products except Cisco Webex Room 70 Panorama, Room Panorama and Room USB
+
+<a name='101922-2'></a>
+
+## Standby Control / Energy Saving - Office Hours
+
+Office hours is a new feature designed to give your equipment a longer life and save energy while the devices are not in use. The feature is turned on by default and your office hours is pre-defined from 7am to 7pm, Monday to Friday. The Office Hours feature is fully configurable from the web interface or the xAPI for you to define your own office hours or disable the feature completely. 
+
+Although you can disable the feature, it is not recommended to do so. This feature is designed to benefit the life expectancy of the device monitors, especially if signage is being used. It also helps save energy as the device will have a lower amount of automatic wake up events and keeps the screens in standby as much as possible outside office hours. 
+
+While the device is "outside of office hours", for example during nights and weekends by default:
+- Digital Signage will be disabled 
+- Wake-up on motion detection is disabled
+- You can configure a shorter standby delay when the device is outside office hours (also shorter by default) 
+- Touching the touch panel, incoming calls, users pairing and connecting a laptop to the device will wake up the device as normal
+- The device will not go into standby while doing a local presentation or while being in a call, even in this mode
+- [xStatus Time OfficeHours OutsideOfficeHours]() will be set to "True", indicating that the device is in this mode currently
+- You can still use the devices as normal in "OutsideOfficeHours" mode, but it may have a shorter delay for entering standby
+- Known issue - Scheduler do not go to standby when the device is in out of office hours mode. 
+
+During office hours:
+- It will work as normal for the defined duration 
+- [xStatus Time OfficeHours OutsideOfficeHours]() will be set to "False" and the device will wake up automatically into half-wake and act according to the regular configurations.
+
+**Supported products**
+
+All products
+
+<a name='101922-3'></a>
+
+## Frames
+
+When this feature is turned on, the device will crop out a focused image of one individual or a smaller group of individuals sitting close to each other in the room. The images that are framed will be put together into one image sent to the far end. Excess space between the cropped individuals are removed. 
+
+Speaker Track is required for this feature to work. Framing / processing is done on the sender side before the image is sent so, the receiver do not have to support this feature. 
+
+The feature can be activated from the touch panel UI. The camera supports up to 4 frames. 
+
+**Supported products**
+
+Cisco Webex Room Kit Mini, Room Kit, Room 55, Room Bar and Board Series <br>
+Requires RoomOS 11 UI Experience
+
+<a name='101922-4'></a>
+
+## Support for Cisco Webex Room Bar
+
+Room Bar is an all-in-one video conferencing bar that does it all—from native, laptop-free video conferencing and wireless sharing to seamless BYOD experiences. Power your meetings with a codec-powered appliance or connect your computer via a single USB-C cable.
+
+Note: In order to register this product on UCM you will need the device pack released 22nd of September for either UCM 12.5 or UCM 14, follow the links below to download. 
+[UCM 12.5](https://software.cisco.com/download/home/286322286/type/282074299/release/12.5(1.17083))
+[UCM 14](https://software.cisco.com/download/home/286328117/type/282074299/release/14.0(1.13029))
+
+These device packs includes a fix for CSCvn11243. We have removed the fields for SMTP and HTTPProxy credentials from the device specific configurations. 
+
+For more information about the Cisco Webex Room Bar, please follow [this link](https://www.webex.com/devices/webex-room-bar.html)
+
+Cisco Webex Room Bar is designed to run RoomOS 11 UI natively.
+
+<a name='101922-5'></a>
+
+## Call from laptop
+
+"Call from laptop" is a new icon you will notice on the touch panel. This feature allow you to use the device camera and microphone with any PC application together with a HDMI to USB converter. You to connect the HDMI output from the device to the HDMI to USB device for camera and microphone passthrough to your laptop. This will allow you to use the device camera and microphone as a normal USB web camera / microphone for the the application you use on your laptop - for example the Webex client. 
+
+In order to use the speakers on the Room Device at the same time, you have to connect your laptop directly to one of the input sources of the device (like a normal content share).
+
+You can use the camera controls and mute buttons on the room device as you would in a call from the device itself. Speaker Track and Presenter Track will also work, but the device will be put in DnD mode while this feature is active. 
+
+[See related xAPI commands](https://roomos.cisco.com/xapi/search?search=HDMI+Passthrough)
+
+To remove the icon from the touch panel you can issue the command (depending on the product): 
+
+```
+xConfiguration UserInterface Features Call Webcam: Visible/Hidden
+xConfiguration UserInterface Features Call HdmiPassthrough: Visible/Hidden
+```
+
+**Supported products**
+
+Webex Room Kit, Codec Plus, Codec Pro, Room 70S, Room 70 G2 and Room 55<br>
+**Note:** This feature is to compensate for devices without a USB-C for USB-passthrough but devices with existing support for USB-passthrough will still see the button "Call from laptop". <br>
+**Note:** We have tested capture devices from Inogeni to work but other similar devices may work as well
+
+Requires RoomOS 11 UI Experience
+
+<a name='101922-6'></a>
+
+## Wireless share with Miracast®
+
+RoomOS 10.19.2.2 comes with support for direct wireless sharing using Miracast®. Miracast® will allow the laptop running Windows to create a wireless network link with a nearby device and stream the screen share at a high framerate / quality including audio to the device. This stream can be shared in a call or displayed locally as a normal content share. This type of share do not require any client software as it is built into Windows natively.  
+
+Wi-Fi Direct (2.4GHz only - TCP port 7236) is used to establish a connection between the Windows Laptop and the Webex Device. This feature do not require guests to be connected to the corporate network but is required to enter a code that is displayed on the device screen in order to connect. 
+
+Requires that the Webex Room Device is connected to the network using Ethernet (cabled network). 
+
+For more information, [check out this article](https://help.webex.com/en-us/article/w60modb/Configure-wireless-sharing-with-Miracast%C2%AE).
+
+**Supported products**
+
+All products (except Desk Hub) with a Wi-Fi beacon and on a cabled network<br>
+Devices with optional Wi-Fi antennas should have these attached before using this feature. <br>
+Requires RoomOS 11 UI Experience
+
+<a name='101922-7'></a>
+
+## Webex Edge for Devices only 
+
+This section describes features you gain by linking the device to the cloud via Webex Edge for Devices.
+
+<a name='101922-71'></a>
+
+## Support for Embedded Apps 
+
+Embedded apps are apps that can be opened inside the meeting and extend the meeting experience. Currently our devices has support for three embedded apps (Miro, Mural and Slido).
+
+For more information about this feature, [see this article](https://help.webex.com/en-us/article/387ig6/Embedded-Apps-on-Webex-Boards-and-Desk-Devices)
+
+**Supported products**
+
+Cisco Webex Desk, Desk Mini, Desk Pro, Board / Board Pro series<br>
+Requires RoomOS 11 UI Experience
+
+<a name='101922-72'></a>
+
+## Hide tentative meetings from the UI 
+
+Allow admins to show or hide tentative calendar meetings and other related alerts for shared mode devices. Only meetings that has been approved by the calendar proxy or resource manager will be displayed. 
+
+This feature is turned off by default and must be enabled to take effect. 
+
+[View related xConfigurations](https://roomos.cisco.com/xapi/Configuration.UserInterface.Bookings.Visibility.TentativeMeetings/)
+
+**Supported products**
+
+All products
+
+<a name='101922-73'></a>
+
+##  Support for immersive shares from Webex client
+
+Devices now render immersive shares from the Webex client correctly. 
+
+**Supported products**
+
+All products
+
+<a name='101922-74'></a>
+
+##  People presence
+
+Show a presence indicator on your device in personal mode on your avatar. Also see the presence of others when searching for people in the directory (cloud users only), in recent list and the participant list of meetings.  
+
+You can update your status directly from your personal device and set custom status that will be reflected on your cloud user in other clients as well.  
+
+**Supported products**
+
+Cisco Webex Devices in personal mode <br>
+Requires RoomOS 11 UI Experience
+
+<a name='101922-75'></a>
+
+##  Hot desk pairing with QR code
+
+Devices in hot desk mode will now display a QR code that can be scanned by the user in order to pair and book the device. Once you scan the QR code the Webex App will open and exchange the pairing token. This is an addition to the already existing pairing options. 
+
+**Supported products**
+
+Cisco Webex Desk Series <br>
+Requires RoomOS 11 UI Experience
+
+<hr>
 
 # Release summary for RoomOS 10.15 <a name='10.15'></a>
 
@@ -362,165 +721,7 @@ RoomOS 11 Experience is an app-based UI designed for multi-tasking and seamless 
 
 **Known limitations**<a name='101121-52'></a>
 
-<font color="red"><b>NOTE: The limitations listed here are <u>ONLY</u> related to the new products (Webex Desk Hub, Desk Mini and Board Pro 55 and 75) with the new UI. The limitations are specific to the 10.11.2.2 release and will be patched in a future release. The list will be updated continuously.</b></font>
-
-<table width="100%" >
-	<tr>
-		<th style="border-bottom: 1px solid black;">
-			<b>Product</b>
-		</th>
-		<th style="border-bottom: 1px solid black;">
-			<b>Feature / Functionality</b>
-		</th>
-		<th style="border-bottom: 1px solid black;">
-			<b>Description</b>
-		</th>
-	</tr>
-	<tr>
-		<td rowspan="5" style="border-bottom: 1px solid black;">
-			Webex Board Pro 55 and 75
-		</td>
-		<td>
-			Snap to whiteboard
-		</td>
-		<td>
-			Not yet added but will be added in a later version
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			Presenter Track 
-		</td>
-		<td>
-			Not yet added, will be added in a later version
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Immersive share
-		</td>
-		<td>
-			Unable to move the presenter to a different position. 
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Pairing touch panels
-		</td>
-		<td>
-			Support is not yet implemented 
-		</td>
-	</tr>
-	<tr>
-		<td style="border-bottom: 1px solid black;">
-			MultiSite
-		</td>
-		<td style="border-bottom: 1px solid black;">
-			<li>When in a full MultiSite call, the layouts other than grid layout is not working as expected unless content is shared. </li>
-			<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li><br>
-			<li>When in a full MultiSite call, the "More" button containing the hold / resume buttons are missing</li>
-			<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
-		</td>
-	</tr>
-	<tr>
-		<td rowspan="2" style="border-bottom: 1px solid black;">
-			Webex Desk Mini
-		</td>
-		<td>
-			Mute button
-		</td>
-		<td>
-			First press after reboot has no effect <br><li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
-		</td>
-	</tr>
-	<tr>
-		<td style="border-bottom: 1px solid black;">
-			Add button
-		</td>
-		<td style="border-bottom: 1px solid black;">
-			Add button for adding more participants to the call is missing in CMS calls. <br><li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
-		</td>
-	</tr>
-	<tr>
-		<td rowspan="1" style="border-bottom: 1px solid black;">
-			Webex Desk Hub
-		</td>
-		<td style="border-bottom: 1px solid black;">
-			Diagnostic warnings 
-		</td>
-		<td style="border-bottom: 1px solid black;">
-			Diagnostic warnings are not displayed on the OSD
-		</td> 
-	</tr>
-	<tr>
-		<td rowspan="7" style="border-bottom: 1px solid black;">
-			Generic for all of the above
-		</td>
-		<td>
-			Graphical user interface deviations
-		</td>
-		<td>
-			Some UI deviations may be visible in terms of resolution, scaling, overflowing or overlaying depending on the scenario. We are working on getting these deviations corrected in a future release. Examples are that the keyboard may be on top of input fields or the gesture menu's <br>
-			Some UI related xAPI configurations may not work as expected. For example, commands that will affect the UI or video layouts and sharing. Macros that are utilizing such APIs may experience unexpected behavior 
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			Calling
-		</td>
-		<td>
-			<ul>
-				<li>Transfer call is currently not implemented</li><br>
-				<li>Shared lines is not working as expected</li>  <br>
-				<li>Some layouts in on-premises conferences are not working as expected </li>
-				<li style="margin-left:2em"><b><i>Patched from RoomOS 10.11.3.0</i></b></li><br>
-				<li>Audio from connected input source or receiving an incoming call while being in an existing call is not dampened</li>
-				<li>In-call UI extensions do not appear in the in-call menu</li><br>
-			</ul>
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			CAPF 
-		</td>
-		<td>
-			When initiating a CAPF install / upgrade operation on Unified CM with AuthString authentication, a dialog should appear on the endpoint asking the user to enter the string. This dialog do not appear in the new UI. Factory reset and re-provision is the workaround. 
-			<li><b><i>Patched from RoomOS 10.11.3.0</i></b></li>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Diagnostics
-		</td>
-		<td>
-			Some diagnostics, warnings and dialogs are incomplete
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			Webex Edge for Devices
-		</td>
-		<td>
-			Device linking to Webex Edge for Devices is not yet supported
-		</td> 
-	</tr>
-	<tr>
-		<td>
-			Selfview
-		</td>
-		<td>
-			Selfview handling do not work as expected. 
-		</td> 
-	</tr>
-	<tr>
-		<td style="border-bottom: 1px solid black;">
-			Annotation
-		</td>
-		<td style="border-bottom: 1px solid black;">
-			Annotation on wireless share is not available yet
-		</td>
-	</tr>
-</table>
+<font color="red"><b>NOTE: Known limitations for RoomOS 11 UI Experience listed here has been moved to the [10.19 section](#10.19)</b></font>
 
 See the [software upgrade section](#software)
 
@@ -1049,19 +1250,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53200ce10_15_4_1.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_2_2.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_4_1.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_2_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_15_4_1-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_15_4_1-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_2_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_2_2-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-s53400ce10_15_4_1.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_2_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_15_4_1.k3.cop.sgn</b><br><b>cmterm-ce10_15_4_1.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-ce10_19_2_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
@@ -1179,7 +1380,7 @@ Older software versions will be deferred on a regular basis from the download se
 
 For RoomOS versions that has been provided by the Webex cloud, "Y" will always be 1 (10.X.**1**.z) while a RoomOS version released to cisco.com the same number will always be higher than 1 and will increment by one for each patch release. 
 
-If for example, RoomOS 10.3.2.x and RoomOS 10.6.2.x is released and RoomOS 10.9.2.x becomes available. RoomOS 10.3.2.x may be removed as part of the deferral policy.
+If for example, RoomOS 10.3.2.x and RoomOS 10.6.2.x is released and RoomOS 10.9.2.x becomes available. RoomOS 10.3.2.x may be removed as part of the deferral policy for end of support. A minor software version is typically supported for two release cycles (6-9 months).
 
 Cisco supports the latest minor release and the previous minor release (i.e. RoomOS 10.3.2.x) and the newest (i.e. RoomOS 10.6.2.x) as a general rule. 
 
@@ -1193,14 +1394,19 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<th style="background-color: gray;"><b>Note</b></th>
 	</tr>
 	<tr>
+		<td>September 29th 2022</td>
+		<td>10.11.4.1<br>10.11.5.2<br>10.11.6.0</td>
+		<td>Deferred according to policy (end of support for RoomOS 10.11)</td>
+	</tr>
+	<tr>
 		<td>September 9th 2022</td>
 		<td>10.8.4.0<br>10.8.3.1<br>10.8.2.5</td>
-		<td>Deferred according to policy</td>
+		<td>Deferred according to policy (end of support for RoomOS 10.8)</td>
 	</tr>
 	<tr>
 		<td>May 5th 2022</td>
 		<td>10.3.2.0<br>10.3.3.0<br>10.3.4.0<br>10.11.2.2<br>10.11.3.0</td>
-		<td>Deferred according to policy</td>
+		<td>Deferred according to policy (end of support for RoomOS 10.3)</td>
 	</tr>
 </table>
 
@@ -1542,11 +1748,16 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 
 <table  width="100%">
 	<tr>
-		<th>Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
+		<th style="border-bottom: 1px solid black;">Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room Kit	</td> 
+		<td rowspan="3" style="border-bottom: 1px solid black; ">Cisco Webex Room Kit</td>
+	</tr>
+	<tr>
 		<td>0-2</td> <td>All</td> 
+	</tr>
+	<tr>
+		<td>3</td> <td>10.19.2.2</td> 
 	</tr>
 	<tr>
 		<td>Cisco Webex Codec Plus	</td> 

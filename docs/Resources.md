@@ -10,8 +10,18 @@
       <td><img class="logo" src="/docs/images/logos/webexfordevs.png" /></td>
     </tr>
     <tr>
-      <td><a href="https://learninglabs.cisco.com/lab/collab-xapi-intro/step/1" target="_blank">DevNet Learning labs</a></td>
-      <td>Interactive learning labs on Cisco DevNet to get quickly started.</td>
+      <td>
+        <a href="https://developer.cisco.com/learning/labs/collab-xapi-intro" target="_blank">Intro to the xAPI </a>
+        <br/>
+        <a href="https://developer.cisco.com/learning/labs/collab-xapi-macros" target="_blank">Intro to macros </a>
+        <br/>
+        <a href="https://developer.cisco.com/learning/labs/collab-xapi-controls" target="_blank">Intro to UI Extensions</a>
+        <br/>
+        <a href="https://developer.cisco.com/learning/labs/collab-xapi-branding" target="_blank">Intro to branding</a>
+      </td>
+      <td>
+       Interactive tutorials at the DevNet Learning Labs.
+      </td>
       <td><img class="logo" src="/docs/images/logos/devnet.png" /></td>
     </tr>
     <tr>
@@ -70,7 +80,7 @@
       <td>Cisco / Webex design guideslines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
       <td><img class="logo" src="https://momentum.design/apple-touch-icon-57x57.png" /></td>
       </td>
-    </tr>    
+    </tr>
     <tr>
       <td>
         <a href="https://github.com/voipnorm/CE-Deploy" target="_blank">CE Deploy</a>

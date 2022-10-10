@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.14 - September 2022
+D15463.15 - October 2022
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.14 - September 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>15</td> 
+		<td>October 10th 2022</td> 
+		<td>
+			Deferral of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.2.2</a>
+		</td>
 	</tr>
 	<tr>
 		<td>14</td> 
@@ -160,6 +167,8 @@ NOTE: Facility Service will soon be deprecated from newer software as quick dial
 # Release summary for RoomOS 10.19 <a name='10.19'></a>
 
 ## Notes and warnings for this software release
+
+<font color="red"><strong>RoomOS 10.19.2.2 is unfortunately hit by the following bug, <a href="https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwd23669">CSCwd23669</a>. To avoid more users hitting this issue, we have decided to remove the software from cisco.com even before a replacement is in place. The replacement software will be released as soon as we have resolved the bug. It may take a few days, but we can assure you that we are working as fast as we can! [Click here](#deferral-notes) for a list of deferred software versions. </strong></font>
 
 ### RoomOS 11 UI Experience can be enabled on all supported devices from RoomOS 10.19.2.2 
 
@@ -1366,7 +1375,9 @@ Note: If the above methods do not work or the upgrade is failing because the sof
 ### Downgrading
 
 Downgrading is performed the same way as described above, using a software version lower than the one you are currently running. 
-When downgrading from RoomOS 10 to CE9.12.x or lower, the provisioning mode setting will reset to the default value even if the setting exists on both versions. The workaround is to manually configure the provisioning mode after downgrade. 
+When downgrading from RoomOS 10 to CE9.12.x or lower, the provisioning mode setting will reset to the default value even if the setting exists on both versions. The workaround is to manually configure the provisioning mode after downgrade.
+
+<a name="deferral-notes"></a>
 
 ## Software deferral policy 
 
@@ -1392,6 +1403,11 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<th style="background-color: gray;"><b>Deferral date</b></th>
 		<th style="background-color: gray;"><b>Versions</b></th>
 		<th style="background-color: gray;"><b>Note</b></th>
+	</tr>
+	<tr>
+		<td>October 10th 2022</td>
+		<td>10.19.2.2</td>
+		<td>Deferred due to a bug causing Room Navigators to not connect to the codec after upgrade. See <a href="https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwd23669">CSCwd23669</a></td>
 	</tr>
 	<tr>
 		<td>September 29th 2022</td>

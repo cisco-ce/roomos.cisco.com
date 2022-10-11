@@ -303,6 +303,8 @@ If you have a **Cisco Webex Desk Limited Edition** and upgrade it to RoomOS 10.1
 
 Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
 
+Note: If you are registered on UCM / Webex Edge for Devices, the device type will change. This may cause the device to lose registration to UCM after upgrade. Please prepare to re-register the device as a Desk Pro post upgrade to RoomOS 10.19.
+
 ## RoomOS 10.19.2.2
 
 * [RoomOS 11 UI Experience (optional enablement)](#101922-1)

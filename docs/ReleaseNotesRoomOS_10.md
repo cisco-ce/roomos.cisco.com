@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.15 - October 2022
+D15463.16 - October 2022
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.15 - October 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>16</td> 
+		<td>October 20th 2022</td> 
+		<td>
+			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.3.0</a> bb11ddae620, patch
+		</td>
 	</tr>
 	<tr>
 		<td>15</td> 
@@ -170,6 +177,8 @@ NOTE: Facility Service will soon be deprecated from newer software as quick dial
 
 <font color="red"><strong>RoomOS 10.19.2.2 is unfortunately hit by the following bug, <a href="https://bst.cloudapps.cisco.com/bugsearch/bug/CSCwd23669">CSCwd23669</a>. To avoid more users hitting this issue, we have decided to remove the software from cisco.com even before a replacement is in place. The replacement software will be released as soon as we have resolved the bug. It may take a few days, but we can assure you that we are working as fast as we can! [Click here](#deferral-notes) for a list of deferred software versions. </strong></font>
 
+**The above issue is resolved in RoomOS 10.19.3.0**
+
 ### RoomOS 11 UI Experience can be enabled on all supported devices from RoomOS 10.19.2.2 
 
 Several of the features we announce with RoomOS 10.19.2.2 requires that you enable the RoomOS 11 UI Experience. It is completely optional to enable the RoomOS 11 UI in RoomOS 10.19.2.2 but as RoomOS 11 is around the corner we recommend that you enable a few devices to get familiar with the new UI and also confirm that your existing deployments will still work with this UI. You enable the RoomOS 11 UI Experience on a per device basis or using Control Hub if you have devices on Webex Edge for Devices. 
@@ -305,6 +314,17 @@ Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardwa
 
 Note: If you are registered on UCM / Webex Edge for Devices, the device type will change. This may cause the device to lose registration to UCM after upgrade. Please prepare to re-register the device as a Desk Pro post upgrade to RoomOS 10.19.
 
+## RoomOS 10.19.3.0
+
+RoomOS 10.19.3.0 is a patch release and contains bugfixes.<br>
+
+NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.19.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.3.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
+
 ## RoomOS 10.19.2.2
 
 * [RoomOS 11 UI Experience (optional enablement)](#101922-1)
@@ -331,7 +351,7 @@ Note: If you are registered on UCM / Webex Edge for Devices, the device type wil
 
 ## RoomOS 11 UI Experience (optional enablement)
 
-As already announced many times, RoomOS 11 will come with a new user interface. Some devices like Cisco Webex Board Pro, Desk Mini, Room Bar and Desk Hub already requires the use of RoomOS 11 UI and devices with a cloud deployment has been able to enable this UI for a while. But with RoomOS 10.19.2.2 we invite everyone with a supported device to try it out! With a configuration you can now enable the new UI and experience it first hand. 
+As already announced many times, RoomOS 11 will come with a new user interface. Some devices like Cisco Webex Board Pro, Desk Mini, Room Bar and Desk Hub already requires the use of RoomOS 11 UI and devices with a cloud deployment has been able to enable this UI for a while. But with RoomOS 10.19.2.2 we invite everyone with a supported device to try it out! With a configuration you can now enable the new UI and experience it first hand.
 
 From the web interface:
 Go to configurations and search for "concept" and set the UserInterface Concept Mode to "Compositor".
@@ -1261,19 +1281,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_2_2.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_2_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_2_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_2_2-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_3_0-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_2_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_2_2.k3.cop.sgn</b><br><b>cmterm-ce10_19_2_2.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_19_3_0.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>

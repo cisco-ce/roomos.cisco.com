@@ -1,26 +1,15 @@
-## Hot desking
+# Hot desking
 
-<img src="/docs/images/meetingroom2.jpg" />
+A Desk device in hot desking is by default in shared mode. When a user sits down in front of it and plug in their laptop, the device will talk to the Webex app and automatically log the user in. The user will now get personal features as One Button To Push to join their scheduled meetings etc.
 
-*What:* Use the sensors of the video device to device if there are people in the room, and how many. This can be used for:
+The device will clearly indicate with bright red/green colors on screen so employees can see from far away whether a desk is available or not.
 
-* Space management
-* Hot desking
-* Spatial analytics
-
-The video devices provide two different methods of measuring people:
-
-* Ultra-sound (~radar) to detect motion, using microphones. This is a either or value, not countint the number of people
-* Head detection, using the cameras. This can give an estimate of the actual number of people
+<img src="/doc/images/usecases/hotdesking.jpg" />
 
 **Relevant APIs:**
 
-* [xStatus RoomAnalytics PeoplePresence](/xapi/Status.RoomAnalytics.PeoplePresence/) - Is there people detected in the room?
-* [xStatus RoomAnalytics PeopleCount Current](/xapi/Status.RoomAnalytics.PeopleCount.Current/) - How many people (faces) are detected
-* [xStatus RoomAnalytics PeopleCount Capacity](/xapi/Status.RoomAnalytics.PeopleCount.Capacity/) - What's the room's max capacity (configurable in Control Hub)
-* [xConfiguration RoomAnalytics PeoplePresenceDetector](/xapi/Configuration.RoomAnalytics.PeoplePresenceDetector/?) - Enable the ultrasound-based detector
-* [xConfiguration RoomAnalytics PeopleCountOutOfCall](/xapi/Configuration.RoomAnalytics.PeopleCountOutOfCall/) - Enable head detection also when the room is not in a video call
-* [xConfiguration Standby WakeupOnMotionDetection](https://roomos.cisco.com/xapi/Configuration.Standby.WakeupOnMotionDetection) - Make the device automatically wake up when someone is nearby
-* [HttpClient](/xapi/search?search=httpclient) - These APIs can be used to send data from the device to external web services
+* [xCommand Webex Hotdesking SetSupport](/xapi/Command.Webex.Hotdesking.SetSupport/) - Configure whether the system supports hot desking
+* [xConfiguration Webex Hotdesking DefaultBookingEndTime](https://roomos.cisco.com/xapi/Configuration.Webex.Hotdesking.DefaultBookingEndTime/) - Configure the default end of day time
+* [xCommand Webex Registration Logout](https://roomos.cisco.com/xapi/Command.Webex.Registration.Logout/) - programatically end a hot desking session
 
-**Device support:** All (Desk series, Room series, Board series)
+**Device support:** Desk series

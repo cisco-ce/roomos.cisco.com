@@ -16,6 +16,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/examples.png"
     },
     {
+      "id": "SpaceManagement",
+      "title": "Space management",
+      "description": "Monitor how and when your spaces are being used to optimize your office resources",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/spacemanagement.jpg"
+    },
+    {
       "id": "CustomCalendaring",
       "title": "Third party room booking",
       "description": "Integrate your ownspecific booking or calendaring system for your meeting rooms",
@@ -39,13 +45,11 @@
       "description": "Ensure well being for your employees, both at the office and the home office, by using the sensors to detect when working conditions are getting sub-optimal.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/environmental-sensors.png"
     },
-
-
     {
       "id": "PeopleCount",
       "title": "Hot desking",
       "description": "Use the presence sensors and people count features of the video device to show which hot desks are available etc.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/meetingroom2.jpg"
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/hotdesking.jpg"
     },
     {
       "id": "WebApps",

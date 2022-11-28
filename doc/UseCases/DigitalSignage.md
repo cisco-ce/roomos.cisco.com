@@ -1,6 +1,6 @@
 # Informative screens
 
-<img src="/docs/images/usecases/signage.png" />
+<img src="/doc/images/usecases/signage.png" />
 
 Make optimal use of the video device screens by showing relevant information ("signage") to employees and visitors when the device is not in active use. Digital signage replaces the normal screen saver ("half wake") with a web page that the IT admin can configure to whichever URL they wish. On touch screens, there is even the possibity for interactive content.
 

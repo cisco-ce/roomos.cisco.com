@@ -1,0 +1,173 @@
+{
+  "CustomerStories": [
+    {
+      "id": "RoomHubNewYork",
+      "title": "Room control showcase in Cisco New York",
+      "description": "How we implemented control for lights and shades, and 'report isseue' feature in all meeting rooms in Cisco's New York office",
+      "symbol": "🗽"
+    }
+  ],
+  "UseCases": [
+    {
+      "id": "UseCases",
+      "title": "Use cases overview",
+      "description": "Learn which other use cases than conferencing and whiteboarding the Cisco devices can be used to solve.",
+      "symbol": "📄",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/examples.png"
+    },
+    {
+      "id": "CustomCalendaring",
+      "title": "Third party room booking",
+      "description": "Integrate your ownspecific booking or calendaring system for your meeting rooms",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/navigator.webp"
+    },
+    {
+      "id": "RoomControls",
+      "title": "Universal room control",
+      "description": "Control anything else in the meeting room, such as lights, air condition, shades and media players with custom UI extensions",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/ui-extensions.png"
+    },
+    {
+      "id": "DigitalSignage",
+      "title": "Informative screens",
+      "description": "Make sure the video screens show something useful or interesting when they are not being used.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/signage.png"
+    },
+    {
+      "id": "EnvironmentalSensors",
+      "title": "Work environment monitoring",
+      "description": "Ensure well being for your employees, both at the office and the home office, by using the sensors to detect when working conditions are getting sub-optimal.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/environmental-sensors.png"
+    },
+
+
+    {
+      "id": "PeopleCount",
+      "title": "Hot desking",
+      "description": "Use the presence sensors and people count features of the video device to show which hot desks are available etc.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/meetingroom2.jpg"
+    },
+    {
+      "id": "WebApps",
+      "title": "Use your own web apps",
+      "description": "Bring your own favourite web tools to the collaboration arena by adding web applications to the video devices.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/webapps.png"
+    },
+    {
+      "id": "T3",
+      "title": "Fire Alarm Awareness",
+      "description": "Ensure that people with headsets and hairing impaired workers are notified too when the fire alarm goes off.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/firedrill.jpeg"
+    },
+    {
+      "id": "Kiosk",
+      "title": "Virtual Receptionist",
+      "description": "Why a Desk device in kiosk mode is the perfect solution for virtual receptionist when physical staff is not available",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/kiosk/overview.png"
+    },
+    {
+      "id": "VisitorRegistration",
+      "title": "Visitor Registration",
+      "description": "Let customers and visitors register themselves when arriving at your location.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/visitor-registration.jpg"
+    }
+
+  ],
+  "TechDocs": [
+    {
+      "id": "Introduction",
+      "title": "RoomOS introduction",
+      "description": "What is RoomOS, what are the main concepts and compoents.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/integrations.png"
+    },
+    {
+      "id": "xAPI",
+      "title": "Introduction to the xAPI",
+      "description": "Understand the basic buildling blocks of the API of RoomOS",
+      "symbol": "🎓"
+    },
+    {
+      "id": "LocalAdminUser",
+      "title": "How to create a local admin user",
+      "description": "Create an admin user on your own video device quickly and easily.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/localadmin/login-vega.png"
+    },
+
+    {
+      "id": "UIExtensions",
+      "title": "UI Extensions: Overview",
+      "description": "Provide custom user interfaces for your video device to control other devices in the room, or create your own workflows",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/ui-extensions-editor.png"
+    },
+    {
+      "id": "UIExtensions-Panels",
+      "title": "UI Extensions: Panels and widgets",
+      "description": "Learn how custom UI panels and widgets work, and understand the event model",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/uiextensions/switches.png"
+    },
+    {
+      "id": "WebEngine",
+      "title": "Introduction to the web engine",
+      "description": "Use web content on the video device for completely custom content",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/poster.png"
+    },
+    {
+      "id": "Macro/Introduction",
+      "title": "Macro Overview",
+      "description": "What are the device user scripts, and how can they help your workflow?",
+      "symbol": "📝"
+    },
+    {
+      "id": "Macro/Tutorial",
+      "title": "Macro Tutorial",
+      "description": "Get your hands wet with beginner tutorials",
+      "symbol": "📝"
+    },
+    {
+      "id": "JSXAPI/Styles",
+      "title": "JSxAPI coding styles",
+      "description": "Several styles are supported, find out which one is the right for you",
+      "symbol": "📝"
+    },
+    {
+      "id": "JSXAPI/XapiToJs",
+      "title": "From xAPI to JavaScript",
+      "description": "Already know the xAPI on the command line / T-Shell but struggle to convert it to JavaScript?",
+      "symbol": "📝"
+    },
+    {
+      "id": "JSXAPI/Intro",
+      "title": "Connect from Node",
+      "description": "Use the JSxAPI library to connect to the video device from an external Node.js service",
+      "symbol": "🌍"
+    },
+    {
+      "id": "JSXAPI/Browser",
+      "title": "Connect from a browser",
+      "description": "Create apps that connect to the video device from a browser on laptops and smart phones",
+      "symbol": "🌍"
+    },
+
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "symbol": "📄"
+    }
+  ],
+  "WhatsNew": [
+    {
+      "id": "ReleaseNotesRoomOS_10",
+      "title": "On-prem: RoomOS 10 Release Notes",
+      "description": "What's new in the latest version of the on-premise deployment of RoomOS 10?",
+      "symbol": "📄"
+    },
+    {
+      "id": "ReleaseNotesCloud",
+      "title": "Cloud: RoomOS 10 Release Notes",
+      "description": "What's new in the latest version of the cloud deployment of RoomOS 10?",
+      "symbol": "📄"
+    }
+  ],
+  "Partners": []
+}

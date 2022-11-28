@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Welcome",
+    "name": "Welcome",
+    "link": "/doc/Welcome/Welcome"
+  },
+  {
+    "id": "UseCases",
+    "name": "Use Cases",
+    "link": "/doc/UseCases"
+  },
+  {
+    "id": "TechDocs",
+    "name": "Tech Docs",
+    "link": "/doc/TechDocs"
+  },
+  {
+    "id": "WhatsNew",
+    "name": "What's New?",
+    "link": "/doc/WhatsNew"
+  }
+]

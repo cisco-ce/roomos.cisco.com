@@ -21,7 +21,7 @@ https://roomos.cisco.com – this is specifically for developing on RoomOS, whic
 
 ## Use cases
 
-<img src="/docs/images/usecases/hybriduser.png" />
+<img src="/doc/images/usecases/hybriduser.png" />
 
 The use cases are associated to where the person is working from and how to engage with them at that place.  For devices that you can program this will likely be a static place, such as the home, office, hot desk, conference room, huddle space, board room, phone booth kiosk etc.
 

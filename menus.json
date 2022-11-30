@@ -18,5 +18,10 @@
     "id": "WhatsNew",
     "name": "What's New?",
     "link": "/doc/WhatsNew"
+  },
+  {
+    "id": "UsefulLinks",
+    "name": "Useful links",
+    "link": "/doc/UsefulLinks/Resources"
   }
 ]

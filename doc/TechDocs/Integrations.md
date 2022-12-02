@@ -1,10 +1,10 @@
-# RoomOS Integrations
+# RoomOS Integrations Explained
 
 <img src="/doc/images/meetingroom4.jpeg" />
 
-RoomOS supports many alternative types of integrations, and it can initially be difficult to know which one to choose. This guide describes the main alternatives, how they differ from each other, and suggests when to use and not use each one.
+RoomOS supports many alternative types of integrations, and it can initially be difficult to know which one to choose. This guide describes the main alterntives for connecting to a Cisco device, how they differ from each other, and suggests when to use and not use each one.
 
-In the end, they all use the public xAPI, so a basic understanding of that is essential when you actually start developing.
+All the integrations use the xAPI, and often an integration can be implemented with any of the alternatives. The difference is the way they connect, the network requirements, how they can be deployed, and the security model.
 
 ## Short summary
 
@@ -18,9 +18,10 @@ A short summary of the integration types are:
 
 * **HTTP API**: Similar to the JSXAPI integration, but uses standard HTTP requests and a web hook like mechanism for feedback.
 
-* **SSH / Serial**: SSH based connection (serial cable, USB, ...), typically for legacy room controllers such as Crestron and Extron, often placed in the same room as the collab device.
+* **RS232 / Serial**: Cable-based connection (serial cable or USB), typically for legacy room controllers such as Crestron and Extron, often placed in the same room as the collab device.
 
-All solutions presented here work with UI extensions bi-directionally, meaning that the integration can respond to user events, and update the UI based on external events.
+
+All the solutions presented here support UI extensions.
 
 ## Quick sheet
 
@@ -31,7 +32,7 @@ All solutions presented here work with UI extensions bi-directionally, meaning t
     <th>Cloud xAPI</th>
     <th>JSXAPI</th>
     <th>HTTP</th>
-    <th>SSH</th>
+    <th>RS-232</th>
   </tr>
   <tr>
     <td>⚙️ Programming language / SDK</td>
@@ -75,11 +76,11 @@ All solutions presented here work with UI extensions bi-directionally, meaning t
   </tr>
 </table>
 
-*Cloud xAPI is not allowed to use xAPIs marked as **privacy-impacting** on personal-registered devices, and can only subscribe to a small subset of events and status changes.*
+\**Cloud xAPI can only subscribe to a small subset of events and status changes, and is not allowed to use xAPIs marked as **privacy-impacting** on personal-registered devices.*
 
 ## Macros
 
-Macros are JavaScripts that run on the collab device itself. The scripts can use a xapi library to talk to the device and receive feedback from it. This is similar to Node.js rather than a browser, the JavaScript does not have access to any HTML or CSS.
+Macros are JavaScripts that run on the collab device itself. The scripts can use an xAPI library to talk to the device and receive feedback from it. This is similar to Node.js rather than a browser, the JavaScript macro does not have access to any HTML or CSS.
 
 <img src="/doc/images/integrations/macros.png" />
 
@@ -99,7 +100,7 @@ Macros can run as either admin or integrator / room control user, but in general
 
 - You have access to limited programming skills and resources.
 
-- You need fast respons to events on the device, or user interactions.
+- You need fast response to events on the device, or user interactions.
 
 - You don't want or don't have the ability to host code elsewhere.
 
@@ -120,9 +121,9 @@ You can provision macros from the device itself or from Control Hub. There are n
 
 ### Typical use cases
 
-* In-room controls for lights, shades, climate controls
+* Modern ion-room controls for lights, shades, climate controls supporting HTTP REST APIs
 * Custom ui panels on the device to control custom layout
-* Automatically unbook a meeting room when it's scheduled but no one shows up
+* Custom automations such as automatically unbooking a meeting room when it's scheduled but no one shows up
 
 For an intro to macros, start with: [Macro Tutorial](/doc/TechDocs/MacroTutorial). For dozens of examples, see [extensions on this site](/macros).
 
@@ -143,10 +144,13 @@ The cloud xAPI does not provide any feedback mechanisms such as notifying the in
 
 Workspace integrations build on top of the cloud xAPI to improve this: It allows you to create integrations in the cloud that receive notifications and events that you specify in the manifest. Furthermore, unlike all the other integrations, it allows you to specify exactly which xAPIs the integration is allowed to access, giving you fine grained access control over what an integration can and cannot do.
 
+Workspace integrations can be created for your own org, but it can also be created as a public integration that any Webex customer can use. This creates a unique business opportunity for developers to create solutions that can be offered to any Webex customer and installed almost as a one-click operation on Control Hub.
+
 ### Use cloud xAPI and workspace integrations when:
 
-* You have a publicly accessible server
+* You have a publicly accessible web service
 * You want to create solutions that you can sell to customers that they can start using simply by enabling it in Control Hub
+* You want to provide integrations to hundreds or thousands of devices in your org, with small maintenance efforts
 
 ### Don't use when:
 
@@ -161,55 +165,100 @@ To get started with cloud xAPI and workspace integrations, see [the device guide
 ### Typical use cases
 
 * Collecting usage metrics from large number of devices in an organisation to a central analytics tool.
-* Providing a "Report Issue" form on all devices in the meeting rooms thar forwards the issue to eg ServiceNow
+* Providing a "Report Issue" form on all devices in the meeting rooms thar forwards the issue to eg ServiceNow.
 
 
+## JSXAPI / Node.js
 
-## External on-prem integrations
+JSXAPI is a web-socket based SDK for Node.js that let's you talk to devices from eg virtual machines or Raspberry Pis that are on the same network as the collab devices. The syntax for the SDK is exactly the same as the macros use, so it's easy to move code from a macro to a more centralized integration.
 
-External on-prem integrations are code that runs on virtual machines or similar inside the corporate network and access the video device's xAPI using either the same web socket SDK as the macros ([JSXAPI / Node.js](/doc/TechDocs/JSXAPIIntro)) or the older HTTP api (<need separate doc for this>). This requires authentication using local user on the device, and gives the integration the same level of access as the macros. The latency is likely higher than macros, but still fast if the network is in good condition.
+Since the integration is running on your own platform of choice, you can now use any other tool such as crypto, databases, sockets, machine learning etc. You can also listen to external events and update the collab devices based on that, or make integrations that synchronizes devices.
 
 <img src="/doc/images/integrations/onprem.png" />
 
-Although we call it "on-prem" here, it works equally well both for on-prem and cloud deployed devices.
+This solution requires that you use a local user to connect to the devices, so you need to maintain an up-to-date list of ip addresses, usernames and passwords. You also need to handle re-connects for the web-sockets, for example if the network is temporarily down.
 
-Some of the advantages of this integraion type is that:
+Since the integration is hosted in one centralized place, maintenance is done by simply upgrading your integration and restarting it.
 
-- It can combine data from several devices.
-- It can respond the external events, eg a fire alarm.
-- It is not restricted to the xAPI or JavaScript and can use Python, Java libraries etc.
-- The integration can be easily upgraded, and doesn't require bulk deployment solutions (though you will need to bulk provision local user access).
+Both secure web sockets (wss) and unsecure (ws) is supported.
 
-Challenges:
+### Use this integration when:
 
-- It must keep an up-to-date record of IP addresses for all devices, as well as usernames and passwords.
-- If it's using the JSXAPI, maintaining long-lived web sockets is not always trivial.
-- If it's using the HTTP API, there is no solid support for feedback from the devices when status change and events occur.
+- You need to combine data from multiple devices
+- You need to respond to external events
+- You need to use external libraries not supported by macros
 
-Typical use case: Company alerts, where a message alert is shown on all devices screens in the office, such as an evacuation map when there is a fire alarm.
+### Do not use this integration when
 
+- Maintaining device IP addresses, local users and passwords is not an option.
+- You don't have access to the device network (isolated network).
 
-## SSH / Serial connection
+### Typical use case
+
+* A building management server that controls lights, climate control etc in the building by listening to UI events from the Cisco devices and forwards the requests to the appropriate smart building controllers.
+
+* Showing important company alerts on all screens in the office, such as fire alarm and evacuation maps.
+
+For an introduction, see [JSXAPI / Node.js](/doc/TechDocs/JSXAPIIntro).
+
+## HTTP(S) API
+
+You can also talk to the collab device with HTTP(S) API. The format of this API is not a REST API, but rather a proprietary XML over HTTP API. An integration using this is connection-less (fire and forget), so it doesn't need to maintain a connection like the web socket. Conceptually this solution is otherwise very similar to the JSXAPI approach.
+
+<img src="/doc/images/integrations/http.png" />
+
+There is also a web-hook like mechanism that can instruct the device to post HTTP messages back to a web server (HTTP Feedback), based on status changes or events that you specify.
+
+It's recommended to use this approach in the same situations as the JSXAPI situation above, but where:
+
+* You cannot use web socket, perhaps your integration platform does not support web sockets
+
+* You dont need feedback, and prefer a simple fire and forget HTTP solution
+
+See the [Postman collection](/doc/UsefulLinks/Resources) at DevNET for many good examples.
+
+## RS232 / Serial connection
+
+RS-232 / serial connection allows you to plug a cable directly into the Cisco devices that support these inputs. These kind of iintegrations are usually set up for external room controllers such as Crestron and Extron located in the same room as the Cisco device, with USB or serial cables.
 
 <img src="/doc/images/integrations/rs232.png" />
 
 For more technical details, see the the [API reference guide (PDF)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html) and the drivers for Creston / Extron etc on the [useful links](/doc/UsefulLinks/Resources) page.
 
+### Use this integration when
+
+* You need to use a legacy control system that doesn't support HTTP or web sockets.
+
+* You require a direct cabled connection for security reasons.
+
+### Typical use case
+
+* Legacy room control (lights, shades, climate control) or advanced AV control with proprietary drivers
+
+* Legacy ontrol systems that don't support HTTP, web socket or SSH connections
 
 ## Combined solutions
 
+There is of course nothing stopping you from creating solutions that combine several of the solutions mentioned above. Just make sure you understand the strengths and pain points of each integration type first and make sure it's worth the extra complexity and maintenance effort.
+
+## Browser based solutions
+
+Connecting directly from a web browser on a laptop or a mobile phone to a Cisco device is also possible. This can be done using the JSXAPI solution or HTTP solution mentioned above. A couple of security considerations are worth noting:
+
+* The Cisco devices use self signed SSL certificates, which most browser don't like. A user will need to approve the certifciate before using the integration the first time.
+
+* Username and password for the collab device should not be made freely available on a publicly accessible web page.
+
+The best practise would typically be that the browser talks to a web server, that then talks to the collab device, which basically means the JSXAPI or HTTP based solution mentioned earlier.
+
+See [this guide ](/doc/TechDocs/JSXAPIBrowser) for more details.
 
 ## What about the web apps on the devices?
 
-As of 2022, the web apps (and other web based features such as digital signage and embedded apps) do not have any access to the device xAPI, for security reasons.
+As of 2022, the web apps (and other web based features such as digital signage, embedded apps and web views opened from API) do not have any access to the device xAPI, for security reasons.
 
 <!--
-for each type:
-- high level overview
-- link to more detail
-- pros/cons
-- example
-- when to use
+
 
 Combination of methods
 

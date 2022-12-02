@@ -2,13 +2,13 @@
 
 Kiosk mode let's you replace the home screen of your Webex Device with your own custom made web application that you host and maintain yourself.
 
-<img src="/docs/images/kiosk/overview.png" />
+<img src="/doc/images/kiosk/overview.png" />
 
 The typical use case is reception areas, where you want to tightly control how visitors use the Webex devices, as well as provide your own branding to the first-time experience. Setting the device in kiosk mode makes it possible to disable all non-video functions such as whiteboarding, screensharing etc and disabling users from meddling with the settings of the video device.
 
 *Typical flow of a kiosk use case:*
 
-<img src="/docs/images/kiosk/flow.png" />
+<img src="/doc/images/kiosk/flow.png" />
 
 
 Kiosk mode still allows you to call with the device. In call, the user experience is the same as in any call, but as soon as the call is ended, the device goes back to the kiosk web page.
@@ -74,7 +74,7 @@ As soon as the call ends, the user is taken back to the kiosk web app.
 For trouble shooting, to acccess the settings menu, use the 'secret' gestures: Tap *three* times with *three* fingers on screen.
 This should open the settings menu, so you can find the IP address of the device, see diagnostic messages etc.
 
-<img src="/docs/images/kiosk/settings.png">
+<img src="/doc/images/kiosk/settings.png">
 
 Note that the secret gesture is more of a child safety mechanism to reduce the chance of the kiosk being in a bad state after some adventurous users have played with it, not a security feature.
 
@@ -107,7 +107,7 @@ You may also want to tune the microphone and camera settings to whatever makes s
 
 If the kiosk is not able to access the URL, it will display a service mode page informing the user. The page also displays the IP address of the device, and a retry button.
 
-<img src="/docs/images/kiosk/servicemode.png" />
+<img src="/doc/images/kiosk/servicemode.png" />
 
 ## Accessing the xAPI
 

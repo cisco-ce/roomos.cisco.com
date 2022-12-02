@@ -33,7 +33,7 @@ If the Desk Pro is straight out of the box, you need to boot it up first and con
 
 ## Get the registration code
 
-<img src="/docs/images/localadmin/registration-code.png" />
+<img src="/doc/images/localadmin/registration-code.png" />
 
 The procedure will require you to factory reset the video device, so it's important to make sure that you can create a registration code before you do that, otherwise you will be left with a useless video device.
 
@@ -45,7 +45,7 @@ The procedure will require you to factory reset the video device, so it's import
 
 Go to the settings page of your device, and note down the IP address of your video endpoint now. If you are connected on WiFi, and do not know the WiFi password, your journey should stop here.
 
-<img src="/docs/images/localadmin/factory-reset.png" />
+<img src="/doc/images/localadmin/factory-reset.png" />
 
 * Find and click **Factory reset**, and wait for your device to reboot.
 * Tap "Start"
@@ -57,7 +57,7 @@ DO NOT register your device yet.
 
 ## Create a local administrator
 
-<img src="/docs/images/localadmin/network-settings.png" />
+<img src="/doc/images/localadmin/network-settings.png" />
 
 Now we need to create a local admin user, while the system is unlocked. Find the IP address of your system under **Settings** on your video device, and enter it in the URL bar of your web browser.
 
@@ -69,7 +69,7 @@ Your browser will most likely show you a warning because the web site uses a sel
 
 You should then see the login page of the web interface of your video device.
 
-<img src="/docs/images/localadmin/login-vega.png" />
+<img src="/doc/images/localadmin/login-vega.png" />
 
 * Log in as user **admin** with no password.
 * Go to **Users > Create User**
@@ -80,13 +80,13 @@ You should then see the login page of the web interface of your video device.
 * Leave **Your passphrase** field empty
 * Click **Create**. Scroll up and verify that there is a message confirming that the user was created.
 
-<img src="/docs/images/localadmin/create-user.png" />
+<img src="/doc/images/localadmin/create-user.png" />
 
 ## Registering your device
 
 You will now register the device, but from the web admin interface instead of on the device itself.
 
-<img src="/docs/images/localadmin/register-webex.png" />
+<img src="/doc/images/localadmin/register-webex.png" />
 
 
 With the device's web interface:
@@ -102,7 +102,7 @@ With the device's web interface:
 
 Your device should now be registered, but it might still be on the network page. Click next to proceed, and select timezone. You should now be able to tap next, set timezone etc and be ready.
 
-<img src="/docs/images/localadmin/setup-done.png" />
+<img src="/doc/images/localadmin/setup-done.png" />
 
 ## Verify your admin account
 
@@ -119,7 +119,7 @@ If you don't have the **Register device** button on the home screen of your devi
 * Go to **Developer API**
 * Copy and paste the following command into the text area that says **Enter commands**.
 
-<img src="/docs/images/localadmin/register-code.png" />
+<img src="/doc/images/localadmin/register-code.png" />
 
 
 ```

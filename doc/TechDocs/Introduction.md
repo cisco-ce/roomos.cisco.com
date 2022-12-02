@@ -4,7 +4,7 @@ RoomOS is the operating system that powers the Webex Devices such as Room Kit, D
 
 It is an open platform with a powerful API (the xAPI) that let's you tweak and tune any part of it, as well as adding integrations, web applications, reading sensor data and much more:
 
-<img src="/docs/images/meetingroom2.jpg" />
+<img src="/doc/images/meetingroom2.jpg" />
 
 Discover the APIs here, read the docs, try the examples and join the vibrant community on Webex Teams.
 
@@ -14,13 +14,13 @@ For developer documention for the Webex platform itself, see [developer.webex.co
 
 The xAPI is the language-independent API of RoomOS that lets you interact with the system, such as for placing calls, changing configurations, reading sensor data and automating tasks.
 
-<img src="/docs/images/tshell.png" />
+<img src="/doc/images/tshell.png" />
 
-The best way to understand the xAPI is to play with it yourself from a terminal. See the [xAPI guide](/docs/xAPI.md) for step by step instructions for basic actions such as placing a call and adjusting volume.
+The best way to understand the xAPI is to play with it yourself from a terminal. See the [xAPI guide](/doc/xAPI.md) for step by step instructions for basic actions such as placing a call and adjusting volume.
 
 ## Integrations types
 
-<img src="/docs/images/integrations.png" />
+<img src="/doc/images/integrations.png" />
 
 RoomOS supports a wide variety of ways of connecting to the video device. Depending on your infrastructure, requirements or preference, you can choose the one that best fits the task you are solving. The most important protocols are:
 
@@ -30,7 +30,7 @@ Use a terminal window to SSH into your device. This is typically done to explore
 
 ## Web socket
 
-Connect with full-duplex web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/docs/JSXAPI/Intro.md) if you want to use this integration type.
+Connect with full-duplex web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/doc/JSXAPI/Intro.md) if you want to use this integration type.
 
 ## Webex API (cloud)
 
@@ -38,7 +38,7 @@ Connect to the xAPI with REST APIs on the Webex platform over cloud, which means
 
 ## Macros
 
-Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom user interface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/docs/MacroTutorial) to get started.
+Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom user interface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/doc/MacroTutorial) to get started.
 
 ## HTTP(S)
 

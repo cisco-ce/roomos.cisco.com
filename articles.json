@@ -85,6 +85,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/integrations.png"
     },
     {
+      "id": "Integrations",
+      "title": "RoomOS integrations explained",
+      "description": "What's th difference between macros, JSXAPI, cloud xAPI, workspace integrations and which to choose?",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/meetingroom4.jpeg"
+    },
+    {
       "id": "xAPI",
       "title": "Introduction to the xAPI",
       "description": "Understand the basic buildling blocks of the API of RoomOS",
@@ -172,6 +178,5 @@
       "description": "What's new in the latest version of the cloud deployment of RoomOS 10?",
       "symbol": "📄"
     }
-  ],
-  "Partners": []
+  ]
 }

@@ -1,6 +1,6 @@
 # RoomOS WebEngine Developer Guide
 
-<img src="/docs/images/poster.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/poster.png" style="margin-left: 15%; width: 70%">
 
 ## Purpose and audience
 
@@ -23,7 +23,7 @@ Oh - and remember to test on the intended devices early!
 * Web views opened from macros and third party extensions (buidling maps, evacuation maps, instructional videos, ...)
 * Enterprise Content Management (cloud documents available as integration)
 
-<img src="/docs/images/usecases.png" style="margin-left: 10%; width: 80%">
+<img src="/doc/images/usecases.png" style="margin-left: 10%; width: 80%">
 
 *Some example of use cases*
 
@@ -37,7 +37,7 @@ As of May 2022, the Chromium version is 87.
 
 ## Which Cisco devices are web compatible?
 
-Any 'newer' devices, such as Boards (Webex Board, Board Pro), Room Kits, Room systems and Desk series. For a complete list, 
+Any 'newer' devices, such as Boards (Webex Board, Board Pro), Room Kits, Room systems and Desk series. For a complete list,
 
 As of CE 9.9, the web engine is available on both cloud and on-premise deployments.
 
@@ -75,9 +75,9 @@ Typical apps can be other whiteboarding services, Office 365, Trello, Wikipedia,
 
 Web apps can also be installed by the local user, from the settings menu of the device. They are not supported on devices without touch screens.
 
-<img src="/docs/images/webapps.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/webapps.png" style="margin-left: 15%; width: 70%">
 
-<img src="/docs/images/local-web-apps.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/local-web-apps.png" style="margin-left: 15%; width: 70%">
 
 
 ### API-driven views
@@ -88,13 +88,13 @@ Embedded web views can be opened from API such as third party integrations or ma
 
 For systems without touch screens, this also allows basic integrations with the custom UI Extensions buttons and macros on Touch 10, for example to open and browse basic help pages or show instructional videos.
 
-<img src="/docs/images/web-and-inroom.png" style="margin-left: 10%; width: 80%">
+<img src="/doc/images/web-and-inroom.png" style="margin-left: 10%; width: 80%">
 
 ### Embedded apps
 
 This is a shared feature with the Webex client. A web view can be loaded in a sidepanel and shared to all other partipants in the Webex call. Read more about this on [developer.webex.com](https://developer.webex.com/docs/embedded-apps).
 
-<img src="/docs/images/embedded-apps.png" style="margin-left: 10%; width: 80%">
+<img src="/doc/images/embedded-apps.png" style="margin-left: 10%; width: 80%">
 
 ### WebRTC
 
@@ -116,7 +116,7 @@ Note that the developer console can be opened with a Chrome / Chromium browser. 
 
 Be sure to disable the debug config again after use, otherwise users will get a very bad experience.
 
-<img src="/docs/images/dev-console.png" style="margin-left: 5%; width: 90%">
+<img src="/doc/images/dev-console.png" style="margin-left: 5%; width: 90%">
 
 ## What is the performance of the web engine?
 
@@ -150,7 +150,7 @@ Only one web tab / window is supported. If a web page tries to open a page in a 
 
 Standard video codes are supported, such as WebM and mpeg4, and is hardware accelerated. It is not recommended to go beyond 1080p resolution, as this may lead to choppy performance.
 
-<img src="/docs/images/video.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/video.png" style="margin-left: 15%; width: 70%">
 
 ## What about audio volume?
 
@@ -275,7 +275,7 @@ It does not support specialised formats such as numeric, calendar and colour pic
 
 A vertical soft keyboard does not encourage a lot of text input and provides little privacy, so keep that in mind.
 
-<img src="/docs/images/keyboard.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/keyboard.png" style="margin-left: 15%; width: 70%">
 
 
 ## Internationalisation
@@ -303,7 +303,7 @@ Writing web apps for a shared device with a large touch screen comes with its ow
 
 ## Style guide
 
-<img src="/docs/images/momentum.png" style="margin-left: 15%; width: 70%">
+<img src="/doc/images/momentum.png" style="margin-left: 15%; width: 70%">
 
 As a third party developer you do of course have the tools and freedom to design the web content exactly as you like or to match your company's visual profile.
 

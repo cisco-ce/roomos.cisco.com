@@ -1,6 +1,6 @@
 # Sandbox tutorial
 
-<img src="/docs/images/sandbox/sandbox.png" />
+<img src="/doc/images/sandbox/sandbox.png" />
 
 ## Introduction
 
@@ -12,7 +12,7 @@ It requires:
 2. The [AnyConnect VPN client](https://developer.cisco.com/site/devnet/sandbox/anyconnect/).
 3. 5 minutes to spare, from you reserve the sandbox until it becomes available.
 
-<!-- <img src="/docs/images/sandbox/roomkitpro.jpeg" /> -->
+<!-- <img src="/doc/images/sandbox/roomkitpro.jpeg" /> -->
 
 ## Limitations
 
@@ -28,7 +28,7 @@ Currently, the sandbox has the following limitations:
 - Log in with your DevNet user.
 - Tap **Reserve** in the top right corner.
 
-<img src="/docs/images/sandbox/reserve.png" />
+<img src="/doc/images/sandbox/reserve.png" />
 
 - Select a duration for your booking. If you are just doing a quick test, please choose a short interval so others can use it when you are done. You can easily extend the time if you want to.
 - Wait for the sandbox to become ready. There is a timer in the top right corner showing the time left. Use this time to download and install AnyConnect if you don't already have it.
@@ -44,16 +44,16 @@ For safety and security, the sandbox is available on a separate, virtual private
 - When AnyConnect says **Connected**, you are good to go.
 - If you have technical issues with AnyConnect, check out [this guide](https://devnetsandbox.cisco.com/Docs/VPN_Access/AnyConnect_Connection_Guide.pdf).
 
-<img src="/docs/images/sandbox/anyconnect.png" />
+<img src="/doc/images/sandbox/anyconnect.png" />
 
 You should now be connected and ready to test. Look in the top right corner of the sandbox, here you will see how much time is remaining, as well as buttons to cancel or extend your booking. Keep this tab open so it's easy to get back.
 
-<img src="/docs/images/sandbox/booking-panel.png" />
+<img src="/doc/images/sandbox/booking-panel.png" />
 
 
 ## The web portal
 
-<img src="/docs/images/sandbox/web-portal.png" />
+<img src="/doc/images/sandbox/web-portal.png" />
 
 The web portal is a web based admin console where you can see the status of your video device and change it's settings.
 
@@ -64,7 +64,7 @@ The web portal is a web based admin console where you can see the status of your
 
 You are now logged in to the device's web interface. Let's get some action.
 
-<img src="/docs/images/sandbox/webui-call.png" />
+<img src="/doc/images/sandbox/webui-call.png" />
 
 - Go to the **Call** tab in the web UI, and let's setup a call. You need a number you can dial, for example your personal video URI (eg *myname@acme.com*).
 - Type the URI in the **Search or Dial** field.
@@ -73,7 +73,7 @@ You are now logged in to the device's web interface. Let's get some action.
 
 You will now be in a real call with your sandbox. It has a loopback cable from the monitor output back to the camera input. This means you should see your own selfview back as far-end video.
 
-<img src="/docs/images/sandbox/selfview.png" />
+<img src="/doc/images/sandbox/selfview.png" />
 
 
 - Tap the mute button in the web ui. Notice in your video window that the far end participant (sandbox) is now muted.
@@ -82,7 +82,7 @@ You will now be in a real call with your sandbox. It has a loopback cable from t
 - Scroll down and locate the "Time" tab in the settings. Change the time zone to match your local timezone.
 - Press **Save**. You have now changed the setting on your device permanently (or rather, until your booking expires).
 
-<img src="/docs/images/sandbox/webui-settings.png" />
+<img src="/doc/images/sandbox/webui-settings.png" />
 
 <!--
 TODO A few more things to test
@@ -92,7 +92,7 @@ TODO A few more things to test
 
 ## Terminal / SSH
 
-<img src="/docs/images/sandbox/tshell.png" />
+<img src="/doc/images/sandbox/tshell.png" />
 
 So you want to feel the matrix? With command line / SSH you can log on to the video device and use the xAPI directly.
 

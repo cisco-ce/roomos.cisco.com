@@ -27,4 +27,4 @@ One of the big benefits with macros is that since they run on the device itself,
 
 To start writing a macro, go to the Macro Editor from the device web interface.
 
-If you are already familiar with the xAPI, see [xAPI to Javascript](/docs/JSXAPI/XapiToJs.md) to quickly get on your way. If you are starting from scratch, see the full [tutorial](/docs/Macro/Tutorial.md).
+If you are already familiar with the xAPI, see [xAPI to Javascript](/doc/TechDocs/JSXAPIXapiToJs) to quickly get on your way. If you are starting from scratch, see the full [tutorial](/doc/TechDocs/MacroTutorial).

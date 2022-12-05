@@ -110,7 +110,7 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/ui-extensions-editor.png"
     },
     {
-      "id": "UIExtensions-Panels",
+      "id": "UiExtensions-Panels",
       "title": "UI Extensions: Panels and widgets",
       "description": "Learn how custom UI panels and widgets work, and understand the event model",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/uiextensions/switches.png"

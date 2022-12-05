@@ -37,9 +37,9 @@ As of May 2022, the Chromium version is 87.
 
 ## Which Cisco devices are web compatible?
 
-Any 'newer' devices, such as Boards (Webex Board, Board Pro), Room Kits, Room systems and Desk series. For a complete list,
+Any 'newer' devices, such as the Cisco Board series, the Cisco Room series and the Cisco Desk series, except the Desk Hub. The DX series and the SX series are not supported.
 
-As of CE 9.9, the web engine is available on both cloud and on-premise deployments.
+Both cloud and on-premise deployments are supported.
 
 ## What about devices without a touch screen?
 

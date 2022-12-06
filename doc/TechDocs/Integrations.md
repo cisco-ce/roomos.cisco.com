@@ -187,6 +187,7 @@ Both secure web sockets (wss) and unsecure (ws) is supported.
 - You need to combine data from multiple devices
 - You need to respond to external events
 - You need to use external libraries not supported by macros
+- You need to use the APIs directly from a browser (not via a web server)
 
 ### Do not use this integration when
 
@@ -214,6 +215,10 @@ It's recommended to use this approach in the same situations as the JSXAPI situa
 * You cannot use web socket, perhaps your integration platform does not support web sockets
 
 * You dont need feedback, and prefer a simple fire and forget HTTP solution
+
+## Don't use when:
+
+* You need to access directly the API directly from a browser / web app (no CORS: the devices don't HTTP requests from different origins) 
 
 See the [Postman collection](/doc/UsefulLinks/Resources) at DevNET for many good examples.
 

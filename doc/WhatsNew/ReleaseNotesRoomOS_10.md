@@ -1,8 +1,8 @@
-<img src="/docs/images/releases/Cisco_Logo_no_TM_Midnight_Blue-RGB.png" style="border: none; height: 100px; width: 200px;"><br><br>
+<img src="/doc/images/releases/Cisco_Logo_no_TM_Midnight_Blue-RGB.png" style="border: none; height: 100px; width: 200px;"><br><br>
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.16 - October 2022
+D15463.17 - December 2022
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.16 - October 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>17</td> 
+		<td>December 8th 2022</td> 
+		<td>
+			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.4.2</a> 1cadf49eefd, patch
+		</td>
 	</tr>
 	<tr>
 		<td>16</td> 
@@ -313,6 +320,17 @@ If you have a **Cisco Webex Desk Limited Edition** and upgrade it to RoomOS 10.1
 Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
 
 Note: If you are registered on UCM / Webex Edge for Devices, the device type will change. This may cause the device to lose registration to UCM after upgrade. Please prepare to re-register the device as a Desk Pro post upgrade to RoomOS 10.19.
+
+## RoomOS 10.19.4.2
+
+RoomOS 10.19.4.2 is a patch release and contains a fix for CSCwd33600.<br>
+
+NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.19.4.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.4.2&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.19.3.0
 
@@ -805,7 +823,7 @@ This is a patch release and contains patches for some of the known limitations f
 
 ## Support for Webex Board Pro 55 and 75<a name='101121-1'></a>
 
-<img src="/docs/images/releases/webexboardpro.png" style="border: none; height: 300px; width: auto;">
+<img src="/doc/images/releases/webexboardpro.png" style="border: none; height: 300px; width: auto;">
 
 Webex® Board Pro is an all-in-one device that provides everything you need for hybrid teamwork: it brings your local and remote teams together to collaborate in a connected digital workspace. Board Pro is a purpose-built solution combining premium visual collaboration, video conferencing, ideation, and co-creation, allowing your teams to join video-first meetings, digitally whiteboard, wirelessly present, and share content.
 
@@ -813,7 +831,7 @@ Webex® Board Pro is an all-in-one device that provides everything you need for 
 
 ## Support for Webex Desk Mini<a name='101121-2'></a>
 
-<img src="/docs/images/releases/webexdeskmini.png" style="border: none; height: 300px; width: auto; margin-left: 70px;">
+<img src="/doc/images/releases/webexdeskmini.png" style="border: none; height: 300px; width: auto; margin-left: 70px;">
 
 The Webex® Desk Mini is a portable all-in-one collaboration device that enables you to make any space an office. Easily turn your dining room or any small space into a productive workspace. The Webex Desk Mini is designed with an integrated handle which makes it easy to move around from one room to another. It also comes equipped with privacy features such as noise removal, video backgrounds and easy access to in-meeting controls — so you can always show up and look professional in meetings even from your kitchen or living room. 
 
@@ -823,7 +841,7 @@ Providing everything you need to work; with its USB-C connection you can double 
 
 ## Support for Webex Desk Hub<a name='101121-3'></a>
 
-<img src="/docs/images/releases/webexdeskhub.jpeg" style="border: none; height: 300px; width: auto; margin-left: 50px;">
+<img src="/doc/images/releases/webexdeskhub.jpeg" style="border: none; height: 300px; width: auto; margin-left: 50px;">
 
 The Webex® Desk Hub enables the office space of tomorrow through advanced collaboration, personalized experiences, and native shared desk experiences to deliver a modernized, clutter-free safe environment for the hybrid worker. experiences designed for Hot Desking, Hoteling, and advanced Collaboration. 
 
@@ -912,7 +930,7 @@ Added support for new [compatibility level](#compatibility-desk) for Webex Desk.
 
 ## Support for Cisco Webex Desk <a name='10825-1'></a>
 
-<img src="/docs/images/releases/cisco_webex_desk.png" style="border: none; height: 300px; width: 500px;">
+<img src="/doc/images/releases/cisco_webex_desk.png" style="border: none; height: 300px; width: 500px;">
 
 The Webex Desk is the all-in-one collaboration and productivity device for your desk—at home, in the office, or in a shared space. It is purpose-built for collaborating, whether you’re in a meeting, sharing your laptop screen, or brainstorming with a teammate. The Webex Desk device features a 24-inch, interactive 1080p display, 64-degree UHD camera, full-range speaker, and a mic array with AI-powered background noise suppression.
 
@@ -924,7 +942,7 @@ For more information about the Cisco Webex Desk, [follow this link](https://www.
 
 ## Support for Cisco Microphone array for Cisco Webex Room Panorama / Panorama 70 <a name='10825-2'></a>
 
-<img src="/docs/images/releases/microphone_array.png" style="border: none; height: 300px;">
+<img src="/doc/images/releases/microphone_array.png" style="border: none; height: 300px;">
 
 The Cisco Microphone Array is a premium directional microphone array designed to provide the Cisco Webex Room Panorama immersive video collaboration system with crystal-clear, spatial audio. It can capture participant voices from different directions and deliver multiple streams of high-fidelity audio. The Microphone Array recognizes which side of the table the speaker is on. To the far-end participants, it provides a more immersive, natural experience as voices coming from the left of the table are played back remotely from the left speaker, and vice versa. It supports immersive and inclusive executive meeting and conferencing scenarios for in-person and remote participants alike—just as if they were all in the same room. Better still, the Microphone Array supports an IP-based AV setup, allowing for enhanced flexibility and lower deployment costs.
 
@@ -1036,10 +1054,10 @@ Cisco Webex Desk, Desk Pro
 We have changed the default layout menu to a dropdown menu that also illustrates how the layout looks like.
 The prominent layout has changed to more grid based layout with with 1 large + N small images.
 
-<img src="/docs/images/releases/new-layoutmenu-single.png" style="border: none; height: 300px; width: auto;">
+<img src="/doc/images/releases/new-layoutmenu-single.png" style="border: none; height: 300px; width: auto;">
 New layout menu for single screen devices
 
-<img src="/docs/images/releases/new-layoutmenu-dual.png" style="border: none; height: 200px; width: auto;">
+<img src="/doc/images/releases/new-layoutmenu-dual.png" style="border: none; height: 200px; width: auto;">
 New layout menu for dual screen devices
 
 **Supported products**
@@ -1059,7 +1077,7 @@ Cisco Webex Desk Series
 
 ## Gesture recognition for Raise hand <a name='10825-9'></a>
 
-<img src="/docs/images/releases/gesture-raisehand.png" style="border: none; height: 100px; width: auto;">
+<img src="/doc/images/releases/gesture-raisehand.png" style="border: none; height: 100px; width: auto;">
 
 While in a CMS meeting that supports raise hand (you see a raise hand button on the touch interface), the device will recognize the gesture of raising your hand physically. 
 
@@ -1075,7 +1093,7 @@ The features listed below are only available when the device is linked to Webex 
 
 **Gesture recognition for reactions** <a name='10825-101'></a>
 
-<img src="/docs/images/releases/gesture-thumbsup.png" style="border: none; height: 100px; width: auto;"><img src="/docs/images/releases/gesture-thumbsdown.png" style="border: none; height: 100px; width: auto;">
+<img src="/doc/images/releases/gesture-thumbsup.png" style="border: none; height: 100px; width: auto;"><img src="/doc/images/releases/gesture-thumbsdown.png" style="border: none; height: 100px; width: auto;">
 
 In a Webex meeting with reactions and gesture recognition enabled, you will be able to send reactions to the meeting using physical gestures. 
 Reaction gestures include thumbs up and down. Also see "[Gesture recognition for Raise hand](#10825-9)"
@@ -1191,16 +1209,16 @@ New features in CE9.15.3.17 also included in RoomOS 10:
 * Whiteboard shapes
 * Direct ad-hoc booking from inside meeting rooms (requires Webex Edge for Devices or Webex registration)
 
-[Click here](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/software/ce9/release-notes/ce-software-release-notes-ce9.pdf) for more information about CE9.15.3.17 and the features above.
+[Click here](https://www.cisco.com/c/dam/en/us/td/doc/telepresence/endpoint/software/ce9/release-notes/ce-software-release-notes-ce9.pdf) for more information about CE9.15.3.17 and the features above.
 
 ### Support for Cisco Webex Desk Limited Edition <a name='10320-2'></a>
-<img src="/docs/images/releases/desklimited.png" style="border: none; height: 300px; width: 400px;">
+<img src="/doc/images/releases/desklimited.png" style="border: none; height: 300px; width: 400px;">
 
 Cisco Webex Desk Limited Edition is a new product in the Cisco Webex Desk Series and is only supported with RoomOS 10 and above. 
 
 ### Immersive share for Cisco Webex Desk Pro and Desk Limited Edition<a name='10320-3'></a>
 
-<img src="/docs/images/releases/immersiveshare.png" style="border: none; height: 300px; width: 400px;">
+<img src="/doc/images/releases/immersiveshare.png" style="border: none; height: 300px; width: 400px;">
 
 Deliver more engaging presentations, by placing yourself in front of any content you share from your computer. 
 
@@ -1222,7 +1240,7 @@ While in immersive share mode, the camera LED is not lit. A workaround is to loo
 
 On the touch panel. Go into the settings menu and press "Issues and diagnostics". A new button is available to enable PII logging.
 
-<img src="/docs/images/releases/piilogging.png" style="border: none; height: 300px; width: 600px;">
+<img src="/doc/images/releases/piilogging.png" style="border: none; height: 300px; width: 600px;">
 
 When PII Logging is enabled the device will write PII information in the logs. A PII warning banner is displayed on the Touch device and on the screen.   
 
@@ -1232,7 +1250,7 @@ This feature can be used for troubleshooting purposes when unobscured logs are r
 
 If you have enabled any Room Analytics features on your Cisco Webex Device, a Room Analytics dashboard will appear on the web interface home page. 
 
-<img src="/docs/images/releases/roomanalyticsdashboard.png" style="border: none; height: 300px; width: 600px;">
+<img src="/doc/images/releases/roomanalyticsdashboard.png" style="border: none; height: 300px; width: 600px;">
 
 ### Important notes and warnings for this software release <a name='10320-5'></a>
 
@@ -1281,19 +1299,19 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_4_2.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_4_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_3_0-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_3_0-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_4_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_4_2-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_3_0.k4.cop.sha512</b>*</td>
+		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_4_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_3_0.k3.cop.sgn</b><br><b>cmterm-ce10_19_3_0.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-ce10_19_4_2.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>

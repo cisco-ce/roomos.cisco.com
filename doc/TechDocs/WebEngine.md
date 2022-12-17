@@ -10,7 +10,7 @@ Separate documentation details how to enable the settings in Control Hub and con
 
 ## Short summary
 
-Don't have time to read all the details? Summary: It is a single-tab Chromium browser with most modern web technologies available, running on an embedded device. When developing for it, use best-practise web standards and develop with a slightly older iPad web browser in mind.
+Don't have time to read all the details? Summary: It is a single-tab Chromium browser with most modern web technologies available, running on an embedded device. When developing for it, use best-practice web standards and develop with a slightly older iPad web browser in mind.
 
 Oh - and remember to test on the intended devices early!
 
@@ -186,7 +186,7 @@ We apply security patches regularly in addition to the full Qt upgrades.
 
 Yes, the Webex board supports up to 10 simultaneous touch events.
 
-Note that the ordering of touch events is not stable, so use the touch event `identifier` to keep track of simultaneous touches (this is standard practise).
+Note that the ordering of touch events is not stable, so use the touch event `identifier` to keep track of simultaneous touches (this is standard practice).
 
 The traditional `onclick` event is also supported.
 
@@ -290,7 +290,7 @@ Both fullscreen and non-fullscreen web views are supported througth the use of w
 
 For digital signage, content is cloned to the extra screens. A web view cannot be logically stretched across multiple screens. In other cases than signage, only the primary monitor will display the web view.
 
-## Best practises
+## Best practices
 
 Writing web apps for a shared device with a large touch screen comes with its own set of challenges. Here are a couple of pointers:
 
@@ -323,7 +323,7 @@ For more info about these, see separate RoomOS developer documentation on [roomo
 
 Webex Boards and Webex Desk series have touch screen capability, but all the new Cisco video devices such as Room Kit, Room Kit Mini, Room 55 etc also support web view. The most obvious use case is digital signage, but you can also open web views programatically through the xAPI. See the section on API-driven web views above.
 
-# Trouble shooting
+# Troubleshooting
 
 ## Are logs available?
 

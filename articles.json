@@ -157,7 +157,12 @@
       "description": "Create apps that connect to the video device from a browser on laptops and smart phones",
       "symbol": "🌍"
     },
-
+    {
+      "id": "WebAppsOnNavigator",
+      "title": "PWA - Web apps on Navigator",
+      "description": "How to create web apps on the Navigator that uses the xAPI 'natively'",
+      "symbol": "📝"
+    },
     {
       "id": "",
       "title": "",

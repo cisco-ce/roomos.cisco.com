@@ -2,6 +2,8 @@
 
 <img src="/doc/images/meetingroom4.jpeg" />
 
+An integration is a third party extension that can be developed by customers, partners and third party software developers to extend, auomate and add value to the Cisco devices, using the public APIs, SDKs and open platform tools.
+
 RoomOS supports many alternative types of integrations, and it can initially be difficult to know which one to choose. This guide describes the main alterntives for connecting to a Cisco device, how they differ from each other, and suggests when to use and not use each one.
 
 All the integrations use the xAPI, and often an integration can be implemented with any of the alternatives. The difference is the way they connect, the network requirements, how they can be deployed, and the security model.
@@ -21,7 +23,7 @@ A short summary of the integration types are:
 * **RS232 / Serial**: Cable-based connection (serial cable or USB), typically for legacy room controllers such as Crestron and Extron, often placed in the same room as the collab device.
 
 
-All the solutions presented here support UI extensions.
+All the solutions presented here support [UI extensions](/doc/TechDocs/UiExtensions).
 
 ## Quick sheet
 
@@ -69,14 +71,14 @@ All the solutions presented here support UI extensions.
     <tr>
     <td>👮‍♀️ API access</td>
     <td>Full</td>
-    <td>Limited*</td>
+    <td>Reduced*</td>
     <td>Full</td>
     <td>Full</td>
     <td>Full</td>
   </tr>
 </table>
 
-\**Cloud xAPI can only subscribe to a small subset of events and status changes, and is not allowed to use xAPIs marked as **privacy-impacting** on personal-registered devices.*
+\**Cloud xAPI can only subscribe to a subset of events and status changes, and is not allowed to use xAPIs marked as **privacy-impacting** on personal-registered devices.*
 
 ## Macros
 
@@ -84,11 +86,11 @@ Macros are JavaScripts that run on the collab device itself. The scripts can use
 
 <img src="/doc/images/integrations/macros.png" />
 
-Macros are typically created in the macro editor on a specific device, then copied to other devices. Macros are heavily sandboxed and cannot access the file system, setup socket connections etc, but they can talk to other web services using the xAPI HTTP Client apis.
+Macros are typically created in the macro editor on a specific device, then copied to other devices. Macros are heavily sandboxed and cannot access the file system, setup socket connections etc, but they can talk to other web services using the xAPI [HTTP Client apis](/xapi/search?search=http+client).
 
 <img src="/doc/images/macroeditor.png" style="border: 1px solid #333" />
 
-Common examples of macros are providing support for custom UI actions such as quick dials, custom layouts, controlling lights, blinds, climate controls, and creating automated workflows like unbooking a room when nobody shows up. Since they run on the device itself, there is no network involved, and the response to device events, user interactions etc are instantaneous.
+Common use cases for macros are providing support for custom UI actions such as quick dials, custom layouts, controlling lights, blinds, climate controls, and creating automated workflows like unbooking a room when nobody shows up. Since they run on the device itself, there is no network involved, and the response to device events, user interactions etc are instantaneous.
 
 Macros can run as either admin or integrator / room control user, but in general there is no fine grained way to set which APIs a particular macro can and cannot access. In practise, a third party macro designed to eg just provide light control will typically also have access to call logs, network settings, user management etc.
 
@@ -121,9 +123,8 @@ You can provision macros from the device itself or from Control Hub. There are n
 
 ### Typical use cases
 
-* Modern ion-room controls for lights, shades, climate controls supporting HTTP REST APIs
+* Modern in-room controls for lights, shades, climate controls supporting HTTP REST APIs
 * Custom ui panels on the device to control custom layout
-* Custom automations such as automatically unbooking a meeting room when it's scheduled but no one shows up
 
 For an intro to macros, start with: [Macro Tutorial](/doc/TechDocs/MacroTutorial). For dozens of examples, see [extensions on this site](/macros).
 
@@ -133,18 +134,22 @@ Cloud xAPI talks to the device using modern REST APIs. These calls are made from
 
 <img src="/doc/images/integrations/cloud.png" />
 
-The access model is a bit more complicated than the macros and on-prem solutions, and does not use local user access. Instead, access is granted as tokens, either by:
+The access model is more advanced than the macros and on-prem solutions, and does not use local user access. Instead, access is granted as tokens, either by:
 
-- Using a tokan on behalf of an authorised org admin.
+- Using a token on behalf of an authorised org admin.
 - Giving bots access to the devices specifically (a bot in this case just means a machine account generated in the Webex cloud, not necessarily a chat bot).
 
-The cloud xAPI does not provide any feedback mechanisms such as notifying the integration when a status has changed on the device, or a user interatction has occured. It can still be useful as a way to change device configurations in bulk based on specific business requirements.
+The cloud xAPI itself does not provide any feedback mechanisms such as notifying the integration when a status has changed on the device, or a user interatction has occured. It can still be useful as a way to invoke device commands in bulk based on specific business requirements.
 
 <img src="/doc/images/integrations/workspace-integrations.png" />
 
 Workspace integrations build on top of the cloud xAPI to improve this: It allows you to create integrations in the cloud that receive notifications and events that you specify in the manifest. Furthermore, unlike all the other integrations, it allows you to specify exactly which xAPIs the integration is allowed to access, giving you fine grained access control over what an integration can and cannot do.
 
 Workspace integrations can be created for your own org, but it can also be created as a public integration that any Webex customer can use. This creates a unique business opportunity for developers to create solutions that can be offered to any Webex customer and installed almost as a one-click operation on Control Hub.
+
+Not all events and statuses are supported by a workspace integration. You can see a full list when adding a new integration on Control Hub.
+
+See also the [Device developer guide](https://developer.webex.com/docs/api/guides/device-developers-guide#devices-api) on developer.webex.com.
 
 ### Use cloud xAPI and workspace integrations when:
 
@@ -156,14 +161,15 @@ Workspace integrations can be created for your own org, but it can also be creat
 
 - You need data to stay strictly within your own network
 - You need access to more APIs than the cloud xAPIs allow
-- You need the integration to work with devices in personal mode
+- You need the integration to work with devices in personal mode, and your integration requires privacy-impacting APIs
 - You need fast respons to events (eg adjusting a light as the user moves a slider)
-- You have an on-prem device deployment
+- You have an on-prem device deployment (without the possibility of Webex Edge for devices)
 
 To get started with cloud xAPI and workspace integrations, see [the device guide](https://developer.webex.com/docs/api/guides/device-developers-guide) and the [Workspace Integrations guide](https://developer.webex.com/docs/api/guides/workspace-integrations-guide) on developer.webex.com.
 
 ### Typical use cases
 
+* Automatically unbook a scheduled meeting room if no-one arrives after a few minutes.
 * Collecting usage metrics from large number of devices in an organisation to a central analytics tool.
 * Providing a "Report Issue" form on all devices in the meeting rooms thar forwards the issue to eg ServiceNow.
 
@@ -216,9 +222,9 @@ It's recommended to use this approach in the same situations as the JSXAPI situa
 
 * You dont need feedback, and prefer a simple fire and forget HTTP solution
 
-## Don't use when:
+### Don't use when:
 
-* You need to access directly the API directly from a browser / web app (no CORS: the devices don't HTTP requests from different origins) 
+* You need to access directly the API directly from a browser / web app (no CORS: the devices don't HTTP requests from different origins)
 
 See the [Postman collection](/doc/UsefulLinks/Resources) at DevNET for many good examples.
 
@@ -258,7 +264,7 @@ The best practise would typically be that the browser talks to a web server, tha
 
 See [this guide ](/doc/TechDocs/JSXAPIBrowser) for more details.
 
-## What about the web apps on the devices?
+## Web apps on the device?
 
 As of 2022, the web apps (and other web based features such as digital signage, embedded apps and web views opened from API) do not have any access to the device xAPI, for security reasons.
 

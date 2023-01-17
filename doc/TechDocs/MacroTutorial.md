@@ -526,7 +526,7 @@ dial('user@example.com');
 
 The names within the curly parentheses `{ ... }` must match the identifier exported from the `lib` module. User-defined modules must be prefixed with `./` to distinguish them from builtins modules like `xapi`.
 
-For backwards compatibility macros also support the [CommonJS](https://en.wikipedia.org/wiki/CommonJS) module specification made famous by [Node.js](https://nodejs.org/en/).
+Support for [CommonJS](https://en.wikipedia.org/wiki/CommonJS) module specification (made famous by [Node.js](https://nodejs.org/en/)) is deprecated and will be removed in future.
 
 ## Default exports
 
@@ -556,7 +556,30 @@ import dial, { someOtherExport } from './lib';
 
 ## Main module
 
-Active macros can also serve as modules for other macros. There is a `CommonJS` convention where all modules have access to a global `module` object. Similarly, there is a global `require` function used to require (other word for import) modules. The `require` function has a `main` property which can be used to query whether or not the macro is running as the main module or not:
+Macros can also serve as modules for other macros. There is a global function `_main_macro_name` which returns the name of the main macro that is executing. This can be used to query whether or not a macro is running as the main module or not:
+
+```javascript
+// my_macro_1
+import xapi from 'xapi';
+
+export default function dial(number) {
+  return xapi.Command.Dial({ Number: number });
+}
+
+if (_main_macro_name() === "my_macro_1") {
+  // This code will only run if this is the active macro
+  dial('user@example.com');
+} else {
+  // This code will only run if this macro is being used as a module
+  // in another macro
+}
+```
+
+This allows for active macros to share its functions with other macros, but you can guard e.g. your macro initialization from being evaluated when the macro is being used as a module by other macros.
+
+### Using CommonJs convention (Deprecated)
+
+There is a `CommonJS` convention where all modules have access to a global `require` function used to require (other word for import) modules. The `require` function has a `main` property which can be used to query whether or not the macro is running as the main module or not:
 
 ```javascript
 import xapi from 'xapi';
@@ -571,7 +594,7 @@ if (require.main === module) {
 }
 ```
 
-This allows for active macros to share its functions with other macros, but you can guard e.g. your macro initialization from being evaluated when the macro is being used as a module by other macros.
+This approach is deprecated and `_main_macro_name` approach should be favoured.
 
 # Performance and life cycle
 

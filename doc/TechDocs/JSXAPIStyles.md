@@ -17,6 +17,9 @@ xapi.Status.Audio.Volume
 
 // Set a configuration
 xapi.Config.SystemUnit.Name.set('My System');
+
+// Subscribe to event (similar for status and configs):
+xapi.Event.UserInterface.Extensions.Widget.Action.on(event => console.log(event.WidgetId));
 ```
 
 ## Old style API
@@ -32,6 +35,9 @@ xapi.status
 
 // Set a configuration
 xapi.config.set('SystemUnit Name', 'My System');
+
+// Subscribe to event (similar for status and config changes):
+xapi.event.on('UserInterface Extensions Widget Action', event => console.log(event.WidgetId));
 ```
 
 The old style API might prove handy if you want to test things quickly by copying paths from the command line.

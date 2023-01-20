@@ -2,7 +2,7 @@
 
 <img src="/doc/images/meetingroom4.jpeg" />
 
-An integration is a third party extension that can be developed by customers, partners and third party software developers to extend, auomate and add value to the Cisco devices, using the public APIs, SDKs and open platform tools.
+An integration is a third party extension that can be developed by customers, partners and third party software developers to extend, automate and add value to the Cisco devices, using the public APIs, SDKs and open platform tools.
 
 RoomOS supports many alternative types of integrations, and it can initially be difficult to know which one to choose. This guide describes the main alternatives for connecting to a Cisco device, how they differ from each other, and suggests when to use and not use each one.
 

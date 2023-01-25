@@ -2,7 +2,7 @@
 # Cisco Webex RoomOS 10 
 # Release notes
 ---
-D15463.17 - December 2022
+D15463.18 - January 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.17 - December 2022
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>18</td> 
+		<td>January 25th 2023</td> 
+		<td>
+			Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.5.3</a> 9f26a1da03d, patch
+		</td>
 	</tr>
 	<tr>
 		<td>17</td> 
@@ -577,6 +584,15 @@ Due to an issue with some of the backlight LED burning out on the Cisco Webex Ro
 ### Some features are only supported with the RoomOS 11 UI Experience
 
 For this release we have some features that will only be available for the RoomOS 11 UI Experience. This means that some devices that do not have support for the new UI yet in an on-premises deployment, will have to wait in order to use those features described in the next section. This is the reason why only a select few devices is mentioned under "Supported products" for now.
+
+## RoomOS 10.15.5.3
+
+This is a patch release and contains bugfixes only.
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.15.5.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.15.5.3&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.15.4.1
 

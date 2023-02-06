@@ -1,6 +1,6 @@
 # Virtual Receptionist
 
-<img src="/docs/images/kiosk/overview.png" />
+<img src="/doc/images/kiosk/overview.png" />
 
 *What:* Provide a Webex Desk in the reception, where visitors can walk up and start a conversation with a remote receptionist, if there is no one physically avaiable, or they are already occupied with another customer.
 

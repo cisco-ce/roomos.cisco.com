@@ -1,6 +1,6 @@
 # Universal Room Controls
 
-<img src="/docs/images/usecases/ui-extensions.png" />
+<img src="/doc/images/usecases/ui-extensions.png" />
 
 *What:* With custom user interface extensions, macros and the ability to call other HTTP services directly, the video devices can act as a powerful universal remote control in the meeting room, for example to control lights and shades without additional touch panels or hardware boxes in the room. And if the external equipment does not support HTTP APIs, you can easily connect Crestron controllers etc to the video device.
 

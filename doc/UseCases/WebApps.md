@@ -1,6 +1,6 @@
 ## Use case: Web applications
 
-<img src="/docs/images/usecases/webapps.png" />
+<img src="/doc/images/usecases/webapps.png" />
 
 Bring your own favourite web applications into the team room, the meeting room or your personal device. The web apps can be installed from Control Hub, from the device's local web interface or by the user from the settings menu on the device itself.
 

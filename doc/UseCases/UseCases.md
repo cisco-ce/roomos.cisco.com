@@ -7,9 +7,9 @@ With Cisco video devices you have the ability to have meetings from anywhere. Th
 
 This document gives an overview for integrators, be they resellers or software solution partners, to understand how they can configure and program with API’s for customers’ specific requirements for their organization and how they manage their employees engagement , well being and workflow.
 
-<img src="/docs/images/usecases/examples.png" />
+<img src="/doc/images/usecases/examples.png" />
 
-<img src="/docs/images/usecases/devices.png" />
+<img src="/doc/images/usecases/devices.png" />
 
 ## Resources
 
@@ -46,7 +46,7 @@ The following use cases will be covered at a high level.  Many of the API’s ca
 * Spatial analytics
   * Often used for planning purposes and driving real time behavior on devices
 
-<img src="/docs/images/usecases/building-example.png" />
+<img src="/doc/images/usecases/building-example.png" />
 
 
 <!--

@@ -5,7 +5,7 @@ RoomOS is the inclusive and open operating system that powers the meeting agnost
 <div class="horisontal-list">
   <div>
     <img
-      src="/docs/images/poster.png"
+      src="/doc/images/poster.png"
       style="height: 115px"
     />
     <h3>Users</h3>
@@ -16,7 +16,7 @@ RoomOS is the inclusive and open operating system that powers the meeting agnost
   </div>
   <div>
     <img
-      src="/docs/images/kiosk/overview.png"
+      src="/doc/images/kiosk/overview.png"
       style="height: 115px"
     />
     <h3>Administrators</h3>

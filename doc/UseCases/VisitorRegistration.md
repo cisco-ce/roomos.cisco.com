@@ -1,6 +1,6 @@
 # Visitor Registration
 
-<img src="/docs/images/usecases/visitor-registration.jpg" />
+<img src="/doc/images/usecases/visitor-registration.jpg" />
 
 *What:* Provide a Webex Desk in the reception, where visitors can walk up and register themselves. A visitor registration web app can provide the registering UI and push the registration to the company's internal visiting system, as well as print out visitor badge.
 

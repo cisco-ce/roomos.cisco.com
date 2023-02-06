@@ -84,7 +84,7 @@ the value of a widget.
 
 ## Push buttons
 
-<img src="/docs/images/uiextensions/variation-pushbuttons.png" />
+<img src="/doc/images/uiextensions/variation-pushbuttons.png" />
 
 A push button can be used to perform an action, such as call someone, or to indicate that
 something is on or off.
@@ -127,7 +127,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "ExampleButton" Valu
 
 ## Switches
 
-<img src="/docs/images/uiextensions/switches.png" />
+<img src="/doc/images/uiextensions/switches.png" />
 
 
 A switch is a two-state control which indicates either on or off.
@@ -157,7 +157,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "myswitch" Value: "o
 
 ## Sliders
 
-<img src="/docs/images/uiextensions/variation-sliders.png" />
+<img src="/doc/images/uiextensions/variation-sliders.png" />
 
 A slider selects values within a set range.
 
@@ -202,7 +202,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "ExampleSlider" Valu
 
 ## Group Buttons
 
-<img src="/docs/images/uiextensions/variation-groupbuttons.png" />
+<img src="/doc/images/uiextensions/variation-groupbuttons.png" />
 
 Group buttons are linked so that only one can be selected at a time.
 
@@ -267,7 +267,7 @@ xCommand UserInterface Extensions Widget UnsetValue WidgetId: "ExampleGroup"
 
 ## Icon Buttons
 
-<img src="/docs/images/uiextensions/variation-iconbuttons.png" />
+<img src="/doc/images/uiextensions/variation-iconbuttons.png" />
 
 Icon buttons share behavior with other buttons, but they have an icon with a user selected color or image.
 
@@ -284,7 +284,7 @@ The events and commands are exactly the same as for the push buttons above.
 
 ## Spinners
 
-<img src="/docs/images/uiextensions/variation-spinners.png" />
+<img src="/doc/images/uiextensions/variation-spinners.png" />
 
 A spinner is used to step through a list of values. You may use the two buttons to
 increment or decrement a number, or to step through a list of options.
@@ -327,7 +327,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "ExampleSpinner" Val
 
 ## Directional Pad
 
-<img src="/docs/images/uiextensions/directionalpad2.png" />
+<img src="/doc/images/uiextensions/directionalpad2.png" />
 
 The directional pad can be regarded as a set of five buttons: the four directional buttons and
 the center button.
@@ -364,7 +364,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "ExamplePad" Value: 
 
 ## Text
 
-<img src="/docs/images/uiextensions/text2.png" />
+<img src="/doc/images/uiextensions/text2.png" />
 
 A text widget is used to place text on the display. The user does not interact with it.
 
@@ -397,7 +397,7 @@ xCommand UserInterface Extensions Widget SetValue WidgetId: "ExampleText" Value:
 
 ## Spacers
 
-<img src="/docs/images/uiextensions/spacer2.png" />
+<img src="/doc/images/uiextensions/spacer2.png" />
 
 The spacer lets you add space between or after widgets. It's basically just a layout tool.
 

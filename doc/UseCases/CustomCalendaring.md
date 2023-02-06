@@ -3,7 +3,7 @@
 
 The Cisco Room Navigator comes with a great booking user interface, but if you have specific needs, you can also create your own booking web app on the Navigator.
 
-<img src="/docs/images/usecases/navigator.webp" />
+<img src="/doc/images/usecases/navigator.webp" />
 
 **Relevant APIs:**
 

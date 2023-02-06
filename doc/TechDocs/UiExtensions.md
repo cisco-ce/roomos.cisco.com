@@ -6,7 +6,7 @@ In addition, you can add web apps to the home screen. Web apps are covered separ
 
 ## Extension types
 
-<img src="/docs/images/uiextensions/overview.png" />
+<img src="/doc/images/uiextensions/overview.png" />
 
 1. UI panels allow you to create custom panels with widgets to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md)
 
@@ -25,6 +25,6 @@ The extensions can be created and added with the UI Extensions editor, but also 
 <a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>
 
 <a href="https://custom-collab.cisco.com/uieditor/" target="_blank">
-  <img src="/docs/images/ui-extensions-editor.png" />
+  <img src="/doc/images/ui-extensions-editor.png" />
 </a>
 

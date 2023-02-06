@@ -1,6 +1,6 @@
 # Work environment monitoring
 
-<img src="/docs/images/usecases/environmental-sensors.png" />
+<img src="/doc/images/usecases/environmental-sensors.png" />
 
 Many of the devices now includes environmental sensors, including temperature, humidity, CO2 levels and ambient noise. These can be used to for example:
 

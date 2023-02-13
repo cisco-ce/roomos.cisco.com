@@ -20,7 +20,7 @@ RoomOS is the inclusive and open operating system that powers the meeting agnost
       style="height: 115px"
     />
     <h3>Administrators</h3>
-    Check out all the other features the devices can help you with in the <a href="/doc/UseCases">use cases</a> and discover what is new in the <a href="/doc/WhatsNew">release notes</a>.
+    Check out all the other features the devices can help you with in the <a href="/doc/UseCases">use cases</a> and discover what's new in the <a href="/doc/WhatsNew">release notes</a>.
   </div>
   <div>
     <img

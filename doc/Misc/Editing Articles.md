@@ -19,7 +19,7 @@ There are two main ways to work with Git:
 
 Most of the content in this article applies to both methods, but the Github method is described in more detail.
 
-### Adding a new article
+## Adding a new article
 
 Steps to create new article:
 
@@ -42,13 +42,18 @@ https://roomos.cisco.com/doc/<Folder name>/<Article name>
 So for example if your folder is MTR and your article is Introduction, you should be able to open https://roomos.cisco.com/doc/MTR/Introduction.
 
 
-### Editing
+## Editing
 
 Editing is just like adding new articles, but even simpler. Just find the article in the folder structure, click the *Edit* icon, update the article, scroll to the bottom and click **Commit changes**.
 
-### View your updates on roomos.cisco.com
+## View your updates on roomos.cisco.com
 
 Simply go to roomos.cisco.com, locate your article and reload your browser. There might be a few minutes before you commit your changes to when they appear.
+
+## Mini table of contents
+
+Use `##` to add second section headers in your article. These will turn up as links in the quick jump menu on the right hand side of the article, making it easier for users to jump to specific items quickly.
+
 
 ## Adding images
 
@@ -108,3 +113,8 @@ A link to an external URL:
 Code snippets: Use three special quotes `, include code, then end with another three `
 
 ```
+
+## HTML
+
+You can also include pure HTML directly in the article, but it is not recommended to do this unless you absolutely have to, as it is likely to break the consistency of the article styling and look weird.
+

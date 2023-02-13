@@ -30,7 +30,7 @@ Steps to create new article:
 * Change "No wrap" to "Soft wrap" for better experience.
 * Start writing markdown. Tap the markdown button in the lower right corner for help on syntax.
 * Tap preview at any time to see how your doc will look (roughly)
-* When you are done, scroll to the bottom. Feel free to add comments summarizing your changes, the press **Commit new file*.
+* When you are done, scroll to the bottom. Feel free to add comments summarizing your changes, the press **Commit new file**.
 
 A few minutes after you commit, your files should be available on roomos.cisco.com. There is no staging or previewing possibilities. If you added a new file, nobody will see it though because there is no link to it anywhere yet.
 
@@ -46,6 +46,9 @@ So for example if your folder is MTR and your article is Introduction, you shoul
 
 Editing is just like adding new articles, but even simpler. Just find the article in the folder structure, click the *Edit* icon, update the article, scroll to the bottom and click **Commit changes**.
 
+### View your updates on roomos.cisco.com
+
+Simply go to roomos.cisco.com, locate your article and reload your browser. There might be a few minutes before you commit your changes to when they appear.
 
 ## Adding images
 
@@ -57,7 +60,18 @@ To use images in you article, you need to upload them to GitHub first.
 * Drag and drop the image(s) you want to the upload form.
 * Commit the changes. This will add the images to the GitHub repo.
 * Open the article you want to include images in.
-* Add the image like so: `<img src="/doc/images/<myfolder>/<myimg>`, eg `<img src="/doc/images/MTR/overview.png" />`
+* Add the image like so: 
+
+```
+<img src="/doc/images/<myfolder>/<myimg>
+```
+
+eg
+
+```
+<img src="/doc/images/MTR/overview.png" />
+```
+
 * Tap preview and confirm that the image is indeed showing
 
 ## Supported markdown

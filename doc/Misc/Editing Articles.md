@@ -118,3 +118,13 @@ Code snippets: Use three special quotes `, include code, then end with another t
 
 You can also include pure HTML directly in the article, but it is not recommended to do this unless you absolutely have to, as it is likely to break the consistency of the article styling and look weird.
 
+## Publishing
+
+When your article is ready to be shown to end users, it can be added to the menu system by adding it to `/articles.json`.
+
+If you are unfamiliar with the JSON format, please ask us to help you for this step. **Creating an invalid JSON file will cause the RoomOS to not be able to show articles until fixed again.**
+
+* Edit articles.json
+* Add a new entry for your article under the correct folder
+* The *id* field must match the filename of your article. And the category you choose must match the folder where you added the article.
+* Commit the file. It should now appear in the roomos article list within a few minutes.

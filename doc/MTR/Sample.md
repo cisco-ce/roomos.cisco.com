@@ -33,3 +33,5 @@ Images should first be uploaded to the /doc/images/mtr folder. Then they can be 
 ```
 
 The image will automatically scale to fit the width of the article.
+
+<img src="/doc/images/MTR/room-bar-mtr.png" />

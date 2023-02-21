@@ -45,7 +45,7 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 
 ## Top menu overview
 
-<img src= "/doc/images/MTR/WebUIMainMenu.png" width="200">
+<img src= "/doc/images/MTR/WebUIMainMenu.png" style="width: 200px">
 
 **Home**: Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, MTR and registration status, utilization and environment data, and more.
 

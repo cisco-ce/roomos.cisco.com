@@ -16,15 +16,17 @@ Cisco collaboration MTR devices implemented in a shared space will need to be pr
 For additional information on Microsoft Teams Licenses and a comparison matrix of features between the Basic and Pro licenses, visit: https://learn.microsoft.com/enus/microsoftteams/rooms/rooms-licensing
 
 If you plan to use your MTR device to make/receive PSTN calls, additional licensing may be
-needed for PSTN connectivity. Read more about PSTN connectivity: https://learn.microsoft.com/enus/microsoftteams/pstn-connectivity
+needed for PSTN connectivity. Read more about PSTN connectivity: 
+https://learn.microsoft.com/enus/microsoftteams/pstn-connectivity
 
-"" Microsoft Authentication and Intune
+## Microsoft Authentication and Intune
 
 Microsoft recommends a specific set of best practices when considering authentication for
 Android based devices. For example, multi-factor authentication isn’t recommended
-with shared devices as shared devices are tied to a room or space rather than to an end user. For a full explanation of these best practices, see https://docs.microsoft.com/enus/microsoftteams/devices/authentication-best-practices-for-android-devices.
+with shared devices as shared devices are tied to a room or space rather than to an end user. For a full explanation of these best practices, see: https://docs.microsoft.com/enus/microsoftteams/devices/authentication-best-practices-for-android-devices.
 
-If Intune is currently set up for only Android mobile phone, Cisco collaboration MTRoA devices will likely fail on current mobile device conditional access and/or compliance policies. For specifics on supported policies for MTRoA devices, see https://docs.microsoft.com/en-us/microsoftteams/rooms/supported-ca-and-compliancepolicies?tabs=mtr-w 
+If Intune is currently set up for only Android mobile phone, Cisco collaboration MTRoA devices will likely fail on current mobile device conditional access and/or compliance policies. For specifics on supported policies for MTRoA devices, see: 
+https://docs.microsoft.com/en-us/microsoftteams/rooms/supported-ca-and-compliancepolicies?tabs=mtr-w 
 
 If your Cisco collaboration MTRoA device doesn’t login with credentials that login correctly on Teams web client, this can typically be an element of Microsoft Intune that is causing the device to not successfully login. 
 

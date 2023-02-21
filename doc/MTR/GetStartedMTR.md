@@ -2,6 +2,8 @@
 ## The home screen
 The home screen is the starting point from where you'll access all the features and functionality your device has to offer. Tap the 
 
+<img src="/doc/images/MTR/HomeScreen.png"/>
+
 * bullet list 1
 * bullet list 2
 * 

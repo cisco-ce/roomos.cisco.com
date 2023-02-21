@@ -24,7 +24,13 @@ Numbered lists can be made with numbers and a dot, followed by space.
 2. Second point
 3. Third point
 
-## Images and links
+## Link to other articles
+
+This links to [another article](/doc/MTR/MicrophoneOptions)
+
+For external links: [Weather forecast](https://yr.no)
+
+## Images
 
 Images should first be uploaded to the /doc/images/mtr folder. Then they can be addressed like this:
 
@@ -35,3 +41,13 @@ Images should first be uploaded to the /doc/images/mtr folder. Then they can be 
 The image will automatically scale to fit the width of the article.
 
 <img src="/doc/images/MTR/room-bar-mtr.png" />
+
+
+To resize the image:
+
+```
+<img src="/doc/images/MTR/myimage.png" width="300" />
+```
+
+<img src="/doc/images/MTR/room-bar-mtr.png" width="300" />
+

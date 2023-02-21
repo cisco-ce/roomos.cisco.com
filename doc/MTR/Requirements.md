@@ -32,3 +32,7 @@ If your Cisco collaboration MTRoA device doesn’t login with credentials that l
 Something about different variants and that you need to be on this software version… 
 
 To onboard your devices to MTR, you need to do the initial software upgrade, unless you already have the correct one. After onboarding, the device gets upgraded automatically. 
+
+### Webex registered devices
+
+Before you onboard a Webex registered device to MTR, you need to make sure the device is running the latest Stable release. In Control Hub, go to there and there to check the channel

@@ -29,7 +29,7 @@ You can select pages or topics from the menu at the left side. There is a search
 
 This means that some of the main menu entries shown in the illustration below may not be present on your device. Read more local users, user roles, and access rights in the _Local users and user roles_ section.
 
-<img src= "/doc/images/MTR/web-ui-overview.png" width="800">
+<img src= "/doc/images/MTR/web-ui-overview.png">
 
 A. Device name and type.
 
@@ -45,21 +45,21 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 
 ## Top menu overview
 
-<img src= "/doc/images/MTR/MainMenu.png" width="400">
+<img src= "/doc/images/MTR/WebUIMainMenu.png" width="200">
 
-Home. Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, MTR and registration status, utilization and environment data, and more.
+**Home**: Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, MTR and registration status, utilization and environment data, and more.
 
-Settings. Opens a page that give you access to the device settings (configurations) and statuses.
+**Settings**: Opens a page that give you access to the device settings (configurations) and statuses.
 
-Users. Opens a page where you can add, edit, or delete users, or change a user’s passphrase. You can also create a remote support user from this page.
+**Users**: Opens a page where you can add, edit, or delete users, or change a user’s passphrase. You can also create a remote support user from this page.
 
-Security. Opens a page where you can upload and view certificates that are required to communicate with different services and backends. You can also create a sign-in banner and choose which system components to reset automatically when restarting the device. A sign-in banner is a message that is shown to the users before they sign in to the web or command line interfaces.
+**Security**: Opens a page where you can upload and view certificates that are required to communicate with different services and backends. You can also create a sign-in banner and choose which system components to reset automatically when restarting the device. A sign-in banner is a message that is shown to the users before they sign in to the web or command line interfaces.
 
-Software. Opens a page where you can install new software.
+**Software**: Opens a page where you can install new software.
 
-Issues and Diagnostics. Opens a page where you can look at active diagnostics messages, download logs, and create screenshots of the user interface and on-screen messages and indicators.
+**Issues and Diagnostics**: Opens a page where you can look at active diagnostics messages, download logs, and create screenshots of the user interface and on-screen messages and indicators.
 
-Backup and Recovery. Opens a page where you can backup and restore information on your device, such as the sign in banner and configurations. You can also swap to the previous software image, factory reset, restart, or shut down the device.
+**Backup and Recovery**: Opens a page where you can backup and restore information on your device, such as the sign in banner and configurations. You can also swap to the previous software image, factory reset, restart, or shut down the device.
 
 ## Local users and user roles
 You must sign in to the device with a local user to access the device web or command line interfaces. You can assign different roles to users, to determine what they should have access to.
@@ -67,7 +67,8 @@ You must sign in to the device with a local user to access the device web or com
 Create a new user account:
 1. Select _Users_ in the device web interface main menu.
 2. Click _Create User_ (at the top of the page).
-3. Fill in the form with Username, New passphrase and Confirm passphrase input fields, and check the appropriate Roles check boxes. If you assign the **Admin** role to a user, enter your own passphrase in the Your passphrase input field for verification.
+3. Fill in the form with Username, New passphrase and Confirm passphrase input fields, and check the appropriate Roles check boxes.  
+If you assign the **Admin** role to a user, enter your own passphrase in the Your passphrase input field for verification.
 4. Set the Status to **Active** to activate the user.
 5. Click _Create User_.  
 Use the Back button to leave without making any changes.

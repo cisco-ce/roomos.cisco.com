@@ -2,7 +2,7 @@
 
 In preparation for set up of a Cisco collaboration device as a Microsoft Teams Room (MTR), make sure that your devices are on the required software release and that an appropriate license is available to apply to the resource account assigned to the device.
 
-<img src="/doc/images/MTR/setup.png" width="400"/>
+<img src="/doc/images/MTR/setup.png" style="width: 400px"/>
 
 ## Microsoft licenses 
 

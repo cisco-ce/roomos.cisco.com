@@ -51,3 +51,26 @@ To resize the image:
 
 <img src="/doc/images/MTR/room-bar-mtr.png" width="300" />
 
+## Table support
+
+Write the actual HTML table.
+
+<!-- Adding a comment here too. This wont be visible in document, only when editing -->
+
+<table>
+  <!-- Heading -->
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <!-- Body -->
+  <tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+  </tr>
+  <tr>
+    <td>Cell 3</td>
+    <td>Cell 4</td>
+  </tr>
+</table>
+

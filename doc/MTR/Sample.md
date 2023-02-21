@@ -46,10 +46,10 @@ The image will automatically scale to fit the width of the article.
 To resize the image:
 
 ```
-<img src="/doc/images/MTR/myimage.png" width="300" />
+<img src="/doc/images/MTR/myimage.png" style="width: 300px" />
 ```
 
-<img src="/doc/images/MTR/room-bar-mtr.png" width="300" />
+<img src="/doc/images/MTR/room-bar-mtr.png" style="width: 300px" />
 
 ## Table support
 

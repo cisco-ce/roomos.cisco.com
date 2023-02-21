@@ -9,7 +9,12 @@ Background options:
 1.	Swipe right on the home screen to open the control panel.
 2.	Tap **Background** under your self-view. 
 
+<img src="/doc/images/MTR/virtualbackground_1.jpg" width=300/>
+
 ## To change your background during a call
 
 Tap the screen to get the call controls and self-view if not already visible. Then tap the background button on your self-view. 
+
+<img src="/doc/images/MTR/virtualbackground_2.jpg" width=300/>
+
 The available options appear. Choose one and tap anywhere else on the screen.

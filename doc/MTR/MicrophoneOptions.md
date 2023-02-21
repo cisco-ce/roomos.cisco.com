@@ -6,9 +6,12 @@ Using Music mode allows the dynamic range of music go through in a call. This cr
 Music mode is useful for remote music lessons, testing musical instruments, and other situations where it’s important to hear the full range of music. The device still uses its echo cancellation and environmental background noise reduction capabilities to avoid the need for external equipment, without detracting from the performance. 
 When Music mode isn’t in use, the device filters out additional noises and reduces sound level variations. This caters for meeting settings and helps reduce distracting noise. The additional filtering doesn't interfere with recorded music shared as a presentation through the device. 
 
-1.	First, enable music mode on your device. Tap more on the home screen, settings, and device settings. Scroll to Music mode. Toggle it on. 
-2.	To use music mode, open the control panel by swiping right on the home screen and tap Microphone.
+1.	First, enable music mode on your device. Tap **more** on the home screen, settings, and device settings. Scroll to Music mode. Toggle it **on**. 
+2.	To use music mode, open the control panel by swiping right on the home screen and tap **Microphone**.
 3.	Select Music mode from the menu. 
+
+<img src="/doc/images/MTR/music_mode.jpg" width=400/>
+
 4.	To turn off Music mode, select Neutral from the same menu. 
 
 

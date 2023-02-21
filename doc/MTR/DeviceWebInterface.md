@@ -29,7 +29,7 @@ You can select pages or topics from the menu at the left side. There is a search
 
 This means that some of the main menu entries shown in the illustration below may not be present on your device. Read more local users, user roles, and access rights in the _Local users and user roles_ section.
 
-<img src= "/doc/images/MTR/web-ui-overview.png">
+<img src= "/doc/images/MTR/WebUIOverview.png">
 
 A. Device name and type.
 

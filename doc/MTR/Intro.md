@@ -2,7 +2,7 @@
 
 Cisco collaboration devices offer camera and audio intelligence, and rich content sharing for Microsoft Teams meetings. You also get the option to enjoy full-featured Webex meetings in Microsoft Teams Rooms mode with no reconfiguration required, combined with advanced device management, remote monitoring, and workspace analytics capabilities. 
 
-
+<img src="/doc/images/MTR/intro.png" width="600"/>
 
 Designed for multi-platform collaboration, Cisco devices have RoomOS as an underlying layer where MTR runs on top of that as a contained Android-based application. Cisco devices help organizations to provide a consistent user experience with Microsoft Teams Rooms for every workspace, from personal desks and huddle spaces to very large rooms and specialist AV scenarios.
 

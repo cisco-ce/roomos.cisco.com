@@ -174,7 +174,39 @@
     {
       "id": "Sample",
       "title": "Sample",
-      "description": "Sample to show how to add MTR documents.",
+      "description": "Sample doc",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    }
+  ],
+  "MTRComingS00n": [
+    {
+      "id": "Intro",
+      "title": "MTR Introduction",
+      "description": "",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "Requirements",
+      "title": "MTR Requirements",
+      "description": "What's needed from a licensing point of view.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "MicrophoneOptions",
+      "title": "Microphone Options",
+      "description": "Details about noise removal and music mode.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "VirtualBackgrounds",
+      "title": "Virtual Backgrounds",
+      "description": "How to hide your real background and set a virtual one instead.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "DeviceWebInterface",
+      "title": "The device web interface",
+      "description": "How to configure your MTR device from a local web interface on the Cisco device.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
   ],

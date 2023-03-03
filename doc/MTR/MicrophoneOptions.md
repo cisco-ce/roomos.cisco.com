@@ -1,6 +1,6 @@
 # Microphone Options
 
-## Test your microphone
+## Test your Microphone
 
 Test your microphone directly on your device to check if it is working and properly configured. 
 Test your microphone before starting a meeting to check if further configurations are needed, like noise removal or voice optimization. You have the option to record yourself and play the recording or enable continuous testing. 

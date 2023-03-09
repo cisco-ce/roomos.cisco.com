@@ -1,5 +1,6 @@
-## Camera Options
+# Camera Options
 
+## Select a Camera Mode
 
 You can select a camera mode that ensures the best view for your meeting and device. The camera can switch from one speaker to the next, automatically adjust so that you are always centered, group participants together, or you can choose to adjust it manually. 
 
@@ -21,3 +22,25 @@ Depending on the device you're using, there are a few different modes to choose 
 
 
 Note: You can also access and adjust the camera controls in or out of call by tapping the camera button on your self-view.
+
+
+## Access and Adjust Self-view 
+
+Your self-view shows what others see from your device in a call. You can use it to confirm that they see what you want them to see.  
+You may want to have your self-view activated during the meeting to ensure that you remain seen on the screen. 
+
+If you find the current position of the self-view blocks important parts of the image on your screen, you can move it around.  
+
+To check your self-view at any time, swipe from the right side of your device's home screen. If your camera is on, you'll see your self-view in the control panel. 
+
+Tap **Fullscreen** if you want to see your self-view in full. To exit full screen, open the control panel and tap **Fullscreen** again.   
+
+Tap **Selfview** in the control panel to set the self-view visibility to **Hide**, **Show in call**, or **Always show**. To close the control panel, tap anywhere else on the screen.   
+
+To open and change the location of your self-view on the screen during a call:  
+
+1. If it's not already visible, tap the screen to open the self-view up on top of the call.   
+
+2. Tap the button on the self-view’s right corner to change the visibility to **Hide**, **Show in call**, or **Always show**. Even when you select to hide it in a call, your self-view will still appear to you in the control panel.  
+
+3. Press the self-view and drag and drop it to change the location. It will snap to pre-defined locations as you drag.  

@@ -18,8 +18,12 @@ Depending on the device you're using, there are a few different modes to choose 
 1.	Swipe right on the home screen. Tap **Camera**. 
 2.	If the camera modes are not visible, Tap **camera mode** and then **Auto**. 
 3.	Choose a mode. On Board Pro, you can choose between Group, Frames, or Speaker.
+
+<img src="/doc/images/MTR/CameraModeAuto.png" style="width: 200px" />
+
 4.	You can also tap **Manual** and adjust the camera yourself.
 
+<img src="/doc/images/MTR/CameraModeManual.png" style="width: 200px" />
 
 Note: You can also access and adjust the camera controls in or out of call by tapping the camera button on your self-view.
 

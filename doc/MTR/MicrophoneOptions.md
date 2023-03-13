@@ -5,7 +5,7 @@
 Test your microphone directly on your device to check if it is working and properly configured. 
 Test your microphone before starting a meeting to check if further configurations are needed, like noise removal or voice optimization. You have the option to record yourself and play the recording or enable continuous testing. 
 
-1.	Swipe right on the home screen to open the control panel. 
+1.	Swipe from the right on the home screen to open the control panel. 
 2.	Tap **Microphone** and choose **Test microphone**. 
 3.	a)	Tap **Record** in order to record yourself for a maximum of 5 seconds. When you're done, tap the **Play** button. The type of noise removal configuration can be changed after the recording is made.
 
@@ -19,7 +19,7 @@ You can choose between different microphone options depending on the environment
 * **Noise removal** to join your meetings and calls without worrying about background noise, such as keyboard typing and doorbells. 
 * **Optimize for my voice** to remove background speech and noise when you're in a noisy environment where others are talking, such as a coffee shop. In addition to removing background noise, it also removes the voices of the people talking in the background. 
 
-1.	Swipe right on the home screen to open the control panel. 
+1.	Swipe from the right on the home screen to open the control panel. 
 2.	Tap **Microphone** and then select the option you want to use: **Noise removal** or **Optimize for my voice**.
 3.	Tap **Neutral** to turn noise removal off.
 

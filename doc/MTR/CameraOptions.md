@@ -15,7 +15,7 @@ Depending on the device you're using, there are a few different modes to choose 
 *	Best view: The camera will adjust automatically so you are always in the center of the frame. 
 *	Manual: Adjust the camera yourself. 
 
-1.	Swipe right on the home screen. Tap **Camera**. 
+1.	Swipe from the right on the home screen. Tap **Camera**. 
 2.	If the camera modes are not visible, Tap **camera mode** and then **Auto**. 
 3.	Choose a mode. On Board Pro, you can choose between Group, Frames, or Speaker.
 

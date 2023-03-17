@@ -80,4 +80,4 @@ Connect your computer to the device with a USB-C or HDMI cable.
 
 4. Tap **Stop sharing** to end the share.  
 
-Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.   
+   Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.   

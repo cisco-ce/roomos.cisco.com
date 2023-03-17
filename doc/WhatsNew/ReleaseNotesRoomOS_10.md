@@ -1,8 +1,8 @@
 <img src="/doc/images/releases/Cisco_Logo_no_TM_Midnight_Blue-RGB.png" style="border: none; height: 100px; width: 200px;"><br><br>
-# Cisco Webex RoomOS 10 
+# Cisco RoomOS 10 
 # Release notes
 ---
-D15463.18 - January 2023
+D15463.19 - March 2023
 
 ## Document revision history
 
@@ -13,165 +13,172 @@ D15463.18 - January 2023
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td>19</td> 
+		<td>March 17th 2023</td> 
+		<td>
+			Release of <a href='#10.19' title='Jump to section'>Cisco RoomOS 10.19.5.6</a> 7cd166d6be0, patch
+		</td>
+	</tr>
+	<tr>
 		<td>18</td> 
 		<td>January 25th 2023</td> 
 		<td>
-			Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.5.3</a> 9f26a1da03d, patch
+			Release of <a href='#10.15' title='Jump to section'>Cisco RoomOS 10.15.5.3</a> 9f26a1da03d, patch
 		</td>
 	</tr>
 	<tr>
 		<td>17</td> 
 		<td>December 8th 2022</td> 
 		<td>
-			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.4.2</a> 1cadf49eefd, patch
+			Release of <a href='#10.19' title='Jump to section'>Cisco RoomOS 10.19.4.2</a> 1cadf49eefd, patch
 		</td>
 	</tr>
 	<tr>
 		<td>16</td> 
 		<td>October 20th 2022</td> 
 		<td>
-			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.3.0</a> bb11ddae620, patch
+			Release of <a href='#10.19' title='Jump to section'>Cisco RoomOS 10.19.3.0</a> bb11ddae620, patch
 		</td>
 	</tr>
 	<tr>
 		<td>15</td> 
 		<td>October 10th 2022</td> 
 		<td>
-			Deferral of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.2.2</a>
+			Deferral of <a href='#10.19' title='Jump to section'>Cisco RoomOS 10.19.2.2</a>
 		</td>
 	</tr>
 	<tr>
 		<td>14</td> 
 		<td>September 29th 2022</td> 
 		<td>
-			Release of <a href='#10.19' title='Jump to section'>Cisco Webex RoomOS 10.19.2.2</a> 7c9a4721f0d, minor
+			Release of <a href='#10.19' title='Jump to section'>Cisco RoomOS 10.19.2.2</a> 7c9a4721f0d, minor
 		</td>
 	</tr>
 	<tr>
 		<td>13</td> 
 		<td>September 9th 2022</td> 
 		<td>
-			Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.4.1</a> a4d3db640f0, patch<br>
-			Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.6.0</a> cb912c2adbe, patch
+			Release of <a href='#10.15' title='Jump to section'>Cisco RoomOS 10.15.4.1</a> a4d3db640f0, patch<br>
+			Release of <a href='#10.11' title='Jump to section'>Cisco RoomOS 10.11.6.0</a> cb912c2adbe, patch
 		</td>
 	</tr>
 	<tr>
 		<td>12</td> 
 		<td>July 6th 2022</td> 
-		<td>Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.3.0</a> 7c44f1ceb87, patch</td>
+		<td>Release of <a href='#10.15' title='Jump to section'>Cisco RoomOS 10.15.3.0</a> 7c44f1ceb87, patch</td>
 	</tr>
 	<tr>
 		<td>11</td> 
 		<td>June 17th 2022</td> 
-		<td>Release of <a href='#10.15' title='Jump to section'>Cisco Webex RoomOS 10.15.2.2</a> 5c5c0acc9e0, minor</td>
+		<td>Release of <a href='#10.15' title='Jump to section'>Cisco RoomOS 10.15.2.2</a> 5c5c0acc9e0, minor</td>
 	</tr>
 	<tr>
 		<td>10</td> 
 		<td>May 19th 2022</td> 
-		<td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.4.0</a> dc63a82915b, patch</td>
+		<td>Release of <a href='#10.8' title='Jump to section'>Cisco RoomOS 10.8.4.0</a> dc63a82915b, patch</td>
 	</tr>
 	<tr>
 		<td>9</td> 
 		<td>April 12th 2022</td> 
-		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.5.2</a> f6c72c48bd7, patch</td>
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco RoomOS 10.11.5.2</a> f6c72c48bd7, patch</td>
 	</tr>
 	<tr>
 		<td>8</td> 
 		<td>March 18th 2022</td> 
-		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.4.1</a> 99a0337a074, patch</td>
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco RoomOS 10.11.4.1</a> 99a0337a074, patch</td>
 	</tr>
 	<tr>
 		<td>7</td> 
 		<td>March 3rd 2022</td> 
-		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.3.0</a> 6426fe09359, patch</td>
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco RoomOS 10.11.3.0</a> 6426fe09359, patch</td>
 	</tr>
 	<tr>
 		<td>6</td> 
 		<td>February 3rd 2022</td> 
-		<td>Release of <a href='#10.11' title='Jump to section'>Cisco Webex RoomOS 10.11.2.2</a> 4d365f74e2c, minor</td>
+		<td>Release of <a href='#10.11' title='Jump to section'>Cisco RoomOS 10.11.2.2</a> 4d365f74e2c, minor</td>
 	</tr>
 	<tr>
 		<td>5</td>
 		<td>December 14th 2021</td> 
-		<td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.3.1</a> 6d131e0418f, patch</td>
+		<td>Release of <a href='#10.8' title='Jump to section'>Cisco RoomOS 10.8.3.1</a> 6d131e0418f, patch</td>
 	</tr>
 	<tr>
 		<td>4</td> 
 		<td>November 17th 2021</td> 
-		<td>Release of <a href='#10.3' title='Jump to section'>Cisco Webex RoomOS 10.3.4.0</a> e47befa1e68, patch</td>
+		<td>Release of <a href='#10.3' title='Jump to section'>Cisco RoomOS 10.3.4.0</a> e47befa1e68, patch</td>
 	</tr>
 	<tr>
 		<td>3</td> 
 		<td>October 27th 2021</td> 
-		<td>Release of <a href='#10.8' title='Jump to section'>Cisco Webex RoomOS 10.8.2.5</a> ed4f9434f88, minor</td>
+		<td>Release of <a href='#10.8' title='Jump to section'>Cisco RoomOS 10.8.2.5</a> ed4f9434f88, minor</td>
 	</tr>
 	<tr>
 		<td>2</td>
 		<td>June 24th 2021</td>
-		<td>Release of <a href='#10.3' title='Jump to section'>Cisco Webex RoomOS 10.3.3.0</a> e383f779e98, patch</td>
+		<td>Release of <a href='#10.3' title='Jump to section'>Cisco RoomOS 10.3.3.0</a> e383f779e98, patch</td>
 	</tr>
 	<tr>
 		<td>1</td>
 		<td>April 29th 2021</td>
-		<td>Release of <a href='#10.3' title='Jump to section'>Cisco Webex RoomOS 10.3.2.0</a> 85049347ae0, major</td>
+		<td>Release of <a href='#10.3' title='Jump to section'>Cisco RoomOS 10.3.2.0</a> 85049347ae0, major</td>
 	</tr>
 </table>
 
-## Introduction to Cisco Webex RoomOS 10 <a name='intro'></a>
+## Introduction to Cisco RoomOS 10 <a name='intro'></a>
 
 This release note describes new software features and capabilities included in RoomOS 10 for **on-premises deployment**. RoomOS 10 is supported by the following products:
 
 <table width="100%">
 	<tr>
 		<th>
-			<b>Cisco Webex Room Series</b>
+			<b>Cisco Room Series</b>
 		</th>
 	</tr>
 	<tr>
 		<td>
-			Cisco Webex Room USB, Room Kit Mini, Room Kit, Room Bar, Room 55<br> 
-			Cisco Webex Codec Plus, Codec Pro<br>
-			Cisco Webex Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
-			Cisco Webex Room Panorama, Room 70 Panorama 
+			Cisco Room USB, Room Kit Mini, Room Kit, Room Bar, Room 55<br> 
+			Cisco Codec Plus, Codec Pro<br>
+			Cisco Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
+			Cisco Room Panorama, Room 70 Panorama 
 		</td>
 	</tr>
 	<tr>
 		<th>
-			<b>Cisco Webex Board Series</b>
+			<b>Cisco Board Series</b>
 		</th>
 	</tr>
 	<tr>
 		<td>
-			Cisco Webex Board 55/55S, 70/70S and 85S<br>
-			Cisco Webex Board Pro 55 and 75
+			Cisco Board 55/55S, 70/70S and 85S<br>
+			Cisco Board Pro 55 and 75
 		</td>
 	</tr>
 	<tr>
 		<th>
-			<b>Cisco Webex Desk Series</b>
+			<b>Cisco Desk Series</b>
 		</th>
 	</tr>
 	<tr>
 		<td>
-			Cisco Webex Desk, Desk Limited Edition, Desk Pro, Desk Mini and Desk Hub
+			Cisco Desk, Desk Limited Edition, Desk Pro, Desk Mini and Desk Hub
 		</td>
 	</tr>
 </table>
 
-The software described in this document is released to [https://www.cisco.com](https://software.cisco.com/download/home/283611944?catid=280789323) for on-premises deployment. If you register a Webex Room Device to Webex you will be upgraded to the latest RoomOS cloud version available. RoomOS cloud software is not supported for on-premises deployment unless you are linked to **Webex Edge for Devices with Cloud Software Management enabled**. 
+The software described in this document is released to [https://www.cisco.com](https://software.cisco.com/download/home/283611944?catid=280789323) for on-premises deployment. If you register a Room Device to Webex you will be upgraded to the latest RoomOS cloud version available. RoomOS cloud software is not supported for on-premises deployment unless you are linked to **Webex Edge for Devices with Cloud Software Management enabled**. 
 
 You can tell the difference between a cloud and on-premises RoomOS version by looking at the third version number. For example: 
 
 * 10.X.**1**.x = Cloud 
 * 10.X.**X > 1**.x = On-premises 
 
-**Cisco Webex RoomOS 10 is based on Collaboration Endpoint Software 9 (CE9) and is a continuation of the same software**
+**Cisco RoomOS 10 is based on Collaboration Endpoint Software 9 (CE9) and is a continuation of the same software**
 
 This means that the first release of RoomOS 10 inherits the same features as CE9.15.3.17 as of April 2021. In the future, there will be a difference between the CE9 and RoomOS 10 since RoomOS 10 will be running on newer products. If you own a [product](#intro) that supports RoomOS 10+ but are running CE9.x, you should start planning the upgrade to RoomOS. These products will no longer get software releases from CE9.15.x and in order to stay up-to-date you must upgrade the device to RoomOS 10 or above. 
 
 Note: You will still find “ce” notations in provisioning services (TMS, UCM etc.), xAPI and on the software packages. If you look at the software version on the Touch panel bug you will see that the name has changed from CE to RoomOS. 
 
-Cisco Webex RoomOS 10 can be downloaded [here](https://software.cisco.com/download/home/283611944?catid=280789323).
+Cisco RoomOS 10 can be downloaded [here](https://software.cisco.com/download/home/283611944?catid=280789323).
 
 ## Notes and warnings for the next major release RoomOS 11
 These notes are to prepare you for the upcoming changes in RoomOS 11.
@@ -320,19 +327,28 @@ For all other issues, please contact the Cisco Technical Assistance Center.
 </table>
 
 <a name='desk-limited-upgrade'></a>
-### Cisco Webex Desk Limited Edition - Product Upgrade
+### Cisco Desk Limited Edition - Product Upgrade
 
-If you have a **Cisco Webex Desk Limited Edition** and upgrade it to RoomOS 10.19.2.2 it will become a **Cisco Webex Desk Pro**. It will stay as a Webex Desk Pro as long as it is running software 10.19.2.2 or above. If you choose to downgrade to a version lower than 10.19.2.2 it will again identify itself as a Cisco Webex Desk Limited Edition. This is a free but mandatory upgrade and you cannot choose to keep it as a Webex Desk Limited Edition on software that is equal to or higher than 10.19.2.2. 
+If you have a **Cisco Desk Limited Edition** and upgrade it to RoomOS 10.19.2.2 it will become a **Cisco Desk Pro**. It will stay as a Webex Desk Pro as long as it is running software 10.19.2.2 or above. If you choose to downgrade to a version lower than 10.19.2.2 it will again identify itself as a Cisco Desk Limited Edition. This is a free but mandatory upgrade and you cannot choose to keep it as a Webex Desk Limited Edition on software that is equal to or higher than 10.19.2.2. 
 
-Note: The Cisco Webex Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
+Note: The Cisco Desk Limited Edition is in fact a Webex Desk Pro by hardware specifications so there is no differences between a Desk Pro and a Desk Limited Edition on the hardware side.  
 
 Note: If you are registered on UCM / Webex Edge for Devices, the device type will change. This may cause the device to lose registration to UCM after upgrade. Please prepare to re-register the device as a Desk Pro post upgrade to RoomOS 10.19.
+
+## RoomOS 10.19.5.6
+
+RoomOS 10.19.5.6 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 10.19.5.6](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.5.6&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 10.19.4.2
 
 RoomOS 10.19.4.2 is a patch release and contains a fix for CSCwd33600.<br>
 
-NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
+NOTE: Cisco Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 10.19.4.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.4.2&bt=custV&sts=fd&sb=fr)
@@ -343,7 +359,7 @@ NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will
 
 RoomOS 10.19.3.0 is a patch release and contains bugfixes.<br>
 
-NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
+NOTE: Cisco Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will not have the option to enable the RoomOS 11 UI Experience in this release.
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 10.19.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=10.19.3.0&bt=custV&sts=fd&sb=fr)
@@ -355,7 +371,7 @@ NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will
 * [RoomOS 11 UI Experience (optional enablement)](#101922-1)
 * [Standby Control / Energy Saving - Office hours](#101922-2)
 * [Frames](#101922-3)
-* [Support for Cisco Webex Room Bar](#101922-4)
+* [Support for Cisco Room Bar](#101922-4)
 * [Call from laptop](#101922-5)
 * [Wireless share with Miracast®](#101922-6)
 * [Webex Edge for Devices only](#101922-7)
@@ -376,7 +392,7 @@ NOTE: Cisco Webex Room 55 Dual, Room 70 Single, Room 70 Dual and Codec Plus will
 
 ## RoomOS 11 UI Experience (optional enablement)
 
-As already announced many times, RoomOS 11 will come with a new user interface. Some devices like Cisco Webex Board Pro, Desk Mini, Room Bar and Desk Hub already requires the use of RoomOS 11 UI and devices with a cloud deployment has been able to enable this UI for a while. But with RoomOS 10.19.2.2 we invite everyone with a supported device to try it out! With a configuration you can now enable the new UI and experience it first hand.
+As already announced many times, RoomOS 11 will come with a new user interface. Some devices like Cisco Board Pro, Desk Mini, Room Bar and Desk Hub already requires the use of RoomOS 11 UI and devices with a cloud deployment has been able to enable this UI for a while. But with RoomOS 10.19.2.2 we invite everyone with a supported device to try it out! With a configuration you can now enable the new UI and experience it first hand.
 
 From the web interface:
 Go to configurations and search for "concept" and set the UserInterface Concept Mode to "Compositor".
@@ -392,7 +408,7 @@ Please make sure you read the [list of known limitations](#10.19-limitations-roo
 
 **Supported products**
 
-All products except Cisco Webex Room 70 Panorama, Room Panorama and Room USB
+All products except Cisco Room 70 Panorama, Room Panorama and Room USB
 
 <a name='101922-2'></a>
 
@@ -432,12 +448,12 @@ The feature can be activated from the touch panel UI. The camera supports up to 
 
 **Supported products**
 
-Cisco Webex Room Kit Mini, Room Kit, Room 55, Room Bar and Board Series <br>
+Cisco Room Kit Mini, Room Kit, Room 55, Room Bar and Board Series <br>
 Requires RoomOS 11 UI Experience
 
 <a name='101922-4'></a>
 
-## Support for Cisco Webex Room Bar
+## Support for Cisco Room Bar
 
 Room Bar is an all-in-one video conferencing bar that does it all—from native, laptop-free video conferencing and wireless sharing to seamless BYOD experiences. Power your meetings with a codec-powered appliance or connect your computer via a single USB-C cable.
 
@@ -447,9 +463,9 @@ Note: In order to register this product on UCM you will need the device pack rel
 
 These device packs includes a fix for CSCvn11243. We have removed the fields for SMTP and HTTPProxy credentials from the device specific configurations. 
 
-For more information about the Cisco Webex Room Bar, please follow [this link](https://www.webex.com/devices/webex-room-bar.html)
+For more information about the Cisco Room Bar, please follow [this link](https://www.webex.com/devices/webex-room-bar.html)
 
-Cisco Webex Room Bar is designed to run RoomOS 11 UI natively.
+Cisco Room Bar is designed to run RoomOS 11 UI natively.
 
 <a name='101922-5'></a>
 
@@ -512,7 +528,7 @@ For more information about this feature, [see this article](https://help.webex.c
 
 **Supported products**
 
-Cisco Webex Desk, Desk Mini, Desk Pro, Board / Board Pro series<br>
+Cisco Desk, Desk Mini, Desk Pro, Board / Board Pro series<br>
 Requires RoomOS 11 UI Experience
 
 <a name='101922-72'></a>
@@ -549,7 +565,7 @@ You can update your status directly from your personal device and set custom sta
 
 **Supported products**
 
-Cisco Webex Devices in personal mode <br>
+Cisco Devices in personal mode <br>
 Requires RoomOS 11 UI Experience
 
 <a name='101922-75'></a>
@@ -560,7 +576,7 @@ Devices in hot desk mode will now display a QR code that can be scanned by the u
 
 **Supported products**
 
-Cisco Webex Desk Series <br>
+Cisco Desk Series <br>
 Requires RoomOS 11 UI Experience
 
 <hr>
@@ -577,9 +593,9 @@ As mentioned in the RoomOS 10.3 release, we planned to deprecate the FLUX media 
 
 We have changed the value space of the *[xConfiguration Video Input Connector[x] Quality](https://roomos.cisco.com/xapi/Configuration.Video.Input.Connector[1].Quality/?search=Quality)* to make it more specific. Previously we had *Motion* and *Sharpness* only. We have added *Auto* that will start with sharpness quality and move towards motion if motion is detected. In previous versions *Sharpness* acted the same way as the new *Auto* configuration but is now providing *Sharpness* quality exclusively. 
 
-### Brightness reduction on Cisco Webex Room 70D
+### Brightness reduction on Cisco Room 70D
 
-Due to an issue with some of the backlight LED burning out on the Cisco Webex Room 70D screens, we have slightly lowered the brightness on these LEDs to increase their life expectancy. 
+Due to an issue with some of the backlight LED burning out on the Cisco Room 70D screens, we have slightly lowered the brightness on these LEDs to increase their life expectancy. 
 
 ### Some features are only supported with the RoomOS 11 UI Experience
 
@@ -605,7 +621,7 @@ This is a patch release and contains bugfixes only.
 
 ## RoomOS 10.15.3.0
 
-RoomOS 10.15.3.0 is a patch release to add support for Cisco Webex Desk Mini with compatibility level **1**, and will also be the minimum software version for this device. Please refer to the [desk compatibility matrix](#compatibility-desk) in this release note.<br> 
+RoomOS 10.15.3.0 is a patch release to add support for Cisco Desk Mini with compatibility level **1**, and will also be the minimum software version for this device. Please refer to the [desk compatibility matrix](#compatibility-desk) in this release note.<br> 
 
 * <b>Bug fixes</b>
     * No bugfixes in this release
@@ -639,7 +655,7 @@ WebEngine Kiosk mode allow you to hide the normal user interface and render a fu
 
 **Supported products**
 
-Cisco Webex Board Pro Series and Desk Mini*
+Cisco Board Pro Series and Desk Mini*
 
 ## Persistent Web Apps on Webex Room Navigator<a name='101522-2'></a>
 
@@ -651,7 +667,7 @@ The Room Navigator must be paired to the device remotely in order to use this fe
 
 **Supported products**
 
-Cisco Webex Room Navigator*
+Cisco Room Navigator*
 
 ## Alarm detection on xAPI<a name='101522-3'></a>
 
@@ -669,7 +685,7 @@ Store and open whiteboards from Microsoft OneDrive directly from the "Files" but
 
 **Supported products**
 
-Cisco Webex Board Pro, Cisco Webex Desk Mini*
+Cisco Board Pro, Cisco Desk Mini*
 
 ## Portrait cropping on Desk and Board devices <a name='101522-5'></a>
 
@@ -677,7 +693,7 @@ Portrait cropping or "People focus" is a new layout option that can be applied i
 
 **Supported products**
 
-Cisco Webex Board Pro, Cisco Webex Desk Mini*
+Cisco Board Pro, Cisco Desk Mini*
 
 [Click here for more information](https://help.webex.com/en-us/article/n997hz9/People-Focus)
 
@@ -730,7 +746,7 @@ Self-hear is a new feature under microphone options that allows a user to test t
 
 **Supported products**
 
-Cisco Webex Desk Mini, Desk Hub, Board Pro*
+Cisco Desk Mini, Desk Hub, Board Pro*
 
 
 ## Webex Edge for Devices only <a name='101522-9'></a>
@@ -740,11 +756,11 @@ This section describes features you gain by linking the device to the cloud via 
 
 ## Webex Panorama: Support for Panorama Video in cloud calls <a name='101522-91'></a>
 
-Cisco Webex Panorama now supports panorama video in cloud calls. 
+Cisco Room Panorama now supports panorama video in cloud calls. 
 
 **Supported products**
 
-Cisco Webex Room Panorama, Room 70 Panorama
+Cisco Room Panorama, Room 70 Panorama
 
 
 ## Hot desk support <a name='101522-92'></a>
@@ -753,7 +769,7 @@ A device in Hot Desk mode allows you to sign in using your Webex Identity and co
 
 **Supported products**
 
-Cisco Webex Desk Mini, Desk Hub*
+Cisco Desk Mini, Desk Hub*
 
 
 ## Webex Client pairing using USB-C <a name='101522-93'></a>
@@ -869,7 +885,7 @@ The Desk Hub will sit within the single portfolio for Webex Collaboration device
 
 We are making it easier to remotely pair a touch panel to a Room Device by adding PIN pairing. You can choose between using credentials as before or providing a one-time PIN in order to pair the touch panel. The PIN pairing do not require you to create an additional user to pair or expose the Room Device credentials. 
 
-This feature is supported for both the Cisco Touch 10" and Cisco Webex Room Navigator. 
+This feature is supported for both the Cisco Touch 10" and Cisco Room Navigator. 
 
 To initiate PIN pairing you have to access the Room Device CLI using SSH or a serial connection. If your device is linked to Webex via Webex Edge for Devices you can generate a PIN from Webex Control Hub. 
 
@@ -918,10 +934,10 @@ Added support for new [compatibility level](#compatibility-desk) for Webex Desk.
 <hr style='width: 70%'>
 
 ## RoomOS 10.8.2.5 
-* [Support for Cisco Webex Desk](#10825-1) 
-* [Support for Cisco Microphone Array for Cisco Webex Room Panorama / Panorama 70](#10825-2)
-* [Support for 802.1x with Cisco Webex Room Navigator](#10825-3)
-* [Synchronize software with Cisco Webex Room Navigator](#10825-4)
+* [Support for Cisco Desk](#10825-1) 
+* [Support for Cisco Microphone Array for Cisco Room Panorama / Panorama 70](#10825-2)
+* [Support for 802.1x with Cisco Room Navigator](#10825-3)
+* [Synchronize software with Cisco Room Navigator](#10825-4)
 * [Local web app management from the Touch Interface](#10825-5)
 * [Support for third party USB microphones and audio interfaces](#10825-6)
 * [New layout menu](#10825-7)
@@ -944,7 +960,7 @@ Added support for new [compatibility level](#compatibility-desk) for Webex Desk.
 
 # RoomOS 10.8.2.5 feature descriptions 
 
-## Support for Cisco Webex Desk <a name='10825-1'></a>
+## Support for Cisco Desk <a name='10825-1'></a>
 
 <img src="/doc/images/releases/cisco_webex_desk.png" style="border: none; height: 300px; width: 500px;">
 
@@ -954,23 +970,23 @@ This powerful device creates a clutter-free desk space, enabling you to be organ
 
 Easy setup and management capabilities allow customers to deploy and support thousands of devices at once. And with Control Hub you’ll gain insight into environmental health and device usage with the ability to triage issues from anywhere.
 
-For more information about the Cisco Webex Desk, [follow this link](https://www.cisco.com/c/en/us/products/collaboration-endpoints/webex-desk/index.html#~featured-service).
+For more information about the Cisco Desk, [follow this link](https://www.cisco.com/c/en/us/products/collaboration-endpoints/webex-desk/index.html#~featured-service).
 
-## Support for Cisco Microphone array for Cisco Webex Room Panorama / Panorama 70 <a name='10825-2'></a>
+## Support for Cisco Microphone array for Cisco Room Panorama / Panorama 70 <a name='10825-2'></a>
 
 <img src="/doc/images/releases/microphone_array.png" style="border: none; height: 300px;">
 
-The Cisco Microphone Array is a premium directional microphone array designed to provide the Cisco Webex Room Panorama immersive video collaboration system with crystal-clear, spatial audio. It can capture participant voices from different directions and deliver multiple streams of high-fidelity audio. The Microphone Array recognizes which side of the table the speaker is on. To the far-end participants, it provides a more immersive, natural experience as voices coming from the left of the table are played back remotely from the left speaker, and vice versa. It supports immersive and inclusive executive meeting and conferencing scenarios for in-person and remote participants alike—just as if they were all in the same room. Better still, the Microphone Array supports an IP-based AV setup, allowing for enhanced flexibility and lower deployment costs.
+The Cisco Microphone Array is a premium directional microphone array designed to provide the Cisco Room Panorama immersive video collaboration system with crystal-clear, spatial audio. It can capture participant voices from different directions and deliver multiple streams of high-fidelity audio. The Microphone Array recognizes which side of the table the speaker is on. To the far-end participants, it provides a more immersive, natural experience as voices coming from the left of the table are played back remotely from the left speaker, and vice versa. It supports immersive and inclusive executive meeting and conferencing scenarios for in-person and remote participants alike—just as if they were all in the same room. Better still, the Microphone Array supports an IP-based AV setup, allowing for enhanced flexibility and lower deployment costs.
 
-For more information about the Cisco Webex Microphone Array please [follow this link](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/telepresence-microphones/microphones-ds.html)
+For more information about the Cisco Microphone Array please [follow this link](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/telepresence-microphones/microphones-ds.html)
 
 **Supported devices**
 
-Cisco Webex Room Panorama / Panorama 70 / Panorama 70 Upgrade
+Cisco Room Panorama / Panorama 70 / Panorama 70 Upgrade
 
-## Support for 802.1x with Cisco Webex Room Navigator <a name='10825-3'></a>
+## Support for 802.1x with Cisco Room Navigator <a name='10825-3'></a>
 
-You can now use 802.1x for network authentication using credentials or client certificates with the Cisco Webex Room Navigator. 
+You can now use 802.1x for network authentication using credentials or client certificates with the Cisco Room Navigator. 
 
 When connecting the Room Navigator to a 802.1x secured network, you will see a message on the screen saying that it was not able to obtain an IP address. 
 
@@ -979,7 +995,7 @@ When connecting the Room Navigator to a 802.1x secured network, you will see a m
 
 If you are using client certificates, this has to be uploaded to the Room Navigator manually and requires more steps. 
 
-1. Factory reset the Cisco Webex Navigator (do not pair it to a device yet as this will destroy the admin user and you will not be able to log in)
+1. Factory reset the Cisco Navigator (do not pair it to a device yet as this will destroy the admin user and you will not be able to log in)
 2. Connect the Room Navigator to a separate and isolated LAN where it can receive an IP so you can connect to the Room Navigator via SSH (don't use serial)
 3. Log in with admin and no password
 4. Run [xCommand Security Certificates Services Add](https://roomos.cisco.com/xapi/Command.Security.Certificates.Services.Add) and paste in the client certificate PEM 
@@ -989,16 +1005,16 @@ If you are using client certificates, this has to be uploaded to the Room Naviga
 
 **Supported products**
 
-Cisco Webex Room Navigator
+Cisco Room Navigator
 
-## Synchronize software with Cisco Webex Room Navigator <a name='10825-4'></a>
+## Synchronize software with Cisco Room Navigator <a name='10825-4'></a>
 
 Requires default credentials on the codec for the Room Navigator to connect. 
 Requires that the Room Navigator is running RoomOS 10.8.2.5 or above. 
 
 Both locally paired and network paired scenarios work as long as the above requirements are met. 
 
-In some scenarios where the Cisco Webex Room Navigator is unable to pair to a Cisco Webex Room Device because the Room Device is running software that is not supported by the device. This recovery feature will make it easier to upgrade the Room Device and also configure the device network settings.
+In some scenarios where the Cisco Room Navigator is unable to pair to a Cisco Room Device because the Room Device is running software that is not supported by the device. This recovery feature will make it easier to upgrade the Room Device and also configure the device network settings.
 
 In a scenario like described above, you will see an error message on the screen and a red button saying "Troubleshooting page". When tapping this button you will be directed to the software recovery page that provides two options for upgrading the Room Device. You can upgrade the device by pointing to a LAN hosted software package on UCM, TMS or your own web server (URL) or you can upgrade via cloud. Cloud upgrade is the simplest option but it requires that the device has Internet access.
 
@@ -1006,7 +1022,7 @@ If you upgrade the device via cloud it's important to upgrade again to the lates
 
 **Supported products**
 
-Cisco Webex Room Navigator
+Cisco Room Navigator
 
 ## Local web app management from the Touch Interface <a name='10825-5'></a>
 
@@ -1020,8 +1036,8 @@ When enabled, a new item will be available from the settings in the Touch Interf
 
 **Supported products**
 
-Cisco Webex Desk Series
-Cisco Webex Board Series
+Cisco Desk Series
+Cisco Board Series
 
 ## Support for third party USB microphones and audio interfaces <a name='10825-6'></a>
 
@@ -1062,8 +1078,8 @@ The below list of devices is not exhaustive, but have been tested and are known 
 
 **Supported products**
 
-Cisco Webex Room Kit Mini, Room Kit, Room 55 
-Cisco Webex Desk, Desk Pro
+Cisco Room Kit Mini, Room Kit, Room 55 
+Cisco Desk, Desk Pro
 
 ## New layout menu <a name='10825-7'></a>
 
@@ -1088,8 +1104,8 @@ Automatic shape recognition can be triggered while drawing a shape, without need
 
 **Supported Room Devices**
 
-Cisco Webex Board Series
-Cisco Webex Desk Series
+Cisco Board Series
+Cisco Desk Series
 
 ## Gesture recognition for Raise hand <a name='10825-9'></a>
 
@@ -1101,7 +1117,7 @@ When your hand is raised a confirmation timer will show on-screen. When the time
 
 **Supported devices**
 
-Cisco Webex Desk Series
+Cisco Desk Series
 
 ## Webex Edge for Devices specific features <a name='10825-10'></a>
 
@@ -1116,7 +1132,7 @@ Reaction gestures include thumbs up and down. Also see "[Gesture recognition for
 
 **Supported devices**
 
-Cisco Webex Desk Series
+Cisco Desk Series
 
 **Cloud pairing for Webex Edge for Devices** <a name='10825-102'></a>
 
@@ -1202,8 +1218,8 @@ This is a patch release and contains bugfixes only.
 
 ## RoomOS 10.3.2.0 
 * [Initial feature parity with Collaboration Endpoint Software CE9.15.3.17](#10320-1) 
-* [Support for Cisco Webex Desk Limited Edition](#10320-2)
-* [Immersive share for Cisco Webex Desk Pro and Desk Limited Edition](#10320-3)
+* [Support for Cisco Desk Limited Edition](#10320-2)
+* [Immersive share for Cisco Desk Pro and Desk Limited Edition](#10320-3)
 * [Other changes](#10320-4)
     * [Added a new button to enable Personally Identifiable Information (PII) logging from the Touch interface](#10320-41)
     * [Added Room Analytics dashboard in the Web UI](#10320-42)
@@ -1227,19 +1243,19 @@ New features in CE9.15.3.17 also included in RoomOS 10:
 
 [Click here](https://www.cisco.com/c/dam/en/us/td/doc/telepresence/endpoint/software/ce9/release-notes/ce-software-release-notes-ce9.pdf) for more information about CE9.15.3.17 and the features above.
 
-### Support for Cisco Webex Desk Limited Edition <a name='10320-2'></a>
+### Support for Cisco Desk Limited Edition <a name='10320-2'></a>
 <img src="/doc/images/releases/desklimited.png" style="border: none; height: 300px; width: 400px;">
 
-Cisco Webex Desk Limited Edition is a new product in the Cisco Webex Desk Series and is only supported with RoomOS 10 and above. 
+Cisco Desk Limited Edition is a new product in the Cisco Desk Series and is only supported with RoomOS 10 and above. 
 
-### Immersive share for Cisco Webex Desk Pro and Desk Limited Edition<a name='10320-3'></a>
+### Immersive share for Cisco Desk Pro and Desk Limited Edition<a name='10320-3'></a>
 
 <img src="/doc/images/releases/immersiveshare.png" style="border: none; height: 300px; width: 400px;">
 
 Deliver more engaging presentations, by placing yourself in front of any content you share from your computer. 
 
 * You need to enable Virtual Backgrounds before using Immersive Share.
-* Your computer must be connected to the Cisco Webex Desk Pro or Desk Limited Edition with the USB-C cable.
+* Your computer must be connected to the Cisco Desk Pro or Desk Limited Edition with the USB-C cable.
 
 The presentation and video are both sent in the content stream so you will stay in focus until you stop sharing. This is available through the floating content bar. 
 
@@ -1264,7 +1280,7 @@ This feature can be used for troubleshooting purposes when unobscured logs are r
 
 **Added Room Analytics dashboard in the Web UI<a name='10320-42'></a>**
 
-If you have enabled any Room Analytics features on your Cisco Webex Device, a Room Analytics dashboard will appear on the web interface home page. 
+If you have enabled any Room Analytics features on your Cisco Device, a Room Analytics dashboard will appear on the web interface home page. 
 
 <img src="/doc/images/releases/roomanalyticsdashboard.png" style="border: none; height: 300px; width: 600px;">
 
@@ -1298,7 +1314,7 @@ The Cisco Proximity for Mobile app is being phased out, and no further developme
 <br><br>
 # Software upgrade and downgrade
 
-## Upgrading software on a Cisco Webex Room Device  <a name='software'></a>
+## Upgrading software on a Cisco Room Device  <a name='software'></a>
 
 Upgrading from any CE9 version directly is supported, <u>however there may be limitations to the different upgrade methods that you need to take into consideration</u>. Using the xAPI method to download the “.cop” software from a HTTP server should work from any CE9 version to RoomOS 10.  
 
@@ -1315,22 +1331,22 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_4_2.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Webex Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce10_19_5_6.k3.cop.sgn</b><br><b>cmterm-s53200ce10_19_5_6.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Webex Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_4_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Room 70 G2, Room 70 Panorama, Room Panorama, Desk Series (except Cisco Desk, Desk Mini and Desk Hub)</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_5_6.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_5_6.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk, Desk Mini, Room Bar and Cisco Webex Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_4_2-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_4_2-l4t.k4.cop.sha512</b>*</td>
+		<td>Cisco Desk, Desk Mini, Room Bar and Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce10_19_5_6-l4t.k3.cop.sgn</b><br><b>cmterm-s53300ce10_19_5_6-l4t.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_4_2.k4.cop.sha512</b>*</td>
+		<td>Cisco Desk Hub</td> <td><b>s53400</b></td> <td><b>cmterm-s53400ce10_19_5_6.k3.cop.sgn</b><br><b>cmterm-s53400ce10_19_5_6.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_4_2.k3.cop.sgn</b><br><b>cmterm-ce10_19_4_2.k4.cop.sha512</b>*</td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce10_19_5_6.k3.cop.sgn</b><br><b>cmterm-ce10_19_5_6.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Webex Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
+		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the Room Device you are about to upgrade.<br>* .cop.sha512 cop files are used with UCM 14 and above<br>** Cisco Desk, Desk Mini and Webex Board Pro 55 and 75 requires s53300 l4t package.</th>
 	</tr>
 </table>
 
@@ -1397,7 +1413,7 @@ Install the appropriate “.cop” file containing the software for the device p
 
 Go into the device default loads on the UCM administration page and make sure the platform has populated the correct filename. 
 
-For Cisco Webex Room devices s53200 and s53300, the load file name should not contain any extension at all if the device is running software >= CE9.8.2. For example:
+For Cisco Room devices s53200 and s53300, the load file name should not contain any extension at all if the device is running software >= CE9.8.2. For example:
 
 Platform Specific packages:<br>
 s53200ce10_X_X_X.pkg (**wrong**)<br>
@@ -1511,7 +1527,7 @@ Anything that degrades network performance can affect voice and video quality an
 * Administrative tasks such as an internal port scan or security scan
 * Attacks that occur on your network, such as a denial-of-service attack
 
-To reduce or eliminate any adverse effects to conferences, schedule any administrative network tasks during a time when the Cisco Webex Room system is not being used, or exclude the Cisco Webex Room systems from the testing.
+To reduce or eliminate any adverse effects to conferences, schedule any administrative network tasks during a time when the Cisco Room system is not being used, or exclude the Cisco Room systems from the testing.
 
 ### Wi-Fi Connection 
 
@@ -1531,7 +1547,7 @@ Even though this connectivity works, you may end up in cumbersome scenarios if t
 ### Cisco Webex and Cisco Webex Edge for Devices 
 
 **Pairing Cisco Touch 10 or Room Navigator**<br>
-To activate a system on Webex Teams with a LAN paired Cisco Touch 10 or Cisco Webex Room Navigator panel, you must pair the touch device before you activate the system on Webex Teams. 
+To activate a system on Webex Teams with a LAN paired Cisco Touch 10 or Cisco Room Navigator panel, you must pair the touch device before you activate the system on Webex Teams. 
 
 Note: In newer versions you can now create new user accounts to pair the touch device after registration. 
 We recommend that you upgrade to the latest available RoomOS version before activating your device on Webex Teams. 
@@ -1539,7 +1555,7 @@ We recommend that you upgrade to the latest available RoomOS version before acti
 From RoomOS 10.11 (January 2022) we have support for PIN pairing of touch panels that can be initiated from Webex Control Hub.
 
 **Encryption is required to activate a Room Device on Webex**<br>
-A Room Device with support for encryption is required to activate the device on Webex and Webex Edge for Devices. Cisco Webex Room Devices with the K7 flag in the partnumber, do not have support for encryption and cannot be registered or linked to Webex. Encryption support for Cisco Webex Room Devices are determined by hardware and are not using encryption option keys. 
+A Room Device with support for encryption is required to activate the device on Webex and Webex Edge for Devices. Cisco Room Devices with the K7 flag in the partnumber, do not have support for encryption and cannot be registered or linked to Webex. Encryption support for Cisco Room Devices are determined by hardware and are not using encryption option keys. 
 
 If the device do not have the encryption option, then the device is a K7 device. Devices flagged with K9 in the partnumber have support for encryption. 
 
@@ -1613,7 +1629,7 @@ There is a known limitation when configuring the trigger zone through the web in
 		</td>
 	</tr>
 	<tr>
-		<td>SpeakerTrack</td> <td><b>Face masks</b><br>SpeakerTrack (Quad Camera and integrated cameras, for example on Room Kits) with the Cisco Webex Room Series has been improved with an additional “head detector” that will detect the head instead of the face. Note that this may also increase the frequency of detecting objects with a “head” in the room. This functionality will give an improved experience in a meeting where the people in the room are wearing face masks. </td>
+		<td>SpeakerTrack</td> <td><b>Face masks</b><br>SpeakerTrack (Quad Camera and integrated cameras, for example on Room Kits) with the Cisco Room Series has been improved with an additional “head detector” that will detect the head instead of the face. Note that this may also increase the frequency of detecting objects with a “head” in the room. This functionality will give an improved experience in a meeting where the people in the room are wearing face masks. </td>
 	<tr>
 		<td>Startup Wizard</td> <td>While the Startup Wizard is active the system will have “Do Not Disturb” mode enabled by design. The DND mode cannot be turned off while the Startup Wizard is active. To remove the Startup Wizard, finish the Startup Wizard normally by following the steps or turn off the “RunStartupWizard” by setting the value to “False”. If the Startup Wizard is active, a diagnostics message will be active in the web interface with a link to the configuration to turn it off. This should only be done by advanced users that wants to configure the system manually.   </td>	
 	<tr>
@@ -1643,19 +1659,19 @@ On-premises devices that are calling into Webex meetings will currently not have
 	<tr>
 		<td>Immersive share</td> <td>
 <b>Camera LED is not lit when immersive share is enabled</b><br>
-You will see yourself on the screen as an indication of being filmed by the camera. This limitation will be resolved in a future release and is valid for Cisco Webex Desk Pro and Desk Limited Edition. 
+You will see yourself on the screen as an indication of being filmed by the camera. This limitation will be resolved in a future release and is valid for Cisco Desk Pro and Desk Limited Edition. 
 		</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room Navigator</td> <td>
+		<td>Cisco Room Navigator</td> <td>
 <b>Keyboard clicks inaudible on some units</b><br>
 Some units will not produce audible key clicks when tapping on the keyboard. This is not an issue from RoomOS 10.8.2.5.
 		</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room Panorama</td> <td>
+		<td>Cisco Room Panorama</td> <td>
 <b>Cisco Precision 60 camera</b><br>
-Cisco Webex Room Panorama do not have support for Precision 60 cameras. Please note this when upgrading a Room 70 into a Room 70 Panorama, in case you have one connected and want to keep using it. 
+Cisco Room Panorama do not have support for Precision 60 cameras. Please note this when upgrading a Room 70 into a Room 70 Panorama, in case you have one connected and want to keep using it. 
 		</td>
 	</tr>
 		<tr>
@@ -1711,17 +1727,17 @@ The interoperability section describes the equipment and software revisions that
 
 ## Camera firmware and support
 
-Note: The camera firmware has parity with the version installed on the Room Device. Camera software for Cisco Webex Quad Camera, Cisco TelePresence Precision 60 and Cisco TelePresence SpeakerTrack 60 will automatically be updated when the Room Device is upgraded or downgraded. The camera firmware should share the same hash as the current software installed on the Room Device. 
+Note: The camera firmware has parity with the version installed on the Room Device. Camera software for Cisco Quad Camera, Cisco TelePresence Precision 60 and Cisco TelePresence SpeakerTrack 60 will automatically be updated when the Room Device is upgraded or downgraded. The camera firmware should share the same hash as the current software installed on the Room Device. 
 
 <table  width="100%">
 	<tr>
 		<th><b>Room Device</b></th><th><b>Camera</b></th><th><b>Comments</b></th>
 	</tr>
 	<tr>
-		<td rowspan="5" style="border-bottom: 1px solid black;">Cisco Webex Codec Pro</td> <td>Cisco TelePresence Precision 60</td> <td>Full support</td> 
+		<td rowspan="5" style="border-bottom: 1px solid black;">Cisco Codec Pro</td> <td>Cisco TelePresence Precision 60</td> <td>Full support</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Quad Camera</td> <td>Full support</td> 
+		<td>Cisco Quad Camera</td> <td>Full support</td> 
 	</tr>
 	<tr>
 		<td>Cisco TelePresence SpeakerTrack 60</td> <td>Full support</td> 
@@ -1734,7 +1750,7 @@ Note: The camera firmware has parity with the version installed on the Room Devi
 		<td style="border-bottom: 1px solid black;">Pairing over IP and basic usage with pan tilt and zoom functionality is supported, Camera firmware update is not supported. </td> 
 	</tr>
 	<tr>
-		<td rowspan="5">Cisco Webex Room Codec Plus</td> <td>Cisco TelePresence Precision 60</td> <td>Full support</td> 
+		<td rowspan="5">Cisco Room Codec Plus</td> <td>Cisco TelePresence Precision 60</td> <td>Full support</td> 
 	</tr>
 	<tr>
 		<td>Webex PTZ 4K</td> <td>Full support</td> 
@@ -1743,7 +1759,7 @@ Note: The camera firmware has parity with the version installed on the Room Devi
 		<td>Sony SRG-120DH<br>Sony EVI-120DH</td> <td>Pairing over IP and basic usage with pan tilt and zoom functionality is supported, Camera firmware update is not supported.</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Quad Camera</td> <td>Full support</td> 
+		<td>Cisco Quad Camera</td> <td>Full support</td> 
 	</tr>
 	<tr>
 		<td>Cisco TelePresence SpeakerTrack 60</td> <td>Full support</td> 
@@ -1756,7 +1772,7 @@ Third-party and older cameras may work with our Integration Room Devices but thi
 
 ## Cisco recommended screens for best interoperability
 
-Cisco recommends using the following LG and Samsung Digital Signage screens together with Cisco Webex Room Series and other room devices for the best visual experience and verified CEC 2.0 compatibility. 
+Cisco recommends using the following LG and Samsung Digital Signage screens together with Cisco Room Series and other room devices for the best visual experience and verified CEC 2.0 compatibility. 
 
 <table  width="100%">
 	<tr>
@@ -1800,9 +1816,9 @@ The admin user has access to only a subset of relevant commands and configuratio
 
 Specific xAPI changes are not published in the release notes. Please refer to the Cisco API Reference Guides for the integrator products at the following locations:
 
-Cisco Webex Room Series: https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html
+Cisco Room Series: https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html
 
-Cisco Webex Boards: https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-board/products-command-reference-list.html
+Cisco Boards: https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-board/products-command-reference-list.html
 
 Please also visit https://roomos.cisco.com for a great overview of the xAPI and other resources. 
 
@@ -1816,14 +1832,14 @@ The latest software release is backward compatible with previous hardware revisi
 
 Note: When "all" is mentioned as the minimum version it is referring to all software versions of RoomOS 10 that is or has been released on https://www.cisco.com.
 
-## Cisco Webex Room Series software compatibility matrix
+## Cisco Room Series software compatibility matrix
 
 <table  width="100%">
 	<tr>
 		<th style="border-bottom: 1px solid black;">Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
 	<tr>
-		<td rowspan="3" style="border-bottom: 1px solid black; ">Cisco Webex Room Kit</td>
+		<td rowspan="3" style="border-bottom: 1px solid black; ">Cisco Room Kit</td>
 	</tr>
 	<tr>
 		<td>0-2</td> <td>All</td> 
@@ -1832,87 +1848,87 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>3</td> <td>10.19.2.2</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Plus	</td> 
+		<td>Cisco Codec Plus	</td> 
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Room 55 Dual</td> 
+		<td>Cisco Room 55 Dual</td> 
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Room 70S/70D</td> 
+		<td>Cisco Room 70S/70D</td> 
 		<td>0-2</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Codec Pro</td> 
+		<td>Cisco Codec Pro</td> 
 		<td>0-2</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room 70/70D G2</td> 
+		<td>Cisco Room 70/70D G2</td> 
 		<td>0-2</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room Kit Mini</td> 
+		<td>Cisco Room Kit Mini</td> 
 		<td>0</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Room USB	</td> 
+		<td>Cisco Room USB	</td> 
 		<td>0</td> <td>All</td>
 	</tr>
 </table>
 
-## Cisco Webex Board Series Software Compatibility Matrix 
+## Cisco Board Series Software Compatibility Matrix 
 
 <table  width="100%">
 	<tr>
 		<th>Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Board 55	</td> 
+		<td>Cisco Board 55	</td> 
 		<td>0</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Board 70	</td> 
+		<td>Cisco Board 70	</td> 
 		<td>0</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Board 55S</td> 
+		<td>Cisco Board 55S</td> 
 		<td>0</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Board 70S</td> 
+		<td>Cisco Board 70S</td> 
 		<td>0</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Board 85S</td> 
+		<td>Cisco Board 85S</td> 
 		<td>0</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Board Pro 55</td> 
+		<td>Cisco Board Pro 55</td> 
 		<td>0</td> <td>10.11.2.2</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Board Pro 75</td> 
+		<td>Cisco Board Pro 75</td> 
 		<td>0</td> <td>10.11.2.2</td>
 	</tr>
 </table>
 
-## Cisco Webex Desk Series Software Compatibility Matrix <a name="compatibility-desk"></a>
+## Cisco Desk Series Software Compatibility Matrix <a name="compatibility-desk"></a>
 
 <table width="100%">
 	<tr>
 		<th>Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Pro</td> 
+		<td>Cisco Desk Pro</td> 
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td style="border-bottom: 1px solid black;">Cisco Webex Desk Limited Edition</td> 
+		<td style="border-bottom: 1px solid black;">Cisco Desk Limited Edition</td> 
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Webex Desk </td> 
+		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Desk </td> 
 	</tr>
 	<tr>
 		<td>0</td> <td>10.8.2.5</td>
@@ -1921,7 +1937,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>1</td> <td>10.8.3.1</td>
 	</tr>
 	<tr>
-		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Webex Desk Mini</td>
+		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Desk Mini</td>
 	</tr>
 	<tr>
 		<td>0</td> <td>10.11.2.2</td>
@@ -1930,7 +1946,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>1</td> <td>10.15.3.0</td>
 	</tr>
 	<tr>
-		<td>Cisco Webex Desk Hub</td> 
+		<td>Cisco Desk Hub</td> 
 		<td>0</td> <td>10.11.2.2</td> 
 	</tr>
 
@@ -1953,7 +1969,7 @@ If you see an error on the touch screen about the software not being compatible 
 		<td>102300-3<br>102310-0<br>102310-1</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Webex Room Navigator</td> 
+		<td>Cisco Room Navigator</td> 
 		<td>101864-0<br>101864-1<br></td> <td>All</td> 
 	</tr>
 </table>
@@ -1965,7 +1981,7 @@ If you see an error on the touch screen about the software not being compatible 
 		<th>Device</th> <th>Compatibility level</th> <th>Minimum version of RoomOS 10</th>
 	</tr>
 	<tr>
-		<td>Cisco Webex Quad Camera</td> 
+		<td>Cisco Quad Camera</td> 
 		<td>73-100746-0<br>73-100746-1<br>73-100746-2<br>73-100746-3</td> <td>All</td> 
 	</tr>
 	<tr>
@@ -1978,9 +1994,9 @@ If you see an error on the touch screen about the software not being compatible 
 	</tr>	
 </table>
 
-**Notes for Cisco Webex Quad Camera**
+**Notes for Cisco Quad Camera**
 
-Systems that support Quad Camera are Cisco Webex Codec Pro, Codec Plus, Room 70 and Room 70 G2 (single / dual).
+Systems that support Quad Camera are Cisco Codec Pro, Codec Plus, Room 70 and Room 70 G2 (single / dual).
 Hardware revisions of the Quad Camera can be identified using xStatus. 
 
 **Example:**
@@ -1990,7 +2006,7 @@ xStatus: Peripherals ConnectedDevice XXXX HardwareInfo: "73-100746-1".
  
 **Notes for Cisco TelePresence Precision 60**
 
-Systems that support Cisco TelePresence Precision 60 with RoomOS 10 is Cisco Webex Codec Pro, Codec Plus, Room 70 and Room 70 G2 (single / dual).
+Systems that support Cisco TelePresence Precision 60 with RoomOS 10 is Cisco Codec Pro, Codec Plus, Room 70 and Room 70 G2 (single / dual).
 
 New hardware revisions of the Cisco TelePresence Precision 60 camera are identified by production date printed on a sticker underneath the base. If there no sticker is present and you still see an error message on screen about the camera not being compatible with the current software version, please upgrade the room device to the latest software. 
 

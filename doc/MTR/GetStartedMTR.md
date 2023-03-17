@@ -45,7 +45,7 @@ To open the **Settings** menu, tap the **More** button on the home screen. Tap *
 
 <img src="/doc/images/MTR/Settings3.png" style="width: 500px" />
 
-Tap any entry in the menu to check or change a setting (as long as you have access to it). Tapping the back arrow in the upper right corner returns you to the main menu. Settings with a lock symbol next to them require and admin username and passphrase to access.  
+Tap any entry in the menu to check or change a setting (as long as you have access to it). Tapping the back arrow in the upper right corner returns you to the main menu. Settings with a lock symbol next to them require an admin username and passphrase to access.  
 
 *NOTE:* **Factory reset** is available from the **Settings** menu. Selecting to factory reset returns your device to default settings and you’ll lose your current registration. Factory resetting is irreversible.  
 

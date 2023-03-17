@@ -56,11 +56,12 @@ Tailor your device’s screen to best suit your needs, with the *Accessibility* 
 1. Tap **More** on the home screen. Tap **Settings**, and then **Device settings**.  
 2. Scroll to and select **Accessibility**.  
 3. Select and change settings as needed:
+
+   <img src="/doc/images/MTR/Accessibility.png" style="width: 300px" />
+
 * **Text size**. Small, normal, large, extra large.
 * **Color correction**. Toggle it on or off and correct.
 * **High contrast**. Toggle it on or off.
-
-<img src="/doc/images/MTR/Accessibility.png" style="width: 300px" />
 
 ## Content sharing
 
@@ -70,10 +71,13 @@ Connect your computer to the device with a USB-C or HDMI cable.
 
 1. Tap the **Share** button on the home screen and your laptop screen immediately appears full screen on the device.   
 2. If you have both an HDMI and a USB-C source connected, swipe right to open the control panel and tap **Select share source** to switch sources. Otherwise, the source you connected last is the one shared by default.
-<img src="/doc/images/MTR/SelectSource.png" style="width: 500px" />  
+
+   <img src="/doc/images/MTR/SelectSource.png" style="width: 500px" /> 
+
 3. While your share is in progress, tap the device screen and controls will appear in the bottom right corner. 
-<img src="/doc/images/MTR/StopShareButtons.png" style="width: 200px" />
-4. Tap **Stop sharing** to end the share.   
+
+   <img src="/doc/images/MTR/StopShareButtons.png" style="width: 200px" />
+
+4. Tap **Stop sharing** to end the share.  
 
 Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.   
-

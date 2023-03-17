@@ -15,6 +15,8 @@ There are four buttons on the home screen. Tap them to:
 
 Swipe from the right side of your screen to open the control panel. You can access the control panel whether you're in a call or not. If you're in a call, the panel opens on top of the call and you can check or change settings without interrupting anything.
 
+<img src="/doc/images/MTR/ControlPanel.png" style="width: 300px" />
+
 In the control panel you can access and adjust settings that you use on a regular basis, like:
 
 * **Camera**. Choose a camera mode, including the option to manually adjust the camera to suit your meeting.
@@ -31,10 +33,45 @@ Tapping one of these buttons opens the relevant settings inside the control pane
 
 ## The Settings menu
 
+You can check device information, issues and diagnostics, network settings, and change settings in the device **Settings** menu. The menu is available both in and out of call, and the availability of various settings might be restricted by your administrator.
 
+To open the **Settings** menu, tap the **More** button on the home screen. Tap **Settings**, and then tap **Device settings** in the dialog that opens after that.  
 
-1. list item
-2. list item
+<img src="/doc/images/MTR/Settings1.png" style="width: 500px" />
 
-*italics
-still italics*
+<img src="/doc/images/MTR/Settings2.png" style="width: 500px" />
+
+*NOTE:* before you open the **Settings** menu, there are options available to *Report an issue*, view information *About* the device, or check on *Device health*.
+
+<img src="/doc/images/MTR/Settings3.png" style="width: 500px" />
+
+Tap any entry in the menu to check or change a setting (as long as you have access to it). Tapping the back arrow in the upper right corner returns you to the main menu. Settings with a lock symbol next to them require and admin username and passphrase to access.  
+
+*NOTE:* *Factory reset* is available from the **Settings** menu. Selecting to factory reset returns your device to default settings and you’ll lose your current registration. Factory resetting is irreversible.  
+
+## Accessibility
+
+Tailor your device’s screen to best suit your needs, with the *Accessibility* settings:  
+
+1. Tap **More** on the home screen. Tap **Settings**, and then **Device settings**.  
+2. Scroll to and select *Accessibility*.  
+3. Select and change settings as needed:
+* **Text size**. Small, normal, large, extra large.
+* **Color correction**. Toggle it on or off and correct.
+* **High contrast**. Toggle it on or off.
+
+<img src="/doc/images/MTR/Settings2.png" style="width: 300px" />
+
+## Content sharing
+
+You can share content from your computer with other participants during calls or meetings. When you aren’t in a call, connect your computer to use the device as an extension for your laptop screen.  
+
+Connect your computer to the device with a USB-C or HDMI cable.
+
+1. Tap the **Share** button on the home screen and your laptop screen immediately appears full screen on the device.   
+2. If you have both an HDMI and a USB-C source connected, swipe right to open the control panel and tap **Select share source** to switch sources. Otherwise, the source you connected last is the one shared by default.    
+3. While your share is in progress, tap the device screen and controls will appear in the bottom right corner.   
+4. Tap **Stop sharing** to end the share.   
+
+Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.   
+

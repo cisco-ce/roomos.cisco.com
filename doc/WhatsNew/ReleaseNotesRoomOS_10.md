@@ -1770,39 +1770,11 @@ Note: The camera firmware has parity with the version installed on the Room Devi
 
 Third-party and older cameras may work with our Integration Room Devices but this is not tested and functionality cannot be guaranteed. TAC support may be rejected or limited. 
 
-## Cisco recommended screens for best interoperability
+## Cisco collaboration certification program
 
-Cisco recommends using the following LG and Samsung Digital Signage screens together with Cisco Room Series and other room devices for the best visual experience and verified CEC 2.0 compatibility. 
+Cisco collaboration devices partner ecosystem is built on our certification program to ensure that customers get the best experience out of their Cisco collaboration devices and make integration as seamless as possible when integrating with third-party technology.
 
-<table  width="100%">
-	<tr>
-		<th><b>LG screens</b></th>
-	<tr>
-		<td><b><a href="https://www.lg.com/global/business/information-display/digital-signage/lg-49UH5C">49” UHD (49UH5C)</a><br>
-
-<a href="https://www.lg.com/global/business/information-display/digital-signage/lg-55UH5C" target="_blank">55” UHD (55UH5C)</a><br>
-
-<a href="https://www.lg.com/global/business/information-display/digital-signage/lg-65UH5C" target="_blank">65” UHD (65UH5C)</a><br>
-
-<a href="https://www.lg.com/global/business/information-display/digital-signage/lg-75UH5C" target="_blank">75” UHD (75UH5C)</a><br>
-
-<a href="https://www.lg.com/global/business/information-display/digital-signage/lg-86UH5C" target="_blank">86” UHD (86UH5C)</a><br>
-
-<a href="https://www.lg.com/global/business/information-display/digital-signage/lg-98LS95D" target="_blank">98” UHD (98UH5C)</a></b></td> 
-	</tr>
-	<tr>
-		<th><b>Samsung Screens</b></th>
-	</tr>
-	<tr>
-		<td><b><a href="https://displaysolutions.samsung.com/digital-signage/detail/1269/QM43N" target="_blank">QMN Series (43”,49”,55”,65”,75”)</a><br>
-
-<a href="https://displaysolutions.samsung.com/digital-signage/detail/1144/QM49H" target="_blank">QMH Series (49”,55”,65”)</a><br>
-
-<a href="https://displaysolutions.samsung.com/digital-signage/detail/1274/QB43N" target="_blank">QBN Series (43”,49”,55”,65”,75”)</a><br>
-
-<a href="https://displaysolutions.samsung.com/digital-signage/detail/1205/QB65H" target="_blank">QBH Series (65”,75”)</a></b></td> 
-	</tr>
-</table>
+[For more information, click here](https://help.webex.com/en-us/article/7sw4gab/Cisco-collaboration-devices-certification-program)
 
 **HDMI Cable quality**<br>
 Cisco recommends use of high-quality HDMI 2.0 certified cables. Lower quality cables may work but may also have an impact on the image quality. 

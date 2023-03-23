@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.01 - February 2023
+D15504.02 - March 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.01 - February 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>2</td> 
+		<td>March 23rd 2023</td> 
+		<td>
+			Release of <a href='#11.1' title='Jump to section'>RoomOS 11.1.3.1</a> 4ddb830dec5 , Patch
+		</td>
 	</tr>
 	<tr>
 		<td>1</td> 
@@ -164,6 +171,15 @@ For a list of current limitations in RoomOS 11 compared to RoomOS 10, please see
 		</td> 
 	</tr>
 </table>
+
+## RoomOS 11.1.3.1
+
+RoomOS 11.1.3.1 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.1.3.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.1.3.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 11.1.2.4
 
@@ -391,13 +407,13 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_1_2_4.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_1_3_100000000.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_1_2_4.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_1_3_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_1_2_4.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_1_3_1.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -478,7 +494,9 @@ ce11_X_X_X (**correct**)
 
 Upload the software to TMS according to the TMS instructions of software upgrade. 
 
-**Note that devices must be running RoomOS 10.15.x or above in order to do a successful upgrade to RoomOS 11 via TMS.**
+Note: There is a known limitation with older TMS versions. The affected versions do not accept the sha512 extension of the RoomOS software. Please upgrade to the latest TMS software version or refer to the TMS documentation for information about the minimum version you need to use.
+
+Also note that devices must be running RoomOS 10.15.x or above in order to do a successful upgrade to RoomOS 11 via TMS.
 
 **Upgrade using the xAPI**
  
@@ -734,7 +752,7 @@ The interoperability section describes the equipment and software revisions that
 		<th colspan="2"><b>Management server interoperability</b></th>
 	</tr>
 	<tr>
-		<td>TelePresence Management Suite</td> <td><b>Latest version available</b></td>	
+		<td>TelePresence Management Suite</td> <td><b>Latest version available</b> Older versions of TMS do not have support for uploading software files for upgrading devices</td>	
 	</tr>
 </table>
 

@@ -1,33 +1,42 @@
 # The device web interface
 
-A Cisco collaboration device comes with a web interface, which is an administration portal for the device. You can connect from a computer and administer the device remotely. It provides full configuration access and offers tools and mechanisms for maintenance.
+A Cisco collaboration device comes with a local web interface, which is an administration portal for the device. You can connect from a computer and administrate the device remotely. It provides full configuration access and offers tools and mechanisms for maintenance.
 
 ## Requirements and limitations 
 
-The device web interface requires that HTTP or HTTPS is enabled (refer to the _NetworkServices > HTTP > Mode_ setting).
+* You need to know the device's IP address.
+* Your computer must be connected to the same network as the device.
+* The device web interface requires that HTTP or HTTPS is enabled (refer to the _NetworkServices > HTTP > Mode_ setting).
+
+## How to find the device's IP address
+If you have a new device, or a device that has been factory reset, you can find the IP address in the upper left corner of the Welcome screen.   
+
+If your device is not yet onboarded to MTR:
+1. Swipe from the right or tap the controls icon in the upper, right corner to open the control panel. Then tap _Device settings_.   
+2. Tap _About this room device_ to find the IP address.
+
+If your device is onboarded to MTR:
+1. Tap _More_ on the device's home screen.
+2. Tap _Settings_, followed by _Device settings_.
+3. Tap _About this room device_ to find the IP address.
 
 ## Sign in and open the device web interface
 
-Find the device’s IP address:
-
-1.	Tap _More_ on the device's home screen.
-2.	Tap _Settings_, followed by _Device settings_.
-3.	Tap _About this room device_ to find the IP address.
-
-Sign in and open the web interface:
-1.	Open a web browser and enter the device’s IP address in the address bar.  
+1. Open a web browser and enter the device's IP address in the address bar.  
 We recommend that you use the latest release of one of the major web browsers (Internet Explorer is not supported). 
-2.	Enter username and passphrase for the device and click _Sign In_.  
-The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to MTR.
+2. Enter username and passphrase for the device and click _Sign In_.  
+The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to MTR. Leave the _Passphrase_ field blank if a passphrase is not set yet.
 
 ## How the device web interface is organized
 
 You can select pages or topics from the menu at the left side. There is a search field in the top bar to help you find the page you are searching for.
+
+Which pages are present depends on:
 * Device type and service registration (MTR, Webex)
 * Connected peripherals and setup.
 * Roles and access rights of the user that is signed in.
 
-This means that some of the main menu entries shown in the illustration below may not be present on your device. Read more local users, user roles, and access rights in the _Local users and user roles_ section.
+This means that some of the main menu entries shown in the illustration may not be present on your device. Read more about local users, user roles, and access rights in the _Local users and user roles_ section.
 
 <img src= "/doc/images/MTR/WebUIOverview.png">
 
@@ -43,7 +52,7 @@ E. Search field. Use this field to search for a page. Suggestions for relevant p
 
 F. The user menu. Click the symbol to see who is signed in. You can also edit the user settings, change your passphrase, and sign out.
 
-## Top menu overview
+## Main menu overview
 
 <img src= "/doc/images/MTR/WebUIMainMenu.png" style="width: 200px">
 
@@ -51,7 +60,7 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 
 **Settings**: Opens a page that give you access to the device settings (configurations) and statuses.
 
-**Users**: Opens a page where you can add, edit, or delete users, or change a user’s passphrase. You can also create a remote support user from this page.
+**Users**: Opens a page where you can add, edit, or delete users, or change a user's passphrase. You can also create a remote support user from this page.
 
 **Security**: Opens a page where you can upload and view certificates that are required to communicate with different services and backends. You can also create a sign-in banner and choose which system components to reset automatically when restarting the device. A sign-in banner is a message that is shown to the users before they sign in to the web or command line interfaces.
 

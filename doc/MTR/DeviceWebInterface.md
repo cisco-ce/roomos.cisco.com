@@ -126,7 +126,7 @@ For descriptions of the different statuses, settings, and valuespaces, see the _
 ### Configurations
 Changing different settings may require different user credentials. To be sure that an administrator can change all device settings, an _admin_ user must possess the ADMIN, USER, and AUDIT user roles (see the _Local users and user roles_ section).
 
-<img src= "/doc/images/MTR/SettingsOverview.png">
+<img src= "/doc/images/MTR/WebUISettingsOverview.png">
 
 Search for settings: Enter as many letters as needed in the search field (A). All settings that contain these letters are shown in the right pane (B). Settings that have these letters in their value space are also shown.
 
@@ -137,7 +137,7 @@ Check the valuespace for a setting: A settings's valuespace is specified either 
 Change a value: Choose the preferred value from the drop-down list or enter new text in the input field. Then click _Save_ for the change to take effect. Use the _Revert_ buttons if you don't want to make any changes. Categories with unsaved changes are marked with an edit symbol.
 
 ### Statuses
-<img src= "/doc/images/MTR/StatusesOverview.png">
+<img src= "/doc/images/MTR/WebUIStatusesOverview.png">
 
 Search for a status entry: Enter as many letters as needed in the search field (A). All entries that contain these letters are shown in the right pane (B). Entries that have these letters in their value are also shown.
 

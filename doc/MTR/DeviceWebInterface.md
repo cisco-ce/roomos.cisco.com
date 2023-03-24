@@ -11,7 +11,7 @@ A Cisco collaboration device comes with a local web interface, which is an admin
 ## How to find the device's IP address
 If you have a new device, or a device that has been factory reset, you can find the IP address in the upper left corner of the Welcome screen.   
 
-If your device is not yet onboarded to MTR:
+If your device is not yet onboarded to Microsoft Teams Rooms (MTR):
 1. Swipe from the right or tap the controls icon in the upper, right corner to open the control panel. Then tap _Device settings_.   
 2. Tap _About this room device_ to find the IP address.
 
@@ -130,7 +130,7 @@ Changing different settings may require different user credentials. To be sure t
 
 Search for settings: Enter as many letters as needed in the search field (A). All settings that contain these letters are shown in the right pane (B). Settings that have these letters in their value space are also shown.
 
-Select a category of settings: The device settings are grouped in categories. When you choose a category in the left pane (C), all associated settings are shown in the right pane (B).
+Select a settings category: The device settings are grouped in categories. When you choose a category in the left pane (C), all associated settings are shown in the right pane (B).
 
 Check the valuespace for a setting: A settings's valuespace is specified either by text following the input field (D) or in a drop-down list that opens when you click the arrow (E).
 
@@ -142,6 +142,12 @@ Change a value: Choose the preferred value from the drop-down list or enter new 
 Search for a status entry: Enter as many letters as needed in the search field (A). All entries that contain these letters are shown in the right pane (B). Entries that have these letters in their value are also shown.
 
 Select a status category: The device statuses are grouped in categories. When you choose a category in the left pane (C), all associated statuse are shown in the right pane (B).
+
+## Find device information, diagnostics messages, and logs
+
+Go to the device web interface _Home_ page to find the device's software version, MTR and Webex registration status, and an overview of current issues. More detailed diagnostics messages for active issues are on the _Issues and Diagnostics_ page.
+
+The device log files are useful when diagnosing issues. You can download all current and historical logs from the device web interface _Issues and Diagnostics_ page.
 
 ## Further reading
 Find more information about the device web interface in the [Administrator guide (pdf)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-maintenance-guides-list.html). The Administration guide primarily addresses capabilities and configurations for devices registered to a Cisco on-premises service (CUCM, VCS), but many capabilities and configurations also apply to devices that are registered to MTR or Webex cloud services.

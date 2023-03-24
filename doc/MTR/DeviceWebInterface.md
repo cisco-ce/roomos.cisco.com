@@ -17,7 +17,7 @@ Find the device’s IP address:
 Sign in and open the web interface:
 1.	Open a web browser and enter the device’s IP address in the address bar.  
 We recommend that you use the latest release of one of the major web browsers (Internet Explorer is not supported). 
-3.	Enter username and passphrase for the device and click _Sign In_.  
+2.	Enter username and passphrase for the device and click _Sign In_.  
 The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to MTR.
 
 ## How the device web interface is organized

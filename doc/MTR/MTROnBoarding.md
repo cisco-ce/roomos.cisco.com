@@ -1,4 +1,4 @@
-## Onboarding
+# Onboarding
 
 1. Select **Try the new onboarding** on the Welcome screen.  
 

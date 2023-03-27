@@ -7,7 +7,7 @@ The list of supported APIs on MTR registered devices is a work in progress. This
 ---
 
 ## Requirements
-* To be able to sign in and program against the xAPI, the device must be registered to both MTR and Webex (dual registration). If the device is registered only to MTR, xAPI access is blocked.
+* To be able to sign in and program with the xAPI, the device must be registered to both MTR and Webex (dual registration). If the device is registered only to MTR, xAPI access is blocked.
 
 ## Connecting to the API
 There are several ways to access the xAPI: SSH, HTTP/HTTPS, web sockets, serial connection, and using the cloud xAPI.
@@ -28,9 +28,9 @@ You can run the following commands (terminal mode) to show the complete list of 
 * `xConfiguration ?? <enter>` 
 * `xCommand ?? <enter>`
 
-To see the current values of configurations and list the current status:
-*	`xConfiguration <enter>`
+Run the following commands if you want to see the current status and current configuration values:
 *	`xStatus <enter>`
+*	`xConfiguration <enter>`
 
 ## Further reading
 For general guidelines how to use the xAPI and thorough descriptions of all commands, configurations, and statuses, check out the complete API reference guide (pdf) on cisco.com, and the RoomOS website for developers and integrators (roomos.cisco.com):

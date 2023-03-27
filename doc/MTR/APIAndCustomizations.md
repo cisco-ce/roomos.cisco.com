@@ -25,12 +25,12 @@ The xAPI consists of four, hierarchically organized command groups. In each grou
 * Events (xEvent): Unlike statuses, events usually occur at specific points in time, such as a notification that a meeting is about to start or that a user tapped a button.
 
 You can run the following commands (terminal mode) to show the complete list of configurations and commands, including their parameters and valuespaces:
-* xConfiguration ?? <enter> 
-* xCommand ?? <enter>
+* `xConfiguration ?? <enter>` 
+* `xCommand ?? <enter>`
 
 To see the current values of configurations and list the current status:
-*	xConfiguration <enter>
-*	xStatus <enter>
+*	`xConfiguration <enter>`
+*	`xStatus <enter>`
 
 ## Further reading
 For general guidelines how to use the xAPI and thorough descriptions of all commands, configurations, and statuses, check out the complete API reference guide (pdf) on cisco.com, and the RoomOS website for developers and integrators (roomos.cisco.com):

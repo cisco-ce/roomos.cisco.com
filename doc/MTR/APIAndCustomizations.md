@@ -3,7 +3,6 @@
 RoomOS is the operating system that powers Cisco collaboration devices, no matter which service the device is registered to. RoomOS offers a powerful public API that lets you create integrations and customizations, and tweak and tune a device's setup and behavior. This API is often referred to as the _xAPI_.
 
 ---
-
 The list of supported APIs on MTR registered devices is a work in progress. This means that the list of commands that are available now are likely to change in the upcoming releases. Therefore, we recommend you to NOT create integrations based on the currently available set of APIs.
 
 ---

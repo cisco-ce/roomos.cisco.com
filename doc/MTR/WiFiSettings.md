@@ -1,3 +1,5 @@
+# Wi-Fi Settings
+
 ## Use Wi-Fi 
 
 You can choose to use either a wired or a Wi-Fi connection. 

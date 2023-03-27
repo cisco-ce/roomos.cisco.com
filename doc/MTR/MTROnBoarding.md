@@ -11,7 +11,8 @@ NOTE: Do not select **Start**. If you do, use the back button to get back to the
 4. Configure the device’s time zone and tap **Continue**.  
 
 5.  Choose Microsoft Teams Rooms as the platform by tapping the **Register** button under it.  
-N0TE: When a device onboards to MTR, the setting menu is locked by default.   
+
+NOTE: When a device onboards to MTR, the setting menu is locked by default.   
 
 6. If your device will not be registered to Control Hub, tap **Skip**. We recommend registration to Control Hub which enables advanced software management, diagnostics, and analytics capabilities. If you are using Control Hub, enter the device activation code created from Control Hub and tap **Continue**.
 

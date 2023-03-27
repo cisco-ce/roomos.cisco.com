@@ -4,7 +4,6 @@ RoomOS is the operating system that powers Cisco collaboration devices, no matte
 
 ---
 **The list of supported APIs on MTR registered devices is a work in progress. This means that the list of commands that are available now are likely to change in the upcoming releases. Therefore, we recommend you to NOT create integrations based on the currently available set of APIs.**
-
 ---
 
 ## Requirements
@@ -20,18 +19,14 @@ Regardless of which method you choose, you must sign in. Also, the structure of 
 ## Available commands, configurations, and statuses
 The xAPI consists of four, hierarchically organized command groups. In each group the set of available commands depends on the device type, registration, and software version.
 
-* Commands (xCommand): Actions such as dialing a number or muting a microphone.
-* Configurations (xConfiguration): Permanent device settings like the name of the device or the default volume.
-* Status (xStatus): Read-only state values of the device, for example the current volume or whether the device is in a call.
-* Events (xEvent): Unlike statuses, events usually occur at specific points in time, such as a notification that a meeting is about to start or that a user tapped a button.
+* **Commands (xCommand):** Actions such as dialing a number or muting a microphone.
+* **Configurations (xConfiguration):** Permanent device settings like the name of the device or the default volume.
+* **Status (xStatus):** Read-only state values of the device, for example the current volume or whether the device is in a call.
+* **Events (xEvent):** Unlike statuses, events usually occur at specific points in time, such as a notification that a meeting is about to start or that a user tapped a button.
 
-You can run the following commands (terminal mode) to show the complete list of configurations and commands, including their parameters and valuespaces:
-* `xConfiguration ?? <enter>` 
-* `xCommand ?? <enter>`
+You can run the following commands (terminal mode) to show the complete list of configurations and commands, including their parameters and valuespaces: `xConfiguration ?? <enter>` and * `xCommand ?? <enter>`.
 
-Run the following commands if you want to see the current status and current configuration values:
-*	`xStatus <enter>`
-*	`xConfiguration <enter>`
+Run the following commands if you want to see the current status and current configuration values: `xStatus <enter>` and `xConfiguration <enter>`.
 
 ## Further reading
 For general guidelines how to use the xAPI and thorough descriptions of all commands, configurations, and statuses, check out the complete API reference guide (pdf) on cisco.com, and the RoomOS website for developers and integrators (roomos.cisco.com):

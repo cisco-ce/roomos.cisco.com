@@ -7,7 +7,7 @@ RoomOS is the operating system that powers Cisco collaboration devices, no matte
 
 ---
 
-## Requirements
+## Requirements and limitations
 * To be able to sign in and program with the xAPI, the device must be registered to both MTR and Webex (dual registration). If the device is registered only to MTR, xAPI access is blocked.
 
 ## Connecting to the API

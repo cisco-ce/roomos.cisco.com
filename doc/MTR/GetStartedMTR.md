@@ -41,7 +41,7 @@ To open the **Settings** menu, tap the **More** button on the home screen. Tap *
 
 <img src="/doc/images/MTR/Settings2.png" style="width: 500px" />
 
-*NOTE:* before you open the **Settings** menu, there are options available to **Report an issue**, view information **About** the device, or check on **Device health**.
+*NOTE:* before you open the **Settings** menu, there are options available to **Report an issue** or view information **About** the device.
 
 <img src="/doc/images/MTR/Settings3.png" style="width: 500px" />
 

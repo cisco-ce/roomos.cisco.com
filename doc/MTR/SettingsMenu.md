@@ -16,7 +16,7 @@ When you change the language settings, the soft keyboard on your device reflects
 
 The devices support the following languages: English (US), English (UK), French (France), French (Canada), German, Spanish (Spain), Spanish (Latin America), Catalan, Arabic, Czech, Danish, Finnish, Hebrew, Hungarian, Italian, Japanese, Korean, Dutch, Norwegian, Polish, Portuguese (Portugal), Portuguese (Brazil), Russian, Swedish, Turkish, Chinese (Simplified), Chinese (Traditional). 
 
-**Network connection**: tap Network connection to check the Wi-fi or Ethernet connection and network status. You can also access Advanced network settings to set up a proxy, change IP settings, and domain name. 
+**Network connection**: tap Network connection to check the Wi-Fi or Ethernet connection and network status. You can also access Advanced network settings to set up a proxy, change IP settings, and domain name. 
 
 **Time Zone**: Tap Time zone to change the Time Zone on your device. 
 

@@ -4,7 +4,7 @@ Tap **More** on the home screen and select **Settings**. Choose **Device setting
 
 **Accessibility**: Tap Accessibility to change the text size on your device, enable color correction, and high contrast. To change the text size, tap text size and choose between Small, Normal, Large, and Extra Large. To enable high contrast, just toggle High contrast on. Thirdly, you can tap on color correction and toggling it on or off. When enabled, you can choose between Protanopia (red-green), Deuteranopia (green -red), Tritanopia (blue-yellow), and Greyscale. 
 
-**Bluetooth**: Tap Bluetooth to enable or disable Bluetooth. 
+**Bluetooth**&reg;: Tap Bluetooth to enable or disable Bluetooth. 
 
 **Connections**: Select Connections to check the Inputs and Outputs connected to your device.  
 

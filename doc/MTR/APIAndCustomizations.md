@@ -11,7 +11,7 @@ RoomOS is the operating system that powers Cisco collaboration devices, no matte
 * To be able to sign in and program with the xAPI, a Cisco device with Microsoft Teams Rooms must also be registered to Control Hub).
 
 ## Connecting to the API
-There are several ways to access the xAPI: SSH, HTTP/HTTPS, web sockets, serial connection, and using the cloud xAPI.
+There are several ways to access the xAPI: SSH, HTTP/HTTPS, web sockets, serial connection, and using the [cloud xAPI](https://developer.webex.com/docs/api/guides/device-developers-guide#xapi).
 
 Regardless of which method you choose, you must sign in. Also, the structure of the API is the same. Choose the connection method that suits your application best.
 
@@ -35,6 +35,8 @@ For general guidelines how to use the xAPI and thorough descriptions of all comm
 * [Interactive API reference (html)](https://roomos.cisco.com/xapi)
 * [Short introduction to the xAPI](https://roomos.cisco.com/doc/TechDocs/xAPI)
 
-Other information:
-* [Information about how to use the cloud API](https://developer.webex.com/docs/api/guides/device-developers-guide)
+Other information about RoomOS and the cloud API:
 * [Introduction to RoomOS](https://roomos.cisco.com/doc/TechDocs/Introduction)
+* [Information about how to use the cloud API](https://developer.webex.com/docs/api/guides/device-developers-guide)
+* [The Cloud API reference guide](https://developer.webex.com/docs/api/v1/xapi)
+

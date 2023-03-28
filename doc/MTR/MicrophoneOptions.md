@@ -33,6 +33,6 @@ When Music mode isn’t in use, the device filters out additional noises and red
 2.	To use music mode, open the control panel by swiping right on the home screen and tap **Microphone**.
 3.	Select **Music mode** from the menu. 
 
-<img src="/doc/images/MTR/music_mode.jpg" style="width: 200px"/>
+<img src="/doc/images/MTR/music_mode.jpg" style="width: 300px"/>
 
 4.	To turn off Music mode, select **Neutral** from the same menu. 

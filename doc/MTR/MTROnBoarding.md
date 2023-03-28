@@ -18,7 +18,7 @@
 
 <img src="/doc/images/MTR/Onboarding4.png" style="width: 600px" />
 
-5.  Choose Microsoft Teams Rooms as the platform by tapping the **Register** button under it.  
+5.  Choose Microsoft Teams Rooms as the platform by tapping the **Select** button under it.  
 
 <img src="/doc/images/MTR/Onboarding5.png" style="width: 600px" />
 

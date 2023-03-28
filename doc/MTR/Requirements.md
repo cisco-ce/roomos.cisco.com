@@ -15,7 +15,12 @@ Supported devices:
 You can manage your devices in the Teams Admin Center (TAC). Before you start onboarding devices, deploy TAC to suit your needs. After you’ve onboarded your devices, you can use TAC for device management and monitoring.
 
 Read more about Teams Admin Center: https://learn.microsoft.com/microsoftteams/devices/device-management
+
 For general Teams Rooms Deployment see: https://learn.microsoft.com/microsoftteams/rooms/rooms-deploy
+
+With Microsoft Teams Rooms Pro license, also the Pro Managment service is available.
+
+Read more about Teams Rooms Pro Management: https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-pro-management
 
 ## Microsoft licenses 
 

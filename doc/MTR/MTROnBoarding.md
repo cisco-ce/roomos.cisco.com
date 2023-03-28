@@ -4,7 +4,7 @@
 
 <img src="/doc/images/MTR/Onboarding1.png" style="width: 600px" />
 
-NOTE: Do not select **Start**. If you do, use the back button to get back to the Welcome screen. 
+**NOTE:** Do not select **Start**. If you do, use the back button to get back to the Welcome screen. 
 
 2. Select the **Language** for the device and tap the **Start** button.
 
@@ -52,4 +52,6 @@ NOTE: When a device onboards to MTR, the setting menu is locked by default. �
 
 <img src="/doc/images/MTR/Onboarding12.png" style="width: 600px" />
 
-Tap **More** to access the settings menu. From the settings menu, you can change the accessibility, or the network settings like setting up a proxy. In the device settings, you can also access the Teams settings protected by the admin password. You can swipe right to access device settings like the camera view, background, microphone, brightness, or camera mode.  
+Tap **More** to access the settings menu. From the [settings menu](https://roomos.cisco.com/doc/MTR/SettingsMenu), you can change the accessibility, or the network settings. In the device settings, you can also access the Teams Rooms settings protected by the admin password. 
+
+You can swipe right to access device settings like the [camera options](https://roomos.cisco.com/doc/MTR/CameraOptions), [microphone options](https://roomos.cisco.com/doc/MTR/MicrophoneOptions), and screen brightness.  

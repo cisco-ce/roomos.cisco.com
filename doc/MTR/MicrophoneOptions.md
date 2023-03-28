@@ -1,6 +1,6 @@
-# Microphone Options
+# Microphone options
 
-## Test your Microphone
+## Test your microphone
 
 Test your microphone directly on your device to check if it is working and properly configured. 
 Test your microphone before starting a meeting to check if further configurations are needed, like noise removal or voice optimization. You have the option to record yourself and play the recording or enable continuous testing. 
@@ -12,7 +12,7 @@ Test your microphone before starting a meeting to check if further configuration
     b)	Choose **Repeat** and select **Start**. The microphone signal will continuously be played back with a 3 second delay.
 
 
-## Noise Removal and Optimize for my Voice
+## Noise removal and optimize for my voice
 
 You can use noise removal to filter out distracting noises from your environment in a call. Noise removal is especially useful in a shared spaces or a home office. 
 You can choose between different microphone options depending on the environment for your call or meeting. You can also remove background noise during your active call or meeting. 
@@ -23,7 +23,7 @@ You can choose between different microphone options depending on the environment
 2.	Tap **Microphone** and then select the option you want to use: **Noise removal** or **Optimize for my voice**.
 3.	Tap **Neutral** to turn noise removal off.
 
-## Music Mode
+## Music mode
 
 Using Music mode allows the dynamic range of music go through in a call. This creates a better experience in settings where it’s important to hear the nuances in music. 
 Music mode is useful for remote music lessons, testing musical instruments, and other situations where it’s important to hear the full range of music. The device still uses its echo cancellation and environmental background noise reduction capabilities to avoid the need for external equipment, without detracting from the performance. 

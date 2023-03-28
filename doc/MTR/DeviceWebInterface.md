@@ -11,11 +11,11 @@ A Cisco collaboration device comes with a local web interface, which is an admin
 ## How to find the device's IP address
 If you have a new device, or a device that has been factory reset, you can find the IP address in the upper left corner of the Welcome screen.   
 
-If your device is not yet onboarded to Microsoft Teams Rooms (MTR):
+If your device is not yet onboarded to Microsoft Teams Rooms:
 1. Swipe from the right or tap the controls icon in the upper, right corner to open the control panel. Then tap _Device settings_.   
 2. Tap _About this room device_ to find the IP address.
 
-If your device is onboarded to MTR:
+If your device is onboarded to Microsoft Teams Rooms:
 1. Tap _More_ on the device's home screen.
 2. Tap _Settings_, followed by _Device settings_.
 3. Tap _About this room device_ to find the IP address.
@@ -25,14 +25,14 @@ If your device is onboarded to MTR:
 1. Open a web browser and enter the device's IP address in the address bar.  
 We recommend that you use the latest release of one of the major web browsers (Internet Explorer is not supported). 
 2. Enter username and passphrase for the device and click _Sign In_.  
-The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to MTR. Leave the _Passphrase_ field blank if a passphrase is not set yet.
+The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to Microsoft Teams Rooms. Leave the _Passphrase_ field blank if a passphrase is not set yet.
 
 ## How the device web interface is organized
 
 You can select pages or topics from the menu at the left side. There is a search field in the top bar to help you find the page you are searching for.
 
 Which pages are present depends on:
-* Device type and service registration (MTR, Webex)
+* Device type and service registration.
 * Connected peripherals and setup.
 * Roles and access rights of the user that is signed in.
 

@@ -8,7 +8,7 @@ RoomOS is the operating system that powers Cisco collaboration devices, no matte
 ---
 
 ## Requirements and limitations
-* To be able to sign in and program with the xAPI, a Cisco device with Microsoft Teams Rooms must also be registered to Control Hub).
+* To be able to sign in and program with the xAPI, a Cisco device with Microsoft Teams Rooms must also be registered to Control Hub.
 
 ## Connecting to the API
 There are several ways to access the xAPI: SSH, HTTP/HTTPS, web sockets, serial connection, and using the [cloud xAPI](https://developer.webex.com/docs/api/guides/device-developers-guide#xapi).

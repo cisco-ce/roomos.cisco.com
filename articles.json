@@ -172,39 +172,63 @@
   ],
   "MTR": [
     {
-      "id": "Sample",
-      "title": "Sample",
-      "description": "Sample doc",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
       "id": "Intro",
-      "title": "MTR Introduction",
-      "description": "",
+      "title": "Introduction",
+      "description": "Cisco devices with Microsoft Teams Rooms",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
       "id": "Requirements",
-      "title": "MTR Requirements",
-      "description": "What's needed from a licensing point of view.",
+      "title": "Requirements",
+      "description": "Preparing to onboard Cisco devices to Microsoft Teams Rooms, including licencing and software requirements.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "MTROnBoarding",
+      "title": "Onboarding",
+      "description": "Onboarding Cisco devices to Microsoft Teams Rooms",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "GetStartedMTR",
+      "title": "Getting started on a Cisco device with Microsoft Teams Rooms",
+      "description": "Introducing the main menu, control panel, settings menu, features, and functionality.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "CameraOptions",
+      "title": "Camera options",
+      "description": "How to select camera mode and access self-view.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
       "id": "MicrophoneOptions",
-      "title": "Microphone Options",
-      "description": "Details about noise removal and music mode.",
+      "title": "Microphone options",
+      "description": "Test your microphone, use noise removal options, and activate music mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
-      "id": "VirtualBackgrounds",
-      "title": "Virtual Backgrounds",
-      "description": "How to hide your real background and set a virtual one instead.",
+      "id": "SettingsMenu",
+      "title": "Settings menu",
+      "description": "Device settings that are available from the UI.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
       "id": "DeviceWebInterface",
       "title": "The device web interface",
-      "description": "How to configure your MTR device from a local web interface on the Cisco device.",
+      "description": "How to configure a Cisco device from it's local web interface.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "WiFiSettings",
+      "title": "Wi-Fi settings",
+      "description": "Wi-Fi setup and best practices.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "APIAndCustomizations",
+      "title": "Using the device API",
+      "description": "How to use the Cisco device's xAPI.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
   ],

@@ -1,6 +1,6 @@
-# Camera Options
+# Camera options
 
-## Select a Camera Mode
+## Select a camera Mmode
 
 You can select a camera mode that ensures the best view for your meeting and device. The camera can switch from one speaker to the next, automatically adjust so that you are always centered, group participants together, or you can choose to adjust it manually. 
 
@@ -28,7 +28,7 @@ Depending on the device you're using, there are a few different modes to choose 
 Note: You can also access and adjust the camera controls in or out of call by tapping the camera button on your self-view.
 
 
-## Access and Adjust Self-view 
+## Access and adjust Self-view 
 
 Your self-view shows what others see from your device in a call. You can use it to confirm that they see what you want them to see.  
 You may want to have your self-view activated during the meeting to ensure that you remain seen on the screen. 

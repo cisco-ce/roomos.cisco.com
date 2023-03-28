@@ -1,4 +1,4 @@
-# Getting started with MTR
+# Getting started on a Cisco device with Microsoft Teams Rooms
 ## The home screen
 The home screen is the starting point from where you'll access all the features and functionality your device has to offer. Tap the device's screen to wake it up and see the home screen. Your device's name is in the upper left corner, along with the time. On the side you'll see a panel with your upcoming meetings, if any are scheduled.
 

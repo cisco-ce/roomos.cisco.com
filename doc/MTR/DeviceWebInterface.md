@@ -12,20 +12,20 @@ A Cisco collaboration device comes with a local web interface, which is an admin
 If you have a new device, or a device that has been factory reset, you can find the IP address in the upper left corner of the Welcome screen.   
 
 If your device is not yet onboarded to Microsoft Teams Rooms:
-1. Swipe from the right or tap the controls icon in the upper, right corner to open the control panel. Then tap _Device settings_.   
-2. Tap _About this room device_ to find the IP address.
+1. Swipe from the right or tap the controls icon in the upper, right corner to open the control panel. Then tap **Device settings**.   
+2. Tap **About this room device** to find the IP address.
 
 If your device is onboarded to Microsoft Teams Rooms:
-1. Tap _More_ on the device's home screen.
-2. Tap _Settings_, followed by _Device settings_.
-3. Tap _About this room device_ to find the IP address.
+1. Tap **More** on the device's home screen.
+2. Tap **Settings**, followed by **Device settings**.
+3. Tap **About this room device** to find the IP address.
 
 ## Sign in and open the device web interface
 
 1. Open a web browser and enter the device's IP address in the address bar.  
 We recommend that you use the latest release of one of the major web browsers (Internet Explorer is not supported). 
-2. Enter username and passphrase for the device and click _Sign In_.  
-The device is delivered with a default user named admin. A passphrase is assigned when onboarding the device to Microsoft Teams Rooms. Leave the _Passphrase_ field blank if a passphrase is not set yet.
+2. Enter username and passphrase for the device and click **Sign In**.  
+The device is delivered with a default user named _admin_. A passphrase is assigned when onboarding the device to Microsoft Teams Rooms. Leave the _Passphrase_ field blank if a passphrase is not set yet.
 
 ## How the device web interface is organized
 
@@ -74,24 +74,24 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 You must sign in to the device with a local user to access the device web or command line interfaces. You can assign different roles to users, to determine what they should have access to.
 
 Create a new user account:
-1. Select _Users_ in the device web interface main menu.
-2. Click _Create User_ (at the top of the page).
+1. Select **Users** in the device web interface main menu.
+2. Click **Create User** (at the top of the page).
 3. Fill in the form with _Username_, _New passphrase_, and _Confirm passphrase_ input fields, and check the appropriate _Roles_ check boxes.  
-If you assign the **Admin** role to a user, enter your own passphrase in the _Your passphrase_ input field for verification.
-4. Set the Status to **Active** to activate the user.
-5. Click _Create User_.  
+If you assign the _Admin_ role to a user, enter your own passphrase in the _Your passphrase_ input field for verification.
+4. Set the Status to _Active_ to activate the user.
+5. Click **Create User**.  
 Use the _Back_ button to leave without making any changes.
 
 Change or delete a user account:
-1. Select _Users_ in the device web interface main menu.
+1. Select **Users** in the device web interface main menu.
 2. Click the appropriate user in the list.
 3. Make the changes in the form that opens.
-4. Click _Save User_, _Set New Passphrase_, or _Delete User_ as appropriate.  
-If you make changes to a user that holds the Admin role, you must always enter your own passphrase in the _Your passphrase_ input field for verification.
+4. Click **Save User**, **Set New Passphrase**, or **Delete User** as appropriate.  
+If you make changes to a user that holds the _Admin_ role, you must always enter your own passphrase in the _Your passphrase_ input field for verification.
 
 Change your own passphrase:
 1. Click the user symbol in the top bar to open a menu.
-2. Click _Change Passphrase_.
+2. Click **Change Passphrase**.
 3. Enter new and current passphrases in the appropriate input fields, then click _Set New Passphrase_.
 
 ### User roles
@@ -112,14 +112,14 @@ A new password rule will not apply to existing passwords but will take effect on
 In cases where you need to diagnose problems on the device you can create a remote support user. The remote support user is granted read access to the device and has access to a limited set of commands that can aid troubleshooting.
 
 You will need assistance from Cisco Technical Assistance Center (TAC) to acquire the password for the remote support user.
-1. Select _Users_ in the device web interface main menu and look for the _Remote Support_ card.
-2. Click _Create User_ in the _Remote Support_ card.
+1. Select **Users** in the device web interface main menu and look for the _Remote Support_ card.
+2. Click **Create User** in the _Remote Support_ card.
 3. Open a case with the Cisco Technical Assistance Center.
 4. Copy the text in the _Token_ field and send it to the Cisco Technical Assistance Center.
 5. The Cisco Technical Assistance Center will generate a password. The remote support user is valid for fifteen days, or until it is deleted.
 
 ## Configurations and statuses
-You can change the device settings (configurations) and inspect the detailed status information for the device from the device web interface. Click _Settings_ and select the _Configurations_ or _Statuses_ tab.
+You can change the device settings (configurations) and inspect the detailed status information for the device from the device web interface. Click **Settings** and select the _Configurations_ or _Statuses_ tab.
 
 For descriptions of the different statuses, settings, and valuespaces, see the _Further reading_ section.
 
@@ -134,7 +134,7 @@ Select a settings category: The device settings are grouped in categories. When 
 
 Check the valuespace for a setting: A settings's valuespace is specified either by text following the input field (D) or in a drop-down list that opens when you click the arrow (E).
 
-Change a value: Choose the preferred value from the drop-down list or enter new text in the input field. Then click _Save_ for the change to take effect. Use the _Revert_ buttons if you don't want to make any changes. Categories with unsaved changes are marked with an edit symbol.
+Change a value: Choose the preferred value from the drop-down list or enter new text in the input field. Then click **Save** for the change to take effect. Use the **Revert** buttons if you don't want to make any changes. Categories with unsaved changes are marked with an edit symbol.
 
 ### Statuses
 <img src= "/doc/images/MTR/WebUIStatusesOverview.png">

@@ -191,8 +191,8 @@
     },
     {
       "id": "GetStartedMTR",
-      "title": "Getting started on a Cisco device with Microsoft Teams Rooms",
-      "description": "Introducing the main menu, control panel, settings menu, features, and functionality.",
+      "title": "Getting started",
+      "description": "Introducing the main menu, control panel, settings menu, features, and functionality on Cisco devices with Microsoft Teams Rooms.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {

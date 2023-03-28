@@ -5,6 +5,11 @@
     "link": "/doc/Welcome/Welcome"
   },
   {
+    "id": "WhatsNew",
+    "name": "What's New?",
+    "link": "/doc/WhatsNew"
+  },
+  {
     "id": "UseCases",
     "name": "Use Cases",
     "link": "/doc/UseCases"
@@ -15,9 +20,9 @@
     "link": "/doc/TechDocs"
   },
   {
-    "id": "WhatsNew",
-    "name": "What's New?",
-    "link": "/doc/WhatsNew"
+    "id": "MTR",
+    "name": "Microsoft Teams Rooms",
+    "link": "/doc/MTR"
   },
   {
     "id": "UsefulLinks",

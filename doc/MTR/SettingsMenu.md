@@ -1,4 +1,4 @@
-# Settings Menu
+# Settings menu
 
 Tap **More** on the home screen and select **Settings**. Choose **Device settings**. Once in the settings menu, you can open the device settings where you can change the accessibility, the network settings, the issues and diagnostics, Bluetooth, the language, and time zone. In the device settings, you can also access the Teams access settings protected by the admin password. 
 
@@ -20,7 +20,7 @@ The devices support the following languages: English (US), English (UK), French 
 
 **Time Zone**: Tap Time zone to change the Time Zone on your device. 
 
-## Teams Admin Settings
+## Teams admin settings
 
 Tap **Teams admin settings** to access the calling, general, and meetings menu. 
 

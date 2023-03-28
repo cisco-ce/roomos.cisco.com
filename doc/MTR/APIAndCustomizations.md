@@ -38,5 +38,5 @@ For general guidelines how to use the xAPI and thorough descriptions of all comm
 Other information about RoomOS and the cloud API:
 * [Introduction to RoomOS](https://roomos.cisco.com/doc/TechDocs/Introduction)
 * [Information about how to use the cloud API](https://developer.webex.com/docs/api/guides/device-developers-guide)
-* [The Cloud API reference guide](https://developer.webex.com/docs/api/v1/xapi)
+* [The cloud API reference guide](https://developer.webex.com/docs/api/v1/xapi)
 

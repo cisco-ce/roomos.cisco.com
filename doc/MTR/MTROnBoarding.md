@@ -1,5 +1,7 @@
 # Onboarding
 
+**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device.
+
 1. Select **Try the new onboarding** on the Welcome screen.  
 
 <img src="/doc/images/MTR/Onboarding1.png" style="width: 600px" />

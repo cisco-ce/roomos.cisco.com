@@ -18,7 +18,7 @@ Read more about Teams Admin Center: https://learn.microsoft.com/microsoftteams/d
 
 For general Teams Rooms Deployment see: https://learn.microsoft.com/microsoftteams/rooms/rooms-deploy
 
-With Microsoft Teams Rooms Pro license, also the Pro Managment service is available.
+With Microsoft Teams Rooms Pro license, also the Pro Management service is available.
 
 Read more about Teams Rooms Pro Management: https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-pro-management
 

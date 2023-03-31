@@ -8,3 +8,4 @@ If you didn't register your Cisco devices with Microsoft Teams Rooms to Control 
 
 **Example for option 2 using curl:**  
 `curl -u username:password https://ip-address/api/webex/register --data '{"activationCode": "activationcode", "registrationType": "Personalization", "securityAction": "Harden"}'` 
+, where _username:password_ is the username and password of the admin user, _ip-address_ is the IP address of the device, and _activationcode_ is the activation code created on Control Hub.

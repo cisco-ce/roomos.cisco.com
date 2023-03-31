@@ -149,6 +149,19 @@ Go to the device web interface _Home_ page to find the device's software version
 
 The device log files are useful when diagnosing issues. You can download all current and historical logs from the device web interface _Issues and Diagnostics_ page.
 
+## Registering devices to Control Hub after the initial setup
+
+If you didn't register your Cisco device with Microsoft Teams Rooms to Control Hub during the initial setup, you can do it later. 
+
+1. Create an activation code on Control Hub.
+2. Go to the device web interface _Home_ page and find the _Register Device_ card.
+3. Click **Register to Webex** and follow the instructions.
+
+If you rather want to programmatically register a device to Control Hub, you can directly call the device's API over HTTP POST. This simplifies bulk provisioning. The command has the same parameters as `xCommand Webex Registration Start`, find documentation [here](https://roomos.cisco.com/xapi/Command.Webex.Registration.Start/).  
+
+**Example using curl:**  
+`curl -u username:password https://ip-address/api/webex/register --data '{"activationCode": "activationcode", "registrationType": "Personalization", "securityAction": "Harden"}'` 
+
 ## Further reading
 Find more information about the device web interface in the [Administrator guide (pdf)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-maintenance-guides-list.html). The Administration guide primarily addresses capabilities and configurations for devices registered to a Cisco on-premises service (CUCM, VCS), but many capabilities and configurations also apply to devices that are registered to MTR or Webex cloud services.
 

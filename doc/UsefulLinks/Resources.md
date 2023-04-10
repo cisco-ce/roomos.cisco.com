@@ -77,7 +77,7 @@
     <tr>
       <td>
         <a href="https://momentum.design/" target="_blank">Momentum design</a>
-      <td>Cisco / Webex design guideslines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
+      <td>Cisco / Webex design guidelines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
       <td><img class="logo" src="https://momentum.design/apple-touch-icon-57x57.png" /></td>
       </td>
     </tr>

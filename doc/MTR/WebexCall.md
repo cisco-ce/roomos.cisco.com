@@ -22,9 +22,9 @@ The call controls shown below are available during the meeting.
 
 ### Audio and video features 
 
-- Camera options
+- [Camera options](https://github.com/cisco-ce/roomos.cisco.com/blob/master/doc/MTR/CameraOptions)
 - Presenter Track
-- Microphone options
+- [Microphone options](https://github.com/cisco-ce/roomos.cisco.com/blob/master/doc/MTR/MicrophoneOptions)
 - Layouts and People focus 
 - Webex translation and closed captioning 
 
@@ -33,6 +33,8 @@ The call controls shown below are available during the meeting.
 - Sharing using an HDMI
 - Sharing using an USB-C 
 - Sharing using Miracast 
+
+For more information on sharing, read the **Content sharing** section [here](https://github.com/cisco-ce/roomos.cisco.com/blob/master/doc/MTR/GetStartedMTR).
 
 ## Limitations
 

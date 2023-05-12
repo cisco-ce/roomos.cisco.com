@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.02 - March 2023
+D15504.03 - May 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.02 - March 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>3</td> 
+		<td>May 12th 2023</td> 
+		<td>
+			<a href='#announcement-1-2023' title='Jump to section'>EOS announcement for RoomOS 10</a>
+		</td>
 	</tr>
 	<tr>
 		<td>2</td> 
@@ -89,6 +96,16 @@ RoomOS 11 can be downloaded [here](https://software.cisco.com/download/home/2836
 Please read this before upgrading to RoomOS 11
 
 NOTE: We have previously announced that SNMP would be removed from RoomOS 11. RoomOS 11 will continue to support basic SNMPv2 and SNMPv3. 
+
+<a name='announcement-1-2023'></a>
+
+**RoomOS 10 will soon be deprecated and EOS**<br>
+The next on-premises software release for RoomOS 11 targeted end of June 2023 will make RoomOS 10 obsolete and end of support. Cisco supports and releases new software versions for two minor software releases per product. Since all products that have support for RoomOS 10 also have support for RoomOS 11, the RoomOS 10 software line will go end of support quicker than for example CE9 that several legacy products still depends on. 
+
+RoomOS 10 will not be removed from cisco.com right away, but will likely happen during the last quarter of 2023. Please prepare your devices and environment for upgrade to RoomOS 11 in order to stay on supported software.  
+
+**Provisioning Mode "VCS" will soon be obsolete**<br>
+The setting "xConfiguration Provisioning Mode: VCS" will be deprecated in the next RoomOS 11 minor release. This provisioning mode has been used for TMS Provisioning Extension (TMSPE) and is no longer supported from the upcoming RoomOS 11 minor release with target by end of June 2023. 
 
 **Facility service is deprecated**<br>
 Facility Service  is deprecated from RoomOS 11 software because quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel). 
@@ -536,7 +553,7 @@ For RoomOS versions that have been provided by the Webex cloud, "Y" will always 
 
 If for example, RoomOS 11.1.2.x and RoomOS 11.3.2.x is released and RoomOS 11.6.2.x becomes available. RoomOS 11.1.2.x may be removed as part of the deferral policy for end of support. A minor software version is typically supported for two release cycles (6-9 months).
 
-Cisco supports the latest minor release (i.e. RoomOS 11.3.1.x) and the previous minor release (i.e. RoomOS 11.1.2.x) as a general rule. 
+Cisco supports the latest minor release (i.e. RoomOS 11.3.1.x) and the previous minor release (i.e. RoomOS 11.1.2.x) per product as a general rule. 
 
 Exceptions are made if supported hardware or particular feature deployments are depending on a major release. Deferral of older maintenance releases still applies. 
 

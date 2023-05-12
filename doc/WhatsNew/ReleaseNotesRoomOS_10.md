@@ -2,7 +2,7 @@
 # Cisco RoomOS 10 
 # Release notes
 ---
-D15463.19 - March 2023
+D15463.20 - May 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.19 - March 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>20</td> 
+		<td>May 12th 2023</td> 
+		<td>
+			<a href='#announcement-1-2023' title='Jump to section'>EOS announcement for RoomOS 10</a>
+		</td>
 	</tr>
 	<tr>
 		<td>19</td> 
@@ -182,6 +189,13 @@ Cisco RoomOS 10 can be downloaded [here](https://software.cisco.com/download/hom
 
 ## Notes and warnings for the next major release RoomOS 11
 These notes are to prepare you for the upcoming changes in RoomOS 11.
+
+<a name='announcement-1-2023'></a>
+
+**RoomOS 10 will soon be deprecated and EOS**<br>
+The next on-premises software release for RoomOS 11 targeted end of June 2023 will make RoomOS 10 obsolete and end of support. Cisco supports and releases new software versions for two minor software releases per product. Since all products that have support for RoomOS 10 also have support for RoomOS 11, the RoomOS 10 software line will go end of support quicker than for example CE9 that several supported legacy products still depends on. 
+
+RoomOS 10 will not be removed from cisco.com right away, but will likely happen during last 2023. Please prepare your devices and environment for upgrade to RoomOS 11 in order to stay on supported software.  
 
 **RoomOS 11 will have a new UI** <br>
 In RoomOS 11 we are introducing a new graphical user interface that changes the current user interaction flow. The UI will become available in cloud a couple of months before released for on-premises. 
@@ -1465,7 +1479,7 @@ For RoomOS versions that has been provided by the Webex cloud, "Y" will always b
 
 If for example, RoomOS 10.3.2.x and RoomOS 10.6.2.x is released and RoomOS 10.9.2.x becomes available. RoomOS 10.3.2.x may be removed as part of the deferral policy for end of support. A minor software version is typically supported for two release cycles (6-9 months).
 
-Cisco supports the latest minor release and the previous minor release (i.e. RoomOS 10.3.2.x) and the newest (i.e. RoomOS 10.6.2.x) as a general rule. 
+Cisco supports the latest minor release and the previous minor release (i.e. RoomOS 10.3.2.x) and the newest (i.e. RoomOS 10.6.2.x) per product as a general rule. 
 
 Exceptions are made if supported hardware or particular feature deployments are depending on a major release. Deferral of older maintenance releases still applies. 
 

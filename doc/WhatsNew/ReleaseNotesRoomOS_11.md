@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.03 - May 2023
+D15504.04 - May 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.03 - May 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>4</td> 
+		<td>May 19th 2023</td> 
+		<td>
+			Release of <a href='#11.1' title='Jump to section'>RoomOS 11.1.4.1</a> 76178a670c8, Patch
+		</td>
 	</tr>
 	<tr>
 		<td>3</td> 
@@ -23,7 +30,7 @@ D15504.03 - May 2023
 		<td>2</td> 
 		<td>March 23rd 2023</td> 
 		<td>
-			Release of <a href='#11.1' title='Jump to section'>RoomOS 11.1.3.1</a> 4ddb830dec5 , Patch
+			Release of <a href='#11.1' title='Jump to section'>RoomOS 11.1.3.1</a> 4ddb830dec5, Patch
 		</td>
 	</tr>
 	<tr>
@@ -188,6 +195,15 @@ For a list of current limitations in RoomOS 11 compared to RoomOS 10, please see
 		</td> 
 	</tr>
 </table>
+
+## RoomOS 11.1.4.1
+
+RoomOS 11.1.4.1 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.1.4.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.1.4.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 11.1.3.1
 
@@ -424,13 +440,13 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_1_3_100000000.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_1_4_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_1_3_1.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_1_4_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_1_3_1.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_1_4_1.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>

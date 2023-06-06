@@ -1,6 +1,6 @@
 # Onboarding
 
-**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device.
+**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a Room Bar, you need to register both the Room Bar and the Room Navigator.
 
 1. Select **Try the new onboarding** on the Welcome screen.  
 

@@ -1,6 +1,6 @@
 # Onboarding
 
-**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a Room Bar, you need to register both the Room Bar and the Room Navigator. If you are prevented from signing in on your Room Navigator, check your Device settings in InTune, before signing in again. Read [this article](https://roomos.cisco.com/doc/MTR/Requirements#microsoft-authentication-and-intune) for more information on Microsoft authentication and Intune.
+**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a Room Bar, you need to register both the Room Bar and the Room Navigator. If you are prevented from signing in on your Room Navigator, check your Device settings in Intune, before signing in again. Read [this article](https://roomos.cisco.com/doc/MTR/Requirements#microsoft-authentication-and-intune) for more information on Microsoft authentication and Intune.
 
 1. Select **Try the new onboarding** on the Welcome screen.  
 

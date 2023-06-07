@@ -1,6 +1,6 @@
 # Onboarding
 
-**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a Room Bar, you need to register both the Room Bar and the Room Navigator.
+**NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a Room Bar, you need to register both the Room Bar and the Room Navigator. If you are prevented from signing in on your Room Navigator, check your Device settings in InTune, before signing in again. Read [this article](https://roomos.cisco.com/doc/MTR/Requirements#microsoft-authentication-and-intune) for more information on Microsoft authentication and Intune.
 
 1. Select **Try the new onboarding** on the Welcome screen.  
 
@@ -26,7 +26,7 @@
 
 NOTE: When a device onboards to MTR, the setting menu is locked by default.   
 
-6. If your device will not be registered to Control Hub, tap **Skip**. We recommend registration to Control Hub which enables advanced software management, diagnostics, and analytics capabilities. If you are using Control Hub, enter the device activation code created from Control Hub and tap **Continue**.
+6. If you are not registering to Control Hub, tap **Skip**. We recommend registration to Control Hub, which enables advanced software management, diagnostics, and analytics capabilities. When you are using Control Hub, enter the device activation code created from Control Hub and tap **Continue**.
 
 <img src="/doc/images/MTR/Onboarding6.png" style="width: 600px" />
 

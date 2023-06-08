@@ -40,7 +40,7 @@ NOTE: When a device onboards to MTR, the setting menu is locked by default.â€¯â€
 
 <img src="/doc/images/MTR/Onboarding10.png" style="width: 600px" />
 
-10. After the installation is complete, follow the on-screen instructions and access the provided URL on your laptop. Use your Microsoft account to sign in.
+10. After the installation is complete, follow the on-screen instructions and access the provided URL on your laptop. Use your Microsoft account to sign in. Note that if you have a Room Bar, you need to register both the Room Bar and the Room Navigator.
 
 <img src="/doc/images/MTR/Onboarding11.png" style="width: 600px" />
 

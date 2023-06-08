@@ -15,7 +15,7 @@ Depending on the device you're using, there are a few different modes to choose 
 
 1.	Swipe from the right on the home screen. Tap **Camera**. 
 2.	If the camera modes are not visible, Tap **Camera mode** and then **Auto**. 
-3.	Choose a mode. On Board Pro, you can choose between Group, Frames, or Speaker.
+3.	Choose a mode. You can choose between Group, Frames, or Speaker.
 
 <img src="/doc/images/MTR/CameraModeAuto.png" style="width: 200px" />
 

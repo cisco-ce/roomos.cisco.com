@@ -33,7 +33,7 @@ The web engine is based on Chromium / Qt WebEngine with V8 JavaScript. The Chrom
 
 You can inspect the version at any time by looking at the user agent, eg by visiting http://whatsmyuseragent.org/ on your device.
 
-As of May 2022, the Chromium version is 87.
+As of April 2023, the Chromium version is 102.
 
 ## Which Cisco devices are web compatible?
 
@@ -100,7 +100,7 @@ This is a shared feature with the Webex client. A web view can be loaded in a si
 
 The Chromium web engine supports web RTC. If a webRTC page is loaded as a normal web view / web app, the user will be requested to give access to camera and microphone, similar to how it works on a laptop.
 
-In addition, RoomOS supports specific implementations with native behavior for vendors such such as Google, Microsoft and Zoom. In this case the user does not to give permission each time, and the video device will provide the RoomOS calling interface instead of the vendor's UI. For more information, see [help.webex.com](https://help.webex.com)
+In addition, RoomOS supports specific implementations with native behavior for vendors such such as Google and Microsoft. In this case the user does not to give permission each time, and the video device will provide the RoomOS calling interface instead of the vendor's UI. For more information, see [help.webex.com](https://help.webex.com)
 
 ## Developer console
 

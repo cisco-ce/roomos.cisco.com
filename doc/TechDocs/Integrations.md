@@ -20,7 +20,7 @@ A short summary of the integration types are:
 
 * **HTTP API**: Similar to the JSXAPI integration, but uses standard HTTP requests and a web hook like mechanism for feedback.
 
-* **RS232 / Serial**: Cable-based connection (serial cable or USB), typically for legacy room controllers such as Crestron and Extron, often placed in the same room as the collab device.
+* **RS232 / SSH**: Cable-based connection (serial cable or USB), typically for legacy room controllers such as Crestron and Extron, often placed in the same room as the collab device.
 
 
 All the solutions presented here support [UI extensions](/doc/TechDocs/UiExtensions).
@@ -34,7 +34,7 @@ All the solutions presented here support [UI extensions](/doc/TechDocs/UiExtensi
     <th>Cloud xAPI</th>
     <th>JSXAPI</th>
     <th>HTTP</th>
-    <th>RS-232</th>
+    <th>RS-232/SSH</th>
   </tr>
   <tr>
     <td>⚙️ Programming language / SDK</td>
@@ -228,9 +228,11 @@ It's recommended to use this approach in the same situations as the JSXAPI situa
 
 See the [Postman collection](/doc/UsefulLinks/Resources) at DevNET for many good examples.
 
-## RS232 / Serial connection
+## RS-232 / SSH connection
 
-RS-232 / serial connection allows you to plug a cable directly into the Cisco devices that support these inputs. These kind of iintegrations are usually set up for external room controllers such as Crestron and Extron located in the same room as the Cisco device, with USB or serial cables.
+RS-232 or SSH connections are command-line based integrations. This also allows you to plug a cable directly into the Cisco devices that support these inputs. These kind of integrations are usually set up for external room controllers such as Crestron and Extron located in the same room as the Cisco device, with USB or serial cables.
+
+This integration form supports various formats, such as command line, XML or JSON.
 
 <img src="/doc/images/integrations/rs232.png" />
 

@@ -23,9 +23,12 @@ The call controls shown below are available during the meeting.
 ### Audio and video features 
 
 - [Camera options](https://roomos.cisco.com/doc/MTR/CameraOptions)
-- Presenter Track
+- [Presenter Track](https://help.webex.com/en-us/article/9ur0g6/Set-up-PresenterTrack-for-Board-and-Room-Series) for Room Kit Pro and Room Kit EQ
+The PresenterTrack feature enables the camera to follow a presenter that is moving about on stage. The tracking stops when the presenter leaves the stage. You can set up the feature from the local device web interface or from Control Hub. 
 - [Microphone options](https://roomos.cisco.com/doc/MTR/MicrophoneOptions)
-- Layouts and People focus 
+- Layouts and People focus
+There are several screen layout options available when you're in a meeting. Different layouts are available when content is being shared. You can change your layout by selecting another one from the Layouts menu. To change your current layout during a call, tap your device or touch controller screen and tap the Layout button. Choose the layout you want to use: grid, stack, prominent, and focus.
+
 - Webex translation and closed captioning 
 
 ### Sharing

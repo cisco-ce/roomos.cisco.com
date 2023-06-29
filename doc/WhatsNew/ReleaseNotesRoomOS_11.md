@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.04 - May 2023
+D15504.05 - June 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.04 - May 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>5</td> 
+		<td>June 29th 2023</td> 
+		<td>
+			Release of <a href='#11.5' title='Jump to section'>RoomOS 11.5.2.4</a> eea5e67094e, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>4</td> 
@@ -54,10 +61,10 @@ This release note describes new software features and capabilities included in R
 	</tr>
 	<tr>
 		<td>
-			<font color='red'><b>Cisco Room USB**</font>, Room Kit Mini, Room Kit, Room Kit EQ, Room Bar, Room 55<br> 
+			Cisco Room USB**, Room Kit Mini, Room Kit, Room Kit EQ, Room Bar, Room Bar Pro, Room 55<br> 
 			Cisco Codec Plus, Codec Pro<br>
 			Cisco Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
-			<font color='red'><b>Cisco Room Panorama**, Room 70 Panorama**</b></font>
+			Cisco Room Panorama**, Room 70 Panorama**
 		</td>
 	</tr>
 	<tr>
@@ -83,8 +90,8 @@ This release note describes new software features and capabilities included in R
 	</tr>
 </table>
 
-<font color='red'><b>** These devices are NOT supported with RoomOS 11.1.2.x.</b></font> <br>
-Note: If you have upgraded an unsupported device to RoomOS 11.1.2.x it will not damage the device but it will not work as expected. If you end up in a situation where you have upgraded an unsupported device, it is possible to downgrade normally using the web interface or other methods. Support for the devices in question will be added in a future release. 
+<b>** These devices are NOT supported with RoomOS 11.1.2.x. Support was added in RoomOS 11.5.2.4 </b> <br>
+Note: If you have upgraded an unsupported device to RoomOS 11.1.2.x it will not damage the device but it will not work as expected. If you end up in a situation where you have upgraded an unsupported device, it is possible to downgrade normally using the web interface or other methods. Support for these devices was introduced in RoomOS 11.5.2.4.
 
 The software described in this document is released to [https://www.cisco.com](https://software.cisco.com/download/home/283611944?catid=280789323) for on-premises deployment. If you register a Room Device to Webex you will be upgraded to the latest RoomOS cloud version available. RoomOS cloud software is not supported for on-premises deployment unless you are linked to **Webex Edge for Devices with Cloud Software Management enabled**. 
 
@@ -112,7 +119,7 @@ The next on-premises software release for RoomOS 11 targeted end of June 2023 wi
 RoomOS 10 will not be removed from cisco.com right away, but will likely happen during the last quarter of 2023. Please prepare your devices and environment for upgrade to RoomOS 11 in order to stay on supported software.  
 
 **Provisioning Mode "VCS" will soon be obsolete**<br>
-The setting "xConfiguration Provisioning Mode: VCS" will be deprecated in the next RoomOS 11 minor release. This provisioning mode has been used for TMS Provisioning Extension (TMSPE) and is no longer supported from the upcoming RoomOS 11 minor release with target by end of June 2023. 
+The setting "xConfiguration Provisioning Mode: VCS" will be deprecated in one of the next RoomOS 11 minor releases. This provisioning mode has been used for TMS Provisioning Extension (TMSPE) and is no longer supported. 
 
 **Facility service is deprecated**<br>
 Facility Service  is deprecated from RoomOS 11 software because quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel). 
@@ -125,6 +132,154 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 <br><br>
 
+# Release summary for RoomOS 11.5 <a name='11.5'></a>
+
+## Notes and warnings for this software release
+
+RoomOS 11.5 enables support for Cisco Room Panorama, Room 70 Panorama and Room USB. RoomOS 11.1 did not have support for these devices. The list of limitations in the RoomOS 11.1 section has been resolved in this release. 
+
+### Default configuration changes
+
+[xConfiguration SIP ListenPort](https://roomos.cisco.com/xapi/Configuration.SIP.ListenPort/) now has "Off" as its default value. 
+This may impact your setup if you are not registered to any service and are using the device for direct calling and have not explicitly set the configuration to "On". The solution is to turn it to "On" again after you have upgraded the device. 
+
+Note: Configurations only follow the default value if the current configuration is default and not explicitly set to a value. For example, if the default value is "On" and you configure the configuration to "On" you have explicitly set the configuration to "On" and this particular configuration will no longer follow default value changes on upgrade. 
+
+### Changes to how Proxy Auto-Configuration (PAC) works
+
+We have made som changes to how PAC matching works for pacmanager in RoomOS software. We are changing the shExpMatch function to use a matching similar to what browsers use. This means that RoomOS will work with the same PAC file matches as other web clients in the network. 
+
+<font color='red'><b>PAC files specifically written for RoomOS may need to be updated to keep working as intended!</b></font>
+
+[Please follow this link for more information and details](https://help.webex.com/en-us/article/oej2aq/Changes-to-Proxy-Auto-Configuration-(PAC))
+
+## RoomOS 11.5.2.4
+
+* [Support for Cisco Room Bar Pro](#11524-1)
+* [Re-styled First Time Wizard](#11524-2)
+* [Office hours for Cisco Room Navigator (Scheduler and PWA mode)](#11524-4)
+* [Added support for Cisco Panorama, Room 70 Panorama and Room USB](#11524-5)
+* [Hide information about recent meetings on a device](#11524-6)
+* [Zoom call controls for Board and Desk](#11524-7)
+* [Updated popup UX for sharing content with Cable](#11524-8)
+* <b>Other</b>
+	* [Re-styled UI elements (UI Extensions)](#ui-restyling)
+	* [Samsung Flip and Room Kit Mini](#samsung-flip)
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.5.2.4](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.5.2.4&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.5.2.4 feature descriptions 
+
+<a name='11524-1'></a>
+
+## Support for Cisco Room Bar Pro
+
+Cisco Room Bar Pro is an integrated, AI-enhanced video bar solution featuring intelligent dual cameras, a three-channel loudspeaker system, built-in microphone array, a powerful computing engine and rich connectivity options, combined with an intuitive touch controller and smart room accessories to provide intelligent, inclusive video collaboration for medium-sized meeting spaces.
+
+Supported with RoomOS 11.5.2.4 and above. 
+
+Note that this device requires a new device package for UCM that is scheduled for release in July 2023 for UCM12.5 and UCM14. 
+
+Device packages can be downloaded from [here](https://software.cisco.com/download/home/268439621). Select the UCM software from the list, then click "Device Packages" when you are prompted to select a software type. 
+
+For more information about this product, please follow [this link](https://www.webex.com/devices/cisco-room-bar-pro.html) 
+
+<a name='11524-2'></a>
+
+## Re-styled First Time Wizard
+
+The First Time Wizard is an interactive setup wizard that helps the user get through the deployment process of a device, whether it is supposed to be registered on Webex, UCM or VCS. 
+
+In RoomOS 11.5.2.4, we have updated the First Time Wizard to match the RoomOS 11 look and feel while keeping the functionality of the old wizard. This change applies to all products. 
+
+In this release we have left the option to switch back to the old wizard from the UI. 
+
+**Supported products**<br>
+All products 
+
+
+<a name='11524-3'></a>
+
+## Office hours for Cisco Room Navigator (Scheduler and PWA mode)
+
+Office hours configured on the codec will now be followed by the paired Cisco Room Navigators. 
+
+**Supported products**<br>
+All products 
+
+<a name='11524-4'></a>
+
+## Added support for Cisco Panorama, Room 70 Panorama and Room USB
+
+These devices are supported with RoomOS 11.5.2.4 and above. The previous RoomOS 11.1 did not have support for these devices. 
+
+<a name='11524-5'></a>
+
+## Hide information about recent meetings on a device
+
+Ability to hide meeting names and other display names in the recent calls list. 
+
+[xConfiguration CallHistory Recents DisplayName](https://roomos.cisco.com/xapi/Configuration.CallHistory.Recents.DisplayName/) 
+
+When setting the configuration to "Hidden" it will hide the meeting names and replace it with something non-descriptive, i.e. "Meeting". 
+
+**Supported products**<br>
+All products 
+
+<a name='11524-6'></a>
+
+## Zoom call controls for Board and Desk
+
+This feature provides the call controls in Zoom meetings for Board and Desk devices when using the Zoom integration. This fixes the limitation of 11.1.2 where Board and Desk devices was not yet supported for Zoom call controls. 
+
+**Supported products**<br>
+All products
+
+<a name='11524-7'></a>
+
+## Updated popup UX for sharing content with Cable
+
+The cable share UX flows has been updated. Using the [xConfiguration Video Input Connector[X] PresentationSelection](https://roomos.cisco.com/xapi/Configuration.Video.Input.Connector[1].PresentationSelection/) the device will have different sharing flows. 
+
+This feature introduces a sharing popup when content is connected and depending on what you have configured the behavior will differ. 
+
+**AutoShare**
+The popup will be displayed and a 5 second countdown is started. If the countdown reaches 0 the input source will automatically be shared into the call and the popup will disappear. While the popup is displayed you can either dismiss it (stop it from automatically sharing into the call) or press "share" to bypass the countdown. By tapping outside of the popup the share is also cancelled while counting down. 
+
+**Desktop**	
+The popup will stay on screen until dismissed by pressing share, view, dismiss or tapping outside the popup
+
+**Manual**
+Nothing will be displayed, the source needs to be selected manually from the share tray.
+
+**OnConnect** 
+The popup will stay on screen until dismissed by pressing share, dismiss or tapping outside the popup
+
+**Supported products**<br>
+All products
+
+## Other 
+
+Other minor changes to note.
+
+<a name='ui-restyling'></a>
+
+## Re-styled UI elements (UI Extensions)
+
+We are working on re-styling the rest of the UI extensions and other UI elements. In this version we have re-styled most of the UI Extension elements to align with the RoomOS 11 styling. This is a visual update. 
+
+<a name='samsung-flip'></a>
+
+## Samsung Flip and Room Kit Mini
+
+Cisco Room Kit Mini with Samsung Flip has not been supported with the first releases of RoomOS 11. In RoomOS 11.5.2 we have re-introduced support for Room Kit Mini and Samsung Flip with the requirement of a macro to switch between modes. 
+
+[Please follow this link to download the macro](https://roomos.cisco.com/macros/Samsung%20Flip)
+
+Note: We only have support for Room Kit Mini together with Samsung Flip (WM55R and WM65R), any other combination is considered unsupported.  
+
 # Release summary for RoomOS 11.1 <a name='11.1'></a>
 
 ## Notes and warnings for this software release
@@ -135,11 +290,11 @@ RoomOS 11 has a new app based UI that is designed for multitasking and modern na
 
 Features that have already been announced and requires the RoomOS 11 UI is now unlocked by default on RoomOS 11. Some of these features have already been announced in the [RoomOS 10 Release notes](https://roomos.cisco.com/print/WhatsNew/ReleaseNotesRoomOS_10) and are considered released like for example AirPlay, Miracast® and more. You can find information about these features in the [RoomOS 10 release notes](https://roomos.cisco.com/print/WhatsNew/ReleaseNotesRoomOS_10). 
 
-For a list of current limitations in RoomOS 11 compared to RoomOS 10, please see the list below. 
+For a list of current limitations in RoomOS 11.1.2 compared to RoomOS 10, please see the list below. 
 
 <a name="limitations-roomos11"></a>
 
-**RoomOS 11 - Current known limitations compared to RoomOS 10**
+**RoomOS 11.1 - Current known limitations compared to RoomOS 10**
 
 <table width="100%" >
 	<tr>
@@ -152,16 +307,16 @@ For a list of current limitations in RoomOS 11 compared to RoomOS 10, please see
 	</tr>
 	<tr>
 		<td style="border-bottom: 1px solid black;">
-			Current limitations with RoomOS 11 
+			Current limitations with RoomOS 11.1.2
 		</td>
 		<td colspan="2" style="border-bottom: 1px solid black;">
-			<li>Room Panorama, Room USB, and Samsung Flip not supported yet</li>
-			<li>PIP's including selfview will only be visible on the first monitor</li>
+			<li>Room Panorama, Room USB, and Samsung Flip not supported yet (Resolved in 11.5.2)</li>
+			<li>PIP's including selfview will only be visible on the first monitor (Resolved in 11.5.2)</li>
 		</td>		
 	</tr>
 	<tr>
 		<td rowspan="9" style="border-bottom: 1px solid black;">
-			xAPI
+			xAPI (All resolved in 11.5.2)
 		</td>
 		<td>
 			xCommand Video Matrix Swap
@@ -222,6 +377,7 @@ RoomOS 11.1.3.1 is a patch release and contains only bugfixes<br>
 * [Native Zoom button and in-call controls](#11124-4)
 * [New whiteboard version with improved usability](#11124-5)
 * [Persistent camera and microphone access for Webview and WebRTC meetings](#11124-6)
+* [Support for Cisco Table Microphone Pro for Cisco Codec Pro, Codec EQ and Room 70 G2](#11124-7)
 * <b>Other</b>
 	* [Support for a new AV Integrator option key](#av-integrator-key)
 	* [Default passphrase policy updated](#default-passphrase)
@@ -299,7 +455,7 @@ To change the default Zoom domain you can use the following configuration:
 
 **Supported products**<br>
 All products<br>
-Note: Board and Desk UI do not have support for the Zoom in-call controls yet
+Note: Board and Desk UI do not have support for the Zoom in-call controls yet (Resolved in 11.5.2)
 
 <a name='11124-5'></a>
 
@@ -361,6 +517,15 @@ xCommand WebEngine MediaAccess List
 *r MediaAccessListResult Host 1 Hostname: videoservice.domain.com"
 ** end
 ```
+
+**Supported products**<br>
+All products
+
+<a name='11124-7'></a>
+
+## Support for Cisco Table Microphone Pro for Cisco Codec Pro, Codec EQ and Room 70 G2
+
+Cisco Table Microphone Pro is a multi-directional digital Ethernet microphone (audio over IP). In previous releases, this microphone was only supported by Cisco Room Panorama and Room 70 Panorama. We have now added support for Cisco Codec EQ, Codec Pro and Room 70 G2 from RoomOS 11.1.2.4
 
 **Supported products**<br>
 All products
@@ -440,13 +605,13 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_1_4_1.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_5_2_4.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_1_4_1.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_5_2_4.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_1_4_1.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_5_2_4.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -629,6 +794,11 @@ There is currently no diagnostic message for expired certificates
 CA certificates must be uploaded per endpoint, it is possible to use the xAPI to perform manual or automated mass-distribution of certificates to devices. Please also note that the endpoint must be connected to a wired or WPA2-PSK wireless network in order to upload a certificate before attempting to connect to a WPA-EAP enabled network that requires a CA certificate. 
 
 Devices flagged with "NR" (No Radio) do not have Wi-Fi capability. 
+
+**Web Engine**<br>
+
+We only support resolutions of 1080p and above. Web engine is not capable of rendering web views in full screen when using 720p resolutions. 
+720p resolution is not supported with our devices, please use 1080p minimum. 
 
 **Network paired Cisco Touch 10 / Navigator not supported when the video system is connected through Wi-Fi**<br>
 Even though this connectivity works, you may end up in cumbersome scenarios if the Wi-Fi connectivity is lost for any reason, for example when the Wi-Fi password is changed. In order to reconfigure the Wi-Fi connection, you need to setup a direct pairing between the video system and the Touch 10 / Navigator before reconnecting the Cisco Touch 10 / Navigator. When the video system is using Wi-Fi connectivity Cisco recommends that you have the Touch 10 directly paired with the video system.  
@@ -968,7 +1138,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	</tr>
 	<tr>
 		<td>Cisco Desk</td> 
-		<td>0-1</td> <td>All</td>
+		<td>0-2</td> <td>All</td>
 	</tr>
 	<tr>
 		<td>Cisco Desk Mini</td>
@@ -1031,6 +1201,8 @@ xStatus: Peripherals ConnectedDevice XXXX HardwareInfo: "73-100746-1".
 **Notes for Cisco TelePresence Precision 60**
 
 Systems that support Cisco TelePresence Precision 60 with RoomOS 10 is Cisco Codec Pro, Codec Plus, Room 70 and Room 70 G2 (single / dual).
+
+Note: Room 70 Panorama do NOT support the Precision 60 camera
 
 New hardware revisions of the Cisco TelePresence Precision 60 camera are identified by production date printed on a sticker underneath the base. If there no sticker is present and you still see an error message on screen about the camera not being compatible with the current software version, please upgrade the room device to the latest software. 
 

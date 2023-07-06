@@ -31,7 +31,7 @@ Depending on the process for acquiring Microsoft licenses in your organization, 
  
 Cisco collaboration devices with Microsoft Teams Rooms implemented in a shared space need a Microsoft Teams Room license.
 
-•	Microsoft Teams Room Pro: provides a full rich conferencing experience including intelligent audio and video, dual screen support, advanced device management, Intune licensing, phone system licensing, and more. For the best conferencing experience, Microsoft Teams Rooms Pro licenses are recommended to use with Cisco collaboration devices. 
+* Microsoft Teams Room Pro: provides a full rich conferencing experience including intelligent audio and video, dual screen support, advanced device management, Intune licensing, phone system licensing, and more. For the best conferencing experience, Microsoft Teams Rooms Pro licenses are recommended to use with Cisco collaboration devices. 
  
 For additional information on Microsoft Teams Licenses, visit: 
 https://learn.microsoft.com/microsoftteams/rooms/rooms-licensing 

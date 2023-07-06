@@ -1,13 +1,13 @@
 # Getting started on a Cisco device with Microsoft Teams Rooms
 ## The home screen
-The home screen is the starting point from where you'll access all the features and functionality your device has to offer. Tap the device's screen to wake it up and see the home screen. Your device's name is in the upper left corner, along with the time. On the side you'll see a panel with your upcoming meetings, if any are scheduled.
+The home screen is the starting point from where you'll access all the features and functionality your device has to offer. Tap the device's screen to wake it up and see the home screen, or tap the connected Room Navigator. Your device's name is in the upper left corner, along with the time. On the side you'll see a panel with your upcoming meetings, if any are scheduled.
 
 <img src="/doc/images/MTR/HomeScreen.png" style="width: 500px" />
 
 There are four buttons on the home screen. Tap them to:
 
 * **Meet now**. Find a contact in your directory and start a call.
-* **Whiteboard**. Open the Microsoft whiteboard and get creative.
+* **Whiteboard**. Open the Microsoft whiteboard and get creative. (Board Pro and Desk Pro)
 * **Share**. Start sharing content.
 * **More**. Access the volume controls and device **Settings** menu.
 
@@ -21,7 +21,7 @@ In the control panel you can access and adjust settings that you use on a regula
 
 * **Camera**. Choose a camera mode, including the option to manually adjust the camera to suit your meeting.
 * **Selfview**. As long as your camera is open/on, you'll see your selfview at the top of the control panel. Here you'll find the options to show or hide the selfview in and out of calls. 
-* **Background**. Select a virtual background to show behind you during calls. 
+* **Background**. Select a virtual background to show behind you during calls. (Desk Pro)
 * **Fullscreen**. Tap to show your selfview in full screen. To close it swipe right and tap the **Fullscreen** button again. While you're in full screen mode you get a **Camera** button and a **Background** button on the edge of the screen and can adjust your outgoing view with those. 
 * **Select share source**. Choose a sharing source when you've got more than one connected, and start sharing content, in or out of a call.
 * **Microphone**. Choose noise removal or optimize the microphone for your voice.

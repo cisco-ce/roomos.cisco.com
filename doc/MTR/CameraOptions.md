@@ -13,7 +13,7 @@ Depending on the device you're using, there are a few different modes to choose 
 * Frames: The camera will zoom and show people individually or in smaller groups. 
 *	Speaker: The camera will follow the person speaking. The maximum distance for speaker tracking to work is 7.5 meters. 
 
-1.	Swipe from the right on the home screen. Tap **Camera**. 
+1.	Swipe from the right on the home screen or on the Room Navigator. Tap **Camera**. 
 2.	If the camera modes are not visible, Tap **Camera mode** and then **Auto**. 
 3.	Choose a mode. You can choose between Group, Frames, or Speaker.
 
@@ -41,7 +41,7 @@ Tap **Selfview** in the control panel to set the self-view visibility to **Hide*
 
 To open and change the location of your self-view on the screen during a call:  
 
-1. If it's not already visible, tap the screen to open the self-view up on top of the call.   
+1. If it's not already visible, tap the screen or the Room Navigator to open the self-view up on top of the call.   
 
 2. Tap the button on the self-view’s right corner to change the visibility to **Hide**, **Show in call**, or **Always show**. Even when you select to hide it in a call, your self-view will still appear to you in the control panel.  
 

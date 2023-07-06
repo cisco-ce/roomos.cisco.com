@@ -11,7 +11,9 @@ Supported devices:
 *	Cisco Room Bar
 *	Cisco Room Kit Pro
 
- Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
+Room Navigator with Board Pro is currently not supported. 
+
+Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
  
  ## Microsoft Teams Rooms management in Teams Admin Center
  

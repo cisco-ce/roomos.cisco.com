@@ -6,7 +6,10 @@
 
 Supported devices: 
 *	Cisco Board Pro 55 
-*	Cisco Board Pro 75 
+*	Cisco Board Pro 75
+*	Cisco Desk Pro
+*	Cisco Room Bar
+*	Cisco Room Kit Pro
 
  Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
  
@@ -54,14 +57,15 @@ To initially onboard your devices to MTR, your device needs to be on the correct
 
 To learn more about device management in Teams Admin Center, visit: https://learn.microsoft.com/microsoftteams/devices/device-management 
  
-Software versions for onboarding: 
-*	New devices or devices registered to other calling platforms: Minimum software version RoomOS 11.3.1.16
+Software versions for onboarding new devices or devices registered to other calling platforms: 
+*	Board Pro: Minimum software version RoomOS 11.3.1.16
+*	Desk Pro, Room Bar, Room Kit Pro: Minimum software version RoomOS 11.6.1.5
 
 To get the correct software version, you need to do a software upgrade from the device’s setup wizard. 
 
 ### Software upgrade from setup wizard
 
-After the Board Pro starts up, go through the setup wizard up to **Choose configuration**. You don’t need to change any of the settings, just select **Next** on each step. 
+After the device starts up, go through the setup wizard up to **Choose configuration**. You don’t need to change any of the settings, just select **Next** on each step. 
 
 On the Choose configuration page, select **Cisco Webex**. Wait for a few seconds and agree to the software upgrade. The device receives the latest software version and it’s installed on the device. 
 
@@ -72,7 +76,8 @@ After the software installation is finished, the setup wizard starts up again fr
 Before you onboard a Webex registered device to MTR, you need to make sure the device is running the latest Stable release. You can see the software channel on the device page in Control Hub.  
 
 Software versions for onboarding: 
-*	Webex registered devices: Stable channel, minimum RoomOS March 2023 
+*	Webex registered Board Pro: Stable channel, minimum RoomOS March 2023
+*	Webex registered Desk Pro, Room Bar, Room Kit Pro: Stable channel, minimum RoomOS July 2023
  
 If you need to change the software channel, sign in to [admin.webex.com](https://admin.webex.com). Go to **Workspaces** and select the Workspace with the device you want to onboard from the list. Under **Devices**, click the cogwheel icon. In the **Software upgrade channel** drop-down menu, select **Stable** and click **Done**. 
  

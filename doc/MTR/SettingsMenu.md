@@ -1,6 +1,6 @@
 # Settings menu
 
-Tap **More** on the home screen and select **Settings**. Choose **Device settings**. Once in the settings menu, you can open the device settings where you can change the accessibility, the network settings, the issues and diagnostics, Bluetooth, the language, and time zone. In the device settings, you can also access the Teams access settings protected by the admin password. 
+Tap **More** on the home screen or Room Navigator and select **Settings**. Choose **Device settings**. Once in the settings menu, you can open the device settings where you can change the accessibility, the network settings, the issues and diagnostics, Bluetooth, the language, and time zone. In the device settings, you can also access the Teams access settings protected by the admin password. 
 
 **Accessibility**: Tap Accessibility to change the text size on your device, enable color correction, and high contrast. To change the text size, tap text size and choose between Small, Normal, Large, and Extra Large. To enable high contrast, just toggle High contrast on. Thirdly, you can tap on color correction and toggling it on or off. When enabled, you can choose between Protanopia (red-green), Deuteranopia (green -red), Tritanopia (blue-yellow), and Greyscale. 
 

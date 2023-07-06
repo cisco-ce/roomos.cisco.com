@@ -23,7 +23,7 @@ The call controls shown below are available during the meeting. When you're a ho
 ### Audio and video features 
 
 - [Camera options](https://roomos.cisco.com/doc/MTR/CameraOptions)
-- [Presenter Track](https://help.webex.com/en-us/article/9ur0g6/Set-up-PresenterTrack-for-Board-and-Room-Series) for Room Kit Pro and Room Kit EQ
+- [Presenter Track](https://help.webex.com/en-us/article/9ur0g6/Set-up-PresenterTrack-for-Board-and-Room-Series) for Room Kit Pro 
 
 The PresenterTrack feature enables the camera to follow a presenter that is moving about on stage. The tracking stops when the presenter leaves the stage. You can set up the feature from the local device web interface or from Control Hub. 
 

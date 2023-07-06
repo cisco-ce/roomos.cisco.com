@@ -56,7 +56,7 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 
 <img src= "/doc/images/MTR/WebUIMainMenu.png" style="width: 200px">
 
-**Home**: Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, MTR and registration status, utilization and environment data, and more.
+**Home**: Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, Microsoft Teams Rooms and registration status, utilization and environment data, and more.
 
 **Settings**: Opens a page that give you access to the device settings (configurations) and statuses.
 
@@ -164,6 +164,6 @@ If you rather want to programmatically register your device to Control Hub, you 
 , where _username:password_ is the username and password of the admin user, _ip-address_ is the IP address of the device, and _activationcode_ is the activation code created on Control Hub.
 
 ## Further reading
-Find more information about the device web interface in the [Administrator guide (pdf)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-maintenance-guides-list.html). The Administration guide primarily addresses capabilities and configurations for devices registered to a Cisco on-premises service (CUCM, VCS), but many capabilities and configurations also apply to devices that are registered to MTR or Webex cloud services.
+Find more information about the device web interface in the [Administrator guide (pdf)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-maintenance-guides-list.html). The Administration guide primarily addresses capabilities and configurations for devices registered to a Cisco on-premises service (CUCM, VCS), but many capabilities and configurations also apply to devices that are registered to Microsoft Teams Rooms or Webex cloud services.
 
 Public configurations and statuses are also described in the [API reference guide (pdf)](https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html) and in the [xAPI part of the RoomOS website for developers and integrators](https://roomos.cisco.com/xapi).

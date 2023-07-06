@@ -4,7 +4,7 @@ The home screen is the starting point from where you'll access all the features 
 
 <img src="/doc/images/MTR/HomeScreen.png" style="width: 500px" />
 
-There are four buttons on the home screen. Tap them to:
+There are three or four buttons on the home screen, depending on the device. Tap them to:
 
 * **Meet now**. Find a contact in your directory and start a call.
 * **Whiteboard**. Open the Microsoft whiteboard and get creative. (Board Pro and Desk Pro)
@@ -13,7 +13,7 @@ There are four buttons on the home screen. Tap them to:
 
 ## The control panel
 
-Swipe from the right side of your screen to open the control panel. You can access the control panel whether you're in a call or not. If you're in a call, the panel opens on top of the call and you can check or change settings without interrupting anything.
+Swipe from the right side of your screen or on the Room Navigator to open the control panel. You can access the control panel whether you're in a call or not. If you're in a call, the panel opens on top of the call and you can check or change settings without interrupting anything.
 
 <img src="/doc/images/MTR/ControlPanel.png" style="width: 300px" />
 

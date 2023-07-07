@@ -2,7 +2,7 @@
 # Cisco RoomOS 10 
 # Release notes
 ---
-D15463.20 - May 2023
+D15463.21 - July 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.20 - May 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>21</td> 
+		<td>July 7th 2023</td> 
+		<td>
+			<a href='#software-deferral' title='Jump to section'>Software deferral</a>
+		</td>
 	</tr>
 	<tr>
 		<td>20</td> 
@@ -1483,12 +1490,19 @@ Cisco supports the latest minor release and the previous minor release (i.e. Roo
 
 Exceptions are made if supported hardware or particular feature deployments are depending on a major release. Deferral of older maintenance releases still applies. 
 
+<a name='software-deferral'></a>
+
 ## Deferred software
 <table width="100%">
 	<tr>
 		<th style="background-color: gray;"><b>Deferral date</b></th>
 		<th style="background-color: gray;"><b>Versions</b></th>
 		<th style="background-color: gray;"><b>Note</b></th>
+	</tr>
+	<tr>
+		<td>July 7th 2023</td>
+		<td>10.19.3.0<br>10.15.2.2<br>10.15.3.0<br>10.15.4.1<br>10.15.5.3</td>
+		<td>Deferred according to policy (end of support for RoomOS 10.15)</td>
 	</tr>
 	<tr>
 		<td>October 10th 2022</td>
@@ -1921,6 +1935,9 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	</tr>
 	<tr>
 		<td>1</td> <td>10.8.3.1</td>
+	</tr>
+	<tr>
+		<td>2</td> <td>11.1.2.4</td>
 	</tr>
 	<tr>
 		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Desk Mini</td>

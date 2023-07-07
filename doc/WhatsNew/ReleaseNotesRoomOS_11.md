@@ -800,6 +800,17 @@ Devices flagged with "NR" (No Radio) do not have Wi-Fi capability.
 We only support resolutions of 1080p and above. Web engine is not capable of rendering web views in full screen when using 720p resolutions. 
 720p resolution is not supported with our devices, please use 1080p minimum. 
 
+**Platform sanity issues (MIC certificates)**<br>
+
+Related to bug CSCwf86271. 
+
+Crash reported in logs: 
+platform-sanity: migration-tool.service failed to run, transition needed
+Diagnostics provides this error message: platform-sanity: migration-tool.service failed to run, transition needed
+
+Solution: 
+Downgrade to 10.19 (latest available), which will do this conversion automatically. Then upgrade back up to 11.x.
+
 **Network paired Cisco Touch 10 / Navigator not supported when the video system is connected through Wi-Fi**<br>
 Even though this connectivity works, you may end up in cumbersome scenarios if the Wi-Fi connectivity is lost for any reason, for example when the Wi-Fi password is changed. In order to reconfigure the Wi-Fi connection, you need to setup a direct pairing between the video system and the Touch 10 / Navigator before reconnecting the Cisco Touch 10 / Navigator. When the video system is using Wi-Fi connectivity Cisco recommends that you have the Touch 10 directly paired with the video system.  
 

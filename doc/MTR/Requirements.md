@@ -9,6 +9,7 @@ Supported devices:
 *	Cisco Board Pro 75
 *	Cisco Desk Pro
 *	Cisco Room Bar
+*	Cisco Room Kit EQ
 *	Cisco Room Kit Pro
 
 Room Navigator with Board Pro is currently not supported. 

@@ -60,7 +60,7 @@
     {
       "id": "T3",
       "title": "Fire Alarm Awareness",
-      "description": "Ensure that people with headsets and hairing impaired workers are notified too when the fire alarm goes off.",
+      "description": "Ensure that people with headsets and hearing impaired workers are notified too when the fire alarm goes off.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/firedrill.jpeg"
     },
     {

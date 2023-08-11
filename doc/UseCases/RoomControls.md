@@ -21,4 +21,4 @@ Example of use cases:
 * [HttpClient](xapi/search?search=httpclient) - APIs for calling external web services
 
 
-For more info about UI extensions and macro programming, see [Intro to UI extensions](/docs/UiExtensions) and [Intro to macros](/docs/Macro/Introduction).
+For more info about UI extensions and macro programming, see [Intro to UI extensions](/doc/TechDocs/UiExtensions) and [Intro to macros](/doc/TechDocs/MacroTutorial).

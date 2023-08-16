@@ -38,4 +38,15 @@ To quickly test or demo UI extensions, you can use the [UI Extensions Room Simul
 
 From the Cisco device's point of view, the simulator is no different from a real room integration. The simulator connects and uses exactly the same APIs as a real integration would.
 
+How to use:
+
+* Heac over to cs.co/room-simulator
+* Make sure you accept your Cisco device's certificate first by logging in to the web interface of your device
+* Tap "Connect" in the simulator
+* Enter IP address, username and password
+* When you are connected, tap "Connected" and choose "Install UI Extensions"
+* The UI panels should now appear on your collab device
+* Turn on lights, projectors etc from your device and watch the simulator update
+* You can also turn on lights etc by tapping in the simulator, and notice that the UI extensions are updated accordingly (bi-directional APIs)
+* When you are done, be sure to remove the UI extensions again from the Connect menu
 

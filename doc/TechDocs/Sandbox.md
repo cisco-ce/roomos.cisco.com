@@ -18,7 +18,6 @@ It requires:
 
 Currently, the sandbox has the following limitations:
 
-- You access as an **integrator** user, not **admin**, so there are many settings and operations you cannot do (for example macro scripting).
 - There is no way to physically touch the device or the user interface
 - You can't see a screenshot of the video device
 
@@ -60,7 +59,7 @@ The web portal is a web based admin console where you can see the status of your
 - Locate the IP address for your sandbox, it is visiible on the video device in the Network Topology view on your sandbox grid, typically something similar to *10.10.20.155*.
 - Enter the IP address in your web browser.
 - You should now see a page that warns you about the certificate. Since Webex devices are not permanent web sites, they provide self signed sertificates. Accept the certificate to proceed.
-- Enter username and password as found in the left sidebar on the sandbox page, typically **integrator / integrator**.
+- Enter username and password as found in the left sidebar on the sandbox page, typically **admin / something**.
 
 You are now logged in to the device's web interface. Let's get some action.
 
@@ -97,7 +96,7 @@ TODO A few more things to test
 So you want to feel the matrix? With command line / SSH you can log on to the video device and use the xAPI directly.
 
 - Open your favourite SSH client. Connect to the device with the same IP, username and password as on the web portal, eg like this:
-`ssh integrator@10.10.20.155`
+`ssh admin@10.10.20.155`
 - Enter the password. You now have direct access to the xAPI, the video device's API.
 - View a configuration, eg `xConfiguration Time`.
 - This will list of all the time configs on your device. Notice that your time zones changes from above is there as well.

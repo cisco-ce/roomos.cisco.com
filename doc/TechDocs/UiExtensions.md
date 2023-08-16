@@ -28,3 +28,14 @@ The extensions can be created and added with the UI Extensions editor, but also 
   <img src="/doc/images/ui-extensions-editor.png" />
 </a>
 
+## The UI Extensions simulator
+
+<a href="https://cs.co/room-simulator/" target="_blank">
+  <img src="/doc/images/uiextensions/ui-simulator.png" />
+</a>
+
+To quickly test or demo UI extensions, you can use the [UI Extensions Room Simulator](https://cs.co/room-simulator). This is a web based simulator that you can connect to your video device. You can then install a couple of sample panels, and the simulator will listen to events on your device's UI extensions and turn on lights, move curtains, turn on projectors etc.
+
+From the Cisco device's point of view, the simulator is no different from a real room integration. The simulator connects and uses exactly the same APIs as a real integration would.
+
+

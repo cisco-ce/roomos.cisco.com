@@ -14,6 +14,8 @@ Supported devices:
 
 Room Navigator with Board Pro is currently not supported. 
 
+Cisco Touch 10 is not supported.
+
 Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
  
  ## Microsoft Teams Rooms management in Teams Admin Center

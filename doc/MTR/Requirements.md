@@ -10,7 +10,7 @@ Supported devices:
 *	Cisco Desk Pro
 *	Cisco Room Bar
 *	Cisco Room Kit EQ
-*	Cisco Room Kit Pro
+*	Cisco Room Kit Pro with Room Navigator
 
 Room Navigator with Board Pro is currently not supported. 
 

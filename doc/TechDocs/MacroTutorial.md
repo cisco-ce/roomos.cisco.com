@@ -368,6 +368,20 @@ async function checkFeatures() {
 
 checkFeatures();  
 ```
+If you need more granular details, such as which parameters a command supports, you can look at the result of the `xapi.doc(...)` command:
+
+```js
+const doc = await xapi.doc('');
+console.log(doc);
+// {
+//	"Device": {
+//		"ValueSpace": {
+//			"Value": ["Internal", "HeadsetBluetooth", "HeadsetUSB", "HeadsetAnalog", "HandsetUSB"],
+//		},
+//		"description": "Choose whether to set the volume on the built-in loudspeakers, a Bluetooth headset, an analog headset, a USB headset, or a USB handset.",
+//	}, ...
+// }
+```
 
 ## Promises
 

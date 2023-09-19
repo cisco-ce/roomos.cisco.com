@@ -371,7 +371,7 @@ checkFeatures();
 If you need more granular details, such as which parameters a command supports, you can look at the result of the `xapi.doc(...)` command:
 
 ```js
-const doc = await xapi.doc('');
+const doc = await xapi.doc('Command Audio Volume SetToDefault');
 console.log(doc);
 // {
 //	"Device": {

@@ -342,7 +342,7 @@ else {} // other stuff
 This is likely to fail for many reasons: It's hard to cover all Cisco devices, future device names are not known and may break the macro, some devices may suddenly start supporting the feature you need, and the product name may actually change (yes this happens!). For this reason, it's recommended to do feature detection by checking if the API for a feature you need is supported. Example:
 
 ```js
-const xapi = require('xapi');
+import xapi from 'xapi';
 
 // Initially, assume nothing is supported:
 let hasDial = false, hasBluetooth = false, hasVirtualBg = false;

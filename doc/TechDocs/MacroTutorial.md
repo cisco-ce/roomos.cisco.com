@@ -18,7 +18,7 @@ A short recap of the features of the XAPI:
 
 **Event listeners** let you listen to events, status values or configurations. Each time they change, you are notified with the new values.
 
-# Getting started
+## Getting started
 
 Before we start doing XAPI stuff, you should know how to debug. Write the following macro:
 
@@ -331,11 +331,11 @@ There are several things to note here:
 4. A JavaScript array starts with index 0, but the XAPI list starts with 1, so we use the `.id` property of the list (instead of `i`) to get the correct connector.
 
 
-# Promises
+## Promises
 
 Because JavaScript is single-threaded, the `xapi` library makes heavy use of JavaScript [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) for managing asynchronous tasks. Without promises the runtime would block any other computation from running parallel to invoking commands through the `xapi` interface.
 
-## Chaining your promises
+### Chaining your promises
 
 Sometimes you need to do several other things before you decide to do an action, eg check whether you are in a call or there are people in the room (people count) before putting the system to sleep.
 
@@ -419,7 +419,7 @@ async function printVolume() {
 printVolume();
 ```
 
-# Timers
+## Timers
 
 As you can see from the examples, reacting to events and updates is the preferred way to program macros. The alternative is to poll the system regularly, e.g. by asking it every ten seconds whether it is in call or not. This is highly discouraged, as it is less responsive, more resource hungry and generally an error-prone solution.
 
@@ -441,7 +441,7 @@ clearInterval(timerId);
 
 Note again that we don't use parenthesis when referring to the callback `unmute` in `setInterval`.
 
-## Sleep & wait
+### Sleep & wait
 
 Another useful usage of `setTimeout` is to wait, or sleep, for a certain amount of time before continuing. Mapping `setTimeout` to a promise which resolves when the timeout fires can be very useful for this case:
 
@@ -464,7 +464,7 @@ async function main() {
 main();
 ```
 
-## Scheduling
+### Scheduling
 
 There is no standard way in JavaScript, nor in the macro framework, to schedule actions at specific times of day. But you can copy this function into your macro and use it:
 
@@ -500,7 +500,7 @@ schedule(MeetingTime, dialMeeting);
 
 Notice that we schedule tomorrow's meeting when calling in today, and then this repeats.
 
-# Modules
+## Modules
 
 Modern JavaScript allows code to be split into separate files called modules. Modules allow for better reuse of code as a module can be used in multiple places. It also helps a great deal with code maintenance as details can be hidden away in a module. Finally, modules allow distribution of generic code to be imported and used from many places.
 
@@ -554,7 +554,7 @@ Note the missing `{  }` around `dial` in the import statement. Default exports m
 import dial, { someOtherExport } from './lib';
 ```
 
-## Main module
+### Main module
 
 Macros can also serve as modules for other macros. There is a global function `_main_macro_name` which returns the name of the main macro that is executing. This can be used to query whether or not a macro is running as the main module or not:
 
@@ -596,7 +596,7 @@ if (require.main === module) {
 
 This approach is deprecated and `_main_macro_name` approach should be favoured.
 
-# Performance and life cycle
+## Performance and life cycle
 
 The macro system has a built-in safety mechanism to prevent macros from causing performance problems. The macro **runtime** process is regularly measured. If the macros or the system in general is under heavy load, the runtime may be temporarily stopped, allowing the video system to continue to function optimally. Like 3rd party apps on a mobile phone, the OS might choose to stop aggressive or buggy macros without warning. After a short time, the runtime will automatically restart all enabled macros again.
 
@@ -608,11 +608,11 @@ Because of this, we recommend:
 
 - Test the macro on the actual video system that you intend to run them on, and in similar or worse conditions. Test it in multi-site call with presentation etc to verify that everything runs smoothly.
 
-# User interface elements
+## User interface elements
 
 Macros often need user interface elements, either to give users choices, or to give them information. Here are some of the most common components we provide, and examples on how to use them. For complete reference, as always, see the full CE API guides.
 
-## Alert
+### Alert
 
 An alert pops up with chosen text in the middle of both the video screen and the touch screen. The user can close it from the Touch, or it dismisses automatically after a timeout.
 
@@ -624,7 +624,7 @@ xapi.Command.UserInterface.Message.Alert.Display({
 });
 ```
 
-## Notification
+### Notification
 
 Notifications are very similar to alerts but less prominent, they only show on the main window screen, and in the top right corner of the screen.
 
@@ -637,7 +637,7 @@ xapi.Command.UserInterface.Message.TextLine.Display({
 
 Note that if another macro (or the video system) shows an alert or notification later, it will remove yours, so don't rely on it to show text permanently.
 
-## Prompt
+### Prompt
 
 The prompt pops up and lets the user select from a list of pre-defined choices. When the user makes a choice, this generates an event that you can react to. The `FeedbackId` lets you identify which prompt generated the answer (you could have more than one dialog in your macro). `event.OptionId` gives you the actual choice that the user selected.
 
@@ -669,7 +669,7 @@ showSurvey();
 
 Currently, macros cannot store or send this information anywhere, but this may change in later releases.
 
-## Text input
+### Text input
 
 Similar to the prompt, but lets the user type text instead of predefined choices.
 
@@ -727,7 +727,7 @@ Please see more in the macro editor's example section.
 
 For a full reference guide to UI Extensions, visit the UI Extensions editor.
 
-# Tips
+## Tips
 
 - Use events / feedback, not polling, to make your macros react.
 
@@ -739,11 +739,11 @@ For a full reference guide to UI Extensions, visit the UI Extensions editor.
 
 - If your macro gets uncomfortably big or complex, consider making it an external integration instead. The same code can be adjusted to run on a standalone Node server running JavaScript, for example.
 
-# What if I screw up?
+### What if I screw up?
 
 The macro process will stop macros automatically if they run wild. You can then disable the macro while the macro framework is restarting. To completely disable macros, the kill switch is `xConfig Macros Mode: Off`.
 
-# What if I screw up badly?
+### What if I screw up badly?
 
 If you make a macro that causes a boot when it starts up, it's a bit more tricky, since rebooting will cause the same problem as soon as the macro starts again.
 
@@ -758,6 +758,6 @@ done
 
 Now, you can disable your bad macro or fix it, and restart the macro runtime. Remember to set autostart on again when the problem is solved.
 
-# Go on!
+## Go on!
 
 Make your own macros! Have fun! And please feel free to share them with us if you think they can be useful for more people.

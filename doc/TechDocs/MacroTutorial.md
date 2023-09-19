@@ -330,6 +330,44 @@ There are several things to note here:
 3. The special ticks in `` `Connector ${i}` `` above lets us insert variables into the string.
 4. A JavaScript array starts with index 0, but the XAPI list starts with 1, so we use the `.id` property of the list (instead of `i`) to get the correct connector.
 
+## Feature detection
+
+Cisco Devices often support different features, based on their hardware and intentended use case. For example, some devices support virtual backgrounds, whereas others do not. It is a common mistake, and strongly discouraged, to write macro code that tests based on the device type, such as:
+
+```js
+if (productName === 'Cisco Desk Mini') { // virtual bacground stuff }
+else {} // other stuff
+```
+
+This is likely to fail for many reasons: It's hard to cover all Cisco devices, future device names are not known and may break the macro, some devices may suddenly start supporting the feature you need, and the product name may actually change (yes this happens!). For this reason, it's recommended to do feature detection by checking if the API for a feature you need is supported. Example:
+
+```js
+const xapi = require('xapi');
+
+// Initially, assume nothing is supported:
+let hasDial = false, hasBluetooth = false, hasVirtualBg = false;
+
+async function apiExist(path) {
+  try {
+    const res = await xapi.doc(path);
+    // note: Command returns empty array, not error, even if api does not exist:
+    return Array.isArray(res) ? !!res.length : !!res;
+  }
+  catch {
+    return false;
+  }
+}
+
+async function checkFeatures() {
+  hasDial = await apiExist('Command Dial');
+  hasBluetooth = await apiExist('Configuration Bluetooth Allowed');
+  hasVirtualBg = await apiExist('Status Cameras Background Mode');
+
+  console.log({ hasDial, hasBluetooth, hasVirtualBg });
+}
+
+checkFeatures();  
+```
 
 ## Promises
 

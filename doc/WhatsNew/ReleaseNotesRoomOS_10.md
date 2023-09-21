@@ -2,7 +2,7 @@
 # Cisco RoomOS 10 
 # Release notes
 ---
-D15463.21 - July 2023
+D15463.22 - September 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.21 - July 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>22</td> 
+		<td>September 21st 2023</td> 
+		<td>
+			Minor corrections
+		</td>
 	</tr>
 	<tr>
 		<td>21</td> 
@@ -1467,7 +1474,10 @@ Note: If the above methods do not work or the upgrade is failing because the sof
 
 ### Downgrading
 
-Downgrading is performed the same way as described above, using a software version lower than the one you are currently running. 
+Downgrading is performed the same way as described above, using a software version lower than the one you are currently running. Not all products are compatible with all software versions. Please verify the minimum software version in the [compatibility matrix](#cisco-room-series-software-compatibility-matrix) before downgrading or upgrading your product. 
+
+If you are planning to downgrade to a version lower than the one you are currently on, make sure your compatibility level is mentioned in the release note of that version with a minimum version. For example downgrading from RoomOS 11 to RoomOS 10. If the compatibility level of your device is listed with a version of RoomOS 10, then it will be supported from that version. If the number is not mentioned with a version of RoomOS 10 but only RoomOS 11, then the device cannot be downgraded. Check the respective release note of the version you are downgrading to as we do not mention previous version compatibility levels in newer versions of the release notes. 
+
 When downgrading from RoomOS 10 to CE9.12.x or lower, the provisioning mode setting will reset to the default value even if the setting exists on both versions. The workaround is to manually configure the provisioning mode after downgrade.
 
 <a name="deferral-notes"></a>
@@ -1928,7 +1938,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Desk </td> 
+		<td rowspan="4" style="border-bottom: 1px solid black;">Cisco Desk </td> 
 	</tr>
 	<tr>
 		<td>0</td> <td>10.8.2.5</td>
@@ -1940,7 +1950,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>2</td> <td>11.1.2.4</td>
 	</tr>
 	<tr>
-		<td rowspan="3" style="border-bottom: 1px solid black;">Cisco Desk Mini</td>
+		<td rowspan="4" style="border-bottom: 1px solid black;">Cisco Desk Mini</td>
 	</tr>
 	<tr>
 		<td>0</td> <td>10.11.2.2</td>
@@ -1949,8 +1959,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>1</td> <td>10.15.3.0</td>
 	</tr>
 	<tr>
-		<td>Cisco Desk Hub</td> 
-		<td>0</td> <td>10.11.2.2</td> 
+		<td>2</td> <td>11.1.2.4</td>
 	</tr>
 
 </table>

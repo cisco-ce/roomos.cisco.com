@@ -81,7 +81,7 @@
     {
       "id": "Introduction",
       "title": "RoomOS introduction",
-      "description": "What is RoomOS, what are the main concepts and compoents.",
+      "description": "What is RoomOS, what are the main concepts and components",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/integrations.png"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "LocalAdminUser",
       "title": "How to create a local admin user",
-      "description": "Create an admin user on your own video device quickly and easily.",
+      "description": "Create an admin user on your own video device quickly and easily",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/localadmin/login-vega.png"
     },
 

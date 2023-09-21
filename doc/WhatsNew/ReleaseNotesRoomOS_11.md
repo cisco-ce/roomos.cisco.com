@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.06 - August 2023
+D15504.07 - September 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.06 - August 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>7</td> 
+		<td>September 21st 2023</td> 
+		<td>
+			Minor corrections
+		</td>
 	</tr>
 	<tr>
 		<td>6</td> 
@@ -569,7 +576,9 @@ While the default passphrase remains unchanged, the device will not allow callin
 
 ## Upgrading software on a Cisco Room Device 
 
-Upgrading from any version of RoomOS 10 to RoomOS 11 directly using UCM 11.5 or above is supported. Due to the deprecations of the xx.k3.cop.sgn files for new releases, you are required to upgrade to RoomOS 10.15.x or later in order to upgrade to RoomOS 11 when using other upgrade methods. We are now only releasing xx.k4.cop.sha512 files going forward with RoomOS 11 and also lower maintenance releases. Support for upgrading devices using the cop files with the new signature from the codec itself was introduced with RoomOS 10.15.x. 
+Before performing an upgrade or downgrade to a given version you should verify the compatibility level on the device and confirm the minimum version that is supported on your product. You can find a [compatibility matrix](#cisco-room-series-software-compatibility-matrix) in this document for reference.
+
+Due to the deprecations of the xx.k3.cop.sgn files for new releases, you are required to upgrade to RoomOS 10.15.x or later in order to upgrade to RoomOS 11 when using other upgrade methods. We are now only releasing xx.k4.cop.sha512 files going forward with RoomOS 11 and also lower maintenance releases. Support for upgrading devices using the cop files with the new signature from the codec itself was introduced with RoomOS 10.15.x. 
 
 The reason for this requirement is that the device is unable to unpack the new cop files on earlier versions because it incorrectly assumes that the signature of the package is invalid. 
 
@@ -732,7 +741,9 @@ If you are upgrading to RoomOS 11 using this method, please make sure the device
 
 ### Downgrading
 
-Downgrading is performed the same way as described above, using a software version lower than the one you are currently running. You can downgrade to any RoomOS 10 version from any RoomOS 11 version directly. 
+Downgrading is performed the same way as described above, using a software version lower than the one you are currently running. Not all products are compatible with all software versions. Please verify the minimum software version in the [compatibility matrix](#cisco-room-series-software-compatibility-matrix) before downgrading or upgrading your product. 
+
+If you are planning to downgrade to a version lower than the one you are currently on, make sure your compatibility level is mentioned in the release note of that version with a minimum version. For example downgrading from RoomOS 11 to RoomOS 10. If the compatibility level of your device is listed with a version of RoomOS 10, then it will be supported from that version. If the number is not mentioned with a version of RoomOS 10 but only RoomOS 11, then the device cannot be downgraded. Check the respective release note of the version you are downgrading to as we do not mention previous version compatibility levels in newer versions of the release notes. 
 
 <a name="deferral-notes"></a>
 
@@ -949,6 +960,8 @@ Some devices that have support for RoomOS 11 previously had support for CE9. Thi
 For Room Kit, Room Kit Mini, Codec Plus, Room 55, Room70 G1 :
 
 Upgrading to RoomOS 11 from CE9.14.4 and below may result in error “Hardware or Operating System Failure”, which can only be fixed by downgrading to RoomOS 10.15.2 software or above, and then upgrade back to RoomOS 11.
+
+Always verify the compatibility level when upgrading and downgrading devices. 
 </td>
 </tr>
 </table>
@@ -1169,7 +1182,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	</tr>
 	<tr>
 		<td>Cisco Desk Mini</td>
-		<td>0-1</td> <td>All</td>
+		<td>0-2</td> <td>All</td>
 	</tr>
 </table>
 

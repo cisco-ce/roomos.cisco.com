@@ -1,6 +1,6 @@
 # User Interface Extensions
 
-The Webex series video devices include User Interface (UI) Extensions that allow you to expand the tools on the touch screen of your video conferencing device. The extensions appear as additional activities on the home screen, where users can interact with them. UI Extensions allow you to create new panels and action buttons on the Webex devices to create custom behaviour. This can be used to simplify the workflow, automate tasks on the video device, or control entirely different devices in the room, such as lights, blinds, air condition, etc.
+The Board, Desk, and Room series devices feature User Interface (UI) Extensions that enable you to design new panels and action buttons for creating custom functionalities. The extensions appear as additional activities on the home screen, and users can interact with them. This can be used to simplify the workflow, automate tasks on the video device, or control entirely different devices in the room, such as lights, blinds, air condition, etc.
 
 In addition, you can add web apps to the home screen. Web apps are covered separately in the web engine section of this site.
 
@@ -40,7 +40,7 @@ From the Cisco device's point of view, the simulator is no different from a real
 
 How to use:
 
-* Heac over to cs.co/room-simulator
+* Head over to cs.co/room-simulator
 * Make sure you accept your Cisco device's certificate first by logging in to the web interface of your device
 * Tap "Connect" in the simulator
 * Enter IP address, username and password

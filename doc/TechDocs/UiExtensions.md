@@ -42,6 +42,7 @@ You can change the default names by double-clicking on them and entering new tex
 When you are ready to see your changes on the device, click the **Export** button.
 
 <img src="/doc/images/uiextensions/uiextns-editor.png"/>
+
 *Pre-existing extensions will be shown in the left pane. To edit an existing extension, just click on its name.*
 
 <img src="/doc/images/uiextensions/uiextns-editor-3.png"/>

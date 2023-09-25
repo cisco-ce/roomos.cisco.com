@@ -91,6 +91,36 @@ You may preview your configurations to verify them before deploying them.
 
 <img src="/doc/images/uiextensions/uiextns-editor-5.png"/>
 
+### Action buttons
+
+If you choose to create an action button, you will be adding a button to the user interface. When the user presses the button, a single action will be performed (e.g., dialing a number).
+You must program this action by using a API command. It is simple to create this program by using the Macro Editor. See the [Macro tutorial chapter](./MacroTutorial.md) for more information.
+
+<img src="/doc/images/uiextensions/create-action-button.png"/>
+
+You have the option to choose both the color and image for the icon, along with its placement on the screen. Click the **Export** button to export your button and view it on the user interface.
+
+#### Example of an action button
+
+The following steps will create an action button that displays a message:
+1. Create an action button with id of "hello1_button" (without the quotation marks). 
+2. Click the **Export** button to export your action button to the video device. 
+Look at the user interface. You should now see the action button. Nothing will happen if you press it, because we have not programmed the button yet.
+3. You will need to set up a command to run when the button is pressed. 
+Open the **Macro Editor** and click *Create new macro*. The text editor will open. Add the following script after the inital text:
+
+```javascript
+xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
+  if (event.PanelId === 'hello1_button') {
+    xapi.command('UserInterface Message Prompt Display', { Title: 'Hello!', text: 'Have a great day!'} );
+  }
+});`
+```
+4. Type `Ctrl+s` to save the macro.
+5. Enable the macro. This is done by setting the corresponding switch to on <img src="/doc/images/uiextensions/togglebutton2.png" width="50" height="22"/>.
+Now, on the video device, test the button. It should show you a friendly message.
+
+
 ## The UI Extensions simulator
 
 <a href="https://cs.co/room-simulator/" target="_blank">

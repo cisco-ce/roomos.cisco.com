@@ -9,7 +9,13 @@ In addition, you can add web apps to the home screen. Web apps are covered separ
 ## The UI Extension Editor
 
 The simple drag-and-drop editor offers a library of user interface elements, referred to as widgets. You can use these widgets to create your own control panels.
+
+<img src="/doc/images/uiextensions/ui-custom-panel.png" />
+
 UI Extensions, such as buttons and panels, can be programmed in an infinite number of ways. You could program the system to control the flashing of a light, as shown here. 
+<p align="center">
+<img src="/doc/images/uiextensions/ui-custom-panel-2.png" width="500" height="269"/>
+</p>
 
 ### Creating UI Extensions 
 
@@ -17,20 +23,89 @@ To access the UI Extensions Editor, sign-in to the video device's web interface 
 
 <a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>
 
-<a href="https://custom-collab.cisco.com/uieditor/" target="_blank">
-  <img src="/doc/images/ui-extensions-editor.png" />
-</a>
-
-
 Click **New** and the **Add a new extension** dialog box will appear. 
 You will be presented with the following options:
 
-1. UI panels allow you to create custom panels with widgets (e.g., sliders, switches, buttons) to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md)
+<img src="/doc/images/uiextensions/uiextens-configuration.png" />
+
+
+1. UI panels allow you to create custom panels with widgets (e.g., sliders, switches, buttons) to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md).
 2. Action buttons are simple buttons that execute a command when pressed (e.g., dial a number).
 3. Web Apps are for video devices with a Web Engine -- a button launches a web view in full screen on the user interface.
 
 Each of these will add a new button to the user interface. Only a few buttons will be added to the main page before it runs out of space. To access the overflow buttons, swipe from right to left in the screen area where the icons are displayed.
 
+### A Tour of the UI Extensions Editor 
+
+To get started, create a new panel and drag some widgets into the panel. 
+You can change the default names by double-clicking on them and entering new text. Click **Enter** to apply the change.
+When you are ready to see your changes on the device, click the **Export** button.
+<p align="center">
+<img src="/doc/images/uiextensions/uiextns-editor.png" width="800" height="726"/>
+</p
+  
+*Pre-existing extensions will be shown in the left pane. To edit an existing extension, just click on its name.*
+
+<p align="center">
+<img src="/doc/images/uiextensions/uiextns-editor-3.png" width="800" height="466"/>
+</p
+
+You can access the properties of a panel or widget by clicking on its title. 
+A yellow frame wil be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
+
+<p align="center">
+<img src="/doc/images/uiextensions/uiextns-editor-2.png" width="800" height="800"/>
+</p
+
+There are several buttons in the header area of the Editor:
+
+- **Export** your changes to the user interface.
+- **Show a preview** of your changes.
+- **Undo** and **redo** changes. 
+- **Show additional options**.
+To exit, click the Cisco logo in the top left corner.
+
+<p align="center">
+<img src="/doc/images/uiextensions/uiextns-editor-4.png" width="800" height="361"/>
+</p
+  
+The **More options** icon in the top-right corner of the UI Extensions Editor shows several important options.
+- *Export to video system*: Export the UI extensions from the editor to the user interface. This will overwrite the existing custom extensions on the video device. This is the same behavior as when you click the  button.
+- *Export to file*: Export the UI Extensions from the editor to an XML file.
+- *Export current panel to file*: Export only the configuration for the currently selected panel to an XML file.
+- *Import from video system*: Get the configuration for the user interface of the video device and apply it to the editor. If you have unsaved changes in your editor, these will be erased.
+- *Import from file*: Import an offline configuration as an XML file. If you have unsaved changes in your editor, these will be erased.
+- *Merge from file*: Import an offline configuration as an XML file and append it to the current configuration in the editor. Note that any panels with the same name will then be overwritten.
+- *User manual*: Open a web page with links to several versions of the user documentation.
+- *News*: See information about changes from recent releases.
+- *Keyboard shortcuts*: See a list of the commonly used keyboard shortcuts for use with the editor. For Mac users, replace `Ctrl` with `Cmd`.
+  
+  - `Ctrl-Enter`	Export configuration to video system 
+  - `Ctrl-Space`	Preview current configuration
+  - `Ctrl-S`	Save configuration to file
+  - `Ctrl-O`	Open configuration from file
+  - `Ctrl-Z`	Undo last action
+  - `Ctrl-Shift-Z`	Redo last action
+  - `Ctrl-Shift-C`	Copy selected component
+  - `Ctrl-Shift-X`	Cut selected component
+  - `Ctrl-Shift-V`	Paste selected component
+  - `Ctrl-D`	Duplicate selected component
+  - `Backspace / Delete`	Delete selected component
+
+- *Remove all UI extensions*: This will clear the editor, but not the video device. To undo this change, select *Import from video system*. To push this change to the video system, select *Export to video system*. To close the menu, click the **More options** icon again.
+
+You may preview your configurations to verify them before deploying them.
+
+<p align="center">
+<img src="/doc/images/uiextensions/uiextns-editor-5.png" width="1100" height="300"/>
+</p
+
+**Note**: The preview works for all the devices, but it will look it as if all of it has been created for a touch controller.
+The above provides a preview of your configuration with a simulated third-party control system connected. 
+When implementing your configurations (a real situation scenario), make sure your control system has been set to send `SetValue` commands wherever applicable.
+
+**Example**: If you set Lights to `On` in a real situation scenario, the touch controller needs to receive feedback confirming that the lights actually are switched on. For this to take place, the controller must switch on the lights and then send a `SetValue`, confirming the change of the lights settings. The right pane of the above example shows a simulation of what the touch controller sends to the control system and what the control system then sends back to the touch controller. 
+In a real situation scenario, you should also make sure that the control system sends a `SetValue` to the touch controller whenever someone operates the light switch on the wall in the meeting room.
 
 ## The UI Extensions simulator
 

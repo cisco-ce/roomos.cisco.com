@@ -14,7 +14,7 @@ The simple drag-and-drop editor offers a library of user interface elements, ref
 
 UI Extensions, such as buttons and panels, can be programmed in an infinite number of ways. You could program the system to control the flashing of a light, as shown here. 
 <p align="center">
-<img src="/doc/images/uiextensions/ui-custom-panel-2.png" width="500" height="269"/>
+<img src="/doc/images/uiextensions/ui-custom-panel-2.png"/>
 </p>
 
 ### Creating UI Extensions 
@@ -41,20 +41,20 @@ To get started, create a new panel and drag some widgets into the panel.
 You can change the default names by double-clicking on them and entering new text. Click **Enter** to apply the change.
 When you are ready to see your changes on the device, click the **Export** button.
 <p align="center">
-<img src="/doc/images/uiextensions/uiextns-editor.png" width="800" height="726"/>
+<img src="/doc/images/uiextensions/uiextns-editor.png"/>
 </p
   
 *Pre-existing extensions will be shown in the left pane. To edit an existing extension, just click on its name.*
 
 <p align="center">
-<img src="/doc/images/uiextensions/uiextns-editor-3.png" width="800" height="466"/>
+<img src="/doc/images/uiextensions/uiextns-editor-3.png"/>
 </p
 
 You can access the properties of a panel or widget by clicking on its title. 
 A yellow frame wil be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
 
 <p align="center">
-<img src="/doc/images/uiextensions/uiextns-editor-2.png" width="800" height="800"/>
+<img src="/doc/images/uiextensions/uiextns-editor-2.png"/>
 </p
 
 There are several buttons in the header area of the Editor:
@@ -66,7 +66,7 @@ There are several buttons in the header area of the Editor:
 To exit, click the Cisco logo in the top left corner.
 
 <p align="center">
-<img src="/doc/images/uiextensions/uiextns-editor-4.png" width="800" height="361"/>
+<img src="/doc/images/uiextensions/uiextns-editor-4.png"/>
 </p
   
 The **More options** icon in the top-right corner of the UI Extensions Editor shows several important options.
@@ -97,7 +97,7 @@ The **More options** icon in the top-right corner of the UI Extensions Editor sh
 You may preview your configurations to verify them before deploying them.
 
 <p align="center">
-<img src="/doc/images/uiextensions/uiextns-editor-5.png" width="1100" height="300"/>
+<img src="/doc/images/uiextensions/uiextns-editor-5.png"/>
 </p
 
 **Note**: The preview works for all the devices, but it will look it as if all of it has been created for a touch controller.

@@ -2,31 +2,35 @@
 
 The Board, Desk, and Room series devices feature User Interface (UI) Extensions that enable you to design new panels and action buttons for creating custom functionalities. The extensions appear as additional activities on the home screen, and users can interact with them. This can be used to simplify the workflow, automate tasks on the video device, or control entirely different devices in the room, such as lights, blinds, air condition, etc.
 
-In addition, you can add web apps to the home screen. Web apps are covered separately in the web engine section of this site.
+A UI extension is a user interface component with no built-in control logic. When users interact with these UI elements, they trigger events that developers can monitor and respond to, either by employing macros or integrating external functionalities, such as through JSXAPI. This flexibility empowers developers to design UIs capable of diverse actions, like controlling meeting room lighting, sending messages upon detecting a specific number of individuals in a meeting room, or starting the coffee machine, according to their requirements. 
 
-## Extension types
-
-<img src="/doc/images/uiextensions/overview.png" />
-
-1. UI panels allow you to create custom panels with widgets to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md)
-
-2. Action buttons are buttons on the home screen that triggers an action when pressed.
-
-3. Web Apps are buttons that can be programmed to launch a web page in full screen.
+In addition, you can add web apps to the home screen. Web apps are covered separately in the [web engine](./WebEngine.md) section of this site.
 
 ## The UI Extension Editor
 
-A UI extension is a pure user interface without any control logic built-in. When the user interacts with the UI elements, events are generated that you as a developer can listen and react to, either with macros or external integrations using eg JSXAPI. This means that you can create a UI that does anything you want, from controlling the lights in the meeting room to sending a message when more than a certain number of people have been detected in an office, to starting your coffee machine.
+The simple drag-and-drop editor offers a library of user interface elements, referred to as widgets. You can use these widgets to create your own control panels.
+UI Extensions, such as buttons and panels, can be programmed in an infinite number of ways. You could program the system to control the flashing of a light, as shown here. 
 
+### Creating UI Extensions 
 
-
-The extensions can be created and added with the UI Extensions editor, but also provisioned from tools such as Control Hub. The editor is available on the local web interface on each device, but you can also try the editor here and export your configuration, if you wish:
+To access the UI Extensions Editor, sign-in to the video device's web interface with Administrator, RoomControl, or Integrator credentials and navigate to Customization > UI Extensions Editor. The extensions can also be provisioned from tools such as Control Hub. You can also try the editor here and export your configuration:
 
 <a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>
 
 <a href="https://custom-collab.cisco.com/uieditor/" target="_blank">
   <img src="/doc/images/ui-extensions-editor.png" />
 </a>
+
+
+Click **New** and the **Add a new extension** dialog box will appear. 
+You will be presented with the following options:
+
+1. UI panels allow you to create custom panels with widgets (e.g., sliders, switches, buttons) to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md)
+2. Action buttons are simple buttons that execute a command when pressed (e.g., dial a number).
+3. Web Apps are for video devices with a Web Engine -- a button launches a web view in full screen on the user interface.
+
+Each of these will add a new button to the user interface. Only a few buttons will be added to the main page before it runs out of space. To access the overflow buttons, swipe from right to left in the screen area where the icons are displayed.
+
 
 ## The UI Extensions simulator
 

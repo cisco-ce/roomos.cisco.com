@@ -73,30 +73,23 @@ The **More options** icon in the top-right corner of the UI Extensions Editor sh
 - *News*: See information about changes from recent releases.
 - *Keyboard shortcuts*: See a list of the commonly used keyboard shortcuts for use with the editor. For Mac users, replace `Ctrl` with `Cmd`.
   
-  - `Ctrl-Enter`	Export configuration to video system
-  - `Ctrl-Space`	Preview current configuration
-  - `Ctrl-S`	Save configuration to file
-  - `Ctrl-O`	Open configuration from file
-  - `Ctrl-Z`	Undo last action
-  - `Ctrl-Shift-Z`	Redo last action
-  - `Ctrl-Shift-C`	Copy selected component
-  - `Ctrl-Shift-X`	Cut selected component
-  - `Ctrl-Shift-V`	Paste selected component
-  - `Ctrl-D`	Duplicate selected component
-  - `Backspace / Delete`	Delete selected component
+  - **Ctrl-Enter**: Export configuration to video system
+  - **Ctrl-Space**: Preview current configuration
+  - **Ctrl-S**: Save configuration to file
+  - **Ctrl-O**: Open configuration from file
+  - **Ctrl-Z**: Undo last action
+  - **Ctrl-Shift-Z**: Redo last action
+  - **Ctrl-Shift-C**: Copy selected component
+  - **Ctrl-Shift-X**: Cut selected component
+  - **Ctrl-Shift-V**: Paste selected component
+  - **Ctrl-D**: Duplicate selected component
+  - **Backspace / Delete**: Delete selected component
 
 - *Remove all UI extensions*: This will clear the editor, but not the video device. To undo this change, select *Import from video system*. To push this change to the video system, select *Export to video system*. To close the menu, click the **More options** icon again.
 
 You may preview your configurations to verify them before deploying them.
 
 <img src="/doc/images/uiextensions/uiextns-editor-5.png"/>
-
-**Note**: The preview works for all the devices, but it will look it as if all of it has been created for a touch controller.
-The above provides a preview of your configuration with a simulated third-party control system connected. 
-When implementing your configurations (a real situation scenario), make sure your control system has been set to send `SetValue` commands wherever applicable.
-
-**Example**: If you set Lights to `On` in a real situation scenario, the touch controller needs to receive feedback confirming that the lights actually are switched on. For this to take place, the controller must switch on the lights and then send a `SetValue`, confirming the change of the lights settings. The right pane of the above example shows a simulation of what the touch controller sends to the control system and what the control system then sends back to the touch controller. 
-In a real situation scenario, you should also make sure that the control system sends a `SetValue` to the touch controller whenever someone operates the light switch on the wall in the meeting room.
 
 ## The UI Extensions simulator
 

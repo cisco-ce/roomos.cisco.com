@@ -118,6 +118,7 @@ xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
 ```
 4. Type `Ctrl+s` to save the macro.
 5. Enable the macro. This is done by setting the corresponding switch to on <img src="/doc/images/uiextensions/togglebutton2.png" width="50" height="22"/>.
+
 Now, on the video device, test the button. It should show you a friendly message.
 
 

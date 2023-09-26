@@ -7,7 +7,7 @@ UI panels and widgets allows you to create custom user interfaces, for example t
 * Create automated tasks for tasks you do often with the video device
 * Give instructions and info to first-time users
 
-The user interface works on all Webex Devices, such as the touch controllers (Room Kits etc) and touch screens (Desk Series, Boards, etc).
+The user interface works on all Cisco devices, such as the touch controllers (Room series etc.) and touch screens (Desk and Board series).
 
 ## Event model
 

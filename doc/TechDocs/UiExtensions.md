@@ -103,6 +103,7 @@ You have the option to choose both the color and image for the icon, along with 
 #### Example of an action button
 
 The following steps will create an action button that displays a message:
+
 1. Create an action button with id of "hello1_button" (without the quotation marks). 
 2. Click the **Export** button to export your action button to the video device. 
 Look at the user interface. You should now see the action button. Nothing will happen if you press it, because we have not programmed the button yet.

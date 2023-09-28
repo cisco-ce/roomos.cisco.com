@@ -100,7 +100,7 @@ You must program this action by using a API command. It is simple to create this
 
 You have the option to choose both the color and image for the icon, along with its placement on the screen. Click the **Export** button to export your button and view it on the user interface.
 
-#### Example of an action button
+### Example of an action button
 
 The following steps will create an action button that displays a message:
 

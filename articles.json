@@ -136,7 +136,7 @@
     {
       "id": "USBControl",
       "title": "Third-party USB control devices",
-      "description": "Use a third-party USB input device to control a device.",
+      "description": "Use a third-party USB input device to control a device",
       "symbol": "📝"
     },
     {

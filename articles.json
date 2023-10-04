@@ -134,6 +134,12 @@
       "symbol": "📝"
     },
     {
+      "id": "USBControl",
+      "title": "Third-party USB control devices",
+      "description": "Use a third-party USB input device to control a device.",
+      "symbol": "📝"
+    },
+    {
       "id": "JSXAPIStyles",
       "title": "JSxAPI coding styles",
       "description": "Several styles are supported, find out which one is the right for you",

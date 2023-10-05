@@ -52,37 +52,37 @@ This example shows how to use the keys of a third-party USB input device (e.g., 
 
 1. Sign in to the room or desk device on SSH. You need a local admin user.
 2. Configure the device to allow the use of a third-party USB remote control.
-   
+
 ```
-xConfiguration Peripherals InputDevice Mode: On
-** end
-OK
+        xConfiguration Peripherals InputDevice Mode: On
+        ** end
+        OK
 ```
 
 You can check if the configuration is On or off by using this command:
 
 ```
-xConfiguration Peripherals InputDevice Mode
-*c xConfiguration Peripherals InputDevice Mode: On
-** end
-OK
+        xConfiguration Peripherals InputDevice Mode
+        *c xConfiguration Peripherals InputDevice Mode: On
+        ** end
+        OK
 ```
 
 3. Register for feedback, so that we are notified when the remote control buttons are pressed and released.
    
 ```
-xFeedback Register /event/userinterface/inputdevice
-** end
-OK
+        xFeedback Register /event/userinterface/inputdevice
+        ** end
+        OK
 ```
 
 You can check which feedbacks the device is registered for, using this command:
 
 ```
-xFeedback list
-/event/userinterface/inputdevice
-** end
-OK
+        xFeedback list
+        /event/userinterface/inputdevice
+        ** end
+        OK
 ```
 
 4. Press and release a button on the remote control to check that feedback registration works.
@@ -91,10 +91,10 @@ This generates two different events: `Pressed` and `Released`. If you press and 
 These are the events issued when pressing and releasing the `Enter` key:
 
 ```
-*e UserInterface InputDevice Key Action Key: KEY _ ENTER
-*e UserInterface InputDevice Key Action Code: 28
-*e UserInterface InputDevice Key Action Type: Pressed
-** end
+        *e UserInterface InputDevice Key Action Key: KEY _ ENTER
+        *e UserInterface InputDevice Key Action Code: 28
+        *e UserInterface InputDevice Key Action Type: Pressed
+        ** end
 ```
 
 5. Write a macro that listens for the relevant *InputDevice* events and carries out the associated actions using the API of the device (this is shown in the next section).

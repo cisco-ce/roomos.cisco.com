@@ -107,86 +107,86 @@ When the macro sees an event containing `KEY _ VOLUMEUP`, `KEY _ VOLUMEDOWN`, or
 ## Example use related to the camera control function
 
 ```javascript
-
 const xapi = require('xapi');
 
 function com(command, args = '') {
-    xapi.command(command, args);
-    log(command + ' ' + JSON.stringify(args));
+xapi.command(command, args);
+log(command + ' ' + JSON.stringify(args));
 }
 
 function log(event) {
-    console.log(event);
+console.log(event);
 }
 
 function notify(message) {
-    xapi.command('UserInterface Message TextLine Display', {
-        Text: message,
-        duration: 3
-    });
+xapi.command('UserInterface Message TextLine Display', {
+Text: message,
+duration: 3
+});
 }
+
 function cameraControl(motor, direction, cameraId='1') {
-    com('Camera Ramp', { 'CameraId': cameraId, [motor]: direction });
+com('Camera Ramp', { 'CameraId': cameraId, [motor]: direction });
 }
 
 function init() {
-    let standbyState;
-    xapi.status.get('Standby').then((state) => {
-        standbyState = state.State === 'Off' ? false : true;
-    });
+let standbyState;
+xapi.status.get('Standby').then((state) => {
+standbyState = state.State === 'Off' ? false : true;
+});
 
-    xapi.status.on('Standby', state => {
-        standbyState = state.State === 'Off' ? false : true;
-    });
+xapi.status.on('Standby', state => {
+standbyState = state.State === 'Off' ? false : true;
+});
 
-    xapi.event.on('UserInterface InputDevice Key Action', press => {
-        if (press.Type == "Pressed") {
-            switch (press.Key) {
-                case "KEY _ LEFT":
-                    cameraControl('Pan', 'Left');
-                    break;
-                case "KEY _ RIGHT":
-                    cameraControl('Pan', 'Right');
-                    break;
-                case "KEY _ UP":
-                    cameraControl('Tilt', 'Up');
-                    break;
-                case "KEY _ DOWN":
-                    cameraControl('Tilt', 'Down');
-                    break;
-                default:
-                    break;
-            }
-        } else if (press.Type == "Released") {
-            switch (press.Key) {
-                case "KEY _ LEFT":
-                    cameraControl('Pan', 'Stop');
-                    break;
-                case "KEY _ RIGHT":
-                    cameraControl('Pan', 'Stop');
-                    break;
-                case "KEY _ UP":
-                    cameraControl('Tilt', 'Stop');
-                    break;
-                case "KEY _ DOWN":
-                    cameraControl('Tilt', 'Stop');
-                    break;
-                case 'KEY _ VOLUMEUP':
-                    com('Audio Volume Increase');
-                    break;
-                case 'KEY _ VOLUMEDOWN':
-                    com('Audio Volume Decrease');
-                    break;
-                case 'KEY _ SLEEP':
-                    com(standbyState ? 'StandbyDeactivate' : 'Standby Activate');
-                    break;
-                default:
-                    break;
-            }
-        }
-    });
+xapi.event.on('UserInterface InputDevice Key Action', press => {
+if (press.Type == "Pressed") {
+switch (press.Key) {
+case "KEY _ LEFT":
+cameraControl('Pan', 'Left');
+break;
+case "KEY _ RIGHT":
+cameraControl('Pan', 'Right');
+break;
+case "KEY _ UP":
+cameraControl('Tilt', 'Up');
+break;
+case "KEY _ DOWN":
+cameraControl('Tilt', 'Down');
+break;
+default:
+break;
+}
+
+} else if (press.Type == "Released") {
+switch (press.Key) {
+case "KEY _ LEFT":
+cameraControl('Pan', 'Stop');
+break;
+case "KEY _ RIGHT":
+cameraControl('Pan', 'Stop');
+break;
+case "KEY _ UP":
+cameraControl('Tilt', 'Stop');
+break;
+case "KEY _ DOWN":
+cameraControl('Tilt', 'Stop');
+break;
+case 'KEY _ VOLUMEUP':
+com('Audio Volume Increase');
+break;
+case 'KEY _ VOLUMEDOWN':
+com('Audio Volume Decrease');
+break;
+case 'KEY _ SLEEP':
+com(standbyState ? 'StandbyDeactivate' : 'Standby Activate');
+break;
+default:
+break;
+}
+}
+});
 }
 
 init();
-
 ```

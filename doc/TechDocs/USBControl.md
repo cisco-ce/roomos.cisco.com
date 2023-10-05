@@ -51,6 +51,7 @@ This example shows how to use the keys of a third-party USB input device (e.g., 
 
 1. Sign in to the room or desk device on SSH. You need a local admin user.
 2. Configure the device to allow the use of a third-party USB remote control.
+   
 ```
 xConfiguration Peripherals InputDevice Mode: On
 ** end
@@ -58,6 +59,7 @@ OK
 ```
 
 **Note**: You can check if the configuration is *On* or *Off* by using this command:
+
 ```
 xConfiguration Peripherals InputDevice Mode
 *c xConfiguration Peripherals InputDevice Mode: On
@@ -66,12 +68,15 @@ OK
 ```
 
 3. Register for feedback, so that we are notified when the remote control buttons are pressed and released.
+   
 ```
 xFeedback Register /event/userinterface/inputdevice
 ** end
 OK
 ```
+
 **Note**: You can check which feedbacks the device is registered for, using this command:
+
 ```
 xFeedback list
 /event/userinterface/inputdevice
@@ -83,6 +88,7 @@ OK
 This generates two different events: `Pressed` and `Released`. If you press and hold a button, you see the `Pressed` event until you release the button. Then the `Released` event is generated.
 
 These are the events issued when pressing and releasing the `Enter` key:
+
 ```
 *e UserInterface InputDevice Key Action Key: KEY _ ENTER
 *e UserInterface InputDevice Key Action Code: 28
@@ -96,6 +102,7 @@ These are the events issued when pressing and releasing the `Enter` key:
 When the macro sees an event containing `KEY _ VOLUMEUP`, `KEY _ VOLUMEDOWN`, or `KEY _ SLEEP` it executes the related commands.
 
    2. Create a camera control function for the arrow keys. We want to keep moving the camera as long as the button is pressed. When the button is released, the camera movement should stop. When the macro sees an event containing `KEY _ LEFT`, `KEY _ RIGHT`, `KEY _ UP`, or `KEY _ DOWN`, it executes the related commands.
+      
 
 ## Example use related to the camera control function
 

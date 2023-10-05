@@ -5,6 +5,8 @@
 The **UI Extensions Editor** can configure your system to show video sources from a third-party external video switch in the normal *Share Tray* view.
 The sources will appear, and behave, as any other video source connected directly to the video device. For the user, this will be perceived as completely transparent and no video switch will seem to be involved.
 
+<img src="/doc/images/video-switch.png" />
+
 ## API Commands and Events
 
 The video switch feature requires a third-party control system. The control system will use the API to synchronize the source states between the video switch and your
@@ -80,6 +82,7 @@ This command removes all sources from the list.
 `xcommand UserInterface Presentation ExternalSource RemoveAll`
 
 ### UserInterface Presentation ExternalSource Select
+
 Starts to present the selected source if it is in ready state and has a valid ConnectorId.
 Also shows the item in the share tray as "Presenting".
 
@@ -153,3 +156,15 @@ The Controller should listen to this event and display the selected source.
 xconfiguration Video Input Connector [x]
 PresentationSelection: <AutoShare, Desktop, Manual, OnConnect>
 ```
+
+<img src="/doc/images/video-switch-2.png" />
+
+Fig. 1 Default state is not ready.
+
+<img src="/doc/images/video-switch-3.png" />
+
+Fig. 2 When Input sources have been set to Ready.
+
+<img src="/doc/images/video-switch.png" />
+
+Fig. 3 If the switch is connected on the chosen connector it will start to present.

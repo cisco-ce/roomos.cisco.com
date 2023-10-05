@@ -26,15 +26,15 @@ Pressing a button on the USB input device will generate an event in the API. Mac
 Pressing and releasing a button will generate a `Pressed` and `Released` events, like this:
 
 ```
-  *e UserInterface InputDevice Key Action Key: <Name of key>
-  *e UserInterface InputDevice Key Action Code: <Id of key>
-  *e UserInterface InputDevice Key Action Type: Pressed
-  ** end
+*e UserInterface InputDevice Key Action Key: <Name of key>
+*e UserInterface InputDevice Key Action Code: <Id of key>
+*e UserInterface InputDevice Key Action Type: Pressed
+** end
   
-  *e UserInterface InputDevice Key Action Key: <Name of key>
-  *e UserInterface InputDevice Key Action Code: <Id of key>
-  *e UserInterface InputDevice Key Action Type: Released
-  ** end
+*e UserInterface InputDevice Key Action Key: <Name of key>
+*e UserInterface InputDevice Key Action Code: <Id of key>
+*e UserInterface InputDevice Key Action Type: Released
+** end
 ```
 
 To listen for events, you must register feedback from the `InputDevice` events:
@@ -53,35 +53,35 @@ Note: In the command examples below, the text in normal font is entered by you a
 2. Configure the device to allow the use of a third-party USB remote control.
    
 ```
-   xConfiguration Peripherals InputDevice Mode: On
-   ** end
-   OK
+xConfiguration Peripherals InputDevice Mode: On
+** end
+OK
 ```
 
 Note: You can check if the configuration is *On* or *Off* by using this command:
 
 ```
-   xConfiguration Peripherals InputDevice Mode
-   *c xConfiguration Peripherals InputDevice Mode: On
-   ** end
-   OK
+xConfiguration Peripherals InputDevice Mode
+*c xConfiguration Peripherals InputDevice Mode: On
+** end
+OK
 ```
 
 3. Register for feedback, so that we are notified when the remote control buttons are pressed and released.
    
 ```
-   xFeedback Register /event/userinterface/inputdevice
-   ** end
-   OK
+xFeedback Register /event/userinterface/inputdevice
+** end
+OK
 ```
 
 Note: You can check which feedbacks the device is registered for, using this command:
 
 ```
-   xFeedback list
-   /event/userinterface/inputdevice
-   ** end
-   OK
+xFeedback list
+/event/userinterface/inputdevice
+** end
+OK
 ```
 
 4. Press and release a button on the remote control to check that feedback registration works.
@@ -90,10 +90,10 @@ This generates two different events: `Pressed` and `Released`. If you press and 
 These are the events issued when pressing and releasing the `Enter` key:
 
 ```
-   *e UserInterface InputDevice Key Action Key: KEY _ ENTER
-   *e UserInterface InputDevice Key Action Code: 28
-   *e UserInterface InputDevice Key Action Type: Pressed
-   ** end
+*e UserInterface InputDevice Key Action Key: KEY _ ENTER
+*e UserInterface InputDevice Key Action Code: 28
+*e UserInterface InputDevice Key Action Type: Pressed
+** end
 ```
 
 6. Write a macro that listens for the relevant *InputDevice* events and carries out the associated actions using the API of the device (this is shown in the next section).

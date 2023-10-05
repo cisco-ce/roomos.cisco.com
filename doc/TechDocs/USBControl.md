@@ -48,7 +48,7 @@ When the input device is detected by the video device, it shows up in the *UserI
 
 ## Example use of a Third-Party USB input device
 
-This example shows how to use the keys of a third-party USB input device (e.g., a remote control). You can control the standby function, increase and decrease the volume, and control the camera. The macro created will listen for relevant events and carry out the associated actions using the API of the room or desk device. *Note: In the command examples below, the text in normal font is entered by you and the text in italics is the response received from the device.*
+This example shows how to use the keys of a third-party USB input device (e.g., a remote control). You can control the standby function, increase and decrease the volume, and control the camera. The macro created will listen for relevant events and carry out the associated actions using the API of the room or desk device. 
 
 1. Sign in to the room or desk device on SSH. You need a local admin user.
 2. Configure the device to allow the use of a third-party USB remote control.
@@ -59,7 +59,7 @@ xConfiguration Peripherals InputDevice Mode: On
 OK
 ```
 
-*Note: You can check if the configuration is On or off by using this command:*
+You can check if the configuration is On or off by using this command:
 
 ```
 xConfiguration Peripherals InputDevice Mode
@@ -76,7 +76,7 @@ xFeedback Register /event/userinterface/inputdevice
 OK
 ```
 
-*Note: You can check which feedbacks the device is registered for, using this command:*
+You can check which feedbacks the device is registered for, using this command:
 
 ```
 xFeedback list
@@ -88,7 +88,7 @@ OK
 4. Press and release a button on the remote control to check that feedback registration works.
 This generates two different events: `Pressed` and `Released`. If you press and hold a button, you see the `Pressed` event until you release the button. Then the `Released` event is generated.
 
-*These are the events issued when pressing and releasing the `Enter` key:*
+These are the events issued when pressing and releasing the `Enter` key:
 
 ```
 *e UserInterface InputDevice Key Action Key: KEY _ ENTER

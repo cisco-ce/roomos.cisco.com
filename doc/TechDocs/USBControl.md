@@ -88,7 +88,7 @@ OK
 4. Press and release a button on the remote control to check that feedback registration works.
 This generates two different events: `Pressed` and `Released`. If you press and hold a button, you see the `Pressed` event until you release the button. Then the `Released` event is generated.
 
-These are the events issued when pressing and releasing the `Enter` key:
+*These are the events issued when pressing and releasing the `Enter` key:*
 
 ```
 *e UserInterface InputDevice Key Action Key: KEY _ ENTER
@@ -97,7 +97,7 @@ These are the events issued when pressing and releasing the `Enter` key:
 ** end
 ```
 
-6. Write a macro that listens for the relevant *InputDevice* events and carries out the associated actions using the API of the device (this is shown in the next section).
+5. Write a macro that listens for the relevant *InputDevice* events and carries out the associated actions using the API of the device (this is shown in the next section).
 
     1. Bring the standby, volume up, and volume down buttons to life. When the macro sees an event containing `KEY _ VOLUMEUP`, `KEY _ VOLUMEDOWN`, or `KEY _ SLEEP`, it executes the related commands.
 

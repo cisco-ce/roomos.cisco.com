@@ -140,6 +140,12 @@
       "symbol": "📝"
     },
     {
+      "id": "VideoSwitch",
+      "title": "Video Switch",
+      "description": "Use of a Video Switch",
+      "symbol": "📝"
+    },
+    {
       "id": "JSXAPIStyles",
       "title": "JSxAPI coding styles",
       "description": "Several styles are supported, find out which one is the right for you",

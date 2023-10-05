@@ -65,6 +65,7 @@ To learn more about device management in Teams Admin Center, visit: https://lear
 Software versions for onboarding new devices or devices registered to other calling platforms: 
 *	Board Pro: Minimum software version RoomOS 11.3.1.16
 *	Desk Pro, Room Bar, Room Kit Pro: Minimum software version RoomOS 11.6.1.5
+*	Room Kit EQ: Minimum software version RoomOS 11.7.1.8
 
 To get the correct software version, you need to do a software upgrade from the device’s setup wizard. 
 

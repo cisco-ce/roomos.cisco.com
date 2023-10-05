@@ -38,10 +38,12 @@ Pressing and releasing a button will generate a `Pressed` and `Released` events,
 ```
 
 To listen for events, you must register feedback from the `InputDevice` events:
+
 ```
 xFeedback Register /event/UserInterface/Inputdevice
 ** end
 ```
+
 When the input device is detected by the video device, it shows up in the *UserInterface > Peripherals > ConnectedDevice* status. Note that the input device may be reported as multiple devices.
 
 ## Example use of a Third-Party USB input device

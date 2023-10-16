@@ -56,6 +56,8 @@ Widget ID will be included in all events that are associated
 with a widget. You must use the same identifier when you
 send commands to that widget via the code.
 
+**Note:** You can in theory use the same widget ID for multiple widgets, but only if those widgets are of the same type. This implies that the widgets are logically the same, such as invoking the same action (button widget) or showing the same info (text widget), in different panels.
+
 ## Events and Commands
 
 Events are notifications about things that have happened

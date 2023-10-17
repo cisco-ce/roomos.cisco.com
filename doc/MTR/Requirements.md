@@ -12,7 +12,7 @@ Supported devices:
 *	Cisco Room Kit EQ
 *	Cisco Room Kit Pro with Room Navigator
 
-Room Navigator with Board Pro is currently not supported. 
+Room Navigator with Board Pro is now supported. 
 
 Cisco Touch 10 is not supported.
 

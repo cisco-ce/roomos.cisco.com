@@ -46,6 +46,12 @@ All participants can choose whether they want to have closed captioning on the s
 
 For more information on sharing, read the **Content sharing** section [here](https://roomos.cisco.com/doc/MTR/GetStartedMTR).
 
+### Webex Webinars
+
+You can join a Webex Webinar as an attendee when the device is included in the invitation. 
+
+More information on about [Webex Webinars as an attendee](https://help.webex.com/z7jt86/).
+
 ## Limitations
 
 These features are not available during the meeting: whiteboarding, gesture recognition, Apple AirPlay, Device Assistant (wake-word based local commands, for example "Ok webex, increase my volume"), Proximity, briefing and classroom mode.  

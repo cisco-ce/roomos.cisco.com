@@ -10,6 +10,7 @@ Once a certificate has been uploaded through the device web interface, users hav
 
 After performing a factory reset, access to the local device controls of the device and navigate to **Security** > **Certificates** > **Custom**, and upload your CA certificate. Now, when you install MTR on your system, RoomOS will retrieve the content of the custom CA certificate and integrate it into the Android Keystore. 
 
+<img src="/doc/images/MTR/UploadCertificates.png" style="width: 700px" />
 
 ## Limitations regarding intercepting proxy and tenant restriction 
 

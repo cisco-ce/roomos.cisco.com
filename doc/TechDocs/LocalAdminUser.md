@@ -1,12 +1,12 @@
-# Creating a local admin user
+# Get a local admin access to your device
 
-If you want to do fun stuff with your personal Webex device, such as adding web apps, extensions, creating your own macros, or user interface elements or setting custom wallpapers, you need local admin access to the device.
+If you want to do fun stuff with your personal Cisco device, such as adding extensions, crafting custom macros, designing user interface elements, or establishing personalized wallpapers, you need a local admin access to the device.
 
 🎉 Great news: This is possible for all cloud devices in personal mode.
 
-This guide applies to every Webex video device in the market today, such as Desk Pro, Webex Board, Room Kit, Room 70 etc. It will only work for cloud registered systems.
+This guide applies to every Cisco video device in the market today, such as Board, Desk, and Room series. This works on cloud registered systems.
 
-You will factory reset your device, create a local user and register it to Webex, using only your web browser. It should take approximately 15 minutes, and will give you lots of super powers. If your video device is on your home network, make sure your laptop is not connected to VPN, otherwise you will not be able to access the web interface of your device.
+You need to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take approximately 15 minutes, and will give you lots of super powers. If your video device is on your home network, make sure your laptop is not connected to VPN, otherwise you will not be able to access the web interface of your device.
 
 This guide is also available as a step-by-step video:
 
@@ -25,11 +25,11 @@ Warning: Do NOT follow this procedure if your device is registered on Webex Edge
 Warning: Please be very careful with the changes you do, and remember to tell technical support which modifications you have done if you request support later.
 </div>
 
-Tip: open this guide on your phone, so don't need to switch between these instructions and the device web interface all the time.
+Tip: open this guide on your phone, so you don't need to switch between these instructions and the device web interface all the time.
 
 ## First time user
 
-If the Desk Pro is straight out of the box, you need to boot it up first and connect it to a network, and let it upgrade.
+If your video device is straight out of the box, you need to boot it up first, connect it to a network, and let it upgrade.
 
 ## Get the registration code
 

@@ -14,7 +14,7 @@ After performing a factory reset, access to the local device controls of the dev
 
 ## Limitations regarding intercepting proxy and tenant restriction 
 
-Intercepting certain Microsoft domains disrupts the sign-in flow, as detailed in this documentation: https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions.
+Intercepting certain Microsoft domains can disrupt the sign-in flow, as detailed in this documentation: https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions.
 
 Microsoft TLS interception support focuses on enabling tenant restrictions, intercepting these three domains: `login.microsoftonline.com`, `login.microsoft.com`, and `login.windows.net`. If interception occurs on other domains, the disruption to the sign-in flow is minimized to around 10 minutes.
 

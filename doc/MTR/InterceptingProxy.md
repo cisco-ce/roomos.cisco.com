@@ -12,6 +12,10 @@ After performing a factory reset, access to the local device controls of the dev
 
 <img src="/doc/images/MTR/UploadCertificates.png" style="width: 700px" />
 
+If you have a Cisco Room Navigator, the **certificate sync** feature needs to be enabled, as this feature synchronizes all the CAs on the codec with the Room Navigator.
+Make sure that `xConfiguration Peripherals Security Certificates SyncToPeripherals Enabled` is set to `True`. When set to `True`, the certificates are deployed on the Room Navigator.
+
+
 ## Limitations regarding intercepting proxy and tenant restriction 
 
 Intercepting certain Microsoft domains can disrupt the sign-in flow, as detailed in this documentation: https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions.

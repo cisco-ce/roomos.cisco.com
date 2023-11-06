@@ -16,6 +16,6 @@ After performing a factory reset, access to the local device controls of the dev
 
 Intercepting certain Microsoft domains disrupts the sign-in flow, as detailed in this documentation: https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions.
 
-Microsoft TLS interception support focuses on enabling tenant restrictions, intercepting these three domains: `login.microsoftonline.com`, `login.microsoft.com`, and `login.windows.net`. By directing only these domains through the intercepting proxy, the sign-in flow disruption is mitigated to approximately 10 minutes.
+Microsoft TLS interception support focuses on enabling tenant restrictions, intercepting these three domains: `login.microsoftonline.com`, `login.microsoft.com`, and `login.windows.net`. If interception occurs on other domains, the disruption to the sign-in flow is minimized to around 10 minutes.
 
 📝 As mentioned [here](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/tenant-restrictions), do not include subdomains under `*.login.microsoftonline.com` in your proxy configuration. Doing so will include `device.login.microsoftonline.com` and will interfere with Client Certificate authentication, which is used in Device Registration and Device-based Conditional Access scenarios. Configure your proxy server to exclude `device.login.microsoftonline.com` and `enterpriseregistration.windows.net` from TLS break-and-inspect and header injection.

@@ -1,12 +1,12 @@
 # Get a local admin access to your device
 
-If you want to do fun stuff with your personal Cisco device, such as adding extensions, crafting custom macros, designing user interface elements, or establishing personalized wallpapers, you need a local admin access to the device.
+If you want to do fun stuff with your personal Cisco device, such as adding extensions, crafting custom macros, designing user interface elements, or setting up personalized wallpapers, you need a local admin access to the device.
 
 🎉 Great news: This is possible for all cloud devices in personal mode.
 
 This guide applies to every Cisco video device in the market today, such as Board, Desk, and Room series. This works on cloud registered systems.
 
-You need to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take approximately 15 minutes, and will give you lots of super powers. If your video device is on your home network, make sure your laptop is not connected to VPN, otherwise you will not be able to access the web interface of your device.
+You need to factory reset your device, create a local user and register it to Webex, using only your web browser. It should take about 15 minutes, and you'll get some cool superpowers. Just make sure your laptop isn't using a VPN if your video device is on your home network, so you can access its web interface easily.
 
 This guide is also available as a step-by-step video:
 
@@ -35,21 +35,21 @@ If your video device is straight out of the box, you need to boot it up first, c
 
 <img src="/doc/images/localadmin/registration-code.png" />
 
-The procedure will require you to factory reset the video device, so it's important to make sure that you can create a registration code before you do that, otherwise you will be left with a useless video device.
+Before you start, remember to check that you **can** create a registration code as you'll need to factory reset the video device. If you skip this step, you could end up with a video device that won't work.
 
 * Go to **settings.webex.com**, log in.
-* Tap **My devices > Generate Activation Code**
+* Tap **My devices > Generate Activation Code**.
 * Copy and save the code you got. You will need this to re-register your device.
 
 ## Factory reset your device
 
-Go to the settings page of your device, and note down the IP address of your video endpoint now. If you are connected on WiFi, and do not know the WiFi password, your journey should stop here.
+Go to the settings page on your device, and write down its IP address. If you're using WiFi and don't know the password, you'll need to sort that out before moving forward.
 
 <img src="/doc/images/localadmin/factory-reset.png" />
 
-* Find and click **Factory reset**, and wait for your device to reboot.
-* Tap "Start"
-* If you are on a wireless network, connect to it
+* Tap **Factory reset** on the settings page and wait for your device to reboot.
+* Tap **Start**.
+* If you are on a wireless network, connect to it.
 
 ```alert
 DO NOT register your device yet.
@@ -65,20 +65,20 @@ Now we need to create a local admin user, while the system is unlocked. Find the
 DO NOT register your device yet.
 ```
 
-Your browser will most likely show you a warning because the web site uses a self signed certificate. You need to accept this (the various browsers are making this increasingly cumbersome, so be sure to read the warning text carefully).
+When you visit the website, your browser might display a warning about a self-signed certificate. Don't worry, you'll need to accept this (though be aware that different browsers may make this process a bit tricky, so carefully read the warning text).
 
 You should then see the login page of the web interface of your video device.
 
 <img src="/doc/images/localadmin/login-vega.png" />
 
-* Log in as user **admin** with no password.
+* Log in as user **admin** with no password
 * Go to **Users > Create User**
 * Choose a user name, make sure all the roles are selected
 * Set Status **Active**
 * Un-select **Require passphrase change**
 * Select a passphrase, add it again in the **Repeat passphrase** field
 * Leave **Your passphrase** field empty
-* Click **Create**. Scroll up and verify that there is a message confirming that the user was created.
+* Click **Create**. Scroll up and verify that there is a message confirming that the user was created
 
 <img src="/doc/images/localadmin/create-user.png" />
 
@@ -91,16 +91,16 @@ You will now register the device, but from the web admin interface instead of on
 
 With the device's web interface:
 
-* Go to **Home**
-* Under **Register device**, click **Register to Webex**
-* Uncheck **Disable local users and integrations**. This means your admin user will be still active after registering your device
+* Go to **Home**.
+* Under **Register device**, click **Register to Webex**.
+* Uncheck **Disable local users and integrations**. This means your admin user will still be active after registering your device.
 * Enter the registration code you obtained earlier, and click **Register**.
 
-**Note:** If your device software for some reason is older than May 2021, you may not have the **Register device** menu. That's ok, see bottom of this document for an alternative.
+**Note:** If your device software is older than May 2021, the **Register device** menu may not be available. Don't worry; check the bottom of this document for an alternative solution.
 
 ## Finish the registration on your device
 
-Your device should now be registered, but it might still be on the network page. Click next to proceed, and select timezone. You should now be able to tap next, set timezone etc and be ready.
+Your device should now be registered, but might still be on the **network** page. Now you should be able to tap **next**, set up your timezone and other configurations, and you're good to go!
 
 <img src="/doc/images/localadmin/setup-done.png" />
 
@@ -108,7 +108,7 @@ Your device should now be registered, but it might still be on the network page.
 
 On the web interface on your laptop, tap the avatar in the top right corner and log out, then back in with your new user.
 
-🥳 Congratulations! You are now the master of your own video device. You should now be able to change wallpapers, configure advanced settings, add macros, user interface extensions, web applications, create external integrations etc. But remember, with great power comes great responsibility.
+🥳 Congratulations! You are now the master of your own video device. You should now be able to change wallpapers, configure advanced settings, add macros, add user interface extensions, web applications, create external integrations etc. But remember, with great power comes great responsibility.
 
 ---
 
@@ -116,7 +116,7 @@ On the web interface on your laptop, tap the avatar in the top right corner and 
 
 If you don't have the **Register device** button on the home screen of your device's local web interface, you can register with a command instead:
 
-* Go to **Developer API**
+* Go to **Developer API**.
 * Copy and paste the following command into the text area that says **Enter commands**.
 
 <img src="/doc/images/localadmin/register-code.png" />
@@ -128,8 +128,8 @@ xCommand Webex Registration Start ActivationCode: 0123456789 SecurityAction: NoA
 
 * Be sure to enter the command on **one line**.
 * Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
-* Click **Execute**
+* Click **Execute**.
 
 There should now be an answer saying "1 of 1 applied succesfully".
-That means your has been registered again, and that the user you created is not disabled.
+That means your device has been registered again, and that the user you created is not disabled.
 

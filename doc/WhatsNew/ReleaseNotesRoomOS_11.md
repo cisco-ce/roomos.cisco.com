@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.07 - September 2023
+D15504.08 - November 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.07 - September 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>8</td> 
+		<td>November 9th 2023</td> 
+		<td>
+			Release of <a href='#11.9' title='Jump to section'>RoomOS 11.9.2.4</a> c05310d8c51, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>7</td> 
@@ -75,7 +82,7 @@ This release note describes new software features and capabilities included in R
 	</tr>
 	<tr>
 		<td>
-			Cisco Room USB**, Room Kit Mini, Room Kit, Room Kit EQ, Room Bar, Room Bar Pro, Room 55<br> 
+			Cisco Room USB**, Room Kit Mini, Room Kit, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Room 55<br> 
 			Cisco Codec Plus, Codec Pro<br>
 			Cisco Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
 			Cisco Room Panorama**, Room 70 Panorama**
@@ -130,7 +137,7 @@ NOTE: We have previously announced that SNMP would be removed from RoomOS 11. Ro
 **RoomOS 10 will soon be deprecated and EOS**<br>
 The next on-premises software release for RoomOS 11 targeted end of June 2023 will make RoomOS 10 obsolete and end of support. Cisco supports and releases new software versions for two minor software releases per product. Since all products that have support for RoomOS 10 also have support for RoomOS 11, the RoomOS 10 software line will go end of support quicker than for example CE9 that several legacy products still depends on. 
 
-RoomOS 10 will not be removed from cisco.com right away, but will likely happen during the last quarter of 2023. Please prepare your devices and environment for upgrade to RoomOS 11 in order to stay on supported software.  
+RoomOS 10 will not be removed from cisco.com right away, but will likely happen during the first quarter of 2024. Please prepare your devices and environment for upgrade to RoomOS 11 in order to stay on supported software.  
 
 **Provisioning Mode "VCS" will soon be obsolete**<br>
 The setting "xConfiguration Provisioning Mode: VCS" will be deprecated in one of the next RoomOS 11 minor releases. This provisioning mode has been used for TMS Provisioning Extension (TMSPE) and is no longer supported. 
@@ -146,7 +153,221 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 <br><br>
 
-# Release summary for RoomOS 11.5 <a name='11.5'></a>
+<a name='11.9'></a>
+
+# Release summary for RoomOS 11.9 
+
+## Notes and warnings for this software release
+
+RoomOS 11.9 enables support for the new Cisco Room Kit EQX and lots of useful features. Please see below for more information. 
+
+## RoomOS 11.9.2.4
+
+* [Support for Cisco Room Kit EQX](#11924-1)
+* [Home screen web widgets](#11924-2)
+* [Presenter and Audience Room Mode](#11924-3)
+* [Meeting Zone Configuration](#11924-4)
+* [MS Teams join button for CVI](#11924-5)
+* [AES67 interoperability on Room Devices](#11924-6)
+* [CA Certificate synchronization between Room Device and Room Navigator](#11924-7)
+* [Enable Web Views to trust the devices own self-signed certificate](#11924-8)
+* [Standalone Navigator for on-premises management](#11924-9)
+* [Infrastructure mode in Miracast®](#11924-10)
+* <b>Webex Edge for Devices (non-optimized)</b>
+    * [Media over HTTP Proxy](#media-over-http-proxy)
+	* [Thousand Eyes Integration](#thousand-eyes-integration)
+* <b>Other</b>
+	* [Improved meeting reminders](#improved-meeting-reminders)
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.9.2.4](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.9.2.4&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.9.2.4 feature descriptions 
+
+<a name='11924-1'></a>
+
+## Support for Cisco Room Kit EQX
+
+RoomOS 11.9.2.4 now comes with support for our new flagship model, the Cisco Room Kit EQX. Cisco Room Kit EQX is a state-of-the-art video conferencing bundle tailored for large meeting rooms, delivering an exceptional experience. Built on the advanced Room Kit EQ technology, it features the powerful Codec EQ and a fully integrated Quad Camera. This system works in perfect harmony with your external displays in sizes of 65" or 75" inches and boasts an integrated loudspeaker system with six main units and a sub-woofer, all driven by a single amplifier. Designed for AI, clarity and connectivity, the Room Kit EQX ensures every meeting is an immersive, high-fidelity encounter.
+
+For more information, please visit this link: https://www.webex.com/us/en/devices/room-series/cisco-room-kit-eqx.html
+
+For UCM registration, the Room Kit EQX may require that you install a new device pack.
+Room Kit EQX is supported in the latest device packs for UCM 12.5 and 14.0 (July 2023 release)
+
+[UCM 12.5 Device packs](https://software.cisco.com/download/home/286322286/type/282074299/release/12.5(1.18198))<br>
+[UCM 14.0 Device packs](https://software.cisco.com/download/home/286328117/type/282074299/release/14.0(1.14044))
+
+<a name='11924-2'></a>
+
+## Home screen web widgets
+
+Now, you have the option to enable a compact web view that won't take over your entire screen like a regular web view. This is especially useful for displaying the web app in the form of a small card, for example, providing information about the environment or meeting room directly on your device's main screen next to the clock. It's important to remember that the device only renders the web app through an external URL and you can only have one Web Widget enabled on the home screen. 
+
+<img src="/doc/images/releases/webwidget.png" style="border: none; height: 300px; width: auto; margin-left: 70px;">
+
+You will find an option to configure the web widget in the UI Extensions editor on the device's web interface. 
+
+The device must have Web Engine enabled for this feature to work. 
+
+Note: The home screen web widget is displayed on the screen, not on peripherals like the Cisco Room Navigator. 
+
+Follow [this link](https://help.webex.com/en-us/article/nrsrs8f/Set-up-web-widgets-on-Board,-Desk,-and-Room-series-devices) for more information
+
+**Supported products**<br>
+All products 
+
+<a name='11924-3'></a>
+
+## Presenter and Audience Room Mode
+
+Presenter and Audience is a new Room Mode that is essentially a combination of Briefing Room and Classroom mode and will eventually replace these modes. The Briefing Room and Classroom modes are still there together with the Presenter and Audience for the lifespan of RoomOS 11.x. Briefing Room and Classroom modes are planned to be decommissioned with the release of RoomOS 12 in 2024.
+
+The main difference between Classroom and Briefing Room is the number of screens it supports. Briefing Room only offered support for three screens while Classroom offered more flexibility for two and three screens. 
+
+Presenter and Audience is essentially the same as both Briefing Room and Classroom mode combined but with a few essential updates. 
+
+In previous Classroom or Briefing Room configurations, we offered modes like Local Presenter, Remote Presenter, and Discussion to cater to various presentation scenarios. However, these modes often lacked sufficient control. For example, selecting 'Remote Presenter' could inadvertently switch to 'Local Presenter' if someone entered a specific area, leading to a less than ideal experience.
+
+To address this, we've introduced a 'manual mode' in our Presenter and Audience mode. Now, when you select a mode on the touch panel, it locks in until you decide to change it. For those who prefer the previous settings, selecting 'Auto' will retain the original automatic switching functionality.
+
+Additionally, we've refined the modes available. 'Discussion' mode has been replaced with 'Hybrid Presenter'—a versatile new option that merges 'Local Presenter' with 'Remote Presenter.' This allows for a dynamic presentation where you can share the stage with a remote participant displayed on the screen.
+
+We also added a new tool for Presenter and Audience in the device settings Issues and Diagnostics > Presenter & Audience Diagnostics. In this tool you can configure the microphone orientation for the connected microphones to be either "Audience" or "Stage". In addition you can see the live volume from the stage and audience including intelligent voice detection probability and more.
+
+Please refer to the setup documentation for more information. [Setup documentation](https://help.webex.com/nlio4t1/) - will be available shortly after release. 
+
+**Supported products**<br>
+Cisco Codec EQ, Codec Pro, Codec Plus
+Cisco Room Kit EQX, Room 70 G2, Room 70, Room 55 Dual
+
+<a name='11924-4'></a>
+
+## Meeting Zone Configuration
+
+The "Meeting Zone" feature allows you to customize the area that your conference device monitors during meetings. To set it up, go to the device settings on the touch panel and navigate to the "Meeting Zone" settings. Here, you'll choose whether your meeting area is round or square. Based on your selection, you'll get a preset layout that you can adjust to define the exact meeting space.
+
+This function is particularly useful for rooms with glass walls where people passing by could unintentionally be counted as participants or in any sense, become an unintentional "focus". By configuring the "Meeting Zone", you can prevent this by specifying which areas are included in the meeting boundary. Individuals outside this zone won't affect the people count or disrupt your device intelligence in any way.
+
+**Supported products**<br>
+All products
+This feature is not supported together with Speaker Track 60.
+
+<a name='11924-5'></a>
+
+## MS Teams join button for CVI
+
+We have added a Microsoft Teams Join button for CVI calls. You can now join a MS teams meeting directly from the device by typing in the meeting details prompted by the MS Teams Join button. WebRTC calls is not supported using this button for on-premises deployments. You configure the CVI tenant information using the following configuration that will be default. 
+
+[xConfiguration UserInterface MeetingJoin CVITenants](https://roomos.cisco.com/xapi/Configuration.UserInterface.MeetingJoin.CVITenants/)
+
+**Supported products**<br>
+All products
+
+<a name='11924-6'></a>
+
+## AES67 interoperability on Room Devices
+
+If the Cisco collaboration device and third-party microphones or loudspeakers support the AES67 standard, you can connect the third-party peripherals directly to the device using Ethernet.
+
+Selected Cisco devices support the AES67 standard for audio transport over Ethernet. 
+
+Please read this [comprehensive guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/microphone/installation_guide/aes67-setup-guide.pdf) for more information about this feature.
+
+**Supported products**<br>
+Codec EQ, Room Bar Pro, Codec Pro 
+
+<a name='11924-7'></a>
+
+## CA Certificate synchronization between Room Device and Room Navigator
+
+With this feature enabled, the codec will sync it's CA certificates to it's connected Room Navigators. This will make certificate management of the Room Navigator easier. 
+
+The feature is enabled by default but can be turned off, [xConfiguration Peripherals Security Certificates SyncToPeripherals Enabled](https://roomos.cisco.com/xapi/Configuration.Peripherals.Security.Certificates.SyncToPeripherals.Enabled/). 
+
+**Supported products**<br>
+All products
+
+<a name='11924-8'></a>
+
+## Enable Web Views to trust the devices own self-signed certificate
+
+This will allow the device to load a web view of it's own web interface while using a self-signed certificate. It will also allow web apps that is loaded on the device to connect to the xAPI using WebSockets, for example, the 'jsxapi' module and interact with the xAPI directly. 
+
+It is important to note that this setting is only for the device's own self-signed certificate and will not work as a bypass for other websites. 
+
+This feature is disabled by default, [xConfiguration WebEngine Features AllowDeviceCertificate](https://roomos.cisco.com/xapi/Configuration.WebEngine.Features.AllowDeviceCertificate/).
+
+**Supported products**<br>
+All products
+
+<a name='11924-9'></a>
+
+## Standalone Room Navigator for on-premises management
+
+You can now choose to use the Cisco Room Navigator as a standalone device without having to connect it to a codec or register it anywhere. 
+
+To set it up, the Cisco Room Navigator must be running RoomOS 11.9.x and be in a factory reset state. Follow the wizard on the Room Navigator and select "Setup as Standalone". In this mode, you will be prompted to setup a username and password, which can be used to access the Room Navigator Web Interface or xAPI. 
+
+Important: In standalone mode, the Room Navigator is only supported with Persistent Web App mode. This means you'll need to run a web app on the device to use it with any of your custom setups.
+
+In this scenario, it is not possible to register the Room Navigator to a Cisco management system. The responsibility of managing the device, configurations, firmware, and web apps lies with the user or administrator.
+
+The Room Navigator is upgraded the same way as any Room Device using the web interface. You can also connect the Room Navigator to a codec that is running supported software as this will automatically upgrade the Cisco Room Navigator to match the software version. 
+
+**Supported products**<br>
+Cisco Room Navigator
+
+<a name='11924-10'></a>
+
+## Infrastructure mode in Miracast®
+
+Infrastructure mode or MS-MICE (1), [xConfiguration Video Input Miracast Transport](https://roomos.cisco.com/xapi/Configuration.Video.Input.Miracast.Transport/), will allow you to use the existing network to project content from Windows clients. The projecting device (i.e. laptop) must be on the same network as the Room Device when "Infrastructure" is enabled as transport. You can use the existing Wi-Fi network or Ethernet. 
+
+Guest sharing (using Wi-Fi Direct will be disabled in this mode). This can also prevent the devices using Wi-Fi Direct to interfere with the existing Wi-Fi network. 
+
+Please read [this document](https://help.webex.com/en-us/article/w60modb/Configure-wireless-sharing-with-Miracast%C2%AE) for a more detailed overview of this feature. 
+
+**Supported products**<br>
+All products
+
+## Webex Edge for Devices
+
+Features that is available for devices in Webex Edge for Devices mode (non-optimized)
+
+<a name='media-over-http-proxy'></a>
+
+## Media over HTTP Proxy 
+
+Enabling the Media over HTTP Proxy feature allows the Proxy to handle both the signalling and media (Audio and Video) transmission. This implementation is aimed at meeting specific compliance requirements. However, it is important to note that enabling this feature can introduce various challenges, such as congestion and capacity issues, packet loss, latency, complex routing, rate limits, and IP filtering. It is advised to enable this feature only when there is no other option available for direct media transport.  
+
+[xConfiguration Webex Meetings HttpProxyForMedia Mode](https://roomos.cisco.com/xapi/Configuration.Webex.Meetings.HttpProxyForMedia.Mode/)
+
+<a name='thousand-eyes-integration'></a>
+
+## Thousand Eyes Integration 
+
+Support for Thousand Eyes Integration. Read more about the integration here, [Thousand Eyes Integration with Control Hub](https://docs.thousandeyes.com/product-documentation/integration-guides/custom-built-integrations/webex-controlhub)
+
+## Other 
+
+Other minor changes to note.
+
+<a name='improved-meeting-reminders'></a>
+
+## Improved meeting reminders
+
+We have improved the meeting reminder behavior. For example, you will see the meeting reminders in View PC mode, avatars of participants will be added if applicable and changing the "click away" action to snoozing a meeting and more. 
+
+**Supported products**<br>
+All products
+
+<hr>
+
+<a name='11.5'></a>
+
+# Release summary for RoomOS 11.5 
 
 ## Notes and warnings for this software release
 
@@ -303,7 +524,9 @@ Cisco Room Kit Mini with Samsung Flip has not been supported with the first rele
 
 Note: We only have support for Room Kit Mini together with Samsung Flip (WM55R and WM65R), any other combination is considered unsupported.  
 
-# Release summary for RoomOS 11.1 <a name='11.1'></a>
+<a name='11.1'></a>
+
+# Release summary for RoomOS 11.1 
 
 ## Notes and warnings for this software release
 
@@ -630,13 +853,16 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, <s>Room USB</s>, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_5_3_3.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_9_2_4.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room 70 G2, Room Bar, <s>Room 70 Panorama</s>, <s>Room Panorama</s>, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_5_3_3.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_9_2_4.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_5_3_3.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_9_2_4.pkg</b></td>
+	</tr>
+	<tr>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_9_2_4.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -773,9 +999,9 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<th style="background-color: gray;"><b>Note</b></th>
 	</tr>
 	<tr>
-		<td>N/A</td>
-		<td>N/A</td>
-		<td>N/A</td>
+		<td>November 9th 2023</td>
+		<td>11.1.2.4<br>11.1.3.1<br>11.1.4.1</td>
+		<td>Deferred according to policy (end of support for RoomOS 11.1)</td>
 	</tr>
 </table>
 
@@ -1113,6 +1339,14 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0-2</td> <td>All</td>
 	</tr>
 	<tr>
+		<td>Cisco Room Kit EQX</td> 
+		<td>0</td> <td>11.9.2.4</td>
+	</tr>
+	<tr>
+		<td>Cisco Room Kit EQ</td> 
+		<td>0</td> <td>All</td>
+	</tr>
+	<tr>
 		<td>Cisco Codec Pro</td> 
 		<td>0-2</td> <td>All</td>
 	</tr>
@@ -1123,6 +1357,14 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	<tr>
 		<td>Cisco Room Kit Mini</td> 
 		<td>0</td> <td>All</td>
+	</tr>
+	<tr>
+		<td>Cisco Room Bar</td> 
+		<td>0</td> <td>All</td>
+	</tr>
+	<tr>
+		<td>Cisco Room Bar Pro</td> 
+		<td>0</td> <td>11.5.2.4</td>
 	</tr>
 	<tr>
 		<td>Cisco Room USB	</td> 
@@ -1249,6 +1491,8 @@ New hardware revisions of the Cisco TelePresence Precision 60 camera are identif
 **Notes for Cisco PTZ 4K camera**
 
 The camera setup switch is for selecting the video signal format to be "output" from the HDMI OUT terminal. This should always be set to 6 in order to be controlled by the Room Device. 
+
+Please take note that the camera MAC address is being used as the serial number to identify and address the camera on the Room Device. The codec does not receive the serial number information from this camera. To find the actual serial number of the camera, please refer to the label located beneath the physical unit.
 
 For more information about the Webex PTZ 4K Camera, please [follow this link](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/collaboration-peripherals/webex-ptz-4k-camera-ds.html). 
 

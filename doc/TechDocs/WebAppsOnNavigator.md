@@ -1,15 +1,15 @@
-### Developing Web apps on Navigator
-Webapps can be run on the Webex Room Navigator by choosing the Persistent Web app mode during onboarding. Running a third-party web application on a Cisco Webex Room Navigator lets you integrate your company's custom solution for managing room bookings and communicating workplace guidelines and information.
+### Developing Web applications on the Room Navigator
+Run web applications on Room Navigator by selecting Persistent Web App mode during onboarding, enabling seamless integration of third-party solutions for room bookings and communicating workplace guidelines and information.
 
-Steps to setup the Navigator to run a WebApp is available in [Configure a persistent web app on Webex Room Navigator.](https://help.webex.com/en-us/article/ohq3u6/Configure-a-persistent-web-app-on-Webex-Room-Navigator)
+Steps to setup the Room Navigator to run a web app is available in [Configure a persistent web app on Room Navigator.](https://help.webex.com/en-us/article/ohq3u6/Configure-a-persistent-web-app-on-Webex-Room-Navigator)
 
-Webapps in Persistent Web App mode can integrate directly with the paired codec by using JSXAPI to bind to the XAPI of the codec and issue commands, configs, and read status. This communication is done through an embedded JSXAPI object available to apps deployed in the web view, so no other configuration is needed.
+Web apps in Persistent Web App mode can integrate directly with the paired codec by using JSXAPI to bind to the XAPI of the codec and issue commands, configs, and read status. This communication is done through an embedded JSXAPI object available to apps deployed in the web view, so no other configuration is needed.
 
 To learn more about JSXAPI support in general, please read the [JSXAPI Introduction](https://roomos.cisco.com/docs/JSXAPI/Intro.md). The connecting logic listed in these documents is not necessary when in persistent web app mode, as the connection is done for you!
 
-For an example of a Persistent Web app that uses JSXAPI to interact with the devices XAPI see the [sample Persistent Web app.](https://github.com/cisco-ce/roomos-samples/tree/main/navigator/navigator-webapp)
+For an example of a Persistent Web App that uses JSXAPI to interact with the devices XAPI see the [sample Persistent Web App.](https://github.com/cisco-ce/roomos-samples/tree/main/navigator/navigator-webapp)
 
-Supported XAPI's for Persistent Web app mode are listed below:
+Supported XAPI's for Persistent Web App mode are listed below:
 
 [xConfiguration SystemUnit Name](https://roomos.cisco.com/xapi/Configuration.SystemUnit.Name/)
 

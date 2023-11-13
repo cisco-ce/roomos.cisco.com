@@ -1,4 +1,4 @@
-### Developing Web applications on the Room Navigator
+### Developing web applications on the Room Navigator
 Run web applications on Room Navigator by selecting Persistent Web App mode during onboarding, enabling seamless integration of third-party solutions for room bookings and communicating workplace guidelines and information.
 
 Steps to setup the Room Navigator to run a web app is available in [Configure a persistent web app on Room Navigator.](https://help.webex.com/en-us/article/ohq3u6/Configure-a-persistent-web-app-on-Webex-Room-Navigator)

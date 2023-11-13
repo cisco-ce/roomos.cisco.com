@@ -1,6 +1,6 @@
-# Camera options
+# Camera settings
 
-## Select a camera mode
+## Access different camera modes
 
 You can select a camera mode that ensures the best view for your meeting and device. The camera can switch from one speaker to the next, automatically adjust so that you are always centered, group participants together, or you can choose to adjust it manually. 
 
@@ -9,13 +9,15 @@ By selecting an automatic camera mode you'll get the best view for your device a
 Depending on the device you're using, there are a few different modes to choose from:
 
 
-* Group: The camera will adjust to show everyone. 
-* Frames: The camera will zoom and show people individually or in smaller groups. 
-*	Speaker: The camera will follow the person speaking. The maximum distance for speaker tracking to work is 7.5 meters. 
+* **Group**: The camera will adjust to show everyone. 
+* **Frames**: The camera will zoom and show people individually or in smaller groups. 
+*	**Speaker**: The camera will follow the person speaking. The maximum distance for speaker tracking to work is 7.5 meters.
+
+### Select a camera mode
 
 1.	Swipe from the right on the home screen or on the Room Navigator. Tap **Camera**. 
 2.	If the camera modes are not visible, Tap **Camera mode** and then **Auto**. 
-3.	Choose a mode. You can choose between Group, Frames, or Speaker.
+3.	Choose a mode. You can choose between **Group**, **Frames**, or **Speaker**.
 
 <img src="/doc/images/MTR/CameraModeAuto.png" style="width: 200px" />
 

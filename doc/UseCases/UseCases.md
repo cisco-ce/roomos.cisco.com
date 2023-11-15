@@ -1,11 +1,11 @@
 
-# Using Cisco device APIs to address hybrid work scenarios
+# Use Cisco device APIs to address hybrid work scenarios
 
 ## Overview
 
-With Cisco video devices you have the ability to have meetings from anywhere. The value to the user is that they have an experience that is inclusive, flexible, supportive, managed and secure. The outcomes are meetings that are easy to set up with space management platforms, engaging, productive and drive a sense of belonging to improve employee retention. Similarly the employees well being can be improved with supportive hybrid work that is safe, ergonomic , sanitized and improves sustainability
+With Cisco devices, you can conduct meetings from anywhere, providing users with a flexible, inclusive, and secure experience. This not only facilitates easy setup through space management platforms but also ensures engaging, productive meetings that foster a sense of belonging and enhance employee retention. Additionally, the supportive hybrid work environment created by Cisco devices promotes employee well-being by prioritizing safety, ergonomics, sanitization, and sustainability.
 
-This document gives an overview for integrators, be they resellers or software solution partners, to understand how they can configure and program with API’s for customers’ specific requirements for their organization and how they manage their employees engagement , well being and workflow.
+This document gives an overview for integrators, whether they are resellers or software solution partners. It aims to help them understand how to configure and program APIs to meet the specific requirements of their customers' organizations. By doing so, they can effectively manage employee engagement, well-being, and workflow to create a tailored solution.
 
 <img src="/doc/images/usecases/examples.png" />
 
@@ -13,11 +13,11 @@ This document gives an overview for integrators, be they resellers or software s
 
 ## Resources
 
-For those that are not familiar with Cisco API’s there are 2 resources that will enable you to gain a deep understanding of what is possible.
+For those unfamiliar with Cisco APIs, the two following resources will provide a thorough understanding of the possibilities they offer.
 
-https://developer.webex.com – this is for all API’s related to the whole Webex platform (Calling, Meetings, Messaging, Contact Center, Webex Assistant, Admin, FedRAMP and devices) Sign Up for free and explore all the capabilities
+https://developer.webex.com – this is for all the APIs related to the whole Webex platform (Calling, Meetings, Messaging, Contact Center, Webex Assistant, Admin, FedRAMP and devices). Sign up for free and explore all the capabilities.
 
-https://roomos.cisco.com – this is specifically for developing on RoomOS, which is the operating system for Cisco video devices and keeps it all under the realm of devices without all of the other Webex Platform elements above. At the same time there are specific macros examples for devices with the code on Github as examples.
+https://roomos.cisco.com – this resource is dedicated to RoomOS development, focusing exclusively on the operating system for Cisco video devices. It provides a focused exploration within the realm of devices, excluding the broader Webex Platform elements. Additionally, specific macro examples with corresponding code can be found on GitHub, serving as practical illustrations for developers.
 
 ## Use cases
 
@@ -25,11 +25,11 @@ https://roomos.cisco.com – this is specifically for developing on RoomOS, whic
 
 The use cases are associated to where the person is working from and how to engage with them at that place.  For devices that you can program this will likely be a static place, such as the home, office, hot desk, conference room, huddle space, board room, phone booth kiosk etc.
 
-The table below displays the use cases, what the outcomes can be and which API’s you should look at and integrate with a 3rd party platform if needed. Many API’s are considered xAPI’s which means they can be executed with Control Hub, which is the cloud management system, not requiring an individual call to the device itself, allowing for scaling of commands and use cases and centralizing.
+The table below outlines various use cases, potential outcomes, and identifies the specific APIs to explore and integrate with third-party platforms if necessary. Numerous APIs fall under the category of xAPIs, enabling execution through Control Hub, the cloud management system. This approach eliminates the need for individual calls to the device, facilitating scalable command execution, use case implementation, and centralization.
 
 ## Hybrid work solutions
 
-The following use cases will be covered at a high level.  Many of the API’s can be mixed as well to cover multiple use cases:
+The following use cases will be covered at a high level.  Many of the APIs can be mixed as well to cover multiple use cases:
 
 * Space management
   * Enhanced version of room booking often including hot desks

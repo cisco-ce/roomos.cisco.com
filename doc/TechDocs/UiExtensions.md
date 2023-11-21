@@ -32,6 +32,7 @@ You will be presented with the following options:
 1. UI panels allow you to create custom panels with widgets (e.g., sliders, switches, buttons) to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md).
 2. Action buttons are simple buttons that execute a command when pressed (e.g., dial a number).
 3. Web Apps are for video devices with a Web Engine: a button launches a web view in full screen on the user interface.
+4. web widgets appear on the home screen of your Cisco device. This is particularly useful for company announcements, displaying QR codes, room information, and more. 
 
 Each of these will add a new button to the user interface. Only a few buttons will be added to the main page before it runs out of space. To access the overflow buttons, swipe from right to left in the screen area where the icons are displayed.
 

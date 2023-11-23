@@ -4,11 +4,11 @@ An intercepting proxy is a tool that sits between a user's device and the intern
 
 To enable the use of an intercepting proxy for a specific customer, they need to provision a CA certificate, which is then added to the Android Keystore. In the default MTR environment, the CA trusted by Android Open Source Project code (AOSP) and those added by Microsoft are stored in the Android Keystore.
 
-Once a certificate has been uploaded through the device web interface, users have to factory reset their device to ensure that Android recognizes and incorporates the CA certificate into the Android Keystore.
+Once a certificate has been uploaded through the device web interface, users have to reboot their device to ensure that Android recognizes and incorporates the CA certificate into the Android Keystore.
 
 ## Add the CA certificate
 
-After performing a factory reset, access to the local device controls of the device and navigate to **Security** > **Certificates** > **Custom**, and upload your CA certificate. Now, when you install MTR on your system, RoomOS will retrieve the content of the custom CA certificate and integrate it into the Android Keystore. 
+Access to the local device controls of the device and navigate to **Security** > **Certificates** > **Custom**, and upload your CA certificate. Now, when you install MTR on your system, RoomOS will retrieve the content of the custom CA certificate and integrate it into the Android Keystore. 
 
 <img src="/doc/images/MTR/UploadCertificates.png" style="width: 700px" />
 

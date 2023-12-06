@@ -1,6 +1,6 @@
 # User Interface Extensions
 
-The Board, Desk, and Room series devices feature User Interface (UI) Extensions that enable you to design new panels and action buttons for creating custom functionalities. The extensions appear as additional activities on the home screen, and users can interact with them. This can be used to simplify the workflow, automate tasks on the video device, or control entirely different devices in the room, such as lights, blinds, air condition, etc.
+The Board, Desk, and Room series devices feature User Interface (UI) Extensions that enable you to design new panels and action buttons for creating custom functionalities. The extensions appear as additional buttons on the home screen or in the control panel, and users can interact with them.This can be used to simplify the workflow, automate tasks on the video device, or control entirely different devices in the room, such as lights, blinds, air condition, etc.
 
 A UI extension is a user interface component with no built-in control logic. When users interact with these UI elements, they trigger events that developers can monitor and respond to, either by employing macros or integrating external functionalities, such as through JSXAPI. This flexibility empowers developers to design UIs capable of diverse actions, like controlling meeting room lighting, sending messages upon detecting a specific number of individuals in a meeting room, or starting the coffee machine, according to their requirements. 
 
@@ -32,14 +32,15 @@ You will be presented with the following options:
 1. UI panels allow you to create custom panels with widgets (e.g., sliders, switches, buttons) to control your video device or other peripherals in the room. [See more details](./UiExtensions-Panels.md).
 2. Action buttons are simple buttons that execute a command when pressed (e.g., dial a number).
 3. Web Apps are for video devices with a Web Engine: a button launches a web view in full screen on the user interface.
-4. web widgets appear on the home screen of your Cisco device. This is particularly useful for company announcements, displaying QR codes, room information, and more. 
+4. Web widgets appear on the home screen of your Cisco device. This is particularly useful for company announcements, displaying QR codes, room information, and more. 
 
 Each of these will add a new button to the user interface. Only a few buttons will be added to the main page before it runs out of space. To access the overflow buttons, swipe from right to left in the screen area where the icons are displayed.
+UI panels, action buttons, and web apps can also be added in the control panel. Web widgets are only displayed on the home screen and can't be added in the control panel.
 
 ### A Tour of the UI Extensions Editor 
 
 To get started, create a new panel and drag some widgets into the panel. 
-You can change the default names by double-clicking on them and entering new text. Click **Enter** to apply the change.
+You can change the default names by double-clicking on them and entering new text. Press **Enter** to apply the change.
 When you are ready to see your changes on the device, click the **Export** button.
 
 <img src="/doc/images/uiextensions/uiextns-editor.png"/>
@@ -48,7 +49,7 @@ Pre-existing extensions will be shown in the left pane. To edit an existing exte
 <img src="/doc/images/uiextensions/uiextns-editor-3.png"/>
 
 You can access the properties of a panel or widget by clicking on its title. 
-A yellow frame wil be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
+A yellow frame will be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
 
 <img src="/doc/images/uiextensions/uiextns-editor-2.png"/>
 

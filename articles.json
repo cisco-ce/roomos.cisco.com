@@ -254,13 +254,8 @@
       "title": "Using the device API",
       "description": "How to use the Cisco device's xAPI.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "InterceptingProxy",
-      "title": "Set up an intercepting proxy",
-      "description": "How to configure an intercepting proxy on a Cisco device.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
+
     
   ],
   "WhatsNew": [

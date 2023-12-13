@@ -11,7 +11,6 @@ Supported devices:
 *	Cisco Room Bar
 *	Cisco Room Bar Pro
 *	Cisco Room Kit EQ
-*	Cisco Room Kit EQX
 *	Cisco Room Kit Pro with Room Navigator
 
 Room Navigator with Board Pro is now supported. 

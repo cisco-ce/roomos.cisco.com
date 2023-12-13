@@ -52,6 +52,14 @@ You can join a Webex Webinar as an attendee when the device is included in the i
 
 More information on about [Webex Webinars as an attendee](https://help.webex.com/z7jt86/).
 
+### Webex whiteboarding
+
+Webex whiteboard is available in Webex meetings. You can automatically see Whiteboards shared by others in the meeting. On Devices with a touch display, you can open whiteboards in collaborative mode, and a new whiteboard can be started from a button in the in-meeting call controls.
+
+Note that save, duplicate, and delete workflows are not offered on devices with Microsoft Teams Rooms. Whiteboards created from a device with Microsoft Teams Rooms will be automatically deleted when the meeting ends.
+
+More information on about [the whiteboard functionality](https://help.webex.com/zfhy55/).
+
 ## Limitations
 
-These features are not available during the meeting: whiteboarding, gesture recognition, Apple AirPlay, Device Assistant (wake-word based local commands, for example "Ok webex, increase my volume"), Proximity, briefing and classroom mode.  
+These features are not available during the meeting: gesture recognition, Apple AirPlay, Device Assistant (wake-word based local commands, for example "Ok webex, increase my volume"), Proximity, briefing and classroom mode.  

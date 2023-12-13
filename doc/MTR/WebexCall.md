@@ -54,7 +54,7 @@ More information on about [Webex Webinars as an attendee](https://help.webex.com
 
 ### Webex whiteboarding
 
-Webex whiteboard is available in Webex meetings. You can automatically see Whiteboards shared by others in the meeting. On Devices with a touch display, you can open whiteboards in collaborative mode, and a new whiteboard can be started from a button in the in-meeting call controls.
+Webex whiteboards are available in Webex meetings. You can automatically see Whiteboards shared by others in the meeting. On Devices with a touch display, you can open whiteboards in collaborative mode, and a new whiteboard can be started from a button in the in-meeting call controls.
 
 Note that save, duplicate, and delete workflows are not offered on devices with Microsoft Teams Rooms. Whiteboards created from a device with Microsoft Teams Rooms will be automatically deleted when the meeting ends.
 

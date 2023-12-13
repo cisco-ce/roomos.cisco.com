@@ -55,7 +55,7 @@ Pre-existing extensions will be shown in the left pane. To edit an existing exte
 You can access the properties of a panel or widget by clicking on its title. 
 A yellow frame will be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
 
-<img src="/doc/images/uiextensions/uiextns-editor-2.png" style="width: 500px"/>
+<img src="/doc/images/uiextensions/uiextns-editor-2.png" style="width: 300px"/>
 
 Choose where you want the button to be displayed. You can have it on the home screen, call controls, or control panel.
 

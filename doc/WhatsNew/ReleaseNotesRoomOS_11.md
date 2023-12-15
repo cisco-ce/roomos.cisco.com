@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.08 - November 2023
+D15504.09 - December 2023
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.08 - November 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>9</td> 
+		<td>December 15th 2023</td> 
+		<td>
+			Release of <a href='#11.5' title='Jump to section'>RoomOS 11.5.4.6</a> 08c783a4691, Patch
+		</td>
 	</tr>
 	<tr>
 		<td>8</td> 
@@ -387,6 +394,15 @@ We have made som changes to how PAC matching works for pacmanager in RoomOS soft
 <font color='red'><b>PAC files specifically written for RoomOS may need to be updated to keep working as intended!</b></font>
 
 [Please follow this link for more information and details](https://help.webex.com/en-us/article/oej2aq/Changes-to-Proxy-Auto-Configuration-(PAC))
+
+## RoomOS 11.5.4.6
+
+RoomOS 11.5.4.6 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.5.4.6](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.5.4.6&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 11.5.3.3
 

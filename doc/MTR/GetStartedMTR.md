@@ -11,6 +11,8 @@ There are three or four buttons on the home screen, depending on the device. Tap
 * **Share**. Start sharing content.
 * **More**. Access the volume controls and device **Settings** menu.
 
+To learn more about the Microsoft Teams Rooms app, visit [Microsoft support](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-android-68517298-d513-46be-8d6d-d41db5e6b4b2).
+
 ## The control panel
 
 Swipe from the right side of your screen or on the Room Navigator to open the control panel. You can access the control panel whether you're in a call or not. If you're in a call, the panel opens on top of the call and you can check or change settings without interrupting anything.

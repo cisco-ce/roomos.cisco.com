@@ -1,7 +1,7 @@
 # Release notes
 (Updated February 12, 2024) 
 
-This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. RoomOS with Microsoft Teams Rooms is supported by the following Cisco collaboration devices:
+This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
 * Cisco Board Pro 55
 * Cisco Board Pro 75

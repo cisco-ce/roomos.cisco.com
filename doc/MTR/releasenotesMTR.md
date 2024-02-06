@@ -32,7 +32,6 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-
 ## February 2024
 
 ### New and changed features

@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.09 - December 2023
+D15504.10 - February 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.09 - December 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>10</td> 
+		<td>February 7th 2024</td> 
+		<td>
+			Release of <a href='#11.9' title='Jump to section'>RoomOS 11.9.3.1</a> 88903f816c0, Patch
+		</td>
 	</tr>
 	<tr>
 		<td>9</td> 
@@ -92,7 +99,8 @@ This release note describes new software features and capabilities included in R
 			Cisco Room USB**, Room Kit Mini, Room Kit, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Room 55<br> 
 			Cisco Codec Plus, Codec Pro<br>
 			Cisco Room 55 Dual, Room 70 (Single/Dual), Room 70 G2 (Single/Dual)<br>
-			Cisco Room Panorama**, Room 70 Panorama**
+			Cisco Room Panorama**, Room 70 Panorama**<br>
+			Cisco Room Navigator (Wall and Table Standalone)
 		</td>
 	</tr>
 	<tr>
@@ -167,6 +175,15 @@ We have made a permanent change on the upgrade files that we release for our dev
 ## Notes and warnings for this software release
 
 RoomOS 11.9 enables support for the new Cisco Room Kit EQX and lots of useful features. Please see below for more information. 
+
+## RoomOS 11.9.3.1
+
+RoomOS 11.9.3.1 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.9.3.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.9.3.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 11.9.2.4
 
@@ -869,16 +886,16 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_9_2_4.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_9_3_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_9_2_4.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_9_3_1.k4.cop.sha512</b>*</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_9_2_4.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_9_3_1.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_9_2_4.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_9_3_1.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>

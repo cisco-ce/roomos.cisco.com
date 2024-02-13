@@ -31,4 +31,4 @@ However there is no button to close the web view, so you need to use the followi
 
 ### Incoming call
 
-When there is an incoming call, the webview will close and the call will be visible.
+When there is an incoming call, the web view will close and the call will be visible.

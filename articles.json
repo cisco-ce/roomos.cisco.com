@@ -255,6 +255,12 @@
       "description": "How to use the Cisco device's xAPI.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
+    {
+      "id": "WebViews",
+      "title": "Web content",
+      "description": "Display web content on a Cisco device.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
    {
       "id": "InterceptingProxy",
       "title": "Intercepting Proxy",

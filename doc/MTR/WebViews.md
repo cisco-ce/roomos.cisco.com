@@ -12,7 +12,7 @@ If a web view is opened through code in a macro on passive displays, there is cu
 
 `xcommand UserInterface WebView Display Url: cisco.com`
 
-*  Write the Url of the web page you would like to display
+*  Write the URL of the web page you would like to display
 
 `xcommand UserInterface WebView Display Mode: Fullscreen`
 

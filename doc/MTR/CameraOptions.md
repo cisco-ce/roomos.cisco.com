@@ -21,6 +21,10 @@ Depending on the device you're using, there are a few different modes to choose 
 
 <img src="/doc/images/MTR/CameraModeAuto.png" style="width: 200px" />
 
+On Board Pro and Desk Pro, you can choose **Best view**. The camera will adjust automatically so you are always in the center of the frame.
+
+<img src="/doc/images/MTR/CameraModeAuto2.jpg" style="width: 200px" />
+
 4.	You can also tap **Manual** and adjust the camera yourself.
 
 <img src="/doc/images/MTR/CameraModeManual.png" style="width: 200px" />

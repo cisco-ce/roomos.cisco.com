@@ -60,17 +60,17 @@ _Example:_ To send a string ending with carriage return and new line, enter "Hel
 
 * **ResponseTerminator** (optional): A character or string that indicates that the rest of the response received from the peripheral will be ignored.  
   
-If a **ResponseTerminator** is specified, then any response received from the peripheral serial port after the Send command is issued will be buffered. The command will return up-until the first occurrence of the ResponseTerminator character or string.  
+If a ResponseTerminator is specified, then any response received from the peripheral serial port after the Send command is issued will be buffered. The command will return up-until the first occurrence of the ResponseTerminator character or string.  
   
 _Example:_ If the ResponseTerminator is set to "\n" and the peripheral responds with "Hello to you too\nSomeMoreData\n" then the command's response, `PeripheralControlSendResult Response`, will contain "Hello to you too". The rest of the received data is discarded.  
   
-If a **ResponseTerminator** is not specified, either the complete response will be returned, or it will be cut when the full **ResponseTimeout** period expires.  
+If a ResponseTerminator is not specified, either the complete response will be returned, or it will be cut when the full ResponseTimeout period expires.  
   
-The **ResponseTerminator** parameter is ignored if a **ResponseTimeout** parameter is not included in the command. The device will not wait and listen for a response at all if the **ResponseTimeout** is not specified.
+The ResponseTerminator parameter is ignored if a ResponseTimeout parameter is not included in the command. The device will not wait and listen for a response at all if the ResponseTimeout is not specified.
 
 * **ResponseTimeout** (optional): The maximum number of milliseconds (ms) to wait for a response from the peripheral. You cannot set this timeout to be more than 5000 ms.
   
-If a ResponseTimeout is specified, the device listens for a response from the peripheral either the full ResponseTimeout period or until it receives the first occurrence of the character string specified in the **ResponseTerminator** parameter.  
+If a ResponseTimeout is specified, the device listens for a response from the peripheral either the full ResponseTimeout period or until it receives the first occurrence of the character string specified in the ResponseTerminator parameter.  
   
 If a ResponseTimeout is not specified, the device terminates the command session immediately after the text-payload transmission is completed. Any response from the peripheral is discarded.
 

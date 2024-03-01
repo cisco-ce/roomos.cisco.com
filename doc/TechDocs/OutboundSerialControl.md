@@ -35,7 +35,8 @@ Use the following configurations to setup outbound serial control. These configu
 
 `xConfiguration SerialPort Outbound Port [1] Parity: <Even, None, Odd>`
 * Choose whether to add a parity bit for the serial data transmission. You can choose between adding **Even** parity, **Odd** parity, or not adding any parity (**None**). Default: None.
-  
+
+
 These serial connection parameters are not user configurable:  
 * Data bits: 8
 * Stop bits: 1

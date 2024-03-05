@@ -58,11 +58,19 @@ F. The user menu. Click the symbol to see who is signed in. You can also edit th
 
 **Home**: Lists general information such as IP address, MAC address, serial number, active network interface, software version, issues, Microsoft Teams Rooms and registration status, utilization and environment data, and more.
 
-**Settings**: Opens a page that give you access to the device settings (configurations) and statuses.
+**Settings**: Opens a page that give you access to the device settings (configurations) and statuses, details about cameras, screens, microphones, and other inputs, outputs, and peripherals.
 
 **Users**: Opens a page where you can add, edit, or delete users, or change a user's passphrase. You can also create a remote support user from this page.
 
 **Security**: Opens a page where you can upload and view certificates that are required to communicate with different services and backends. You can also create a sign-in banner and choose which system components to reset automatically when restarting the device. A sign-in banner is a message that is shown to the users before they sign in to the web or command line interfaces.
+
+**Audio Console**: Opens the Audio Console, which provides a graphical interface that allows advanced customization of audio features.
+
+**UI Extensions Editor**: Opens the UI Extensions Editor, which allows you to create custom UI panels and action buttons.
+
+**Macro Editor**: Opens the Macro Editor, which allows you to create snippets of code (macros) that automates or customizes the behavior of your device.
+
+**Developer API**: Opens a page where you can view the device's XML files and execute commands and configurations.
 
 **Software**: Opens a page where you can install new software.
 

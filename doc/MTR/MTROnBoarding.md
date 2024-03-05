@@ -73,7 +73,7 @@ If the device is already registered to Control Hub, you may proceed without fact
 4. List the Microsoft Teams installation options that are applicable to this device.  
 `xCommand MicrosoftTeams List`
 
-5. Install Microsoft Teams on the device. Set the `Name` parameter to one of the applicable options found in the previous step, for example, "MicrosoftTeamsRooms".  
+5. Install Microsoft Teams on the device. Set the **Name** parameter to one of the applicable options found in the previous step, for example, "MicrosoftTeamsRooms".  
 `xCommand MicrosoftTeams Install Name: "MicrosoftTeamsRooms"`
   
 If required, the device first downloads new software. Then the installation, which takes about 5 minutes, starts.

@@ -134,6 +134,12 @@
       "symbol": "📝"
     },
     {
+      "id": "OutboundSerialControl",
+      "title": "Controlling third-party peripherals via serial port",
+      "description": "Outbound serial control)",
+      "symbol": "📝"
+    },
+    {
       "id": "USBControl",
       "title": "Third-party USB control devices",
       "description": "Use a third-party USB input device to control a device",

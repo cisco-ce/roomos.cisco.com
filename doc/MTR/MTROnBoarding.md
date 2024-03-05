@@ -60,9 +60,8 @@ You can swipe right to access device settings like the [camera options](https://
 
 As an alternative to running the setup wizard, you can onboard a device using the public API. This may be useful if you want to onboard several devices in bulk. 
 
-Follow this procedure:
-
-1. We recommend you factory reset the device before you start.   
+1. We recommend you factory reset the device before you start.
+  
 If the device is already registered to Control Hub, you may proceed without factory resetting first.
 
 2. Set a password on the device:  

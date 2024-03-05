@@ -2,6 +2,10 @@
 
 **NOTE:** Read the [Requirements article](https://roomos.cisco.com/doc/MTR/Requirements) before onboarding a Cisco collaboration device. When you have a device with a Room Navigator, you need to register both the device and the Room Navigator. If you are prevented from signing in on your Room Navigator, check your Device settings in Intune, before signing in again. Read [this article](https://roomos.cisco.com/doc/MTR/Requirements#microsoft-authentication-and-intune) for more information on Microsoft authentication and Intune.
 
+## Onboarding from the setup wizard
+
+Onboarding a device is part of the setup wizard flow. To learn how to onboard a device using the public API, scroll down to the bottom of this page.
+
 1. Select the **Language** for the device and tap the **Start** button. If your device is running an older software version, tap **Try the new onboarding**.
 
 <img src="/doc/images/MTR/Onboarding2.jpg" style="width: 600px" />
@@ -51,3 +55,30 @@ NOTE: When a device onboards to MTR, the setting menu is locked by default. �
 Tap **More** to access the settings menu. From the [settings menu](https://roomos.cisco.com/doc/MTR/SettingsMenu), you can change the accessibility, or the network settings. In the device settings, you can also access the Teams Rooms settings protected by the admin password. 
 
 You can swipe right to access device settings like the [camera options](https://roomos.cisco.com/doc/MTR/CameraOptions), [microphone options](https://roomos.cisco.com/doc/MTR/MicrophoneOptions), and screen brightness.  
+
+## Onboarding using API commands
+
+As an alternative to running the setup wizard, you can onboard a device using the public API. This may be useful if you want to onboard several devices in bulk. 
+
+Follow this procedure:
+
+1. We recommend you factory reset the device before you start.   
+If the device is already registered to Control Hub, you may proceed without factory resetting first.
+
+2. Set a password on the device:  
+`xCommand UserManagement User Passphrase Set NewPassphrase: "YourNewPassword" Username: admin YourPassphrase: "YourCurrentPassword"`
+
+3. Stop the setup wizard which always appears the first time you start a device:  
+`xCommand SystemUnit FirstTimeWizard Stop`
+
+4. List the Microsoft Teams installation options that are applicable to this device.  
+`xCommand MicrosoftTeams List`
+
+5. Install Microsoft Teams on the device. Set the `Name` parameter to one of the applicable options found in the previous step, for example, "MicrosoftTeamsRooms".  
+`xCommand MicrosoftTeams Install Name: "MicrosoftTeamsRooms"`
+  
+If required, the device first downloads new software. Then the installation, which takes about 5 minutes, starts.
+
+After the installation is complete, you are ready to continue from step 10 in the setup wizard procedure described above.
+
+

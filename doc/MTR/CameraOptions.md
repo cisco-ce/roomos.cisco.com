@@ -12,6 +12,7 @@ Depending on the device you're using, there are a few different modes to choose 
 * **Group**: The camera will adjust to show everyone. 
 * **Frames**: The camera will zoom and show people individually or in smaller groups. 
 *	**Speaker**: The camera will follow the person speaking. The maximum distance for speaker tracking to work is 7.5 meters.
+*	**Best view**. The camera will adjust automatically so you are always in the center of the frame.
 
 ### Select a camera mode
 
@@ -21,7 +22,7 @@ Depending on the device you're using, there are a few different modes to choose 
 
 <img src="/doc/images/MTR/CameraModeAuto.png" style="width: 200px" />
 
-On Board Pro and Desk Pro, you can choose **Best view**. The camera will adjust automatically so you are always in the center of the frame.
+On Board Pro and Desk Pro, you can choose **Best view**. 
 
 <img src="/doc/images/MTR/CameraModeAuto2.jpg" style="width: 200px" />
 
@@ -30,6 +31,26 @@ On Board Pro and Desk Pro, you can choose **Best view**. The camera will adjust 
 <img src="/doc/images/MTR/CameraModeManual.png" style="width: 200px" />
 
 Note: You can also access and adjust the camera controls in or out of call by tapping the camera button on your self-view.
+
+
+## Save camera presets  
+
+You can create custom views with predefined zoom and camera direction using manual camera control on a Room Navigator. For example, you can save a zoomed out preset for meetings with multiple participants, and a zoomed in preset for smaller meetings. The presets will be available in the camera control screen and you can easily switch between them for different types of meetings. 
+
+1. Swipe from the right on the home screen. Tap **Camera**.
+2. Select **Manual** and choose the camera you want to adjust.
+
+If the device is using more than one camera, you see them under the **Manual** button.
+
+<img src="/doc/images/MTR/CameraModeManual2.jpg" style="width: 300px" />
+
+3. Use the camera controls to adjust pan, tilt, and zoom. When you're all set, tap **Save camera view**. Name and **Save** the preset.
+
+It will appear under **Saved camera views**.
+
+<img src="/doc/images/MTR/CameraModeManual3.jpg" style="width: 300px" />
+
+To edit or delete an existing preset, select the preset under the **Saved camera views** list. Adjust and save the preset again, or delete it. 
 
 
 ## Access and adjust self-view 

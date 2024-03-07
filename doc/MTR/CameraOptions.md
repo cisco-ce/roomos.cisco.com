@@ -35,7 +35,7 @@ Note: You can also access and adjust the camera controls in or out of call by ta
 
 ## Save camera presets  
 
-You can create custom views with predefined zoom and camera direction using manual camera control on a Room Navigator. For example, you can save a zoomed out preset for meetings with multiple participants, and a zoomed in preset for smaller meetings. The presets will be available in the camera control screen and you can easily switch between them for different types of meetings. 
+You can create custom views with predefined zoom and camera direction using manual camera control. For example, you can save a zoomed out preset for meetings with multiple participants, and a zoomed in preset for smaller meetings. The presets will be available in the camera control screen and you can easily switch between them for different types of meetings. 
 
 1. Swipe from the right on the home screen. Tap **Camera**.
 2. Select **Manual** and choose the camera you want to adjust.

@@ -208,6 +208,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "releasenotesMTR",
+      "title": "Release notes",
+      "description": "New and changed features, and issues fixed for Microsoft Teams Rooms devices on RoomOS.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "MTROnBoarding",
       "title": "Onboarding",
       "description": "Onboarding Cisco devices to Microsoft Teams Rooms",

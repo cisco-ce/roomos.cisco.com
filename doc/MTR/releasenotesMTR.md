@@ -11,7 +11,9 @@ This release note describes new software features and capabilities included in C
 * Cisco Room Kit EQ
 * Cisco Room Kit Pro with Room Navigator
 
-Room Navigator with Board Pro is now supported.
+Room Navigator with Board Pro is now supported. 
+
+Only one Room Navigator per device is supported.
 
 Cisco Touch 10 is not supported.
 

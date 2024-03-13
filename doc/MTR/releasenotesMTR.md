@@ -39,19 +39,19 @@ Software version: RoomOS 11.14.1.5 1bf4e96858f
 
 ### New and changed features
 
-#### Camera presets
+**Camera presets**
 
 Across the Microsoft Teams Rooms supported RoomOS devices, you can now make camera presets. This allows setting camera angle and zoom, and saving, recalling and editing presets. 
 
 Read more about [camera settings](/doc/MTR/CameraOptions).
 
-#### Bulk API onboarding
+**Bulk API onboarding**
 
 You can now use the API to onboard devices in bullk. You can use the API onboarding on new devices and devices that have been previously registered to Control Hub.
 
 Read more about [onboarding devices](/doc/MTR/MTROnBoarding).
 
-#### Support for ThousandEyes agent integration
+**Support for ThousandEyes agent integration**
 
 ThousandEyes agent that is integrated with RoomOS devices offers network path visibility for active troubleshooting of meetings to pinpoint issues in real time. ThousandEyes agent integration is supported on both Ethernet and Wi-Fi connections.
 

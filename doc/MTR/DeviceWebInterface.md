@@ -177,7 +177,7 @@ Enable [ThousandEyes Agent](https://docs.thousandeyes.com/product-documentation/
 
 1. Get [ThousandEyes Endpoint Agent licenses](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/endpoint-agent-licensing) (either essential or advantage). You need one endpoint license per device. 
 2. Get the [connection string](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing/endpoint-agent-installation-reference#connection-string) for the account group you want the agent on the device to register with.
-3. From the device's web interface, go to *Settings* > *Configurations* > *ThousandEyes* and enter the connection string.
+3. On the device's web interface, go to *Settings* > *Configurations* > *ThousandEyes* and enter the connection string.
 4. [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
 
 ## Further reading

@@ -63,18 +63,17 @@ When a proxy is configured on the device, the ThousandEyes agent on the device c
 
 Requirements: 
 
-* [ThousandEyes Endpoint Agent licenses](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/endpoint-agent-licensing) (either essential or advantage). You need one endpoint license per device. 
+* [ThousandEyes Endpoint Agent licenses](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/endpoint-agent-licensing) (either essential or advantage). You need one endpoint license per device.
+* [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
 
 Devices with Control Hub registration:
 
 * [ThousandEyes installation for RoomOS devices](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing/install-roomos)
 * [Enable from Control Hub](https://help.webex.com/gg3kd3/)
-* [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
 
 Devices without Control Hub registration: 
 
 * [Enable from device web interface](/doc/MTR/DeviceWebInterface)
-* [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
 
 ### Fixed issues 
 

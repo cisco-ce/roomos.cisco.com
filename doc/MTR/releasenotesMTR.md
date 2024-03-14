@@ -61,7 +61,7 @@ Visualization in ThousandEyes portal provides correlated meeting information fro
 
 When a proxy is configured on the device, the ThousandEyes agent on the device can access the ThousandEyes cloud platform through the configured proxy.
 
-Requiremnts: 
+Requirements: 
 
 * [ThousandEyes Endpoint Agent licenses](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/endpoint-agent-licensing) (either essential or advantage). You need one endpoint license per device. 
 

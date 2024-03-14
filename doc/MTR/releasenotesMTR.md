@@ -55,13 +55,26 @@ Read more about [onboarding devices](/doc/MTR/MTROnBoarding).
 
 **Support for ThousandEyes agent integration**
 
-ThousandEyes agent that is integrated with RoomOS devices offers network path visibility for active troubleshooting of meetings to pinpoint issues in real time. ThousandEyes agent integration is supported on both Ethernet and Wi-Fi connections.
+ThousandEyes agent that is integrated with RoomOS devices offers network path visibility for active troubleshooting of meetings to pinpoint issues in real time. RoomOS software includes the ThousandEyes agent, so there is nothing to download but you need to activate the agent. ThousandEyes agent integration is supported on both Ethernet and Wi-Fi connections.
+
+Visualization in ThousandEyes portal provides correlated meeting information from Microsoft Call quality data.
 
 When a proxy is configured on the device, the ThousandEyes agent on the device can access the ThousandEyes cloud platform through the configured proxy.
 
-Requires Control Hub registration.
+Requiremnts: 
 
-Read more about [ThousandEyes integration for Cisco collaboration devices](https://help.webex.com/gg3kd3/). 
+* [ThousandEyes Endpoint Agent licenses](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/endpoint-agent-licensing) (either essential or advantage). You need one endpoint license per device. 
+
+Devices with Control Hub registration:
+
+* [ThousandEyes installation for RoomOS devices](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing/install-roomos)
+* [Enable from Control Hub](https://help.webex.com/gg3kd3/)
+* [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
+
+Devices without Control Hub registration: 
+
+* [Enable from device web interface](/doc/MTR/DeviceWebInterface)
+* [Add AST for Microsoft Teams Rooms in ThousandEyes portal](https://docs.thousandeyes.com/product-documentation/end-user-monitoring/automated-session-test/configure-automated-session-tests)
 
 ### Fixed issues 
 

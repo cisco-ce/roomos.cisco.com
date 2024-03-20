@@ -16,7 +16,7 @@ The xAPI is the language-independent API of RoomOS that lets you interact with t
 
 <img src="/doc/images/tshell.png" />
 
-The best way to understand the xAPI is to play with it yourself from a terminal. See the [xAPI guide](/doc/xAPI.md) for step by step instructions for basic actions such as placing a call and adjusting volume.
+The best way to understand the xAPI is to play with it yourself from a terminal. See the [xAPI guide](doc/TechDocs/xAPI) for step by step instructions for basic actions such as placing a call and adjusting volume.
 
 ## Integrations types
 

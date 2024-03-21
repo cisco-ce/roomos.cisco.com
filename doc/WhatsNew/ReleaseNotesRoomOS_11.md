@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.10 - February 2024
+D15504.11 - March 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.10 - February 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>11</td> 
+		<td>March 21st 2024</td> 
+		<td>
+			Release of <a href='#11.14' title='Jump to section'>RoomOS 11.14.2.3</a> e98a3091ff6, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>10</td> 
@@ -165,6 +172,152 @@ Snap to whiteboard is not available in RoomOS 11
 
 **Software files have changed - specific upgrade paths may be applicable**<br>
 We have made a permanent change on the upgrade files that we release for our devices. This is a very important change and we recommend you to read the updated [software upgrade section](#software-upgrade) in this document. In short, we have deprecated the xx.k3.cop.sgn files by only releasing xx.k4.cop.sha512 files as these are signed with a more secure signature. This may affect your upgrade path depending on what software version you are currently upgrading from. We have released the xx.k4.cop.sha512 files for a while together with the xx.k3.cop.sgn files but the latter is now deprecated. 
+
+<br><br>
+
+<a name='11.14'></a>
+
+# Release summary for RoomOS 11.14 
+
+## Notes and warnings for this software release
+
+Version 11.14.2.3 of RoomOS introduces updates to the Macro Framework, along with additional enhancements such as HDMI output for Cisco Desk and Cisco Board Pro, and serial outbound connection capabilities through the xAPI.
+
+### Updated the Macro framework to use QuickJS by default 
+
+While this should not cause any problems and the upgrade should be transparent for you, there is a known limitation related to this. [Click here](#111423-9) to learn more. 
+
+### The phone capabilities are no longer always sent
+
+CSCwi79191	CDP and VLAN config should allow to enable CDP but not join voiceVLAN
+
+Previously, the phone flag was activated regardless of whether the xConfiguration Network 1 VLAN Voice Mode was enabled or disabled, which was not in line with the specifications. Moving forward, we will only activate the phone flag when this configuration is set to "On".
+
+<hr style='width: 70%'>
+
+## RoomOS 11.14.2.3
+
+* [Extended shape library and text-in-shapes when using Whiteboard](#111423-1)
+* [Custom buttons in Control Panel](#111423-2)
+* [Support for third-party touch screens](#111423-3)
+* [Dual screen support (HDMI OUT) for Desk Pro](#111423-4)
+* [Support for USB serial outbound connections](#111423-5)
+* [Management of paired Room Navigators](#111423-6)
+* [Support for controlling multiple lenses in the camera control menu](#111423-7)
+* <b>Other</b>
+	* [Macro Engine update](#111423-9)
+	* [Easier deployment of AirPlay](#111423-10)
+	* [Added new diagnostics for Web Views when facing out of memory issues](#111423-8)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.14.2.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.14.2.3&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.14.2.3 feature descriptions 
+
+<a name='111423-1'></a>
+
+## Extended shape library and text-in-shapes when using Whiteboard
+
+Introduced new features that allow for the insertion of text into shapes and added a square shape with rounded corners.
+
+<a name='111423-2'></a>
+
+## Custom buttons in control panel
+
+This update enhances the UI Extensions by allowing custom buttons to be added to the side panel (on touch screen devices) or the control panel of the Cisco Room Navigator. Configuration of these buttons is managed within the UI extensions editor, where their placement can be specified. These custom buttons function identically to standard ones, supporting interaction with macros.
+
+<a name='111423-3'></a>
+
+## Support third-party touch screens
+
+Support is now available for selected third-party touch screens, compatible with the Room Bar, Room Bar Pro, Room Kit EQ, and Codec Pro devices.
+
+To activate third-party touch screen functionality, adjust the settings as follows:
+
+Enable the feature by setting xConfiguration UserInterface ExternalTouchScreen Enabled to True.
+The xConfiguration Peripherals Profile TouchPanels now includes 'Auto' in its value space for easier configuration.
+Activating this feature provides support for third-party touch screens, similar to the Board experience, and introduces whiteboard for devices previously lacking these capabilities.
+
+Connect the touch-enabled display to the first HDMI connector and attach a USB cable for touch functionality. The process is automatic once the feature is enabled.
+
+Currently, support is limited to one touch screen per device. If a device supports multiple screens, additional screens cannot be connected alongside the touch screen. Future updates may allow for both a touch and a passive screen simultaneously.
+
+Officially supported touch screen models include:
+
+Dell C and P Series
+Samsung WAC-series
+
+<a name='111423-4'></a>
+
+## Dual screen support (HDMI OUT) for Desk Pro and Board Pro
+
+We are excited to announce the new HDMI output feature for the Desk Pro and Board Pro devices, enabling the connection of a second monitor to create a dynamic dual-screen video system. This enhancement allows users to extend their workspace, increasing productivity and interaction during meetings.
+
+With the HDMI out feature, users can now leverage the power of a second monitor to display additional content, visuals, or reference materials, providing a more immersive and comprehensive meeting experience. This functionality is ideal for facilitating extended discussions, conducting training sessions, and collaborating more effectively on projects.
+
+The dual-screen setup promotes better engagement and collaboration by allowing participants to view shared content simultaneously on both the primary device and the secondary monitor. This extended display capability improves visibility and ensures that all participants have a clear view of the presentation or discussion, enhancing the overall communication and understanding. 
+
+Moreover, the HDMI output on the Desk Pro and Board Pro supports easy connection to external displays or projectors, offering flexibility and ensuring compatibility with a broad range of display devices. This feature simplifies the setup process and enhances the meeting environment, making it more versatile and productive.
+
+Embrace the full potential of your meetings with the Desk Pro and Board Pro's HDMI output capability, designed to deliver impactful, engaging, and efficiently communicated sessions to all participants.
+
+To activate the HDMI Out feature, users can navigate to the side menu and device settings to turn it on. This action requires a one-time device restart to implement the change. After rebooting, the device will automatically recognize signals from the HDMI port. Should the HDMI connection be removed later, the device will seamlessly transition back to a single screen setup without needing further actions from the user.
+
+<a name='111423-5'></a>
+
+## Support for USB serial outbound connections
+
+This new feature enables you to establish outbound serial connections, allowing you to send commands directly to third-party equipment. In the past, only external devices could connect to our serial interface to issue commands. 
+
+The outbound serial port control in the system operates on a connectionless model, where the serial port connection between the codec and the peripheral is not constant. Instead, the connection is established only when a command is issued through xCommand SerialPort PeripheralControl Send and terminates once the command execution is complete. This transient connection approach facilitates direct command communication with peripherals like projectors and monitors.
+
+In terms of configuration, the outbound serial port control feature encompasses several adjustable parameters under xConfiguration SerialPort Outbound. These include the mode, which toggles the outbound control feature on or off, and the Port[1], which signifies the current support for a single serial port with an anticipation of future expansion to multiple ports. The BaudRate parameter allows the user to set the speed of data transmission, while the Description field provides a means to describe the connected peripheral device (cosmetic). Additionally, the Parity setting adjusts the parity bit to ensure the accuracy of the transmitted data. Please refer to the third-party equipment documentation to see their command and connectivity specifications.
+
+The core command for outbound serial data transmission, xCommand SerialPort PeripheralControl Send, incorporates several parameters such as PortId, which is set to 1 by default, ResponseTerminator, and ResponseTimeout, which define how the codec processes the response from the peripheral. The Text parameter specifies the actual data to be sent, with functionality to include special characters.
+
+Response handling in the codec is refined through the ResponseTerminator and ResponseTimeout settings. The ResponseTerminator enables the codec to buffer the response until a specified delimiter is met, filtering the data effectively. For instance, if set to "\n", the codec captures the response up to this character, ignoring any further data. This mechanism works in tandem with ResponseTimeout, dictating the duration the codec waits for a peripheral's response, capped at 5000 milliseconds. Absence of a ResponseTimeout setting results in the immediate conclusion of the command post-data transmission, bypassing the response phase. This intricate setup enhances the efficiency and flexibility of managing serial communications with third-party peripherals.
+
+<a name='111423-6'></a>
+
+## Management of paired Room Navigators
+
+RoomOS 11.14.2 enables the management of a remotely paired Room Navigator. Previously, pairing a Room Navigator prohibited access to the CLI and Web UI on the Room Navigator itself. Now, it's possible to create a new user directly on the Room Navigator using the device xAPI.
+
+To start, find the ID of the navigator you want to manage in the xStatus section under Peripherals. Then, enable device management with the command xCommand Peripherals DeviceManagement Enable ID: XX:XX:XX:XX:XX:XX.
+
+Next, you can create a new user on the Room Navigator with the command xCommand Peripherals UserManagement User Add Username: touchuser Passphrase: "<>" YourPassphrase: "<>" Active: True Role: Admin ID: XX:XX:XX:XX:XX:XX. Note that the username "admin" is reserved and should not be altered.
+
+Once enabled, you can access the Room Navigator using its IP address through SSH or HTTPS (Web UI) for additional management.
+
+If you disable device management using xCommand Peripherals DeviceManagement Disable ID: XX:XX:XX:XX:XX:XX, it will delete all the accounts created and block access to the CLI and Web UI.
+
+Managing the Room Navigator is useful for updating 802.1x Certificates or when other management or integration needs arise.
+
+<a name='111423-7'></a>
+
+## Support for controlling multiple lenses in the camera control menu
+
+With the standard camera controls, you can now choose specific lenses to set up presets or check various views in self-view. This selection feature is available if your camera, like the Cisco Quad Camera, has multiple lenses.
+
+<a name='111423-8'></a>
+
+## Added new diagnostics for Web Views when facing out of memory issues
+
+This feature is solely for diagnostics purposes and aids in pinpointing situations where the web app consumes excessive memory, leading to crashes in the integrated web engine. Given the web engine's limited resource allocation, it may crash if the web app demands more memory than available. Previously, the cause of such crashes was not clearly conveyed to users. Now, a dismissible diagnostic message will appear when this occurs.
+
+<a name='111423-9'></a>
+
+## Macro Engine update
+
+We've updated the Macro Framework to utilize QuickJS as its default engine, replacing Ducktape. This change should not affect your workflow, but there is an important note to consider. If you use the CLI to save macros, specifically through the [xCommand Macros Macro Save](https://roomos.cisco.com/xapi/Command.Macros.Macro.Save/) command, ensure that the Transpile parameter is set to False. Additionally, you must configure [xConfiguration Macros EvaluateTranspiled](https://roomos.cisco.com/xapi/Configuration.Macros.EvaluateTranspiled/) to False. We plan to fix this in an upcoming release. Note that saving macros via the browser (UI) does not encounter this problem.
+
+<a name='111423-10'></a>
+
+## Easier deployment of AirPlay
+
+Administrators no longer have to set the [xConfiguration Bluetooth Enabled](https://roomos.cisco.com/xapi/Configuration.Bluetooth.Enabled/) to "True" for emitting Airplay BLE beacons. This simplifies the configuration process for deploying Airplay.
 
 <br><br>
 
@@ -886,16 +1039,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_9_3_1.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_14_2_3.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_9_3_1.k4.cop.sha512</b>*</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_14_2_3.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_14_2_3.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_9_3_1.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_14_2_3.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_9_3_1.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_14_2_3.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -903,6 +1057,8 @@ Before you start, please make sure you have downloaded the software for the corr
 </table>
 
 The "All products" cop file (super cop) must only be installed to a Unified CM. This package provides software to all supported video models and peripherals, so you only have to install one cop file if you have multiple products. 
+
+*** Contains the MTR module, you can upgrade using this package in order to get the option to select between RoomOS and MTR
 
 **NOTE: Upgrading from the device web interface using xx.k4.cop.sha512 files is supported from RoomOS 10.15.x and above**
 

@@ -5,15 +5,18 @@
 <img src="/doc/images/MTR/setup.png" style="width: 400px"/>
 
 Supported devices: 
-*	Cisco Board Pro 55 
-*	Cisco Board Pro 75
-*	Cisco Desk Pro
-*	Cisco Room Bar
-*	Cisco Room Bar Pro
-*	Cisco Room Kit EQ
-*	Cisco Room Kit Pro with Room Navigator
 
-Room Navigator with Board Pro is now supported. 
+* Cisco Board Pro 55
+* Cisco Board Pro 75
+* Cisco Board Pro G2
+* Cisco Desk Pro
+* Cisco Room Bar
+* Cisco Room Bar Pro
+* Cisco Room Kit EQ
+* Cisco Room Kit EQX
+* Cisco Room Kit Pro with Room Navigator
+
+Room Navigator with Board Pro and Board Pro G2 is now supported. 
 
 Cisco Touch 10 is not supported.
 
@@ -67,6 +70,7 @@ Software versions for onboarding new devices or devices registered to other call
 *	Board Pro: Minimum software version RoomOS 11.3.1.16
 *	Desk Pro, Room Bar, Room Kit Pro: Minimum software version RoomOS 11.6.1.5
 *	Room Kit EQ: Minimum software version RoomOS 11.7.1.8
+*	Room Kit EQX, Board Pro G2: Minimum software version RoomOS 11.15.1.6
 
 To get the correct software version, you need to do a software upgrade from the device’s setup wizard. 
 

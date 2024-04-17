@@ -78,6 +78,24 @@ If the device is already registered to Control Hub, you may proceed without fact
   
 If required, the device first downloads new software. Then the installation, which takes about 5 minutes, starts.
 
-After the installation is complete, you are ready to continue from step 10 in the setup wizard procedure described above.
+## Onboarding to GCC High
+
+Before you onboard a Cisco device to GCC High, you need to connect an external mouse to a USB-A port on the device. You can only use the mouse to interact with the Microsoft Teams interface, not the RoomOS interface.
+
+Connecting a separate keyboard on USB is not supported.
+
+To use an external mouse, make sure that [xConfiguration SystemUnit Extension MouseSupport](https://roomos.cisco.com/xapi/Configuration.SystemUnit.Extension.MouseSupport/?search=mouse) is set to *Enabled* on the Cisco device. The default value is Enabled. 
+
+To onboard to GCC High, follow the above onboarding flow until step 9. Then use the mouse to open the **Settings** menu (cogwheel icon). 
+
+<img src="/doc/images/MTR/2_onboarding_settings.png" style="width: 600px"/>
+
+Select **Cloud** and **GCCH**. 
+
+<img src="/doc/images/MTR/4_GCCH_selected.png" style="width: 600px"/>
+
+Use the new access code you receive to log in on the website, or use it in the setup wizard.  
+
+<img src="/doc/images/MTR/5_newonboardingcode.png" style="width: 600px"/>
 
 

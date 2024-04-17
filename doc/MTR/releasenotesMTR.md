@@ -1,14 +1,16 @@
 # Release notes
-(Updated April 5, 2024) 
+(Updated April 17, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
 * Cisco Board Pro 55
 * Cisco Board Pro 75
+* Cisco Board Pro G2
 * Cisco Desk Pro
 * Cisco Room Bar
 * Cisco Room Bar Pro
 * Cisco Room Kit EQ
+* Cisco Room Kit EQX
 * Cisco Room Kit Pro with Room Navigator
 
 Room Navigator with Board Pro is now supported. 
@@ -33,6 +35,52 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## April 2024
+RoomOS April 
+
+Software version: RoomOS 11.15.1.6 ab740596da6
+
+### New and changed features
+
+**Government Corporate Cloud High**
+
+Cisco collaboration devices can now use [Microsoft Teams Government Corporate Cloud High](https://learn.microsoft.com/en-us/microsoftteams/plan-for-government-gcc-high).
+
+Read more about the [feature availability on the different security levels](https://learn.microsoft.com/en-us/microsoftteams/rooms/teams-devices-feature-comparison?source=recommendations&tabs=GCCHigh).
+
+Onboarding a Cisco collaboration device on GCC High requires you to [connect a USB-mouse to the device](/doc/MTR/MTROnBoarding).
+
+**Third-party touch screens**
+
+You can replicate the Board Pro experience when using a Room Bar, Room Bar Pro, or EQ with a compatible third-party touchscreen.
+
+Turn meeting rooms into immersive ideation spaces by easily connecting your interactive touch display to Cisco collaboration devices. Now you can add digital whiteboarding and interaction into your collaboration experience.
+
+We support Samsung and Dell interactive displays through USB-A. Other displays can be tested in the future. 
+
+**21:9 aspect ratio screens**
+
+We've added support for 21:9 aspect ratio screens to our Cisco devices portfolio.
+
+Limitations: 
+
+*You can only connect one screen to the collaboration device. 
+*Other apps than Microsoft Teams Rooms may be cropped to 16:9 with black bars on the side until they are made to fully utilize the 21:9 resolution. For example, when joining a native Webex meeting, the layout is cropped to 16:9.
+
+**Support for Cisco Room Kit EQX**
+
+We have added support for Cisco Room Kit EQX. Read more about the product details in the [datasheet](https://www.webex.com/content/dam/www/us/en/datasheets/devices/room-series/cisco-room-kit-eqx/ds-room-kit-EQX-datasheet_CM-6120.pdf). 
+
+**Support for Cisco Board Pro G2**
+
+We have added support for Cisco Board Pro G2. Read more about the product details in the [datasheet](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-board/board-pro-g2-ds.html). 
+
+### Fixed issues 
+
+* CSCwj29348 - System crash in Microsoft Teams Rooms.
+* CSCwj14420 - Disable the Webex Assistant wakeword.
+
 
 ## March 2024
 RoomOS March 

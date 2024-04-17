@@ -65,8 +65,8 @@ We've added support for 21:9 aspect ratio screens to our Cisco devices portfolio
 
 Limitations: 
 
-*You can only connect one screen to the collaboration device. 
-*Other apps than Microsoft Teams Rooms may be cropped to 16:9 with black bars on the side until they are made to fully utilize the 21:9 resolution. For example, when joining a native Webex meeting, the layout is cropped to 16:9.
+* You can only connect one screen to the collaboration device. 
+* Other apps than Microsoft Teams Rooms may be cropped to 16:9 with black bars on the side until they are made to fully utilize the 21:9 resolution. For example, when joining a native Webex meeting, the layout is cropped to 16:9.
 
 **Support for Cisco Room Kit EQX**
 

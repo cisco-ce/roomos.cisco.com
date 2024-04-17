@@ -24,6 +24,7 @@ Software versions for onboarding new devices or devices registered to other call
 * Board Pro: Minimum software version RoomOS 11.3.1.16
 * Desk Pro, Room Bar, Room Kit Pro: Minimum software version RoomOS 11.6.1.5
 * Room Kit EQ: Minimum software version RoomOS 11.7.1.8
+* Room Kit EQX, Board Pro G2: Minimum software version RoomOS 11.15.1.6
 
 Read about software upgrades on the [Requirements page](/doc/MTR/Requirements).
 

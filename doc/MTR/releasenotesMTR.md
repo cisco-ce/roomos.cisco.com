@@ -1,5 +1,5 @@
 # Release notes
-(Updated April 17, 2024) 
+(Updated April 24, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -76,6 +76,12 @@ We have added support for Cisco Room Kit EQX. Read more about the product detail
 **Support for Cisco Board Pro G2**
 
 We have added support for Cisco Board Pro G2. Read more about the product details in the [datasheet](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-board/board-pro-g2-ds.html). 
+
+**Presenter track on Room Bar Pro**
+
+Presenter tracking is now supported on Room Bar Pro when connected to a PTZ camera. 
+
+Read more about [setting up presenter tracking](https://help.webex.com/9ur0g6/). 
 
 ### Fixed issues 
 

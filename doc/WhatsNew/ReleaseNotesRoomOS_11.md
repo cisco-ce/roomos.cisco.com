@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.11 - March 2024
+D15504.12 - April 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.11 - March 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>12</td> 
+		<td>April 30th 2024</td> 
+		<td>
+			Minor update
+		</td>
 	</tr>
 	<tr>
 		<td>11</td> 
@@ -118,7 +125,8 @@ This release note describes new software features and capabilities included in R
 	<tr>
 		<td>
 			Cisco Board 55/55S, 70/70S and 85S<br>
-			Cisco Board Pro 55 and 75
+			Cisco Board Pro 55 and 75<br>
+			Cisco Board Pro 55 anf 75 G2
 		</td>
 	</tr>
 	<tr>
@@ -204,6 +212,7 @@ Previously, the phone flag was activated regardless of whether the xConfiguratio
 * [Support for USB serial outbound connections](#111423-5)
 * [Management of paired Room Navigators](#111423-6)
 * [Support for controlling multiple lenses in the camera control menu](#111423-7)
+* [Support for Cisco Board Pro 55 and 75 G2](#111423-11)
 * <b>Other</b>
 	* [Macro Engine update](#111423-9)
 	* [Easier deployment of AirPlay](#111423-10)
@@ -300,6 +309,16 @@ Managing the Room Navigator is useful for updating 802.1x Certificates or when o
 ## Support for controlling multiple lenses in the camera control menu
 
 With the standard camera controls, you can now choose specific lenses to set up presets or check various views in self-view. This selection feature is available if your camera, like the Cisco Quad Camera, has multiple lenses.
+
+<a name='111423-11'></a>
+
+## Support for Cisco Board Pro 55 and 75 G2
+
+RoomOS 11.14.2 adds support for a new device, the Cisco Board Pro 55 and 75 G2.
+
+Cisco® Board Pro G2 is an all-in-one, integrated video device and collaboration board that offers a complete hybrid meeting room solution to remove the distance between in-room and remote participants. It is an intelligent video conferencing appliance combining a dual camera system, built-in speakers and microphones, an interactive touch screen, an AI-powered computing engine, and several mounting options to customize the experience.
+
+For more information [Click here](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-board/board-pro-g2-ds.html)
 
 <a name='111423-8'></a>
 
@@ -1042,7 +1061,7 @@ Before you start, please make sure you have downloaded the software for the corr
 		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_14_2_3.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_14_2_3.k4.cop.sha512<b>*
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_14_2_3.k4.cop.sha512<b>*
 		<br>cmterm-s53300-mtr-ce11_14_2_3.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
@@ -1594,6 +1613,10 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 	<tr>
 		<td>Cisco Board Pro 75</td> 
 		<td>0</td> <td>All</td>
+	</tr>
+	<tr>
+		<td>Cisco Board Pro G2</td> 
+		<td>0</td> <td>11.14.2.3</td>
 	</tr>
 </table>
 

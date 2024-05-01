@@ -126,7 +126,7 @@ This release note describes new software features and capabilities included in R
 		<td>
 			Cisco Board 55/55S, 70/70S and 85S<br>
 			Cisco Board Pro 55 and 75<br>
-			Cisco Board Pro 55 anf 75 G2
+			Cisco Board Pro 55 and 75 G2
 		</td>
 	</tr>
 	<tr>

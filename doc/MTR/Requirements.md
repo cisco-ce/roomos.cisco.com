@@ -85,10 +85,6 @@ After the software installation is finished, the setup wizard starts up again fr
 ### Software upgrades from Control Hub for previously Webex registered devices
 
 Before you onboard a Webex registered device to MTR, you need to make sure the device is running the latest Stable release. You can see the software channel on the device page in Control Hub.  
-
-Software versions for onboarding: 
-*	Webex registered Board Pro: Stable channel, minimum RoomOS March 2023
-*	Webex registered Desk Pro, Room Bar, Room Kit Pro: Stable channel, minimum RoomOS July 2023
  
 If you need to change the software channel, sign in to [admin.webex.com](https://admin.webex.com). Go to **Workspaces** and select the Workspace with the device you want to onboard from the list. Under **Devices**, click the cogwheel icon. In the **Software upgrade channel** drop-down menu, select **Stable** and click **Done**. 
  

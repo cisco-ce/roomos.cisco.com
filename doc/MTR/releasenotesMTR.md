@@ -58,11 +58,6 @@ RoomOS April
 
 Software version: RoomOS 11.15.1.8 08c1fed621a
 
-### Fixed issues
-
-* CSCwj67558 - Devices with more than one screen connected don't update the custom background before next reboot.
-* CSCwj93803 - An ICMP Packet Too Big message can trigger an undesired change in video MTU size.
-
 Software version: RoomOS 11.15.1.6 ab740596da6
 
 ### New and changed features

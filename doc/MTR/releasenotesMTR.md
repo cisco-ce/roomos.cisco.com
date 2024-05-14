@@ -1,5 +1,5 @@
 # Release notes
-(Updated April 24, 2024) 
+(Updated May 13, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -37,8 +37,31 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
+## May 2024
+RoomOS May
+
+Software version: RoomOS 11.16.1.7 81e0063ac75
+
+### New and changed features
+
+**Talkback accessibility option**
+
+Talkback is an android accessibility option for the vision impaired that provides text to speech functionality for UI elements. When it's enabled, single tapping on an UI element will repeat the text over audio and a double tap will perform the action.
+
+**Call app**
+
+You can now use Cisco devices to dial a SIP URIs and Webex addresses. The call app is located in the side panel.
+
+
 ## April 2024
 RoomOS April 
+
+Software version: RoomOS 11.15.1.8 08c1fed621a
+
+### Fixed issues
+
+* CSCwj67558 - Devices with more than one screen connected don't update the custom background before next reboot.
+* CSCwj93803 - An ICMP Packet Too Big message can trigger an undesired change in video MTU size.
 
 Software version: RoomOS 11.15.1.6 ab740596da6
 

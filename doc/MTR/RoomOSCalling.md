@@ -1,6 +1,6 @@
-# RoomOS Calling
+# Place Webex Calls
 
-This feature allows you to access the RoomOS calling features seamlessly while using MTR mode. Note that your device need to be Webex- and/or SIP- registered to access the RoomOS calling features.
+This feature allows you to access the RoomOS calling features seamlessly while using MTR mode. Note that your device need to be Webex- and/or SIP- registered to make Webex calls and access the calling features.
 
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Call**.

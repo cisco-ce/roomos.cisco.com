@@ -81,7 +81,6 @@ Tailor your device’s screen to best suit your needs, with the *Accessibility* 
 2. Scroll to and select **Accessibility**.  
 3. Select and change settings as needed:
 
-   <img src="/doc/images/MTR/Accessibility.png" style="width: 300px" />
 
 * **Text size**. Small, normal, large, extra large.
 * **Color correction**. Toggle it on or off and correct.

@@ -236,10 +236,16 @@
       "title": "Microphone options",
       "description": "Test your microphone, use noise removal options, and activate music mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },    
+    },   
+    {
+      "id": "RoomOSCalling",
+      "title": "Place Webex calls",
+      "description": "Place Webex calls from a device that's registered to Control Hub.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
     {
       "id": "WebexCall",
-      "title": "Webex meetings",
+      "title": "Join Webex meetings",
       "description": "Join Webex meetings from a device that's registered to Control Hub.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },

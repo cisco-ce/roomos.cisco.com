@@ -7,7 +7,7 @@ This feature allows you to access the RoomOS calling features seamlessly while u
 
 <img src="/doc/images/MTR/Call_ControlPanel.png" style="width: 200px"/>
   
-3. You can call someone from your **Favorites**, **Recents**, or **Directory** list. 
+3. You can call someone from your ****Favorites****, ****Recents****, or ****Directory**** list. 
 
 <img src="/doc/images/MTR/CallMenu.jpg" style="width: 600px"/>
 
@@ -48,7 +48,7 @@ You can mark contacts that you call often as favorites. The contacts get added t
 
 1. Start typing your contact's name in the search field to get suggestions from the directory. You can also look for a contact in the **Recents** list.
 
-2. Tap the contact's name to open a contact card. Tap the **Favorite** button<img src="/doc/images/MTR/Favorite.jpg" style="width: 25px"/>there, or tap **More** and toggle **Favorite** on or off in the options.
+2. Tap the contact's name to open a contact card. Tap the **Favorite** button <img src="/doc/images/MTR/Favorite.jpg" style="width: 25px"/> there, or tap **More** and toggle **Favorite** on or off in the options.
 
 ### Edit your favorite contacts
 

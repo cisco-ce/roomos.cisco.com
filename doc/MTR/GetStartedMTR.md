@@ -85,5 +85,6 @@ Tailor your device’s screen to best suit your needs, with the *Accessibility* 
 
 * **Text size**. Small, normal, large, extra large.
 * **Color correction**. Toggle it on or off and correct.
+* **Screen Reader**. Toggle it on or off. When the feature is on, you can tap on any text on the screen to have it read out loud. If you select a graphical user interface (GUI) item, such as a checkbox, it will first read out the option, and then you need to double-tap it to perform the action, like checking the box.
 * **High contrast**. Toggle it on or off.
 

@@ -1,6 +1,6 @@
 # Place Webex Calls
 
-This feature allows you to access the RoomOS calling features seamlessly while using MTR mode. Note that your device need to be registered to Control Hub to make Webex calls and access the calling features.
+This feature allows you to access the RoomOS calling features seamlessly while using MTR mode. Note that your device need to be registered to Control Hub to make Webex calls and access the calling features. You can also place SIP calls through Webex.
 
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Call**.
@@ -48,7 +48,7 @@ You can mark contacts that you call often as favorites. The contacts get added t
 
 1. Start typing your contact's name in the search field to get suggestions from the directory. You can also look for a contact in the **Recents** list.
 
-2. Tap the contact's name to open a contact card. Tap the **Favorite** button <img src="/doc/images/MTR/Favorite.jpg" style="width: 25px"/> there, or tap **More** and toggle **Favorite** on or off in the options.
+2. Tap the contact's name to open a contact card. Tap the **Favorite** button<img src="/doc/images/MTR/Favorite.jpg" style="width: 25px"/>there, or tap **More** and toggle **Favorite** on or off in the options.
 
 ### Edit your favorite contacts
 

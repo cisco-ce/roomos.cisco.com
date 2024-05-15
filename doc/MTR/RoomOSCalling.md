@@ -4,15 +4,24 @@ This feature allows you to access the RoomOS calling features seamlessly while u
 
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Call**.
+
+<img src="/doc/images/MTR/Call_ControlPanel.png" style="width: 200px"/>
+  
 3. You can call someone from your **Favorites**, **Recents**, or **Directory** list. 
 
-<img src="/doc/images/MTR/CallMenu.jpg" style="width: 700px"/>
+<img src="/doc/images/MTR/CallMenu.jpg" style="width: 600px"/>
 
 4. Select a contact and tap the **Call** button.
+
+<img src="/doc/images/MTR/RoomOSCall.jpg" style="width: 250px"/>
+
 
 ## Call by name, video address, or phone number
 
 1. Start typing the name, video address, or number of your contact in the search field. You can also enter a video address to join or start a scheduled meeting.
+
+<img src="/doc/images/MTR/CallMenu.jpg" style="width: 600px"/>
+
 Dial the video address in one of the following formats:
 
 * <meeting_number>@webex.com for a scheduled Webex meeting
@@ -37,9 +46,9 @@ Enter the numeric meeting password, if prompted. You only need the numeric meeti
 
 You can mark contacts that you call often as favorites. The contacts get added to your **Favorites** list, where you can easily find them. You can add a contact from your **Recents** or **Directory** list to your **Favorites**.
 
-1. Start typing your contact's name in the Search field to get suggestions from the directory. You can also look for a contact in the **Recents** list.
+1. Start typing your contact's name in the search field to get suggestions from the directory. You can also look for a contact in the **Recents** list.
 
-2. Tap the contact's name to open a contact card. Tap the **Favorite** button there, or tap **More** and toggle **Favorite** on or off in the options.
+2. Tap the contact's name to open a contact card. Tap the **Favorite** button <img src="/doc/images/MTR/Favorite.jpg" style="width: 25px"/> there, or tap **More** and toggle **Favorite** on or off in the options.
 
 ### Edit your favorite contacts
 
@@ -50,13 +59,13 @@ If you have marked a contact from the directory as your favorite, you can edit t
 If you have marked a video address as a favorite from your **Recents** list, you can edit that address. You can also add a name to that address to find this contact easily.
 
 
-To edit a favorite contact's nickname:
+#### To edit a favorite contact's nickname:
 
 1. Select a contact from your **Favorites** list and tap **More** on the contact card.
 
 2. Tap **Edit nickname** to change their name in your favorites list. A soft keyboard opens. Type in the name you want to use and tap **Save** on the keyboard.
 
-To edit a recent contact's video address:
+#### To edit a recent contact's video address:
 
 1. If you haven't already favorited the recent call, open your **Recents** list and select the entry you want to edit and save. Tap the favorites button on the contact card. Tap the arrow in the upper left corner to go back. Open the **Favorites** list. Scroll to see that your recent contact is now added.
 

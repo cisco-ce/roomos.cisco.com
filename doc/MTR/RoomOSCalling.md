@@ -7,7 +7,7 @@ This feature allows you to access the RoomOS calling features seamlessly while u
 
 <img src="/doc/images/MTR/Call_ControlPanel.png" style="width: 200px"/>
   
-3. You can call someone from your **Favorites, Recents** or **Directory** list. 
+3. You can call someone from your **Favorites, Recents or Directory** list. 
 
 <img src="/doc/images/MTR/CallMenu.jpg" style="width: 600px"/>
 

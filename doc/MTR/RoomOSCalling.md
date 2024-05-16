@@ -20,7 +20,7 @@ This feature allows you to access the RoomOS calling features seamlessly while u
 
 You can mark contacts that you call often as favorites. The contacts get added to your **Favorites** list, where you can easily find them. You can add a contact from your **Recents** or **Directory** list to your **Favorites**. Read more about it [here](https://help.webex.com/en-us/article/n1tk4q6/Edit-your-favorite-contacts-on-Board,-Desk,-and-Room-Series).
 
-#### Edit your favorite contacts
+### Edit your favorite contacts
 
 You can edit your favorite contacts in order to find them more easily. You can edit the nicknames and video addresses of your favorite contacts. Read more about it [here](https://help.webex.com/en-us/article/n1tk4q6/Edit-your-favorite-contacts-on-Board,-Desk,-and-Room-Series).
 

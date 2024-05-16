@@ -21,6 +21,8 @@ Room Navigator with Board Pro and Board Pro G2 is now supported.
 Cisco Touch 10 is not supported.
 
 Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
+
+You can use [the planning guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
  
  ## Microsoft Teams Rooms management in Teams Admin Center
  

@@ -1,5 +1,5 @@
 # Release notes
-(Updated May 13, 2024) 
+(Updated May 16, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -51,6 +51,10 @@ Talkback is an android accessibility option for the vision impaired that provide
 **Call app**
 
 You can now use Cisco devices to dial a SIP URIs and Webex addresses. The call app is located in the side panel.
+
+Requires Control Hub registration.
+
+Read more about [the call app](/doc/MTR/RoomOSCalling).
 
 
 ## April 2024

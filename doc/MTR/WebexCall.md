@@ -1,4 +1,4 @@
-# Participate in Webex meetings 
+# Join Webex meetings 
 
 If the device is also registered to Control Hub, you can join Webex meetings.
 When a scheduled Outlook meeting includes video devices, a green **Join** button appears on the devices right before the meeting begins.

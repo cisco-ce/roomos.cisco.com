@@ -1,7 +1,7 @@
 # Display web content 
 
-We're adding web-view and web-modal features making it possible to display web conten. This allows users to interact with web applications or content directly from the interface of your device.
-This is useful for things like getting assistance in a room, tracking issues, or using interactive web apps. You can launch these web extensions either automatically through predefined actions or from the side panel extension option. To use this feature, simply enroll your devices in Webex Control Hub.
+We're adding web-view and web-modal features making it possible to display web content. This allows users to interact with web applications or content directly from the interface of the Cisco device.
+This is useful for things like getting assistance in a room, tracking issues, or using interactive web apps. You can launch these web extensions either automatically through predefined actions or from the side panel extension option. To use this feature, you need to register your device to Control Hub.
 
 If a web view is opened through code in a macro on passive displays, there is currently no user interface option to close it. In such cases, the closure of the web view should also be done programmatically.
 

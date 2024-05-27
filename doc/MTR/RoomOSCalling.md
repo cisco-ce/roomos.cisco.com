@@ -5,7 +5,7 @@ This feature allows you to access the RoomOS calling features seamlessly while u
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Call**.
 
-<img src="/doc/images/MTR/ControlPanel.png" style="width: 400px"/>
+<img src="/doc/images/MTR/ControlPanel.png" style="width: 200px"/>
   
 3. You can call someone from your Favorites, Recents or Directory list. You can also start typing the name, video address, or number of your contact in the search field. 
 

@@ -17,7 +17,7 @@ To learn more about the Microsoft Teams Rooms app, visit [Microsoft support](htt
 
 Swipe from the right side of your screen or on the Room Navigator to open the control panel. You can access the control panel whether you're in a call or not. If you're in a call, the panel opens on top of the call and you can check or change settings without interrupting anything.
 
-<img src="/doc/images/MTR/ControlPanel.png" style="width: 300px" />
+<img src="/doc/images/MTR/ControlPanel.png" style="width: 200px" />
 
 In the control panel you can access and adjust settings that you use on a regular basis, like:
 
@@ -26,6 +26,7 @@ In the control panel you can access and adjust settings that you use on a regula
 * **Background**. Select a virtual background to show behind you during calls. (Desk Pro)
 * **Fullscreen**. Tap to show your selfview in full screen. To close it swipe right and tap the **Fullscreen** button again. While you're in full screen mode you get a **Camera** button and a **Background** button on the edge of the screen and can adjust your outgoing view with those. 
 * **Select share source**. Choose a sharing source when you've got more than one connected, and start sharing content, in or out of a call.
+* **Call**. Place a Webex call. Read about it [here](https://roomos.cisco.com/doc/MTR/RoomOSCalling).
 * **Microphone**. Choose noise removal or optimize the microphone for your voice. Read more about [microphone options](https://roomos.cisco.com/doc/MTR/MicrophoneOptions).
 * **Standby**. Put the device into standby mode.
 * **Auto brightness**. Manually adjust screen brightness or let the device adjust itself automatically.

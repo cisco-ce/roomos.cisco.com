@@ -2,16 +2,36 @@
 ## The home screen
 The home screen is the starting point from where you'll access all the features and functionality your device has to offer. Tap the device's screen to wake it up and see the home screen, or tap the connected Room Navigator. Your device's name is in the upper left corner, along with the time. On the side you'll see a panel with your upcoming meetings, if any are scheduled.
 
-<img src="/doc/images/MTR/HomeScreen.png" style="width: 500px" />
+<img src="/doc/images/MTR/HomeScreen.png" style="width: 600px" />
 
-There are three or four buttons on the home screen, depending on the device. Tap them to:
+There are different buttons on the home screen, depending on the device. Tap them to:
 
-* **Meet now**. Find a contact in your directory and start a call.
+* **Meet now**. Start an instant meeting and add participants.
+* **Call**. Call a contact by dialing their number.
 * **Whiteboard**. Open the Microsoft whiteboard and get creative. (Board Pro and Desk Pro)
 * **Share**. Start sharing content.
+* **Join with Meeting ID**. Join a meeting by entering the provided meeting ID and passcode.
 * **More**. Access the volume controls and device **Settings** menu.
 
 To learn more about the Microsoft Teams Rooms app, visit [Microsoft support](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-android-68517298-d513-46be-8d6d-d41db5e6b4b2).
+
+## Microsoft Teams meetings
+
+### Join a Microsoft Teams meetings
+
+When you have been invited to a Microsoft Teams meeting, a join button will appear on your device shortly before the meeting starts. Tap **Join** to enter the meeting.
+
+<img src="/doc/images/MTR/HomeScreen2.png" style="width: 600px" />
+
+### Meet now
+
+Tap **Meet now** to start an instant meeting and select **Add Participants** to search for people you would like to invite.
+
+### Join with Meeting ID
+
+If you want to join a meeting that isn't on your calendar tap **Join with meeting ID**. You will be prompted to enter your details and credentils into the **Meeting ID** and **Passcode** fields. Tap **Join Meeting** when you're ready.
+
+For more detailed information on Microsoft Teams meetings, check the Microsoft documentation [here](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
 
 ## The control panel
 

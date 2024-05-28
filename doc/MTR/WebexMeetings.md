@@ -1,6 +1,6 @@
 # Join Webex meetings 
 
-When a scheduled meeting includes a Cisco device, a green **Join** button appears on the home screen right before the meeting begins.
+When a scheduled Webex meeting includes a video device, a green **Join** button appears on the home screen right before the meeting begins.
 
 <img src="/doc/images/MTR/JoinWebex.png" style="width: 600px" />
 

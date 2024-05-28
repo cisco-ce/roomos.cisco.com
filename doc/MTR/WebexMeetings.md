@@ -1,18 +1,20 @@
 # Join Webex meetings 
 
-If the device is also registered to Control Hub, you can join Webex meetings.
-When a scheduled Outlook meeting includes video devices, a green **Join** button appears on the devices right before the meeting begins.
+When a scheduled meeting includes a Cisco device, a green **Join** button appears on the home screen right before the meeting begins.
 
 <img src="/doc/images/MTR/JoinWebex.png" style="width: 600px" />
 
-## How to join    
+## Prerequisites     
 
-1. Enable third party join on MTR settings by following this [link](https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join)
-2. Register your device to Control Hub
-3. Invite the resource account to the Webex meeting by adding the resource account's email as an attendee or forwarding the meeting to it.
-The resource account is the account the Teams Rooms device logs into and is what users invite to book the Teams Room. Read more about it [here](https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account).
-
+1. Enable third party join on MTR settings by following this [link](https://learn.microsoft.com/en-us/microsoftteams/rooms/third-party-join).
+2. Register your device to Control Hub.
+   
 The Webex meeting is the Webex optimized experience. When skipping the Control Hub activation, you will only get the guest join experience. 
+
+## How to schedule
+
+Invite the resource account to the Webex meeting by adding the resource account's email as an attendee or forwarding the meeting to it.
+The resource account is the account the Teams Rooms device logs into and is what users invite to book the Teams Room. Read more about it [here](https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account).
 
 ## During the meeting
 

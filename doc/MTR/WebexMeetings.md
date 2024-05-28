@@ -13,7 +13,7 @@ The Webex meeting is the Webex optimized experience. When skipping the Control H
 
 ## How to schedule
 
-Invite the resource account to the Webex meeting by adding the resource account's email as an attendee or forwarding the meeting to it.
+Invite the Microsoft Teams resource account to the **Webex** meeting by adding the resource account's email as an attendee or forwarding the meeting to it.
 The resource account is the account the Teams Rooms device logs into and is what users invite to book the Teams Room. Read more about it [here](https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account).
 
 ## During the meeting

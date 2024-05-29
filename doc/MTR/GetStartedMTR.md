@@ -67,11 +67,11 @@ Connect your computer to the device with a USB-C or HDMI cable.
 
 3. While your share is in progress, tap the device screen and controls will appear in the bottom right corner. 
 
-   <img src="/doc/images/MTR/StopShareButtons.png" style="width: 200px" />
-
 4. Tap **Stop sharing** to end the share.  
 
-   Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.   
+Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.
+ 
+   <img src="/doc/images/MTR/ShareCable.gif" style="width: 500px" /> 
 
 
 ## The Settings menu

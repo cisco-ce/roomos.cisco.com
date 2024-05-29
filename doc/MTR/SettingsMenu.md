@@ -2,6 +2,8 @@
 
 Tap **More** on the home screen or Room Navigator and select **Settings**. Choose **Device settings**. Once in the settings menu, you can open the device settings where you can change the accessibility, the network settings, the issues and diagnostics, Bluetooth, the language, and time zone. In the device settings, you can also access the Teams access settings protected by the admin password. 
 
+<img src="/doc/images/MTR/Settings2.png" style="width: 500px" />
+
 **Accessibility**: Tap Accessibility to change the text size on your device, enable color correction, screen reader, and high contrast. To change the text size, tap text size and choose between Small, Normal, Large, and Extra Large. To enable high contrast, just toggle High contrast **on**. To enable color correction, toggle it **on**. When enabled, you can choose between Protanopia (red-green), Deuteranopia (green -red), Tritanopia (blue-yellow), and Greyscale. Finally, you can enable Screen reader by toggling it **on**. When the feature is on, you can tap on any text on the screen to have it read out loud. If you select a graphical user interface (GUI) item, such as a checkbox, it will first read out the option, and then you need to double-tap it to perform the action, like checking the box.
 
 **Bluetooth**&reg;: Tap Bluetooth to enable or disable Bluetooth. 

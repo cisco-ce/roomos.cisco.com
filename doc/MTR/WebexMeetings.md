@@ -45,7 +45,7 @@ All participants can choose whether they want to have closed captioning on the s
 
 - Sharing using an HDMI
 - Sharing using an USB-C 
-- [Sharing using Miracast](https://help.webex.com/en-us/article/kfdwufb/Wireless-sharing-with-Miracast%C2%AE)
+- [Sharing using Miracast®](https://help.webex.com/en-us/article/kfdwufb/Wireless-sharing-with-Miracast%C2%AE)
 
 For more information on sharing, read the **Content sharing** section [here](https://roomos.cisco.com/doc/MTR/GetStartedMTR).
 

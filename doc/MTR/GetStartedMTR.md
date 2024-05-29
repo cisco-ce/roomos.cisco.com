@@ -56,7 +56,9 @@ Tapping one of these buttons opens the relevant settings inside the control pane
 
 ## Content sharing
 
-You can share content from your computer with other participants during calls or meetings. When you aren’t in a call, connect your computer to use the device as an extension for your laptop screen.  
+You can share content from your computer with other participants during calls or meetings. When you aren’t in a call, connect your computer to use the device as an extension for your laptop screen. 
+
+### Share with a cable
 
 Connect your computer to the device with a USB-C or HDMI cable.
 
@@ -73,6 +75,13 @@ Or, tap **Exit full screen** to return to the home screen view with your compute
  
    <img src="/doc/images/MTR/ShareCable.gif" style="width: 500px" /> 
 
+
+### Wireless sharing with Miracast®
+
+When Miracast® is enabled, you can share content wirelessly from your laptop to a Cisco Board, Desk, or Room Series device without the need for a client. This works both in and out of calls. Making or receiving a call during an active share will disconnect your Miracast session.
+
+* [Configure wireless sharing with Miracast®](https://help.webex.com/en-us/article/w60modb/Configure-wireless-sharing-with-Miracast%C2%AE)
+* [Wireless sharing with Miracast®](https://help.webex.com/en-us/article/kfdwufb/Wireless-sharing-with-Miracast%C2%AE)
 
 ## The Settings menu
 

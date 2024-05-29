@@ -31,7 +31,7 @@ Tap **Meet now** to start an instant meeting and select **Add Participants** to 
 
 If you want to join a meeting that isn't on your calendar tap **Join with meeting ID**. You will be prompted to enter your details and credentils into the **Meeting ID** and **Passcode** fields. Tap **Join Meeting** when you're ready.
 
-For more detailed information on Microsoft Teams meetings, check the Microsoft documentation [here](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
+For more detailed information on Microsoft Teams meetings, check the Microsoft documentation [here](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-android-68517298-d513-46be-8d6d-d41db5e6b4b2).
 
 ## The control panel
 

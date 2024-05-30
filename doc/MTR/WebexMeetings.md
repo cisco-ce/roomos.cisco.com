@@ -18,7 +18,9 @@ When a scheduled Webex meeting includes a video device, a green **Join** button 
 
 * Register your device to Control Hub.
    
-The Webex meeting is the Webex optimized experience. When skipping the Control Hub activation, you will only get the guest join experience. 
+The Webex meeting is the Webex optimized experience. 
+
+When skipping the Control Hub activation, you will only get the guest join experience. 
 
 ## How to schedule
 
@@ -62,7 +64,7 @@ All participants can choose whether they want to have closed captioning on the s
 - Sharing using an USB-C 
 - [Sharing using Miracast®](https://help.webex.com/en-us/article/kfdwufb/Wireless-sharing-with-Miracast%C2%AE)
 
-For more information on sharing, read the **Content sharing** section [here](https://roomos.cisco.com/doc/MTR/GetStartedMTR).
+For more information on sharing, read the **Content sharing** section [here](https://roomos.cisco.com/doc/MTR/GetStartedMTR#content-sharing).
 
 ### Webex Webinars
 

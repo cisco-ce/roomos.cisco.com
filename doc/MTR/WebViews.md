@@ -5,36 +5,39 @@ This is useful for things like getting assistance in a room, tracking issues, or
 
 If a web view is opened through code in a macro on passive displays, there is currently no user interface option to close it. In such cases, the closure of the web view should also be done programmatically.
 
-<img src="/doc/images/MTR/WebView.png" width="600"/>
-
 ## Usage
 ### Web view
 
-`xcommand UserInterface WebView Display Url: cisco.com`
+<img src="/doc/images/MTR/WebView.png" width="600"/>
 
-*  Write the URL of the web page you would like to display
+* `xcommand UserInterface WebView Display Url: cisco.com`
 
-`xcommand UserInterface WebView Display Mode: Fullscreen`
+Write the URL of the web page you would like to display.
 
-*    Display the web page in full screen
+* `xcommand UserInterface WebView Display Mode: Fullscreen`
+
+Display the web page in full screen.
+
 *    Tap **Exit** button to quit
 *    Annotating isn't supported
 
 ### Web modal
 
-`xcommand UserInterface WebView Display Mode: Modal`
+<img src="/doc/images/MTR/WebModal.png" width="600"/>
 
-*  Tap outside to close
+* `xcommand UserInterface WebView Display Mode: Modal`
+
+Tap outside to close.
 
 ### Web view on Touch controller
 
 You can have a web view on the Touch controller by using this: 
 
-`xcommand UserInterface WebView Display Target: Controller`
+* `xcommand UserInterface WebView Display Target: Controller`
 
 However there is no button to close the web view, so you need to use the following command if you want to close it: 
 
-`xcommand UserInterface WebView Clear`
+* `xcommand UserInterface WebView Clear`
 
 ### Incoming call
 

@@ -10,11 +10,11 @@ If a web view is opened through code in a macro on passive displays, there is cu
 
 <img src="/doc/images/MTR/WebView.png" width="600"/>
 
-* `xcommand UserInterface WebView Display Url: cisco.com`
+`xcommand UserInterface WebView Display Url: cisco.com`
 
 Write the URL of the web page you would like to display.
 
-* `xcommand UserInterface WebView Display Mode: Fullscreen`
+`xcommand UserInterface WebView Display Mode: Fullscreen`
 
 Display the web page in full screen.
 
@@ -25,19 +25,19 @@ Display the web page in full screen.
 
 <img src="/doc/images/MTR/WebModal.png" width="600"/>
 
-* `xcommand UserInterface WebView Display Mode: Modal`
+`xcommand UserInterface WebView Display Mode: Modal`
 
-Tap outside to close.
+* Tap outside to close.
 
 ### Web view on Touch controller
 
 You can have a web view on the Touch controller by using this: 
 
-* `xcommand UserInterface WebView Display Target: Controller`
+`xcommand UserInterface WebView Display Target: Controller`
 
 However there is no button to close the web view, so you need to use the following command if you want to close it: 
 
-* `xcommand UserInterface WebView Clear`
+`xcommand UserInterface WebView Clear`
 
 ### Incoming call
 

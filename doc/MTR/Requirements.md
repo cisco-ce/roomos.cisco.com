@@ -18,7 +18,7 @@ Supported devices:
 
 Room Navigator with Board Pro and Board Pro G2 is now supported. 
 
-On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a MTR Pro license.
+On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a Microsoft Teams Rooms Pro license.
 
 Cisco Touch 10 is not supported.
 

@@ -12,6 +12,8 @@ The simple drag-and-drop editor offers a library of user interface elements, ref
 
 <img src="/doc/images/uiextensions/ui-custom-panel.png" />
 
+<img src="/doc/images/uiextensions/ui-custom-panel-3.png" style="width: 500px" />
+
 UI Extensions, such as buttons and panels, can be programmed in an infinite number of ways. You could program the system to control the flashing of a light, as shown here. 
 
 <img src="/doc/images/uiextensions/ui-custom-panel-2.png"/>

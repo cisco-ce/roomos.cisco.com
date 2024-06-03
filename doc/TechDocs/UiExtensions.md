@@ -50,12 +50,10 @@ When you are ready to see your changes on the device, click the **Export** butto
 <img src="/doc/images/uiextensions/uiextns-editor.png"/>
 Pre-existing extensions will be shown in the left pane. To edit an existing extension, just click on its name.
 
-<img src="/doc/images/uiextensions/uiextns-editor-3.png"/>
-
 You can access the properties of a panel or widget by clicking on its title. 
 A yellow frame will be displayed around the item to indicate that it is selected and the **Properties** pane will display the settings.
 
-<img src="/doc/images/uiextensions/uiextns-editor-2.png" style="width: 300px"/>
+<img src="/doc/images/uiextensions/uiextns-editor-2.png" style="width: 250px"/>
 
 Choose where you want the button to be displayed. You can have it on the home screen, call controls, or control panel.
 
@@ -95,9 +93,7 @@ The **More options** icon in the top-right corner of the UI Extensions Editor sh
 
 - *Remove all UI extensions*: This will clear the editor, but not the video device. To undo this change, select *Import from video system*. To push this change to the video system, select *Export to video system*. To close the menu, click the **More options** icon again.
 
-You may preview your configurations to verify them before deploying them.
-
-<img src="/doc/images/uiextensions/uiextns-editor-5.png"/>
+You may preview your configurations to verify them before deploying them by clicking the **Preview** button.
 
 ### Action buttons
 

@@ -1,7 +1,7 @@
 # Display web content 
 
 We're adding web-view and web-modal features making it possible to display web content. This allows users to interact with web applications or content directly from the interface of the Cisco device.
-This is useful for things like getting assistance in a room, tracking issues, or using interactive web apps. You can launch these web extensions either automatically through predefined actions or from the side panel extension option. To use this feature, you need to register your device to Control Hub.
+This is useful for things like getting assistance in a room, tracking issues, or using interactive web apps. You can launch these web extensions either automatically using macros or from the control panel extension option. To use this feature, you need to register your device to Control Hub.
 
 If a web view is opened through code in a macro on passive displays, there is currently no user interface option to close it. In such cases, the closure of the web view should also be done programmatically.
 
@@ -18,8 +18,9 @@ Write the URL of the web page you would like to display.
 
 Display the web page in full screen.
 
-*    Tap **Exit** button to quit
+*    The web page is interactive
 *    Annotating isn't supported
+*    Tap **Exit** button to quit
 
 ### Web modal
 
@@ -31,11 +32,11 @@ Display the web page in full screen.
 
 ### Web view on Touch controller
 
-You can have a web view on the Touch controller by using this: 
+You can have a web view on the Touch controller by using this command: 
 
 `xcommand UserInterface WebView Display Target: Controller`
 
-However there is no button to close the web view, so you need to use the following command if you want to close it: 
+To close the web view, tap the cross on the top right of the screen. You can also run the following command if you want to close it: 
 
 `xcommand UserInterface WebView Clear`
 

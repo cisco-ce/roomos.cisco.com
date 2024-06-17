@@ -8,7 +8,7 @@ When a scheduled Webex meeting includes a video device, a green **Join** button 
 
 * Enable third party join in the device **Settings**.
   
-1. Tap **More** on the home screen and select **Settings**.
+1. Tap **More** on the home screen and select **Settings**
 2. Choose **Device settings**
 3. Tap **Teams admin settings**
 4. On the meetings menu, navigate to **Allow joining third-party meetings**
@@ -17,7 +17,7 @@ When a scheduled Webex meeting includes a video device, a green **Join** button 
 <img src="/doc/images/MTR/ThirdPartyMeetings.png" style="width: 600px" />
 
 * Register your device to Control Hub.
-   
+
 The Webex meeting is the Webex optimized experience. 
 
 When skipping the Control Hub activation, you will only get the guest join experience. 

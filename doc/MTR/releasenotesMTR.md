@@ -1,5 +1,5 @@
 # Release notes
-(Updated May 16, 2024) 
+(Updated June 19, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -90,6 +90,10 @@ Limitations:
 
 * You can only connect one screen to the collaboration device. 
 * Other apps than Microsoft Teams Rooms may be cropped to 16:9 with black bars on the side until they are made to fully utilize the 21:9 resolution. For example, when joining a native Webex meeting, the layout is cropped to 16:9.
+
+Known issues:
+
+* Caveats apply to input resolutions and how input sources are displayed in and outside a call.
 
 **Support for Cisco Room Kit EQX**
 

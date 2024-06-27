@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.13 - May 2024
+D15504.14 - June 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.13 - May 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>14</td> 
+		<td>June 27th 2024</td> 
+		<td>
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.2.2</a> 6d10476cc76, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>13</td> 
@@ -189,6 +196,106 @@ Snap to whiteboard is not available in RoomOS 11
 We have made a permanent change on the upgrade files that we release for our devices. This is a very important change and we recommend you to read the updated [software upgrade section](#software-upgrade) in this document. In short, we have deprecated the xx.k3.cop.sgn files by only releasing xx.k4.cop.sha512 files as these are signed with a more secure signature. This may affect your upgrade path depending on what software version you are currently upgrading from. We have released the xx.k4.cop.sha512 files for a while together with the xx.k3.cop.sgn files but the latter is now deprecated. 
 
 <br><br>
+
+<a name='11.17'></a>
+
+# Release summary for RoomOS 11.17 
+
+## Notes and warnings for this software release
+
+### HTTP proxy authentication available in all proxy modes
+
+In earlier software versions, RoomOS has only supported HTTP proxy authentication when NetworkServices HTTP Proxy Mode has been set to Manual. Now, HTTP proxy authentication is also supported when using proxies through PAC and WPAD files.
+
+The authentication data is configured using the NetworkServices HTTP Proxy LoginName and Password settings.
+
+This feature requires the NetworkServices CommonProxy setting to be set to Enabled. This setting will be removed once the switchover to the new proxy support module (common proxy) is complete.
+
+### Configuration to allow legacy ciphers 
+
+In a previous release, we removed support for the diffie-Hellman-group14-sha1-key-exchange cipher. This resulted in a breaking change for some customers using integration equipment with limited support for newer ciphers. Although this cipher is considered insecure by security scanners, we have implemented a configuration option to disable it to ensure backward compatibility.
+
+You can find the configuration option here: [xConfiguration NetworkServices SSH KeyExchangeAlgorithms AllowLegacy](https://roomos.cisco.com/xapi/Configuration.NetworkServices.SSH.KeyExchangeAlgorithms.AllowLegacy/). The default setting is "On" to prevent disruptions to existing integrations during an upgrade. However, Cisco does not recommend using older ciphers and encourages customers to transition their integration systems to equipment supporting modern ciphers. To avoid security scanners flagging this cipher, set this configuration to "Off".
+
+<hr style='width: 70%'>
+
+## RoomOS 11.17.2.2
+
+* [Updated Settings Menu UI](#111722-1)
+* [Added support for networked standby for Board Pro](#111722-2)
+* [Added support for selecting USB Mode](#111722-3)
+* [Added support to set Max Resolution](#111722-4)
+* [Check-in/Check-out](#111722-5)
+* [Added support for online certificate responders](#111722-6)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.17.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.17.2.2&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.17.2.2 feature descriptions 
+
+<a name='111722-1'></a>
+
+## Updated the Settings Menu UI
+
+The settings menu UI is now adapted to the rest of the UI design. 
+
+<a name='111722-2'></a>
+
+## Added support for Networked Standby for Board Pro
+
+Networked standby is already supported for most of the products, this is now added to the Board Pro
+
+<a name='111722-3'></a>
+
+## Added support for selecting USB Mode
+
+Some laptops do not support video bulk transfer over USB3. Since our products use bulk mode video streaming, using some USB-C cables with USB3 can cause intermittent video streaming issues on these laptops.
+
+To address this, we have introduced a new configuration feature that allows users to switch between USB2 and USB3 modes in such situations. 
+
+Users can make these configuration changes via the codec web UI or over SSH.
+
+Please note that after adjusting the configuration, a system reboot is required.
+
+<a name='111722-4'></a>
+
+## Added support to set Max Resolution
+
+The "xConfiguration Video Input Connector N PreferredResolution" setting softly enforces the preferred resolution, allowing the source to override it and choose a higher resolution if needed.
+
+With the introduction of "xConfiguration Video Input Connector N MaxResolution," a hard limit is set by removing all resolutions above the specified value from the codec input EDID.
+
+To change the Video Input MaxResolution, you need to specify the input and select the MaxResolution. Note that the available values depend on what is supported for that input.
+
+Example:
+
+`xConfiguration Video Input Connector[N] MaxResolution: <1920_1080_60, 3840_2160_30>`
+
+<a name='111722-5'></a>
+
+## Check-in / Check-out of meetings
+
+This feature allows room resources to be freed up if the host does not "Check-in" when the meeting starts and within the set timeout. 
+
+The meeting booking will be removed and free up the space for others to use. This is a feature that helps to avoid unspent resources being blocked. 
+
+<a name='111722-6'></a>
+
+## Improved support for certificate responders
+
+With this feature, the application can always verify the revocation status of a certificate, especially when stapled OCSP responses are unavailable, thus maintaining secure and trustworthy communications.
+
+In summary, enabling the enhanced revocation checking feature in WebEngine allows the application to perform more accurate and current checks on the revocation status of digital certificates, ensuring higher security.
+
+In order to enable this feature you have to enable: xConfiguration WebEngine Certificates RevocationChecks NetworkAccess: <Allow/Deny> where Deny is the default setting (Which means that it is "Off" by default).
+
+Note
+
+WebEngine does not require 'Network Services HTTPS OCSP Mode' to be set to 'On' for performing certificate revocation checks ('Revocation Checks'). Even if DNS resolution or network access to the OCSP responder over TCP port 80 is unavailable, WebEngine performs a 'fail-open', where revocation checks do not prevent connection completion.
+
+When 'NetworkAccess' is set to 'Deny', and there is no 'stapled response', no revocation checks are performed, yet the connection still completes. This means that in scenarios where network access to the OCSP responder is blocked, and no 'stapled response' is available, WebEngine will still allow the HTTPS connection to complete without further revocation checks.
 
 <a name='11.14'></a>
 
@@ -1074,17 +1181,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_14_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_17_2_2.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_14_3_0.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_14_3_0.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_17_2_2.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_17_2_2.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_14_3_0.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_17_2_2.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_14_3_0.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_17_2_2.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1583,8 +1690,11 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0</td> <td>All</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Bar</td> 
-		<td>0</td> <td>All</td>
+		<td rowspan="2">Cisco Room Bar</td> 
+		<td>0-2</td> <td>All</td>
+		<tr>
+			<td>3</td> <td>11.17.2.2</td>
+		</tr>
 	</tr>
 	<tr>
 		<td>Cisco Room Bar Pro</td> 
@@ -1647,12 +1757,18 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0-2</td> <td>All</td> 
 	</tr>
 	<tr>
-		<td>Cisco Desk</td> 
+		<td rowspan="2">Cisco Desk</td> 
 		<td>0-2</td> <td>All</td>
+		<tr>
+			<td>3</td> <td>11.17.2.2</td>
+		</tr>
 	</tr>
 	<tr>
-		<td>Cisco Desk Mini</td>
+		<td rowspan="2">Cisco Desk Mini</td>
 		<td>0-2</td> <td>All</td>
+		<tr>
+			<td>3</td> <td>11.17.2.2</td>
+		</tr>
 	</tr>
 </table>
 

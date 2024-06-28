@@ -27,7 +27,7 @@ The device is in **Do not disturb** mode when you are in a video meeting from yo
 You can control the camera, adjust the volume, remove background noise, and optimize the audio quality, from the device UI. The camera light indicator is on when the camera is in use. The laptop meeting app controls the rest, including disconnecting the call.
 
 
-#### More information
+### More information
 
 Read [this article](https://help.webex.com/en-us/article/ney3qxe/Call-from-laptop-using-your-Cisco-device-as-a-web-camera) for more information on how to use your Cisco device with USB Passthrough and administrators settings.
 

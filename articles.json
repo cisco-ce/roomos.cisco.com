@@ -268,6 +268,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "USBpassthrough",
+      "title": "USB Passthrough",
+      "description": "USB Passthrough for seamless device connections.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "APIAndCustomizations",
       "title": "Using the device API",
       "description": "How to use the Cisco device's xAPI.",

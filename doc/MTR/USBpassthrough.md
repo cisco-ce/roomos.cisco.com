@@ -17,13 +17,15 @@ Devices in this category have a USB-C connector, and you can share content from 
 2. Connect your laptop to the device's USB-C socket.
 3. Open your laptop meeting app and select the device as source for camera, microphone, and loudspeaker. Now you are ready to call or join a meeting from your laptop.
 
-#### In-call behavior
+
+### In-call behavior
 
 You can always mute your microphones from the laptop meeting app. Whether you can mute from the device depends on how your administrator has set up the device. The device and laptop mute indicators are not synchronized. 
 
 The device is in **Do not disturb** mode when you are in a video meeting from your laptop. You won't receive any other incoming calls to your device when in this mode. The device is **not** in **Do not disturb** mode when in audio-only meetings.
 
 You can control the camera, adjust the volume, remove background noise, and optimize the audio quality, from the device UI. The camera light indicator is on when the camera is in use. The laptop meeting app controls the rest, including disconnecting the call.
+
 
 #### More information
 

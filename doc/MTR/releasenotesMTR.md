@@ -1,5 +1,5 @@
 # Release notes
-(Updated June 19, 2024) 
+(Updated July 11, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -36,6 +36,37 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## July 2024
+RoomOS July
+
+Software version: RoomOS 11.18.1.6 88e19d15753
+
+NOTE: If you have registered your devices to Control Hub, you may see the following configuration change on a device's History page in Control Hub. This configuration doesn't have any effect on the device and can be ignored.
+
+Configuration name: Webex > Provisional Activation Service
+
+Value change: Disabled (Default) - Enabled
+
+### New and changed features
+
+**4K screen preview**
+
+For local preview, you can now experience an improved sharing experience.
+
+Benefits include:
+* 4K screen previews with cable
+* Higher resolution Miracast previews
+* Multiscreen capable for non-touch devices - up to 3 outputs (applies to devices with more than one screen)
+* Multisource – view up to 3 different sources across screens (applies to devices with more than one screen)
+* Touch redirect (Windows laptops only)
+
+### Fixed issues 
+
+* CSCwk29266 - Video freezes when Miracast disconnects.
+* CSCwj85340 - UTC offset display difference for America/Mexico_City time zone for devices with and without Microsoft Teams Rooms.
+* CSCwj91288 - Had to toggle mute button to get the device to send audio to the far-end site.
+* CSCwk11016 - Unify the xStatus output for devices with and without Microsoft Teams Rooms.
 
 ## May 2024
 RoomOS May

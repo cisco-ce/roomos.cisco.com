@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.14 - June 2024
+D15504.15 - July 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.14 - June 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>15</td> 
+		<td>July 18th 2024</td> 
+		<td>
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.3.0</a> 5b28ed3fc06, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>14</td> 
@@ -216,6 +223,17 @@ This feature requires the NetworkServices CommonProxy setting to be set to Enabl
 In a previous release, we removed support for the diffie-Hellman-group14-sha1-key-exchange cipher. This resulted in a breaking change for some customers using integration equipment with limited support for newer ciphers. Although this cipher is considered insecure by security scanners, we have implemented a configuration option to disable it to ensure backward compatibility.
 
 You can find the configuration option here: [xConfiguration NetworkServices SSH KeyExchangeAlgorithms AllowLegacy](https://roomos.cisco.com/xapi/Configuration.NetworkServices.SSH.KeyExchangeAlgorithms.AllowLegacy/). The default setting is "On" to prevent disruptions to existing integrations during an upgrade. However, Cisco does not recommend using older ciphers and encourages customers to transition their integration systems to equipment supporting modern ciphers. To avoid security scanners flagging this cipher, set this configuration to "Off".
+
+<hr style='width: 70%'>
+
+## RoomOS 11.17.3.0
+
+RoomOS 11.17.3.0 is a patch release and contains only bugfixes.<br>
+
+Note: This release contains a bugfix for CSCwk70371 (CVE-2024-6387)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.17.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.17.3.0&bt=custV&sts=fd&sb=fr)
 
 <hr style='width: 70%'>
 
@@ -1181,17 +1199,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_17_2_2.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_17_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_17_2_2.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_17_2_2.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_17_3_0.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_17_3_0.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_17_2_2.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_17_3_0.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_17_2_2.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_17_3_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>

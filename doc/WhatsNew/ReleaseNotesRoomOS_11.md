@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.15 - July 2024
+D15504.16 - July 2024
 
 ## Document revision history
 
@@ -13,17 +13,24 @@ D15504.15 - July 2024
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td>16</td> 
+		<td>July 24th 2024</td> 
+		<td>
+			Release of <a href='#11.14' title='Jump to section'>RoomOS 11.14.4.0</a> 4f4369205a1, Patch
+		</td>
+	</tr>
+	<tr>
 		<td>15</td> 
 		<td>July 18th 2024</td> 
 		<td>
-			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.3.0</a> 5b28ed3fc06, Minor
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.3.0</a> 5b28ed3fc06, Patch 
 		</td>
 	</tr>
 	<tr>
 		<td>14</td> 
 		<td>June 27th 2024</td> 
 		<td>
-			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.2.2</a> 6d10476cc76, Minor
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.2.2</a> 6d10476cc76, Minor 
 		</td>
 	</tr>
 	<tr>
@@ -332,6 +339,17 @@ While this should not cause any problems and the upgrade should be transparent f
 CSCwi79191	CDP and VLAN config should allow to enable CDP but not join voiceVLAN
 
 Previously, the phone flag was activated regardless of whether the xConfiguration Network 1 VLAN Voice Mode was enabled or disabled, which was not in line with the specifications. Moving forward, we will only activate the phone flag when this configuration is set to "On".
+
+<hr style='width: 70%'>
+
+## RoomOS 11.14.4.0
+
+RoomOS 11.14.4.0 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.14.4.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.14.4.0&bt=custV&sts=fd&sb=fr)
+
+Note: This release contains a bugfix for CSCwk70371 (CVE-2024-6387)
 
 <hr style='width: 70%'>
 
@@ -1351,6 +1369,11 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<td>November 9th 2023</td>
 		<td>11.1.2.4<br>11.1.3.1<br>11.1.4.1</td>
 		<td>Deferred according to policy (end of support for RoomOS 11.1)</td>
+	</tr>
+	<tr>
+		<td>July 24th 2024</td>
+		<td>11.5.2.4<br>11.5.3.3<br>11.5.4.6<br>11.9.2.4<br>11.9.3.1</td>
+		<td>Deferred according to policy (end of support for RoomOS 11.5 and 11.9)</td>
 	</tr>
 </table>
 

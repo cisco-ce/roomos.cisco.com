@@ -2,7 +2,7 @@
 # Cisco RoomOS 10 
 # Release notes
 ---
-D15463.22 - September 2023
+D15463.23 - July 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15463.22 - September 2023
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>23</td> 
+		<td>July 30th 2024</td> 
+		<td>
+			Release of RoomOS 10.19 Step Upgrade Package<br>RoomOS 10 is deprecated and this release note is kept for historic reference. 
+		</td>
 	</tr>
 	<tr>
 		<td>22</td> 
@@ -145,6 +152,19 @@ D15463.22 - September 2023
 	</tr>
 </table>
 
+## RoomOS 10 is end of support
+
+Support for RoomOS 10 has ended, and it is strongly recommended to upgrade your devices to RoomOS 11 or higher. If you are using an older version of RoomOS 10 that does not support upgrading with large files or cop files ending in cop.sha512 (specifically, versions 10.15 and below), you should use the RoomOS 10.19.5 Step Upgrade file to upgrade to RoomOS 11.
+
+The RoomOS 10.19 Step Upgrade file is specifically for transitioning from RoomOS 10 to RoomOS 11. When you install this package, all other functionality is disabled. You can upgrade the device via the web interface as usual, using the step upgrade packages.
+
+The respective packages for s53300 products and s53200 products are listed below. You will find these software files on the Cisco Software Site under the product you selected.
+
+Note that this is only for devices that have had support for RoomOS 10. 
+
+s53300ce10_19_5-step-upgrade.pkg
+s53200ce10_19_5-step-upgrade.pkg
+
 ## Introduction to Cisco RoomOS 10 <a name='intro'></a>
 
 This release note describes new software features and capabilities included in RoomOS 10 for **on-premises deployment**. RoomOS 10 is supported by the following products:
@@ -216,7 +236,7 @@ In RoomOS 11 we are introducing a new graphical user interface that changes the 
 
 NOTE: We previously announced that SNMP would be removed from RoomOS 11. RoomOS 11 will continue to support basic SNMP as before until further notice. 
 
-NOTE: Facility Service will soon be deprecated from newer software as quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel). 
+NOTE: Facility Service will soon be deprecated from newer software as quick dial functionality can be created using [UI Extensions and macros](https://roomos.cisco.com/macros/Speed%20Dials%20Panel).
 
 <br><br>
 
@@ -1508,6 +1528,11 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<th style="background-color: gray;"><b>Deferral date</b></th>
 		<th style="background-color: gray;"><b>Versions</b></th>
 		<th style="background-color: gray;"><b>Note</b></th>
+	</tr>
+	<tr>
+		<td>July 30th 2024</td>
+		<td>10.19.4.2<br>10.19.5.6</td>
+		<td>Deferred according to policy (end of support for RoomOS 10)</td>
 	</tr>
 	<tr>
 		<td>July 7th 2023</td>

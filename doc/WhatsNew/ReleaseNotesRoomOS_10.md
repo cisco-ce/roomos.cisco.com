@@ -16,7 +16,7 @@ D15463.23 - July 2024
 		<td>23</td> 
 		<td>July 30th 2024</td> 
 		<td>
-			Release of RoomOS 10.19 Step Upgrade Package<br>RoomOS 10 is deprecated and this release note is kept for historic reference. 
+			Release of RoomOS 10.19 Step Upgrade Package<br>RoomOS 10 is deprecated and this release note is kept for historical reference. 
 		</td>
 	</tr>
 	<tr>

@@ -4,6 +4,8 @@ This feature allows you to join Webex and Zoom meetings seamlessly while using M
 
 ## Join Webex Meetings
 
+The Join Webex button is enabled automatically when the MTR device is registered to Webex.
+
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Webex**.
 

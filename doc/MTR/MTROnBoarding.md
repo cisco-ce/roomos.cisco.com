@@ -98,7 +98,7 @@ Use the new access code you receive to log in on the website, or use it in the s
 
 <img src="/doc/images/MTR/5_newonboardingcode.png" style="width: 600px"/>
 
-## Registering devices to Control Hub after the initial setup
+## Control Hub registration after the initial setup
 
 If you didn't register your Cisco devices with Microsoft Teams Rooms to Control Hub during the initial setup, you can do it later. Then you have two options; in both cases you have to create activation codes on Control Hub first.
 

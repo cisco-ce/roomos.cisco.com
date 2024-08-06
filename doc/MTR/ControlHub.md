@@ -2,6 +2,8 @@
 
 When you register your devices to [Control Hub](https://help.webex.com/nkhozs6/), you get access to centralized device management. With Control Hub registered devices, users can join [Webex Meetings](https://roomos.cisco.com/doc/MTR/WebexMeetings) with an extensive range of built-in features.
 
+Contact your parter to set up Control Hub access for your organization.
+
 ## Managing and supporting your device deployment
 
 You can achieve scalable and efficient deployments with Control Hub. Control Hub offers comprehensive device and workspace management: 
@@ -37,7 +39,7 @@ Easily control devices with commands and keep track of changes through device hi
 Gaining insights into how your organization's devices and workspaces are used can lead to better decision-making. By understanding usage patterns and environmental conditions, you can allocate resources more efficiently and improve operational effectiveness. This results in a smarter use of space and technology, optimizing overall performance.
 
 * [Workspace insights](https://help.webex.com/yuzsuw/) 
-* [Environmental data](https://help.webex.com/nc6od6r/)
+* [Environmental and historical data](https://help.webex.com/nc6od6r/)
 * [Usage analytics](https://help.webex.com/n0rlwxe/o#reference-template_6e0c7f40-2d40-4495-9fa3-7a902687e7a9)
 
 

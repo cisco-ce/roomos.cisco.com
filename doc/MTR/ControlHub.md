@@ -49,13 +49,15 @@ Enhance your workspace capabilities with custom controls, workspace integrations
 
 Create custom controls for your users with [UI extensions and macros](https://help.webex.com/gj962f/).
 
-Workspace integrations provide a framework for services to access Webex developer APIs, with a focus on extending the capabilities of workspaces and Cisco devices.
+[Workspace integrations](https://developer.webex.com/docs/workspace-integrations) provide a framework for services to access Webex developer APIs, with a focus on extending the capabilities of workspaces and Cisco devices.
 
 You can [set up a webhook callback URL](https://help.webex.com/3gv4ci/) so that alerts show up in third-party applications. Control Hub offers an alerts center which allows you to create, manage, and receive alerts on various events across your deployment through multiple delivery channels. The delivery channels that alert center currently support are through email, Webex App spaces, and in Control Hub.
 
 [Webhooks for room analytics](https://help.webex.com/nj9r68z/) are a powerful way to automate monitoring of devices. You can allow Control Hub to send requests to a specified web service containing information about an event that happened on a device. For example, when the people count value changes. The service can then act based on the incoming webhook, for example store the data, or trigger other events or services.
 
 The Board, Desk, and Room Series devices feature [User interface (UI) extensions](https://roomos.cisco.com/doc/TechDocs/UiExtensions) that enable you to design new panels and action buttons for creating custom functionalities.
+
+You can enable [web views](https://roomos.cisco.com/doc/MTR/WebViews) to display web content. This allows users to interact with web applications or content directly from the interface of the Cisco device. 
 
 Track and Analyze usage and environmental performance of your device deployment using [comprehensive reports and historical data insights](https://help.webex.com/n0rlwxe/#reference-template_08600d25-d4ad-4016-af4f-37c4a8b98c23
 ).

@@ -219,9 +219,15 @@
       "description": "Onboarding Cisco devices to Microsoft Teams Rooms",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
+     {
+      "id": "ControlHub",
+      "title": "Get started with Control Hub",
+      "description": "Learn about administration options in Control Hub.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
     {
       "id": "GetStartedMTR",
-      "title": "Getting started",
+      "title": "Get started with Cisco Devices",
       "description": "Introducing the main menu, control panel, settings menu, features, and functionality on Cisco devices with Microsoft Teams Rooms.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },

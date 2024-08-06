@@ -8,11 +8,11 @@ Contact your parter to set up Control Hub access for your organization.
 
 You can achieve scalable and efficient deployments with Control Hub. Control Hub offers comprehensive device and workspace management: 
 
-* Real-time alerts
-* Configuration access
 * Status monitoring
 * Detailed device and workspace history
 * Workspace overviews
+* Real-time alerts
+* Configuration access
 
 Learn the basics of managing [workspaces](https://help.webex.com/noolw6w/) in Control Hub.
 

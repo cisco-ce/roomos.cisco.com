@@ -1,5 +1,5 @@
 # Release notes
-(Updated July 11, 2024) 
+(Updated August 8, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -36,6 +36,25 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## August 2024
+RoomOS August
+
+Software version: RoomOS 11.19.1.7 3055d561c16
+
+### New and changed features
+
+**Webex and Zoom calling**
+
+You can now call to Zoom and Webex Meetings from the side-plan. The Zoom calls use the Cisco-Zoom CRC integration. The Webex button lets you call Webex personal room meetings, Webex addresses, and start Webex instant meetings.
+
+<img src="/doc/images/MTR/webex-button.png" style="width: 400px" />
+
+Read more about [Webex and Zoom calling](/doc/MTR/JoinThirdPartyMeetings).
+
+### Fixed issues 
+
+* CSCwk77160 - Miracast local audio not working on device with Microsoft Teams Rooms.
 
 ## July 2024
 RoomOS July
@@ -86,7 +105,6 @@ You can now use Cisco devices to dial a SIP URIs and Webex addresses. The call a
 Requires Control Hub registration.
 
 Read more about [the call app](/doc/MTR/RoomOSCalling).
-
 
 ## April 2024
 RoomOS April 

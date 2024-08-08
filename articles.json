@@ -256,6 +256,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "JoinThirdPartyMeetings",
+      "title": "Join Webex and Zoom meetings",
+      "description": "Join Webex and Zoom meetings from a device that's registered to Control Hub.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "SettingsMenu",
       "title": "Settings menu",
       "description": "Device settings that are available from the UI.",

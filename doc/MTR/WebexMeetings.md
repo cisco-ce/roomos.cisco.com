@@ -27,6 +27,8 @@ When skipping the Control Hub activation, you will only get the guest join exper
 Invite the Microsoft Teams resource account to the **Webex** meeting by adding the resource account's email as an attendee or forwarding the meeting to it.
 The resource account is the account the Teams Rooms device logs into and is what users invite to book the Teams Room. Read more about resource accounts [here](https://learn.microsoft.com/en-us/microsoftteams/rooms/create-resource-account).
 
+For Webex features like "Auto admit - All invited users can join the meeting" with lobby bypass, it's necessary to enable [Hybrid Calendar](https://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cloudCollaboration/spark/hybridservices/calendarservice/cmgt_b_deploy-spark-hybrid-calendar-service.html) for the invited device in Control Hub. The device must be assigned the same email address as the one associated with that resource.
+
 ## How to join
 
 Simply tap the **Join** button on the home screen. The button appears right before the meeting begins.

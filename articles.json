@@ -245,8 +245,8 @@
     },   
     {
       "id": "WebexMeetings",
-      "title": "Join Webex meetings",
-      "description": "Join Webex meetings from a device that's registered to Control Hub.",
+      "title": "Join Webex meetings with One Button To Push",
+      "description": "Join Webex meetings with OBTP from a device that's registered to Control Hub.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {

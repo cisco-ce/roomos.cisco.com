@@ -22,7 +22,7 @@ Read [this article](https://help.webex.com/en-us/article/pq3vkab/Join-Webex-meet
 
 <img src="/doc/images/MTR/Webex_Zoom.png" style="width: 200px" />
 
-3. Enter the code provided in your calendar invite or at the end of the meeting link in order to join a Zoom Meeting with your device. After tapping **next**, select if you are the meeting host or not. If you are the host, enter the host passcode.
+3. Enter the code provided in your calendar invite or at the end of the meeting link in order to join a Zoom Meeting with your device. If you're the host, toggle on I'm the host and write the host key.
 
 Read [this article](https://help.webex.com/en-us/article/0lobg6/Join-Zoom-Meetings-on-Board,-Desk,-and-Room-Series) for more information on Zoom meetings and in-meeting controls.
 

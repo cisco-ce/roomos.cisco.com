@@ -78,6 +78,8 @@ Software versions for onboarding new devices or devices registered to other call
 
 To get the correct software version, you need to do a software upgrade from the device’s setup wizard. 
 
+If you're not using Control Hub and auto-upgrade devices to the June RoomOS 11.17 release, you will not see the MTR option during onboarding process. To use MTR, download the RoomOS 11.14.3.0 image the contains MTR using cmterm-s53300-mtr-ce11_14_3_0.k4.cop.sha512 from [software.cisco.com](software.cisco.com).
+
 ### Software upgrade from setup wizard
 
 After the device starts up, go through the setup wizard up to **Choose configuration**. You don’t need to change any of the settings, just select **Next** on each step. 

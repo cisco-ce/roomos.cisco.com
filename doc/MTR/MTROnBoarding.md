@@ -22,7 +22,7 @@ Onboarding a device is part of the setup wizard flow. To learn how to onboard a 
 
 <img src="/doc/images/MTR/Onboarding5.png" style="width: 600px" />
 
-NOTE: When a device onboards to MTR, the setting menu is locked by default.   
+   NOTE: When a device onboards to MTR, the setting menu is locked by default.   
 
 5. If you are not registering to Control Hub, tap **Skip**. We recommend registration to Control Hub, which enables advanced software management, diagnostics, and analytics capabilities. When you are using Control Hub, enter the device activation code created from Control Hub and tap **Continue**.
 
@@ -33,6 +33,9 @@ NOTE: When a device onboards to MTR, the setting menu is locked by default. �
 <img src="/doc/images/MTR/Onboarding7.png" style="width: 600px" />
 
 7. This is Cisco’s serviceability feature. Tap the **Continue** button.  
+
+   Enable sending crash reports, metrics, and log uploads through an anonymized communication channel between Cisco and the device. These logs are not tied to any specific user or organization, but are identifiable by a device’s serial number or log upload ID.
+To read more about Cisco’s systems information handling, visit the [Cisco Trust Portal](https://trustportal.cisco.com/c/r/ctp/trust-portal.html?doctype=Data%20Brief#/1604543672547988).
 
 <img src="/doc/images/MTR/Onboarding8.png" style="width: 600px" />
 
@@ -75,6 +78,18 @@ If the device is already registered to Control Hub, you may proceed without fact
 
 5. Install Microsoft Teams on the device. Set the **Name** parameter to one of the applicable options found in the previous step, for example, "MicrosoftTeamsRooms".  
 `xCommand MicrosoftTeams Install Name: "MicrosoftTeamsRooms"`
+
+6. Optional: To improve and monitor the quality of the Microsoft Teams Rooms experience on Cisco devices, you can enable the following logging configurations.
+
+   `xConfiguration Webex Privacy AllowUsageDataLogging: True`
+
+   Enable sending crash reports, metrics, and log uploads to Cisco. These logs are not tied to any specific user or organization, but are identifiable by a device’s serial number or log upload ID. Requires xConfiguration Webex ProvisionalActivationService: Enabled
+
+   `xConfiguration Webex ProvisionalActivationService: Enabled`
+
+   Enable or disable the anonymized communication channel between Cisco and the device. When enabled, the channel can be used to retrieve a provisional account token on the device, either serial number or log upload ID, for communicating with Cisco. This token is only used for sending logs, crashes, and metrics when xConfiguration Webex Privacy AllowUsageDataLogging: True.
+
+   To read more about Cisco’s systems information handling, visit the [Cisco Trust Portal](https://trustportal.cisco.com/c/r/ctp/trust-portal.html?doctype=Data%20Brief#/1604543672547988).
   
 If required, the device first downloads new software. Then the installation, which takes about 5 minutes, starts.
 

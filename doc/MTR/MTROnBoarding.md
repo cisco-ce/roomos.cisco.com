@@ -34,7 +34,7 @@ Onboarding a device is part of the setup wizard flow. To learn how to onboard a 
 
 7. This is Cisco’s serviceability feature. Tap the **Continue** button.  
 
-   Enable sending crash reports, metrics, and log uploads through an anonymized communication channel between Cisco and the device. These logs are not tied to any specific user or organization, but are identifiable by a device’s serial number or log upload ID.
+   Enable sending crash reports, metrics, and log uploads through an anonymized communication channel between Cisco and the device. These logs are not tied to any specific user or organization, but are identifiable only by hardware serial number.
 To read more about Cisco’s systems information handling, visit the [Cisco Trust Portal](https://trustportal.cisco.com/c/r/ctp/trust-portal.html?doctype=Data%20Brief#/1604543672547988).
 
 <img src="/doc/images/MTR/Onboarding8.png" style="width: 600px" />
@@ -83,11 +83,11 @@ If the device is already registered to Control Hub, you may proceed without fact
 
    `xConfiguration Webex Privacy AllowUsageDataLogging: True`
 
-   Enable sending crash reports, metrics, and log uploads to Cisco. These logs are not tied to any specific user or organization, but are identifiable by a device’s serial number or log upload ID. Requires xConfiguration Webex ProvisionalActivationService: Enabled
+   Enable sending crash reports, metrics, and log uploads to Cisco. These logs are not tied to any specific user or organization, but are identifiable only by hardware serial number. Requires xConfiguration Webex ProvisionalActivationService: Enabled
 
    `xConfiguration Webex ProvisionalActivationService: Enabled`
 
-   Enable or disable the anonymized communication channel between Cisco and the device. When enabled, the channel can be used to retrieve a provisional account token on the device, either serial number or log upload ID, for communicating with Cisco. This token is only used for sending logs, crashes, and metrics when xConfiguration Webex Privacy AllowUsageDataLogging: True.
+   Enable or disable the anonymized communication channel between Cisco and the device. When enabled, the channel can be used to retrieve a provisional account token on the device, which is identifiable only by hardware serial number, for communicating with Cisco. This token is only used for sending logs, crashes, and metrics when xConfiguration Webex Privacy AllowUsageDataLogging: True.
 
    To read more about Cisco’s systems information handling, visit the [Cisco Trust Portal](https://trustportal.cisco.com/c/r/ctp/trust-portal.html?doctype=Data%20Brief#/1604543672547988).
   

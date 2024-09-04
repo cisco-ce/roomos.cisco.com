@@ -6,6 +6,10 @@ Cisco collaboration devices with Microsoft Teams Rooms offer camera and audio in
 
 Cisco devices feature AI-powered in-call experiences including noise removal and camera intelligence capabilities built-into our hardware solutions, resulting in a high-quality, inclusive, distraction free meeting experience on any platform. Users can easily access camera and audio settings at any time – both in and out of call. 
 
+<img src="/doc/images/MTR/planning-guide2.png" style="width: 700px"/>
+
+You can use [the planning guide and the launch guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
+
 ## Expand your device’s capabilities 
 
 Cisco enables customers to register their Microsoft Teams Rooms certified devices in Control Hub for advanced cloud management, diagnostics, and analytics. This way admins can take advantage of RoomOS APIs to integrate with 3rd party room systems and controllers, get Webex meetings diagnostics, and leverage network-level diagnostics. These capabilities let you make informed decisions about workspace investments with room environmental and utilization data originating from device sensors.  

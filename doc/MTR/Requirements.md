@@ -22,10 +22,12 @@ On products that support more than one screen, maximum two screens are supported
 
 Cisco Touch 10 is not supported.
 
+<img src="/doc/images/MTR/planning-guide.png" style="width: 700px"/>
+
+You can use [the planning guide and the launch guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
+ 
 Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
 
-You can use [the planning guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
- 
  ## Microsoft Teams Rooms management in Teams Admin Center
  
 You can manage your devices in the Teams Admin Center (TAC). Before you start onboarding devices, deploy TAC to suit your needs. After you’ve onboarded your devices, you can use TAC for device management and monitoring.

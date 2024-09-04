@@ -22,7 +22,7 @@ On products that support more than one screen, maximum two screens are supported
 
 Cisco Touch 10 is not supported.
 
-<img src="/doc/images/MTR/planning-guide.png" style="width: 700px"/>
+<img src="/doc/images/MTR/planning-guide2.png" style="width: 700px"/>
 
 You can use [the planning guide and the launch guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
  

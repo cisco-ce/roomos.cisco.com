@@ -1,5 +1,5 @@
 # Release notes
-(Updated August 8, 2024) 
+(Updated September 9, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -36,6 +36,18 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## September 2024
+RoomOS September
+
+Software version: RoomOS 11.20.1.5 2d95ec00b03
+
+### Fixed issues 
+
+* CSCwm32910 - No audio when sharing with Miracast in a Microsoft Teams call on a device for Microsoft Teams Rooms.
+* CSCwk81006 - PresenterTrack UI is not available if only PTZ4K or P60 camera is connected to a device for Microsoft Teams Rooms.
+* CSCwj29348 - System crash in a device for Microsoft Teams Rooms.
+* CSCwk77160 - Miracast local audio not working on a device for Microsoft Teams Rooms.
 
 ## August 2024
 RoomOS August

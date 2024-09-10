@@ -20,7 +20,7 @@ Devices in this category have a USB-C connector, and you can share content from 
 
 ### In-call behavior
 
-You can always mute your microphones from the laptop meeting app. Whether you can mute from the device depends on how your administrator has set up the device. The device and laptop mute indicators are not synchronized. 
+You need to mute your microphones from the laptop meeting app.
 
 The device is in **Do not disturb** mode when you are in a video meeting from your laptop. You won't receive any other incoming calls to your device when in this mode. The device is **not** in **Do not disturb** mode when in audio-only meetings.
 

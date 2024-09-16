@@ -22,14 +22,14 @@ Devices in this category have a USB-C connector, and you can share content from 
 
 You need to mute your microphones from the laptop meeting app.
 
-The device is in **Do not disturb** mode when you are in a video meeting from your laptop. You won't receive any other incoming calls to your device when in this mode. The device is **not** in **Do not disturb** mode when in audio-only meetings.
+You will be able to receive other incoming calls to your device.
 
 You can control the camera, adjust the volume, remove background noise, and optimize the audio quality, from the device UI. The camera light indicator is on when the camera is in use. The laptop meeting app controls the rest, including disconnecting the call.
 
 
 ### More information
 
-Read [this article](https://help.webex.com/en-us/article/ney3qxe/Call-from-laptop-using-your-Cisco-device-as-a-web-camera) for more information on how to use your Cisco device with USB Passthrough and administrators settings.
+Read [this article](https://help.webex.com/en-us/article/ney3qxe/Call-from-laptop-using-your-Cisco-device-as-a-web-camera) for more information on administrators settings.
 
 ## No USB-C support
 

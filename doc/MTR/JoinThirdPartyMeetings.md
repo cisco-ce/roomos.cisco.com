@@ -26,4 +26,13 @@ Read [this article](https://help.webex.com/en-us/article/pq3vkab/Join-Webex-meet
 
 Read [this article](https://help.webex.com/en-us/article/0lobg6/Join-Zoom-Meetings-on-Board,-Desk,-and-Room-Series) for more information on Zoom meetings and in-meeting controls.
 
-**Note** that in order to join Zoom meetings, you need to **Enable Zoom** in Control Hub. Read [here](https://help.webex.com/en-us/article/zai3j4/Enable-join-Zoom-meetings-on-Board,-Desk,-and-Room-Series) to follow the steps.
+### Enabling Zoom and Calling Services
+
+In order to join Zoom meetings, you need to **Enable Zoom** in Control Hub. Read [here](https://help.webex.com/en-us/article/zai3j4/Enable-join-Zoom-meetings-on-Board,-Desk,-and-Room-Series) to follow the steps.
+
+If your calling services are set to **None**, the calling options may appear greyed out. However, you can still use certain features:
+
+* Calling to Webex will work even if the options are greyed out.
+* Calling to Zoom will not work because you won't be able to connect through the required gateway (L2SIP GW) unless calling in Webex is enabled.
+
+To use full calling functionality, ensure that calling services are enabled in your Control Hub Settings.

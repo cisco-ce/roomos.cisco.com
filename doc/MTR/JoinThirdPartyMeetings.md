@@ -33,6 +33,6 @@ In order to join Zoom meetings, you need to **Enable Zoom** in Control Hub. Read
 If your calling services are set to **None**, the calling options may appear greyed out. However, you can still use certain features:
 
 * Calling to Webex will work even if the options are greyed out.
-* Calling to Zoom will not work because you won't be able to connect through the required gateway (L2SIP GW) unless calling in Webex is enabled.
+* Calling to Zoom will not work because you won't be able to connect through the required gateway unless calling in Webex is enabled.
 
 To use full calling functionality, ensure that calling services are enabled in your Control Hub Settings.

@@ -1,5 +1,5 @@
 # Release notes
-(Updated September 9, 2024) 
+(Updated September 18, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -40,6 +40,12 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 ## September 2024
 RoomOS September
 
+Software version: RoomOS 11.20.1.7 913a6c7c769
+
+### Fixed issues 
+
+* CSCwm03535 - Codec does not go into standby after Miracast share.
+  
 Software version: RoomOS 11.20.1.5 2d95ec00b03
 
 ### Fixed issues 
@@ -63,6 +69,17 @@ You can now call to Zoom and Webex Meetings from the side-plan. The Zoom calls u
 <img src="/doc/images/MTR/webex-button.png" style="width: 400px" />
 
 Read more about [Webex and Zoom calling](/doc/MTR/JoinThirdPartyMeetings).
+
+**Extended speaker view**
+
+Get a front-row seat, wherever you are.
+
+Adaptive speaker tracking and intelligent framing by the Cisco Quad Camera and the Cisco PTZ 4K pan-tilt-zoom camera, capture the active speaker and other in-room participants, even in the largest spaces.
+
+Requirement: Room Kit EQ, Room Kit EQX, or Room Kit Pro, 1 x 4K PTZ cameras, minimum 4–6 x Table Microphone Pro's (depending on room size).
+
+Read more about [extended speaker view](https://help.webex.com/n1av2t9/).
+
 
 ### Fixed issues 
 

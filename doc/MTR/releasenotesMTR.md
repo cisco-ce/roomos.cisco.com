@@ -1,5 +1,5 @@
 # Release notes
-(Updated September 18, 2024) 
+(Updated October 7, 2024) 
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -12,6 +12,7 @@ This release note describes new software features and capabilities included in C
 * Cisco Room Kit EQ
 * Cisco Room Kit EQX
 * Cisco Room Kit Pro with Room Navigator
+* Cisco Room Navigator for Microsoft Teams panels
 
 Room Navigator with Board Pro is now supported. 
 
@@ -36,6 +37,27 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
 * [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## October 2024
+RoomOS October
+
+Software version: RoomOS 11.21.1.4 2a8ad5d61cc
+
+### Microsoft Teams panel
+
+We now support Cisco Room Navigator for Microsoft Teams panels. When setup as a Microsoft Teams panel, a Room Navigator provides you with the ability to view location and meeting details at a glance and reserve an available meeting room. With text and color-coded indicators, you can see the meeting space’s availability.
+
+Microsoft Teams panel can display meeting details scheduled through Microsoft Teams or Outlook 365 calendaring applications. With meeting details prominently displayed, attendees can confirm they’re in the right meeting space, at the right time, and for the right meeting.
+
+The Room Navigator must have direct internet connectivity and must be set up as a stand-alone device. It can't be paired to a device locally or remotely.
+
+Read more about [Microsoft Teams panels](https://learn.microsoft.com/microsoftteams/devices/overview-teams-panels).
+
+### Fixed issues 
+
+* CSCwk81006 - PresenterTrack UI is not available if only a PTZ4K or a P60 camera is connected to a device.
+* CSCwm55140 - Crash during sharing event.
+* CSCwm32910 - No audio when Miracast sharing in a Teams call.
 
 ## September 2024
 RoomOS September

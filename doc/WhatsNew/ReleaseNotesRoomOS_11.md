@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.16 - July 2024
+D15504.17 - October 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.16 - July 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>17</td> 
+		<td>October 7th 2024</td> 
+		<td>
+			Release of <a href='#11.20' title='Jump to section'>RoomOS 11.20.2.3</a> 0c4cc65e4e2, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>16</td> 
@@ -210,6 +217,210 @@ Snap to whiteboard is not available in RoomOS 11
 We have made a permanent change on the upgrade files that we release for our devices. This is a very important change and we recommend you to read the updated [software upgrade section](#software-upgrade) in this document. In short, we have deprecated the xx.k3.cop.sgn files by only releasing xx.k4.cop.sha512 files as these are signed with a more secure signature. This may affect your upgrade path depending on what software version you are currently upgrading from. We have released the xx.k4.cop.sha512 files for a while together with the xx.k3.cop.sgn files but the latter is now deprecated. 
 
 <br><br>
+
+<a name='11.20'></a>
+
+# Release summary for RoomOS 11.20
+
+## Notes and warnings for this software release
+
+Nothing noteworthy to mention for this release.
+
+<hr style='width: 70%'>
+
+## RoomOS 11.20.2.3
+
+* [Improvements when Joining Zoom meetings](#112023-1)
+* [Improved local share for devices in MTR mode](#112023-2)
+* [Expanded Cisco Table Microphone Pro and AES67 support](#112023-3)
+* [Support one additional screen when using a third-party touch screen](#112023-4)
+* [Allow Microsoft teams meetings on different tenants through VIMT](#112023-5)
+* [Extended reach speaker mode](#112023-6)
+* [Added support for Cinematic meetings (CrossView)](#112023-7)
+* [Pointing and annotations are now possible on local shares outside meetings](#112023-8)
+* [Frames improvements](#112023-9)
+* [Support for custom Cisco Scheduler setups without need for Webex Calendar](#112023-10)
+
+### Webex Edge for Devices
+
+* [Added support for Hot Spaces (Cisco Webex Board series)](#112023-11)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.20.2.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.20.2.3&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.20.2.3 feature descriptions 
+
+<a name='112023-1'></a>
+
+## Improvements when joining Zoom meetings
+
+In the Join Zoom interface, you will now see a list of selectable Zoom CRC domains under the "Advanced Options" for data center location preferences. 
+
+A new feature has been introduced that automatically detects when you're dialing into a Zoom meeting from xCommand Dial (or from the normal UI Call interface). If a Zoom meeting is detected, Zoom Call Controls will be added to the user interface. Previously, these controls were only available when joining a meeting through the Join Zoom UI. Please note that if you join a meeting via xCommand Dial using a booking ID, the platform specified in the booking will take priority.
+
+We are now also removing the visual Zoom DTMF menu automatically if we detect a Zoom meeting by adding an option to the dial string. For example, 123456789@zoomcrc.com will become 123456789..504@zoomcrc.com.
+
+This addition happens automatically and will not cause issues even if the option is already present, as Zoom supports duplicate options.
+
+This addition of the 504 option disables the Zoom DTMF menu, leaving only our enhanced Zoom Call Controls, ensuring a better user experience.
+
+If you'd prefer to use the Zoom visual menu instead of our call controls, you can disable this feature by setting xConfiguration Zoom EnhancedCallControls to "disabled." This will disable the Zoom enhanced call controls all together. 
+
+<a name='112023-2'></a>
+
+## Improved local share for devices in MTR mode
+
+This update brings significant quality improvements when previewing your screen in MTR mode on Cisco devices, including:
+
+- 4K screen previews with cable
+- Higher resolution Miracast previews
+- Support for up to 3 screens and multisource viewing (on multiscreen devices)
+- Touch redirect for Windows laptops
+
+Note: These features apply to out-of-call MTR mode only.
+
+<a name='112023-3'></a>
+
+## Expanded Cisco Table Microphone Pro and AES67 support
+
+We’ve added support for up to 8 Cisco Table Microphone Pro units for the Cisco Board Pro/G2 (requires the "AV Integrator" Option Key). The Cisco Board Pro/G2 also now supports AES67.
+
+Additionally, the Cisco Room Bar now supports connecting one (1) Cisco Table Microphone Pro.
+
+<a name='112023-4'></a>
+
+## Support one additional passive screen when using a third-party touch screen
+
+You can connect one third-party touchscreen (introduced in RoomOS 11.14) and one passive screen (new in RoomOS 11.20) to the Room Series device, and there are two possible setup options:
+
+Option 1: Screen 1 (left) as an interactive touchscreen and Screen 2 (right) as a passive screen
+
+In this configuration, interactive content will shift from Screen 2 to Screen 1 when, for example, annotating on an incoming presentation.
+
+Connect Screen 1's HDMI cable to connector 1.
+Connect Screen 1's USB cable to the USB-A port for touch functionality.
+Connect Screen 2's HDMI cable to connector 2.
+
+Option 2: Screen 1 (left) as a passive screen and Screen 2 (right) as an interactive touchscreen
+
+Here, content during a call will always be shown on Screen 2, whether it's interactive or not. Outside of a call, all interactive apps and elements will also be displayed on Screen 2.
+
+Connect Screen 1's display cable to connector 1.
+Connect Screen 2's display cable to connector 2.
+Connect Screen 2's USB cable to the USB-A port for touch recognition.
+
+To finalize the setup, configure the following setting:
+
+xConfiguration UserInterface OSD Output: 2
+
+Limitations:
+
+Touch redirect is not supported.
+Active styluses are not supported. Passive styluses may work.
+
+<a name='112023-5'></a>
+
+## Allow Microsoft teams meetings on different tenants through VIMT
+
+Allow existing VIMT (Video Interoperability Meeting Tenant) customers to seamlessly join Microsoft Teams meetings hosted by external tenants while maintaining the familiar Cloud Video Interop (CVI) experience. 
+
+This ensures that users can continue to leverage their VIMT setup for enhanced video quality and functionality, even when participating in meetings outside their home tenant, delivering consistent and optimized meeting experiences across different organizations.
+
+<a name='112023-6'></a>
+
+## Extended reach speaker mode
+
+Get a front-row seat, wherever you are placed in the meeting space. 
+
+Adaptive speaker tracking and intelligent framing by the Cisco Quad Camera and the Cisco PTZ 4K pan-tilt-zoom camera, capture the active speaker and other in-room participants, even in the largest spaces.
+
+<a name='112023-7'></a>
+
+## Added support for Cinematic meetings (CrossView)
+
+Cross-view is an AI-driven feature that enhances meetings with a cinematic experience by using two PTZ 4K or Quad cameras, along with a Codec EQ or Pro and Table Microphones Pro. The system analyzes room activity, identifies speakers, and tracks where participants are facing to automatically select the best camera angle. This setup ensures comprehensive coverage of discussions, even across the table, for more inclusive hybrid meetings.
+
+Please note, connecting more than one Quad Camera to a Codec is only supported for Cross-view. To achieve the best results, it's important to follow the recommended setup guidelines.
+
+For more information read the Cross View Setup guidelines by following this link:
+
+[Cross-view setup guidelines](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/camera/cross-view_guidelines.pdf)
+
+<a name='112023-8'></a>
+
+## Pointing and annotation improvements on live presentations
+
+This feature allows presenters to live annotate and point directly on their presentations in real-time.
+
+Previously, a snapshot was taken of the presentation to draw on, but with this update, the presentation continues beneath the drawings.
+
+Additionally, a new tool, disappearing ink, has been introduced. It stays visible for about 5 seconds, helping presenters highlight key elements without interrupting the flow of the presentation.
+
+<a name='112023-9'></a>
+
+## Frames improvements
+
+The updated framing for groups of 2-4 people ensures that participants are no longer displayed in multiple frames.
+
+For groups of 5-6 participants, the new framing limits the display to two frames, providing a more stable and cohesive viewing experience.
+
+<a name='112023-10'></a>
+
+## Support for custom Cisco Scheduler setups without need for Webex Calendar
+
+We have added an option to enable ad-hoc bookings on a Room Device without having any integrations to a Webex Hybrid Calendar. This feature involves several new xConfigurations and xCommands for custom bookings. 
+
+[xConfiguration Bookings AdhocBooking Enabled](https://roomos.cisco.com/xapi/Configuration.Bookings.AdhocBooking.Enabled/)
+
+Enable or disable ad-hoc booking on the device
+
+[xConfiguration UserInterface RoomScheduler Mode](https://roomos.cisco.com/xapi/Configuration.UserInterface.RoomScheduler.Mode/)
+
+Configure the scheduler to display the device calendar or only if the room is in use or available. 
+
+[xCommand Bookings Book](https://roomos.cisco.com/xapi/Command.Bookings.Book/)
+
+Book a meeting via the xAPI
+
+```
+xCommand Bookings Book BookingRequestUUID: 1 MeetingPlatform: Webex Number: meeting@example.com OrganizerName: "Booker" Protocol: Spark Title: "Webex Local Booking"
+
+OK
+*r BookingsBookResult (status=OK):
+** end
+```
+
+[xCommand Bookings Edit](https://roomos.cisco.com/xapi/Command.Bookings.Edit/)
+
+Edit a booking via the xAPI
+
+```
+xCommand Bookings Edit MeetingId: 1 Title: "MS Local Booking" Number: "differentmeeting@example.com" MeetingPlatform: MicrosoftTeams
+
+OK
+*r BookingsEditResult (status=OK):
+** end
+```
+
+Booking events for third-party integrations: [Bookings Events](https://roomos.cisco.com/xapi/Command.Bookings.Edit/?search=bookings&Type=Event)
+
+<a name='112023-11'></a>
+
+## Added support for Hot Spaces (Cisco Webex Board series)
+
+Note: Applies to Webex Edge for Devices deployments with RoomOS 11.20.2.3 and above.
+
+Introducing hot spacing support for Boards, Board Pros, and Board Pro G2s similar to what we already have for Cisco Desk Series devices in the same deployment model. 
+
+This update brings a new user experience to Boards, enabling hot spacing features that were previously exclusive to Desk series devices (hot desking). 
+
+It allows automatic saving and retrieval of whiteboards to users' accounts, minimizing the need for binding spaces. 
+
+Sign-in will now be triggered via QR code pairing, eliminating the need for USB-C pairing. 
+
+The half wake function will remain the same unless a user is signed in, in which case the Reserved screen will be displayed.
 
 <a name='11.17'></a>
 
@@ -1217,22 +1428,36 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_17_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_20_2_3.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_17_3_0.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_17_3_0.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_20_2_3.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_20_2_3.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_17_3_0.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_20_2_3.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_17_3_0.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_20_2_3.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
 	</tr>
 </table>
+
+## MTR version contained in the MTR cop file
+
+### RoomOS 11.20
+cmterm-s53300-mtr-ce11_20_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2024080804
+
+### RoomOS 11.17
+cmterm-s53300-mtr-ce11_17_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2024061103
+
+### RoomOS 11.14
+cmterm-s53300-mtr-ce11_14_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2024020802
 
 The "All products" cop file (super cop) must only be installed to a Unified CM. This package provides software to all supported video models and peripherals, so you only have to install one cop file if you have multiple products. 
 

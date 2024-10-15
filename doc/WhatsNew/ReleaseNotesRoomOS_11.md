@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.17 - October 2024
+D15504.18 - October 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.17 - October 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>18</td> 
+		<td>October 15th 2024</td> 
+		<td>
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.4.0</a> b12646305a2, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>17</td> 
@@ -441,6 +448,15 @@ This feature requires the NetworkServices CommonProxy setting to be set to Enabl
 In a previous release, we removed support for the diffie-Hellman-group14-sha1-key-exchange cipher. This resulted in a breaking change for some customers using integration equipment with limited support for newer ciphers. Although this cipher is considered insecure by security scanners, we have implemented a configuration option to disable it to ensure backward compatibility.
 
 You can find the configuration option here: [xConfiguration NetworkServices SSH KeyExchangeAlgorithms AllowLegacy](https://roomos.cisco.com/xapi/Configuration.NetworkServices.SSH.KeyExchangeAlgorithms.AllowLegacy/). The default setting is "On" to prevent disruptions to existing integrations during an upgrade. However, Cisco does not recommend using older ciphers and encourages customers to transition their integration systems to equipment supporting modern ciphers. To avoid security scanners flagging this cipher, set this configuration to "Off".
+
+<hr style='width: 70%'>
+
+## RoomOS 11.17.4.0
+
+RoomOS 11.17.4.0 is a patch release and contains only bugfixes.<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.17.4.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.17.4.0&bt=custV&sts=fd&sb=fr)
 
 <hr style='width: 70%'>
 

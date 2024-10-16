@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.18 - October 2024
+D15504.19 - October 2024
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.18 - October 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>19</td> 
+		<td>October 16th 2024</td> 
+		<td>
+			Release of <a href='#11.14' title='Jump to section'>RoomOS 11.14.5.0</a> da3520c7ba8, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>18</td> 
@@ -568,6 +575,14 @@ CSCwi79191	CDP and VLAN config should allow to enable CDP but not join voiceVLAN
 Previously, the phone flag was activated regardless of whether the xConfiguration Network 1 VLAN Voice Mode was enabled or disabled, which was not in line with the specifications. Moving forward, we will only activate the phone flag when this configuration is set to "On".
 
 <hr style='width: 70%'>
+
+## RoomOS 11.14.5.0
+
+RoomOS 11.14.5.0 is a patch release and contains only bugfixes<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.14.5.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.14.5.0&bt=custV&sts=fd&sb=fr)
+
 
 ## RoomOS 11.14.4.0
 

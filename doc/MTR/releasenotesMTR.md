@@ -1,5 +1,9 @@
 # Release notes
-(Updated October 7, 2024) 
+(Updated October 24, 2024) 
+
+**For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
+
+**The latest software version supported by Microsoft: RoomOS 11.18.1.8 8dc7b79ed48. A more recent RoomOS software version is currently being verified by Microsoft.**
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 

@@ -94,10 +94,11 @@ After the software installation is finished, the setup wizard starts up again fr
 
 ### Software upgrades from Control Hub for previously Webex registered devices
 
-Before you onboard a Webex registered device to MTR, you need to make sure the device is running the latest Stable release. You can see the software channel on the device page in Control Hub.  
- 
-If you need to change the software channel, sign in to [admin.webex.com](https://admin.webex.com). Go to **Workspaces** and select the Workspace with the device you want to onboard from the list. Under **Devices**, click the cogwheel icon. In the **Software upgrade channel** drop-down menu, select **Stable** and click **Done**. 
- 
-After the onboarding, the software channel in Control Hub shows up as **Microsoft**. This means that the device gets its software upgrades from Teams Admin Center.  
+Before you onboard a Webex registered device to MTR, you need to make sure the device is running [the latest Stable release supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco). You can see the software channel on the device page in Control Hub. 
 
+You may need to enable [advanced software control](https://help.webex.com/idba5c/) in Control Hub to select the supported software version.
+ 
+After the onboarding, the software provider in Control Hub shows up as **Microsoft**. This means that the device gets its software upgrades from Teams Admin Center.  
+
+You can also choose **Cisco** as the software provider. See the RoomOS software upgrades article for information on how to select a software channel [for an individual device](https://help.webex.com/idba5c/#sx10_t_sw_channel_single_workspace) or [for several devices](https://help.webex.com/idba5c/#sx10_t_sw_channel_bulk).
 

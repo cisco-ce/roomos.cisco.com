@@ -19,6 +19,8 @@ Supported devices:
 
 Room Navigator with Board Pro and Board Pro G2 is now supported. 
 
+Only Room Navigators with a partnumber with *-L*, such as *CS-T10-TS-L*, are supported.
+
 On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a Microsoft Teams Rooms Pro license.
 
 Cisco Touch 10 is not supported.

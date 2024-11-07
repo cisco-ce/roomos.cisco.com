@@ -1,9 +1,9 @@
 # Release notes
-(Updated October 24, 2024) 
+(Updated November 7, 2024) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 11.18.1.8 8dc7b79ed48. A more recent RoomOS software version is currently being verified by Microsoft.**
+**The latest software version supported by Microsoft: RoomOS 11.21.1.8 1331d453bd3, based on RoomOS October 2024.**
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -38,9 +38,19 @@ Read about software upgrades on the [Requirements page](/doc/MTR/Requirements).
 For release notes covering Microsoft Teams Rooms on Android see: https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-release-note?tabs=Android
 
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
-* [What’s new on RoomOS devices](https://help.webex.com/6ger7db/)
-* [RoomOS 11 known and resolved issues](https://help.webex.com/ndws09o/)
+* [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## November 2024
+RoomOS November
+
+Software version: RoomOS 11.22.1.7 1eb6bbe23da 
+
+### Fixed issues
+* CSCwm59937 - Local share doesn't share audio until share is initiated from Microsoft Teams Rooms UI.
+* CSCwm45255 - Room Navigator is showing RoomOS mode UI.
+* CSCwm55140 - Crash during sharing event.
+* CSCwm47351 - Microphone mute doesn't work when doing USB-C passthrough.
 
 ## October 2024
 RoomOS October

@@ -24,6 +24,6 @@ In the case that the organization has been registered but the migration was not 
 
 ## Cisco collaboration devices for Microsoft Teams Rooms with Microsoft as the software provider
 
-If your devices are not registered to Control Hub or have Microsoft as the software provider selected in Control Hub, follow step 1 and step 2 in the migration guide. Step 3 in the guide cannot be completed until AOSP DM compatible is available in Teams Admin Center.
+If your devices are not registered to Control Hub or have Microsoft as the software provider selected in Control Hub, follow step 1 and step 2 in the migration guide. Step 3 in the guide cannot be completed until AOSP DM compatible firmware is available in Teams Admin Center.
 
 In the beginning of February, AOSP DM compatible firmware will be available for Cisco Devices in Teams Admin Center. At this point, you can complete Step 3 of the migration guide.   

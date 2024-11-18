@@ -12,7 +12,10 @@ Follow Microsoft’s guide for migration to ensure your devices are migrated bet
 
 ## Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider
 
-If any of your devices are Control Hub registered and get their software updates from Webex, follow Step 1 and Step 2 in the guidance for migration. When you have completed both steps, please go this form to register your organization as ready for the AOSP migration: [Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
+If any of your devices are Control Hub registered and get their software updates from Webex, follow Step 1 and Step 2 in the guidance for migration. When you have completed both steps, please go this form to register your organization as ready for the AOSP migration: 
+
+[Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
+
 By registering your org in this form, your org will be allowed to receive AOSP firmware when it is released in the beginning of February. We recommend that you complete this as soon as possible. 
 
 If you have not registered your organization as ready for AOSP migration, Cisco will block Teams Rooms devices from upgrading to RoomOS releases with AOSP Device Management. This block will remain until your organization has been registered as ready. Be aware, any system that was blocked on a channel with an AOSP release, will immediately upgrade after the block is removed.

@@ -6,7 +6,8 @@ AOSP Device Management replaces the legacy Android Device Administrator. This is
 
 There are no changes to device functionality for the end users.
 
-Follow Microsoft’s guidance for migration to ensure your devices are migrated between MDM platforms:
+Follow Microsoft’s guide for migration to ensure your devices are migrated between MDM platforms:
+
 [Migrating Teams Android Devices to AOSP Device Management from Device Administrator](https://learn.microsoft.com/MicrosoftTeams/rooms/android-migration-guide). 
 
 ## Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider

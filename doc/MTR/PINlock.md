@@ -10,9 +10,10 @@ In the locked state, the device paired to the Webex App can't make calls or use 
 
 <img src="/doc/images/MTR/Unlock.png" style="width: 500px"/>
 
-Swipe right to open the **Device settings** and select **Pin Options**.
+Swipe right to open the **Device settings** and select **PIN Options**.
 
 <img src="/doc/images/MTR/PinOptions.png" style="width: 200px"/>
 
 Read [this article](https://help.webex.com/en-us/article/7y056e/Secure-your-Board,-Desk,-or-Room-Series-device-with-a-PIN-lock#sx10_r_first-time-pin-for-personal-mode) to learn how to set up the PIN on personal and shared devices.
 
+ 

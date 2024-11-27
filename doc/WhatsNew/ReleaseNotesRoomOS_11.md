@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.19 - October 2024
+D15504.20 - November 2024
 
 ## Document revision history
 
@@ -13,17 +13,24 @@ D15504.19 - October 2024
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td>20</td> 
+		<td>November 27th 2024</td> 
+		<td>
+			Release of <a href='#11.20' title='Jump to section'>RoomOS 11.20.3.0</a> 747a3a59da1, Patch
+		</td>
+	</tr>
+	<tr>
 		<td>19</td> 
 		<td>October 16th 2024</td> 
 		<td>
-			Release of <a href='#11.14' title='Jump to section'>RoomOS 11.14.5.0</a> da3520c7ba8, Minor
+			Release of <a href='#11.14' title='Jump to section'>RoomOS 11.14.5.0</a> da3520c7ba8, Patch
 		</td>
 	</tr>
 	<tr>
 		<td>18</td> 
 		<td>October 15th 2024</td> 
 		<td>
-			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.4.0</a> b12646305a2, Minor
+			Release of <a href='#11.17' title='Jump to section'>RoomOS 11.17.4.0</a> b12646305a2, Patch
 		</td>
 	</tr>
 	<tr>
@@ -239,6 +246,15 @@ We have made a permanent change on the upgrade files that we release for our dev
 ## Notes and warnings for this software release
 
 Nothing noteworthy to mention for this release.
+
+## RoomOS 11.20.3.0
+
+RoomOS 11.20.3.0 is a patch release and contains only bugfixes.<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.20.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.20.3.0&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 <hr style='width: 70%'>
 
@@ -1459,17 +1475,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_20_2_3.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_20_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_20_2_3.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_20_2_3.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_20_3_0.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_20_3_0.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_20_2_3.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_20_3_0.pkg</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_20_2_3.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_20_3_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1998,7 +2014,7 @@ Note: When "all" is mentioned as the minimum version it is referring to all soft
 		<td>0</td> <td>11.5.2.4</td>
 	</tr>
 	<tr>
-		<td>Cisco Room USB	</td> 
+		<td>Cisco Room USB</td> 
 		<td>0</td> <td>All</td>
 	</tr>
 </table>

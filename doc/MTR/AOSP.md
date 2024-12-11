@@ -1,5 +1,10 @@
 # Moving Microsoft Teams Android Devices to AOSP Device Management
 
+<!--
+> [!CAUTION]
+> Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
+
+
 Microsoft is moving from Device Administrator to Intune Android Open Source Project (AOSP) device management. This applies to all Microsoft Teams Rooms on Android and Teams panels devices.
 
 AOSP Device Management replaces the legacy Android Device Administrator. This is a mandatory migration for all Microsoft Teams rooms Android systems. For Cisco devices running Microsoft Teams Rooms, this will take place in the start of 2025, with AOSP firmware being rolled around the start of February.

@@ -60,6 +60,10 @@ Requires Control Hub registration.
 * Onboarding to GCC High Cloud (Government Community Cloud) is not supported. For detailed instructions [using mouse support](/doc/MTR/MTROnBoarding#onboarding-to-gcc-highg). 
 * MAC address provisioning and sign-in is not supported. For more information about [Microsoft Teams remote provisioning and login](https://learn.microsoft.com/microsoftteams/devices/remote-provision-remote-login). 
 
+#### Known issues:
+
+* If **Meet Now** button is pressed during a Remote access session, the device is considered in call and the remote access session will be closed. There is no API to close the meeting, so it is be possible to start a remote access session for 5 minutes until the meeting room opened times out. 
+
 Read more about [remote access](https://help.webex.com/gge81eb/).
 
 ### Screen lock for devices in personal use

@@ -1,5 +1,5 @@
 # Release notes
-(Updated November 7, 2024) 
+(Updated December 12, 2024) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -40,6 +40,43 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+<!-- ## December 2024
+RoomOS December
+
+Software version: RoomOS 11.23.1.6 784224260a6
+
+### Remote access to devices
+
+Remote access allows administrators to interact with the device UI from Control Hub or the device's web interface as if the admin is in the room. Remote access assists you in troubleshooting and onboarding a device regardless of its platform. 
+
+Remote access can help with tasks, such as drawing up meeting zones, configuring microphones, and testing macros.
+
+Requires Control Hub registration.
+
+#### Limitations:
+
+* Remote access is only available after Control Hub registration of the device is complete.
+* Onboarding to GCC High Cloud (Government Community Cloud) is not supported. For detailed instructions [using mouse support](/doc/MTR/MTROnBoarding#onboarding-to-gcc-highg). 
+* MAC address provisioning and sign-in is not supported. For more information about [Microsoft Teams remote provisioning and login](https://learn.microsoft.com/microsoftteams/devices/remote-provision-remote-login). 
+
+Read more about [remote access](https://help.webex.com/gge81eb/).
+
+### Screen lock for devices in personal use
+
+You can now lock the screen of a device used a personal device with a PIN. 
+
+The PIN can be managed by a user through [user hub](https://user.webex.com/) or by an administraro through [Control Hub](https://admin.webex.com/).
+
+Requires Control Hub registration.
+
+Read more about [screen lock](/doc/MTR/PINlock).
+
+### Fixed issues
+* CSCwn15520 - Share tray comes up out of standby.
+* CSCwn17177 - Powerpoint Live playback is not smooth.
+* CSCwm59937 - RoomOs local share doesn't share audio until share is initiated from Microsoft Teams share menu.
+* CSCwm53333 - Software encoder fallback when joining meetings. -->
 
 ## November 2024
 RoomOS November

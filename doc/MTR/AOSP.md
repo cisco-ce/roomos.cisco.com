@@ -4,6 +4,10 @@
 > [!CAUTION]
 > Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
 
+<div style="background-color: #9a2b2b;padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
+  <b style="font-size: 12pt;">Action Required</b> for devices with Cisco as the software provider. See the section <i>Cisco Devices on Microsoft Teams Rooms with Cisco as the software provider</i>
+  </div>  
+
 
 Microsoft is moving from Device Administrator to Intune Android Open Source Project (AOSP) device management. This applies to all Microsoft Teams Rooms on Android and Teams panels devices.
 

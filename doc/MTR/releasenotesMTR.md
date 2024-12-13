@@ -1,5 +1,5 @@
 # Release notes
-(Updated December 12, 2024) 
+(Updated December 13, 2024) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -41,10 +41,10 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-<!-- ## December 2024
+## December 2024
 RoomOS December
 
-Software version: RoomOS 11.23.1.6 784224260a6
+Software version: RoomOS 11.23.1.8 3963b07b5c5
 
 ### Remote access to devices
 
@@ -80,7 +80,7 @@ Read more about [screen lock](/doc/MTR/PINlock).
 * CSCwn15520 - Share tray comes up out of standby.
 * CSCwn17177 - Powerpoint Live playback is not smooth.
 * CSCwm59937 - RoomOs local share doesn't share audio until share is initiated from Microsoft Teams share menu.
-* CSCwm53333 - Software encoder fallback when joining meetings. -->
+* CSCwm53333 - Software encoder fallback when joining meetings.
 
 ## November 2024
 RoomOS November

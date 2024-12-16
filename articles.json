@@ -268,6 +268,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "PINlock",
+      "title": "Secure your device with a PIN",
+      "description": "Add an extra layer of privacy to the device with a 6-digit PIN lock.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "SettingsMenu",
       "title": "Settings menu",
       "description": "Device settings that are available from the UI.",

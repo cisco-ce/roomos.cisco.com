@@ -30,7 +30,9 @@ Then, to install the software:
 2. In the left pane scroll down to and select **Software**.
 3. Under the Software Upgrade tab, select the cop file from the **Choose File** dropdown. Click **Install** to run the installation.
 4. After installation is complete, factory reset the Room Navigator once again.
+
 ## First-time setup wizard
+
 If you're going to register the device to Webex, then generate a Webex Registration code first by selecting 'Add device' on the workspace's page in Control hub. See this [help article](https://help.webex.com/en-us/article/iq6aw6/Room-Navigator-as-a-stand-alone-device) for more information about creating a workspace.
 
 Turn on the Room Navigator to run the first-time setup wizard:

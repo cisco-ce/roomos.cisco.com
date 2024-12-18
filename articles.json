@@ -226,6 +226,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "MTPOnRoomNavigator",
+      "title": "Microsoft Teams Panels on Cisco Room Navigator",
+      "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "ControlHub",
       "title": "Get started with Control Hub",
       "description": "Learn about administration options in Control Hub.",

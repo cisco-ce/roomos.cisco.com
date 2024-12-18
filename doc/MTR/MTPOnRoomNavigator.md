@@ -17,12 +17,15 @@ If not, upgrade the software to a Standalone Navigator supported version first:
    swupgrade https://binaries.webex.com/collaboration-endpoint-ce-production-stable/20240723143327/bifrost.pkg
    
 3. Once the software installation is complete, carry on to *Install the MTP software* in this article.
+
 ## Install the MTP software
+
 First, download the cop file containing the MTP software from here:
 
 https://software.cisco.com/download/home/286333883/type/280886992/release/RoomOS%2011.23.1.8
 
 Then, to install the software:
+
 1. Open a web browser and enter the device's IP address. Log into the web interface with the default credentials Admin/no password.
 2. In the left pane scroll down to and select **Software**.
 3. Under the Software Upgrade tab, select the cop file from the **Choose File** dropdown. Click **Install** to run the installation.
@@ -51,8 +54,11 @@ Turn on the Room Navigator to run the first-time setup wizard:
 
 Your Cisco Room Navigator is now set up and ready to use with the Microsoft Teams Panel app.
 To set up the Panels app, see this [Microsoft documentation.](https://learn.microsoft.com/en-us/microsoftteams/devices/use-teams-panels)
+
 ## Administration
+
 Once setup, to carry out future administration:
+
 * Administer the Room Navigator via the web user interface or over SSH using the admin credentials you created during setup.
 * Access the Teams app device settings from the Microsoft Teams app's device settings panel. You can access the panel by triple-tapping the screen with three fingers, or by tapping the **Settings** icon in the bottom right corner of the screen.
 * If you registered the Room Navigator to Webex, you can set configuration options and carry out other common tasks in Control hub, as for any Standalone Navigator. See this Standalone Navigator  [help article](https://help.webex.com/en-us/article/iq6aw6/Room-Navigator-as-a-stand-alone-device) for more information.

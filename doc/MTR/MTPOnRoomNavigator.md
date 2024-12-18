@@ -27,9 +27,9 @@ https://software.cisco.com/download/home/286333883/type/280886992/release/RoomOS
 Then, to install the software:
 
 1. Open a web browser and enter the device's IP address. Log into the web interface with the default credentials Admin/no password.
-2. In the left pane scroll down to and select **Software**.
-3. Under the Software Upgrade tab, select the cop file from the **Choose File** dropdown. Click **Install** to run the installation.
-4. After installation is complete, factory reset the Room Navigator once again.
+2.  In the left pane scroll down to and select **Software**.
+3.  Under the Software Upgrade tab, select the cop file from the **Choose File** dropdown. Click **Install** to run the installation.
+4.  After installation is complete, factory reset the Room Navigator once again.
 
 ## First-time setup wizard
 

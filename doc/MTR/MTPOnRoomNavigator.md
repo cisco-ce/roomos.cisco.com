@@ -3,7 +3,7 @@ Follow these instructions to set up the Microsoft Teams Panels experience on the
 ## Before you begin
 
 * Check that the Room Navigator has 4GB RAM (i.e., Product ID: CS-T10-WM-L).
-* Factory reset the Room Navigator from the Settings menu or using the pinhole reset on the back.
+* Factory reset the Room Navigator from the **Settings** menu or using the pinhole reset on the back.
 * Note that deployment requires the Room Navigator to be configured in standalone mode and connected to an internet-accessible ethernet port. Microsoft Teams Panels on paired Room Navigators is not supported.
 * Check the software version. If the device is not running version 11.3 or later, you need to upgrade it.
 
@@ -11,7 +11,7 @@ Follow these instructions to set up the Microsoft Teams Panels experience on the
 Check which software version the Room Navigator is running: open the **Control panel**, tap **Device settings**, and then select **About this device**. Scroll down to see the current **Installed version**.
 If the device is on version 11.3 or later, go to *Install the MTP software* in this article.
 If not, upgrade the software to a Standalone Navigator supported version first:
-1. After factory reset, access the API with SSH. Connect using the IP address or hostname of the device: ssh admin@IP address. The username is *admin* and the password is blank.
+1. After factory reset, access the API with SSH. Connect using the IP address or hostname of the device: ssh admin@IP address. The username is *admin* and leave the password blank.
 2. Run the following command:
 
    swupgrade https://binaries.webex.com/collaboration-endpoint-ce-production-stable/20240723143327/bifrost.pkg
@@ -63,5 +63,5 @@ Once setup, to carry out future administration:
 
 * Administer the Room Navigator via the web user interface or over SSH using the admin credentials you created during setup.
 * Access the Teams app device settings from the Microsoft Teams app's device settings panel. You can access the panel by triple-tapping the screen with three fingers, or by tapping the **Settings** icon in the bottom right corner of the screen.
-* If you registered the Room Navigator to Webex, you can set configuration options and carry out other common tasks in Control hub, as for any Standalone Navigator. See this Standalone Navigator  [help article](https://help.webex.com/en-us/article/iq6aw6/Room-Navigator-as-a-stand-alone-device) for more information.
+* If you registered the Room Navigator to Webex, you can set configuration options and carry out other common tasks in Control Hub, as for any Standalone Navigator. See this Standalone Navigator  [help article](https://help.webex.com/en-us/article/iq6aw6/Room-Navigator-as-a-stand-alone-device) for more information.
 * The standard configurations available on Microsoft Teams Admin Center are available for Cisco Room Navigators running Microsoft Teams Panels.

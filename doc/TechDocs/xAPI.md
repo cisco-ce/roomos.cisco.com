@@ -408,7 +408,7 @@ end has sent a SString message.
 ```
 
 
-## <a id="feedback-mechanism"/> Feedback mechanism
+## Feedback mechanism
 
 To build solutions that can reliably keep the state between
 your application and the device synchronized, you can set up

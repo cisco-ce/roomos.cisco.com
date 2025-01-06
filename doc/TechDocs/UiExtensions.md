@@ -21,9 +21,9 @@ UI Extensions, such as buttons and panels, can be programmed in an infinite numb
 
 ### Creating UI Extensions 
 
-To access the UI Extensions Editor, sign-in to the video device's web interface with Administrator, RoomControl, or Integrator credentials and navigate to Customization > UI Extensions Editor. The extensions can also be provisioned from tools such as Control Hub. You can also try the editor here and export your configuration:
+To access the UI Extensions Editor, sign-in to the video device's web interface with Administrator, RoomControl, or Integrator credentials and navigate to Customization > UI Extensions Editor. The extensions can also be provisioned from tools such as Control Hub. 
 
-<a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>
+<!--<a class="button" href="https://custom-collab.cisco.com/uieditor/">Try editor</a>-->
 
 Click **New** and the **Add a new extension** dialog box will appear. 
 You will be presented with the following options:

@@ -629,24 +629,63 @@ if (_main_macro_name() === "my_macro_1") {
 
 This allows for active macros to share its functions with other macros, but you can guard e.g. your macro initialization from being evaluated when the macro is being used as a module by other macros.
 
-### Using CommonJs convention (Deprecated)
+## Deprecation of legacy (CommonJS) Javascript syntax for RoomOS Macros
 
-There is a `CommonJS` convention where all modules have access to a global `require` function used to require (other word for import) modules. The `require` function has a `main` property which can be used to query whether or not the macro is running as the main module or not:
+Macros written using older, deprecated, code styles (CommonJS) will trigger a warning or error. Although these macros may be functioning well right now, they will stop working in a future RoomOS release where support for this legacy style will be removed. You need to change your macros code in the following way.
 
-```javascript
-import xapi from 'xapi';
+For 90% of the macros, the one update that will mostly likely fix the problem is to replace the first line of the macro from `var xapi = require("xapi")` with `import xapi from 'xapi'`. If this does not fix the error/warning, more changes need to be done.
 
-export default function dial(number) {
-  return xapi.Command.Dial({ Number: number });
-}
+Change all requires into imports. From
 
-if (require.main === module) {
-  // This code will only run if this is the active macro
-  dial('user@example.com');
-}
+```js
+var lib = require('./lib')
 ```
 
-This approach is deprecated and `_main_macro_name` approach should be favoured.
+to
+
+```js
+import lib from './lib'
+```
+
+Change all exports from
+
+```js
+module.exports = {
+    x: 42
+};
+```
+
+to
+
+```js
+export const x = 42;
+```
+
+and from
+
+```js
+exports.y = "foo"
+```
+
+to
+
+```js
+export let y = "foo"
+```
+
+Change all mentions of `require.main.name` from
+
+```js
+module.require.main.name
+// or
+require.main.name
+```
+
+to
+
+```js
+_main_macro_name()
+```
 
 ## Performance and life cycle
 

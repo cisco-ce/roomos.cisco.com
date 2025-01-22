@@ -1,5 +1,7 @@
 # Secure your device with a PIN lock
 
+*We temporarily disabled the feature because we found an issue in our automation tests. We will re-enable it as soon as this issue is fixed. Until then, we can enable it on a per customer basis if a customer wants to use it.*
+
 Add an extra layer of privacy to the device with a 6-digit PIN lock, keeping your data safe and notifications discreet.
 
 **Note**: This Feature requires MTR device to be managed in Webex Control Hub. Read [this article](https://help.webex.com/en-us/article/7y056e/Secure-your-Board,-Desk,-or-Room-Series-device-with-a-PIN-lock#sx10_r_first-time-pin-for-personal-mode) to learn how to set up the PIN on personal and shared devices.

@@ -71,7 +71,7 @@ For Intune provisioning and deployment, see: https://learn.microsoft.com/microso
 
 ## Cisco collaboration device software requirements
 
-To initially onboard your devices to MTR, your device needs to be on the correct RoomOS software version. After onboarding, the device gets upgraded automatically from Teams Admin Center.  
+To initially onboard your devices to Microsoft Teams Rooms, your device needs to be on the correct RoomOS software version. After onboarding, the device gets upgraded automatically from Teams Admin Center.  
 
 To learn more about device management in Teams Admin Center, visit: https://learn.microsoft.com/microsoftteams/devices/device-management 
  
@@ -84,19 +84,19 @@ Software versions for onboarding new devices or devices registered to other call
 
 To get the correct software version, you need to do a software upgrade from the device’s setup wizard. 
 
-If you're not using Control Hub and auto-upgrade devices to a release that supports Microsoft Teams Rooms, you will not see the Microsoft Teams Rooms option during onboarding process. To use Microsoft Teams Rooms, download the RoomOS 11.14.3.0 image that contains the Microsoft Teams Rooms option using cmterm-s53300-mtr-ce11_14_3_0.k4.cop.sha512 from [software.cisco.com](https://software.cisco.com).
+If you're not using Control Hub and auto-upgrade devices to a release that supports Microsoft Teams Rooms, you will not see the Microsoft Teams Rooms option during onboarding process. To use Microsoft Teams Rooms, download the RoomOS 11.14.3.0 image that contains the Microsoft Teams Rooms option *cmterm-s53300-mtr-ce11_14_3_0.k4.cop.sha512* from [software.cisco.com](https://software.cisco.com).
 
 ### Software upgrade from setup wizard
 
 After the device starts up, go through the setup wizard up to **Choose configuration**. You don’t need to change any of the settings, just select **Next** on each step. 
 
-On the Choose configuration page, select **Cisco Webex**. Wait for a few seconds and agree to the software upgrade. The device receives the latest software version and it’s installed on the device. 
+On the **Choose configuration** page, select **Cisco Webex**. Wait for a few seconds and agree to the software upgrade. The device receives the latest software version and it’s installed on the device. 
 
 After the software installation is finished, the setup wizard starts up again from the *Welcome screen*. Follow the instructions in the [Onboarding](https://roomos.cisco.com/doc/MTR/MTROnBoarding) article.
 
 ### Software upgrades from Control Hub for previously Webex registered devices
 
-Before you onboard a Webex registered device to MTR, you need to make sure the device is running [the latest Stable release supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco). You can see the software channel on the device page in Control Hub. 
+Before you onboard a Webex registered device to Microsoft Teams Rooms, you need to make sure the device is running [the latest Stable release supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco). You can see the software channel on the device page in Control Hub. 
 
 You may need to enable [advanced software control](https://help.webex.com/idba5c/) in Control Hub to select the supported software version.
  

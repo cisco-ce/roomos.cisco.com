@@ -8,25 +8,25 @@
   <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what_do_i_need_to_do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
   </div> 
 
-### What is happening?
+## What is happening?
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration. 
 
 RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft, and is scheduled to be available in February.
 
-Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS January 2025 / RoomOS 11.24 or newer software automatically, without customer interaction. To receive future updates, organizations must complete the migration steps outlined in this article. 
+Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS January 2025 / RoomOS 11.24 or newer software automatically, without customer interaction. To receive future updates, organizations must complete the migration steps outlined in this articl e. 
 
 Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_release_plan) section.
 
-### Why is this happening?
+## Why is this happening?
 Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP Device Management which is more secure and reliable. As Microsoft Teams Android devices has been using Android Device Administrator up until now, all Microsoft Teams Android devices has to undergo this migration to be able to continue to operate.
 
-### What does this mean for me?
+## What does this mean for me?
 * **There are no changes to device functionality for the end-users** but it will improve device stability and availability.
 * Depending on the configuration of your tenant, devices could get logged out if some migration steps are not completed. **To be sure your devices does not get logged out, please complete migration as soon as possible.**
 * RoomOS January 2025 / RoomOS 11.24 and newer software will not be available for Cisco devices running Microsoft Teams Rooms or Panels before it is approved by Microsoft. This is expected to happen in February.
 * Devices will not receive updates without customer interaction, see the section below.
 
-### <a name="what_do_i_need_to_do"></a>What do I need to do?
+## <a name="what_do_i_need_to_do"></a>What do I need to do?
 To be ready for the migration and continue to receive future software updates, there are some steps you need to complete. **This process should not take more than a couple of minutes.**
 
 **Based on your who is providing your devices with software please proceed to the appropriate section:**
@@ -94,5 +94,5 @@ As soon as Microsoft has verified our AOSP DM firmware, they will make it availa
 
 ## <a name="faq"></a>Frequently Asked Questions
 
-#### What happens if I register as ready for migration but did not complete the migration steps?
+### What happens if I register as ready for migration but did not complete the migration steps?
 If the organization has been registered as ready for migration, but has not completed the required migration steps, there is a risk that devices log out when receiving the AOSP Device Management firmware.

@@ -5,19 +5,15 @@
 > Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
 
 <div style="background-color: #9a2b2b;padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
-  <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms.</i>
-  </div>  
+  <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='dasfdsf'>What do I need to do?</a></i>
+  </div> 
 
 ### What is happening?
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration. 
 
-RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software
+RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms og Panels. It is scheduled to be available in February.
 
-Cisco devices with Microsoft Teams Rooms og Panels will 
-
-not automatically receive releases from RoomOS 11.24 / RoomOS January 2025 and onwards without customer interaction. To continue to receive automatic updates, organizations must complete the migration steps outlined in this article. 
-
-AOSP DM firmware is scheduled to be available in February.
+Cisco devices running Microsoft Teams Rooms og Panels will not automatically receive releases from RoomOS 11.24 / RoomOS January 2025 and onwards without customer interaction. To continue to receive automatic updates, organizations must complete the migration steps outlined in this article. 
 
 Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_release_plan) section.
 

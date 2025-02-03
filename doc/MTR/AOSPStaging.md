@@ -18,9 +18,11 @@ Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS Ja
 Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_release_plan) section.
 
 <h2 id="why-is-this-migration-needed" style="border-bottom: none;padding-bottom: 0;">Why is this Migration Needed?</h2>
+
 Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP DM which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate.
 
 <h2 id="what-does-this-migration-mean-for-my-organization" style="border-bottom: none;padding-bottom: 0;">What does this Migration mean for my organization?</h2>
+
 We have distilled this down to the most important points for you:
 * **There are no changes to device functionality for the end-users** but it will improve the device stability and availability.
 * Depending on the configuration of your tenant, devices could get logged out if some migration steps are not completed. **To be sure your devices do not get logged out, please complete the migration as soon as possible.**
@@ -28,6 +30,7 @@ We have distilled this down to the most important points for you:
 * Devices will not receive updates without customer interaction, see the section below.
 
 <h2 id="what-do-i-as-an-administrator-need-to-do" style="border-bottom: none;padding-bottom: 0;">What do I, as an administrator, need to do?</h2>
+
 To be ready for the migration and continue to receive future software updates, there are some steps you need to complete. **This process should not take more than a couple of minutes.**
 
 **Based on who is providing your devices with software updates please proceed to the appropriate section:**

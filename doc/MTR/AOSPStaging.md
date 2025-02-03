@@ -19,7 +19,7 @@ Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_rel
 
 <h2 id="why-is-this-migration-needed" style="border-bottom: none;padding-bottom: 0;">Why is this Migration Needed?</h2>
 
-Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP DM which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate.
+Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP Device Management which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate. This applies regardless of the usage of the managment features in Intune.
 
 <h2 id="what-does-this-migration-mean-for-my-organization" style="border-bottom: none;padding-bottom: 0;">What does this Migration mean for my organization?</h2>
 
@@ -53,7 +53,7 @@ From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not a
 
 Your Microsoft tenant is not ready and you need to complete these migration steps to be ready for migration:
 1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
-2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide.
+2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
 3. You are now ready and must register your organization as ready for migration to receive future updates:
 [Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
 
@@ -100,7 +100,7 @@ Based on how you manage or enroll your devices, follow the appropriate step:
 Your Microsoft tenant is not ready and you need to complete these migration steps to be ready for migration:
 
 1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
-2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide.
+2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
 3. When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-3---deploy-aosp-management-capable-device-firmware) in Microsoft's migration guide.
 
 ### <a name="msft_not_intune_managed"></a>If you do NOT manage or enroll your devices in Intune

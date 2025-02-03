@@ -67,7 +67,25 @@ You are already ready for migration, as the migration steps are not applicable t
 
 By registering your organization as ready, you will be allowed to receive any future release with AOSP DM. See more about the release schedule in the section below.
 
-### <a name="cisco_sw_release_plan"></a>Control Hub Release Plan for RoomOS and AOSP Device Management firmware
+### <a name="cisco_sw_release_plan"></a>Control Hub Release Plan for RoomOS and AOSP Device Management Software
+
+The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until RoomOS 11.24 has been verified by Microsoft.
+
+The RoomOS 11.24 release is currently being tested and verified by Microsoft. Once Microsoft has verified our AOSP DM firmware, it will be made available in Teams Admin Center. This is expected to happen in February.
+
+When RoomOS 11.24 is released in TAC, RoomOS January 2025 will be updated with the same build, and organizations that have registered as ready for migration will receive the software. If a Microsoft Teams device is set to receive RoomOS January 2025 at that point, it will be upgraded to RoomOS 11.24 with AOSP Device Management.
+
+Details about the rollout of RoomOS February 2025 / 11.25 will be announced later this week.
+
+If you want to have more control over this rollout, see the section below.
+
+### <a name="cisco_sw_advanced_software_upgrade"></a>Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade
+
+If you want to have more control over the rollout of AOSP Device Management software, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
+
+When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release.
+
+You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 
 ## <a name="microsoft_sw_provider"></a>Microsoft as the software provider
 

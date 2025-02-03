@@ -5,10 +5,10 @@
 > Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
 
 <div style="background-color:rgb(123, 8, 8);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
-  <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what_do_i_need_to_do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
+  <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what-do-i-as-an-administrator-need-to-do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
   </div> 
 
-## What is this Migration?
+<h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0;">What is this Migration?</h2>
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration. 
 
 RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft and is scheduled to be available in February.
@@ -17,26 +17,25 @@ Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS Ja
 
 Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_release_plan) section.
 
-## Why is this Migration Needed?
+<h2 id="why-is-this-migration-needed" style="border-bottom: none;padding-bottom: 0;">Why is this Migration Needed?</h2>
 Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP DM which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate.
 
-## What does this Migration mean for my organization?
+<h2 id="what-does-this-migration-mean-for-my-organization" style="border-bottom: none;padding-bottom: 0;">What does this Migration mean for my organization?</h2>
 We have distilled this down to the most important points for you:
 * **There are no changes to device functionality for the end-users** but it will improve the device stability and availability.
 * Depending on the configuration of your tenant, devices could get logged out if some migration steps are not completed. **To be sure your devices do not get logged out, please complete the migration as soon as possible.**
 * RoomOS January 2025 / RoomOS 11.24 and newer software will not be available for Cisco devices running Microsoft Teams Rooms or Panels before it is approved by Microsoft. This is expected to happen in February.
 * Devices will not receive updates without customer interaction, see the section below.
 
-## <a name="what_do_i_need_to_do"></a>What do I, as an administrator, need to do?
+<h2 id="what-do-i-as-an-administrator-need-to-do" style="border-bottom: none;padding-bottom: 0;">What do I, as an administrator, need to do?</h2>
 To be ready for the migration and continue to receive future software updates, there are some steps you need to complete. **This process should not take more than a couple of minutes.**
 
 **Based on who is providing your devices with software updates please proceed to the appropriate section:**
-* [Cisco, through Webex with Cisco selected as software provider →](#cisco_sw_provider)
-* [Microsoft, through Teams Admin Center →](#microsoft_sw_provider)
+* [Cisco, through Webex with Cisco selected as software provider →](#cisco-as-the-software-provider)
+* [Microsoft, through Teams Admin Center →](#microsoft-as-the-software-provider)
 
 <!-- If you want to learn about the details, head down to our [FAQ](#faq) section. -->
 
-<a name="cisco_sw_provider"><a>
 <h2 id="cisco-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Cisco as the Software Provider</h2>
 
 From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not automatically receive updates before customers register themselves as ready for migration. This is because neither Cisco nor Microsoft can verify completion of the migration steps.
@@ -85,7 +84,6 @@ When enabling Advanced Software Upgrade, you will also get two new channels, Ver
 
 You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 
-<a name="microsoft_sw_provider"></a>
 <h2 id="microsoft-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Microsoft as the Software Provider</h2>
 
 Devices running Microsoft Teams Rooms or Panels with Microsoft as the software provider will have to be able to install AOSP DM firmware through TAC when it is available.

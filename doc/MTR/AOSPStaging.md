@@ -36,8 +36,8 @@ To be ready for the migration and continue to receive future software updates, t
 
 <!-- If you want to learn about the details, head down to our [FAQ](#faq) section. -->
 
-<a name="cisco_sw_provider">
-<h2 id="cisco-as-the-software-provider" style="padding-top: 3em;font-size: x-large;">Cisco as the Software Provider</h2>
+<a name="cisco_sw_provider"><a>
+<h2 id="cisco-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Cisco as the Software Provider</h2>
 
 From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not automatically receive updates before customers register themselves as ready for migration. This is because neither Cisco nor Microsoft can verify completion of the migration steps.
 
@@ -86,7 +86,7 @@ When enabling Advanced Software Upgrade, you will also get two new channels, Ver
 You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 
 <a name="microsoft_sw_provider"></a>
-<h2 id="microsoft-as-the-software-provider" style="padding-top: 3em;font-size: x-large;">Microsoft as the Software Provider</h2>
+<h2 id="microsoft-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Microsoft as the Software Provider</h2>
 
 Devices running Microsoft Teams Rooms or Panels with Microsoft as the software provider will have to be able to install AOSP DM firmware through TAC when it is available.
 

@@ -115,6 +115,9 @@ When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/
 ### Teams Admin Center Release Plan for RoomOS and AOSP Device Management firmware
 
 As soon as Microsoft has verified our AOSP DM firmware, they will make it available in Teams Admin Center. This is expected to happen in February.
+
+<div style="height: 40em;"></div>
+
 <!--
 ## <a name="faq"></a>Frequently Asked Questions
 

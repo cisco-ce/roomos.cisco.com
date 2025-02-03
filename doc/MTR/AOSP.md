@@ -1,53 +1,115 @@
-# Moving Microsoft Teams Android Devices to AOSP Device Management
+# Migrating Microsoft Teams Android Devices to AOSP Device Management
 
-<!--
-> [!CAUTION]
-> Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
+<div style="background-color:rgb(123, 8, 8);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
+  <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what-do-i-as-an-administrator-need-to-do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
+  </div> 
 
-<div style="background-color: #9a2b2b;padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
-  <b style="font-size: 12pt;">Action Required</b> for devices with Cisco as the software provider. See the section <i>Cisco Devices on Microsoft Teams Rooms with Cisco as the software provider</i>
-  </div>  
+<h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">What is this Migration?</h2>
 
+Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices as [announced](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) back in September of 2023. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration.
 
-Microsoft is moving from Device Administrator to Intune Android Open Source Project (AOSP) device management. This applies to all Microsoft Teams Rooms on Android and Teams panels devices.
+RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft and is scheduled to be available in February.
 
-AOSP Device Management replaces the legacy Android Device Administrator. This is a mandatory migration for all Microsoft Teams rooms Android systems. For Cisco devices running Microsoft Teams Rooms, this will take place in the start of 2025, with AOSP firmware being rolled around the start of February.
+Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS January 2025 / RoomOS 11.24 or newer software automatically, without customer interaction. To receive future updates, organizations must complete the migration steps outlined in this article.
 
-There are no changes to device functionality for the end-users but it will improve device stability and availability.
+Read more on the schedule for RoomOS devices in our [release plan](#cisco-sw-release-plan) section.
 
+<h2 id="why-is-this-migration-needed" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Why is this Migration Needed?</h2>
 
-Based on your who is providing your devices with software please follow one of these next steps:
-* [Cisco as the software provider](#cisco_sw_provider)
-* [Microsoft as the software provider](#microsoft_sw_provider)
+Android Device Administrator is the legacy management system for Android devices. It is being [deprecated](https://blog.google/products/android-enterprise/da-migration/) and replaced by AOSP Device Management which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate. This applies regardless of the usage of the managment features in Intune.
 
-## <a name="cisco_sw_provider"></a>Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider
+<h2 id="what-does-this-migration-mean-for-my-organization" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">What does this Migration mean for my organization?</h2>
 
-Microsoft Teams Devices that is registered to Control Hub with Cisco as software provider will not receive AOSP Device Management software unless the organization is registered as ready for migration.
+We have distilled this down to the most important points for you:
+* **There are no changes to device functionality for the end-users** but it will improve the device stability and availability.
+* Depending on the configuration of your tenant, devices could get logged out if some migration steps are not completed. **To be sure your devices do not get logged out, please complete the migration as soon as possible.**
+* RoomOS January 2025 / RoomOS 11.24 and newer software will not be available for Cisco devices running Microsoft Teams Rooms or Panels before it is approved by Microsoft. This is expected to happen in February.
+* Devices will not receive updates without customer interaction, see the section below.
+* You can roll out the AOSP DM software at your own pace using the Advanced Software Upgrade feature in Control Hub. See more in [Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade](#cisco-sw-advanced-software-upgrade) section.
 
-### If you do not manage or enroll your devices in Intune
-Your organization is already ready for migration, and can register your organization as ready for migration. See the blue Important note in Step 1 of the migration guide for more details.
+<h2 id="what-do-i-as-an-administrator-need-to-do" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">What do I, as an administrator, need to do?</h2>
 
-### If you do manage or enroll you devices in Intune:
+To be ready for the migration and continue to receive future software updates, there are some steps you need to complete. **This process should not take more than a couple of minutes.**
 
-Complete Step 1 and Step 2 in Microsofts migration guide before registering your organization as ready for migration.
+**Based on who is providing your devices with software updates please proceed to the appropriate section:**
+* [Cisco, through Webex with Cisco selected as software provider →](#cisco-as-the-software-provider)
+* [Microsoft, through Teams Admin Center →](#microsoft-as-the-software-provider)
 
-[Microsoft - Migration Teams Android Devices to AOSP Device Management from Device Administrator](https://learn.microsoft.com/MicrosoftTeams/rooms/android-migration-guide).
+<!-- If you want to learn about the details, head down to our [FAQ](#faq) section. -->
 
+<h2 id="cisco-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Cisco as the Software Provider</h2>
 
-### To register your organization as ready for migration, please fill out the following form:
+From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not automatically receive updates before customers register themselves as ready for migration. This is because neither Cisco nor Microsoft can verify completion of the migration steps.
+
+### <a name="cisco_sw_provider_actions"></a> Required Actions
+
+**Based on how you manage your devices, please proceed to the appropriate section:**
+* [If you manage or enroll your devices in Intune →](#cisco-if-you-manage-or-enroll-your-devices-in-intune)
+* [If you do NOT manage or enroll your devices in Intune →](#cisco-if-you-do-not-manage-or-enroll-your-devices-in-intune)
+
+<h3 id="cisco-if-you-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you manage or enroll your devices in Intune</h3>
+
+Your Microsoft tenant is not ready and you need to complete these migration steps to be ready for migration:
+1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
+2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
+3. You are now ready and must register your organization as ready for migration to receive future updates:
+[Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
+
+<h3 id="cisco-if-you-do-not-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you do NOT manage or enroll your devices in Intune</h3>
+
+You are already ready for migration, as the migration steps are not applicable to you. However, you still need to register your organization as ready for migration. You do this by filling out the form:
 
 [Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
 
-By registering your org in this form, your org will be allowed to receive AOSP firmware when it is released in the beginning of February. We recommend that you complete this as soon as possible. 
+### <a name="cisco_what_register"></a>What does it mean to register as ready for migration?
 
-If you have not registered your organization as ready for AOSP migration, Cisco will block Teams Rooms devices from upgrading to RoomOS releases with AOSP Device Management. This block will remain until your organization has been registered as ready. Be aware, any system that was blocked on a channel with an AOSP release, will immediately upgrade after the block is removed.
+By registering your organization as ready, you will receive AOSP DM software as well as future updates. See more about the release schedule in the section below.
 
-In the case that the organization has been registered as ready for migration, but required migration steps was not completed, there is a risk that the devices logged out when receiving the AOSP Device Management firmware.
+<h2 id="cisco-sw-release-plan" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control Hub Release Plan for RoomOS and AOSP Device Management Software</h2>
 
-## <a name="microsoft_sw_provider"></a>Cisco collaboration devices for Microsoft Teams Rooms with Microsoft as the software provider
+The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until RoomOS 11.24 has been verified by Microsoft.
 
-If your devices are not registered to Control Hub or have Microsoft as the software provider selected in Control Hub, follow Step 1 and Step 2 in the migration guide. Step 3 in the guide cannot be completed until AOSP Device Management compatible firmware is available in Teams Admin Center.
+The RoomOS 11.24 release is currently being tested and verified by Microsoft. Once Microsoft has verified our AOSP DM firmware, it will be made available in Teams Admin Center. This is expected to happen in February.
 
-[Microsoft - Migration Teams Android Devices to AOSP Device Management from Device Administrator](https://learn.microsoft.com/MicrosoftTeams/rooms/android-migration-guide).
+When RoomOS 11.24 is released in TAC, RoomOS January 2025 will be updated with the same build, and organizations that have registered as ready for migration will receive the software. If a Microsoft Teams device is set to receive RoomOS January 2025 at that point, it will be upgraded to RoomOS 11.24 with AOSP DM.
 
-In the beginning of February, AOSP Device Management compatible firmware will be available for Cisco Devices in Teams Admin Center. At this point, you can complete Step 3 of the migration guide. 
+Details about the rollout of RoomOS February 2025 / 11.25 will be announced later this week.
+
+If you want to have more control over this rollout, see the section below.
+
+<h2 id="cisco-sw-advanced-software-upgrade" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade</h2>
+
+If you want to have more control over the rollout of AOSP DM software, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
+
+When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release.
+
+You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
+
+<h2 id="microsoft-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Microsoft as the Software Provider</h2>
+
+Devices running Microsoft Teams Rooms or Panels with Microsoft as the software provider will have to be able to install AOSP DM firmware through TAC when it is available.
+
+### <a name="msft_sw_provider_actions"></a> Required Actions
+Based on how you manage or enroll your devices, follow the appropriate step:
+* [If you manage or enroll your devices in Intune →](#msft-if-you-manage-or-enroll-your-devices-in-intune)
+* [If you do NOT manage or enroll your devices in Intune →](#msft-if-you-do-not-manage-or-enroll-your-devices-in-intune)
+
+<h3 id="msft-if-you-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you manage or enroll your devices in Intune</h3>
+
+Your Microsoft tenant is not ready and you need to complete these migration steps to be ready for migration:
+
+1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
+2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
+3. When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-3---deploy-aosp-management-capable-device-firmware) in Microsoft's migration guide.
+
+<h3 id="msft-if-you-do-not-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you do NOT manage or enroll your devices in Intune</h3>
+
+Your Microsoft tenant is ready for the migration, however, you have to wait for AOSP DM firmware to become available. This is scheduled to happen in February.
+
+When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-3---deploy-aosp-management-capable-device-firmware) in Microsoft's migration guide.
+
+### Teams Admin Center Release Plan for RoomOS and AOSP Device Management firmware
+
+As soon as Microsoft has verified our AOSP DM firmware, they will make it available in Teams Admin Center. This is expected to happen in February.
+
+<div style="height: 40em;"></div>

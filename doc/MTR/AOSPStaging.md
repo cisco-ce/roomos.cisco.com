@@ -72,7 +72,7 @@ WIP
 
 Devices running Microsoft Teams Rooms or Panels with Microsoft as the software provider will have to be able to install AOSP DM firmware through TAC when it is available.
 
-### What do I need to do?
+### <a name="msft_sw_provider_actions"></a> Required Actions
 Based on how you manage or enroll your devices, follow the appropriate step:
 * [If you manage or enroll you devices in Intune](#msft_intune_managed)
 * [If you do NOT manage or enroll your devices in Intune](#msft_not_intune_managed)

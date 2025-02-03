@@ -10,7 +10,7 @@
 
 <h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0;">What is this Migration?</h2>
 
-Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration. 
+Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices as [announced](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) back in September of 2023. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration.
 
 RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft and is scheduled to be available in February.
 
@@ -20,7 +20,7 @@ Read more on the schedule for RoomOS devices in our [release plan](#cisco_sw_rel
 
 <h2 id="why-is-this-migration-needed" style="border-bottom: none;padding-bottom: 0;">Why is this Migration Needed?</h2>
 
-Android Device Administrator is the legacy management system for Android devices. It is being deprecated and replaced by AOSP Device Management which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate. This applies regardless of the usage of the managment features in Intune.
+Android Device Administrator is the legacy management system for Android devices. It is being [deprecated](https://blog.google/products/android-enterprise/da-migration/) and replaced by AOSP Device Management which is more secure and reliable. As Microsoft Teams Android devices have been using Android Device Administrator up until now, all Microsoft Teams Android devices have to undergo this migration to be able to continue to operate. This applies regardless of the usage of the managment features in Intune.
 
 <h2 id="what-does-this-migration-mean-for-my-organization" style="border-bottom: none;padding-bottom: 0;">What does this Migration mean for my organization?</h2>
 

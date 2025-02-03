@@ -9,6 +9,7 @@
   </div> 
 
 <h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0;">What is this Migration?</h2>
+
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration. 
 
 RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft and is scheduled to be available in February.

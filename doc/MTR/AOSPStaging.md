@@ -1,8 +1,6 @@
-# Migrating Microsoft Teams Android Devices to AOSP Device Management
+<p>Last updated February 4th, 2025<p>
 
-<!--
-> [!CAUTION]
-> Action required for devices with Cisco as the software provider. See the section Cisco collaboration devices for Microsoft Teams Rooms with Cisco as the software provider.-->
+# Migrating Microsoft Teams Android Devices to AOSP Device Management
 
 <div style="background-color:rgb(123, 8, 8);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
   <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what-do-i-as-an-administrator-need-to-do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>

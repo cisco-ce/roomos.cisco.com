@@ -69,7 +69,7 @@ By registering your organization as ready, you will receive AOSP DM software as 
 
 <h2 id="cisco-sw-release-plan" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control Hub Release Plan for RoomOS and AOSP Device Management Software</h2>
 
-The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until RoomOS 11.24 has been verified by Microsoft.
+The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until RoomOS 11.24 has been verified by Microsoft. This means that RoomOS February 2025 which was recently released will also not be available for devices running Microsoft Teams Rooms or Panels.
 
 The RoomOS 11.24 release is currently being tested and verified by Microsoft. Once Microsoft has verified our AOSP DM firmware, it will be made available in Teams Admin Center. This is expected to happen in February.
 

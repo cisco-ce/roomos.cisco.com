@@ -252,10 +252,11 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 ## Notes and warnings for this software release
 
-### RoomOS 11.24.2.4 MTR/MTP software release is delayed
+### RoomOS 11.24.2.4 is temporarily not available with Microsoft Teams Rooms or Panels support
 
-Due to the migration to AOSP Device Management for Microsoft Teams Devices, RoomOS 11.24.2.4 is not available for Cisco Devices running Microsoft Teams Rooms / Panel. When approved by Microsoft, the release will made available for Microsoft Teams Rooms devices.
-This applies to MTR and MTP cop files. 
+Due to the upcoming migration to AOSP Device Management for Microsoft Teams Devices, RoomOS 11.24.2.4 is not available for Cisco Devices running Microsoft Teams Rooms or Panels. When RoomOS 11.24 is verified and release by Microsoft, we will make COP files with support for Microsoft Teams Rooms and Panels available. We expect RoomOS 11.24 to be released by Microsoft before the end of February 2025.
+
+Read more about this migration in our documentation on the [AOSP Device Management migration](https://roomos.cisco.com/doc/MTR/AOSP)
 
 ### Samsung QMH firmware 
 
@@ -274,8 +275,10 @@ For update instructions follow the instructions provided in the "Update using US
 * [Support for local ad-hoc bookings ahead of time](#112424-4)
 * [AirPlay AutoShare Pop up](#112424-5)
 * [Content preview in share tray for cabled sources](#112424-6)
-* [Release of Microsoft Teams Panel software for local upgrades](#112424-7)
 * [Support for RFC5922 - Domain Certificates in SIP](#112424-8)
+
+<!--* [Release of Microsoft Teams Panel software for local upgrades(#112424-7)-->
+
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 11.24.2.4](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.24.2.4&bt=custV&sts=fd&sb=fr)
@@ -331,14 +334,14 @@ When AirPlay is connected during a call, an auto-share popup will appear, notify
 
 When you connect a content source, such as a PC, a snapshot of its content appears in the share tray. This helps you quickly identify the correct source. Note that this do not work for the Extended/Virtual sources feature event though the source is connected via Cable. 
 
-<a name='112424-7'></a>
+<!--<a name='112424-7'></a>
 
 ## Release of Microsoft Teams Panel software for local upgrades
 
 For standalone Room Navigators that is running Microsoft Teams Panel we will be releasing a software package for local upgrades. 
 See the updated list of released software packages in the software section. Currently the only release that is available for local MTP upgrades is the RoomOS 11.23.1.8. 
 
-The current MTP release is delayed due to the reasons stated above in the important notes section. 
+The current MTP release is delayed due to the reasons stated above in the important notes section.-->
 
 <a name='112424-8'></a>
 

@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.20 - November 2024
+D15504.21 - February 2025
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.20 - November 2024
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>21</td> 
+		<td>February 5th 2025</td> 
+		<td>
+			Release of <a href='#11.24' title='Jump to section'>RoomOS 11.24.2.4</a> c2bc63070f1, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>20</td> 
@@ -239,6 +246,126 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 <br><br>
 
+<a name='11.24'></a>
+
+# Release summary for RoomOS 11.24
+
+## Notes and warnings for this software release
+
+### RoomOS 11.24.2.4 MTR/MTP software release is delayed
+
+Due to the migration to AOSP Device Management for Microsoft Teams Devices, RoomOS 11.24.2.4 is not available for Cisco Devices running Microsoft Teams Rooms / Panel. When approved by Microsoft, the release will made available for Microsoft Teams Rooms devices.
+This applies to MTR and MTP cop files. 
+
+### Samsung QMH firmware 
+
+Due to an issue with the Samsung QMH Series where Cisco Room devices in some scenarios are unable to wake up the screens from standby we have released a Firmware that will improve this behavior.
+The Samsung QMH Firmware is found on the respective product pages together with the normal RoomOS software. 
+
+For update instructions follow the instructions provided in the "Update using USB" section here: https://www.samsung.com/us/support/answer/ANS00062224/ 
+
+<hr style='width: 70%'>
+
+## RoomOS 11.24.2.4
+
+* [Microsoft Teams Join Button Updates](#112424-1)
+* [Support for Cisco Ceiling Microphone Pro](#112424-2)
+* [Support for Cisco Room Bar BYOD](#112424-3)
+* [Support for local ad-hoc bookings ahead of time](#112424-4)
+* [AirPlay AutoShare Pop up](#112424-5)
+* [Content preview in share tray for cabled sources](#112424-6)
+* [Release of Microsoft Teams Panel software for local upgrades](#112424-7)
+* [Support for RFC5922 - Domain Certificates in SIP](#112424-8)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.24.2.4](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.24.2.4&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.24.2.X feature descriptions 
+
+<a name='112424-1'></a>
+
+## Microsoft Teams Join Button Updates
+
+The Microsoft Teams Join Button will now prompt for a Video ID by default instead of the Meeting ID. 
+Meeting ID will still be available but promoted as an alternative. 
+
+<a name='112424-2'></a>
+
+## Support for Cisco Ceiling Microphone Pro
+
+RoomOS 11.24.2.4 has full support for the Cisco Ceiling Microphone Pro together with supported systems. [Click here to read more about the Cisco Ceiling Microphone Pro](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/collaboration-peripherals/ceiling-microphone-pro-ds.html) 
+
+<a name='112424-3'></a>
+
+## Support for Cisco Room Bar BYOD 
+
+With RoomOS 11.24.2 and later installed on a Cisco Room Bar without a Room Navigator connected, the device will boot into Cisco Room Bar BYOD mode. This feature is distinct from "Call from Laptop" and requires that no touch panels or touch screens are connected to the Cisco Room Bar in addition to being i factory default mode. In BYOD mode, the Room Bar can be connected via USB-C or USB-A to USB-C, functioning as an advanced web camera that provides audio input and output, video with built-in intelligent framing, and local presentation capabilities when connected to a screen.
+
+If a Cisco Room Navigator is connected, the device will automatically exit BYOD mode and function as a standard Cisco Room Bar. To return to BYOD mode, the Room Navigator must be disconnected, and the Cisco Room Bar must undergo a factory reset.
+
+The Cisco Room Bar BYOD can operate in three configurations. In the first, the device is not connected to any network via cable or Wi-Fi. Network connectivity is unnecessary in this setup, and the Room Bar serves as a web camera, microphone, and speaker system for a connected laptop. It can also act as a presentation device when a screen is connected to the HDMI output. In this no-network mode, access to device configurations is limited, so the default volume level set to 70% (as opposed to the standard 50%). Audio control must be managed from the connected laptop. Some providers may not allow volume adjustments on digital audio devices, requiring the Cisco Room Bar to manage volume. Configuration changes in no-network mode can only be made using a serial connection to the xAPI.
+
+When the Room Bar has network connectivity, either through Wi-Fi or Ethernet, additional configuration options become available via the web interface. Most settings and commands can be accessed, although the user interface remains limited in certain areas, such as displaying web views, custom prompts and alerts. However, functionalities like [xConfiguration UserInterface CustomMessage](https://roomos.cisco.com/xapi/Configuration.UserInterface.CustomMessage/) are still supported. 
+
+To connect the device to Wi-Fi (if supported), there are two options. The first involves using a serial connection to the xAPI and configuring Wi-Fi details with the [xCommand Network Wifi Configure](https://roomos.cisco.com/xapi/Command.Network.Wifi.Configure/) command. The device will connect to the Wi-Fi network within a few seconds if the configuration is correct. The second option is to use an SSH connection to the device's xAPI while it is connected to the network via Ethernet. The same command can be used to configure Wi-Fi details, after which the Ethernet cable can be removed, allowing the device to connect to the configured Wi-Fi network.
+
+When the Cisco Room Bar in BYOD mode has network connectivity, it can also be registered to Webex. This allows pairing with Webex clients for making calls and adds the device to Control Hub for simplified management. Registering the Room Bar to Webex in BYOD mode also enables automatic software updates.
+
+<a name='112424-4'></a>
+
+## Support for local ad-hoc bookings ahead of time
+
+The local booking UI for ad-hoc bookings now allow you to book the room ahead of time. 
+
+<a name='112424-5'></a>
+
+## AirPlay auto share popup
+
+When AirPlay is connected during a call, an auto-share popup will appear, notifying the user that sharing will begin in 5 seconds and providing a countdown until the content is shared in the call. The popup can be dismissed by tapping outside of it or selecting "Dismiss," which will cancel the content share.
+
+<a name='112424-6'></a>
+
+## Content preview in share tray for cabled sources
+
+When you connect a content source, such as a PC, a snapshot of its content appears in the share tray. This helps you quickly identify the correct source. Note that this do not work for the Extended/Virtual sources feature event though the source is connected via Cable. 
+
+<a name='112424-7'></a>
+
+## Release of Microsoft Teams Panel software for local upgrades
+
+For standalone Room Navigators that is running Microsoft Teams Panel we will be releasing a software package for local upgrades. 
+See the updated list of released software packages in the software section. Currently the only release that is available for local MTP upgrades is the RoomOS 11.23.1.8. 
+
+The current MTP release is delayed due to the reasons stated above in the important notes section. 
+
+<a name='112424-8'></a>
+
+## Support for RFC5922 Domain Certificate in SIP 
+
+Support for Domain Certificate verification in SIP according to RFC5922. The setting xConfiguration SIP TransportSecurity CertificateVerificationMode can be configured to one of three modes: Auto, Legacy, or RFC5922. In Auto or Legacy mode, verification is disabled. 
+
+### Related xAPI Configurations
+
+The mode RFC5922 specifies how to validate names in an X.509 certificate received from a SIP remote. To enforce certificate verification for SIP calls, the following xConfiguration parameters must also be set:
+
+xConfiguration SIP DefaultTransport: Tls
+<br>xConfiguration SIP TlsVerify: On
+<br>xConfiguration SIP ListenPort: Off 
+
+Note that the SIP ListenPort mode Off will effectively block incoming SIP calls. 
+
+### Special Considerations
+
+Even if RFC5922 is enabled via the configuration above, it will be automatically disabled under the following conditions:
+
+xConfiguration Provisioning WebexCalling Mode: On
+<br>xConfiguration SIP Type: Cisco
+<br>xConfiguration SIP Proxy 1 Address: "non-empty"
+
+<br><br>
+
 <a name='11.20'></a>
 
 # Release summary for RoomOS 11.20
@@ -253,8 +380,6 @@ RoomOS 11.20.3.0 is a patch release and contains only bugfixes.<br>
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 11.20.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.20.3.0&bt=custV&sts=fd&sb=fr)
-
-<hr style='width: 70%'>
 
 <hr style='width: 70%'>
 
@@ -1475,17 +1600,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_20_3_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_24_2_4.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_20_3_0.k4.cop.sha512<b>*
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_24_2_4.k4.cop.sha512<b>*
 		<br>cmterm-s53300-mtr-ce11_20_3_0.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_20_3_0.pkg</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_24_2_4.pkg</b><br><b>cmterm-s53350-mtp-ce11_23_1_8.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_20_3_0.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_24_2_4.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1493,6 +1618,9 @@ Before you start, please make sure you have downloaded the software for the corr
 </table>
 
 ## MTR version contained in the MTR cop file
+
+### RoomOS 11.24
+Software release is delayed until further notice, please refer to the important notes and warnings section for the RoomOS 11.24.2.4 release.  
 
 ### RoomOS 11.20
 cmterm-s53300-mtr-ce11_20_*_*.k4.cop.sha512

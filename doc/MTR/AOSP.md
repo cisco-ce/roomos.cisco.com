@@ -79,11 +79,13 @@ Details about the rollout of RoomOS February 2025 / 11.25 to devices running Mic
 
 If you want to have more control over this rollout, see the section below.
 
-<h2 id="cisco-sw-advanced-software-upgrade" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade</h2>
+<h2 id="cisco-sw-advanced-software-upgrade" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade</h2> 
 
-If you want to have more control over the rollout of AOSP DM software, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
+If you want to have more control over the rollout of AOSP DM software, **after it has been released to the Stable channel**, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
 
 When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release.
+
+Note that AOSP DM software is also not available for Microsoft Teams devices in the Verification and Trial channels until it has been released to the Stable channel. See the previous section for details about the release plan.
 
 You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 

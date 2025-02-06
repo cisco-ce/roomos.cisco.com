@@ -83,7 +83,7 @@ If you want to have more control over this rollout, see the section below.
 
 If you want to have more control over the rollout of AOSP DM software, **after it has been released to the Stable channel**, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
 
-When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release.
+When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release. **Important: To roll out using Advanced Software Upgrade, you need to set your Stable channel to RoomOS December 2024 before we release RoomOS 11.24 with AOSP DM.**
 
 Note that AOSP DM software is also not available for Microsoft Teams devices in the Verification and Trial channels until it has been released to the Stable channel. See the previous section for details about the release plan.
 

@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.21 - February 2025
+D15504.22 - February 2025
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.21 - February 2025
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>22</td> 
+		<td>February 11th 2025</td> 
+		<td>
+			Software deferral of 11.14 and some versions of 11.17
+		</td>
 	</tr>
 	<tr>
 		<td>21</td> 
@@ -1777,6 +1784,11 @@ Exceptions are made if supported hardware or particular feature deployments are 
 		<td>July 24th 2024</td>
 		<td>11.5.2.4<br>11.5.3.3<br>11.5.4.6<br>11.9.2.4<br>11.9.3.1</td>
 		<td>Deferred according to policy (end of support for RoomOS 11.5 and 11.9)</td>
+	</tr>
+	<tr>
+		<td>February 11th 2025</td>
+		<td>11.14.2.3<br>11.14.3.0<br>11.14.4.0<br>11.14.5.0<br>11.17.2.2<br>11.17.3.0</td>
+		<td>Deferred according to policy</td>
 	</tr>
 </table>
 

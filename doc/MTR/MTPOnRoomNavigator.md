@@ -26,7 +26,7 @@ https://software.cisco.com/download/home/286333883/type/280886992/release/RoomOS
 
 Then, to install the software:
 
-1. Open a web browser and enter the device's IP address. Log into the web interface with the default credentials Admin/no password.
+1. Open a web browser and enter the device's IP address. Log into the web interface with the default credentials admin/no password.
    
 2.  In the left pane scroll down to and select **Software**.
 

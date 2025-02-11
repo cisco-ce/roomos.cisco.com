@@ -1,6 +1,5 @@
 # Secure your device with a PIN lock
 
-*We temporarily disabled the feature because we found an issue in our automation tests. We will re-enable it as soon as this issue is fixed. Until then, we can enable it on a per customer basis if a customer wants to use it.*
 
 Add an extra layer of privacy to the device with a 6-digit PIN lock, keeping your data safe and notifications discreet.
 

@@ -259,6 +259,14 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 ## Notes and warnings for this software release
 
+### AV Integrator Option no longer required for more than 3 Cisco Microphone Pro/Ceiling Microphone Pro
+
+The AV Integrator Option is still required to unlock Audio Console (Codec EQ/EQX) and AES67. However, we have removed the need for this option when adding more than three Cisco Microphone Pro units.
+
+Cisco Room Bar Pro, Board Pro, Board Pro G2, Codec EQ, EQX, and Room Kit EQ now support up to eight Cisco Microphone Pro or Ceiling Microphone Pro units without requiring the AV Integrator Option key.
+
+Additionally, Cisco Room Bar now supports one Cisco Microphone Pro or Ceiling Microphone Pro without the need for the AV Integrator Option.
+
 ### RoomOS 11.24.2.4 is temporarily not available with Microsoft Teams Rooms or Panels support
 
 Due to the upcoming migration to AOSP Device Management for Microsoft Teams Devices, RoomOS 11.24.2.4 is not available for Cisco Devices running Microsoft Teams Rooms or Panels. When RoomOS 11.24 is verified and release by Microsoft, we will make COP files with support for Microsoft Teams Rooms and Panels available. We expect RoomOS 11.24 to be released by Microsoft before the end of February 2025.

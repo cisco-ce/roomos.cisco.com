@@ -265,7 +265,7 @@ The AV Integrator Option is still required to unlock Audio Console (Codec EQ/EQX
 
 Cisco Room Bar Pro, Board Pro, Board Pro G2, Codec EQ, EQX, and Room Kit EQ now support up to eight Cisco Microphone Pro or Ceiling Microphone Pro units without requiring the AV Integrator Option key.
 
-Additionally, Cisco Room Bar now supports one Cisco Microphone Pro or Ceiling Microphone Pro without the need for the AV Integrator Option.
+Additionally, Cisco Room Bar now supports one Ceiling Microphone Pro (or one Cisco Microphone Pro) still without the need for the AV Integrator Option.
 
 ### RoomOS 11.24.2.4 is temporarily not available with Microsoft Teams Rooms or Panels support
 
@@ -897,6 +897,10 @@ We've updated the Macro Framework to utilize QuickJS as its default engine, repl
 ## Easier deployment of AirPlay
 
 Administrators no longer have to set the [xConfiguration Bluetooth Enabled](https://roomos.cisco.com/xapi/Configuration.Bluetooth.Enabled/) to "True" for emitting Airplay BLE beacons. This simplifies the configuration process for deploying Airplay.
+
+## Cisco Room Bar now has support for 1 Cisco Microphone Pro
+
+Cisco Room Bar now supports one Cisco Microphone Pro. AV Integrator Option is not required.
 
 <br><br>
 

@@ -36,3 +36,25 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 
 <img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
 
+## Supported RoomOS devices 
+
+|Device type | Connector id/New Inputs | Max Quaility |USB ports |
+| ------------- | ------------- |------------- | ------------- |
+|DeskPro|	4,5	|4k@30	|USB 2.0 Type A|
+|RoomBarPro|	4,5	|4k@30	|USB 2.0 Type A|
+|RoomBar|	4,5	|4k@30	|USB 2.0 Type A|
+|BoardPro|	4,5	|4k@30	|USB 2.0 Type A|
+|BoardPro G2|	4,5	|4k@30	|USB 2.0 Type A|
+|CodecPro|	7	|4k@30	|USB 2.0 Type A|
+|RoomKitEQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
+
+
+## Limitations for USB Content Cameras
+
+   
+  * **Snapshot Support**: Navigator previews require cameras that support snapshots. Note that the Logitech Scribe is known not to support this feature.
+  * **Device Misidentification**: Some USB cameras may be incorrectly flagged as headsets, which can affect their functionality.
+  * **Audio Interference**: When a USB camera is connected to the USB port under the Deskpro, there may be interference with the aux jack audio. To avoid this, connect the USB camera to the ports located at the back.
+  * **Power Requirements**: If the USB cable connecting the camera is significantly long, external power may be necessary to ensure proper operation.
+
+

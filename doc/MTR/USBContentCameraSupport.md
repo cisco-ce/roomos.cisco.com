@@ -6,18 +6,33 @@ No configuration is required when using a content camera. Simply plug the camera
 
 ## RoomOS
 
-Sharing a USB camera from your computer when not in a call
+Sharing a USB camera content from your computer when not in a call
 
 <img src="/doc/images/MTR/USBContentCamera1.png" style="width: 500px"/>
 
-Sharing a USB camera from the navigator when not in a call
+Sharing a USB camera content from the navigator when not in a call
 
 <img src="/doc/images/MTR/USBContentCamera2.png" style="width: 500px"/>
 
-Sharing a USB camera from your computer when in a call
+Sharing a USB camera content from your computer when in a call
 
 <img src="/doc/images/MTR/USBContentCamera3.png" style="width: 500px"/>
 
-Sharing USB camera from the navigator when in a call
+Sharing USB camera content from the navigator when in a call
 
 <img src="/doc/images/MTR/USBContentCamera4.png" style="width: 500px"/>
+
+## Microsoft Teams Rooms
+
+You can use MTR settings menu to select content camera source:
+
+<img src="/doc/images/MTR/USBContentCamera5.png" style="width: 500px"/>
+
+Sharing a USB camera content in a Microsoft teams meeting:
+
+<img src="/doc/images/MTR/USBContentCamera6.png" style="width: 500px"/>
+
+Alternatively a USB camera can be selected as a share source from the side bar, allowing it to be shared with the share button:
+
+<img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
+

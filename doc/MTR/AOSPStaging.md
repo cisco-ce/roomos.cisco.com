@@ -1,4 +1,4 @@
-<p>Last updated February 4th, 2025<p>
+<p>Last updated February 19th, 2025<p>
 
 # Migrating Microsoft Teams Android Devices to AOSP Device Management
 
@@ -69,21 +69,29 @@ By registering your organization as ready, you will receive AOSP DM software as 
 
 <h2 id="cisco-sw-release-plan" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control Hub Release Plan for RoomOS and AOSP Device Management Software</h2>
 
-The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until RoomOS 11.24 has been verified by Microsoft. This means that RoomOS February 2025, which was recently released, will also not be available for devices running Microsoft Teams Rooms or Panels for the time being.
+*Updated February 19th, 2025*
 
-The RoomOS 11.24 release is currently being tested and verified by Microsoft. Once Microsoft has verified our AOSP DM firmware, it will be made available in Teams Admin Center. This is expected to happen in February.
+The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until they have registered as ready for migration.
 
-When RoomOS 11.24 with AOSP DM is released by Microsoft, RoomOS January 2025 in Control Hub will be updated with the same RoomOS 11.24 software with AOSP DM. At this point, Microsoft Teams devices in organizations that is registered as ready for migration and on a channel set to receive RoomOS January 2025 will be upgraded to RoomOS 11.24 with AOSP DM.
+Microsof has now released RoomOS 11.24.1.8 with AOSP Device Management. See the below sections for the release plan for our Control Hub releases.
 
-Details about the rollout of RoomOS February 2025 / 11.25 to devices running Microsoft Teams Rooms or Panels will be announced early next week.
+**RoomOS January 2025**
 
-If you want to have more control over this rollout, see the section below.
+RoomOS 11.24.1.8 with ASOP DM will be released to RoomOS January 2025 on Thursday February 20th, 2025. Devices on a channel with RoomOS January 2025 will receive RoomOS 11.24.1.8 if the organization has registered as ready for migration.
 
-<h2 id="cisco-sw-advanced-software-upgrade" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade</h2>
+**RoomOS February 2025 and Automatic Upgrades**
 
-If you want to have more control over the rollout of AOSP DM software, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
+On Monday 24th of February, we will push the RoomOS 11.24.1.8 release to devices set to receive RoomOS February 2025. This means if a device is on a channel manually pinned to RoomOS February 2025, or if it is set to get automatic upgrades. This applies to the Stable, Verification, and Trial channels.
 
-When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release.
+If you want to have more control over the rollout of AOSP DM software to your devices, please see the section below.
+
+<h2 id="cisco-sw-advanced-software-upgrade" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade</h2> 
+
+If you want to have more control over the rollout of AOSP DM software, **after it has been released to the Stable channel**, you can use the Advanced Software Upgrade feature in Control Hub. This feature allows you to control which release is available in your organization's Stable channel.
+
+When enabling Advanced Software Upgrade, you will also get two new channels, Verification and Trial. These channels can be used to test and verify the AOSP DM release before putting the Stable channel on an AOSP DM release. **Important: To roll out using Advanced Software Upgrade, you need to set your Stable channel to RoomOS December 2024 before we release RoomOS 11.24 with AOSP DM.**
+
+Note that AOSP DM software is also not available for Microsoft Teams devices in the Verification and Trial channels until it has been released to the Stable channel. See the previous section for details about the release plan.
 
 You can read more about Advanced Software Upgrade in the [RoomOS software upgrades Webex documentation](https://help.webex.com/en-us/article/idba5c/RoomOS-software-upgrades#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 
@@ -115,19 +123,3 @@ When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/
 As soon as Microsoft has verified our AOSP DM firmware, they will make it available in Teams Admin Center. This is expected to happen in February.
 
 <div style="height: 40em;"></div>
-
-<!--
-## <a name="faq"></a>Frequently Asked Questions
-
-### What happens if I register as ready for migration but did not complete the migration steps?
-If the organization has been registered as ready for migration, but has not completed the required migration steps, there is a risk that devices log out when receiving the AOSP Device Management firmware.
-
-### What happens if AOSP DM software is deployed to a system in a tenant that has not completed the appropriate migration steps?
-
-If you manage or enroll your device in Intune, there is a risk that the devices log out when receiving the AOSP Device Management firmware.
-
-### What happens if I never register as ready for migration?
-If you have not registered your organization as ready for AOSP migration, Cisco devices running Teams Rooms will continue to not receive updates for the time being. In February, when AOSP DM software is released, we will announce a timeline for when we will allow all orgs to receive AOSP DM software, regardless of registering as ready for migration.
-
-This block will remain until your organization has been registered as ready. Be aware, any system that was blocked on a channel with an AOSP release, will immediately upgrade after the block is removed.
--->

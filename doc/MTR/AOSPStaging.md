@@ -1,4 +1,4 @@
-<p>Last updated February 19th, 2025<p>
+<p>Last updated February 19th, 2025 - <a href='#cisco-sw-release-plan'>Last updated Section →</a><p>
 
 # Migrating Microsoft Teams Android Devices to AOSP Device Management
 

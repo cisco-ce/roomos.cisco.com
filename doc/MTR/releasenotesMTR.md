@@ -1,9 +1,9 @@
 # Release notes
-(Updated January 6, 2025) 
+(Updated February 20, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 11.22.1.7 1eb6bbe23da, based on RoomOS November 2024.**
+**The latest software version supported by Microsoft: RoomOS 11.24.1.8 b47804c63e8, based on RoomOS January 2025.**
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -40,6 +40,18 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## February 2024
+RoomOS January
+
+Software version: RoomOS 11.24.1.8 b47804c63e8
+
+### Fixed issues
+* CSCwn49592 - Auto-share of black screen if a powered extender is connected to a device.
+* CSCwn15520 - Share tray comes up out of standby.
+* CSCwn17177 - Powerpoint Live playback is not smooth.
+* CSCwn38129 - Miracast share has to be selected when shared into Microsoft Teams call. Auto-share is not available.
+
 
 ## December 2024
 RoomOS December

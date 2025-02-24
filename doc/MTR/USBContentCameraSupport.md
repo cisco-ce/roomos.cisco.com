@@ -6,10 +6,6 @@ No configuration is required when using a content camera. Simply plug the camera
 
 ## RoomOS
 
-Sharing a USB camera content from your computer when not in a call.
-
-<img src="/doc/images/MTR/USBContentCamera1.png" style="width: 500px"/>
-
 Sharing a USB camera content from the navigator when not in a call.
 
 <img src="/doc/images/MTR/USBContentCamera2.png" style="width: 500px"/>

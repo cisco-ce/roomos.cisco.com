@@ -1,4 +1,4 @@
-<p>Last updated February 19th, 2025 - <a href='#cisco-sw-release-plan'>Last updated Section →</a><p>
+<p>Last updated February 25th, 2025 - <a href='#cisco-sw-release-plan'>Last updated Section →</a><p>
 
 # Migrating Microsoft Teams Android Devices to AOSP Device Management
 
@@ -10,9 +10,11 @@
 
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices as [announced](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) back in September of 2023. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration.
 
-RoomOS January 2025 / RoomOS 11.24 will be the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It is currently being tested and verified by Microsoft and is scheduled to be available in February.
+RoomOS January 2025 / RoomOS 11.24 is the first AOSP DM software for Cisco devices running Microsoft Teams Rooms or Panels. It has been tested and verified by Microsoft and is now available.
 
 Cisco devices running Microsoft Teams Rooms or Panels will not receive RoomOS January 2025 / RoomOS 11.24 or newer software automatically, without customer interaction. To receive future updates, organizations must complete the migration steps outlined in this article.
+
+**This is a one way migration and once completed, devices will not be able to revert back to software with Android Device Administrator without being logged out from Microsoft Teams.**
 
 Read more on the schedule for RoomOS devices in our [release plan](#cisco-sw-release-plan) section.
 
@@ -26,6 +28,7 @@ We have distilled this down to the most important points for you:
 * **There are no changes to device functionality for the end-users** but it will improve the device stability and availability.
 * Depending on the configuration of your tenant, devices could get logged out if some migration steps are not completed. **To be sure your devices do not get logged out, please complete the migration as soon as possible.**
 * RoomOS January 2025 / RoomOS 11.24 and newer software will not be available for Cisco devices running Microsoft Teams Rooms or Panels before it is approved by Microsoft. This is expected to happen in February.
+* This is a one way migration and once completed, devices will not be able to revert back to software with Android Device Administrator without being logged out from Microsoft Teams.
 * Devices will not receive updates without customer interaction, see the section below.
 * You can roll out the AOSP DM software at your own pace using the Advanced Software Upgrade feature in Control Hub. See more in [Control the Rollout of AOSP Device Management Software Using the Advanced Software Upgrade](#cisco-sw-advanced-software-upgrade) section.
 
@@ -69,7 +72,7 @@ By registering your organization as ready, you will receive AOSP DM software as 
 
 <h2 id="cisco-sw-release-plan" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">Control Hub Release Plan for RoomOS and AOSP Device Management Software</h2>
 
-*Updated February 19th, 2025*
+*Updated February 25th, 2025*
 
 The RoomOS Control Hub release schedule will continue to follow the same cadence as before. However, starting from RoomOS January 2025, Cisco devices running Microsoft Teams Rooms or Panels will not be able to receive newer releases until they have registered as ready for migration.
 
@@ -77,13 +80,13 @@ Microsoft has now released RoomOS 11.24.1.8 with AOSP Device Management. See the
 
 **RoomOS January 2025**
 
-RoomOS 11.24.1.8 with AOSP DM will be released to RoomOS January 2025 on Thursday, February 20th, 2025. Devices on a channel with RoomOS January 2025 will receive RoomOS 11.24.1.8 if the organization has registered as ready for migration.
+RoomOS 11.24.1.8 with AOSP DM has been released to RoomOS January 2025. Devices on a channel with RoomOS January 2025 will receive RoomOS 11.24.1.8 if the organization has registered as ready for migration.
 
 **RoomOS February 2025 and Automatic Upgrades**
 
-On Monday, February 24th, we will push the RoomOS 11.24.1.8 release to devices set to receive RoomOS February 2025. This means if a device is on a channel manually pinned to RoomOS February 2025, or if it is set to get automatic upgrades, it will receive RoomOS 11.24.1.8 if the organization has registered as ready for migration.
+From Tuesday, February 25th, we started rolling out the RoomOS 11.24.1.8 release to devices set to receive RoomOS February 2025. This means if a device is on a channel manually pinned to RoomOS February 2025, or if it is set to get automatic upgrades, it will receive RoomOS 11.24.1.8 if the organization has registered as ready for migration.
 
-Later, when RoomOS 11.25 has been tested by Microsoft, RoomOS February 2025 will be updated and RoomOS 11.25 with AOSP DM will be available for Microsoft Teams Rooms devices if the organization has registered as ready for migration.
+Later, when RoomOS 11.25 has been tested by Microsoft, RoomOS February 2025 will be updated and RoomOS 11.25 with AOSP DM will be available for Microsoft Teams Rooms devices, if the organization has registered as ready for migration.
 
 **RoomOS March 2025 and Future Releases**
 

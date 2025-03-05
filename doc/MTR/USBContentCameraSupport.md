@@ -32,6 +32,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 
 <img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
 -->
+
 ## Supported RoomOS devices 
 
 |Device Type |Connector Ids/New Inputs |Max Quaility |USB Ports |

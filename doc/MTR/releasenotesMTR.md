@@ -41,7 +41,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-## February 2024
+## February 2025
 RoomOS January
 
 Software version: RoomOS 11.24.1.8 b47804c63e8

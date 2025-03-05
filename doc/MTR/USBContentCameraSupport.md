@@ -1,6 +1,6 @@
 # USB Content Camera Support
 
-RoomOS devices now support USB cameras, allowing any USB 2.0 camera that supports the MJPEG format to function effectively. This feature is available in both Microsoft Teams Rooms (MTR) and Webex modes, applicable during and outside of meetings. Users can select the content camera from the share source using the RoomOS user interface or through the MTR application interface. This functionality is compatible with the current portfolio of devices, including the Room Series (Bar, Bar Pro, Kit EQ/EQX, Kit Pro), Board Series (Pro and Pro G2), and Desk Pro. Note that USB cameras are supported for content sharing but not for video.
+RoomOS devices now support USB cameras, allowing any USB 2.0 camera that supports the MJPEG format to function effectively. This feature is available in <!--- both Microsoft Teams Rooms  and --> Webex mode, applicable during and outside of meetings. Users can select the content camera from the share source using the RoomOS user interface <!--- or through the Microsoft Teams Rooms application interface-->. This functionality is compatible with the current portfolio of devices, including the Room Series (Bar, Bar Pro, Kit EQ/EQX, Kit Pro), Board Series (Pro and Pro G2), and Desk Pro. Note that USB cameras are supported for content sharing but not for video.
 
 No configuration is required when using a content camera. Simply plug the camera into the Type A input on the product. Currently, we support up to two USB input sources, allowing for the connection of two USB cameras.
 
@@ -17,32 +17,32 @@ Sharing a USB camera content from your computer when in a call.
 Sharing USB camera content from the navigator when in a call.
 
 <img src="/doc/images/MTR/USBContentCamera4.png" style="width: 500px"/>
-
+<!--- 
 ## Microsoft Teams Rooms
 
-You can use MTR settings menu to select content camera source.
+You can use Microsoft Teams Rooms settings menu to select content camera source.
 
 <img src="/doc/images/MTR/USBContentCamera5.png" style="width: 500px"/>
 
-Sharing a USB camera content in a Microsoft teams meeting.
+Sharing a USB camera content in a Microsoft Teams Rooms meeting.
 
 <img src="/doc/images/MTR/USBContentCamera6.png" style="width: 500px"/>
 
 Alternatively a USB camera can be selected as a share source from the side bar, allowing it to be shared with the share button.
 
 <img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
-
+-->
 ## Supported RoomOS devices 
 
 |Device Type |Connector Ids/New Inputs |Max Quaility |USB Ports |
 |:------------- |:------------- |:------------- |:------------- |
-|DeskPro|	4,5	|4k@30	|USB 2.0 Type A|
-|RoomBarPro|	4,5	|4k@30	|USB 2.0 Type A|
-|RoomBar|	4,5	|4k@30	|USB 2.0 Type A|
-|BoardPro|	4,5	|4k@30	|USB 2.0 Type A|
-|BoardPro G2|	4,5	|4k@30	|USB 2.0 Type A|
-|CodecPro|	7	|4k@30	|USB 2.0 Type A|
-|RoomKitEQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
+|Desk Pro|	4,5	|4k@30	|USB 2.0 Type A|
+|Room Bar Pro|	4,5	|4k@30	|USB 2.0 Type A|
+|Room Bar|	4,5	|4k@30	|USB 2.0 Type A|
+|Board Pro|	4,5	|4k@30	|USB 2.0 Type A|
+|Board Pro G2|	4,5	|4k@30	|USB 2.0 Type A|
+|Codec Pro|	7	|4k@30	|USB 2.0 Type A|
+|Room Kit EQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
 
 
 ## Limitations for USB Content Cameras

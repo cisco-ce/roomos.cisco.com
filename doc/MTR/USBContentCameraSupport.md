@@ -1,6 +1,6 @@
 # USB Content Camera Support
 
-RoomOS devices now support USB cameras, allowing any USB 2.0 camera that supports the MJPEG format to function effectively. This feature is available in <!--- both Microsoft Teams Rooms  and --> Webex mode, applicable during and outside of meetings. Users can select the content camera from the share source using the RoomOS user interface <!--- or through the Microsoft Teams Rooms application interface-->. This functionality is compatible with the current portfolio of devices, including the Room Series (Bar, Bar Pro, Kit EQ/EQX, Kit Pro), Board Series (Pro and Pro G2), and Desk Pro. Note that USB cameras are supported for content sharing but not for video.
+RoomOS devices now support USB cameras, allowing any USB 2.0 camera that supports the MJPEG format to function effectively. This feature is available in both Microsoft Teams Rooms and Webex mode, applicable during and outside of meetings. Users can select the content camera from the share source using the RoomOS user interface or through the Microsoft Teams Rooms application interface. This functionality is compatible with the current portfolio of devices, including the Room Series (Bar, Bar Pro, Kit EQ/EQX, Kit Pro), Board Series (Pro and Pro G2), and Desk Pro. Note that USB cameras are supported for content sharing but not for video.
 
 No configuration is required when using a content camera. Simply plug the camera into the Type A input on the product. Currently, we support up to two USB input sources, allowing for the connection of two USB cameras.
 
@@ -17,7 +17,7 @@ Sharing a USB camera content from your computer when in a call.
 Sharing USB camera content from the navigator when in a call.
 
 <img src="/doc/images/MTR/USBContentCamera4.png" style="width: 500px"/>
-<!--- 
+ 
 ## Microsoft Teams Rooms
 
 You can use Microsoft Teams Rooms settings menu to select content camera source.
@@ -31,7 +31,7 @@ Sharing a USB camera content in a Microsoft Teams Rooms meeting.
 Alternatively a USB camera can be selected as a share source from the side bar, allowing it to be shared with the share button.
 
 <img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
--->
+
 
 ## Supported RoomOS devices 
 

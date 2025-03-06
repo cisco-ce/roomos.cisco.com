@@ -62,6 +62,18 @@ Supported devices:
 
 Read more about [USB content camera support](/doc/MTR/USBContentCameraSupport).
 
+### Cisco Zoom Implementation 
+
+Join Zoom meetings with the best possible experience by leveraging Zoom’s CRC. Zoom’s CRC meeting use the Cisco interop solution for Zoom, with a Cisco UI to interact with Zoom’s CRC DTMF API.
+
+Both ad-hoc (through the side panel), and One Button to Push (OBTP) will start a SIP CRC call into Zoom. No Zoom license is required. 
+
+Requirements: 
+* Control Hub registration
+* Hybrid calendar enabled for OBTP
+
+Read more about [Zoom Meetings with One Button To Push](/doc/MTR/ZoomMeetings).
+
 ### Fixed issues
 * CSCwm50278 - Recorder Mode not working as described.
 

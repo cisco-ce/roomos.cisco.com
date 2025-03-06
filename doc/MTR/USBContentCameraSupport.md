@@ -32,7 +32,6 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 
 <img src="/doc/images/MTR/USBContentCamera7.png" style="width: 500px"/>
 
-
 ## Supported RoomOS devices 
 
 |Device Type |Connector Ids/New Inputs |Max Quaility |USB Ports |
@@ -45,9 +44,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 |Codec Pro|	7	|4k@30	|USB 2.0 Type A|
 |Room Kit EQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
 
-
 ## Limitations for USB Content Cameras
-
    
   * **Snapshot Support**: Navigator previews require cameras that support snapshots. Note that the Logitech Scribe is known not to support this feature.
   * **Device Misidentification**: Some USB cameras may be incorrectly flagged as headsets, which can affect their functionality.

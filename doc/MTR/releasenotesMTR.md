@@ -1,5 +1,5 @@
 # Release notes
-(Updated February 20, 2025) 
+(Updated March 6, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -41,10 +41,41 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-## February 2025
-RoomOS January
+## March 2025
 
-Software version: RoomOS 11.24.1.8 b47804c63e8
+**NOTE:** RoomOS February and RoomOS March is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
+
+**RoomOS March**
+
+Software version: RoomOS 11.26.1.5
+
+### USB content camera support
+RoomOS devices now support content cameras that can be plugged into a USB port in or out of a call. Any USB2.0 camera that supports MJPEG format should work.
+USB cameras are only supported for content and not for video. You can select the camera content stream from the share tray.
+
+Supported devices:
+* Room Bar and Room Bar Pro
+* Room Kit EQ and EQX
+* Room Kit Pro
+* Board Pro and Board Pro G2
+* Desk Pro
+
+Read more about [USB content camera support](/doc/MTR/USBContentCameraSupport).
+
+### Fixed issues
+* CSCwm50278 - Recorder Mode not working as described.
+
+**RoomOS February** 
+
+Software version:RoomOS 11.25.1.6
+
+### Fixed issues
+* CSCwn25022 - 'Video Input Connector 6' configurations for Codec Pro not visible in the device web interface.
+
+## February 2025
+**RoomOS January**
+
+Software version: RoomOS 11.24.1.8 
 
 ### Fixed issues
 * CSCwn49592 - Auto-share of black screen if a powered extender is connected to a device.
@@ -54,7 +85,7 @@ Software version: RoomOS 11.24.1.8 b47804c63e8
 
 
 ## December 2024
-RoomOS December
+**RoomOS December**
 
 Software version: RoomOS 11.23.1.8 3963b07b5c5
 
@@ -95,7 +126,7 @@ Read more about [screen lock](/doc/MTR/PINlock).
 * CSCwm53333 - Software encoder fallback when joining meetings.
 
 ## November 2024
-RoomOS November
+**RoomOS November**
 
 Software version: RoomOS 11.22.1.7 1eb6bbe23da 
 
@@ -106,7 +137,7 @@ Software version: RoomOS 11.22.1.7 1eb6bbe23da
 * CSCwm47351 - Microphone mute doesn't work when doing USB-C passthrough.
 
 ## October 2024
-RoomOS October
+**RoomOS October**
 
 Software version: RoomOS 11.21.1.4 2a8ad5d61cc
 
@@ -127,7 +158,7 @@ Read more about [Microsoft Teams panels](https://learn.microsoft.com/microsoftte
 * CSCwm32910 - No audio when Miracast sharing in a Teams call.
 
 ## September 2024
-RoomOS September
+**RoomOS September**
 
 Software version: RoomOS 11.20.1.7 913a6c7c769
 
@@ -145,7 +176,7 @@ Software version: RoomOS 11.20.1.5 2d95ec00b03
 * CSCwk77160 - Miracast local audio not working on a device for Microsoft Teams Rooms.
 
 ## August 2024
-RoomOS August
+**RoomOS August**
 
 Software version: RoomOS 11.19.1.7 3055d561c16
 
@@ -175,7 +206,7 @@ Read more about [extended speaker view](https://help.webex.com/n1av2t9/).
 * CSCwk77160 - Miracast local audio not working on device with Microsoft Teams Rooms.
 
 ## July 2024
-RoomOS July
+**RoomOS July**
 
 Software version: RoomOS 11.18.1.6 88e19d15753
 
@@ -206,7 +237,7 @@ Benefits include:
 * CSCwk11016 - Unify the xStatus output for devices with and without Microsoft Teams Rooms.
 
 ## May 2024
-RoomOS May
+**RoomOS May**
 
 Software version: RoomOS 11.16.1.7 81e0063ac75
 
@@ -225,7 +256,7 @@ Requires Control Hub registration.
 Read more about [the call app](/doc/MTR/RoomOSCalling).
 
 ## April 2024
-RoomOS April 
+**RoomOS April** 
 
 Software version: RoomOS 11.15.1.8 08c1fed621a
 
@@ -283,7 +314,7 @@ Read more about [setting up presenter tracking](https://help.webex.com/9ur0g6/).
 
 
 ## March 2024
-RoomOS March 
+**RoomOS March**
 
 Software version: RoomOS 11.14.1.5 1bf4e96858f
 

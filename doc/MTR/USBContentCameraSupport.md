@@ -17,6 +17,7 @@ Sharing a USB camera content from your computer when in a call.
 Sharing USB camera content from the navigator when in a call.
 
 <img src="/doc/images/MTR/USBContentCamera4.png" style="width: 500px"/>
+
  
 ## Microsoft Teams Rooms
 

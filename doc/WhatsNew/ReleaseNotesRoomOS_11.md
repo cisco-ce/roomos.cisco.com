@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.22 - February 2025
+D15504.23 - March 2025
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.22 - February 2025
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>23</td> 
+		<td>March 7th 2025</td> 
+		<td>
+			Release of <a href='#11.24' title='Jump to section'>RoomOS 11.24.3.0</a> ff597452e7d, Patch
+		</td>
 	</tr>
 	<tr>
 		<td>22</td> 
@@ -267,18 +274,21 @@ Cisco Room Bar Pro, Board Pro, Board Pro G2, Codec EQ, EQX, and Room Kit EQ now 
 
 Additionally, Cisco Room Bar now supports one Ceiling Microphone Pro (or one Cisco Microphone Pro) still without the need for the AV Integrator Option.
 
-### RoomOS 11.24.2.4 is temporarily not available with Microsoft Teams Rooms or Panels support
-
-Due to the upcoming migration to AOSP Device Management for Microsoft Teams Devices, RoomOS 11.24.2.4 is not available for Cisco Devices running Microsoft Teams Rooms or Panels. When RoomOS 11.24 is verified and release by Microsoft, we will make COP files with support for Microsoft Teams Rooms and Panels available. We expect RoomOS 11.24 to be released by Microsoft before the end of February 2025.
-
-Read more about this migration in our documentation on the [AOSP Device Management migration](https://roomos.cisco.com/doc/MTR/AOSP)
-
 ### Samsung QMH firmware 
 
 Due to an issue with the Samsung QMH Series where Cisco Room devices in some scenarios are unable to wake up the screens from standby we have released a Firmware that will improve this behavior.
 The Samsung QMH Firmware is found on the respective product pages together with the normal RoomOS software. 
 
 For update instructions follow the instructions provided in the "Update using USB" section here: https://www.samsung.com/us/support/answer/ANS00062224/ 
+
+<hr style='width: 70%'>
+
+## RoomOS 11.24.3.0
+
+RoomOS 11.24.3.0 is a patch release and contains only bugfixes.<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.24.3.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.24.3.0&bt=custV&sts=fd&sb=fr)
 
 <hr style='width: 70%'>
 
@@ -290,9 +300,9 @@ For update instructions follow the instructions provided in the "Update using US
 * [Support for local ad-hoc bookings ahead of time](#112424-4)
 * [AirPlay AutoShare Pop up](#112424-5)
 * [Content preview in share tray for cabled sources](#112424-6)
+* [Release of Microsoft Teams Panel software for local upgrades](#112424-7)
 * [Support for RFC5922 - Domain Certificates in SIP](#112424-8)
 
-<!--* [Release of Microsoft Teams Panel software for local upgrades(#112424-7)-->
 
 
 * <b>Bug fixes</b>
@@ -349,14 +359,13 @@ When AirPlay is connected during a call, an auto-share popup will appear, notify
 
 When you connect a content source, such as a PC, a snapshot of its content appears in the share tray. This helps you quickly identify the correct source. Note that this do not work for the Extended/Virtual sources feature event though the source is connected via Cable. 
 
-<!--<a name='112424-7'></a>
+<a name='112424-7'></a>
 
 ## Release of Microsoft Teams Panel software for local upgrades
 
 For standalone Room Navigators that is running Microsoft Teams Panel we will be releasing a software package for local upgrades. 
-See the updated list of released software packages in the software section. Currently the only release that is available for local MTP upgrades is the RoomOS 11.23.1.8. 
 
-The current MTP release is delayed due to the reasons stated above in the important notes section.-->
+See the updated list of released software packages in the software section. 
 
 <a name='112424-8'></a>
 
@@ -1622,17 +1631,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_24_2_4.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_24_3_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_24_2_4.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_20_3_0.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_24_3_0.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_24_3_0.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_24_2_4.pkg</b><br><b>cmterm-s53350-mtp-ce11_23_1_8.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_24_3_0.pkg</b><br><b>cmterm-s53350-mtp-ce11_24_3_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_24_2_4.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_24_3_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1642,7 +1651,10 @@ Before you start, please make sure you have downloaded the software for the corr
 ## MTR version contained in the MTR cop file
 
 ### RoomOS 11.24
-Software release is delayed until further notice, please refer to the important notes and warnings section for the RoomOS 11.24.2.4 release.  
+cmterm-s53300-mtr-ce11_24_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2025010301 
+cmterm-s53350-mtp-ce11_24_*_*.k4.cop.sha512
+- MTP: 1449/1.0.97.2024122401
 
 ### RoomOS 11.20
 cmterm-s53300-mtr-ce11_20_*_*.k4.cop.sha512

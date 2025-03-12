@@ -27,7 +27,7 @@ Cisco Touch 10 is not supported.
 
 <img src="/doc/images/MTR/planning-guide2.png" style="width: 700px"/>
 
-You can use [the planning guide and the launch guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
+You can use [the Plan, Launch, and Grow guides](https://resources.webex.com/s/nz73kxgsjmx44wwtw6m6gk9) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
  
 Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
 

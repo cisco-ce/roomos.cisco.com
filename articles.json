@@ -220,6 +220,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "RoomOSUpgrades",
+      "title": "Software upgrades",
+      "description": "RoomOS software upgrades for Cisco devices with Microsoft Teams Rooms.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "MTROnBoarding",
       "title": "Onboarding",
       "description": "Onboarding Cisco devices to Microsoft Teams Rooms",

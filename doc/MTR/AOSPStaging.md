@@ -6,6 +6,14 @@
   <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what-do-i-as-an-administrator-need-to-do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
   </div> 
 
+<div style="background-color:rgb(226, 226, 226);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: black;">
+  <b style="font-size: 12pt;">Change log</b> 
+  
+<p>March 18, 2025: Microsoft have updated their instructions, see their validation step for. We've added additional information about Device Enrollment Manager (DEM). See <a href='#device-enrollment-manager' style="color:rgb(0, 188, 235); ">Device Enrollment Manager</a></p>
+  
+<p>February 25, 2025: Updated Cisco software release plan. See <a href='#cisco-sw-release-plan' style="color:rgb(0, 188, 235); ">Software release plan section →</a></p>
+  </div>
+
 <h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">What is this Migration?</h2>
 
 Microsoft is moving from using *Android Device Administrator* to *AOSP Device Management* (AOSP DM) to manage Microsoft Teams Android devices as [announced](https://techcommunity.microsoft.com/blog/intunecustomersuccess/intune-ending-support-for-android-device-administrator-on-devices-with-gms-in-de/3915443) back in September of 2023. This applies to all Microsoft Teams Rooms and Teams Panels devices running Android, and it is a mandatory migration.

@@ -8,9 +8,7 @@
 
 <div style="background-color:rgb(226, 226, 226);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: black;">
   <b style="font-size: 12pt;">Change log</b> 
-  
 <p>March 18, 2025: Microsoft have updated their instructions, see their validation step for. We've added additional information about Device Enrollment Manager (DEM). See <a href='#device-enrollment-manager' style="color:rgb(0, 188, 235); ">Device Enrollment Manager</a></p>
-  
 <p>February 25, 2025: Updated Cisco software release plan. See <a href='#cisco-sw-release-plan' style="color:rgb(0, 188, 235); ">Software release plan section →</a></p>
   </div>
 

@@ -9,7 +9,7 @@
 
 **Change log**
 
-* March 19, 2025: Microsoft have updated their instructions, see their validation step for. We've added additional information about Device Enrollment Manager (DEM). See <a href='#device-enrollment-manager' style="color:rgb(126, 172, 251); ">Device Enrollment Manager</a>
+* March 19, 2025: Microsoft have updated their instructions, see their validation step for. We've added additional information about Device Enrollment Manager (DEM). See <a href='#device-enrollment-manager' style="color:rgb(126, 172, 251); ">Device Enrollment Manager →</a>
 * February 25, 2025: Updated Cisco software release plan. See <a href='#cisco-sw-release-plan' style="color:rgb(126, 172, 251); ">Software release plan section →</a>
 
 

@@ -1,10 +1,17 @@
-<p>Last updated February 25th, 2025 - <a href='#cisco-sw-release-plan'>Last updated Section →</a><p>
+<p>Last updated March 19, 2025<p>
 
 # Migrating Microsoft Teams Android Devices to AOSP Device Management
 
 <div style="background-color:rgb(123, 8, 8);padding: 10px 15px;border-radius: 5px;font-size: 11pt;color: white;">
   <b style="font-size: 12pt;">Action Required</b> for Cisco devices running Microsoft Teams Rooms. See <a href='#what-do-i-as-an-administrator-need-to-do' style="color:rgb(126, 172, 251); ">What do I need to do?</a></i>
   </div> 
+
+
+**Change log**
+
+* March 19, 2025: Microsoft have updated their instructions, see their validation step for. We've added additional information about Device Enrollment Manager (DEM). See <a href='#device-enrollment-manager' style="color:rgb(126, 172, 251); ">Device Enrollment Manager</a>
+* February 25, 2025: Updated Cisco software release plan. See <a href='#cisco-sw-release-plan' style="color:rgb(126, 172, 251); ">Software release plan section →</a>
+
 
 <h2 id="what-is-this-migration" style="border-bottom: none;padding-bottom: 0; padding-top: 3em; margin-top:0">What is this Migration?</h2>
 
@@ -57,8 +64,15 @@ From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not a
 Your Microsoft tenant is not ready and you need to complete these migration steps to be ready for migration:
 1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
 2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
-3. You are now ready and must register your organization as ready for migration to receive future updates:
+3. To insure that Microsoft doesn't sign out your devices, validate compliance with [Supported Conditional Access and Intune device compliance policies for Microsoft Teams Rooms and Teams Android Devices](https://learn.microsoft.com/microsoftteams/rooms/supported-ca-and-compliance-policies?tabs=mtr-a). 
+4. You are now ready and must register your organization as ready for migration to receive future updates:
 [Ready for AOSP migration registration](https://ciscocx.qualtrics.com/jfe/form/SV_eWIgDZWDYexwS3k).
+
+<h3 id="device-enrollment-manager" style="margin-top: 0;padding-top: 2em;">Device enrollment manager (DEM)</h3>
+
+A device enrollment manager (DEM) is a nonadministrator user who can enroll devices in Intune. However, AOSP doesn't support DEM accounts. 
+
+If you want to use an account that is on a DEM list to migrate devices to AOSP, it needs to be removed from the DEM list. The instructions to remove an account from a DEM list are the inverse of adding an account: https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-manager-enroll
 
 <h3 id="cisco-if-you-do-not-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you do NOT manage or enroll your devices in Intune</h3>
 
@@ -120,7 +134,14 @@ Your Microsoft tenant is not ready and you need to complete these migration step
 
 1. Complete [Step 1](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-1---set-up-new-aosp-management-enrollment-profiles) in Microsoft's migration guide.
 2. Complete [Step 2](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-2---set-up-aosp-management-configuration--compliance-policies) in Microsoft's migration guide (this is optional but recommended).
-3. When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-3---deploy-aosp-management-capable-device-firmware) in Microsoft's migration guide.
+3. To insure that Microsoft doesn't sign out your devices, validate compliance with [Supported Conditional Access and Intune device compliance policies for Microsoft Teams Rooms and Teams Android Devices](https://learn.microsoft.com/microsoftteams/rooms/supported-ca-and-compliance-policies?tabs=mtr-a). 
+4. When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/en-us/MicrosoftTeams/rooms/android-migration-guide#step-3---deploy-aosp-management-capable-device-firmware) in Microsoft's migration guide.
+
+<h3 id="device-enrollment-manager" style="margin-top: 0;padding-top: 2em;">Device enrollment manager (DEM)</h3>
+
+A device enrollment manager (DEM) is a nonadministrator user who can enroll devices in Intune. However, AOSP doesn't support DEM accounts. 
+
+If you want to use an account that is on a DEM list to migrate devices to AOSP, it needs to be removed from the DEM list. The instructions to remove an account from a DEM list are the inverse of adding an account: https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-manager-enroll
 
 <h3 id="msft-if-you-do-not-manage-or-enroll-your-devices-in-intune" style="margin-top: 0;padding-top: 2em;">If you do NOT manage or enroll your devices in Intune</h3>
 
@@ -130,6 +151,6 @@ When AOSP DM firmware is available, follow [Step 3](https://learn.microsoft.com/
 
 ### Teams Admin Center Release Plan for RoomOS and AOSP Device Management firmware
 
-As soon as Microsoft has verified our AOSP DM firmware, they will make it available in Teams Admin Center. This is expected to happen in February.
+As soon as Microsoft has verified our AOSP DM firmware, they will make it available in Teams Admin Center. RoomOS 11.24.1.8 with AOSP DM based on RoomOS January was release in February 2025.
 
 <div style="height: 40em;"></div>

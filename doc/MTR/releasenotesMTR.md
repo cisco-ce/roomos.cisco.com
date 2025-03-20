@@ -1,5 +1,5 @@
 # Release notes
-(Updated March 6, 2025) 
+(Updated March 20, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -291,6 +291,10 @@ You can replicate the Board Pro experience when using a Room Bar, Room Bar Pro, 
 Turn meeting rooms into immersive ideation spaces by easily connecting your interactive touch display to Cisco collaboration devices. Now you can add digital whiteboarding and interaction into your collaboration experience.
 
 We support Samsung and Dell interactive displays through USB-A. Other displays can be tested in the future. 
+
+Cisco collaboration devices for Microsoft Teams Rooms only support one touch screen. Two screen scenario is not supported for these devices.
+
+Read more about [third-party touch screen support](https://help.webex.com/ncyh2f/).
 
 **21:9 aspect ratio screens**
 

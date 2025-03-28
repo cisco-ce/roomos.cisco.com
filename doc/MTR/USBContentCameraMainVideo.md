@@ -62,3 +62,48 @@ To use the USB content camera as the main video source, set the InputSourceType 
 ``` xConfiguration Video Input Connector <5> InputSourceType: camera ```
 
 <img src="/doc/images/MTR/USBMainVideo1.png" style="width: 500px"/>
+
+#### Selecting USB Content Camera as Main Video on a Touch Screen
+
+<img src="/doc/images/MTR/USBMainVideo2.png" style="width: 500px"/>
+
+Open the sidebar and select "Camera".
+
+<img src="/doc/images/MTR/USBMainVideo3.png" style="width: 500px"/>
+
+Select "Manual" and then the USB Camera in the dropdown. The camera can be rotated 180 degrees.
+
+#### Selecting USB Content Camera as Main Video on a Navigator
+
+<img src="/doc/images/MTR/USBMainVideo4.png" style="width: 500px"/>
+
+<img src="/doc/images/MTR/USBMainVideo5.png" style="width: 500px"/>
+
+Open control panel on navigator and select "Camera" then select "Manual".
+
+<img src="/doc/images/MTR/USBMainVideo6.png" style="width: 500px"/>
+
+<img src="/doc/images/MTR/USBMainVideo7.png" style="width: 500px"/>
+
+Select the USB Camera on the left. The camera can be rotated 180 degrees.
+
+Alternatively, use the following command to select the USB camera as main video:
+
+``` xcommand Video Input SetMainVideoSource SourceId: <ID> ```
+
+### Microsoft Teams Rooms
+
+You can follow the same steps as RoomOS outlined above using the sidebar and navigator settings to select camera options on the Microsoft Teams Rooms.
+
+Alternatively you can use the following xcommand to set the USB camera as main video on the Microsoft Teams Rooms:
+
+``` xCommand Video Input SetMainVideoSource SourceId: <ID> ``` 
+
+#### Limitations for USB Content Cameras as Main Video Source
+
+* **Manual Operation Only** : When used as the main video source, automatic options are disabled; only manual operation is supported.
+* **People Count**: This feature is not functional.
+* **Self-view Background Options** : Although available, these options do not function.
+* **Built-in Camera Shutter** : Closing the shutter of the built-in camera will mute the video from the USB camera if it is used as the main video source.
+* **PTZ Support** : Pan-Tilt-Zoom (PTZ) options are not supported for USB cameras.
+

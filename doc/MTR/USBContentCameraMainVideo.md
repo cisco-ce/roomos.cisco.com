@@ -59,7 +59,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 
 To use the USB content camera as the main video source, set the InputSourceType to 'camera' on the device web interface or Control Hub.
 
-``` xConfiguration Video Input Connector <5> InputSourceType: camera ```
+``` xConfiguration Video Input Connector <Id> InputSourceType: camera ```
 
 <img src="/doc/images/MTR/USBMainVideo1.png" style="width: 500px"/>
 

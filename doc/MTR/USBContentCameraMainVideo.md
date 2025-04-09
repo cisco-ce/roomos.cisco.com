@@ -89,7 +89,7 @@ Select the USB Camera on the left. The camera can be rotated 180 degrees.
 
 Alternatively, use the following command to select the USB camera as main video:
 
-``` xcommand Video Input SetMainVideoSource SourceId: <ID> ```
+``` xCommand Video Input SetMainVideoSource SourceId: <ID> ```
 
 ### Microsoft Teams Rooms
 

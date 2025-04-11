@@ -10,7 +10,7 @@ Depending on the device you're using, there are a few different modes to choose 
 
 
 * **Group**: The camera will adjust to show everyone. 
-* **Frames**: The camera will zoom and show people individually or in smaller groups. 
+* **Frames**: The camera will zoom and show people individually or in smaller groups. Note that on Room Bar Pro, Frames mode will use just one of the device's cameras at a time.
 *	**Speaker**: The camera will follow the person speaking. The maximum distance for speaker tracking to work is 7.5 meters.
 *	**Best view**. The camera will adjust automatically so you are always in the center of the frame.
 

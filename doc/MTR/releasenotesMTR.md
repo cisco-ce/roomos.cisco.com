@@ -41,6 +41,24 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
+## April 2025
+
+**NOTE:** RoomOS April is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
+
+**RoomOS April**
+
+Software version: RoomOS 11.27.1.7
+
+### Extended USB camera support
+
+You can now choose to use an additional USB camera as the main video source in a meeting or a call. Previously USB cameras were only supported for sharing content.
+
+Read more about [USB content camera support](/doc/MTR/USBContentCameraMainVideo).
+
+### Fixed issues
+* CSCwo33123 - Unable to disable Standby Level Networked Mode.
+
+
 ## March 2025
 
 **NOTE:** RoomOS February and RoomOS March is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
@@ -60,7 +78,7 @@ Supported devices:
 * Board Pro and Board Pro G2
 * Desk Pro
 
-Read more about [USB content camera support](/doc/MTR/USBContentCameraSupport).
+Read more about [USB content camera support](/doc/MTR/USBContentCameraMainVideo).
 
 ### Cisco Zoom Implementation 
 

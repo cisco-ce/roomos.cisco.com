@@ -1,10 +1,10 @@
-# USB content camera support
+# USB camera support
 
 RoomOS devices now support USB cameras, allowing any USB 2.0 camera that supports the MJPEG format to function effectively. This feature is available in both Microsoft Teams Rooms and Webex mode, applicable during and outside of meetings. Users can select the content camera from the share source using the RoomOS user interface or through the Microsoft Teams Rooms application interface. This functionality is compatible with the current portfolio of devices, including the Room Series (Bar, Bar Pro, Kit EQ/EQX, Kit Pro), Board Series (Pro and Pro G2), and Desk Pro. USB cameras are compatible for both content sharing and as the main video source.
 
 No configuration is required when using a content camera. Simply plug the camera into the Type A input on the product. Currently, we support up to two USB input sources, allowing for the connection of two USB cameras.
 
-## USB content camera for content sharing
+## USB camera for content sharing
 ### RoomOS
 
 Sharing a USB camera content from the navigator when not in a call.
@@ -46,24 +46,24 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 |Codec Pro|	7	|4k@30	|USB 2.0 Type A|
 |Room Kit EQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
 
-### Limitations for USB content cameras
+### Limitations for USB cameras
    
   * **Snapshot support**: Navigator previews require cameras that support snapshots. Note that the Logitech Scribe is known not to support this feature.
   * **Device misidentification**: Some USB cameras may be incorrectly flagged as headsets, which can affect their functionality.
   * **Audio interference**: When a USB camera is connected to the USB port under the Deskpro, there may be interference with the aux jack audio. To avoid this, connect the USB camera to the ports located at the back.
   * **Power requirements**: If the USB cable connecting the camera is significantly long, external power may be necessary to ensure proper operation.
 
-## USB content camera as main video source
+## USB camera as main video source
 
 ### RoomOS
 
-To use the USB content camera as the main video source, set the InputSourceType to 'camera' on the device web interface or Control Hub.
+To use the USB camera as the main video source, set the InputSourceType to 'camera' on the device web interface or Control Hub.
 
 ``` xConfiguration Video Input Connector <ID> InputSourceType: camera ```
 
 <img src="/doc/images/MTR/USBMainVideo1.png" style="width: 500px"/>
 
-#### Selecting USB content camera as main video on a touch screen
+#### Selecting USB camera as main video on a touch screen
 
 <img src="/doc/images/MTR/USBMainVideo2.png" style="width: 500px"/>
 
@@ -73,7 +73,7 @@ Open the sidebar and select "Camera".
 
 Select "Manual" and then the USB Camera in the dropdown. The camera can be rotated 180 degrees.
 
-#### Selecting USB content camera as main video on a navigator
+#### Selecting USB camera as main video on a navigator
 
 <img src="/doc/images/MTR/USBMainVideo4.png" style="width: 500px"/>
 
@@ -99,7 +99,7 @@ Alternatively you can use the following xcommand to set the USB camera as main v
 
 ``` xCommand Video Input SetMainVideoSource SourceId: <ID> ``` 
 
-#### Limitations for USB content cameras as main video source
+#### Limitations for USB cameras as main video source
 
 * **Manual operation only** : When used as the main video source, automatic options are disabled; only manual operation is supported.
 * **People count**: This feature is not functional.

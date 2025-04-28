@@ -1,5 +1,5 @@
 # Release notes
-(Updated April 11, 2025) 
+(Updated April 28, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -43,11 +43,16 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## April 2025
 
-**NOTE:** RoomOS April is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
+**NOTE:** RoomOS April is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
 
-**RoomOS April**
+### RoomOS April
 
-Software version: RoomOS 11.27.1.7
+**Software version: RoomOS 11.27.1.8**
+
+### Fixed issues
+* CSCwo90323 - "Microphone muted" notification appears in some scenarios when microphone is not muted.
+
+**Software version: RoomOS 11.27.1.7**
 
 ### Extended USB camera support
 
@@ -63,9 +68,9 @@ Read more about [USB content camera support](/doc/MTR/USBContentCameraMainVideo)
 
 **NOTE:** RoomOS February and RoomOS March is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
 
-**RoomOS March**
+### RoomOS March
 
-Software version: RoomOS 11.26.1.5
+**Software version: RoomOS 11.26.1.5**
 
 ### USB content camera support
 RoomOS devices now support content cameras that can be plugged into a USB port in or out of a call. Any USB2.0 camera that supports MJPEG format should work.
@@ -95,17 +100,18 @@ Read more about [Zoom Meetings with One Button To Push](/doc/MTR/ZoomMeetings).
 ### Fixed issues
 * CSCwm50278 - Recorder Mode not working as described.
 
-**RoomOS February** 
+### RoomOS February
 
-Software version:RoomOS 11.25.1.6
+**Software version:RoomOS 11.25.1.6**
 
 ### Fixed issues
 * CSCwn25022 - 'Video Input Connector 6' configurations for Codec Pro not visible in the device web interface.
 
 ## February 2025
-**RoomOS January**
 
-Software version: RoomOS 11.24.1.8 
+### RoomOS January
+
+**Software version: RoomOS 11.24.1.8** 
 
 ### Fixed issues
 * CSCwn49592 - Auto-share of black screen if a powered extender is connected to a device.
@@ -115,9 +121,10 @@ Software version: RoomOS 11.24.1.8
 
 
 ## December 2024
-**RoomOS December**
 
-Software version: RoomOS 11.23.1.8 3963b07b5c5
+### RoomOS December
+
+**Software version: RoomOS 11.23.1.8 3963b07b5c5**
 
 ### Remote access to devices
 
@@ -156,9 +163,10 @@ Read more about [screen lock](/doc/MTR/PINlock).
 * CSCwm53333 - Software encoder fallback when joining meetings.
 
 ## November 2024
-**RoomOS November**
 
-Software version: RoomOS 11.22.1.7 1eb6bbe23da 
+### RoomOS November
+
+**Software version: RoomOS 11.22.1.7 1eb6bbe23da** 
 
 ### Fixed issues
 * CSCwm59937 - Local share doesn't share audio until share is initiated from Microsoft Teams Rooms UI.
@@ -167,9 +175,10 @@ Software version: RoomOS 11.22.1.7 1eb6bbe23da
 * CSCwm47351 - Microphone mute doesn't work when doing USB-C passthrough.
 
 ## October 2024
-**RoomOS October**
 
-Software version: RoomOS 11.21.1.4 2a8ad5d61cc
+### RoomOS October
+
+**Software version: RoomOS 11.21.1.4 2a8ad5d61cc**
 
 ### Microsoft Teams panel
 
@@ -188,15 +197,16 @@ Read more about [Microsoft Teams panels](https://learn.microsoft.com/microsoftte
 * CSCwm32910 - No audio when Miracast sharing in a Teams call.
 
 ## September 2024
-**RoomOS September**
 
-Software version: RoomOS 11.20.1.7 913a6c7c769
+### RoomOS September
+
+**Software version: RoomOS 11.20.1.7 913a6c7c769**
 
 ### Fixed issues 
 
 * CSCwm03535 - Codec does not go into standby after Miracast share.
   
-Software version: RoomOS 11.20.1.5 2d95ec00b03
+**Software version: RoomOS 11.20.1.5 2d95ec00b03**
 
 ### Fixed issues 
 
@@ -206,9 +216,10 @@ Software version: RoomOS 11.20.1.5 2d95ec00b03
 * CSCwk77160 - Miracast local audio not working on a device for Microsoft Teams Rooms.
 
 ## August 2024
-**RoomOS August**
 
-Software version: RoomOS 11.19.1.7 3055d561c16
+### RoomOS August
+
+**Software version: RoomOS 11.19.1.7 3055d561c16**
 
 ### New and changed features
 
@@ -236,9 +247,10 @@ Read more about [extended speaker view](https://help.webex.com/n1av2t9/).
 * CSCwk77160 - Miracast local audio not working on device with Microsoft Teams Rooms.
 
 ## July 2024
-**RoomOS July**
 
-Software version: RoomOS 11.18.1.6 88e19d15753
+### RoomOS July
+
+**Software version: RoomOS 11.18.1.6 88e19d15753**
 
 NOTE: If you have registered your devices to Control Hub, you may see the following configuration change on a device's History page in Control Hub. This configuration doesn't have any effect on the device and can be ignored.
 
@@ -267,9 +279,10 @@ Benefits include:
 * CSCwk11016 - Unify the xStatus output for devices with and without Microsoft Teams Rooms.
 
 ## May 2024
-**RoomOS May**
 
-Software version: RoomOS 11.16.1.7 81e0063ac75
+### RoomOS May
+
+**Software version: RoomOS 11.16.1.7 81e0063ac75**
 
 ### New and changed features
 
@@ -286,11 +299,12 @@ Requires Control Hub registration.
 Read more about [the call app](/doc/MTR/RoomOSCalling).
 
 ## April 2024
-**RoomOS April** 
 
-Software version: RoomOS 11.15.1.8 08c1fed621a
+### RoomOS April
 
-Software version: RoomOS 11.15.1.6 ab740596da6
+**Software version: RoomOS 11.15.1.8 08c1fed621a**
+
+**Software version: RoomOS 11.15.1.6 ab740596da6**
 
 ### New and changed features
 
@@ -348,9 +362,10 @@ Read more about [setting up presenter tracking](https://help.webex.com/9ur0g6/).
 
 
 ## March 2024
-**RoomOS March**
 
-Software version: RoomOS 11.14.1.5 1bf4e96858f
+### RoomOS March
+
+**Software version: RoomOS 11.14.1.5 1bf4e96858f**
 
 ### New and changed features
 

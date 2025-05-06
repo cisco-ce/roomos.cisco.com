@@ -41,6 +41,32 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
+<!--- ## May 2025
+
+**NOTE:** RoomOS May is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
+
+### RoomOS May
+
+**Software version: RoomOS 11.  **
+
+### Classroom camera mode
+
+The classroom camera mode is designed for easy use in rooms where you present content and conduct educational and training sessions. The setup helps bring together groups from different sites. Whether the presenter is in the room or calling in from a remote location, participants receive a good and engaging experience.
+
+Classroom mode is available on:
+* Room Kit EQ
+* Room Kit EQX
+* Room Kit Pro
+* Room Bar Pro
+* Board Pro G2
+
+Read more about [Classroom mode](/doc/MTR/classroom).
+
+
+### Fixed issues
+* 
+-->
+
 ## April 2025
 
 **NOTE:** RoomOS April is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).

@@ -1,5 +1,5 @@
 # Release notes
-(Updated April 28, 2025) 
+(Updated May 7, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -41,7 +41,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-<!--- ## May 2025
+## May 2025
 
 **NOTE:** RoomOS May is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
 
@@ -61,11 +61,6 @@ Classroom mode is available on:
 * Board Pro G2
 
 Read more about [Classroom mode](/doc/MTR/classroom).
-
-
-### Fixed issues
-* 
--->
 
 ## April 2025
 

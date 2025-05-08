@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.24 - April 2025
+D15504.25 - May 2025
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.24 - April 2025
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>25</td> 
+		<td>May 8th 2025</td> 
+		<td>
+			Release of <a href='#11.27' title='Jump to section'>RoomOS 11.27.2.0</a> 8eb38e80605, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>24</td> 
@@ -267,6 +274,95 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 <br><br>
 
+<a name='11.27'></a>
+
+# Release summary for RoomOS 11.27
+
+## Notes and warnings for this software release
+
+### Passphrase requirement
+
+RoomOS 11.27.2.0 has a new passphrase policy that require the user to change the passphrase after logging in for the first time with the default passphrase. Please read more about it in the [section](#112720-1) below.
+
+<hr style='width: 70%'>
+
+## RoomOS 11.27.2.0
+
+* [Require passphrase change on first login](#112720-1)
+* [Director to use Virtual Lens](#112720-2)
+* [AirPlay FairPlay support](#112720-3)
+* [Screen-reader support (Accessibility)](#112720-4)
+* [Webview in share tray](#112720-5)
+* [Whitebalance calibration for multicamera setup](#112720-6)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.27.2.0](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.27.2.0&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 11.27.2.0 feature descriptions 
+
+<a name='112720-1'></a>
+
+## Require passphrase change on first login
+
+This change affects video devices running RoomOS 11.27.2.0 or later that are in a factory reset state—either newly received devices or devices that have been manually reset.
+
+To comply with EU regulations and enhance device security, a passphrase is now required for the device admin account. By default, no passphrase is set, and you must create one before using the device.
+
+During the standard setup process, you'll be prompted to set a passphrase via the setup wizard. Once set, you can use it to log in normally.
+
+However, if you attempt to access the device through the web interface or other methods (e.g., SSH), you will be required to change the passphrase before access is granted.
+
+Important: If you use automation or scripted routines to configure devices, note that SSH access now requires a passphrase update. These scripts must be adapted to handle this new requirement during setup. 
+
+<a name='112720-2'></a>
+
+## Director to use Virtual Lens
+
+This feature automatically extends the camera's reach using an AI-powered virtual lens, ensuring that active speakers—such as those seated at the far end of a long table—are captured in higher quality. No configuration or user interaction is required.
+
+<a name='112720-3'></a>
+
+## AirPlay FairPlay support
+
+Our AirPlay implementation now supports FairPlay and can now playback DRM protected content in out-of-call scenarios. Protected content will never play in call sharing scenarios. 
+
+Note that applications that has no support for FairPlay, such as Netflix will not be able to playback content using AirPlay on the Room Devices. 
+
+<a name='112720-4'></a>
+
+## Screen-reader support (Accessibility)
+
+We're introducing a new accessibility feature designed to improve usability for visually impaired users. Once enabled, the touch screen can be operated using specific gestures.
+
+To enable the screen reader, tap the screen with three fingers and swipe down. The screen reader will begin reading aloud the item currently selected. You can then navigate the interface by swiping to move between elements such as Call, Share, and more. When the desired option is selected, double-tap anywhere on the screen to activate it. When using the keypad, each selected letter will also be read aloud.
+
+To disable the screen reader, repeat the same gesture: tap with three fingers and swipe down.
+
+<a name='112720-5'></a>
+
+## Webview in share tray
+
+Previously, it was not possible to access or share a webview directly. With this update, when a webview is launched, it will now appear in the share tray, allowing users to easily select and share it during a call or meeting.
+
+We've also added support in the APIs to allow integrators to share webviews programmatically using the following command:
+xCommand Presentation Start PresentationSource: WebView WebViewId: ID
+
+The xStatus UserInterface WebView node provides the WebViewId, and the WebView X Sharing status will indicate "True" when a webview is actively being shared.
+
+This feature simplifies integration for developers and improves usability by allowing users to choose which webview to share—or to identify which one is currently being shared.
+
+<a name='112720-6'></a>
+
+## Whitebalance calibration for multicamera setup
+
+In a multicamera setup using Cross View, differences in white balance can make the video feeds appear inconsistent — especially when PTZ 4K cameras are used as side cameras. To address this, we’ve introduced three white balance profiles. When you select a profile on the touch panel, the video inputs will be displayed on screen, allowing you to compare them and choose the profile that best suits your meeting room.
+
+To access this feature, open the touch panel, go to Device Settings, then Cameras, and select White Balance. From there, you can view and test the different profiles directly with the live video inputs.
+
+<br><br>
+
 <a name='11.24'></a>
 
 # Release summary for RoomOS 11.24
@@ -319,14 +415,12 @@ RoomOS 11.24.3.0 is a patch release and contains only bugfixes.<br>
 * [Release of Microsoft Teams Panel software for local upgrades](#112424-7)
 * [Support for RFC5922 - Domain Certificates in SIP](#112424-8)
 
-
-
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 11.24.2.4](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.24.2.4&bt=custV&sts=fd&sb=fr)
 
 <br><br>
 
-# RoomOS 11.24.2.X feature descriptions 
+# RoomOS 11.24.2.4 feature descriptions 
 
 <a name='112424-1'></a>
 
@@ -1647,17 +1741,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_24_4_1.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_27_2_0.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_24_4_1.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_24_4_1.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_27_2_0.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_27_2_0.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_24_4_1.pkg</b><br><b>cmterm-s53350-mtp-ce11_24_4_1.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_27_2_0.pkg</b><br><b>cmterm-s53350-mtp-ce11_27_2_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_24_4_1.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_27_2_0.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1665,6 +1759,12 @@ Before you start, please make sure you have downloaded the software for the corr
 </table>
 
 ## MTR version contained in the MTR cop file
+
+### RoomOS 11.27
+cmterm-s53300-mtr-ce11_27_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2025020302 
+cmterm-s53350-mtp-ce11_27_*_*.k4.cop.sha512
+- MTP: 1449/1.0.97.2024122401
 
 ### RoomOS 11.24
 cmterm-s53300-mtr-ce11_24_*_*.k4.cop.sha512
@@ -1853,9 +1953,15 @@ To use the Bug Search Tool, follow these steps:
 ### Resource consumption
 
 **Extended Logging**		
+
 Extended logging is a troubleshooting feature and will consume a high amount of resources when enabled. Enabling extended logging can generate unexpected behavior in production calls and in rare cases, cause the device to crash due to resource consumption. This feature should therefore only be enabled in short periods if higher data collection is required when reproducing issues for example, in cooperation with Cisco TAC. 
 
+**Note on IP Filtering Capabilities**	
+
+Our devices supports IP filtering for SSH, HTTP and HTTPS in order to provide enhanced admin access control. However, other services such as SIP and H.323, do not currently support IP filtering. While this has always been the case, we recommend that customers deploy these services within secure network environments and use external security controls as needed to mitigate potential exposure to denial-of-service (DoS) attacks.
+
 **Network Congestion**	
+
 Anything that degrades network performance can affect voice and video quality and, in some cases, can cause a call to drop. Sources of network degradation can include, but are not limited to, the following activities:
 
 * Administrative tasks such as an internal port scan or security scan

@@ -47,7 +47,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ### RoomOS May
 
-**Software version: RoomOS 11.  **
+**Software version: RoomOS 11.28.1.3**
 
 ### Classroom camera mode
 

@@ -523,6 +523,33 @@ Equivalent feedback expression
   xFeedback register /Configuration/Video/Input/Connector[@item=’3’]/Name
 ```
 
+## Ghost events
+
+Whenever an object that existed in an xAPI list is removed, a "ghost" feedback occurs. This helps you detect when things are removed,
+without you having to keep track of lists and do diffing between them yourself. You get these ghost feedbacks for paths that you subscribe to,
+they will either be xConfigurations or xStatuses.
+
+For example, if you set up a listener for calls, and the call is ended:
+```
+xfeedback register status/call
+
+# Call is connected
+*s Call 2 CallbackNumber: "spark:macro@polo.com"
+*s Call 2 DisplayName: "Macro Polo's Personal Room"
+*s Call 2 RemoteNumber: "33a6e2d1-0000-36d4-bd2b-e97cf2c5b639"
+
+# Call ends
+*s Call 2 (ghost=True):
+** end
+```
+
+In this case, you know that the call with CallId 2 was removed.
+
+In a macro / JSXAPI-based integration, you will get an object with an attribute called "ghost" equal to "True":
+
+```js
+{"ghost":"True","id":"3"}
+```
 
 ## Terminal connections
 

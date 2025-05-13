@@ -62,6 +62,7 @@ These diagrams show examples of how to arrange screens, cameras, and microphones
 
 <img src="/doc/images/MTR/classroom-example2.jpg" style="width: 400px" />
  
+
 ## Connect cables
 
 Connect the cameras to the device as shown in the diagrams. Following the diagram ensures that the configurations that are automatically pushed to the device when you select the classroom room type template, match your actual room setup.

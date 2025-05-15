@@ -32,8 +32,8 @@ The classroom setup is available as a room type template. When you set up a room
 *	Room Bar Pro
 
 ### Screens:
-*	You can use one or more screens (the maximum number of screens depends on your device).
-*	For most setups, we recommend that you use two or more screens. Place the main screen at the front of the room. Place a second screen on the side or at the back, so that a local presenter can see the remote audience.
+*	You need up to two external screens depending on the device.
+*	For most setups, we recommend that you use two screens.
 
 ### Two cameras:
 *	Audience camera: Use the integrated camera for devices that have that. For other devices, we recommend the Quad Camera or SpeakerTrack 60 camera. We recommend a camera that supports speaker tracking, but it is also possible to use a camera without speaker tracking capabilities.
@@ -54,13 +54,13 @@ The classroom setup doesn't support this functionality:
 *	Directional audio
 *	Snap to whiteboard
 
-## Room arrangement examples
+<!-- ## Room arrangement examples
 
 These diagrams show examples of how to arrange screens, cameras, and microphones, and where to place people for the best experience.
 
 <img src="/doc/images/MTR/classroom-example1.jpg" style="width: 400px"  />
 
-<img src="/doc/images/MTR/classroom-example2.jpg" style="width: 400px" />
+<img src="/doc/images/MTR/classroom-example2.jpg" style="width: 400px" /> -->
 
 ## Connect cables 
 
@@ -68,34 +68,35 @@ Connect the cameras to the device as shown in the diagrams. Following the diagra
 
 ### Board Pro G2
 
-<img src="/doc/images/MTR/classroom-BoardProG2.jpg" style="width: 700px" />
+<img src="/doc/images/MTR/classroom-board-pro-g2.png" style="width: 700px" />
  
 The device's integrated camera is the audience camera.
 
 ### Codec EQ
 
-<img src="/doc/images/MTR/classroom-EQ.jpg" style="width: 700px"  />
+<img src="/doc/images/MTR/classroom-eq-eqx.png" style="width: 700px"  />
 
 ### Room Kit EQX
 
- <img src="/doc/images/MTR/classroom-EQX.jpg" style="width: 700px"  />
+ <img src="/doc/images/MTR/classroom-eq-eqx.png" style="width: 700px"  />
  
-Keep all cables connected as described in the Room Kit EQX installation guide. This includes the cables for the integrated camera and screens. You only have to connect external cameras and screens: the presenter camera and the third screen.
-*	HDMI outputs 1 and 2 are for the integrated screens. An external screen may be connected to HDMI output 3.
-*	The audience camera on HDMI input 1 is the integrated camera.
+Keep all cables connected as described in the Room Kit EQX installation guide. This includes the cables for the integrated camera and screens. You only have to connect external cameras: the presenter camera.
+
+* HDMI outputs 1 and 2 are for the integrated screens.
+* The audience camera on HDMI input 1 is the integrated camera.
  
 
 ### Codec Pro
 
-<img src="/doc/images/MTR/classroom-CodecPro.jpg" style="width: 700px"  />
+<img src="/doc/images/MTR/classroom-codec-pro.png" style="width: 700px"  />
  
 If the audience camera is a SpeakerTrack 60 camera, then it uses two HDMI inputs. 
 
-<img src="/doc/images/MTR/classroom-CodecProST60.jpg" style="width: 700px"  />
+<!--<img src="/doc/images/MTR/classroom-CodecProST60.jpg" style="width: 700px"  />-->
 
 ### Room Bar Pro
 
- <img src="/doc/images/MTR/classroom-RoomBarPro.jpg" style="width: 700px"  />
+ <img src="/doc/images/MTR/classroom-bar-pro.png" style="width: 700px"  />
  
 The device's integrated camera is the audience camera.
 
@@ -159,7 +160,9 @@ Always use the touch controller to choose discussion mode.
 #### Switch between room modes manually
 
 1. On the touch controller, swipe open the side control panel and tap **Classroom**.
+   
    <img src="/doc/images/MTR/classroom-sidepanel.png" style="width: 400px"  />
+   
 2. Tap the mode that you want to change to: **Local Presenter**, **Remote Presenter**, or **Discussion**. The current mode is highlighted.
 
 **NOTE:** If your administrator hasn't disabled automatic switching, the room mode will continue to change according to the automatic switching rules listed above.

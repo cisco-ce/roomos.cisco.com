@@ -1,4 +1,4 @@
-<p>Last updated March 19, 2025<p>
+<p>Last updated May 21, 2025<p>
 
 # Migrating Microsoft Teams Android Devices to AOSP Device Management
 
@@ -9,6 +9,7 @@
 
 **Change log**
 
+* May 21, 2025: Updated deadlines for Cisco Devices running Microsoft Teams Rooms with Cisco as the software upgrade provider. See [updated dealines →](#updated_deadlines)
 * March 19, 2025: Microsoft has updated their instructions for migration, see the updated [If you manage or enroll your devices in Intune section  →](#cisco-if-you-manage-or-enroll-your-devices-in-intune). We've added additional information about Device Enrollment Manager (DEM). See [Device Enrollment Manager section →](#device-enrollment-manager)
 * February 25, 2025: Updated Cisco software release plan. See [Software release plan section →](#cisco-sw-release-plan)
 
@@ -52,6 +53,18 @@ To be ready for the migration and continue to receive future software updates, t
 <h2 id="cisco-as-the-software-provider" style="padding-top: 2em;font-size: x-large;">Cisco as the Software Provider</h2>
 
 From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not automatically receive updates before customers register themselves as ready for migration. This is because neither Cisco nor Microsoft can verify completion of the migration steps.
+
+### <a name="updated_deadlines"></a> Updated deadlines
+
+* Starting **May 30, 2025**, all organizations will automatically become eligible for software upgrades to AOSP Device Management. This change eliminates the previously communicated need for site administrators to register their organization as "ready for migration."
+* After this change, devices not pinned to a specific software release will automatically upgrade to AOSP Device Management software.
+  
+**Important Reminder:** The oldest software release that does not include AOSP Device Management (RoomOS December 2024) will expire on **June 25, 2025**. After this date, all Cisco Devices running Microsoft Teams Rooms will be automatically upgraded to software with AOSP Device Management. 
+
+To ensure a smooth transition, we strongly recommend that you:
+1.	Review and complete any applicable preparation steps detailed on this page.
+2.	Configure your devices to receive upgrades from the "Microsoft approved" channel in Webex Control Hub.
+
 
 ### <a name="cisco_sw_provider_actions"></a> Required Actions
 

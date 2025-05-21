@@ -59,8 +59,7 @@ From RoomOS January 2025, Cisco devices running Microsoft Teams Rooms will not a
 * Starting **May 30, 2025**, all organizations will automatically become eligible for software upgrades to AOSP Device Management. This change eliminates the previously communicated need for site administrators to register their organization as "ready for migration."
 * After this change, devices not pinned to a specific software release will automatically upgrade to AOSP Device Management software.
 
-  
- **Important Reminder:** The oldest software release that does not include AOSP Device Management (RoomOS December 2024) will expire on **June 25, 2025**. After this date, all Cisco Devices running Microsoft Teams Rooms will be automatically upgraded to software with AOSP Device Management. 
+__Important Reminder:__ The oldest software release that does not include AOSP Device Management (RoomOS December 2024) will expire on **June 25, 2025**. After this date, all Cisco Devices running Microsoft Teams Rooms will be automatically upgraded to software with AOSP Device Management. 
 
 To ensure a smooth transition, we strongly recommend that you:
 1.	Review and complete any applicable preparation steps detailed on this page.

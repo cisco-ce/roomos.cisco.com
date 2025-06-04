@@ -57,7 +57,7 @@ NOTE: With Android 13, it is not possible to downgrade to an earlier software ve
 
 ### Fixed issues
 
-* CSCwp17364 - Microsoft Teams Rooms: Device loses main video during Microsoft Teams Meeting until source switch occurs.
+* CSCwp17364 - Device loses main video during Microsoft Teams Meeting until source switch occurs.
 
 ## May 2025
 

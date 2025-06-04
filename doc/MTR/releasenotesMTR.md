@@ -1,5 +1,5 @@
 # Release notes
-(Updated June 3, 2025) 
+(Updated June 4, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -40,6 +40,24 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## June 2025
+
+**NOTE:** RoomOS June is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
+
+### RoomOS June
+
+**Software version: RoomOS 11.29.1.5**
+
+### Support for Android 13
+
+From RoomOS 11.29 and onward, Cisco collaboration devices with Microsoft Teams Rooms includes Android version 13. This upgrade ensures continued security fixes.
+
+NOTE: With Android 13, it is not possible to downgrade to an earlier software version. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms.  
+
+### Fixed issues
+
+* CSCwp17364 - Microsoft Teams Rooms: Device loses main video during Microsoft Teams Meeting until source switch occurs.
 
 ## May 2025
 

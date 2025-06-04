@@ -5,20 +5,22 @@ Follow these instructions to set up the Microsoft Teams Panels experience on the
 * Check that the Room Navigator has 4GB RAM (i.e., Product ID: CS-T10-WM-L).
 * Factory reset the Room Navigator from the **Settings** menu or using the pinhole reset on the back.
 * Note that deployment requires the Room Navigator to be configured in standalone mode and connected to an internet-accessible ethernet port. Microsoft Teams Panels on paired Room Navigators is not supported.
-* Check the software version. If the device is not running version 11.3 or later, you need to upgrade it.
+* Check the software version. If the device is not running version 11.27 or later, you need to upgrade it.
 
-## Upgrade software to version 11.3 or later
+## Upgrade software to version 11.27 or later
 Check which software version the Room Navigator is running: open the **Control panel**, tap **Device settings**, and then select **About this device**. Scroll down to see the current **Installed version**.
-If the device is on version 11.3 or later, go to *Install the MTP software* in this article.
-If not, upgrade the software to a Standalone Navigator supported version first:
+If the device is already on version 11.27 or later, go to *First-time setup wizard* in this article.
+If not, then upgrade the software to version 11.27 or later:
 1. After factory reset, access the API with SSH. Connect using the IP address or hostname of the device: ssh admin@IP address. The username is *admin* and leave the password blank.
 2. Run the following command:
 
-   swupgrade https://binaries.webex.com/collaboration-endpoint-ce-production-stable/20240723143327/bifrost.pkg
+   swupgrade [https://binaries.webex.com/collaboration-endpoint-ce-production-stable/20250428121143/bifrost.pkg]
    
-3. Once the software installation is complete, carry on to *Install the MTP software* in this article.
+3. Once the software installation is complete, carry on to *First-time setup wizard* in this article.
 
-## Install the MTP software
+**Note:** you can opt to install the MTP software via cop file. If this is preferred, go to *Install MTP software with a cop file* in this article.
+
+## Install the MTP software with a cop file
 
 First, download the cop file containing the MTP software from here:
 
@@ -46,16 +48,20 @@ Turn on the Room Navigator to run the first-time setup wizard:
 4. Choose **Outside the room**. Wait a moment while the Navigator refreshes into standalone mode.
 5. Optionally configure any necessary network settings.
 6. Set the time and timezone.
-7. Select **Microsoft Teams Experience**. Note: 2 GB Navigators will not show this option.
+7. Select **Microsoft Teams Experience**.
+  
+   **Note:** 2 GB Navigators will not show this option.
+   
+   If the MTP app is not already present, you'll see a Software upgrade screen. The Navigator software will upgrade to the Microsoft Approved software version and then the Navigator will reboot.
 8. Register the device to Webex or to MTR only:
    
    **Webex registration**: enter the activation code for the new or existing workspace.
 
     **MTR only (no Webex) registration**: skip the Webex activation code screen.
   
-9. Create an admin username and password.
-10. Allow **Diagnostic logging**.
-11. Finish and exit the setup wizard. The Room Navigator will complete the MTP app installation and reboot, in Microsoft Teams Panel mode.
+11. Create an admin username and password.
+12. Allow **Diagnostic logging**.
+13. Finish and exit the setup wizard. The Room Navigator will complete the MTP app installation and reboot, in Microsoft Teams Panel mode.
 
 Your Cisco Room Navigator is now set up and ready to use with the Microsoft Teams Panel app.
 To set up the Panels app, see this [Microsoft documentation.](https://learn.microsoft.com/en-us/microsoftteams/devices/use-teams-panels)

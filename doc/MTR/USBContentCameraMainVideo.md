@@ -44,7 +44,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 |Board Pro|	4,5	|4k@30	|USB 2.0 Type A|
 |Board Pro G2|	4,5	|4k@30	|USB 2.0 Type A|
 |Codec Pro|	7	|4k@30	|USB 2.0 Type A|
-|Room Kit EQ/X|	5,6	|4k@60 & higher	|USB 3.0 Type A|
+|Room Kit EQ/X|	5,6	|4k@60|USB 3.0 Type A|
 
 ### Limitations for USB cameras
    

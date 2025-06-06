@@ -24,7 +24,7 @@ If not, then upgrade the software to version 11.27 or later:
 
 First, download the cop file containing the MTP software from here:
 
-https://software.cisco.com/download/home/286333883/type/280886992/release/RoomOS%2011.23.1.8
+https://software.cisco.com/download/home/286333883/type/280886992/release/RoomOS%2011.27.2.0
 
 Then, to install the software:
 

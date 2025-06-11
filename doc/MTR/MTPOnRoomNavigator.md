@@ -125,7 +125,7 @@ To onboard via the API set the following commands:
 
       *xConfiguration Webex ProvisionalActivationService: Enabled*
 
-      When enabled, use the channel to retrieve a provisional account token on the device, identifiable only by hardware serial number, for communicating with Cisco. This token is only used for sending logs, crashes, and metrics when *xConfiguration Webex Privacy AllowUsageDataLogging* ise to *True*.
+      When enabled, use the channel to retrieve a provisional account token on the device identifiable only by hardware serial number, for communicating with Cisco. This token is only used for sending logs, crashes, and metrics when *xConfiguration Webex Privacy AllowUsageDataLogging* is set to *True*.
 
 7. Stop the default first-time setup wizard from appearing:
    

@@ -53,7 +53,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 From RoomOS 11.29 and onward, Cisco collaboration devices with Microsoft Teams Rooms includes Android version 13. This upgrade ensures continued security fixes.
 
-NOTE: With Android 13, it is not possible to downgrade to an earlier software version. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms.  
+NOTE: With Android 13 and onward, it is not possible to downgrade to an earlier version of RoomOS. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms.  
 
 ### Fixed issues
 

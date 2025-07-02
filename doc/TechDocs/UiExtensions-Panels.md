@@ -12,7 +12,7 @@ The user interface works on all Cisco devices, such as the touch controllers (Ro
 ## Event model
 
 UI Extensions provide general user interface elements such as buttons and sliders. When the user interacts with those,
-evens are created. It is then up to you to create actions associated with those events, such as controlling the lights, sending data to the cloud,
+events are created. It is then up to you to create actions associated with those events, such as controlling the lights, sending data to the cloud,
 turning on screens etc. You can listen to these events and react internally with macros, or with external integrations such as virtual servers and Raspberry Pis.
 
 The API for UI extensions are fully bi-directional, so you can update the widgets when eg someone turns off the light with a physical light switch.
@@ -25,7 +25,7 @@ To quickly see and learn the events that are generaeted, you can log on to the d
 xFeedback Register event/userinterface/extensions/*
 ```
 
-Now, everytime you press a button or move a slider, the command line will show you the evens in real time.
+Now, everytime you press a button or move a slider, the command line will show you the events in real time.
 
 ## Widgets
 

@@ -124,6 +124,10 @@ xCommand UserInterface Extensions Panel Save PanelId: webapp1_button
 
 You should now see a web app button that will open your web app in Modal mode.
 
+<img src="/doc/images/uiextensions/web_app_button.png" style="width: 600px" />
+
+<img src="/doc/images/uiextensions/web_app_button_example.png" style="width: 600px" />
+
 ## Sending UI messages
 Standalone Room Schedulers now support sending various UI messages, including **Prompt**, **TextLine**, **TextInput**, and **Rating** for use with background macros. 
 
@@ -168,6 +172,8 @@ Key characteristics:
 To display an integrator web view in a modal view, use the following command:
 
 *xCommand UserInterface WebView Display Url: your url Mode: Modal Target: RoomScheduler*
+
+<img src="/doc/images/uiextensions/web_app_button_example.png" style="width: 600px" />
 
 Using UI Extensions in combination with macros achieves the same result. By creating a UI Extension (e.g., an Action Button) and linking it to a macro you can trigger the *xCommand UserInterface WebView Display* when a user presses the button. 
 

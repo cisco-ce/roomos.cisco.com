@@ -27,9 +27,9 @@ To create an action button that displays a message when clicked:
   
     ```
      xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
-    if (event.PanelId === 'hello1_button') {
-    xapi.command('UserInterface Message Prompt Display', { Title: 'Hello!', text: 'Have a great day!'} );
-    }
+       if (event.PanelId === 'hello1_button') {
+          xapi.command('UserInterface Message Prompt Display', { Title: 'Hello!', text: 'Have a great day!'} );
+       }
     ```
   4.	**Save** with ctrl + s (or cmd + s on Mac).
   6. Enable the macro.
@@ -43,15 +43,16 @@ To create an action button that displays a message when clicked:
  
  To create a custom action button that displays a message, run the following command:
  
-  ```xCommand UserInterface Extensions Panel Save PanelId: hello1_button
-<Extensions><Panel>
-<PanelId>hello1_button</PanelId>
-<ActivityType>Custom</ActivityType>
-<Name>Hello</Name>
-<Icon>Info</Icon>
-<Location>RoomScheduler</Location>
-</Panel></Extensions>
-.
+  ```
+      xCommand UserInterface Extensions Panel Save PanelId: hello1_button
+         <Extensions><Panel>
+         <PanelId>hello1_button</PanelId>
+         <ActivityType>Custom</ActivityType>
+         <Name>Hello</Name>
+         <Icon>Info</Icon>
+         <Location>RoomScheduler</Location>
+      </Panel></Extensions>
+      .
   ```
 Specify an icon to use from this list: *Briefing, Camera, Concierge, Disc, Handset, Help, Helpdesk, Home, Hvac, Info, Input, Language, Laptop, Lightbulb, Media, Microphone, Power, Proximity, Record, Spark, Tv, Webex, General, Custom*
 
@@ -65,16 +66,17 @@ Just like in the web interface instructions, you should now see the action butto
      ```
 2. Create another file in */config/macros/* hello1_button.js and add your macro script:
 
-     ```import xapi from 'xapi';
-    xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
-    if (event.PanelId === 'hello1_button') {
-     xapi.command('UserInterface Message Rating Display', { Title: 'Hello!', text: 'Have a great day!'} );
-   }
-   });
+     ```
+        import xapi from 'xapi';
+          xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
+             if (event.PanelId === 'hello1_button') {
+                 xapi.command('UserInterface Message Rating Display', { Title: 'Hello!', text: 'Have a great day!'} );
+         }
+         });
      ```
 5. Run *systemctl restart macros*
 
-*xCommand UserInterface Extensions Set* can also be used to bulk add UI extensions.
+*xCommand UserInterface Extensions Set* can also be used to bulk add UI extensions. [Find more information here](/xapi/Command.UserInterface.Extensions.Set/?search=extensions).
 
 #### Example - creating a web app button ####
 
@@ -88,14 +90,15 @@ To create a button that will launch a web app run either one of the following co
 
 OR
 
-  ```xCommand UserInterface Extensions Panel Save PanelId: webapp1_button
+  ```
+xCommand UserInterface Extensions Panel Save PanelId: webapp1_button
 <Extensions><Panel>
-<PanelId>webapp1_button</PanelId>
-<ActivityType>WebApp</ActivityType>
-<ActivityData>example url</ActivityData>
-<Name>Web App</Name>
-<Location>RoomScheduler</Location>
-<Mode>Modal</Mode>
+   <PanelId>webapp1_button</PanelId>
+   <ActivityType>WebApp</ActivityType>
+   <ActivityData>example url</ActivityData>
+   <Name>Web App</Name>
+   <Location>RoomScheduler</Location>
+   <Mode>Modal</Mode>
 </Panel></Extensions>
 .
   ```
@@ -106,6 +109,8 @@ You should now see a web app button that will open your web app in Modal mode.
 
 ## Sending UI messages
 Standalone Room Schedulers now support sending various UI messages, including **Prompt**, **TextLine**, **TextInput**, and **Rating** for use with background macros. 
+
+[Find more information here].(/xapi/domain/?domain=UserInterface#UserInterface-Message)
 ## Enhanced UI Extensions Control with Targeted Device Parameters for Room Schedulers
 With the introduction of UI Extensions for paired Room Schedulers, you can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
 Key parameters:
@@ -149,7 +154,7 @@ To display an integrator web view in a modal view, use the following command:
 
 Using UI Extensions in combination with macros achieves the same result. By creating a UI Extension (e.g., an Action Button) and linking it to a macro you can trigger the *xCommand UserInterface WebView Display* when a user presses the button. 
 
-Refer to **Creating UI Extensions** in this article for guidance on setting up the UI Extension.
+Refer to *Creating UI Extensions* in this article for guidance on setting up the UI Extension.
 
 Below is an example macro script:
 

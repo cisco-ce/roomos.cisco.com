@@ -5,6 +5,11 @@ A UI extension is a user interface component with no built-in control logic. Whe
 See [User Interface Extensions](/doc/techdocs/uiextensions) for more details.
 
 You can also add web apps to the Room Scheduler dashboard.
+
+<img src="/doc/images/room_scheduler1.jpg" style="width: 600px" />
+
+<img src="/doc/images/room_scheduler2.PNG" style="width: 600px" />
+
 ## Creating UI extensions
 To access the UI Extensions Editor, sign-in to the video device's web interface with Administrator, RoomControl, or Integrator credentials. Then navigate to **Customization > UI Extensions Editor**. The extensions can also be provisioned from tools such as Control Hub.
 

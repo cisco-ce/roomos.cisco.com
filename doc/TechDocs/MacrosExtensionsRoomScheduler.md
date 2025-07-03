@@ -31,6 +31,9 @@ Creating an action button adds a button to the dashboard, programmed with an xap
 To create an action button that displays a message when clicked:
 1. Create an action button with id: hello1_button
 2. Click **Export** to export your button to the video device.
+
+   <img src="/doc/images/uiextensions/export_button.png" style="width: 200px" />
+
    Check the user interface. You should see the new action button, but nothing will happen if you press it yet.
 3. Set up a command to run when a user presses the button.
    Open the **Macro Editor** and click **Create new macro**. The text editor will open. Add the following script after the import:
@@ -42,9 +45,13 @@ To create an action button that displays a message when clicked:
        }
     ```
   4.	**Save** with ctrl + s (or cmd + s on Mac).
-  6. Enable the macro.
+  5. Enable the macro.
 
-  Test the button on your Room Scheduler. You should see a pop-up with your custom message.
+      <img src="/doc/images/uiextensions/enable_macro.png" style="width: 200px" />
+
+  Test the button on your Room Scheduler. You should see a pop-up with your custom message:
+
+  <img src="/doc/images/uiextensions/custom_message.png" style="width: 600px" />
 
  ### Using the xAPI in TShell
  You can use TShell to create custom or web app UI Extensions. For room scheduler, you must specify the location as RoomScheduler.

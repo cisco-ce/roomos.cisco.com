@@ -13,7 +13,12 @@ You can also add web apps to the Room Scheduler dashboard.
 ## Creating UI extensions
 To access the UI Extensions Editor, sign-in to the video device's web interface with Administrator, RoomControl, or Integrator credentials. Then navigate to **Customization > UI Extensions Editor**. The extensions can also be provisioned from tools such as Control Hub.
 
+<img src="/doc/images/uiextensions/customization_editor.png" style="width: 200px" />
+
 Click **New**. The **Add a new extension** dialog box will appear. You’ll see the following options:
+
+<img src="/doc/images/uiextensions/add_new_extension.png" style="width: 600px" />
+
 * **Panel**. Create custom panels with widgets (sliders, switches, buttons) to control your video device or other peripherals in the room. See [Widgets and Panels](doc/techdocs/uiextensions-panels) for more details.
 *  **Action Button**. Simple buttons that execute a command when pressed (like dial a number).
 *  **Web App**. For devices with a Web Engine. A button launches a web view in full screen or modal mode on the user interface.

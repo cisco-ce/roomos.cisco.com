@@ -1,7 +1,7 @@
-# Building a hotdesking workspace integration - external
+# Building a hotdesking workspace integration
 
 ## Overview
-This guide is about creating a workspace integration interacting with RoomOS hotdesking.
+This guide provides instructions for creating a workspace integration that interacts with RoomOS hotdesking features.
 
 RoomOS hotdesking allows Webex users to pair to a device with a QR code or manual pairing. Then they can sign in on the paired device, making it a personal device while they are using it. All personal sign ins must correspond to a booking for the management of the personal account. That is, the signed in user's email must match the organizer email on the booking to be confirmed. 
 

@@ -61,7 +61,7 @@ In a hybrid calendar workspace bookings are stored on an associated calendar bac
 
 Each calendar event will contain a unique identifier for correlating xEvent updates and xCommand executions specific to that calendar event. This identifier is the BookingRequestUUID value while the booking request is in-progress, and the MeetingId value once it is confirmed. See *Creating a Booking* in this article.
 
-### Synchronizing calendar data
+## Synchronizing calendar data
 
 The calendar data for a given device may be retrieved with xCommand.Bookings.List.
 
@@ -69,18 +69,18 @@ Whenever the known calendar data may be invalidated, such as a device reboot or 
 
 <img src="/doc/images/integrations/sync_calendar.png" style="width: 600px" />
 
-### Booking start and end
+## Booking start and end
 
 As bookings start and end devices will notify for these with xEvent.Bookings.Start and xEvent.Bookings.End.
 <img src="/doc/images/integrations/booking_start.png" style="width: 600px" />
 
 <img src="/doc/images/integrations/booking_end.png" style="width: 600px" />
 
-### Creating a booking
-#### Book at Device - Ad Hoc booking
+## Creating a booking
+### Book at Device - Ad Hoc booking
 A user may create a booking at the device through the device UI when an admin has enabled ad hoc booking for the device's workspace.
 
-**Local Calendar**
+#### Local Calendar
 
 With a local calendar configuration the device will immediately report both xEvent.Bookings.BookingRequested and xEvent.Bookings.BookingCreated when a booking is created.
 
@@ -88,81 +88,81 @@ The integration may choose to reject the booking by issuing a Bookings.Delete, w
 
 <img src="/doc/images/integrations/adhoc_book_at_device.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 
 With a hybrid calendar configuration when a user creates an ad hoc booking at the device the device will request the booking creation on the calendar backend. A Bookings.BookingRequested xevent is sent upon creation of the request. This event contains the request BookingRequestUUID, which is used to correlate with the subsequent success or failure events for the request. The device will update with Bookings.BookingCreated upon confirmation from the calendar backend, with both the BookingRequestUUID for the associated request and the MeetingId for continued use in identifying the calendar event. The device will update with Bookings.BookingFailed with the associated BookingRequestUUID should the request fail.
 
 <img src="/doc/images/integrations/adhoc_book_at_device.png" style="width: 600px" />
 
-#### Book from Workspace Integration
-**Local Calendar**
+### Book from Workspace Integration
+#### Local Calendar
 With a local calendar configuration when the integration creates a booking it provides the BookingRequestUUID for correlating with the subsequent Bookings.BookingCreated or Bookings.BookingFailed events.
 <img src="/doc/images/integrations/book_from_integration.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 Creating a booking from the integration with a hybrid calendar configured workspace is similar to the device-driven ad hoc booking with hybrid calendar, except the integration supplies the BookingRequestUUID for correlating with subsequent updates.
 
 <img src="/doc/images/integrations/book_from_integration.png" style="width: 600px" />
 
-#### Book from Hybrid Calendar
+### Book from Hybrid Calendar
 
 When a user creates a booking through the hybrid calendar, such as by scheduling a meeting on the workspace calendar through Outlook/O365, the device will update the integration with xEvent.Bookings.BookingCreated.
 
 <img src="/doc/images/integrations/book_from_hybrid_calendar.png" style="width: 600px" />
 
-### Deleting a booking
+## Deleting a booking
 
 When a booking is deleted the device it will notify the integration with xEvent Bookings.Deleted.
 
-#### Delete at Device
-**Local Calendar**
+### Delete at Device
+#### Local Calendar
 
 <img src="/doc/images/integrations/booking_delete_at_device.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 When a Bookings.Delete is requested with a hybrid calendar configuration the subsequent Bookings.Deleted event will only be sent after the delete is confirmed by the hybrid calendar.
 
 <img src="/doc/images/integrations/booking_delete_at_device.png" style="width: 600px" />
 
-#### Delete from Workspace Integration
-**Local Calendar**
+### Delete from Workspace Integration
+#### Local Calendar
 
 <img src="/doc/images/integrations/booking_delete_from_integration.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 
 When a Bookings.Delete is requested with a hybrid calendar configuration the subsequent Bookings.Deleted event will only be sent after the delete is confirmed by the hybrid calendar.
 
 <img src="/doc/images/integrations/booking_delete_from_integration.png" style="width: 600px" />
 
-#### Delete from Hybrid Calendar
+### Delete from Hybrid Calendar
 <img src="/doc/images/integrations/booking_delete_from_hybrid_calendar.png" style="width: 600px" />
 
-### Moving (Editing) a Booking
+## Moving (Editing) a Booking
 
 When the time information for a booking is updated the device notifies the integration with Bookings.BookingMoved. The event contains the new time information.
 
-#### Edit at Device
+### Edit at Device
 When a user edits the booking time information at the device the integration may choose to reject the new time. If the integration chooses to reject the new booking time it may apply a Bookings.Edit to return the booking to the original values. See "Edit from Workspace Integration".
 
-**Local Calendar**
+#### Local Calendar
 
 <img src="/doc/images/integrations/edit_booking_at_device.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 
 <img src="/doc/images/integrations/edit_booking_at_device.png" style="width: 600px" />
 
-#### Edit from Workspace Integration
-**Local Calendar**
+### Edit from Workspace Integration
+#### Local Calendar
 
 <img src="/doc/images/integrations/edit_booking_from_integration.png" style="width: 600px" />
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 
 <img src="/doc/images/integrations/edit_booking_from_integration.png" style="width: 600px" />
 
-#### Edit (moved) from Hybrid Calendar
+### Edit (moved) from Hybrid Calendar
 
 <img src="/doc/images/integrations/booking_moved_from_hybrid_calendar.png" style="width: 600px" />
 
@@ -171,12 +171,12 @@ A user may choose to extend the booking at the device. Upon confirmation of the 
 
 Examples for extending a booking not provided here as it is recommend to use Bookings.Edit for better support across deployments.
 
-**Local Calendar**
+#### Local Calendar
 
 <img src="/doc/images/integrations/extend_booking_at_device.png" style="width: 600px" />
 
 
-**Hybrid Calendar**
+#### Hybrid Calendar
 
 <img src="/doc/images/integrations/booking_extend_at_device.png" style="width: 600px" />
 

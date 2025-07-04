@@ -1,7 +1,7 @@
 # Macros and extensions for Room Scheduler
 The Room Scheduler device User Interface (UI) Extensions let you design new panels and action buttons. This custom functionality will appear as additional buttons on the Room Scheduler dashboard, and users can interact with them. This customization can simplify a workflow, automate tasks on the video device, or assist with other tasks such as posting to third-party meeting services or triggering bespoke actions.
 
-A UI extension is a user interface component with no built-in control logic. When users interact with these UI elements, they trigger events that developers can monitor and respond to, either by employing macros or integrating external functionalities, for example through JSXAPI. This flexibility empowers developers to design UIs capable of diverse actions, such as controlling meeting room lighting, sending messages upon detecting a specific number of individuals in a meeting room, or starting the coffee machine – all according to individual requirements. You can program UI Extensions like buttons and panels in an infinite number of ways.
+A UI extension is a user interface component with no built-in control logic. When users interact with these UI elements, they trigger events that developers can monitor and respond to, either by employing macros or integrating external functionalities, for example through JSXAPI. This flexibility empowers developers to design UIs capable of diverse actions, such as controlling meeting room lighting, sending messages upon detecting a specific number of individuals in a meeting room, or starting the coffee machine – all according to specific requirements. You can program UI Extensions like buttons and panels in an infinite number of ways.
 See [User Interface Extensions](/doc/techdocs/uiextensions) for more details.
 
 You can also add web apps to the Room Scheduler dashboard.
@@ -24,7 +24,7 @@ Click **New**. The **Add a new extension** dialog box will appear. You’ll see 
 *  **Web App**. For devices with a Web Engine. A button launches a web view in full screen or modal mode on the user interface.
 Each of these adds a new button to the user interface. Only a few buttons will be added to the dashboard before it runs out of space. To access the overflow buttons, swipe from right to left in the button area.
 
-**NOTE:** this applies to standalone navigator setup. You may see different options on paired devices. Web Widgets are not supported and cannot be added in Room Scheduler mode.
+**NOTE:** This applies to standalone navigator setup. You may see different options on paired devices. Web Widgets are not supported and cannot be added in Room Scheduler mode.
 ### Action buttons
 Creating an action button adds a button to the dashboard, programmed with an xapi command. Actions are simple to create using the **Macro Editor**. See this [Macro tutorial](doc/techdocs/macrotutorial) for more information. 
 #### Example - creating an action button ####
@@ -97,7 +97,7 @@ Just like in the web interface instructions, you should now see the action butto
 
 #### Example - creating a web app button ####
 
-**NOTE:** before you can add and see a web app launcher button, WebEngine mode must be enabled.
+**NOTE:** Before you can add and see a web app launcher button, WebEngine mode must be enabled.
 
 To create a button that will launch a web app run either one of the following commands:
 

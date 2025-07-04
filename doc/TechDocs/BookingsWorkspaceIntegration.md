@@ -18,7 +18,7 @@ In a local calendar workspace bookings are stored locally on devices and the int
 
 ### Hybrid calendar - Exchange/O365/Google
 
-In a hybrid calendar workspace bookings are stored on an associated calendar backend. The integration will send commands to devices through the cloud REST xAPI. The devices will follow these requests and in turn initiate requests to the workspace calendar backend to update the calendar. Calendar updates from the backend are propagated from the devices to the integration through cloud xAPI updates. Update success and delay time on sending xAPI commands is dependent on external factors such as cloud connectivity, network traffic to the calendar backend, and so on.
+In a hybrid calendar workspace, bookings are stored on an associated calendar backend. The integration will send commands to devices through the cloud REST xAPI. The devices will follow these requests and in turn initiate requests to the workspace calendar backend to update the calendar. Calendar updates from the backend are propagated from the devices to the integration through cloud xAPI updates. Update success and delay time on sending xAPI commands is dependent on external factors such as cloud connectivity, network traffic to the calendar backend, and so on.
 
 ## xAPIs
 [You can find full xAPI documentation here](https://developer.webex.com/docs/api/v1/xapi). Quick reference for relevent xAPIs to the workspace integration are provided below.
@@ -92,7 +92,7 @@ The integration may reject the booking by issuing a *Bookings.Delete*, which wil
 
 #### Hybrid calendar
 
-With a hybrid calendar configuration, when a user creates an ad hoc booking at a device the device will request the booking creation on the calendar backend. A *Bookings.BookingRequested* xevent is sent upon creation of the request. This event contains the request *BookingRequestUUID*, which is used to correlate with the subsequent success or failure events for the request. The device will update with *Bookings.BookingCreated* upon confirmation from the calendar backend, with both the *BookingRequestUUID* for the associated request and the *MeetingId* for continued use in identifying the calendar event. The device will update with *Bookings.BookingFailed* with the associated *BookingRequestUUID* if the request fails.
+With a hybrid calendar configuration, when a user creates an ad hoc booking on a device, the device sends a request to create the booking on the calendar backend. A *Bookings.BookingRequested* xevent is sent upon creation of the request. This event contains the request *BookingRequestUUID*, which is used to correlate with the subsequent success or failure events for the request. The device will update with *Bookings.BookingCreated* upon confirmation from the calendar backend, with both the *BookingRequestUUID* for the associated request and the *MeetingId* for continued use in identifying the calendar event. The device will update with *Bookings.BookingFailed* with the associated *BookingRequestUUID* if the request fails.
 
 <img src="/doc/images/integrations/adhoc_book_at_device.png" style="width: 800px" />
 

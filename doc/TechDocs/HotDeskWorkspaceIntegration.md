@@ -31,11 +31,9 @@ A sample integration is in progress and will be made available as a public GitHu
 
 ## Interaction flows
 ### Ad hoc sign in and book
-A user can sign in to a workspace device without creating a booking first, if an admin has enabled ad hoc booking for the workspace.
+A user can sign in to a workspace device without a prior booking if the workspace administrator has enabled ad hoc booking for that workspace.
 
-The sign in occurs prior to the booking creation. Upon signing in, the user is prompted to create a booking for their sign in. They can either select a time for the booking and book, or cancel and sign out. 
-
-In this flow, the user continues with creating the booking for their sign in.
+The sign in occurs before booking creation. Upon signing in, the user is prompted to create a booking for their session. They can either select a time and confirm the booking or cancel and sign out. In this flow, the user proceeds with creating the booking for their sign in.
 
 As the sign in occurs prior to the booking, the integration will first be notified of the sign in through the update to the *xStatus.Webex.DevicePersonalization.Personalized*. The booking creation follows the **Creating a booking** flow in the [Building a bookings workspace integration - external](/doc/techdocs/bookingsworkspaceintegration) guide. 
 

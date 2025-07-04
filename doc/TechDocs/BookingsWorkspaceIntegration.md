@@ -1,8 +1,8 @@
-# Building a bookings workspace integration - external
+# Building a bookings workspace integration
 
 ## Overview
 
-This is a guide to creating a workspace integration for managing bookings with RoomOS devices.
+This guide provides instructions for creating a workspace integration to seamlessly manage bookings on RoomOS devices.
 
 ## Workspace integrations
 To begin creating your workspace integration we recommend referencing the [workspace-integrations](https://github.com/cisco-ce/workspace-integrations) public GitHub repository for guides and workspace-integration tooling.
@@ -14,7 +14,7 @@ The xAPI interactions between the workspace integration and the RoomOS devices w
 
 ### Local calendar
 
-In a local calendar workspace bookings are stored locally on devices and the integration will update the device's local calendars directly through the cloud REST xAPI service. The devices will notify the integration of device-side driven changes through cloud xAPI updates. If there are multiple devices registered to a workspace (Companion mode) the calendars for each device are synced automatically between the devices.
+In a local calendar workspace bookings are stored locally on devices and the integration will update the device's local calendars directly through the cloud REST xAPI service. The devices will notify the integration of device driven changes through cloud xAPI updates. When multiple devices are registered to a workspace (Companion mode), their calendars automatically sync across all devices.
 
 ### Hybrid calendar - Exchange/O365/Google
 
@@ -59,7 +59,7 @@ In a hybrid calendar workspace bookings are stored on an associated calendar bac
 
 ## Interaction flows
 
-Each calendar event will contain a unique identifier for correlating *xEvent* updates and *xCommand* executions specific to that calendar event. This identifier is the *BookingRequestUUID* value while the booking request is in progress, and the *MeetingId* value once it is confirmed. 
+Each calendar event will contain a unique identifier for correlating *xEvent* updates and *xCommand* executions specific to that calendar event. This identifier is the BookingRequestUUID while the booking request is in progress, and switches to the MeetingId once the booking is confirmed.
 
 See **Creating a booking** in this article.
 

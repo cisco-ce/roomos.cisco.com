@@ -79,7 +79,7 @@ Devices will notify bookings starting and ending with *xEvent.Bookings.Start* an
 <img src="/doc/images/integrations/booking_end.png" style="width: 400px" />
 
 ## Creating a booking
-### Book at device - Ad hoc booking
+### Book at device - ad hoc booking
 Users can create bookings at a device through its UI if an admin has enabled ad hoc booking for the device's workspace.
 
 #### Local calendar
@@ -96,7 +96,7 @@ With a hybrid calendar configuration, when a user creates an ad hoc booking at a
 
 <img src="/doc/images/integrations/adhoc_book_at_device.png" style="width: 800px" />
 
-### Book from Workspace Integration
+### Book from Workspace wntegration
 #### Local calendar
 With a local calendar configuration, when the integration creates a booking it provides the *BookingRequestUUID* for correlating with the subsequent *Bookings.BookingCreated* or *Bookings.BookingFailed* events.
 <img src="/doc/images/integrations/book_from_integration.png" style="width: 800px" />
@@ -126,7 +126,7 @@ When a *Bookings.Delete* is requested with a hybrid calendar configuration the s
 
 <img src="/doc/images/integrations/booking_delete_at_device.png" style="width: 800px" />
 
-### Delete from Workspace Integration
+### Delete from workspace integration
 #### Local calendar
 
 <img src="/doc/images/integrations/booking_delete_from_integration.png" style="width: 800px" />
@@ -147,7 +147,7 @@ When the time information for a booking is updated, the device notifies the inte
 ### Edit at device
 When a user edits the booking time information at the device, the integration may reject the new time. If the integration rejects the new booking time, it may apply a *Bookings.Edit* to return the booking to the original values. 
 
-See **Edit from Workspace Integration**, below.
+See **Edit from workspace integration**, below.
 
 #### Local calendar
 
@@ -157,7 +157,7 @@ See **Edit from Workspace Integration**, below.
 
 <img src="/doc/images/integrations/edit_booking_at_device.png" style="width: 700px" />
 
-### Edit from Workspace Integration
+### Edit from workspace integration
 #### Local calendar
 
 <img src="/doc/images/integrations/edit_booking_from_integration.png" style="width: 800px" />

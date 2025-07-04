@@ -49,6 +49,7 @@ If the integration rejects the booking, the user will be signed out.
 
 ### Ad hoc sign in and cancel
 When a user signs in and is prompted to create a booking, they can instead cancel and sign out. In that case, no booking will be created.
+
 <img src="/doc/images/integrations/adhoc_sign_in_and_cancel.png" style="width: 600px" />
 
 ### User sign in to booking
@@ -75,9 +76,12 @@ If the booking is active and the user is in a call at the time of the update, th
 
 ### Local user sign out
 A user can sign out from the device before their booking ends. In that case the booking will be removed as a part of the sign out process, and leave the space available for subsequent users.
+
 <img src="/doc/images/integrations/local_sign_out.png" style="width: 600px" />
+
 ### Remote sign out
 An integration may sign out a signed in user through xCommand.Webex.Registration.Logout. This sign out is immediate and does will end any ongoing calls for the signed-in account. As a part of the sign out the associated booking will be removed.
+
 <img src="/doc/images/integrations/remote_sign_out.png" style="width: 600px" />
 
 ### Booking deleted when organizer not in organization

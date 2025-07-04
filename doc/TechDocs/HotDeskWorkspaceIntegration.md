@@ -54,24 +54,28 @@ When a user signs in and is prompted to create a booking, they can instead cance
 
 ### User sign in to booking
 When a hostdesk booking has already been remotely created, either through xAPI or hybrid calendar, the corresponding user may sign into that booking once it's active.
+
 <img src="/doc/images/integrations/user_sign_in_to_booking_success.png" style="width: 600px" />
 
 ### User sign in fails
 When a valid user attempts to sign in to their booking but the sign in fails, they can reattempt the sign in.
+
 <img src="/doc/images/integrations/user_sign_in_fails.png" style="width: 500px" />
 
 ### Wrong user sign in
 If user A attempts to sign into user B's booking, user A will be signed out without affecting user B's booking.
+
 <img src="/doc/images/integrations/user_sign_in_to_booking_wrong_user.png" style="width: 600px" />
 
 ### Booking ends while signed in
 Signed in users are automatically signed out at the end of their booking. If the user is in a call as the booking ends, they will remain signed in until the call ends.
+
 <img src="/doc/images/integrations/booking_deleted_while_signed_in.png" style="width: 600px" />
 
 ### Booking moved while signed in
 When a booking is moved - for example, there's an update to the start time and/or end time of the booking - while a user is signed into the booking, the device will determine if the booking is still active. If the booking isn't active, the device will sign the user out. 
-
 If the booking is active and the user is in a call at the time of the update, they will remain signed in until the call ends.
+
 <img src="/doc/images/integrations/booking_moved_while_signed_in.png" style="width: 600px" />
 
 ### Local user sign out

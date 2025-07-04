@@ -178,7 +178,7 @@ Examples for extending a booking not provided here as it is recommend to use Boo
 
 **Hybrid Calendar**
 
-<img src="/doc/images/integrations/extend_booking_at_device.png" style="width: 600px" />
+<img src="/doc/images/integrations/booking_extend_at_device.png" style="width: 600px" />
 
 
 

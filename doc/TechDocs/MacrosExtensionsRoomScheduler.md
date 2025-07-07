@@ -154,9 +154,7 @@ For user interactions such as clicking a button or opening a page, the **Source*
 
 ```
 xCommand UserInterface Extensions Panel Clicked Source: <macAddress>
-
 xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>
-
 xCommand UserInterface Extensions Widget Action Source: <macAddress>
 ```
 ## Integrator web views

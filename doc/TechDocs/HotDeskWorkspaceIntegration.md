@@ -37,7 +37,7 @@ A user can sign in to a workspace device without a prior booking if the workspac
 
 The sign in occurs before booking creation. Upon signing in, the user is prompted to create a booking for their session. They can either select a time and confirm the booking or cancel and sign out. In this flow, the user proceeds with creating the booking for their sign in.
 
-As the sign in occurs prior to the booking, the integration will first be notified of the sign in through the update to the *xStatus.Webex.DevicePersonalization.Personalized*. The booking creation follows the **Creating a booking** flow in the [Building a bookings workspace integration - external](/doc/techdocs/bookingsworkspaceintegration) guide. 
+As the sign in occurs prior to the booking, the integration will first be notified of the sign in through the update to the *xStatus.Webex.DevicePersonalization.Personalized*. The booking creation follows the **Creating a booking** flow in the [Building a bookings workspace integration](BookingsWorkspaceIntegration.md) guide. 
 
 If the integration rejects the booking, the user will be signed out.
 

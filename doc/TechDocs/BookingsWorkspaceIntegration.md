@@ -160,11 +160,11 @@ See **Edit from workspace integration**, below.
 ### Edit from workspace integration
 #### Local calendar
 
-<img src="/doc/images/integrations/edit_booking_from_integration.png" style="width: 800px" />
+<img src="/doc/images/integrations/edit-from-ws-integration-local.png" style="width: 800px" />
 
 #### Hybrid calendar
 
-<img src="/doc/images/integrations/edit_booking_from_integration.png" style="width: 800px" />
+<img src="/doc/images/integrations/edit-from-ws-integration-hybrid.png" style="width: 800px" />
 
 ### Edit/move from hybrid calendar
 

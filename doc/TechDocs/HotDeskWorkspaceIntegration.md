@@ -12,13 +12,13 @@ Bookings can be created remotely using the hybrid calendar (for example, through
 * Hotdesking enabled in the workspace
 * User email address matches Webex account email address
 ##  Bookings workspace integration
-A hotdesking workspace integration is a type of bookings workspace integration. See [Building a bookings workspace integration - external](/doc/techdocs/bookingsworkspaceintegration) for information on the common bookings workspace integration elements in addition to the hotdesking specific information in this article.
+A hotdesking workspace integration is a type of bookings workspace integration. See [Building a bookings workspace integration](BookingsWorkspaceIntegration.md) for information on the common bookings workspace integration elements in addition to the hotdesking specific information in this article.
 
 ##  Hotdesking workspace integration
 An example manifest file for a hotdesking integration is [provided for reference here](https://confluence-eng-gpk2.cisco.com/conf/download/attachments/655262014/ex_hotdesk_manifest.json?version=1&modificationDate=1744230150448&api=v2).
 
 ##  xAPIs
-The xAPIs listed here are required in addition to the xAPIs provided in [Building a bookings workspace integration - external](/doc/techdocs/bookingsworkspaceintegration). 
+The xAPIs listed here are required in addition to the xAPIs provided in [Building a bookings workspace integration](BookingsWorkspaceIntegration.md). 
 
 You can find [full xAPI documentation here](https://developer.webex.com/docs/api/v1/xapi).
 
@@ -26,8 +26,10 @@ You can find [full xAPI documentation here](https://developer.webex.com/docs/api
 
 *xCommand.Webex.Registration.Logout* logs out a signed in personal account, removing the account and ending all account activities.
 
+<!---
 ## Sample integration
 A sample integration is in progress and will be made available as a public GitHub repository.
+-->
 
 ## Interaction flows
 ### Ad hoc sign in and book

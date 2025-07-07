@@ -143,18 +143,22 @@ Key parameters:
 
 #### Examples - using the parameters ####
 
-*xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <OSD, RoomScheduler>*
-
-*xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <OSD, RoomScheduler>*
+```
+xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <OSD, RoomScheduler>
+xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <OSD, RoomScheduler>
+```
+    
 
 ### Source-based commands
 For user interactions such as clicking a button or opening a page, the **Source** identifies the originating device. These commands do not include a **Target**, since actions like "clicked all RoomSchedulers" are not meaningful in this context.
 
-*xCommand UserInterface Extensions Panel Clicked Source: <macAddress>*
+```
+xCommand UserInterface Extensions Panel Clicked Source: <macAddress>
 
-*xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>*
+xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>
 
-*xCommand UserInterface Extensions Widget Action Source: <macAddress>*
+xCommand UserInterface Extensions Widget Action Source: <macAddress>
+```
 ## Integrator web views
 Integrator Web Views provide a way to programmatically display a web view using the *xCommand UserInterface WebView Display* command. These web views are of type Integration, as indicated by the status output:
 

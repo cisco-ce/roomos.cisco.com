@@ -2,7 +2,7 @@
 The Room Scheduler device User Interface (UI) Extensions let you design new panels and action buttons. This custom functionality will appear as additional buttons on the Room Scheduler dashboard, and users can interact with them. This customization can simplify a workflow, automate tasks on the video device, or assist with other tasks such as posting to third-party meeting services or triggering bespoke actions.
 
 A UI extension is a user interface component with no built-in control logic. When users interact with these UI elements, they trigger events that developers can monitor and respond to, either by employing macros or integrating external functionalities, for example through JSXAPI. This flexibility empowers developers to design UIs capable of diverse actions, such as controlling meeting room lighting, sending messages upon detecting a specific number of individuals in a meeting room, or starting the coffee machine – all according to specific requirements. You can program UI Extensions like buttons and panels in an infinite number of ways.
-See [User Interface Extensions](/doc/techdocs/uiextensions) for more details.
+See [User Interface Extensions](UiExtensions.md) for more details.
 
 You can also add web apps to the Room Scheduler dashboard.
 
@@ -19,14 +19,14 @@ Click **New**. The **Add a new extension** dialog box will appear. You’ll see 
 
 <img src="/doc/images/uiextensions/add_new_extension.png" style="width: 600px" />
 
-* **Panel**. Create custom panels with widgets (sliders, switches, buttons) to control your video device or other peripherals in the room. See [Widgets and Panels](doc/techdocs/uiextensions-panels) for more details.
+* **Panel**. Create custom panels with widgets (sliders, switches, buttons) to control your video device or other peripherals in the room. See [Widgets and Panels](UiExtensions-Panels.md)) for more details.
 *  **Action Button**. Simple buttons that execute a command when pressed (like dial a number).
 *  **Web App**. For devices with a Web Engine. A button launches a web view in full screen or modal mode on the user interface.
 Each of these adds a new button to the user interface. Only a few buttons will be added to the dashboard before it runs out of space. To access the overflow buttons, swipe from right to left in the button area.
 
 **NOTE:** This applies to standalone navigator setup. You may see different options on paired devices. Web Widgets are not supported and cannot be added in Room Scheduler mode.
 ### Action buttons
-Creating an action button adds a button to the dashboard, programmed with an xapi command. Actions are simple to create using the **Macro Editor**. See this [Macro tutorial](doc/techdocs/macrotutorial) for more information. 
+Creating an action button adds a button to the dashboard, programmed with an xapi command. Actions are simple to create using the **Macro Editor**. See this [Macro tutorial](MacroTutorial.md)) for more information. 
 #### Example - creating an action button ####
 To create an action button that displays a message when clicked:
 1. Create an action button with id: hello1_button
@@ -93,7 +93,7 @@ Just like in the web interface instructions, you should now see the action butto
      ```
 5. Run *systemctl restart macros*
 
-*xCommand UserInterface Extensions Set* can also be used to bulk add UI extensions. [Find more information here](/xapi/Command.UserInterface.Extensions.Set/?search=extensions).
+*xCommand UserInterface Extensions Set* can also be used to bulk add UI extensions. [Find more information here](https://roomos.cisco.com/xapi/Command.UserInterface.Extensions.Set/?search=extensions).
 
 #### Example - creating a web app button ####
 
@@ -131,13 +131,13 @@ You should now see a web app button that will open your web app in Modal mode.
 ## Sending UI messages
 Standalone Room Schedulers now support sending various UI messages, including **Prompt**, **TextLine**, **TextInput**, and **Rating** for use with background macros. 
 
-[Find more information here].(/xapi/domain/?domain=UserInterface#UserInterface-Message)
+[Find more information here](https://roomos.cisco.com/xapi/domain/?domain=UserInterface#UserInterface-Message)
 ## Enhanced UI Extensions Control with Targeted Device Parameters for Room Schedulers
 With the introduction of UI Extensions for paired Room Schedulers, you can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
 Key parameters:
 * **Target**. Specifies the device on which the action should occur (OSD or RoomScheduler).
 * **PeripheralId**. Identifies a specific device using its MAC address.
-* **Source**. Indicates the originating device for events such as user interactions.
+* **Source**. Specifies the source device, identified by its MAC address, that generated events such as user interactions.
   
 **NOTE:** **Target** and **PeripheralId** are mutually exclusive.
 

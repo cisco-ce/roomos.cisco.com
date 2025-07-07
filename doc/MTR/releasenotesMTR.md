@@ -1,5 +1,5 @@
 # Release notes
-(Updated June 4, 2025) 
+(Updated July 8, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -40,6 +40,20 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+<!-- ## July 2025
+
+**Software version: RoomOS 11.30.1.5**
+
+### Miracast Indicator on Microsoft Teams Rooms
+
+Miracast allows you to wirelessly share content from your laptop or mobile to your Cisco device. With this change users will now have visible iconography to indicate when Miracast is enabled on a device.
+
+<img src="/doc/images/MTR/miracast-icon-homescreen.jpeg" style="width: 400px" />
+
+### Fixed issues
+* CSCwo67365 - Cannot scroll through camera presets.
+* CSCwo60665 - Removing the USB-C cable during active share disables ability to share from HDMI during Teams meetings.-->
 
 ## June 2025
 

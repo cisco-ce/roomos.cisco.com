@@ -41,7 +41,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-<!-- ## July 2025
+ ## July 2025
 
 **Software version: RoomOS 11.30.1.5**
 
@@ -53,7 +53,7 @@ Miracast allows you to wirelessly share content from your laptop or mobile to yo
 
 ### Fixed issues
 * CSCwo67365 - Cannot scroll through camera presets.
-* CSCwo60665 - Removing the USB-C cable during active share disables ability to share from HDMI during Teams meetings.-->
+* CSCwo60665 - Removing the USB-C cable during active share disables ability to share from HDMI during Teams meetings.
 
 ## June 2025
 

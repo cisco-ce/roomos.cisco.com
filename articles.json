@@ -134,6 +134,24 @@
       "symbol": "📝"
     },
     {
+      "id": "MacrosExtensionsRoomScheduler",
+      "title": "Macros and extensions for Room Scheduler",
+      "description": "The Room Scheduler device User Interface (UI) Extensions let you design new panels and action buttons",
+      "symbol": "📝"
+    },
+    {
+      "id": "BookingsWorkspaceIntegration",
+      "title": "Building a bookings workspace integration",
+      "description": "Creating a workspace integration to seamlessly manage bookings on RoomOS devices",
+      "symbol": "📝"
+    },
+    {
+      "id": "HotDeskWorkspaceIntegration",
+      "title": "Building a hotdesking workspace integration",
+      "description": "Creating a workspace integration that interacts with RoomOS hotdesking features",
+      "symbol": "📝"
+    },
+    {
       "id": "OutboundSerialControl",
       "title": "Controlling third-party peripherals via serial port",
       "description": "Outbound serial control",

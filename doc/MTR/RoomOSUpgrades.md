@@ -1,10 +1,12 @@
 # Software upgrades
 
-Cisco collaboration devices with Microsoft Teams Rooms get upgraded automatically from Teams Admin Center. The upgrade cadence from Microsoft is different from RoomOS from Cisco and upgrades happen approximately every three months.
+Cisco collaboration devices running Microsoft Teams Rooms get upgraded automatically from Teams Admin Center if not registered to Control Hub. The upgrade cadence of RoomOS from Microsoft might be different from that of Cisco, as Microsoft has to verify new releases before they are available in Teams Admin Center. Due to the verification process, releases from Microsoft will always be delayed in comparison to when they are released from Cisco, and if the verification process takes too long, a release might be skipped.
 
-For Cisco collaboration devices with Microsoft Teams Rooms and Control Hub, you can choose either Cisco or Microsoft as the software provider. You also get the option to use [advanced software upgrades](https://help.webex.com/idba5c/#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
+For Cisco collaboration devices running Microsoft Teams Rooms and Control Hub, you can choose either Cisco or Microsoft as the software provider. With Cisco as the software provider, you also get the option to use [advanced software upgrades](https://help.webex.com/idba5c/#Cisco_Reference.dita_7275e9c5-314e-4fb3-92d5-a2c40c47ffb0).
 
-With Cisco as the software provider, you can choose from the following channels:
+**Note**: While Cisco bundles a tested and verified set of Microsoft applications with every RoomOS release, Cisco cannot offer, nor block, upgrades of individual Microsoft applications if and when they become available. Individual Microsoft applications can **always** be updated automatically or manually from Teams Admin Center, regardless of the software provider you have selected in Control Hub. This means that if a new Microsoft application is released, like the Microsoft Teams Rooms application, the application will be updated based on your preferences in Teams Admin Center, even though you have selected Cisco as software provider. Read more about automatic updates from Teams Admin Center [here](https://learn.microsoft.com/en-us/microsoftteams/devices/remote-update#automatic-updates).
+
+**With Cisco as the software provider, you can choose from the following channels:**
 
 * **Stable:** Default option. The latest Stable release of RoomOS that contains software fixes and new features.
   * Software update typically once a month

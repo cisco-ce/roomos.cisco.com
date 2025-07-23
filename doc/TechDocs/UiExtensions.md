@@ -152,3 +152,30 @@ How to use:
 * You can also turn on lights etc by tapping in the simulator, and notice that the UI extensions are updated accordingly (bi-directional APIs)
 * When you are done, be sure to remove the UI extensions again from the Connect menu
 
+## Enhanced UI Extensions Control with Targeted Device Parameters
+You can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
+Key parameters:
+* **Target**. Specifies the device on which the action should occur (OSD, RoomScheduler or Controller).
+* **PeripheralId**. Identifies a specific device using its MAC address.
+* **Source**. Specifies the source device, identified by its MAC address, that generated events such as user interactions.
+  
+**NOTE:** **Target** and **PeripheralId** are mutually exclusive.
+
+#### Examples - using the parameters ####
+
+```
+xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <OSD, RoomScheduler, Controller>
+xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <OSD, RoomScheduler, Controller> 
+```
+    
+
+### Source-based commands
+For user interactions such as clicking a button or opening a page, the **Source** identifies the originating device. These commands do not include a **Target**, since actions like "clicked all RoomSchedulers" are not meaningful in this context.
+
+```
+xCommand UserInterface Extensions Panel Clicked Source: <macAddress>
+xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>
+xCommand UserInterface Extensions Widget Action Source: <macAddress>
+
+```
+

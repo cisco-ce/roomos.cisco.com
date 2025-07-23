@@ -26,7 +26,7 @@ Each of these adds a new button to the user interface. Only a few buttons will b
 
 **NOTE:** This applies to standalone navigator setup. You may see different options on paired devices. Web Widgets are not supported and cannot be added in Room Scheduler mode.
 ### Action buttons
-Creating an action button adds a button to the dashboard, programmed with an xapi command. Actions are simple to create using the **Macro Editor**. See this [Macro tutorial](MacroTutorial.md)) for more information. 
+Creating an action button adds a button to the dashboard, programmed with an xapi command. Actions are simple to create using the **Macro Editor**. See this [Macro tutorial](MacroTutorial.md) for more information. 
 #### Example - creating an action button ####
 To create an action button that displays a message when clicked:
 1. Create an action button with id: hello1_button
@@ -131,33 +131,18 @@ You should now see a web app button that will open your web app in Modal mode.
 ## Sending UI messages
 Standalone Room Schedulers now support sending various UI messages, including **Prompt**, **TextLine**, **TextInput**, and **Rating** for use with background macros. 
 
-[Find more information here](https://roomos.cisco.com/xapi/domain/?domain=UserInterface#UserInterface-Message)
+[Find more information here](https://roomos.cisco.com/xapi/domain/?domain=UserInterface#UserInterface-Message).
 ## Enhanced UI Extensions Control with Targeted Device Parameters for Room Schedulers
-With the introduction of UI Extensions for paired Room Schedulers, you can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
-Key parameters:
-* **Target**. Specifies the device on which the action should occur (OSD or RoomScheduler).
-* **PeripheralId**. Identifies a specific device using its MAC address.
-* **Source**. Specifies the source device, identified by its MAC address, that generated events such as user interactions.
-  
-**NOTE:** **Target** and **PeripheralId** are mutually exclusive.
-
-#### Examples - using the parameters ####
+When creating and interacting with UI Extensions on room scheduler, you can specify where UI elements should be displayed only on the Room Scheduler. To support this functionality, these optional parameters have been added to the xAPI: Target, Source, and PeripheralId.
 
 ```
-xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <OSD, RoomScheduler>
-xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <OSD, RoomScheduler>
-```
-    
-
-### Source-based commands
-For user interactions such as clicking a button or opening a page, the **Source** identifies the originating device. These commands do not include a **Target**, since actions like "clicked all RoomSchedulers" are not meaningful in this context.
+xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: RoomScheduler
+xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: RoomScheduler
 
 ```
-xCommand UserInterface Extensions Panel Clicked Source: <macAddress>
-xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>
-xCommand UserInterface Extensions Widget Action Source: <macAddress>
+[Find more information here](UiExtensions.md#enhanced-ui-extensions-control-with-targeted-device-parameters).
 
-```
+
 ## Integrator web views
 Integrator Web Views provide a way to programmatically display a web view using the *xCommand UserInterface WebView Display* command. These web views are of type Integration, as indicated by the status output:
 

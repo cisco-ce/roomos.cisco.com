@@ -45,7 +45,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
 |Board Pro G2|	4,5	|USB 2.0 Max|USB 2.0 Type A|
 |Codec Pro|	7	|USB 2.0 Max|USB 2.0 Type A|
 |Room Kit EQ/X|	5,6	|4k@60|USB 3.0 Type A|
-> **_NOTE:_**  4k is referring to 3840x2160 not 4096x2160 the signal.
+> **_NOTE:_**  "4K" refers to a resolution of 3840 x 2160 pixels, not 4096 x 2160 pixels, when describing the signal.
 "USB 2.0 Max" is 4k@30 with a Cisco 4k desk camera but most cameras will instead be using a lower resolution likely 1080p.
 
 

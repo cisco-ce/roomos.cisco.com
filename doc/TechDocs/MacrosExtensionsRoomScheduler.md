@@ -133,11 +133,14 @@ Standalone Room Schedulers now support sending various UI messages, including **
 
 [Find more information here](https://roomos.cisco.com/xapi/domain/?domain=UserInterface#UserInterface-Message).
 ## Enhanced UI Extensions Control with Targeted Device Parameters for Room Schedulers
-When creating and interacting with UI Extensions on room scheduler, you can specify where UI elements should be displayed only on the Room Scheduler. To support this functionality, these optional parameters have been added to the xAPI: Target, Source, and PeripheralId.
+When creating and interacting with UI Extensions on room scheduler, you can specify where UI elements should be displayed only on the Room Scheduler. To support this functionality, these optional parameters have been added to the xAPI: Target, PeripheralId, and Origin.
 
 ```
 xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: RoomScheduler
+xCommand UserInterface Message ** Response PeripheralId: <maxAddress> Origin: RoomScheduler
 xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: RoomScheduler
+xCommand UserInterface Extensions Panel Clicked PeripheralId: <macAddress> Origin: RoomScheduler
+xCommand UserInterface Message Clear PeripheralId: <macAddress> Target: RoomScheduler    
 
 ```
 [Find more information here](UiExtensions.md#enhanced-ui-extensions-control-with-targeted-device-parameters).

@@ -153,29 +153,42 @@ How to use:
 * When you are done, be sure to remove the UI extensions again from the Connect menu
 
 ## Enhanced UI Extensions Control with Targeted Device Parameters
+
 You can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
 Key parameters:
-* **Target**. Specifies the device on which the action should occur (OSD, RoomScheduler or Controller).
+* **Target**. Specifies the device on which the action should occur (Auto=default, Controller, OSD, RoomScheduler).
 * **PeripheralId**. Identifies a specific device using its MAC address.
-* **Source**. Specifies the source device, identified by its MAC address, that generated events such as user interactions.
+* **Origin**. Indicates where a action or event came from (Controller, OSD, RoomScheduler).
   
-**NOTE:** **Target** and **PeripheralId** are mutually exclusive.
+**NOTE:** The parameters **Target** and **PeripheralId** are mutually exclusive, only one may be used at a time. However, for commands that include Origin and PeripheralId, both may be used together or individually.
 
 #### Examples - using the parameters ####
 
 ```
-xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <OSD, RoomScheduler, Controller>
-xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <OSD, RoomScheduler, Controller> 
+xCommand UserInterface Message * Display PeripheralId: <macAddress> Target: <Auto, OSD, RoomScheduler, Controller>
+xCommand UserInterface Extensions Panel Open/Close PeripheralId: <macAddress> Target: <Auto, OSD, RoomScheduler, Controller>
+xCommand UserInterface Message Clear PeripheralId: <macAddress> Target: <Auto, OSD, RoomScheduler, Controller> 
 ```
     
-
-### Source-based commands
-For user interactions such as clicking a button or opening a page, the **Source** identifies the originating device. These commands do not include a **Target**, since actions like "clicked all RoomSchedulers" are not meaningful in this context.
+#### Examples - returned xEvents ####
 
 ```
-xCommand UserInterface Extensions Panel Clicked Source: <macAddress>
-xCommand UserInterface Extensions Page Opened/Closed Source: <macAddress>
-xCommand UserInterface Extensions Widget Action Source: <macAddress>
+*e UserInterface Message TextLine Cleared Origin: <OSD, RoomScheduler, Controller>
+** end
+
+*e UserInterface Message Prompt Response Origin: <OSD, RoomScheduler, Controller> PeripheralId: <macAddress>
+** end
+```  
+
+### Action-based commands
+
+For user interactions, such as clicking a button or opening a page, the **PeripheralId** or **Origin** parameter is used to identify the originating device.
+
+```
+xCommand UserInterface Extensions Panel Clicked PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
+xCommand UserInterface Extensions Page Opened/Closed PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
+xCommand UserInterface Extensions Widget Action PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
+xCommand UserInterface Message ** Response PeripheralId: <maxAddress> Origin: <OSD, RoomScheduler, Controller> 
 
 ```
 

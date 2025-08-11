@@ -154,7 +154,7 @@ How to use:
 
 ## Enhanced UI Extensions Control with Targeted Device Parameters
 
-You can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Source**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
+You can control where specific UI elements are displayed: either on the scheduler or solely on the codec. To support this functionality, these optional parameters have been added to the xAPI: **Target**, **Origin**, and **PeripheralId**. These parameters let developers specify which device should perform an action or report an interaction.
 Key parameters:
 * **Target**. Specifies the device on which the action should occur (Auto=default, Controller, OSD, RoomScheduler).
 * **PeripheralId**. Identifies a specific device using its MAC address.
@@ -188,7 +188,7 @@ For user interactions, such as clicking a button or opening a page, the **Periph
 xCommand UserInterface Extensions Panel Clicked PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
 xCommand UserInterface Extensions Page Opened/Closed PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
 xCommand UserInterface Extensions Widget Action PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller>
-xCommand UserInterface Message ** Response PeripheralId: <maxAddress> Origin: <OSD, RoomScheduler, Controller> 
+xCommand UserInterface Message ** Response PeripheralId: <macAddress> Origin: <OSD, RoomScheduler, Controller> 
 
 ```
 

@@ -1,9 +1,9 @@
 # Release notes
-(Updated August 4, 2025) 
+(Updated August 21, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 11.27.1.8, based on RoomOS April 2025.**
+**The latest software version supported by Microsoft: RoomOS 11.29.1.7, based on RoomOS June 2025.**
 
 This release note describes new software features and capabilities included in Cisco collaboration devices running RoomOS with Microsoft Teams Rooms on Android. Microsoft Teams Rooms is supported on the following Cisco collaboration devices:
 
@@ -43,7 +43,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## August 2025
 
-**Software version: RoomOS 11.31.1.3**
+**Software version: RoomOS 11.31.1.5**
 
 ### Fixed issues
 * CSCwp65243 - Codec with Quadcam and PTZ 4K cameras connected, randomly crashes and reboots.

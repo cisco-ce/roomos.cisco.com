@@ -316,6 +316,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "UserBasedPIN",
+      "title": "Secure your devices with a user based PIN lock",
+      "description": "Enhance the security of all your devices, including hot desking stations, by enabling user-based PIN lock.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "SettingsMenu",
       "title": "Settings menu",
       "description": "Device settings that are available from the UI.",

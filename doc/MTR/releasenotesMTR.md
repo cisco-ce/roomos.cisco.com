@@ -1,5 +1,5 @@
 # Release notes
-(Updated August 22, 2025) 
+(Updated September 1, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -40,6 +40,19 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## September 2025
+
+**Software version: RoomOS 11.32.1.3**
+
+### Active stylus support with third-party touch screens
+
+Enhance your collaboration experience with active stylus support on third-party touch screens. Users can now draw, pan, and interact seamlessly with the whiteboard using active styluses.
+
+Read more about [third-party touch screen support](https://help.webex.com/ncyh2f/).
+
+### Fixed issues
+* CSCwq70358 - Presentation automatically starts after it is closed and a new call is made when a laptop is still connected. 
 
 ## August 2025
 

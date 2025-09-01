@@ -1,4 +1,6 @@
-# Secure your device with a PIN lock
+# Deprecated: Secure your device with a PIN lock
+
+**Note**: The device PIN feature is no longer supported and will be replaced by a user-based PIN system, allowing users to manage their PINs across devices. Read [this article](https://help.webex.com/en-us/article/nokp2m5/Secure-your-Board,-Desk,-or-Room-Series-devices-with-a-user-based-PIN-lock) to learn how to set up a personal PIN code for all of your devices.
 
 
 Add an extra layer of privacy to the device with a 6-digit PIN lock, keeping your data safe and notifications discreet.

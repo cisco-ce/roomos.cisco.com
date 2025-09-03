@@ -6,7 +6,10 @@ For Cisco collaboration devices running Microsoft Teams Rooms and Control Hub, y
 
 **Note**: While Cisco bundles a tested and verified set of Microsoft applications with every RoomOS release, Cisco cannot offer, nor block, upgrades of individual Microsoft applications if and when they become available. Individual Microsoft applications can **always** be updated automatically or manually from Teams Admin Center, regardless of the software provider you have selected in Control Hub. This means that if a new Microsoft application is released, like the Microsoft Teams Rooms application, the application will be updated based on your preferences in Teams Admin Center, even though you have selected Cisco as software provider. Read more about automatic updates from Teams Admin Center [here](https://learn.microsoft.com/en-us/microsoftteams/devices/remote-update#automatic-updates).
 
-**With Cisco as the software provider, you can choose from the following channels:**
+
+### Cisco as the software provider
+
+With Cisco as the software provider, you can choose from the following channels:
 
 * **Stable:** Default option. The latest Stable release of RoomOS that contains software fixes and new features.
   * Software update typically once a month
@@ -18,9 +21,18 @@ For Cisco collaboration devices running Microsoft Teams Rooms and Control Hub, y
 * **Trial:** An additional channel that gives you more flexibility when managing the software on your deployment. It can be used as an additional testing channel or for example home office devices or complex meeting rooms.
   *	Available when advanced software control is enabled.
 
+### Microsoft as the software provider
+
 With Microsoft as the software provider there is no channel selection in Control Hub, as software is managed through Teams Admin Center
 
 For an overview of Microsoft approved software versions, see: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).
 
 Read more about [RoomOS software upgrades and advanced software upgrades from Control Hub](https://help.webex.com/idba5c/). 
 
+### <a name="android13_downgrade"></a> RoomOS Downgrade Block for Android 13 and newer
+
+**From RoomOS 11.29.1, which introduces Android 13, it is not possible to downgrade to an earlier version of RoomOS.** If the device is on a channel with a software version that is lower that what the device in running, Webex continue to provide the same software as the device is running. If the device would be manually downgraded, the device will stop during boot and show a message indicating that the device was downgraded. 
+
+This downgrade block is due that Android 13 cannot downgrade between security patches. As we continously patch the Android system in our software releases, it is not possible to downgrade to an earlier version of RoomOS.
+
+If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms.

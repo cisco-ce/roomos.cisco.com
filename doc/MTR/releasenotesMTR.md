@@ -24,6 +24,8 @@ Room Navigator with Board Pro is now supported.
 
 Only one Room Navigator per device is supported.
 
+Room Navigator with 2GB RAM is not supported.
+
 Cisco Touch 10 is not supported.
 
 Software versions for onboarding new devices or devices registered to other calling platforms:

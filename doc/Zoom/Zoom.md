@@ -33,7 +33,7 @@ Supported Room Navigator versions:
 * CS-T10-TS-C-K9
 * CS-T10-WM-C-K9
 
-You’ll also need a Webex license and a Control Hub organization set up. 
+You’ll also need a Control Hub Organization with Device registration licenses. 
 
 For the signed in experience, you’ll also need a Zoom Rooms subscription.
 

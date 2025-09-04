@@ -2,7 +2,7 @@
 
 We are introducing an enhanced interoperability with Zoom. This enables users to join Zoom Meetings on their trusted Cisco devices with the familiar Zoom Meetings UI, delivering a seamless experience.
 
-**The external Beta will start on September 21st, 2025.** 
+**The external Beta will start on the week of September 21st, 2025.** 
 
 Users can join Zoom Meetings by pressing the green Join button for scheduled meetings (if Hybrid Calendar is enabled) or by selecting the Zoom Meetings app on the Cisco device to enter a Meeting ID. This launches the Zoom Meetings application on the device. Once the meeting concludes, the device automatically returns to the Cisco Rooms home screen.
 
@@ -25,6 +25,13 @@ One or more of the supported Cisco devices:
 *	Cisco Room Kit EQ 
 *	Cisco Room Kit EQX 
 *	Cisco Room Kit Pro
+
+Supported Room Navigator versions: 
+
+* CS-T10-TS-L-K9
+* CS-T10-WM-L-K9
+* CS-T10-TS-C-K9
+* CS-T10-WM-C-K9
 
 You’ll also need a Webex license and a Control Hub organization set up. 
 

@@ -8,7 +8,7 @@ Users can join Zoom Meetings by pressing the green Join button for scheduled mee
 
 Signed-in devices will also be able to start an instant meeting.
 
-<img src="/doc/images/Navigator-Zoom.png" alt="Decorative image of the Zoom call controls." width="700">
+<img src="/doc/images/Zoom/Navigator-Zoom.png" alt="Decorative image of the Zoom call controls." width="700">
 
 <!-- Need to be super clear that this an enhancement on our device experience, not a new product. Need to tell that you get all the device stuff we have: signage, -->
 

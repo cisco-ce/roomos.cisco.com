@@ -45,6 +45,10 @@ For the signed in experience, you’ll also need a Zoom Rooms subscription.
 
 After setting up your device, sign-up for the beta program at https://gobeta.webex.com/welcome/ and look for **Zoom for Cisco Rooms**.
 
+See the **Zoom for Cisco Rooms - Beta Demo** on YouTube:
+
+[![Thumbnail of the YouTube video](http://img.youtube.com/vi/Pfs9cwFQLQA/0.jpg)](http://www.youtube.com/watch?v=Pfs9cwFQLQA?feature=shared "Zoom for Cisco Rooms - Beta Demo")
+
 ## New to Cisco devices?
 
 Get in touch with a Cisco representative to obtain a device and the required Webex licences. 

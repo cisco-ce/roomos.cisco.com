@@ -1,8 +1,12 @@
 # Zoom for Cisco Rooms - Beta
 
 We are introducing an enhanced interoperability with Zoom. This enables users to join Zoom Meetings on their trusted Cisco devices with the familiar Zoom Meetings UI, delivering a seamless experience.
-
+   
+<br/><br/>  
+<br/><br/>
 <img src="/doc/images/Zoom/zoomCiscoBlack_horizontalLockup.png" alt="Decorative image of Zoom and Cisco logos." width="700">
+<br/><br/>    
+<br/><br/>   
 
 **External Beta enrollment is expected in September, 2025.** 
 

@@ -10,14 +10,14 @@
     "link": "/doc/WhatsNew"
   },
   {
-    "id": "UseCases",
-    "name": "Use Cases",
-    "link": "/doc/UseCases"
-  },
-  {
     "id": "TechDocs",
     "name": "Tech Docs",
     "link": "/doc/TechDocs"
+  },
+  {
+    "id": "UseCases",
+    "name": "Use Cases",
+    "link": "/doc/UseCases"
   },
   {
     "id": "MTR",

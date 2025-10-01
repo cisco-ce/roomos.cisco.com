@@ -90,8 +90,8 @@ You can use Apple AirPlay to share wirelessly to an MTR device. Just connect you
 *NOTE:* AirPlay sharing is enabled by default, and only available to MTR devices with *MTRShareExperience* set to *RoomOS*.
 
 See these articles for more information about sharing with AirPlay:
-*[Configure wireless sharing with AirPlay](https://help.webex.com/en-us/article/n29ja5v/Configure-wireless-sharing-with-AirPlay)
-*[Wireless sharing with AirPlay](https://help.webex.com/en-us/article/ndlsg3c/Wireless-sharing-with-AirPlay)
+* [Configure wireless sharing with AirPlay](https://help.webex.com/en-us/article/n29ja5v/Configure-wireless-sharing-with-AirPlay)
+* [Wireless sharing with AirPlay](https://help.webex.com/en-us/article/ndlsg3c/Wireless-sharing-with-AirPlay)
 
 ## The Settings menu
 

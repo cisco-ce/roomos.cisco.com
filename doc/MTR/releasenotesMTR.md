@@ -1,9 +1,9 @@
 # Release notes
-(Updated September 1, 2025) 
+(Updated October 1, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 11.31.1.3, based on RoomOS August 2025. This software version includes Teams Rooms App 1449/1.0.96.2025205603.**
+**The latest software version supported by Microsoft: RoomOS 11.32.1.6, based on RoomOS September 2025. This software version includes Teams Rooms App 1449/1.0.96.2025205603.**
 
 **NOTE: From RoomOS 11.29.1, which introduces Android 13, it is not possible to downgrade to an earlier version of RoomOS. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms. This is due that Android 13 cannot downgrade between security patches. Read more about this on the [Software Upgrade](/doc/MTR/RoomOSUpgrades#android13_downgrade) page.**
 
@@ -44,6 +44,25 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## October 2025
+
+**Software version: RoomOS 11.33.1.3**
+
+### Wireless sharing with AirPlay
+
+You can now share wirelessly using AirPlay to Cisco devices in Microsoft Teams Room mode. Airplay can be used for both out of call previews and in call presentations. 
+
+Apple users will see available devices in their share options. AirPlay is available from iPhones, iPads, and Macs. 
+
+AirPlay sharing currently requires that the Cisco device is Webex registered.
+
+Read more about how to [configure](https://help.webex.com/n29ja5v/) and [use](https://roomos.cisco.com/doc/MTR/GetStartedMTR#content-sharing) AirPlay on Cisco devices.
+
+
+### Fixed issues
+* CSCwq80350 - Devices cannot join E2EE Webex Meetings when starting the meeting through a connected Webex App.
+* CSCwq37949 - Room Navigator becomes unresponsive when clicking on reaction button during a meeting.
 
 ## September 2025
 

@@ -87,9 +87,9 @@ When Miracast® is enabled, you can share content wirelessly from your laptop to
 
 You can use Apple AirPlay to share wirelessly to an MTR device. Just connect your iPhone, iPad, or Mac to share your screen, collaborate, and playback content, out-of-call and in Webex or Zoom meetings. 
 
-*NOTE:* AirPlay sharing is enabled by default, and only available to MTR devices with *MTRShareExperience* set to *RoomOS*.
+*NOTE:* AirPlay sharing is only available to MTR devices with *MTRShareExperience* set to *RoomOS*.
 
-See these articles for more information about sharing with AirPlay:
+See these articles for more information about turning on and sharing with AirPlay:
 * [Configure wireless sharing with AirPlay](https://help.webex.com/en-us/article/n29ja5v/Configure-wireless-sharing-with-AirPlay)
 * [Wireless sharing with AirPlay](https://help.webex.com/en-us/article/ndlsg3c/Wireless-sharing-with-AirPlay)
 

@@ -389,12 +389,6 @@
       "title": "Cloud: RoomOS Release Notes",
       "description": "What's new in the latest version of the cloud deployment of RoomOS 11?",
       "symbol": "📄"
-    },
-    {
-      "id": "../MTR/releasenotesMTR",
-      "title": "MTR: Release Notes",
-      "description": "What's new in the latest version of RoomOS MTR edition?",
-      "symbol": "📄"
     }
   ]
 }

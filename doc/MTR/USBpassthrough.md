@@ -13,9 +13,8 @@ Devices in this category have a USB-C connector, and you can share content from 
 
 ### Connect your laptop and select input sources
 
-1. *(Optional, and only for devices with a touch controller)* Tap **Call from laptop** on the touch controller, and it guides you what to do next.
-2. Connect your laptop to the device's USB-C socket.
-3. Open your laptop meeting app and select the device as source for camera, microphone, and loudspeaker. Now you are ready to call or join a meeting from your laptop.
+1. Connect your laptop to the device's USB-C socket.
+2. Open your laptop meeting app and select the device as source for camera, microphone, and loudspeaker. Now you are ready to call or join a meeting from your laptop.
 
 
 ### In-call behavior

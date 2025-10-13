@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.27 - September 2025
+D15504.28 - October 2025
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.27 - September 2025
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>28</td> 
+		<td>October 13th 2025</td> 
+		<td>
+			Release of <a href='#11.32' title='Jump to section'>RoomOS 11.32.2.1</a> c93004ff3e9, Minor
+		</td>
 	</tr>
 	<tr>
 		<td>27</td> 
@@ -287,6 +294,249 @@ Snap to whiteboard is not available in RoomOS 11
 We have made a permanent change on the upgrade files that we release for our devices. This is a very important change and we recommend you to read the updated [software upgrade section](#software-upgrade) in this document. In short, we have deprecated the xx.k3.cop.sgn files by only releasing xx.k4.cop.sha512 files as these are signed with a more secure signature. This may affect your upgrade path depending on what software version you are currently upgrading from. We have released the xx.k4.cop.sha512 files for a while together with the xx.k3.cop.sgn files but the latter is now deprecated. 
 
 <br><br>
+<a name='11.32'></a>
+
+# Release summary for RoomOS 11.32
+
+## Notes and warnings for this software release
+
+### RoomOS 11.32 – Transition to RoomOS 26: What You Need to Know
+
+RoomOS 11.32 is the final RoomOS 11 release supporting all Cisco collaboration devices.
+From the next major release, RoomOS 26 will power the current generation of devices.
+
+Future RoomOS 11 updates will focus only on the previous generation of products.
+This ensures stability for existing systems and enables faster innovation on new platforms.
+
+**Support Matrix**
+
+Below is a high-level overview of which devices continue on RoomOS 11 and which move forward on RoomOS 26. Note that previous generation devices running RoomOS 11 will continue to support currently compatible peripherals, such as the Cisco Room Navigator, Table Microphone Pro, and Quad Camera. 
+
+<table border="1" cellpadding="6" cellspacing="0"> <thead> <tr> <th>RoomOS 26 (Current generation)</th> <th>RoomOS 11 only (Previous generation)</th> </tr> </thead> <tbody> <tr><td>Board Pro 55/75</td><td>Room Kit</td></tr> <tr><td>Board Pro 55/75 G2</td><td>Room Kit Plus</td></tr> <tr><td>Cisco Desk</td><td>Room Kit Mini</td></tr> <tr><td>Desk Mini</td><td>Room 55</td></tr> <tr><td>Desk Pro</td><td>Room 55 Dual</td></tr> <tr><td>Room Bar</td><td>Room 70 (Single / Dual)</td></tr> <tr><td>Room Bar Pro</td><td>Board 55 / 70</td></tr> <tr><td>Room Kit EQX</td><td>Board 55S / 70S / 85S</td></tr> <tr><td>Room Kit EQ</td><td>Room USB</td></tr> <tr><td>Room Kit Pro</td><td>Room Kit Pro + Touch 10 / SpeakerTrack 60</td></tr> <tr><td>Room 70 G2</td><td>Room 70 G2 + Touch 10 / SpeakerTrack 60</td></tr> <tr><td>Room Panorama</td><td>Room Panorama + Touch 10 / SpeakerTrack 60</td></tr> <tr><td>Room 70 Panorama</td><td>Room 70 Panorama + Touch 10 / SpeakerTrack 60</td></tr> <tr><td>Room Navigator (stand-alone mode)</td><td></td></tr> </tbody> </table>
+
+For example, a Codec Pro (a current-generation device) paired only with a Cisco Room Navigator is supported on RoomOS 11.32 and earlier, and again on RoomOS 26 and later, but not on intermediate RoomOS 11 releases after 11.32.
+
+In contrast, a Codec Pro connected to a Cisco Touch 10 and/or a SpeakerTrack 60 will always remain on RoomOS 11, regardless of any other compatible peripherals attached.
+
+The presence of a Touch 10 or SpeakerTrack 60 therefore determines that the Codec Pro stays on the RoomOS 11 software line. None of the other current-generation devices support these peripherals so, this only applies to Codec Pro based devices.
+
+High level example (the future versions may not be the same as listed here): 
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>RoomOS Version</th>
+      <th>
+        Codec Pro +<br>
+        Room Navigator and/or Quad Camera
+      </th>
+      <th>
+        Codec Pro +<br>
+        Touch 10 and/or SpeakerTrack 60
+      </th>
+	  <th>
+        Codec  Plus<br>
+        + any compatible peripheral
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RoomOS 11.27.x</td>
+      <td>Supported</td>
+      <td>Supported</td>
+	  <td>Supported</td>
+    </tr>
+    <tr>
+      <td>RoomOS 11.32.x</td>
+      <td>Supported</td>
+      <td>Supported</td>
+	  <td>Supported</td>
+    </tr>
+    <tr>
+      <td>RoomOS 11.35.x</td>
+      <td>Not supported</td>
+      <td>Supported</td>
+	  <td>Supported</td>
+    </tr>
+    <tr>
+      <td>RoomOS 26 (next major)</td>
+      <td>Supported</td>
+      <td>Not supported</td>
+	  <td>Not Supported</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr style='width: 70%'>
+
+## RoomOS 11.32.2.1
+
+* [Zoom Lobby Management Controls](#113221-1)
+* [Added side panel for Cisco Room Navigator](#113221-2)
+* [Frames now supports two rows and up to 8 frames](#113221-3)
+* [Added support for LLDP network discovery](#113221-4)
+* [Support for Cisco Room Vision PTZ Camera](#113221-5)
+* [Cisco Room Navigator standalone now have macros and UI extension support](#113221-6)
+* [Anonymous logs and diagnostics mode](#113221-7)
+* [Dynamic transitions between camera views](#113221-8)
+* [Pen support for third-party touch screens](#113221-9)
+* [BeamAndExtMic mode enabled by default for Cisco Table Microphone Pro](#113221-10)
+* [Extension mobility enhancements](#113221-11)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.32.2.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.32.2.1&bt=custV&sts=fd&sb=fr)
+	* Note: The resolved issues list may not display correctly at the time of release. If it appears empty, we are still addressing a known issue with the list and expect to resolve it soon. 
+
+<br><br>
+
+# RoomOS 11.32.2.1 feature descriptions 
+
+<a name='113221-1'></a>
+
+## Zoom Lobby Management Controls
+
+The user interface now includes a numeric keypad for managing the Lobby and Roster List during Zoom CRC calls. The new “Show Keypad” option appears under the participant controls, allowing hosts to interact directly with Zoom’s lobby management features from the device interface.
+
+<a name='113221-2'></a>
+
+## Added side panel for Cisco Room Navigator
+
+The Cisco Room Navigator now features a collapsible side panel that provides quick access to commonly used controls such as volume, camera, microphone, and room functions like lighting, shades (custom macros).
+
+The updated layout enhances usability and offers a consistent experience across the device portfolio. The side panel is available both during and outside of calls.
+
+<a name='113221-3'></a>
+
+## Frames now supports two rows and up to 8 frames
+
+With this update, SpeakerTrack framing now supports up to 8 individual participants in a room, displayed over two rows. Previously, only 4 people could be framed simultaneously in a single row.
+
+If there are 9 or more people, the system will automatically revert to the standard grouped framing.
+
+This feature is disabled by default and must be enabled through xConfiguration:
+
+xConfiguration Cameras SpeakerTrack Frames RowConfiguration: <SingleRow (default) | MultiRow>
+
+
+SingleRow – Previous behavior, up to 4 frames
+
+MultiRow – New behavior, up to 8 frames (two rows)
+
+<a name='113221-4'></a>
+
+## Added support for LLDP network discovery
+
+RoomOS now supports LLDP (Link Layer Discovery Protocol) to enhance interoperability in multi-vendor network environments and simplify device discovery.
+
+Configuration should be handled with care, as LLDP can affect network parameters such as VLAN assignments.
+
+Administrators can choose between three LLDP modes:
+
+Passive (default): Listens for LLDP messages without transmitting.
+
+On: Actively participates in LLDP exchanges.
+Off: Disables LLDP entirely.
+
+You can also define how the device advertises its system name using the DiscoveryProtocol SystemName setting (Auto, FQDN, or SEPMAC).
+This feature is designed for network administrators who understand their environment and can validate correct LLDP behavior.
+
+<a name='113221-5'></a>
+
+## Support for Cisco Room Vision PTZ Camera
+
+RoomOS now supports the Cisco Room Vision PTZ Camera, enabling high-quality video with precision pan, tilt, and zoom control for medium to large meeting spaces.
+
+The camera integrates seamlessly with supported RoomOS devices, offering advanced framing, low-light optimization, and AI-enhanced tracking for a more natural meeting experience.
+
+For more information, visit the [Cisco Room Vision PTZ Camera Data Sheet](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/conferencing-cameras/room-vision-ptz-ds.html). 
+
+<a name='113221-6'></a>
+
+## Cisco Room Navigator standalone now have macros and UI extension support
+
+The Room Scheduler now supports User Interface (UI) Extensions, enabling developers and administrators to customize the scheduler dashboard with custom panels and action buttons. These extensions allow users to streamline workflows, automate device tasks, or trigger external actions directly from the Room Scheduler interface.
+
+Key capabilities:
+
+- Add custom buttons and panels to the Room Scheduler dashboard
+- Trigger events that can be handled by macros or external systems via JSXAPI
+- Launch web apps directly from the device (in fullscreen or modal mode, requires WebEngine)
+- Enhance in-room automation (e.g., control lighting, blinds, etc.)
+
+Notes:
+
+- UI Extensions are visual only and require custom external logic or macros to handle events and functionality.
+- Web Widgets (a UI Extension feature - not the same as web apps) are not supported in Room Scheduler mode.
+- When running the Room Navigator in Persistent Web App (PWA) mode and not Scheduler, the macro framework can run in the background, but UI Extensions are not supported in this mode.
+
+You can create and manage UI Extensions and macros via:
+
+Cisco Room Navigator Web Interface: 
+UI Extensions Editor -> Create UI Extensions
+Macro Editor -> Create macros
+
+<a name='113221-7'></a>
+
+## Send anonymous usage and diagnostics to Cisco to help improve our products
+
+A new option is available to send anonymous diagnostics and usage logs to Cisco from devices not registered to any cloud backend, such as those managed through UCM or other on-premises systems.
+
+This setting is disabled by default and can be enabled during the initial setup wizard or later using:
+xConfiguration Webex Privacy AllowUsageDataLogging: Enabled
+
+The option can also be controlled centrally through UCM enterprise configurations (version 14 or later).
+
+This feature helps Cisco improve product reliability while maintaining user privacy.
+
+<a name='113221-8'></a>
+
+## Dynamic transitions between camera views
+
+This update introduces AI-powered dynamic transitions that deliver smoother, more natural camera movements when participants or speakers shift or move within the room.
+
+Instead of recreating the image for each change, the system now uses AI-based scene analysis to update the view seamlessly in real time, providing a more engaging and lifelike meeting experience.
+
+<a name='113221-9'></a>
+
+## Pen support for third-party touch screens
+
+This release adds Active Pen (stylus) support for whiteboarding on third-party touch screens connected to MTR and RoomOS devices, including Room Bar, Room Bar Pro, Codec EQ, and Codec Pro.
+Pens supported are those supplied with the compatible display.
+
+The feature can be enabled using:
+xConfiguration Video Output TouchInput ActivePenSupport: True
+(set to False to disable)
+
+<a name='113221-10'></a>
+
+## BeamAndExtMic mode enabled by default for Cisco Table Microphone Pro
+
+This feature, previously only available with the Cisco Ceiling Microphone Pro, is now being expanded to include the Cisco Table Microphone Pro.
+
+To deliver the best possible voice quality and make full use of the Table Microphone Pro’s advanced capabilities, we’ve enhanced the audio beam mixer on Room Bar Pro and Board Pro devices.
+
+When a Table Microphone Pro is connected and its voice tracking feature is enabled (by going through the wizard), the intelligent beam mixer dynamically selects the microphone closest to the active speaker, using camera intelligence to determine which way the person is facing. This ensures optimal clarity and natural voice pickup across the room.
+
+New Beam Mix Settings
+xConfiguration Audio Microphones BeamMix Inputs: <Auto, BeamsAndExtMics, OnlyExtMics>
+
+Auto (new default) – When a Table Microphone Pro is connected and its voice tracking wizard has been completed (if not it is disabled as before), the new smart audio mixer uses both the internal microphone beams and the Table Microphone Pro. For other external microphones, the internal beams are disabled.
+
+BeamsAndExtMics – The audio mixer continuously uses both internal beams and external microphones for voice pickup. However this do not include AI that uses the camera to chose the right beam. (Auto is recommended)
+
+OnlyExtMics (new) – Uses only external microphones for voice pickup and automatically falls back to internal beams if no external microphones are connected.
+
+<a name='113221-11'></a>
+
+## Extension mobility enhancements
+
+This release improves Extension Mobility handling on RoomOS devices. Previously, devices used a hardcoded service URL pointing to the CUCM IP on port 443, which required the Extension Mobility service to run on all CUCM nodes in the cluster.
+
+With this update, RoomOS now supports configured Extension Mobility service URLs defined in the SEP<MAC>.cnf.xml file, as long as the service name is RoomOSExtensionMobility.
+
+Additionally, RoomOS now supports login types DN and SP in addition to UID, providing greater flexibility in user authentication.
+
 
 <a name='11.27'></a>
 
@@ -1773,17 +2023,17 @@ Before you start, please make sure you have downloaded the software for the corr
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_27_4_0.k4.cop.sha512</b>*</td> 
+		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_32_2_1.k4.cop.sha512</b>*</td> 
 	</tr>
 	<tr>
-		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_27_4_0.k4.cop.sha512<b>*
-		<br>cmterm-s53300-mtr-ce11_27_4_0.k4.cop.sha512</b>***</td>
+		<td>Cisco Codec Pro, Codec EQ, Room Kit EQX, Room 70 G2, Room Bar, Room Bar Pro, Room 70 Panorama, Room Panorama, Desk Series, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce11_32_2_1.k4.cop.sha512<b>*
+		<br>cmterm-s53300-mtr-ce11_32_2_1.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_27_4_0.pkg</b><br><b>cmterm-s53350-mtp-ce11_27_4_0.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce11_32_2_1.pkg</b><br><b>cmterm-s53350-mtp-ce11_32_2_1.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_27_4_0.k4.cop.sha512</b></td>
+		<td>All products</td> <td><b>N/A</b></td> <td><b>cmterm-ce11_32_2_1.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -1791,6 +2041,12 @@ Before you start, please make sure you have downloaded the software for the corr
 </table>
 
 ## MTR version contained in the MTR cop file
+
+### RoomOS 11.32
+cmterm-s53300-mtr-ce11_27_*_*.k4.cop.sha512
+- MTR: 1449/1.0.96.2025208203
+cmterm-s53350-mtp-ce11_27_*_*.k4.cop.sha512
+- MTP: 1449/1.0.97.2025102203
 
 ### RoomOS 11.27
 cmterm-s53300-mtr-ce11_27_*_*.k4.cop.sha512
@@ -1800,9 +2056,9 @@ cmterm-s53350-mtp-ce11_27_*_*.k4.cop.sha512
 
 ### RoomOS 11.24
 cmterm-s53300-mtr-ce11_24_*_*.k4.cop.sha512
-- MTR: 1449/1.0.96.2025010301 
+- MTR: 1449/1.0.96.2024110701 
 cmterm-s53350-mtp-ce11_24_*_*.k4.cop.sha512
-- MTP: 1449/1.0.97.2024122401
+- MTP: 1449/1.0.97.2024102301
 
 ### RoomOS 11.20
 cmterm-s53300-mtr-ce11_20_*_*.k4.cop.sha512

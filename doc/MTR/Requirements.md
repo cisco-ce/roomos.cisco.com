@@ -33,7 +33,8 @@ Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteam
 * On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a Microsoft Teams Rooms Pro license.
 * Cisco Touch 10 is not supported.
 * Cisco SpeakerTrack 60 camera is not supported.
-* Webex Edge for devices linked devices are not supported with Microsoft Teams Rooms. 
+* Webex Edge for devices linked devices are not supported with Microsoft Teams Rooms.
+* Only one Room Navigator can be connected to the device.
 
  ## Microsoft Teams Rooms management in Teams Admin Center
  

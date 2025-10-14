@@ -1,6 +1,6 @@
 # Prepare to onboard Cisco collaboration devices
 
-**In preparation for set up of a Cisco collaboration device with Microsoft Teams Rooms, make sure that your devices are on the required software release and that an appropriate license is available to apply to the resource account assigned to the device.**
+**In preparation for set up of a Cisco collaboration device with Microsoft Teams Rooms, make sure that your devices are on the required software release and that an appropriate license is available to apply to the resource account or personal account assigned to the device.**
 
 <img src="/doc/images/MTR/setup.png" style="width: 400px"/>
 
@@ -19,17 +19,21 @@ Supported devices:
 
 Room Navigator with Board Pro and Board Pro G2 is now supported. 
 
-Only Room Navigators with a partnumber with *-L*, such as *CS-T10-TS-L*, are supported.
-
-On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a Microsoft Teams Rooms Pro license.
-
-Cisco Touch 10 is not supported.
+Cisco collaboration device with Microsoft Teams Rooms can be configured through Microsoft TAC, or you can double register the device to both TAC and Control Hub. 
 
 <img src="/doc/images/MTR/planning-guide2.png" style="width: 700px"/>
 
 You can use [the Plan, Launch, and Grow guides](https://resources.webex.com/s/nz73kxgsjmx44wwtw6m6gk9) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
  
 Read more about Microsoft Teams Rooms: https://learn.microsoft.com/microsoftteams/rooms/
+
+## Limitations 
+
+* Only Room Navigators with part numbers -L and -C, such as *CS-T10-TS-C=* and *CS-T10-TS-L*, are supported.
+* On products that support more than one screen, maximum two screens are supported. Dual screen use case requires a Microsoft Teams Rooms Pro license.
+* Cisco Touch 10 is not supported.
+* Cisco SpeakerTrack 60 camera is not supported.
+* Webex Edge for devices linked devices are not supported with Microsoft Teams Rooms. 
 
  ## Microsoft Teams Rooms management in Teams Admin Center
  
@@ -49,11 +53,11 @@ Depending on the process for acquiring Microsoft licenses in your organization, 
  
 Cisco collaboration devices with Microsoft Teams Rooms implemented in a shared space need a Microsoft Teams Room license.
 
-* Microsoft Teams Room Pro: provides a full rich conferencing experience including intelligent audio and video, dual screen support, advanced device management, Intune licensing, phone system licensing, and more. For the best conferencing experience, Microsoft Teams Rooms Pro licenses are recommended to use with Cisco collaboration devices. 
- 
+**Microsoft Teams Room Pro:** Provides a full rich conferencing experience including intelligent audio and video, dual screen support, advanced device management, Intune licensing, phone system licensing, and more. For the best conferencing experience, Microsoft Teams Rooms Pro licenses are recommended to use with Cisco collaboration devices. 
+
 For additional information on Microsoft Teams Licenses, visit: 
 https://learn.microsoft.com/microsoftteams/rooms/rooms-licensing 
- 
+
 If you plan to use your device to make and receive PSTN calls, additional licensing may be needed for PSTN connectivity. Read more about PSTN connectivity: 
 https://learn.microsoft.com/microsoftteams/pstn-connectivity 
 

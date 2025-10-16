@@ -74,7 +74,7 @@ To create an action button that displays a message when clicked:
 Specify an icon to use from this list: *Briefing, Camera, Concierge, Disc, Handset, Help, Helpdesk, Home, Hvac, Info, Input, Language, Laptop, Lightbulb, Media, Microphone, Power, Proximity, Record, Spark, Tv, Webex, General, Custom*
 
 
-Just like in the web interface instructions, you should now see the action button on the user interface, still inactive. Program the button’s action in the Macro Editor or run the following command:
+Just like in the web interface instructions, you should now see the action button on the user interface, still inactive. Program the button’s action in the **Macro Editor** or run the following command:
 
  ```
 xCommand Macros Macro Save Name: <macroName>

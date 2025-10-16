@@ -73,25 +73,24 @@ To create an action button that displays a message when clicked:
   ```
 Specify an icon to use from this list: *Briefing, Camera, Concierge, Disc, Handset, Help, Helpdesk, Home, Hvac, Info, Input, Language, Laptop, Lightbulb, Media, Microphone, Power, Proximity, Record, Spark, Tv, Webex, General, Custom*
 
-Just like in the web interface instructions, you should now see the action button on the user interface, still inactive. Program the button’s action in the **Macro Editor** or directly in the device’s */config/macros* directory:
-1.	Create a file in */config/macros* named hello1_button.json and insert:
-   
-    ```
-      {  
-          "active": "true"
-       }
-     ```
-2. Create another file in */config/macros/* hello1_button.js and add your macro script:
 
-     ```
-        import xapi from 'xapi';
-          xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
-             if (event.PanelId === 'hello1_button') {
-                 xapi.command('UserInterface Message Rating Display', { Title: 'Hello!', text: 'Have a great day!'} );
-         }
-         });
-     ```
-5. Run *systemctl restart macros*
+Just like in the web interface instructions, you should now see the action button on the user interface, still inactive. Program the button’s action in the Macro Editor or run the following command:
+
+ ```
+xCommand Macros Macro Save Name: <macroName>
+import xapi from 'xapi';
+xapi.event.on('UserInterface Extensions Panel Clicked', (event) => {
+    if (event.PanelId === 'hello1_button') {
+        xapi.command('UserInterface Message Rating Display', { Title: 'Hello!', text: 'Have a great day!'} );
+    }
+});
+
+ ```
+To activate the macro, run:
+
+ ```
+xCommand Macros Macro Activate Name: <macroName>
+ ```
 
 *xCommand UserInterface Extensions Set* can also be used to bulk add UI extensions. [Find more information here](https://roomos.cisco.com/xapi/Command.UserInterface.Extensions.Set/?search=extensions).
 

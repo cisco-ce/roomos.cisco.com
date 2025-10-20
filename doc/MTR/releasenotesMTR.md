@@ -47,10 +47,9 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## Announcements
 
-> [!IMPORTANT]
-> **Important Notice: Teams App Version 1449/1.0.96.2025325609**
-> 
->We are currently investigating issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609. To ensure optimal performance and user experience, Cisco recommends postponing the installation of this Teams app version until the issue is resolved. We are actively working with Microsoft to address the problem and will provide an update as soon as more information is available.
+**Important Notice: Teams App Version 1449/1.0.96.2025325609**
+ 
+We are currently investigating issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609. To ensure optimal performance and user experience, Cisco recommends postponing the installation of this Teams app version until the issue is resolved. We are actively working with Microsoft to address the problem and will provide an update as soon as more information is available.
 
 ## October 2025
 

@@ -1,5 +1,5 @@
 # Release notes
-(Updated October 20, 2025) 
+(Updated October 21, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -47,10 +47,10 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## Announcements
 
-**Important Notice: Teams App Version 1449/1.0.96.2025325609**
- 
-We are currently investigating issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609. To ensure optimal performance and user experience, Cisco recommends postponing the installation of this Teams app version until the issue is resolved. We are actively working with Microsoft to address the problem and will provide an update as soon as more information is available.
+**Updated: Teams App Version 1449/1.0.96.2025325609**
 
+Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+ 
 ## October 2025
 
 **Software version: RoomOS 11.33.1.3**

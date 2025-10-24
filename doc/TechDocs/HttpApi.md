@@ -6,27 +6,23 @@ the "putxml" API.
 This method is very useful if you do not want to keep a long-running web socket connection alive, but simply
 need to do periodical queries or commands.
 
-Note: this is not a cloud API using Control Hub, but a direct client-to-device API that requires that you are on the same
+**Note**: This is not a cloud API using Control Hub, but a direct client-to-device API that requires that you are on the same
 network as the video device.
-
-Note: This will **not work from a web browser**. CORS-restrictions on the device web server will prevent the browser
-from sending HTTP requests to the device.
 
 You can find more detailed information in the API PDF documentation on:
 https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html
 
-Tip: If you want to be able to use insecure HTTP (not HTTPS), set [xConfiguration NetworkServices HTTP Mode](https://roomos.cisco.com/xapi/Configuration.NetworkServices.HTTP.Mode/) to HTTP+HTTPS.
+## Insecure HTTP
 
-## Postman examples
+If you want to be able to use insecure HTTP (not HTTPS), set [xConfiguration NetworkServices HTTP Mode](https://roomos.cisco.com/xapi/Configuration.NetworkServices.HTTP.Mode/) to HTTP+HTTPS.
 
-Some old but good examples for Postman can be found on [DevNet](https://github.com/CiscoDevNet/postman-xapi).
 
-## Session authentication
+## Limitations
 
-For performance, the HTTP api supports session authentication, so you don't need to send the username:password for each request. However,
-in these day and age, if you have these kind of requirements it is recommended to use the JSXAPI / web sockets instead.
+This will **not work from a web browser**. CORS-restrictions on the device web server will prevent the browser
+from sending HTTP requests to the device.
 
-More info about the session authentication can be found in API PDF documentation linked to above.
+The typical use case of the HTTP is for scripts, web servers etc.
 
 ## Endpoint
 
@@ -37,12 +33,17 @@ In all cases, the response will be in XML, so you will need to parse that if you
 
 ## Getting a specific config or status
 
-Endpoint: `http://<ip-address>/getxml?location=<path>`
-Method: GET
+Endpoint:
 
-Get the volume: `http://10.47.1.2/getxml?location=/Status/Audio/Volume`
+`http://<ip-address>/getxml?location=<path>`
 
-Get the system name: `http://10.47.1.2/getxml?location=/Configuration/SystemUnit/Name`
+Get the volume:
+
+`http://10.47.1.2/getxml?location=/Status/Audio/Volume`
+
+Get the system name:
+
+`http://10.47.1.2/getxml?location=/Configuration/SystemUnit/Name`
 
 The response will be XML and look something like this:
 
@@ -163,3 +164,14 @@ set(`
 </Command>
 `)
 ```
+
+## Postman examples
+
+Some old but good examples for Postman can be found on [DevNet](https://github.com/CiscoDevNet/postman-xapi).
+
+## Session authentication
+
+For performance, the HTTP api supports session authentication, so you don't need to send the username:password for each request. However,
+in these day and age, if you have these kind of requirements it is recommended to use the JSXAPI / web sockets instead.
+
+More info about the session authentication can be found in API PDF documentation linked to above.

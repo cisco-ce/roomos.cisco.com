@@ -12,10 +12,11 @@ network as the video device.
 You can find more detailed information in the API PDF documentation on:
 https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html
 
-## Insecure HTTP
+## HTTP vs HTTPS
 
 If you want to be able to use insecure HTTP (not HTTPS), set [xConfiguration NetworkServices HTTP Mode](https://roomos.cisco.com/xapi/Configuration.NetworkServices.HTTP.Mode/) to HTTP+HTTPS.
 
+If you want to use HTTPS, keep in mind that the devices by default provides self signed certificates, so you may need to configure your client to allow that.
 
 ## Limitations
 
@@ -26,7 +27,7 @@ The typical use case of the HTTP is for scripts, web servers etc.
 
 ## Endpoint
 
-The base API endpoint is http://<device-ip>. To authenticate, add the header `Authorization: Basic <code>` where `code` is
+The base API endpoint is `http://{device-ip}`. To authenticate, add the header `Authorization: Basic {code}` where `code` is
 the base-64 encoded string of `username:password` of a local admin user on the device.
 
 In all cases, the response will be in XML, so you will need to parse that if you need the data.
@@ -58,9 +59,9 @@ The response will be XML and look something like this:
 
 ## Setting a configuration or a running a command
 
-Endpoint: `http://<ip-address>/putxml`
-Method: POST
-Content-Type: text/xml
+* Endpoint: `http://<ip-address>/putxml`
+* Method: POST
+* Content-Type: text/xml
 
 There is not `path`, instead you need to set the body of the POST request with xml. Examples:
 

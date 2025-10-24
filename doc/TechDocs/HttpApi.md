@@ -3,8 +3,8 @@
 This guide describes how to talk to a Cisco device with plain, connection-less HTTP(S) calls (not web socket), also called
 the "putxml" API.
 
-This method is very useful if you do not want to keep a long-running web socket connection alive, but simply
-need to do periodical queries or commands.
+This is one of the simplest and oldest API methods, but it is very useful if you do not want to keep a long-running web socket connection
+alive, but simply need to do periodical queries or commands.
 
 **Note**: This is not a cloud API using Control Hub, but a direct client-to-device API that requires that you are on the same
 network as the video device.
@@ -23,7 +23,7 @@ If you want to use HTTPS, keep in mind that the devices by default provides self
 This will **not work from a web browser**. CORS-restrictions on the device web server will prevent the browser
 from sending HTTP requests to the device.
 
-The typical use case of the HTTP is for scripts, web servers etc.
+The typical use case is for scripts, web servers etc.
 
 ## Endpoint
 
@@ -60,8 +60,8 @@ The response will be XML and look something like this:
 ## Setting a configuration or a running a command
 
 * Endpoint: `http://<ip-address>/putxml`
-* Method: POST
-* Content-Type: text/xml
+* Method: `POST`
+* Content-Type: `text/xml`
 
 There is not `path`, instead you need to set the body of the POST request with xml. Examples:
 

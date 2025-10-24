@@ -75,7 +75,6 @@
       "description": "Let customers and visitors register themselves when arriving at your location.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/visitor-registration.jpg"
     }
-
   ],
   "TechDocs": [
     {
@@ -102,7 +101,6 @@
       "description": "Create an admin user on your own video device quickly and easily",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/localadmin/login-vega.png"
     },
-
     {
       "id": "UiExtensions",
       "title": "UI Extensions: Overview",
@@ -126,6 +124,12 @@
       "title": "Macro Overview",
       "description": "What are the device user scripts, and how can they help your workflow?",
       "symbol": "📝"
+    },
+    {
+      "id": "HttpApi",
+      "title": "Http xAPI",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/http.png",
+      "description": "Basic device HTTP API"
     },
     {
       "id": "MacroTutorial",
@@ -284,7 +288,7 @@
       "title": "Microphone options",
       "description": "Test your microphone, use noise removal options, and activate music mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },   
+    },
     {
       "id": "WebexMeetings",
       "title": "Join Webex meetings with One Button To Push",
@@ -363,13 +367,12 @@
       "description": "Display web content on a Cisco device.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
-   {
+    {
       "id": "InterceptingProxy",
       "title": "Intercepting Proxy",
       "description": "How to set up an intercepting proxy.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
-    
   ],
   "WhatsNew": [
     {

@@ -129,7 +129,7 @@
       "id": "HttpApi",
       "title": "Http xAPI",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/http.png",
-      "description": "Basic device HTTP API"
+      "description": "Getting started guide for the basic HTTP device xAPI."
     },
     {
       "id": "MacroTutorial",

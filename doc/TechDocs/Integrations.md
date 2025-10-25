@@ -226,6 +226,8 @@ It's recommended to use this approach in the same situations as the JSXAPI situa
 
 * You need to access directly the API directly from a browser / web app (no CORS: the devices don't HTTP requests from different origins)
 
+To get started, see [this guide](/doc/TechDocs/HttpApi).
+
 See the [Postman collection](/doc/UsefulLinks/Resources) at DevNET for many good examples.
 
 ## RS-232 / SSH connection

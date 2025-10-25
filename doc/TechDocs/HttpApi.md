@@ -59,7 +59,7 @@ The response will be XML and look something like this:
 
 ## Setting a configuration or a running a command
 
-* Endpoint: `http://<ip-address>/putxml`
+* Endpoint: `http://{ip-address}/putxml`
 * Method: `POST`
 * Content-Type: `text/xml`
 

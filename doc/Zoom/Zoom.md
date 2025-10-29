@@ -6,7 +6,7 @@ We are introducing an enhanced interoperability with Zoom. This enables users to
 <img src="/doc/images/Zoom/zoomCiscoBlack_horizontalLockup.png" alt="Decorative image of Zoom and Cisco logos." width="700">
 <br/><br/>      
 
-**External Beta enrollment is expected in September, 2025.** 
+**<ins>Available in Beta now!</ins>** 
 
 Users can join Zoom Meetings by pressing the green Join button for scheduled meetings (if Hybrid Calendar is enabled) or by selecting the Zoom Meetings app on the Cisco device to enter a Meeting ID. This launches the Zoom Meetings application on the device. Once the meeting concludes, the device automatically returns to the Cisco Rooms home screen.
 
@@ -21,8 +21,8 @@ Signed-in devices will also be able to start an instant meeting.
 
 One or more of the supported Cisco devices: 
 
-*	Cisco Room Bar 
-* Cisco Room Bar Pro 
+*	Cisco Room Bar
+*	Cisco Room Bar Pro 
 *	Cisco Board Pro 
 *	Cisco Board Pro G2 
 *	Cisco Desk Pro 
@@ -41,7 +41,7 @@ You’ll also need a Control Hub Organization with Device registration licenses.
 
 For the signed in experience, you’ll also need a Zoom Rooms subscription.
 
-After setting up your device, sign-up for the beta program at https://gobeta.webex.com/welcome/ and look for **Zoom for Cisco Rooms**.
+After setting up your device, sign-up for the beta program for [**Zoom for Cisco Rooms**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=d5e8da83-0aa7-442b-a7b1-a33fe635c05d) or [**Zoom for Cisco Rooms: Signed-In Experience**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=b4ea8394-be1b-4717-86ec-c44b24dad5f6). 
 
 See the **Zoom for Cisco Rooms - Beta Demo** on YouTube:
 

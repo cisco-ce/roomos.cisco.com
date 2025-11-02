@@ -6,7 +6,7 @@ Contact your parter to set up Control Hub access for your organization.
 
 ## Managing and supporting your device deployment
 
-You can achieve scalable and efficient deployments with Control Hub. Control Hub offers comprehensive device and workspace management: 
+You can achieve scalable and efficient deployments with Control Hub. Control Hub offers comprehensive device and workspace management:
 
 * Status monitoring
 * Detailed device and workspace history
@@ -38,18 +38,18 @@ Easily control devices with commands and keep track of changes through device hi
 
 Gaining insights into how your organization's devices and workspaces are used can lead to better decision-making. By understanding usage patterns and environmental conditions, you can allocate resources more efficiently and improve operational effectiveness. This results in a smarter use of space and technology, optimizing overall performance.
 
-* [Workspace insights](https://help.webex.com/yuzsuw/) 
+* [Workspace insights](https://help.webex.com/yuzsuw/)
 * [Environmental and historical data](https://help.webex.com/nc6od6r/)
 * [Usage analytics](https://help.webex.com/n0rlwxe/o#reference-template_6e0c7f40-2d40-4495-9fa3-7a902687e7a9)
 
 
-## Customize your in room experience 
+## Customize your in room experience
 
 Enhance your workspace capabilities with custom controls, workspace integrations, and automated alerts.
 
 Create custom controls for your users with [UI extensions and macros](https://help.webex.com/gj962f/).
 
-[Workspace integrations](https://developer.webex.com/docs/workspace-integrations) provide a framework for services to access Webex developer APIs, with a focus on extending the capabilities of workspaces and Cisco devices.
+[Workspace integrations](https://developer.webex.com/create/docs/workspace-integrations) provide a framework for services to access Webex developer APIs, with a focus on extending the capabilities of workspaces and Cisco devices.
 
 You can [set up a webhook callback URL](https://help.webex.com/3gv4ci/) so that alerts show up in third-party applications. Control Hub offers an alerts center which allows you to create, manage, and receive alerts on various events across your deployment through multiple delivery channels. The delivery channels that alert center currently support are through email, Webex App spaces, and in Control Hub.
 
@@ -57,7 +57,7 @@ You can [set up a webhook callback URL](https://help.webex.com/3gv4ci/) so that 
 
 The Board, Desk, and Room Series devices feature [User interface (UI) extensions](https://roomos.cisco.com/doc/TechDocs/UiExtensions) that enable you to design new panels and action buttons for creating custom functionalities.
 
-You can enable [web views](https://roomos.cisco.com/doc/MTR/WebViews) to display web content. This allows users to interact with web applications or content directly from the interface of the Cisco device. 
+You can enable [web views](https://roomos.cisco.com/doc/MTR/WebViews) to display web content. This allows users to interact with web applications or content directly from the interface of the Cisco device.
 
 Track and Analyze usage and environmental performance of your device deployment using [comprehensive reports and historical data insights](https://help.webex.com/n0rlwxe/#reference-template_08600d25-d4ad-4016-af4f-37c4a8b98c23
 ).

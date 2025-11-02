@@ -7,7 +7,7 @@ This guide provides instructions for creating a workspace integration to seamles
 ## Workspace integrations
 To begin creating your workspace integration we recommend referencing the [workspace-integrations](https://github.com/cisco-ce/workspace-integrations) public GitHub repository for guides and workspace-integration tooling.
 
-Further workspace integration details are available in the [workspace integrations overview documentation](https://developer.webex.com/docs/workspace-integrations) and [workspace integrations technical details](https://developer.webex.com/docs/workspace-integration-technical-details). When defining xAPI permissions for your integration, reference the required xAPIs below.
+Further workspace integration details are available in the [workspace integrations overview documentation](https://developer.webex.com/create/docs/workspace-integrations) and [workspace integrations technical details](https://developer.webex.com/create/docs/workspace-integration-technical-details). When defining xAPI permissions for your integration, reference the required xAPIs below.
 ## Calendar types
 
 The xAPI interactions between the workspace integration and the RoomOS devices will vary depending on the workspace calendar setups. While much of the xAPI interaction is shared, depending on the workspace environments you may need to account for one or both calendar types.
@@ -145,7 +145,7 @@ When a *Bookings.Delete* is requested with a hybrid calendar configuration, the 
 When the time information for a booking is updated, the device notifies the integration with *Bookings.BookingMoved*. The event will contain the new time information.
 
 ### Edit at device
-When a user edits the booking time information at the device, the integration may reject the new time. If the integration rejects the new booking time, it may apply a *Bookings.Edit* to return the booking to the original values. 
+When a user edits the booking time information at the device, the integration may reject the new time. If the integration rejects the new booking time, it may apply a *Bookings.Edit* to return the booking to the original values.
 
 See **Edit from workspace integration**, below.
 

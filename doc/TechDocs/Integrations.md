@@ -165,7 +165,7 @@ See also the [Device developer guide](https://developer.webex.com/docs/api/guide
 - You need fast respons to events (eg adjusting a light as the user moves a slider)
 - You have an on-prem device deployment (without the possibility of Webex Edge for devices)
 
-To get started with cloud xAPI and workspace integrations, see [the device guide](https://developer.webex.com/docs/api/guides/device-developers-guide) and the [Workspace Integrations guide](https://developer.webex.com/docs/api/guides/workspace-integrations-guide) on developer.webex.com.
+To get started with cloud xAPI and workspace integrations, see [the device guide](https://developer.webex.com/docs/api/guides/device-developers-guide) and the [Workspace Integrations guide](https://developer.webex.com/create/docs/workspace-integrations) on developer.webex.com.
 
 ### Typical use cases
 

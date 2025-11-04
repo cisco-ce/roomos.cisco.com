@@ -1,5 +1,5 @@
 # Release notes
-(Updated Noovember 4, 2025) 
+(Updated November 4, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -47,7 +47,7 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## Announcements
 
-**Advisory:Custom backgrounds**
+**Advisory: Custom backgrounds**
 
 If you use custom backgrounds in Microsoft Teams, we recommend not installing app version 1449/1.0.96.2025325609 (October 2025) due to a known issue affecting this feature. Please continue using your current version until further notice.
 

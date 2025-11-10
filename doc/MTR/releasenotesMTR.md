@@ -1,5 +1,5 @@
 # Release notes
-(Updated November 4, 2025) 
+(Updated November 10, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -54,7 +54,38 @@ If you use custom backgrounds in Microsoft Teams, we recommend not installing ap
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
- 
+
+## November 2025
+
+**Software version: RoomOS  26.0.1.2**
+
+### Wireless touch forwarding on Miracast shares
+
+Support for Miracast touch forwarding is available on all RoomOS devices with an embedded touch screen or third-party touch screen. Miracast touch forwarding is also supported in companion mode.
+
+Touch forwarding allows you to control your laptop screen directly from the device's touch screen. It is available during local sharing or while in a call.
+
+When you share with Miracast from your Windows OS, you can move through your content using the devices touch screen mechanism.
+
+Ideal for activities such as:
+
+* Dragging and dropping files.
+* Using drawing software.
+* Working with maps.
+* Moving between slides in a presentation.
+
+Limitations:
+
+* Annotation on the shared screen is not available.
+* Only available with Windows OS.
+
+Read more about [sharing with Miracast](https://help.webex.com/kfdwufb/).
+
+### Fixed issues
+
+* CSCwr78261 - Room Navigator is stuck on 'Getting everything ready'.
+* CSCwr77606 - Share tray opens when Miracast share starts in a Microsoft Teams call covering the share button.
+
 ## October 2025
 
 **Software version: RoomOS 11.33.1.7**

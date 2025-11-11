@@ -80,6 +80,8 @@ Or, tap **Exit full screen** to return to the home screen view with your compute
 
 When Miracast® is enabled, you can share content wirelessly from your laptop to a Cisco Board, Desk, or Room Series device without the need for a client. This works both in and out of calls. Making or receiving a call during an active share will disconnect your Miracast session.
 
+Sharing with Miracast supports touch forwarding, on all touch screen devices. That means you can control your laptop screen - for example, moving through your content - directly from your device's touch screen.
+
 * [Configure wireless sharing with Miracast®](https://help.webex.com/en-us/article/w60modb/Configure-wireless-sharing-with-Miracast%C2%AE)
 * [Wireless sharing with Miracast®](https://help.webex.com/en-us/article/kfdwufb/Wireless-sharing-with-Miracast%C2%AE)
 

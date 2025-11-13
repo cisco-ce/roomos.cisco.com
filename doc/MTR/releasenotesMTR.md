@@ -47,9 +47,9 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 ## Announcements
 
-**Advisory: Custom backgrounds**
+**Updated: Custom backgrounds**
 
-If you use custom backgrounds in Microsoft Teams, we recommend not installing app version 1449/1.0.96.2025325609 (October 2025) due to a known issue affecting this feature. Please continue using your current version until further notice.
+Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If you have been experiencing issues with custom backgrounds, you can manually upgrade to Microsoft Teams version 1449/1.0.96.2025328903 from TAC.
 
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 

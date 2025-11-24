@@ -69,7 +69,7 @@ Connect your computer to the device with a USB-C or HDMI cable.
 
 3. When you're ready, tap **Share in call**.
    
-     <img src="/doc/images/MTR/share experience 2.png" style="width: 500px" /> 
+   <img src="/doc/images/MTR/share experience 2.png" style="width: 500px" /> 
   
 4. Tap **Stop sharing** to end the share when you're finished.
 

@@ -62,19 +62,16 @@ You can share content from your computer with other participants during calls or
 
 Connect your computer to the device with a USB-C or HDMI cable.
 
-1. Tap the **Share** button on the home screen and your laptop screen immediately appears full screen on the device.   
-2. If you have both an HDMI and a USB-C source connected, swipe right to open the control panel and tap **Select share source** to switch sources. Otherwise, the source you connected last is the one shared by default.
+1. A dialog opens showing content sources and your connected screen. Or, if you aren't already in a call, start one, and then tap the **Share** button in the call controls.
+2. Once you're in a call, tap **Preview** on the Sharing dialog to take an advance look at your content. Tap **Dismiss** if you change your mind and don't want to share content after all. You can change content sources by tapping another one on the left side of the dialog, if available.
+   
+   <img src="/doc/images/MTR/share experience 1.png" style="width: 500px" />
 
-   <img src="/doc/images/MTR/SelectSource.png" style="width: 500px" /> 
-
-3. While your share is in progress, tap the device screen and controls will appear in the bottom right corner. 
-
-4. Tap **Stop sharing** to end the share.  
-
-Or, tap **Exit full screen** to return to the home screen view with your computer screen minimized in the bottom left corner. Tap the minimized screen to open it in full again, or tap **Stop sharing** on the home screen to close it completely.
- 
-   <img src="/doc/images/MTR/ShareCable.gif" style="width: 500px" /> 
-
+3. When you're ready, tap **Share in call**.
+   
+     <img src="/doc/images/MTR/share experience 2.png" style="width: 500px" /> 
+  
+4. Tap **Stop sharing** to end the share when you're finished.
 
 ### Wireless sharing with Miracast®
 

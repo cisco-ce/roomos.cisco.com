@@ -64,13 +64,7 @@ Connect your computer to the device with a USB-C or HDMI cable.
 
 1. A dialog opens showing content sources and your connected screen. Or, if you aren't already in a call, start one, and then tap the **Share** button in the call controls.
 2. Once you're in a call, tap **Preview** on the Sharing dialog to take an advance look at your content. Tap **Dismiss** if you change your mind and don't want to share content after all. You can change content sources by tapping another one on the left side of the dialog, if available.
-   
-   <img src="/doc/images/MTR/share experience 1.png" style="width: 500px" />
-
 3. When you're ready, tap **Share in call**.
-   
-   <img src="/doc/images/MTR/share experience 2.png" style="width: 500px" /> 
-  
 4. Tap **Stop sharing** to end the share when you're finished.
 
 ### Wireless sharing with Miracast®

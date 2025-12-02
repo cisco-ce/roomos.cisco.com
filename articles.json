@@ -218,12 +218,6 @@
   ],
   "MTR": [
     {
-      "id": "HelpVideos",
-      "title": "In-Product Help Videos",
-      "description": "Video tutorials for Microsoft Teams Rooms with Cisco Navigator touch controller",
-      "image": "https://ctg-tme.github.io/learn-cisco-devices/deployments/mtr-navigator/images/mtr_navigator_join_webex_zoom_id.png"
-    },
-    {
       "id": "Intro",
       "title": "Introduction",
       "description": "Cisco devices with Microsoft Teams Rooms",

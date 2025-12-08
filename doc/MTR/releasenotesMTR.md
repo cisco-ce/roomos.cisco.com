@@ -1,5 +1,5 @@
 # Release notes
-(Updated November 13, 2025) 
+(Updated December 8, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -54,6 +54,17 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+
+## December 2025
+
+**Software version: RoomOS 26.1.1.3**
+
+### Fixed issues
+
+* CSCwq37949 - Room Navigator becomes unresponsive when tapping the reaction button during a meeting.
+* CSCwr78261 - Room Navigator is stuck on 'Getting everything ready'.
+* CSCwo88434 - Using active pen for whiteboarding causes the device to crash.
+* CSCwr43696 - Device crashes or becomes unresponsive after issuing the command Security Certificates CSR Create.
 
 ## November 2025
 

@@ -1,5 +1,5 @@
 # Release notes
-(Updated December 8, 2025) 
+(Updated December 9, 2025) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -58,6 +58,12 @@ Issues related to volume control when using Cisco Room Navigator with Teams app 
 ## December 2025
 
 **Software version: RoomOS 26.1.1.3**
+
+**HDMI out now Enabled by default**
+
+With this update we are enabling HDMI out by default on Board Pro, Board Pro G2, and Desk Pro - meaning any external displays connected to the HDMI output port will be active without requiring a device reboot.
+
+Previously, HDMI out was not enabled by default and required being explicitly configured through user settings.
 
 ### Fixed issues
 

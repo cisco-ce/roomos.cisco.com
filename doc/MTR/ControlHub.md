@@ -4,6 +4,11 @@ When you register your devices to [Control Hub](https://help.webex.com/nkhozs6/)
 
 Contact your parter to set up Control Hub access for your organization.
 
+<img src="/doc/images/MTR/planning-guide2.png" style="width: 700px"/>
+
+You can use [the planning guide and the launch guide](https://resources.webex.com/s/b75jpfr4k5zhw3f2944xzvm) for your implementation of Cisco collaboration devices with Microsoft Teams Rooms.
+
+
 ## Managing and supporting your device deployment
 
 You can achieve scalable and efficient deployments with Control Hub. Control Hub offers comprehensive device and workspace management:

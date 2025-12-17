@@ -2,6 +2,8 @@
 
 You can add in-product help to your device to help users get familiar with the basic use of Cisco devices for Microsoft Team Rooms.
 
+<img src="/doc/images/MTR/helpVideoIntro.png" style="width: 600px">
+
 ## Add the in-product help macro on an individual device 
 
 By deploying this macro, a Learn extension is added to the side control panel of a Room Navigator. It opens a webview which contains short help videos that present basic steps for:
@@ -10,17 +12,17 @@ By deploying this macro, a Learn extension is added to the side control panel of
 *   Joining meetings
 *   Sharing content
 
-[See this video](https://cdn.bfldr.com/YM20Y3NQ/as/8tz3fg355f5k5txg8x36cmn/MTR_Control_Panel_Adoption) to learn how this macro works on a device.
+To view a video of how this macro works on a device and the in-product help videos that are available, [visit this resource page](https://ctg-tme.github.io/learn-cisco-devices/).
 
 You can [customize which videos are available](#customize-which-videos-your-users-can-see) to match your deployment. 
 
-The in-product help videos are available [here](https://ctg-tme.github.io/learn-cisco-devices/mtr-navigator/?theme=dark). 
 
 **Note:**
 *   Only available on Room Navigator.
 *   You need to enable the macro on each device individually.
-*   Requires Control Hub registration.
+*   Requires registration to [Control Hub](/doc/MTR/ControlHub).
 *   Enable macros for devices in your organization. In Control Hub, go to **Devices** > **Settings** > **Macros**, and toggle on **Allow Control Hub to manage macros**.
+
 
 
 
@@ -54,6 +56,8 @@ xapi.Command.Peripherals.List({Connected: true, Type: "TouchPanel" }).then((peri
   }
 });
 ```
+
+
 
 ### Add the macro in Control Hub
 
@@ -100,14 +104,16 @@ Add `?hide=powerpoint,airplay,miracast`
 
 Example:
 
-*   `https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast`
 
 **Note:** If you use commas, browsers may change them to `%2C`. This is normal. The filter will still work.
 So, `?hide=powerpoint,airplay,miracast` may show as `?hide=powerpoint%2Cairplay%2Cmiracast`
 
 You can combine these hiding tags with other settings:
 
-Example: `https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast&theme=classic&qr=false`
+Example: 
+
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast&theme=classic&qr=false`
 
 Tags you can use to hide content:
 

@@ -59,21 +59,21 @@ xapi.Command.Peripherals.List({Connected: true, Type: "TouchPanel" }).then((peri
 
 1. Save this [JavaScript file](https://cdn.bfldr.com/YM20Y3NQ/at/qjgzt72r9x7fgbv3twn4xtsr/In-product_help_Cisco_devices_for_Microsoft_Teams_Rooms_with_Navigator1js.zip) to your computer. The file will initially be downloaded as a ZIP folder. Be sure to extract its contents. Keep the same file name.
 
-3. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
+2. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
 
-<img src="/doc/images/MTR/helpVideo2.png" style="width: 500px">
+    <img src="/doc/images/MTR/helpVideo2.png" style="width: 500px">
     
-4. Click **Add macro**. Upload the saved JavaScript file with the filename: "Macro deployment for touch panel.js”.
+3. Click **Add macro**. Upload the saved JavaScript file with the filename: "Macro deployment for touch panel.js”.
 
-<img src="/doc/images/MTR/helpVideo3.png" style="width: 500px">
+    <img src="/doc/images/MTR/helpVideo3.png" style="width: 500px">
     
-6. Click **Next** and **Save**.
+4. Click **Next** and **Save**.
 
-<img src="/doc/images/MTR/helpVideo4.png" style="width: 500px">
+    <img src="/doc/images/MTR/helpVideo4.png" style="width: 500px">
     
-8. Click **Save** again when you’re ready.
+5. Click **Save** again when you’re ready.
 
-<img src="/doc/images/MTR/helpVideo6.png" style="width: 500px"> 
+    <img src="/doc/images/MTR/helpVideo6.png" style="width: 500px"> 
     
 
 You should now have a new button in the extensions section of the side control panel on the Room Navigator connected to your device.

@@ -90,9 +90,9 @@ Add `?hide=powerpoint` or `?hide=airplay` or `?hide=miracast` to the end of your
 
 Example:
 
-*   `https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint`
-*   `https://roomos.cisco.com/videos/mtr/navigator?hide=airplay`
-*   `https://roomos.cisco.com/videos/mtr/navigator?hide=miracast`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=airplay`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=miracast`
 
 To hide all at once:
 
@@ -111,12 +111,12 @@ Example: `https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,
 
 Tags you can use to hide content:
 
-*   `powerpoint` = PowerPoint Live sharing videos
-*   `airplay` = AirPlay sharing videos
-*   `miracast` = Miracast wireless sharing videos
-*   `wired` = Wired connection sharing videos
-*   `wirelessShare` = General wireless sharing videos
-*   `qr` = QR code join videos
+* `powerpoint` = PowerPoint Live sharing videos
+* `airplay` = AirPlay sharing videos
+* `miracast` = Miracast wireless sharing videos
+* `wired` = Wired connection sharing videos
+* `wirelessShare` = General wireless sharing videos
+* `qr` = QR code join videos
 
 ### Filter by software version
 
@@ -126,7 +126,7 @@ Add `?version=RoomOS 11`
 
 Example:
 
-*   `https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11`
+`https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11`
 
 To show videos from all versions:
 
@@ -134,7 +134,7 @@ Add `?version=all`
 
 Example:
 
-*   `https://roomos.cisco.com/videos/mtr/navigator?version=all`
+`https://roomos.cisco.com/videos/mtr/navigator?version=all`
 
 No version tag:
 
@@ -144,7 +144,7 @@ You can mix version and hide tags:
 
 Example:
 
-*   `https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11&hide=powerpoint`
+`https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11&hide=powerpoint`
 
 ### Check your changes:
 

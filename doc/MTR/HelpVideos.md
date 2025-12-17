@@ -10,11 +10,11 @@ By deploying this macro, a Learn extension is added to the side control panel of
 *   Joining meetings
 *   Sharing content
 
-[Download](https://cdn.bfldr.com/YM20Y3NQ/as/8tz3fg355f5k5txg8x36cmn/MTR_Control_Panel_Adoption) and watch how to use this macro on your device.
+[See this video](https://cdn.bfldr.com/YM20Y3NQ/as/8tz3fg355f5k5txg8x36cmn/MTR_Control_Panel_Adoption) to learn how this macro works on a device.
 
 You can [customize which videos are available](#customize-which-videos-your-users-can-see) to match your deployment. 
 
-The videos are available [here](https://ctg-tme.github.io/learn-cisco-devices/mtr-navigator/?theme=dark). 
+The in-product help videos are available [here](https://ctg-tme.github.io/learn-cisco-devices/mtr-navigator/?theme=dark). 
 
 **Note:**
 *   Only available on Room Navigator.
@@ -58,19 +58,19 @@ xapi.Command.Peripherals.List({Connected: true, Type: "TouchPanel" }).then((peri
 1. Save this [JavaScript file](https://cdn.bfldr.com/YM20Y3NQ/at/qjgzt72r9x7fgbv3twn4xtsr/In-product_help_Cisco_devices_for_Microsoft_Teams_Rooms_with_Navigator1js.zip) to your computer. The file will initially be downloaded as a ZIP folder. Be sure to extract its contents. Keep the same file name.
 2. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
 
-<img src="/doc/images/MTR/helpVideo2.png/" style="width: 500px">
+<img src="/doc/images/MTR/helpVideo2.png" style="width: 500px">
     
 4. Click **Add macro**. Upload the saved JavaScript file with the filename: "Macro deployment for touch panel.js”.
 
-<img src="/doc/images/MTR/helpVideo3.png/" style="width: 500px">
+<img src="/doc/images/MTR/helpVideo3.png" style="width: 500px">
     
 6. Click **Next** and **Save**.
 
-<img src="/doc/images/MTR/helpVideo4.png/" style="width: 500px">
+<img src="/doc/images/MTR/helpVideo4.png" style="width: 500px">
     
 8. Click **Save** again when you’re ready.
 
-<img src="/doc/images/MTR/helpVideo6.png/" style="width: 500px"> 
+<img src="/doc/images/MTR/helpVideo6.png" style="width: 500px"> 
     
 
 You should now have a new button in the extensions section of the side control panel on the Room Navigator connected to your device.

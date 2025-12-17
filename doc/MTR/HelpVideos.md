@@ -55,8 +55,11 @@ xapi.Command.Peripherals.List({Connected: true, Type: "TouchPanel" }).then((peri
 });
 ```
 
+### Add the macro in Control Hub
+
 1. Save this [JavaScript file](https://cdn.bfldr.com/YM20Y3NQ/at/qjgzt72r9x7fgbv3twn4xtsr/In-product_help_Cisco_devices_for_Microsoft_Teams_Rooms_with_Navigator1js.zip) to your computer. The file will initially be downloaded as a ZIP folder. Be sure to extract its contents. Keep the same file name.
-2. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
+
+3. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
 
 <img src="/doc/images/MTR/helpVideo2.png" style="width: 500px">
     

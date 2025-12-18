@@ -266,6 +266,12 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
+      "id": "HelpVideos",
+      "title": "Add in-product help",
+      "description": "Learn how to add in-product help videos to help users get started with using Cisco devices with Microsoft Teams Rooms.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
       "id": "GetStartedMTR",
       "title": "Get started with Cisco Devices",
       "description": "Introducing the main menu, control panel, settings menu, features, and functionality on Cisco devices with Microsoft Teams Rooms.",

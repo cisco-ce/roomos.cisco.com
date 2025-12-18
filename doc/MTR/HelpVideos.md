@@ -2,7 +2,7 @@
 
 You can add in-product help to your device to help users get familiar with the basic use of Cisco devices for Microsoft Team Rooms.
 
-<img src="/doc/images/MTR/helpVideoIntro.png" style="width: 600px">
+<img src="/doc/images/MTR/helpVideoIntro1.png" style="width: 600px">
 
 ## Add the in-product help macro on an individual device 
 

@@ -43,3 +43,5 @@ If you want to disable this feature and keep the current experience (using WebRT
 
 xConfiguration MicrosoftTeams Zoom CrossLaunch : Disabled.
 
+Zoom calls do not appear in the Recent Calls list when dialed from the touch panel or user interface. As a result, redialing these calls directly from the Recents section is not supported. This change was implemented to prevent potential exposure of sensitive information.
+

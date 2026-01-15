@@ -1,4 +1,4 @@
-# Zoom for Cisco Rooms - Beta
+# Zoom for Cisco Rooms
 
 We are introducing an enhanced interoperability with Zoom. This enables users to join Zoom Meetings on their trusted Cisco devices with the familiar Zoom Meetings UI, delivering a seamless experience.
      
@@ -6,7 +6,7 @@ We are introducing an enhanced interoperability with Zoom. This enables users to
 <img src="/doc/images/Zoom/zoomCiscoBlack_horizontalLockup.png" alt="Decorative image of Zoom and Cisco logos." width="700">
 <br/><br/>      
 
-**<ins>Available in Beta now!</ins>** 
+**<ins>Available now!</ins>** 
 
 Users can join Zoom Meetings by pressing the green Join button for scheduled meetings (if Hybrid Calendar is enabled) or by selecting the Zoom Meetings app on the Cisco device to enter a Meeting ID. This launches the Zoom Meetings application on the device. Once the meeting concludes, the device automatically returns to the Cisco Rooms home screen.
 
@@ -41,11 +41,16 @@ You’ll also need a Control Hub Organization with Device registration licenses.
 
 For the signed in experience, you’ll also need a Zoom Rooms subscription.
 
-After setting up your device, sign-up for the beta program for [**Zoom for Cisco Rooms**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=d5e8da83-0aa7-442b-a7b1-a33fe635c05d) or [**Zoom for Cisco Rooms: Signed-In Experience**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=b4ea8394-be1b-4717-86ec-c44b24dad5f6). 
+Read about how to:
+
+* [Administer Zoom Meetings for Cisco devices](https://help.webex.com/zai3j4/)
+* [Join Zoom Meetings from Cisco devices](https://help.webex.com/0lobg6/)
+
+<!-- After setting up your device, sign-up for the beta program for [**Zoom for Cisco Rooms**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=d5e8da83-0aa7-442b-a7b1-a33fe635c05d) or [**Zoom for Cisco Rooms: Signed-In Experience**](https://gobeta.webex.com/project/feature/item.html?cap=115ca7c0-65ba-4f05-966c-81d02e884c9f&artid=b4ea8394-be1b-4717-86ec-c44b24dad5f6). 
 
 See the **Zoom for Cisco Rooms - Beta Demo** on YouTube:
 
-[![Thumbnail of the YouTube video](http://img.youtube.com/vi/Pfs9cwFQLQA/0.jpg)](http://www.youtube.com/watch?v=Pfs9cwFQLQA?feature=shared "Zoom for Cisco Rooms - Beta Demo")
+[![Thumbnail of the YouTube video](http://img.youtube.com/vi/Pfs9cwFQLQA/0.jpg)](http://www.youtube.com/watch?v=Pfs9cwFQLQA?feature=shared "Zoom for Cisco Rooms - Beta Demo") -->
 
 ## New to Cisco devices?
 

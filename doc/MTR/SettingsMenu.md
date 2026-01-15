@@ -16,7 +16,7 @@ Tap **More** on the home screen or Room Navigator and select **Settings**. Choos
 
 When you change the language settings, the soft keyboard on your device reflects that change. This means that you can use the alphabet of your preferred language when you use the keyboard, for example when you search in the directory. 
 
-The devices support the following languages: English (US), English (UK), French (France), French (Canada), German, Spanish (Spain), Spanish (Latin America), Catalan, Arabic, Czech, Danish, Finnish, Hebrew, Hungarian, Italian, Japanese, Korean, Dutch, Norwegian, Polish, Portuguese (Portugal), Portuguese (Brazil), Russian, Swedish, Turkish, Chinese (Simplified), Chinese (Traditional). 
+The devices support the following languages: English (US), English (UK), French (France), French (Canada), German, Spanish (Spain), Spanish (Latin America), Catalan, Arabic, Czech, Danish, Finnish, Greek, Hebrew, Hungarian, Italian, Japanese, Korean, Dutch, Norwegian, Polish, Portuguese (Portugal), Portuguese (Brazil), Russian, Swedish, Turkish, Chinese (Simplified), Chinese (Traditional). 
 
 **Network connection**: Tap Network connection to check the Wi-Fi or Ethernet connection and network status. You can also access Advanced network settings to set up a proxy, change IP settings, and domain name. 
 

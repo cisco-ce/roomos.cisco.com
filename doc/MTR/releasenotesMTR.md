@@ -1,5 +1,5 @@
 # Release notes
-(Updated December 19, 2025) 
+(Updated January 15, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -54,6 +54,21 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+
+## January 2026
+
+**Software version: RoomOS 26.2.1.5**
+
+**Microsoft Teams Panel screenshots**
+
+A Remote Access key is no longer required to take screenshots of a Microsoft Teams Panel from the device's web interface.
+
+### Fixed issues
+* CSCws67180 - Green feed from Room Vision PTZ.
+* CSCws41827 - Screen flickering using Miracast sharing.
+* CSCws45837 - Device can crash with the following signature in logs: SIGSEGV in art::gc::collector::ConcurrentCopying::Copy"
+* CSCwq75099 - PowerPoint Live presentation on a device is slow, not as smooth, and freezes occasionally.
+* CSCws76661 - Microsoft Teams Panel freezes after attempting to open the sidebar.
 
 ## December 2025
 

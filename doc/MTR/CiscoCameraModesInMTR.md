@@ -17,3 +17,21 @@ The following camera modes are available in the Microsoft Teams Rooms on Cisco d
 Learn more about Microsoft Cloud IntelliFrame here: [Microsoft Cloud IntelliFrame](https://learn.microsoft.com/en-us/microsoftteams/devices/cloud-intelliframe)
 
 > **_NOTE:_**  Dynamic Mode remains the default camera experience and there is no change to the side swipe menu.
+
+When a smart camera setting is selected through the Microsoft Teams Rooms (MTR) user interface (UI), the following mappings are applied to RoomOS speakertrack:
+ 
+  * **composite-people-feed** → Frames
+  * **active-speaker** → Speaker (Closeup)
+  * **Room (auto framing)** → Group (best-overview)
+  * **Intelliframe** → Manual
+  * If enhanced framing is off, the mode defaults to Manual
+
+
+When a smart camera setting is selected through the RoomOS UI, the following mappings determine what is displayed in the MTR UI:
+
+* **Frames** → composite-people-feed
+* **Dynamic** → composite-people-feed
+* **group-and-speaker** → composite-people-feed
+* **Speaker (closeup)** → active-speaker
+* **Group (best-overview)** → Room (auto-framing)
+

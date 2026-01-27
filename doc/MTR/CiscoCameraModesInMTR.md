@@ -1,12 +1,11 @@
-# Cisco Camera Modes in MTR UI and Microsoft IntelliFrame 
+# Cisco Camera Modes in Microsoft Teams Rooms and Microsoft IntelliFrame 
 
-You can now select your preferred camera mode directly from the Microsoft Teams app on Cisco devices. 
-This update brings the familiar Cisco camera experiences into Microsoft Teams, using Microsoft’s naming conventions for seamless 
-integration. Additionally, Microsoft Cloud IntelliFrame, a cloud-based video intelligence feature, is now available.
+You can now select your preferred camera mode directly from the Microsoft Teams Rooms on Cisco devices. 
+This update brings the familiar Cisco camera experiences into Microsoft Teams Rooms, using Microsoft’s naming conventions for seamless integration. Additionally, Microsoft Cloud IntelliFrame, a cloud-based video intelligence feature, is now available.
 
 ## New Camera Mode Menu Options
 
-The following camera modes are available in the Microsoft Teams UI on Cisco devices:
+The following camera modes are available in the Microsoft Teams Rooms on Cisco devices:
 
    * IntelliFrame: Microsoft’s cloud-based smart video feeds zoom into the faces of in-room participants, minimizing distractions.
    * Room: Displays a view of the entire room, powered by Cisco’s Group framing technology.

@@ -22,7 +22,7 @@ When a smart camera setting is selected through the Microsoft Teams Rooms (MTR) 
  
   * **composite-people-feed** → Frames
   * **active-speaker** → Speaker (Closeup)
-  * **Room (auto framing)** → Group (best-overview)
+  * **Room (auto framing)** → Group (Best-overview)
   * **Intelliframe** → Manual
   * If enhanced framing is off, the mode defaults to Manual
 
@@ -31,7 +31,7 @@ When a smart camera setting is selected through the RoomOS UI, the following map
 
 * **Frames** → composite-people-feed
 * **Dynamic** → composite-people-feed
-* **group-and-speaker** → composite-people-feed
-* **Speaker (closeup)** → active-speaker
-* **Group (best-overview)** → Room (auto-framing)
+* **Group-and-speaker** → composite-people-feed
+* **Speaker (Closeup)** → active-speaker
+* **Group (Best-overview)** → Room (auto-framing)
 

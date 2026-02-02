@@ -1,5 +1,5 @@
 # Release notes
-(Updated January 15, 2026) 
+(Updated February 2, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -54,6 +54,32 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+
+## February 2026
+
+**Software version: RoomOS 26.3.1.3**
+
+**Cisco Camera Modes in Microsoft Teams UI and Microsoft IntelliFrame**
+
+You can now select your favorite camera mode right from the Microsoft Teams app on our devices. Enjoy the same Cisco camera experiences now shown under Microsoft's naming convention for seamless integration.
+
+As part of this update, we're also introducing the availability of Cloud IntelliFrame - Microsoft's cloud-based video intelligence.
+
+Here's what's available in the new camera mode menu:
+* IntelliFrame: Microsoft’s cloud-based smart video feeds zoom into the faces of the in-room participants, eliminating distractions
+* Room: A view of the whole room, powered by Cisco’s Group framing technology
+* Active Speaker: Cisco’s on-device Speaker tracking technology focuses on the active speaker in the room
+* Composite: Uses Cisco’s AI-powered Frames technology to zoom-in, crop and frame individuals and groups of speakers in a single view that eliminates unused space, while preserving the meeting context
+
+Learn more about IntelliFrame here: https://learn.microsoft.com/en-us/microsoftteams/devices/cloud-intelliframe
+
+Read more about [Cisco camera modes](/doc/MTR/CiscoCameraModesInMTR).
+
+Note: Dynamic Mode remains the default camera experience and there is no change to the side swipe menu. 
+
+### Fixed issues
+* CSCws45837 - Device can crash with the following signature in logs: SIGSEGV in art::gc::collector::ConcurrentCopying::Copy.
+* CSCws67180 - Green video feed from Room Vision PTZ camera. 
 
 ## January 2026
 

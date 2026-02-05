@@ -1,5 +1,5 @@
 # Release notes
-(Updated February 2, 2026) 
+(Updated February 5, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -105,6 +105,8 @@ A Remote Access key is no longer required to take screenshots of a Microsoft Tea
 With this update we are enabling HDMI out by default on Board Pro, Board Pro G2, and Desk Pro - meaning any external displays connected to the HDMI output port will be active without requiring a device reboot.
 
 Previously, HDMI out was not enabled by default and required being explicitly configured through user settings.
+
+Work is ongoing to ensure proper software behavior when a new screen is connected, and we are currently awaiting documentation from Microsoft to specify which configurations are officially supported.
 
 ### Fixed issues
 

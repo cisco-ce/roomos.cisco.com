@@ -1,14 +1,167 @@
 [
-  {
-    "name": "10.19.4.2",
-    "active": 1,
-    "lastUpdated": "2022-12-13T03:54:20.000Z",
-    "url": "10.19.4.2.json"
-  },
-  {
-    "name": "26.2.1 January 2026",
-    "active": 1,
-    "lastUpdated": "2026-01-26T03:36:34.000Z",
-    "url": "26.2.1%20January%202026.json"
-  }
+    {
+        "name": "10.19.4.2",
+        "active": 1,
+        "lastUpdated": "2022-12-13T03:54:20.000Z"
+    },
+    {
+        "name": "11.14.4.0",
+        "active": 1,
+        "lastUpdated": "2024-03-21T08:41:39.000Z"
+    },
+    {
+        "name": "11.14.5.0",
+        "active": 1,
+        "lastUpdated": "2024-10-28T03:31:00.000Z"
+    },
+    {
+        "name": "11.15.1 April 2024",
+        "active": 1,
+        "lastUpdated": "2024-04-30T03:10:13.000Z"
+    },
+    {
+        "name": "11.16.1 May 2024",
+        "active": 1,
+        "lastUpdated": "2024-05-23T05:19:23.000Z"
+    },
+    {
+        "name": "11.17.1 June 2024",
+        "active": 1,
+        "lastUpdated": "2024-06-27T05:10:46.000Z"
+    },
+    {
+        "name": "11.17.2.2",
+        "active": 1,
+        "lastUpdated": "2024-06-27T05:14:12.000Z"
+    },
+    {
+        "name": "11.17.4.0",
+        "active": 1,
+        "lastUpdated": "2024-10-28T03:31:08.000Z"
+    },
+    {
+        "name": "11.18.1 July 2024",
+        "active": 1,
+        "lastUpdated": "2024-08-16T07:07:49.000Z"
+    },
+    {
+        "name": "11.19.1 August 2024",
+        "active": 1,
+        "lastUpdated": "2024-08-16T07:07:58.000Z"
+    },
+    {
+        "name": "11.20.1 September 2024",
+        "active": 1,
+        "lastUpdated": "2024-09-10T05:57:58.000Z"
+    },
+    {
+        "name": "11.21.1 October 2024",
+        "active": 1,
+        "lastUpdated": "2024-10-28T03:28:55.000Z"
+    },
+    {
+        "name": "11.22.1 November 2024",
+        "active": 1,
+        "lastUpdated": "2024-11-08T01:23:11.000Z"
+    },
+    {
+        "name": "11.23.1 December 2024",
+        "active": 1,
+        "lastUpdated": "2024-12-15T22:50:00.000Z"
+    },
+    {
+        "name": "11.24.1 January 2025",
+        "active": 1,
+        "lastUpdated": "2025-01-20T00:32:20.000Z"
+    },
+    {
+        "name": "11.24.4.1",
+        "active": 1,
+        "lastUpdated": "2025-03-07T00:55:29.000Z"
+    },
+    {
+        "name": "11.25.1 February 2025",
+        "active": 1,
+        "lastUpdated": "2025-02-05T06:15:30.000Z"
+    },
+    {
+        "name": "11.26.1 March 2025",
+        "active": 1,
+        "lastUpdated": "2025-03-07T00:58:46.000Z"
+    },
+    {
+        "name": "11.27.1 April 2025",
+        "active": 1,
+        "lastUpdated": "2025-04-11T02:05:20.000Z"
+    },
+    {
+        "name": "11.27.2.0",
+        "active": 1,
+        "lastUpdated": "2025-05-08T12:36:26.000Z"
+    },
+    {
+        "name": "11.27.3.0",
+        "active": 1,
+        "lastUpdated": "2025-06-10T08:31:14.000Z"
+    },
+    {
+        "name": "11.28.1 May 2025",
+        "active": 1,
+        "lastUpdated": "2025-05-08T07:01:09.000Z"
+    },
+    {
+        "name": "11.29.1 June 2025",
+        "active": 1,
+        "lastUpdated": "2025-06-10T08:31:20.000Z"
+    },
+    {
+        "name": "11.30.1 July 2025",
+        "active": 1,
+        "lastUpdated": "2025-07-28T12:18:05.000Z"
+    },
+    {
+        "name": "11.31.1 August 2025",
+        "active": 1,
+        "lastUpdated": "2025-08-12T23:55:28.000Z"
+    },
+    {
+        "name": "11.32.1 September 2025",
+        "active": 1,
+        "lastUpdated": "2025-09-02T03:17:25.000Z"
+    },
+    {
+        "name": "11.32.4.0",
+        "active": 1,
+        "lastUpdated": "2025-12-18T07:24:03.000Z"
+    },
+    {
+        "name": "11.33.1 October 2025",
+        "active": 1,
+        "lastUpdated": "2025-10-13T01:42:40.000Z"
+    },
+    {
+        "name": "26.0.1 November 2025",
+        "active": 1,
+        "lastUpdated": "2025-11-10T09:09:44.000Z"
+    },
+    {
+        "name": "26.1.1 December 2025",
+        "active": 1,
+        "lastUpdated": "2025-12-18T07:26:59.000Z"
+    },
+    {
+        "name": "26.2.1 January 2026",
+        "active": 1,
+        "lastUpdated": "2026-01-26T03:36:34.000Z"
+    },
+    {
+        "name": "9.15.17.4",
+        "active": 1,
+        "lastUpdated": "2023-04-28T00:47:15.000Z"
+    },
+    {
+        "name": "RoomOS 11.34",
+        "active": 0,
+        "lastUpdated": "2025-11-10T09:06:30.000Z"
+    }
 ]

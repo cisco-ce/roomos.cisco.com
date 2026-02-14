@@ -18,7 +18,7 @@ async function downloadSchemas() {
       
       // Construct the URL (encoding spaces/special characters)
       const fileName = `${name}.json`;
-      const url = `${BASE_URL}${encodeURIComponent(name)}.json`;
+      const url = `${BASE_URL}${encodeURIComponent(name)}`;
       const filePath = path.join(process.cwd(), fileName);
 
       try {
@@ -33,8 +33,9 @@ async function downloadSchemas() {
         const jsonContent = await response.json();
 
         // 2. Save the file locally
+        const apis = jsonContent?.objects?.length || '⛔️ 0'
         await fs.writeFile(filePath, JSON.stringify(jsonContent, null, 2));
-        console.log(`✅ Saved: ${fileName}`);
+        console.log(`✅ Saved: ${fileName} with ${apis} APIs`);
 
       } catch (err) {
         console.error(`❌ Error downloading ${name}:`, err.message);

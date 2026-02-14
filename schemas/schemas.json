@@ -2,11 +2,13 @@
   {
     "name": "10.19.4.2",
     "active": 1,
-    "lastUpdated": "2022-12-13T03:54:20.000Z"
+    "lastUpdated": "2022-12-13T03:54:20.000Z",
+    "url": "10.19.4.2.json"
   },
   {
     "name": "26.2.1 January 2026",
     "active": 1,
-    "lastUpdated": "2026-01-26T03:36:34.000Z"
+    "lastUpdated": "2026-01-26T03:36:34.000Z",
+    "url": "26.2.1%20January%202026.json"
   }
 ]

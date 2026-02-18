@@ -1,5 +1,5 @@
 # Release notes
-(Updated February 9, 2026) 
+(Updated February 18, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -93,7 +93,7 @@ A Remote Access key is no longer required to take screenshots of a Microsoft Tea
 * CSCws67180 - Green feed from Room Vision PTZ.
 * CSCws41827 - Screen flickering using Miracast sharing.
 * CSCws45837 - Device can crash with the following signature in logs: SIGSEGV in art::gc::collector::ConcurrentCopying::Copy"
-* CSCwq75099 - PowerPoint Live presentation on a device is slow, not as smooth, and freezes occasionally.
+* CSCwq75099 - PowerPoint Live: Embedded videos freeze occasionally.
 * CSCws76661 - Microsoft Teams Panel freezes after attempting to open the sidebar.
 
 ## December 2025

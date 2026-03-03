@@ -282,7 +282,6 @@
       "title": "Camera options",
       "description": "How to select camera mode and access self-view.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-      "tags": "camera"
     },
     {
       "id": "CiscoCameraModesInMTR",

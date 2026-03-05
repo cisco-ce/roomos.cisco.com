@@ -217,6 +217,36 @@
     }
   ],
   "MTR": [
+     {
+      "id": "Camera",
+      "title": "Camera",
+      "children": [
+        {
+          "id": "CameraOptions",
+          "title": "Camera options",
+          "description": "How to select camera mode and access self-view.",
+          "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+        },
+        {
+          "id": "CiscoCameraModesInMTR",
+          "title": "Cisco Camera Modes in Microsoft Teams Rooms and Microsoft IntelliFrame",
+          "description": "You can now select your preferred camera mode directly from the Microsoft Teams Rooms on Cisco devices.",
+          "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+        },
+        {
+          "id": "classroom",
+          "title": "Classroom",
+          "description": "Set up and use the classroom camera mode.",
+          "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+        },
+        {
+          "id": "USBContentCameraMainVideo",
+          "title": "USB Content Camera Support",
+          "description": "USB Content Camera Support on RoomOS devices.",
+          "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+        }
+      ]
+    },
     {
       "id": "Intro",
       "title": "Introduction",
@@ -278,24 +308,6 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
-      "id": "CameraOptions",
-      "title": "Camera options",
-      "description": "How to select camera mode and access self-view.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "CiscoCameraModesInMTR",
-      "title": "Cisco Camera Modes in Microsoft Teams Rooms and Microsoft IntelliFrame",
-      "description": "You can now select your preferred camera mode directly from the Microsoft Teams Rooms on Cisco devices.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "USBContentCameraMainVideo",
-      "title": "USB Content Camera Support ",
-      "description": "USB Content Camera Support on RoomOS devices.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
       "id": "MicrophoneOptions",
       "title": "Microphone options",
       "description": "Test your microphone, use noise removal options, and activate music mode.",
@@ -353,12 +365,6 @@
       "id": "WiFiSettings",
       "title": "Wi-Fi settings",
       "description": "Wi-Fi setup and best practices.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "classroom",
-      "title": "Classroom",
-      "description": "Set up and use the classroom camera mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {

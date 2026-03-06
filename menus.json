@@ -25,7 +25,7 @@
     "link": "/doc/MTR",
     "children": [
     {
-      "id": "MTR-camera",
+      "id": "camera",
       "name": "Camera",
       "link": "/doc/MTR/camera"
     }

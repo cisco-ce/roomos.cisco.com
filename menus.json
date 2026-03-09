@@ -23,13 +23,6 @@
     "id": "MTR",
     "name": "Microsoft Teams Rooms",
     "link": "/doc/MTR",
-    "children": [
-    {
-      "id": "camera",
-      "name": "Camera",
-      "link": "/doc/MTR/camera"
-    }
-  ]
 },
   {
     "id": "UsefulLinks",

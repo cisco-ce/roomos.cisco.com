@@ -62,7 +62,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://cs.co/room-simulator/" target="_blank">UI Extensions Room Simulator</a>
+        <a href="https://cs.co/room-simulator" target="_blank">UI Extensions Room Simulator</a>
       <td>Test and demo UI Extensions with a visual room simulator.</td>
       <td><img class="logo" src="/doc/images/meetingroom3.jpg" /></td>
       </td>

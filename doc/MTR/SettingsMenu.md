@@ -1,4 +1,6 @@
-# Settings menu
+# Settings
+
+## Device Settings
 
 Tap **More** on the home screen or Room Navigator and select **Settings**. Choose **Device settings**. Once in the settings menu, you can open the device settings where you can change the accessibility, the network settings, the issues and diagnostics, Bluetooth, the language, and time zone. In the device settings, you can also access the Teams access settings protected by the admin password. 
 
@@ -22,7 +24,7 @@ The devices support the following languages: English (US), English (UK), French 
 
 **Time Zone**: Tap Time zone to change the Time Zone on your device. 
 
-# Teams admin settings
+## Teams Admin Settings
 
 Tap **Teams admin settings** to access the calling, general, and meetings menu. 
 
@@ -44,9 +46,9 @@ On the **meetings menu**, you can enable and disable the following functionaliti
 
 * Allow joining third-party meetings 
 
-# Wi-Fi settings
+## Wi-Fi Settings
 
-## Use Wi-Fi 
+### Use Wi-Fi 
 
 You can choose to use either a wired or a Wi-Fi connection. 
 When wireless connection is enabled for a device, you can change between wired and Wi-Fi connection on the menu. To use the Wi-Fi, disconnect the Ethernet cable first.
@@ -70,7 +72,7 @@ The system only remembers one network at a time. If you change between different
 5.	When you're finished, tap the left arrow to go back to the Settings screen, and then tap the Close button. 
 Once connected, you can access the Wi-Fi settings and check the network status at any time, including during a call. Go to **Device settings > Network connection > Wi-Fi** and then tap the connected network name. On the next screen tap **Advanced Wi-Fi details** to see the network's status.
 
-## Best practices: Setting up a Wi-Fi connection
+### Best practices: Setting up a Wi-Fi connection
 
 To help ensure a seamless meeting experience, network administrators should follow the best practices in this article, when configuring a Wi-Fi connection. 
 During calls and meetings on Board Pro and Desk Pro, you'll quickly find out that a stable internet connection greatly enhances your video and voice experience. 

@@ -279,7 +279,7 @@
     },
     {
       "id": "CameraOptions",
-      "title": "Camera options",
+      "title": "Camera and video configuration",
       "description": "Overview of camera settings and capabilities.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/CameraModeIcon.jpg"
     },

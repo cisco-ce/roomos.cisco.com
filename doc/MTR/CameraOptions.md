@@ -171,7 +171,7 @@ Alternatively a USB camera can be selected as a share source from the side bar, 
   * **Audio interference**: When a USB camera is connected to the USB port under the Deskpro, there may be interference with the aux jack audio. To avoid this, connect the USB camera to the ports located at the back.
   * **Power requirements**: If the USB cable connecting the camera is significantly long, external power may be necessary to ensure proper operation.
 
-## USB camera as main video source
+### USB camera as main video source
 
 ### RoomOS
 

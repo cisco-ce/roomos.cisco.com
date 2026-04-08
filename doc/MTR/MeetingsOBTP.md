@@ -1,8 +1,8 @@
 # Join Meetings with One Button to Push
 
-## Join Webex meetings
+When a scheduled Webex or Zoom meeting includes a video device, a **Join** button appears on the home screen right before the meeting begins.
 
-When a scheduled Webex meeting includes a video device, a **Join** button appears on the home screen right before the meeting begins.
+## Join Webex meetings
 
 <img src="/doc/images/MTR/JoinWebex.png" style="width: 600px" />
 

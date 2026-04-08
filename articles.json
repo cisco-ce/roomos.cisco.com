@@ -281,11 +281,11 @@
       "id": "CameraOptions",
       "title": "Camera options",
       "description": "Overview of camera settings and capabilities.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/CameraModeIcon.jpg"
     },
     {
       "id": "classroom",
-      "title": "Classroom",
+      "title": "Classroom mode",
       "description": "Set up and use the classroom camera mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
         },

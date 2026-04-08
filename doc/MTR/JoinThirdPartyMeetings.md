@@ -1,6 +1,6 @@
 # Join Webex and Zoom Meetings
 
-This feature allows you to join Webex and Zoom meetings seamlessly while using MTR mode. Note that your device need to be registered to Control Hub.
+You can join Webex and Zoom meetings seamlessly while using MTR mode. Note that your device need to be registered to Control Hub.
 
 ## Join Webex Meetings
 
@@ -14,6 +14,34 @@ The Join Webex button is enabled automatically when the MTR device is registered
 3. Enter the meeting number that is listed in the Webex Meetings invite, and tap **Join** to join the meeting. When you're joining a Personal Room meeting, you can use the person's name or email address to search for their Personal Room.
 
 Read [this article](https://help.webex.com/en-us/article/pq3vkab/Join-Webex-meetings-from-Board,-Desk,-and-Room-Series) for more information on Webex meetings.
+
+
+## Place Webex Calls
+
+This feature allows you to access the RoomOS calling features. You can also place SIP calls through Webex.
+
+1. Swipe from the right on the home screen to open the control panel.
+2. Tap **Call**.
+
+<img src="/doc/images/MTR/ControlPanel.png" style="width: 200px"/>
+  
+3. You can call someone from your Favorites, Recents or Directory list. You can also start typing the name, video address, or number of your contact in the search field. 
+
+<img src="/doc/images/MTR/CallMenu.jpg" style="width: 600px"/>
+
+4. Select a contact and tap the **Call** button.
+
+<img src="/doc/images/MTR/RoomOSCall.jpg" style="width: 250px"/>
+
+
+### Add a contact to your Favorites 
+
+You can mark contacts that you call often as favorites. The contacts get added to your **Favorites** list, where you can easily find them. You can add a contact from your **Recents** or **Directory** list to your **Favorites**. Read more about it [here](https://help.webex.com/en-us/article/n1tk4q6/Edit-your-favorite-contacts-on-Board,-Desk,-and-Room-Series).
+
+### Edit your favorite contacts
+
+You can edit your favorite contacts in order to find them more easily. You can edit the nicknames and video addresses of your favorite contacts. Read more about it [here](https://help.webex.com/en-us/article/n1tk4q6/Edit-your-favorite-contacts-on-Board,-Desk,-and-Room-Series).
+
 
 ## Join Zoom Meetings
 

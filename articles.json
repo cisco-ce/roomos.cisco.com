@@ -328,19 +328,13 @@
     {
       "id": "SettingsMenu",
       "title": "Settings menu",
-      "description": "Device settings that are available from the UI.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+      "description": "Device and Wi-Fi settings.",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/Settings2.png"
     },
     {
       "id": "DeviceWebInterface",
       "title": "The device web interface",
       "description": "How to configure a Cisco device from its local web interface.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "WiFiSettings",
-      "title": "Wi-Fi settings",
-      "description": "Wi-Fi setup and best practices.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {

@@ -181,7 +181,7 @@ To use the USB camera as the main video source, set the InputSourceType to 'came
 
 <img src="/doc/images/MTR/USBMainVideo1.png" style="width: 500px"/>
 
-#### Selecting USB camera as main video on a touch screen
+### Selecting USB camera as main video on a touch screen
 
 <img src="/doc/images/MTR/USBMainVideo2.png" style="width: 500px"/>
 
@@ -191,7 +191,7 @@ Open the sidebar and select "Camera".
 
 Select "Manual" and then the USB Camera in the dropdown. The camera can be rotated 180 degrees.
 
-#### Selecting USB camera as main video on a navigator
+### Selecting USB camera as main video on a navigator
 
 <img src="/doc/images/MTR/USBMainVideo4.png" style="width: 500px"/>
 
@@ -217,7 +217,7 @@ Alternatively you can use the following xcommand to set the USB camera as main v
 
 ``` xCommand Video Input SetMainVideoSource SourceId: <ID> ``` 
 
-#### Limitations for USB cameras as main video source
+### Limitations for USB cameras as main video source
 
 * **Manual operation only** : When used as the main video source, automatic options are disabled; only manual operation is supported.
 * **People count**: This feature is not functional.

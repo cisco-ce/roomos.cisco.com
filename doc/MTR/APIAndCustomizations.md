@@ -73,8 +73,6 @@ To close the web view, tap the cross on the top right of the screen. You can als
 
 When there is an incoming call, the web view will close automatically and the call will be visible.
 
-
-
 ### Further reading
 For general guidelines how to use the xAPI and thorough descriptions of all commands, configurations, and statuses, check out the complete API reference guide (pdf) on cisco.com, and the RoomOS website for developers and integrators (roomos.cisco.com):
 * [API reference guide, which includes general guidelines and introduction to the xAPI (pdf)]( https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html)

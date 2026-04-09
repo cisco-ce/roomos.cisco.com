@@ -1,20 +1,4 @@
 #  Camera, Video, and Peripherals
-
-**Table of Contents**
-* [Overview of camera settings and capabilities](#overview-of-camera-settings-and-capabilities)
-  * [Access different camera modes](#access-different-camera-modes)
-  * [Save camera presets](#save-camera-presets)
-  * [Access and adjust self-view](#access-and-adjust-self-view)
-* [Camera Modes in MTR and Microsoft IntelliFrame](#camera-modes-in-mtr-and-microsoft-intelliframe)
-  * [New Camera Mode Menu Options](#new-camera-mode-menu-options)
-* [USB camera support](#usb-camera-support)
-  * [USB camera for content sharing](#usb-camera-for-content-sharing)
-  * [Supported RoomOS devices](#supported-roomos-devices)
-  * [Limitations for USB cameras](#limitations-for-usb-cameras)
-  * [USB camera as main video source](#usb-camera-as-main-video-source)
-* [USB Passthrough](#usb-passthrough)
-  * [Connect your laptop and select input sources](#connect-your-laptop-and-select-input-sources)
-  * [In-call behavior](#in-call-behavior)
     
 ##  Overview of camera settings and capabilities
 

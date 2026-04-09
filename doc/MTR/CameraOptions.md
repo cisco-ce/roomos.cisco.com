@@ -1,5 +1,21 @@
-#  Camera Features and Options
+#  Camera, Video, and Peripherals
 
+**Table of Contents**
+* [Overview of camera settings and capabilities](#overview-of-camera-settings-and-capabilities)
+  * [Access different camera modes](#access-different-camera-modes)
+  * [Save camera presets](#save-camera-presets)
+  * [Access and adjust self-view](#access-and-adjust-self-view)
+* [Camera Modes in MTR and Microsoft IntelliFrame](#camera-modes-in-mtr-and-microsoft-intelliframe)
+  * [New Camera Mode Menu Options](#new-camera-mode-menu-options)
+* [USB camera support](#usb-camera-support)
+  * [USB camera for content sharing](#usb-camera-for-content-sharing)
+  * [Supported RoomOS devices](#supported-roomos-devices)
+  * [Limitations for USB cameras](#limitations-for-usb-cameras)
+  * [USB camera as main video source](#usb-camera-as-main-video-source)
+* [USB Passthrough](#usb-passthrough)
+  * [Connect your laptop and select input sources](#connect-your-laptop-and-select-input-sources)
+  * [In-call behavior](#in-call-behavior)
+    
 ##  Overview of camera settings and capabilities
 
 ###  Access different camera modes
@@ -226,3 +242,26 @@ Alternatively you can use the following xcommand to set the USB camera as main v
 * **PTZ support** : Pan-Tilt-Zoom (PTZ) options are not supported for USB cameras.
 
 
+## USB Passthrough
+
+When you connect your laptop to a Cisco device using USB Passthrough, you can use the device's advanced features, such as its camera, microphone, and loudspeakers, during video calls from your laptop meeting apps. This integration ensures superior video and sound quality, enhancing your overall conferencing experience.
+
+The setup and use of this feature varies because the different devices have different capabilities:
+
+* **Full USB-C support**: Desk Pro, Board Pro, Board Pro G2, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro
+
+Devices in this category have a USB-C connector, and you can share content from a laptop to the device on the USB-C connection.
+
+### Connect your laptop and select input sources
+
+1. Connect your laptop to the device's USB-C socket.
+2. Open your laptop meeting app and select the device as source for camera, microphone, and loudspeaker. Now you are ready to call or join a meeting from your laptop.
+
+
+### In-call behavior
+
+You need to mute your microphones from the laptop meeting app.
+
+You will be able to receive other incoming calls to your device.
+
+You can control the camera, adjust the volume, remove background noise, and optimize the audio quality, from the device UI. The camera light indicator is on when the camera is in use. The laptop meeting app controls the rest, including disconnecting the call.

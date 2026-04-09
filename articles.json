@@ -230,12 +230,6 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
-      "id": "AOSP",
-      "title": "AOSP Device Management",
-      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
       "id": "releasenotesMTR",
       "title": "Release notes",
       "description": "New and changed features, and issues fixed for Microsoft Teams Rooms devices on RoomOS.",
@@ -245,12 +239,6 @@
       "id": "RoomOSUpgrades",
       "title": "Software upgrades",
       "description": "RoomOS software upgrades for Cisco devices with Microsoft Teams Rooms.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "MTPOnRoomNavigator",
-      "title": "Microsoft Teams Panels on Cisco Room Navigator",
-      "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
@@ -312,6 +300,18 @@
       "title": "Advanced Customizations and Integrations",
       "description": "How to use the Cisco device's xAPI and display web content.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/WebView.png"
+    },
+    {
+      "id": "MTPOnRoomNavigator",
+      "title": "Microsoft Teams Panels on Cisco Room Navigator",
+      "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+    },
+    {
+      "id": "AOSP",
+      "title": "AOSP Device Management",
+      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
   ],
   "WhatsNew": [

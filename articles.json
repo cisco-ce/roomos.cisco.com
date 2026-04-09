@@ -219,20 +219,14 @@
   "MTR": [
     {
       "id": "Intro",
-      "title": "Introduction",
-      "description": "Cisco devices with Microsoft Teams Rooms",
+      "title": "Introduction and onboarding",
+      "description": "Everything needed to prepare the environment, gather licenses, and complete the initial device onboarding.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
       "id": "AOSP",
       "title": "AOSP Device Management",
       "description": "Moving Microsoft Teams Android Devices to AOSP Device Management",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "Requirements",
-      "title": "Requirements",
-      "description": "Preparing to onboard Cisco devices to Microsoft Teams Rooms, including licensing and software requirements.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
@@ -245,12 +239,6 @@
       "id": "RoomOSUpgrades",
       "title": "Software upgrades",
       "description": "RoomOS software upgrades for Cisco devices with Microsoft Teams Rooms.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "MTROnBoarding",
-      "title": "Onboarding",
-      "description": "Onboarding Cisco devices to Microsoft Teams Rooms",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {

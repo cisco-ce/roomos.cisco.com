@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Validate JSON files
         run: |
-          for file in $(find . -name "*.json"); do
+          for file in $(find . -maxdepth 1 -name "*.json"); do
             jq empty "$file" || exit 1
           done

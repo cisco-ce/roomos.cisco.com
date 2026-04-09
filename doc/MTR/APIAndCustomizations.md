@@ -1,5 +1,7 @@
 # Advanced Customizations and Integrations
 
+For admins and developers looking to customize the user interface, add macros, or integrate third-party controls.
+
 ## Using the device API
 
 RoomOS is the operating system that powers Cisco collaboration devices, no matter which service the device is registered to. RoomOS offers a powerful public API that lets you create integrations and customizations, and tweak and tune a device's setup and behavior. This API is often referred to as the _xAPI_.
@@ -39,11 +41,11 @@ Showing custom web content can also be done with [digital signage](https://help.
 
 <img src="/doc/images/MTR/WebView.png" width="600"/>
 
-`xcommand UserInterface WebView Display Url: cisco.com`
+`xCommand UserInterface WebView Display Url: cisco.com`
 
 Write the URL of the web page you would like to display.
 
-`xcommand UserInterface WebView Display Mode: Fullscreen`
+`xCommand UserInterface WebView Display Mode: Fullscreen`
 
 Display the web page in full screen.
 
@@ -55,7 +57,7 @@ Display the web page in full screen.
 
 <img src="/doc/images/MTR/WebModal.png" width="600"/>
 
-`xcommand UserInterface WebView Display Mode: Modal`
+`xCommand UserInterface WebView Display Mode: Modal`
 
 * Tap outside to close.
 
@@ -63,17 +65,179 @@ Display the web page in full screen.
 
 You can have a web view on the Touch controller by using this command: 
 
-`xcommand UserInterface WebView Display Target: Controller`
+`xCommand UserInterface WebView Display Target: Controller`
 
 To close the web view, tap the cross on the top right of the screen. You can also run the following command if you want to close it: 
 
-`xcommand UserInterface WebView Clear`
+`xCommand UserInterface WebView Clear`
 
 ### Incoming call
 
 When there is an incoming call, the web view will close automatically and the call will be visible.
 
-### Further reading
+## Add in-product help using macros
+
+You can add in-product help to your device to help users get familiar with the basic use of Cisco devices for Microsoft Team Rooms.
+
+<img src="/doc/images/MTR/helpVideoIntro1.png" style="width: 600px">
+
+### Add the in-product help macro on an individual device 
+
+By deploying this macro, a Learn extension is added to the side control panel of a Room Navigator. It opens a webview which contains short help videos that present basic steps for:
+
+*   Scheduling meetings
+*   Joining meetings
+*   Sharing content
+
+To view a video of how this macro works on a device and the in-product help videos that are available, [visit this resource page](https://ctg-tme.github.io/learn-cisco-devices/).
+
+You can [customize which videos are available](#customize-which-videos-your-users-can-see) to match your deployment. 
+
+
+**Note:**
+*   Only available on Room Navigator.
+*   You need to enable the macro on each device individually.
+*   Requires registration to [Control Hub](/doc/MTR/ControlHub).
+*   Enable macros for devices in your organization. In Control Hub, go to **Devices** > **Settings** > **Macros**, and toggle on **Allow Control Hub to manage macros**.
+
+
+
+
+```javascript
+import xapi from 'xapi';
+
+//This macro will create a learn button for MTR if a Cisco Navigator is attached to the device
+
+xapi.Event.UserInterface.Extensions.Panel.Clicked.on(event => {
+  if (event.PanelId === 'learn') {
+    xapi.Command.UserInterface.WebView.Display({Target: 'Controller', Url: 'https://roomos.cisco.com/videos/mtr/navigator'});
+  }
+});
+
+xapi.Command.Peripherals.List({Connected: true, Type: "TouchPanel" }).then((peripherals) => {
+  if (peripherals.Device) {
+    xapi.Command.UserInterface.Extensions.Panel.Save({PanelId: 'learn'}, `
+    <Extensions>
+      <Version>1.11</Version>
+      <Panel>
+        <Order>1</Order>
+        <PanelId>learn</PanelId>
+        <Origin>local</Origin>
+        <Location>ControlPanel</Location>
+        <Icon>Lightbulb</Icon>
+        <Name>Learn</Name>
+        <ActivityType>Custom</ActivityType>
+      </Panel>
+    </Extensions>
+    `)
+  }
+});
+```
+
+
+
+### Add the macro in Control Hub
+
+1. Save this [JavaScript file](https://cdn.bfldr.com/YM20Y3NQ/at/qjgzt72r9x7fgbv3twn4xtsr/In-product_help_Cisco_devices_for_Microsoft_Teams_Rooms_with_Navigator1js.zip) to your computer. The file will initially be downloaded as a ZIP folder. Be sure to extract its contents. Keep the same file name.
+
+2. From Control Hub, under the Devices section, select the device you want to enable the macro on. On the device details page, go to the Configurations card and click **Macros**.
+
+    <img src="/doc/images/MTR/helpVideoStep3.png" style="width: 500px">
+    
+3. Click **Add macro**. Upload the saved JavaScript file with the filename: "Macro deployment for touch panel.js”.
+
+    <img src="/doc/images/MTR/helpVideoStep4.png" style="width: 500px">
+    
+4. Click **Next** and **Save**.
+
+    <img src="/doc/images/MTR/helpVideoStep5.png" style="width: 500px">
+    
+5. Click **Save** again when you’re ready.
+
+    <img src="/doc/images/MTR/helpVideoStep6.png" style="width: 500px"> 
+    
+
+You should now have a new button in the extensions section of the side control panel on the Room Navigator connected to your device.
+
+### Customize which videos your users can see
+
+By adding specific tags to the website link, you can choose the videos to show or hide from your users on the tutorials page based on what’s relevant to your organization and its use cases.
+
+### Hide videos
+
+To hide PowerPoint Live, AirPlay, or Miracast videos:
+
+Add `?hide=powerpoint` or `?hide=airplay` or `?hide=miracast` to the end of your link. 
+
+Example:
+
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=airplay`
+`https://roomos.cisco.com/videos/mtr/navigator?hide=miracast`
+
+To hide all at once:
+
+Add `?hide=powerpoint,airplay,miracast`
+
+Example:
+
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast`
+
+**Note:** If you use commas, browsers may change them to `%2C`. This is normal. The filter will still work.
+So, `?hide=powerpoint,airplay,miracast` may show as `?hide=powerpoint%2Cairplay%2Cmiracast`
+
+You can combine these hiding tags with other settings:
+
+Example: 
+
+`https://roomos.cisco.com/videos/mtr/navigator?hide=powerpoint,airplay,miracast&theme=classic&qr=false`
+
+Tags you can use to hide content:
+
+* `powerpoint` = PowerPoint Live sharing videos
+* `airplay` = AirPlay sharing videos
+* `miracast` = Miracast wireless sharing videos
+* `wired` = Wired connection sharing videos
+* `wirelessShare` = General wireless sharing videos
+* `qr` = QR code join videos
+
+### Filter by software version
+
+To show videos for a specific software version:
+
+Add `?version=RoomOS 11`
+
+Example:
+
+`https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11`
+
+To show videos from all versions:
+
+Add `?version=all`
+
+Example:
+
+`https://roomos.cisco.com/videos/mtr/navigator?version=all`
+
+No version tag:
+
+If you don’t add a version, the site shows only the default (usually latest) videos.
+
+You can mix version and hide tags:
+
+Example:
+
+`https://roomos.cisco.com/videos/mtr/navigator?version=RoomOS 11&hide=powerpoint`
+
+### Check your changes:
+
+*   The videos you hid will not show up for your users.
+*   If all videos in a section are hidden, that section goes away.
+*   Other sections have not changed.
+*   Version filtering only shows videos for the version you picked.
+
+
+## Further reading
 For general guidelines how to use the xAPI and thorough descriptions of all commands, configurations, and statuses, check out the complete API reference guide (pdf) on cisco.com, and the RoomOS website for developers and integrators (roomos.cisco.com):
 * [API reference guide, which includes general guidelines and introduction to the xAPI (pdf)]( https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html)
 * [Interactive API reference (html)](https://roomos.cisco.com/xapi)

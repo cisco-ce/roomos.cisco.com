@@ -76,7 +76,7 @@ To open and change the location of your self-view on the screen during a call:�
 
 3. Press the self-view and drag and drop it to change the location. It will snap to pre-defined locations as you drag.  
 
-## Cisco Camera Modes in Microsoft Teams Rooms and Microsoft IntelliFrame 
+## Camera Modes in MTR and Microsoft IntelliFrame 
 
 You can select your preferred camera mode directly from the Microsoft Teams Rooms on Cisco devices. 
 This update brings the familiar Cisco camera experiences into Microsoft Teams Rooms, using Microsoft’s naming conventions for seamless integration. Additionally, Microsoft Cloud IntelliFrame, a cloud-based video intelligence feature, is now available.

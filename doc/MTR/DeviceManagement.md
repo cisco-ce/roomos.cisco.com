@@ -2,7 +2,7 @@
 
 Control, monitor, and secure the devices after they are deployed.
 
-## Administer Cisco devices in Control Hub
+## Cisco devices in Control Hub
 
 When you register your devices to [Control Hub](https://help.webex.com/nkhozs6/), you get access to centralized device management. With Control Hub registered devices, users can join [meetings](https://roomos.cisco.com/doc/MTR/JoinThirdPartyMeetings) with an extensive range of built-in features.
 
@@ -190,7 +190,7 @@ When signing in to the device as a local user, the password must follow the rule
 
 A new password rule will not apply to existing passwords but will take effect on the next password change.
 
-## Remote support user
+### Remote support user
 In cases where you need to diagnose problems on the device you can create a remote support user. The remote support user is granted read access to the device and has access to a limited set of commands that can aid troubleshooting.
 
 You will need assistance from Cisco Technical Assistance Center (TAC) to acquire the password for the remote support user.
@@ -232,7 +232,7 @@ Go to the device web interface _Home_ page to find the device's software version
 The device log files are useful when diagnosing issues. You can download all current and historical logs from the device web interface _Issues and Diagnostics_ page.
 
 
-## ThousandEyes agent on a device
+## ThousandEyes agent
 
 Enable [ThousandEyes Agent](https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing/install-roomos) on devices to get hop-by-hop network path visibility when these devices are part of meetings. 
 

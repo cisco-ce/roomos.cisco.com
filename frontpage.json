@@ -1,0 +1,34 @@
+{
+  "carousel": [
+    {
+      "id": "space-management",
+      "text": "Monitor how and when your spaces are being used to optimize your office resources",
+      "imgUrl": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/spacemanagement.jpg",
+      "link": "/doc/UseCases/SpaceManagement"
+    },
+    {
+      "id": "hot-desking",
+      "text": "Let your employees find a vacant desk quickly with the hot desking APIs",
+      "imgUrl": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/hotdesking.jpg",
+      "link": "/doc/UseCases/PeopleCount"
+    },
+    {
+      "id": "virtual-receptionist",
+      "text": "Provide a remote host when your reception is not staffed",
+      "imgUrl": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/kiosk/overview.png",
+      "link": "/doc/UseCases/Kiosk"
+    },
+    {
+      "id": "room-controls",
+      "text": "Control everything in the room with your Cisco Navigator touch panel",
+      "imgUrl": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/ui-extensions.png",
+      "link": "/doc/UseCases/RoomControls"
+    },
+    {
+      "id": "digital-signage",
+      "text": "Make the best use of your screens with digital signage",
+      "imgUrl": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/signage.png",
+      "link": "/doc/UseCases/DigitalSignage"
+    }
+  ]
+}

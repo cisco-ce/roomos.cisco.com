@@ -287,7 +287,7 @@
       "id": "MTPOnRoomNavigator",
       "title": "Microsoft Teams Panels on Cisco Room Navigator",
       "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/MTP.png"
     },
     {
       "id": "AOSP",

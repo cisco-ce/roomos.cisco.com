@@ -227,18 +227,12 @@
       "id": "DeviceManagement",
       "title": "Device management and security",
       "description": "Register to Control Hub, control software upgrades, access the local web interface, and configure proxy settings.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/ControlHub.png"
     },
     {
       "id": "releasenotesMTR",
       "title": "Release notes",
       "description": "New and changed features, and issues fixed for Microsoft Teams Rooms devices on RoomOS.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    },
-    {
-      "id": "RoomOSUpgrades",
-      "title": "Software upgrades",
-      "description": "RoomOS software upgrades for Cisco devices with Microsoft Teams Rooms.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     },
     {
@@ -267,7 +261,7 @@
         },
     {
       "id": "MicrophoneOptions",
-      "title": "Microphone options",
+      "title": "Microphone configuration",
       "description": "Test your microphone, use noise removal options, and activate music mode.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/music_mode.jpg"
     },

@@ -243,7 +243,7 @@
     },
     {
       "id": "GetStartedMTR",
-      "title": "Get started with Cisco Devices",
+      "title": "Get started",
       "description": "Introducing the main menu, control panel, settings menu, features, and functionality on Cisco devices with Microsoft Teams Rooms.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/HomeScreen.png"
     },
@@ -279,13 +279,13 @@
     },
     {
       "id": "UserBasedPIN",
-      "title": "Secure your devices with a user based PIN lock",
+      "title": "Secure your devices with PIN lock",
       "description": "Enhance the security of all your devices, including hot desking stations, by enabling user-based PIN lock.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/ScreenlockedWithMeetingAlert.png"
     },
     {
       "id": "APIAndCustomizations",
-      "title": "Advanced Customizations and Integrations",
+      "title": "Customizations and Integrations",
       "description": "How to use the Cisco device's xAPI and display web content.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/WebView.png"
     },

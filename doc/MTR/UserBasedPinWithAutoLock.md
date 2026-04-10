@@ -20,14 +20,14 @@ If configured, emergency calling is available even in locked state.
 
  
 # Enable Auto Lock Preference for Devices
-The previous "Allow Locking" preference has been replaced with a new "Enable Auto Lock" preference. The "Enable Auto Lock" button is located in the sidebar. This new setting controls how your device locks when not in use. 
+The previous "Allow Locking" preference has been replaced with a new "Enable Auto Lock" preference. This new setting controls how your device locks when not in use. 
 
  * When Enable Auto Lock is turned on, the device automatically locks when it goes into standby mode.
  * When turned off, users can manually lock the device using the lock button.
 
 Read [this article](https://help.webex.com/en-us/article/7y056e/Secure-your-Board,-Desk,-or-Room-Series-device-with-a-PIN-lock#section_jpn_nmr_t3c) to learn how to enable auto lock for all of your devices.
 
-On MTR-configured Desk devices using personal mode registration:
+On MTR-configured Desk devices using personal mode registration, the lock button is located in the sidebar:
 
 <img src="/doc/images/MTR/autolock-MTR1.png" style="width: 500px"/>
 <img src="/doc/images/MTR/autolock-MTR2.png" style="width: 500px"/>

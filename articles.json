@@ -272,16 +272,10 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/music_mode.jpg"
     },
     {
-      "id": "MeetingsOBTP",
-      "title": "Join Webex and Zoom meetings with One Button To Push",
-      "description": "Join Webex and Zoom meetings with OBTP from a device that's registered to Control Hub.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/Zoom_OBTP.png"
-    },
-    {
       "id": "JoinThirdPartyMeetings",
       "title": "Join Webex and Zoom meetings",
       "description": "Join Webex and Zoom meetings from a device that's registered to Control Hub.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/CallMenu.jpg"
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/Zoom_OBTP.png"
     },
     {
       "id": "UserBasedPIN",

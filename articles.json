@@ -250,7 +250,7 @@
     {
       "id": "CameraOptions",
       "title": "Camera and video configuration",
-      "description": "Overview of camera settings and capabilities.",
+      "description": "Overview of camera settings, USB camera support, and USB passthrough capabilities.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/CameraModeIcon.jpg"
     },
     {
@@ -286,13 +286,13 @@
     {
       "id": "MTPOnRoomNavigator",
       "title": "Microsoft Teams Panels on Cisco Room Navigator",
-      "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator",
+      "description": "Set up the Microsoft Teams Panels experience on the Cisco Room Navigator.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/MTP.png"
     },
     {
       "id": "AOSP",
       "title": "AOSP Device Management",
-      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management",
+      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
   ],

@@ -114,12 +114,6 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/uiextensions/switches.png"
     },
     {
-      "id": "WebEngine",
-      "title": "Introduction to the web engine",
-      "description": "Use web content on the video device for completely custom content",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/poster.png"
-    },
-    {
       "id": "MacroIntroduction",
       "title": "Macro Overview",
       "description": "What are the device user scripts, and how can they help your workflow?",
@@ -143,7 +137,47 @@
       "description": "The Room Scheduler device User Interface (UI) Extensions let you design new panels and action buttons",
       "symbol": "📝"
     },
+
     {
+      "id": "JSXAPIStyles",
+      "title": "JSxAPI coding styles",
+      "description": "Several styles are supported, find out which one is the right for you",
+      "symbol": "📝"
+    },
+    {
+      "id": "JSXAPIXapiToJs",
+      "title": "From xAPI to JavaScript",
+      "description": "Already know the xAPI on the command line / T-Shell but struggle to convert it to JavaScript?",
+      "symbol": "📝"
+    },
+    {
+      "id": "JSXAPIIntro",
+      "title": "Connect from Node",
+      "description": "Use the JSxAPI library to connect to the video device from an external Node.js service",
+      "symbol": "🌍"
+    },
+    {
+      "id": "JSXAPIBrowser",
+      "title": "Connect from a browser",
+      "description": "Create apps that connect to the video device from a browser on laptops and smart phones",
+      "symbol": "🌍"
+    },
+
+    {
+      "id": "",
+      "title": "",
+      "description": "",
+      "symbol": "📄"
+    }
+  ],
+  "Features": [
+      {
+      "id": "WebAppsOnNavigator",
+      "title": "PWA - Web apps on Navigator",
+      "description": "How to create web apps on the Navigator that uses the xAPI 'natively'",
+      "symbol": "📝"
+    },
+        {
       "id": "BookingsWorkspaceIntegration",
       "title": "Building a bookings workspace integration",
       "description": "Creating a workspace integration to seamlessly manage bookings on RoomOS devices",
@@ -174,46 +208,16 @@
       "symbol": "📝"
     },
     {
-      "id": "JSXAPIStyles",
-      "title": "JSxAPI coding styles",
-      "description": "Several styles are supported, find out which one is the right for you",
-      "symbol": "📝"
-    },
-    {
-      "id": "JSXAPIXapiToJs",
-      "title": "From xAPI to JavaScript",
-      "description": "Already know the xAPI on the command line / T-Shell but struggle to convert it to JavaScript?",
-      "symbol": "📝"
-    },
-    {
-      "id": "JSXAPIIntro",
-      "title": "Connect from Node",
-      "description": "Use the JSxAPI library to connect to the video device from an external Node.js service",
-      "symbol": "🌍"
-    },
-    {
-      "id": "JSXAPIBrowser",
-      "title": "Connect from a browser",
-      "description": "Create apps that connect to the video device from a browser on laptops and smart phones",
-      "symbol": "🌍"
-    },
-    {
-      "id": "WebAppsOnNavigator",
-      "title": "PWA - Web apps on Navigator",
-      "description": "How to create web apps on the Navigator that uses the xAPI 'natively'",
-      "symbol": "📝"
-    },
-    {
       "id": "WebWidgets",
       "title": "Web Widgets Design Guidelines",
       "description": "Tips on how to style your widgets",
       "symbol": "🎨"
     },
-    {
-      "id": "",
-      "title": "",
-      "description": "",
-      "symbol": "📄"
+        {
+      "id": "WebEngine",
+      "title": "Introduction to the web engine",
+      "description": "Use web content on the video device for completely custom content",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/poster.png"
     }
   ],
   "MTR": [
@@ -222,7 +226,7 @@
       "title": "Introduction and onboarding",
       "description": "Everything needed to prepare the environment, gather licenses, and complete the initial device onboarding.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/setup.png"
-    },    
+    },
     {
       "id": "DeviceManagement",
       "title": "Device management and security",

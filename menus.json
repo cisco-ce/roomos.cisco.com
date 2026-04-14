@@ -11,8 +11,13 @@
   },
   {
     "id": "TechDocs",
-    "name": "Tech Docs",
+    "name": "API Introduction",
     "link": "/doc/TechDocs"
+  },
+  {
+    "id": "Features",
+    "name": "RoomOS Features",
+    "link": "/doc/Features"
   },
   {
     "id": "UseCases",

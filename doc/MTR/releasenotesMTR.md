@@ -1,5 +1,5 @@
 # Release notes
-(Updated March 25, 2026) 
+(Updated April 15, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -54,6 +54,20 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+
+## April 2026
+
+**Software version: RoomOS 26.5.1.3**
+
+**Join Google Meet meetings**
+
+You can now enable users to join Google Meet meetings from the devices side control panel. 
+
+Users swipe right on the device UI, open the side menu, select Google Meet, enter the meeting code, and join directly from the room device. This is a WebRTC based join.
+
+Joining Google Meet meetings requires that the Cisco device is Webex registered.
+
+Read more about [Google Meet meetings](/doc/MTR/doc/MTR/JoinThirdPartyMeetings).
 
 ## March 2026
 

@@ -276,7 +276,7 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/Zoom_OBTP.png"
     },
     {
-      "id": "UserBasedPIN",
+      "id": "UserBasedPinWithAutoLock.md",
       "title": "Secure your devices with PIN lock",
       "description": "Enhance the security of all your devices, including hot desking stations, by enabling user-based PIN lock.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/ScreenlockedWithMeetingAlert.png"

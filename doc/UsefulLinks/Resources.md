@@ -2,6 +2,18 @@
 
 <table class="links">
   <tbody>
+      <tr>
+      <td><a href="https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html" target="_blank">API Reference Guide</a></td>
+      <td>Official CE xAPI reference documentation (PDF).</td>
+      <td><img class="logo" src="/doc/images/logos/cisco.png" /></td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://www.cisco.com/c/en/us/support/collaboration-endpoints/telepresence-quick-set-series/products-installation-and-configuration-guides-list.html" target="_blank">Configuration guides</a>
+      <td>Official Cisco guides to customize the Room devices</td>
+      <td><img class="logo" src="/doc/images/logos/cisco.png" /></td>
+      </td>
+    </tr>
     <tr>
       <td>
         <a href="https://developer.webex.com/" target="_blank">Webex for developers</a>
@@ -25,28 +37,16 @@
       <td><img class="logo" src="/doc/images/logos/devnet.png" /></td>
     </tr>
     <tr>
+      <td>
+        <a href="https://designer.webex.com/" target="_blank">Workspace Designer</a>
+        </td>
+        <td>Design your meeting rooms with a fully interactive, 3D web configurator.</td>
+      <td><img class="logo" src="/doc/images/logos/workspace-designer.png" /></td>
+    </tr>
+    <tr>
       <td><a href="https://github.com/CiscoDevNet/postman-xapi" target="_blank">Postman Collection</a></td>
       <td>Invoke the xAPI from the REST client and explore popular use cases from the Integrator and Administrator collections.</td>
       <td><img class="logo" src="/doc/images/logos/postman.png" /></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://projectworkplace.cisco.com/" target="_blank">Project Workplace</a>
-        </td>
-        <td>Overview of the Webex Room devices</td>
-      <td><img class="logo" src="/doc/images/logos/cisco.png" /></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-command-reference-list.html" target="_blank">API Reference Guide</a></td>
-      <td>Official CE xAPI reference documentation (PDF).</td>
-      <td><img class="logo" src="/doc/images/logos/cisco.png" /></td>
-    </tr>
-    <tr>
-      <td>
-        <a href="https://www.cisco.com/c/en/us/support/collaboration-endpoints/telepresence-quick-set-series/products-installation-and-configuration-guides-list.html" target="_blank">Configuration guides</a>
-      <td>Official Cisco guides to customize the Room devices</td>
-      <td><img class="logo" src="/doc/images/logos/cisco.png" /></td>
-      </td>
     </tr>
     <tr>
       <td><a href="https://www.npmjs.com/package/jsxapi" target="_blank">JSXAPI</a></td>
@@ -85,7 +85,7 @@
       <td>
         <a href="https://momentum.design/" target="_blank">Momentum design</a>
       <td>Cisco / Webex design guidelines and assets, if you want to create a style that is aligned with the native Webex experience.</td>
-      <td><img class="logo" src="https://momentum.design/apple-touch-icon-57x57.png" /></td>
+      <td><img class="logo" src="/doc/images/logos/momentum.png" /></td>
       </td>
     </tr>
     <tr>
@@ -114,7 +114,7 @@
         <a href="https://lightware.com/cisco-integration-lightware" target="_blank">Lightware</a>
       </td>
       <td>Modern AV solutions provider with eg video switches that work nicely with Cisco video devices.</td>
-      <td></td>
+      <td><img class="logo" src="/doc/images/logos/lightware.svg" /></td>
     </tr>
 
 </tbody>

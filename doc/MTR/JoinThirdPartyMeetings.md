@@ -69,9 +69,16 @@ To use full calling functionality, ensure that calling services are enabled in y
 
 1. Swipe from the right on the home screen to open the control panel.
 2. Tap **Google Meet**.
+
+<img src="/doc/images/MTR/google_meet.png" style="width: 200px" />
+  
 3. Enter the meeting code and tap **Join** to join the meeting.
 
 Read [this article](https://help.webex.com/en-us/article/nxx11sk/Join-Google-Meet-meetings-on-your-Cisco-device) for more information on Google Meet meetings and in-meeting controls.
+
+### Enabling Google Meet meetings
+
+In order to join Google Meet meetings, you need to **Enable Google Meet** in Control Hub. Read [here](help.webex.com/en-us/article/egg1su) to follow the steps. Note that OBTP is not available for Google Meet on MTR devices.
 
 ## Join Meetings with One Button to Push
 

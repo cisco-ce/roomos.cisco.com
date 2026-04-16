@@ -67,7 +67,7 @@ Users swipe right on the device UI, open the side menu, select Google Meet, ente
 
 Joining Google Meet meetings requires that the Cisco device is Webex registered.
 
-Read more about [Google Meet meetings](/doc/MTR/doc/MTR/JoinThirdPartyMeetings).
+Read more about [Google Meet meetings](https://roomos.cisco.com/doc/MTR/JoinThirdPartyMeetings).
 
 ## March 2026
 

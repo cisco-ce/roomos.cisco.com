@@ -1,6 +1,6 @@
-# Join Webex and Zoom Meetings
+# Join Webex, Zoom, and Google Meet Meetings
 
-You can easily join Webex and Zoom meetings, as well as make Webex calls. For scheduled meetings, you can join instantly using One Button To Push (OBTP).
+You can easily join Webex, Zoom, and Google Meet meetings, as well as make Webex calls. For scheduled Webex and Zoom meetings, you can join instantly using One Button To Push (OBTP).
 
 ## Join Webex Meetings
 
@@ -64,6 +64,14 @@ If your calling services are set to **None**, the calling options may appear gre
 * Calling to Zoom will not work because you won't be able to connect through the required gateway unless calling in Webex is enabled.
 
 To use full calling functionality, ensure that calling services are enabled in your Control Hub Settings.
+
+## Join Google Meet meetings
+
+1. Swipe from the right on the home screen to open the control panel.
+2. Tap **Google Meet**.
+3. Enter the meeting code and tap **Join** to join the meeting.
+
+Read [this article](https://help.webex.com/en-us/article/nxx11sk/Join-Google-Meet-meetings-on-your-Cisco-device) for more information on Google Meet meetings and in-meeting controls.
 
 ## Join Meetings with One Button to Push
 

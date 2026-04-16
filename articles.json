@@ -271,7 +271,7 @@
     },
     {
       "id": "JoinThirdPartyMeetings",
-      "title": "Join Webex and Zoom meetings",
+      "title": "Join Webex, Zoom, and Google Meet meetings",
       "description": "Place Webex calls and connect to third-party meetings directly from your device.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/Zoom_OBTP.png"
     },

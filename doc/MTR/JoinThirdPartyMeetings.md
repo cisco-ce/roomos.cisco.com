@@ -78,7 +78,7 @@ Read [this article](https://help.webex.com/en-us/article/nxx11sk/Join-Google-Mee
 
 ### Enabling Google Meet meetings
 
-In order to join Google Meet meetings, you need to **Enable WebRTC to join Google Meet** in Control Hub. Read [here](https://help.webex.com/en-us/article/egg1su/Enable-WebRTC-to-Join-Google-Meet-Meetings-on-Board,-Desk,-and-Room-Series) to follow the steps. Note that OBTP is not available for Google Meet on MTR devices.
+In order to join Google Meet meetings, you need to **Enable WebRTC to join Google Meet** in Control Hub. Read [this article](https://help.webex.com/en-us/article/egg1su/Enable-WebRTC-to-Join-Google-Meet-Meetings-on-Board,-Desk,-and-Room-Series) to follow the steps. Note that OBTP is not available for Google Meet on MTR devices.
 
 ## Join Meetings with One Button to Push
 

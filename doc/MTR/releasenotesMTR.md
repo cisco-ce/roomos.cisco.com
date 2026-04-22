@@ -620,7 +620,7 @@ Devices with Control Hub registration:
 
 Devices without Control Hub registration: 
 
-* [Enable from device web interface](DeviceManagement)
+* [Enable from device web interface](DeviceManagement#the-device-web-interface)
 
 ### Fixed issues 
 

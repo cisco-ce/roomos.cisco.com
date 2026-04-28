@@ -15,7 +15,7 @@ This document provides instructions for enabling and using the MTP sidebar exper
 
 ## 3. Overview
 The sidebar on Microsoft Teams Panel (MTP) provides users with quick access to:
-*   Settings
+*   Device settings
 *   UI extension action buttons
 *   UI extension panels and pop-up messages
 *   Web apps
@@ -40,12 +40,12 @@ To hide the entry:
 
 *When set to Hidden, the sidebar settings entry is no longer available on the MTP interface.*
 
-## 6. Enable cisco check-in/check-out in the sidebar
+## 6. Enable Cisco check-in/check-out in the sidebar
 To enable manual and automatic check-in features, use this configuration:
 
 `xConfiguration Bookings CheckIn Enabled: True`
 
-**With cisco check-in/check-out enabled:**
+**With Cisco check-in/check-out enabled:**
 *   Users can automatically check in when joining a meeting or occupying a room.
 *   A check-out reminder appears when leaving a meeting.
 *   Users can manually use the sidebar **Check in** and **Check out** buttons.
@@ -63,14 +63,16 @@ For detailed setup, refer to the official Cisco Help documentation: [Set up Room
 
 ## 7. Using the sidebar
 1.  From the MTP home screen, open the right-side control panel area.
-   <img src="/doc/images/MTR/side-bar-with-extensions.png" style="width: 700px"/>
 2.  Tap an extension action (e.g., **Open panel** or **Pop up**).
-   <img src="/doc/images/MTR/sidebar-example-extension-panel.png" style="width: 700px"/>
+   <img src="/doc/images/MTR/side-bar-with-extensions.png" style="width: 700px"/>
+   
 3.  Interact with the opened panel, message, or web app.
-4.  Dismiss the pop-up or close the panel when finished.
+   <img src="/doc/images/MTR/sidebar-example-extension-panel.png" style="width: 700px"/>
+   
+6.  Dismiss the pop-up or close the panel when finished.
    <img src="/doc/images/MTR/sidebar-example-popup-message.png" style="width: 700px"/>
 
-## 8. Cisco check in/check out behavior
+## 8. Cisco check-in/check-out behavior
 Automatic check-in is supported on MTR and MTP when Cisco check-in/check-out is configured. This feature also provides manual sidebar buttons for user-initiated status changes.
 
 *   **Automatic check-in:** Occurs when the room is detected as "in use" (e.g., people-count presence detection or when a call starts).
@@ -90,9 +92,9 @@ Web apps can be integrated into the MTP sidebar alongside UI extensions.
 *   **Auto check-in:** Supported when room occupancy is detected or a call is active.
 *   **Manual check-out:** Supported.
 
-### Ad-hoc Meetings (Created via "Reserve" Button)
-*   **Manual Check-in:** Supported.
-*   **Auto Check-in:** Supported when room occupancy is detected or a call is active.
+### Ad-hoc meetings (created using "Reserve" button)
+*   **Manual check-in:** Supported.
+*   **Auto check-in:** Supported when room occupancy is detected or a call is active.
 *   **Limitation:** Auto check-in does not trigger if 0 people are detected and there is no active call/sharing session.
 *   **Check-out:** Not available for "Reserve" button meetings due to Microsoft-side management limitations. If needed, delete the ad-hoc meeting directly from the Microsoft Teams calendar client.  
  

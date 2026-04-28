@@ -52,7 +52,7 @@ To enable manual and automatic check-in features, use this configuration:
 
 The sidebar displays **Check in** for meetings within the allowed window. Once checked in, the button toggles to **Check out**.
 
-For detailed setup, refer to the official Cisco Help documentation: *Set up Room Navigator as a room booking device.*
+For detailed setup, refer to the official Cisco Help documentation: [Set up Room Navigator as a room booking device.](https://help.webex.com/en-us/article/55ypt4/Set-up-Room-Navigator-as-a-room-booking-device#sx10_r_checkin_checkout)
 
 > **Note:** Cisco Check-in / Check-out cannot be used simultaneously with Microsoft's native MTP check-in and auto-release implementation.
 

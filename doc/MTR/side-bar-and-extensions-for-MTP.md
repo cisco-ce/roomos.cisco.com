@@ -1,9 +1,9 @@
 
 # Sidebar for Microsoft Teams Panel (MTP)
 
-This guide explains how to use the Sidebar on Microsoft Teams Panel (MTP), including settings access, UI extensions, web apps, and Cisco Check-in / Check-out controls on MTP and MTR.
+This guide explains how to use the sidebar on Microsoft Teams Panel (MTP), including settings access, UI extensions, web apps, and Cisco check-in/check-out controls on MTP and MTR.
 
-Automatic Cisco Check-in / Check-out is available when configured. This feature provides an enhanced experience by offering manual Check-in and Check-out buttons in the sidebar, alongside support for UI extensions and web apps on MTP.
+Automatic Cisco check-in/check-out is available when configured. This feature provides an enhanced experience by offering manual check-in and check-out buttons in the sidebar, alongside support for UI extensions and web apps on MTP.
 
 ## 1. Purpose
 This document provides instructions for enabling and using the MTP sidebar experience, detailing supported check-in/check-out flows, and outlining current system behaviors.
@@ -14,22 +14,22 @@ This document provides instructions for enabling and using the MTP sidebar exper
 *   **Developers or Admins** validating UI extensions, macros, or web apps on MTP.
 
 ## 3. Overview
-The Sidebar on Microsoft Teams Panel (MTP) provides users with quick access to:
+The sidebar on Microsoft Teams Panel (MTP) provides users with quick access to:
 *   Settings
 *   UI extension action buttons
 *   UI extension panels and pop-up messages
 *   Web apps
-*   Meeting Check-in / Check-out controls (when enabled)
+*   Meeting check-in/check-out controls (when enabled)
 
-The Cisco Check-in / Check-out sidebar UI is consistent across both MTP and MTR interfaces.
+The check-in/check-out sidebar UI is consistent across both MTP and MTR interfaces.
 
 ## 4. Requirements
 *   **Software:** Device must be running a supported RoomOS version that includes this feature.
 *   **Configuration:** Device must be configured as Microsoft Teams Panel (MTP) or Microsoft Teams Rooms (MTR).
 *   **Customization:** Upload your UI extensions, macros, or web apps to utilize custom actions from the sidebar.
-*   **Calendar:** Hybrid Calendar is required for Cisco Check-in / Check-out; the mailbox must match the one used for the MTR/MTP room.
+*   **Calendar:** Hybrid Calendar is required for Cisco check-in/check-out; the mailbox must match the one used for the MTR/MTP room.
 
-## 5. Enable the Sidebar on MTP
+## 5. Enable the sidebar on MTP
 To make the sidebar settings entry visible on MTP, use the following configuration:
 
 `xConfiguration UserInterface SettingsMenu Visibility: Auto`
@@ -40,46 +40,55 @@ To hide the entry:
 
 *When set to Hidden, the sidebar settings entry is no longer available on the MTP interface.*
 
-## 6. Enable Cisco Check-in / Check-out in the Sidebar
+## 6. Enable cisco check-in/check-out in the sidebar
 To enable manual and automatic check-in features, use this configuration:
 
 `xConfiguration Bookings CheckIn Enabled: True`
 
-**With Cisco Check-in / Check-out enabled:**
+**With cisco check-in/check-out enabled:**
 *   Users can automatically check in when joining a meeting or occupying a room.
 *   A check-out reminder appears when leaving a meeting.
 *   Users can manually use the sidebar **Check in** and **Check out** buttons.
+  <img src="/doc/images/MTR/sidebar-checkin.png" style="width: 700px"/>
 
 The sidebar displays **Check in** for meetings within the allowed window. Once checked in, the button toggles to **Check out**.
 
+<img src="/doc/images/MTR/sidebar-checkout.png" style="width: 700px"/>
+
+<img src="/doc/images/MTR/sidebar-checkout-confirmation.png" style="width: 700px"/>
+
 For detailed setup, refer to the official Cisco Help documentation: [Set up Room Navigator as a room booking device.](https://help.webex.com/en-us/article/55ypt4/Set-up-Room-Navigator-as-a-room-booking-device#sx10_r_checkin_checkout)
 
-> **Note:** Cisco Check-in / Check-out cannot be used simultaneously with Microsoft's native MTP check-in and auto-release implementation.
+> **Note:** Cisco check-in/check-out cannot be used simultaneously with Microsoft's native MTP check-in and auto-release implementation.
 
-## 7. Using the Sidebar
+## 7. Using the sidebar
 1.  From the MTP home screen, open the right-side control panel area.
+   <img src="/doc/images/MTR/side-bar-with-extensions.png" style="width: 700px"/>
 2.  Tap an extension action (e.g., **Open panel** or **Pop up**).
+   <img src="/doc/images/MTR/sidebar-example-extension-panel.png" style="width: 700px"/>
 3.  Interact with the opened panel, message, or web app.
 4.  Dismiss the pop-up or close the panel when finished.
+   <img src="/doc/images/MTR/sidebar-example-popup-message.png" style="width: 700px"/>
 
-## 8. Cisco Check-in / Check-out Behavior
-Automatic check-in is supported on MTR and MTP when Cisco Check-in / Check-out is configured. This feature also provides manual sidebar buttons for user-initiated status changes.
+## 8. Cisco check in/check out behavior
+Automatic check-in is supported on MTR and MTP when Cisco check-in/check-out is configured. This feature also provides manual sidebar buttons for user-initiated status changes.
 
-*   **Automatic Check-in:** Occurs when the room is detected as "in use" (e.g., people-count presence detection or when a call starts).
-*   **Auto-Release:** If no occupancy is detected, the room is automatically released after 10 minutes.
-*   **Manual Control:** Users can override or initiate these states via the sidebar buttons.
+*   **Automatic check-in:** Occurs when the room is detected as "in use" (e.g., people-count presence detection or when a call starts).
+*   **Auto-release:** If no occupancy is detected, the room is automatically released after 10 minutes.
+*   **Manual control:** Users can override or initiate these states via the sidebar buttons.
 
-## 9. Web Apps on the MTP Sidebar
+
+## 9. Web apps on the MTP sidebar
 Web apps can be integrated into the MTP sidebar alongside UI extensions.
 
 > **Note:** Performance may vary when running MTP simultaneously with complex web apps. Admins should validate that deployed web apps provide an optimal experience in their specific environment.
 
-## 10. Operational Behavior and Limitations
+## 10. Operational behavior and limitations
 
-### Scheduled Meetings
-*   **Manual Check-in:** Supported.
-*   **Auto Check-in:** Supported when room occupancy is detected or a call is active.
-*   **Manual Check-out:** Supported.
+### Scheduled meetings
+*   **Manual check-in:** Supported.
+*   **Auto check-in:** Supported when room occupancy is detected or a call is active.
+*   **Manual check-out:** Supported.
 
 ### Ad-hoc Meetings (Created via "Reserve" Button)
 *   **Manual Check-in:** Supported.

@@ -114,14 +114,20 @@ for (let n = 0; n < 5; n++) {
 
 Always make sure you at least `await` each HTTP call and don't send multiple within a short timeframe.
 
-<!-- How to deal with errors
+## Self signed certificates
 
+Web sites, especially internal ones, sometimes use self signed certificates, which is by default not allowed by Http Client. To access these you need to do two things:
+
+- Set [xConfiguration HttpClient AllowInsecureHTTPS](https://roomos.cisco.com/xapi/Configuration.HttpClient.AllowInsecureHTTPS/) to `True`
+- Set the `AllowInsecureHTTPS` parameter to `True` in specific xCommand where you issue the HTTP request
+
+## Limiting what Http Client can talk to
+
+If you want to specifically limit which domains Http Client can talk to (eg just acme.com), you can set these with [the allow host APIs](https://roomos.cisco.com/xapi/search?search=httpclient+allow+host). You can set the domain as a string, or as a regular expression.
+
+<!--
 Proxy
-
 Use to talk to other codecs
-
-Hostname limiting
-
 Certificates
-
-Using http client to access local network resources from outside -->
+Using http client to access local network resources from outside
+-->

@@ -300,16 +300,15 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/MTP.png"
     },
     {
-      "id": "AOSP",
-      "title": "AOSP Device Management",
-      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management.",
-      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
-    }
-    ,
-    {
       "id": "side-bar-and-extensions-for-MTP",
       "title": "Sidebar for Microsoft Teams Panel (MTP)",
       "description": "Sidebar for Microsoft Teams Panel (MTP)",
+      "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/side-bar-with-extensions.png"
+    },
+    {
+      "id": "AOSP",
+      "title": "AOSP Device Management",
+      "description": "Moving Microsoft Teams Android Devices to AOSP Device Management.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/MTR/mtrlogo.png"
     }
   ],

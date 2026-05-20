@@ -13,6 +13,7 @@ This release note describes new software features and capabilities included in C
 * Cisco Board Pro 75
 * Cisco Board Pro G2
 * Cisco Desk Pro
+* Cisco Desk Pro G2
 * Cisco Room Bar
 * Cisco Room Bar Pro
 * Cisco Room Kit EQ

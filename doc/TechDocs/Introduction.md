@@ -30,7 +30,7 @@ Use a terminal window to SSH into your device. This is typically done to explore
 
 ## Web socket
 
-Connect with full-duplex web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/doc/TechDocs/JSXAPIIntro) if you want to use this integration type.
+Connect with full-duplex web sockets from external servers, Raspberry Pis, mobile phones, web browsers etc. This requires your integration be on the same network as the video device, and a local user to authenticate. We recommend the [JSXAPI SDK for Node.js](/doc/TechDocs/JSXAPIIntro) if you want to use this integration type. If you are using eg Python, see [the raw websocket API guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/api/collaboration-endpoint-software-api-transport.pdf) instead.
 
 ## Webex API (cloud)
 
@@ -38,7 +38,7 @@ Connect to the xAPI with REST APIs on the Webex platform over cloud, which means
 
 ## Macros
 
-Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom user interface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can  See the [tutorial](/doc/TechDocs/MacroTutorial) to get started.
+Macros are user scripts that run on the device itself. They are written in JavaScript. This makes it easy to automate tasks, control other hardware in the room or make custom user interface elements on the touch panels. Macros can be created with the macro editor available from the web interface of the video device. Macros has full access to the xAPI, and can See the [tutorial](/doc/TechDocs/MacroTutorial) to get started.
 
 ## HTTP(S)
 
@@ -72,9 +72,7 @@ A roomcontrol user can create customized UI panels (for example UI extension pan
 
 An integrator has access to settings, commands, and status that are required to set up advanced A/V scenarios, and to integrate the Webex devices with third-party equipment, in addition to the same features as roomcontrol user.
 
-
 <!--
 ## Deployments (onprem, cloud, edge)
 ## User roles
 -->
-

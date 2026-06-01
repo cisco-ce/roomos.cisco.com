@@ -2,7 +2,7 @@
 # RoomOS 26
 # Release notes
 ---
-D15563.01 - March 2026
+D15563.02 - June 2026
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15563.01 - March 2026
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>02</td> 
+		<td>June 1, 2026</td> 
+		<td>
+			Release of <a href='#26.5' title='Jump to section'>RoomOS 26.5.2.2</a>, Minor<br>
+		</td>
 	</tr>
 	<tr>
 		<td>01</td> 
@@ -33,7 +40,7 @@ This release note describes new software features and capabilities included in R
 	</tr>
 	<tr>
 		<td>
-			Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro<br> 
+			Cisco Room Kit Pro, Room Kit Pro G2, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro<br> 
 			Cisco Codec Pro, Codec EQ<br>
 			Cisco Room 70 G2 (Single/Dual)<br>
 			Cisco Room Panorama, Room 70 Panorama<br>
@@ -58,7 +65,7 @@ This release note describes new software features and capabilities included in R
 	</tr>
 	<tr>
 		<td>
-			Cisco Desk, Desk Pro, Desk Mini
+			Cisco Desk, Desk Pro, Desk Pro G2, Desk Mini
 		</td>
 	</tr>
 </table>
@@ -100,6 +107,108 @@ Note: SpeakerTrack 60 has limited support in Microsoft Teams Rooms (MTR) scenari
 For more information about End of Life of Cisco RoomOS Devices, please find a detailed overview here: [End of Support for RoomOS Devices](https://help.webex.com/en-us/article/n9qmylfb/End-of-support-for-RoomOS-devices)
 
 <br><br>  
+
+<a name='26.5'></a>
+
+# Release summary for RoomOS 26.5
+
+## Notes and warnings for this software release
+
+### RoomOS 26.5
+
+This release builds on the previous RoomOS 26 release and adds new device support, meeting enhancements, administration improvements, and new collaboration capabilities. 
+
+<a name="limitations-roomos265"></a>
+
+**Current known limitations**
+
+No noteworthy limitations to mention at this time.
+
+## RoomOS 26.5.2.2
+
+* [Digital Signage for Room Schedulers](#26522-1)
+* [Support for Desk Pro G2](#26522-2)
+* [Support for Room Kit Pro G2](#26522-3)
+* [Room Bar Pro BYOD](#26522-4)
+* [Improved call quality on Wi-Fi networks](#26522-5)
+* [High-Performance Background Noise Removal](#26522-6)
+* [Moving PTZ cameras in multicamera setups](#26522-7)
+* [Exclusion zone UI](#26522-8)
+* [Miracast sharing support on 5 GHz channels](#26522-9)
+* [4K sharing with Miracast](#26522-10)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 26.5.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=26.5.2&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 26.5.2.2 feature descriptions 
+
+<a name='26522-1'></a>
+
+## Digital Signage for Room Schedulers
+
+Room schedulers can now display digital signage when they are not actively being used for booking. This allows the same signage experience available inside the room to also be shown on paired or standalone Room Navigator panels in Cisco Room Booking and Microsoft Teams Panel mode.
+
+<a name='26522-2'></a>
+
+## Support for Cisco Desk Pro G2
+
+RoomOS 26 now adds support for Cisco Desk Pro G2. The new device introduces a significant CPU and AI performance increase, a new camera module with both main and wide lenses, improved I/O, and a refined display with better contrast, color reproduction, and blue light filtering.
+
+Read more about Cisco Desk Pro G2 [Here](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-desk-series/desk-pro-g2.html)
+
+<a name='26522-3'></a>
+
+## Support for Cisco Room Kit Pro G2
+
+RoomOS 26 now adds support for Cisco Room Kit Pro G2. Room Kit Pro G2 brings an AI-first collaboration device solution to high-impact spaces, including large conference rooms, multi-camera spaces, training rooms, boardrooms, and divisible-room deployments. With an AI room engine, intelligent camera options, an intuitive touch controller, and support for room accessories, it provides a scalable foundation for next-generation meeting workflows, high-end AV over IP room orchestration, and extensive conferencing integrations.
+
+Read more about Cisco Room Kit Pro G2 [Here](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-room-series/room-kit-pro-g2-ds.html)
+
+<a name='26522-4'></a>
+
+## Room Bar Pro BYOD
+
+BYOD mode is now available for Cisco Room Bar Pro. This lets you use the device as a high-performance USB-C passthrough for laptop-hosted meetings, bringing Room Bar Pro camera and audio capabilities into third-party meeting experiences without requiring a Navigator controller.
+
+<a name='26522-5'></a>
+
+## Improved call quality on Wi-Fi networks
+
+This release improves call stability on Wi-Fi by preventing the device from going off-channel to collect radio measurement data during calls. That helps reduce interruptions while still preserving the wireless behavior needed for stationary collaboration devices.
+
+<a name='26522-6'></a>
+
+## High-Performance Background Noise Removal
+
+High-Performance Background Noise Removal uses advanced AI processing to reduce distracting background noise with greater efficiency. This improves audio clarity in demanding environments while keeping device performance high.
+
+<a name='26522-7'></a>
+
+## Moving PTZ cameras in multicamera setups
+
+Support for moving PTZ cameras in multicamera setups enables more flexible camera placement in larger rooms. By using physical pan, tilt, and zoom for framing, the system can deliver clearer video without relying on digital cropping and can better support cross-view room designs.
+
+<a name='26522-8'></a>
+
+## Exclusion zone UI
+
+The new exclusion zone UI makes it easier for administrators to define areas where people should not be detected or tracked by the camera. This helps improve framing and reduces unwanted tracking in more complex room layouts.
+
+<a name='26522-9'></a>
+
+## Miracast sharing support on 5 GHz channels
+
+Miracast direct sharing now supports selected 5 GHz Wi-Fi channels. Using 5 GHz can provide higher throughput, less interference, and better sharing quality in environments where the 2.4 GHz band is congested.
+
+<a name='26522-10'></a>
+
+## 4K sharing with Miracast
+
+Miracast now supports 4K content sharing on supported devices and displays. This provides sharper image quality and more detail when sharing high-resolution content wirelessly.
+
+<br><br>
 
 <a name='26.2'></a>
 
@@ -298,13 +407,16 @@ Before you start, make sure you download software for the correct platform.
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS 26 software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_2_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_2_2_2.k4.cop.sha512</b>***</td>
+		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_5_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_5_2_2.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_2_2_2.pkg</b><br><b>cmterm-s53350-mtp-ce26_2_2_2.k4.cop.sha512</b></td>
+		<td>Cisco Desk Pro G2, Cisco Room Kit Pro G2</td> <td><b>s53600</b></td> <td><b>cmterm-s53600ce26_5_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53600-mtr-ce26_5_2_2.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_2_2_2.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_5_2_2.pkg</b><br><b>cmterm-s53350-mtp-ce26_5_2_2.k4.cop.sha512</b></td>
+	</tr>
+	<tr>
+		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_5_2_2.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -315,11 +427,21 @@ Before you start, make sure you download software for the correct platform.
 
 ## MTR version contained in the MTR cop file
 
+### RoomOS 26.5
+- cmterm-s53300-mtr-ce26_5_2_2.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026048906
+
+- cmterm-s53600-mtr-ce26_5_2_2.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026048906
+
+- cmterm-s53350-mtp-ce26_5_2_2.k4.cop.sha512
+    - MTP: 1449/1.0.97.2025364207
+
 ### RoomOS 26.2
-cmterm-s53300-mtr-ce26_2_2_2.k4.cop.sha512
-- MTR: 1449/1.0.96.2025341701
-cmterm-s53350-mtp-ce26_2_2_2.k4.cop.sha512
-- MTP: 1449/1.0.97.2025364207
+- cmterm-s53300-mtr-ce26_2_2_2.k4.cop.sha512
+    - MTR: 1449/1.0.96.2025341701
+- cmterm-s53350-mtp-ce26_2_2_2.k4.cop.sha512
+    - MTP: 1449/1.0.97.2025364207
 
 The "All products" cop file (super cop) must only be installed to a Unified CM. This package provides software to all supported video models and peripherals, so you only have to install one cop file if you have multiple products. 
 
@@ -711,6 +833,10 @@ Devices flagged with "NR" (No Radio) do not have Wi-Fi capability.
 		<td>All revisions</td> <td>26.2.2.2</td> 
 	</tr>
 	<tr>
+		<td>Cisco Room Kit Pro G2</td>
+		<td>All revisions</td> <td>26.5.2.2</td> 
+	</tr>
+	<tr>
 		<td>Cisco Room Kit EQ</td> 
 		<td>All revisions</td> <td>26.2.2.2</td> 
 	</tr>
@@ -781,6 +907,10 @@ Devices flagged with "NR" (No Radio) do not have Wi-Fi capability.
 	<tr>
 		<td>Cisco Desk Pro</td> 
 		<td>All revisions</td> <td>26.2.2.2</td> 
+	</tr>
+	<tr>
+		<td>Cisco Desk Pro G2</td> 
+		<td>All revisions</td> <td>26.5.2.2</td> 
 	</tr>
 	<tr>
 		<td>Cisco Desk</td> 

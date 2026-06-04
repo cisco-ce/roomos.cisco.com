@@ -84,9 +84,16 @@ For Cisco collaboration devices running Microsoft Teams Rooms and Control Hub, y
 
 With Cisco as the software provider, you can choose from the following channels:
 
+* **Microsoft Approved:** This provides the software that has been tested and approved by Microsoft. It provides the same software version that is available from Microsoft.
+  * See https://learn.microsoft.com/microsoftteams/devices/android-version-support for details on Microsoft's support policies and versions.
+* **Microsoft Verification:** A controlled validation channel for customers who want to verify Microsoft approved software in their environment with a small or specific device group before production use.
+  * This is a virtual channel which can be set to reference any available Microsoft approved software version.
+* **Microsoft Trial:** A broader early-use channel for customers who want to trial the Microsoft-approved software before moving it to their main production channel. This is closer to a pilot rollout.
+  * This is a virtual channel which can be set to reference any available Microsoft approved software version.
+* **Microsoft Approval Candidate:** This channel provides early access to software undergoing approval testing at Microsoft. This channel can be used by administrators to get an early preview of the next release prepared for the Microsoft Approved channel.
+  * Microsoft Approval Candidate is not officially supported by Microsoft, as it is still going through the approval process. The software is subject to change in the event of required fixes. The duration of the Microsoft approval process varies.
 * **Stable:** Default option. The latest Stable release of RoomOS that contains software fixes and new features.
   * Software update typically once a month
-* **Microsoft approved:** Provides the same software version that is available through Teams Admin Center. Supported by Microsoft.
 * **Preview:** Preview of the upcoming stable release that contains fixes to the software, but no new features.
   *	Software update typically once a month.
 * **Verification:** Can be used to verify a new release before deploying it. 

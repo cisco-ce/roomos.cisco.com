@@ -1,5 +1,5 @@
 # Release notes
-(Updated May 20, 2026) 
+(Updated Juna 4, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -55,6 +55,18 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 **Updated: Teams App Version 1449/1.0.96.2025325609**
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+
+## June 2026
+
+### Custom channels for Microsoft approved software
+
+We've added three more custom channels for Microsoft approved software: Verification, Trial, and Approval Candidate. This provides more flexibility for testing and rolling out new software versions in your deployment.
+
+These additional software channels are available in Control Hub when advanced software control is enabled.
+
+Requires Control Hub registration.
+
+Read more about [custom software channels](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades).
 
 ## May 2026
 

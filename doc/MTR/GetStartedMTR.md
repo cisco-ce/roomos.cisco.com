@@ -29,7 +29,7 @@ Tap **Meet now** to start an instant meeting and select **Add Participants** to 
 
 ### Join with Meeting ID
 
-If you want to join a meeting that isn't on your calendar tap **Join with meeting ID**. You will be prompted to enter your details and credentils into the **Meeting ID** and **Passcode** fields. Tap **Join Meeting** when you're ready.
+If you want to join a meeting that isn't on your calendar tap **Join with meeting ID**. You will be prompted to enter your details and credentials into the **Meeting ID** and **Passcode** fields. Tap **Join Meeting** when you're ready.
 
 For more detailed information on Microsoft Teams meetings, check the Microsoft documentation [here](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-android-68517298-d513-46be-8d6d-d41db5e6b4b2).
 
@@ -72,6 +72,12 @@ Connect your computer to the device with a USB-C or HDMI cable.
    <img src="/doc/images/MTR/share-experience-2.png" style="width: 500px" />
 
 4. Tap **Stop sharing** to end the share when you're finished.
+
+**NOTE:** if *PresentationSelection* is set to *Manual* for your device, HDMI inputs need to be selected in RoomOS to be available for content sharing. If they aren't, when you connect a device and click **Share**, you'll see a message that 'no device is connected'. 
+
+To enable HDMI sharing on an MTR device, swipe left on the MTR homescreen to open the RoomOS side panel. Go to **Share Options** and select the source. Keep in mind that if you tap "Hide" on the RoomOS Share Options menu, the input will not be recognized by MTR.
+Or, if only one sharing source is in use, the Administrator can set the following configuration:
+*UserInterface Features Share MTRShareExperience: Microsoft*
 
 ### Wireless sharing with Miracast®
 

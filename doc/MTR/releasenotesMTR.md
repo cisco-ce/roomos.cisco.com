@@ -1,9 +1,9 @@
 # Release notes
-(Updated Juna 4, 2026) 
+(Updated June 17, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 26.5.1.3, based on RoomOS April 2026. This software version includes Teams Rooms App 1449/1.0.96.2026048906.**
+**The latest software version supported by Microsoft: RoomOS 26.5.1.5, based on RoomOS April 2026. This software version includes Teams Rooms App 1449/1.0.96.2026048906.**
 
 **NOTE: From RoomOS 11.29.1, which introduces Android 13, it is not possible to downgrade to an earlier version of RoomOS. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms. This is due that Android 13 cannot downgrade between security patches. Read more about this on the [Software Upgrade](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades) page.**
 

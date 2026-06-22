@@ -1,5 +1,5 @@
 # Release notes
-(Updated June 17, 2026) 
+(Updated June 22, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -56,6 +56,19 @@ Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If yo
 
 Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
 
+## RoomOS 26.7.1.7 
+
+**June 22, 2026**
+
+### Fixed issues
+
+* CSCwu53670 - Room Navigator fails to start Microsoft Teams Rooms app.
+* CSCwu46096 - Room Navigator disconnects after a few minutes during remote access session.
+* CSCwu00647 - Camera unexpectedly stops during a call.
+* CSCwp17364 - Device loses main video during a Microsoft Teams Meeting until source switch occurs.
+* CSCwu10097 - Not able to register to ThousandEyes.
+
+
 ## June 2026
 
 ### Custom channels for Microsoft approved software
@@ -68,9 +81,9 @@ Requires Control Hub registration.
 
 Read more about [custom software channels](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades).
 
-## May 2026
+## RoomOS 26.6.1.4
 
-**Software version: RoomOS 26.6.1.4**
+**May 11, 2026**
 
 ### Side panel and UI extensions for Microsoft Teams Panel 
 
@@ -84,9 +97,9 @@ We've added a side panel on Microsoft Teams Panels which allows for UI Extension
 
 Read more about [side panel and UI extensions](https://roomos.cisco.com/doc/MTR/side-bar-and-extensions-for-MTP).
 
-## April 2026
+## RoomOS 26.5.1.3
 
-**Software version: RoomOS 26.5.1.3**
+**April 15, 2026**
 
 ### Join Google Meet meetings
 
@@ -98,13 +111,13 @@ Joining Google Meet meetings requires that the Cisco device is Webex registered.
 
 Read more about [Google Meet meetings](https://roomos.cisco.com/doc/MTR/JoinThirdPartyMeetings).
 
-## March 2026
+## RoomOS 26.4.1.4
 
-**Software version: RoomOS 26.4.1.4**
+**March 9, 2026**
 
-## February 2026
+## RoomOS 26.3.1.3
 
-**Software version: RoomOS 26.3.1.3**
+**February 2, 2026**
 
 **Cisco Camera Modes in Microsoft Teams UI and Microsoft IntelliFrame**
 
@@ -128,9 +141,9 @@ Note: Dynamic Mode remains the default camera experience and there is no change 
 * CSCws45837 - Device can crash with the following signature in logs: SIGSEGV in art::gc::collector::ConcurrentCopying::Copy.
 * CSCws67180 - Green video feed from Room Vision PTZ camera. 
 
-## January 2026
+## RoomOS 26.2.1.5
 
-**Software version: RoomOS 26.2.1.5**
+**January 15, 2026**
 
 **Microsoft Teams Panel screenshots**
 
@@ -143,9 +156,9 @@ A Remote Access key is no longer required to take screenshots of a Microsoft Tea
 * CSCwq75099 - PowerPoint Live: Embedded videos freeze occasionally.
 * CSCws76661 - Microsoft Teams Panel freezes after attempting to open the sidebar.
 
-## December 2025
+## RoomOS 26.1.1.3
 
-**Software version: RoomOS 26.1.1.3**
+**December 8, 2025**
 
 **HDMI out now Enabled by default**
 
@@ -162,9 +175,9 @@ Work is ongoing to ensure proper software behavior when a new screen is connecte
 * CSCwo88434 - Using active pen for whiteboarding causes the device to crash.
 * CSCwr43696 - Device crashes or becomes unresponsive after issuing the command Security Certificates CSR Create.
 
-## November 2025
+## RoomOS 26.0.1.2
 
-**Software version: RoomOS  26.0.1.2**
+**November 10, 2025**
 
 ### Wireless touch forwarding on Miracast shares
 
@@ -193,14 +206,16 @@ Read more about [sharing with Miracast](https://help.webex.com/kfdwufb/).
 * CSCwr78261 - Room Navigator is stuck on 'Getting everything ready'.
 * CSCwr77606 - Share tray opens when Miracast share starts in a Microsoft Teams call covering the share button.
 
-## October 2025
+## RoomOS 11.33.1.7
 
-**Software version: RoomOS 11.33.1.7**
+**October 27, 2025**
 
 ### Fixed issues
 * CSCwr78261 - Room Navigator is stuck on 'Getting everything ready'.
 
-**Software version: RoomOS 11.33.1.3**
+## RoomOS 11.33.1.3
+
+**October 1, 2025**
 
 ### Wireless sharing with AirPlay
 
@@ -212,14 +227,11 @@ AirPlay sharing currently requires that the Cisco device is Webex registered.
 
 Read more about how to [configure](https://help.webex.com/n29ja5v/) and [use](https://roomos.cisco.com/doc/MTR/GetStartedMTR#content-sharing) AirPlay on Cisco devices.
 
-
 ### Fixed issues
 * CSCwq80350 - Devices cannot join E2EE Webex Meetings when starting the meeting through a connected Webex App.
 * CSCwq37949 - Room Navigator becomes unresponsive when clicking on reaction button during a meeting.
 
-## September 2025
-
-**Software version: RoomOS 11.32.1.6**
+## RoomOS 11.32.1.6
 
 ### Active stylus support with third-party touch screens
 
@@ -231,16 +243,16 @@ Read more about [third-party touch screen support](https://help.webex.com/ncyh2f
 * CSCwq70358 - Presentation automatically starts after it is closed and a new call is made when a laptop is still connected.
 * CSCwq37949 - Room Navigator becomes unresponsive when clicking on reaction button during a meeting.
 
-## August 2025
+## RoomOS 11.31.1.5
 
-**Software version: RoomOS 11.31.1.5**
+**August 14, 2025**
 
 ### Fixed issues
 * CSCwp65243 - Codec with Quadcam and PTZ 4K cameras connected, randomly crashes and reboots.
 
-## July 2025
+## RoomOS 11.30.1.5
 
-**Software version: RoomOS 11.30.1.5**
+**July 8, 2025**
 
 ### Miracast Indicator on Microsoft Teams Rooms
 
@@ -252,13 +264,11 @@ Miracast allows you to wirelessly share content from your laptop or mobile to yo
 * CSCwo67365 - Cannot scroll through camera presets.
 * CSCwo60665 - Removing the USB-C cable during active share disables ability to share from HDMI during Teams meetings.
 
-## June 2025
+## RoomOS 11.29.1.5
 
 **NOTE:** RoomOS June is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
 
-### RoomOS June
-
-**Software version: RoomOS 11.29.1.5**
+**June 4, 2025**
 
 ### Support for Android 13
 
@@ -270,13 +280,11 @@ NOTE: With Android 13 and onward, it is not possible to downgrade to an earlier 
 
 * CSCwp17364 - Device loses main video during Microsoft Teams Meeting until source switch occurs.
 
-## May 2025
+## RoomOS 11.28.1.5
 
 **NOTE:** RoomOS May is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
 
-### RoomOS May
-
-**Software version: RoomOS 11.28.1.5**
+**May 14, 2025**
 
 ### Classroom camera mode
 
@@ -291,18 +299,18 @@ Classroom mode is available on:
 
 Read more about [Classroom mode](/doc/MTR/classroom).
 
-## April 2025
+## RoomOS 11.27.1.8
 
 **NOTE:** RoomOS April is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about [Moving Microsoft Teams Android Devices to AOSP Device Management](/doc/MTR/AOSP).
 
-### RoomOS April
-
-**Software version: RoomOS 11.27.1.8**
+**April 28, 2025**
 
 ### Fixed issues
 * CSCwo90323 - "Microphone muted" notification appears in some scenarios when microphone is not muted.
 
-**Software version: RoomOS 11.27.1.7**
+## RoomOS 11.27.1.7
+
+**April 10, 2025**
 
 ### Extended USB camera support
 
@@ -314,13 +322,11 @@ Read more about [USB content camera support](/doc/MTR/USBContentCameraMainVideo)
 * CSCwo33123 - Unable to disable Standby Level Networked Mode.
 
 
-## March 2025
+## RoomOS 11.26.1.5
 
 **NOTE:** RoomOS February and RoomOS March is available for devices with Microsoft Teams Rooms that have finalized the AOSP Device Management migration. Read more about Moving Microsoft Teams Android Devices to AOSP Device Management.
 
-### RoomOS March
-
-**Software version: RoomOS 11.26.1.5**
+**March 5, 2025**
 
 ### USB content camera support
 RoomOS devices now support content cameras that can be plugged into a USB port in or out of a call. Any USB2.0 camera that supports MJPEG format should work.
@@ -350,18 +356,16 @@ Read more about [Zoom Meetings with One Button To Push](/doc/MTR/ZoomMeetings).
 ### Fixed issues
 * CSCwm50278 - Recorder Mode not working as described.
 
-### RoomOS February
+## RoomOS 11.25.1.6
 
-**Software version:RoomOS 11.25.1.6**
+**February 12, 2025**
 
 ### Fixed issues
 * CSCwn25022 - 'Video Input Connector 6' configurations for Codec Pro not visible in the device web interface.
 
-## February 2025
+## RoomOS 11.24.1.8
 
-### RoomOS January
-
-**Software version: RoomOS 11.24.1.8** 
+**February 20, 2025** 
 
 ### Fixed issues
 * CSCwn49592 - Auto-share of black screen if a powered extender is connected to a device.
@@ -370,11 +374,9 @@ Read more about [Zoom Meetings with One Button To Push](/doc/MTR/ZoomMeetings).
 * CSCwn38129 - Miracast share has to be selected when shared into Microsoft Teams call. Auto-share is not available.
 
 
-## December 2024
+## RoomOS 11.23.1.8
 
-### RoomOS December
-
-**Software version: RoomOS 11.23.1.8 3963b07b5c5**
+**December 13, 2024**
 
 ### Remote access to devices
 
@@ -412,11 +414,9 @@ Read more about [screen lock](/doc/MTR/PINlock).
 * CSCwm59937 - RoomOs local share doesn't share audio until share is initiated from Microsoft Teams share menu.
 * CSCwm53333 - Software encoder fallback when joining meetings.
 
-## November 2024
+## RoomOS 11.22.1.7
 
-### RoomOS November
-
-**Software version: RoomOS 11.22.1.7 1eb6bbe23da** 
+**November 7, 2024** 
 
 ### Fixed issues
 * CSCwm59937 - Local share doesn't share audio until share is initiated from Microsoft Teams Rooms UI.
@@ -424,11 +424,9 @@ Read more about [screen lock](/doc/MTR/PINlock).
 * CSCwm55140 - Crash during sharing event.
 * CSCwm47351 - Microphone mute doesn't work when doing USB-C passthrough.
 
-## October 2024
+## RoomOS 11.21.1.4
 
-### RoomOS October
-
-**Software version: RoomOS 11.21.1.4 2a8ad5d61cc**
+**October 7, 2024**
 
 ### Microsoft Teams panel
 
@@ -446,11 +444,9 @@ Read more about [Microsoft Teams panels](https://learn.microsoft.com/microsoftte
 * CSCwm55140 - Crash during sharing event.
 * CSCwm32910 - No audio when Miracast sharing in a Teams call.
 
-## September 2024
+## RoomOS 11.20.1.7
 
-### RoomOS September
-
-**Software version: RoomOS 11.20.1.7 913a6c7c769**
+**September 17, 2024**
 
 ### Fixed issues 
 
@@ -465,11 +461,9 @@ Read more about [Microsoft Teams panels](https://learn.microsoft.com/microsoftte
 * CSCwj29348 - System crash in a device for Microsoft Teams Rooms.
 * CSCwk77160 - Miracast local audio not working on a device for Microsoft Teams Rooms.
 
-## August 2024
+## RoomOS 11.19.1.7
 
-### RoomOS August
-
-**Software version: RoomOS 11.19.1.7 3055d561c16**
+**August 8, 2024**
 
 ### New and changed features
 
@@ -496,11 +490,9 @@ Read more about [extended speaker view](https://help.webex.com/n1av2t9/).
 
 * CSCwk77160 - Miracast local audio not working on device with Microsoft Teams Rooms.
 
-## July 2024
+## RoomOS 11.18.1.6
 
-### RoomOS July
-
-**Software version: RoomOS 11.18.1.6 88e19d15753**
+**July 8, 2024**
 
 NOTE: If you have registered your devices to Control Hub, you may see the following configuration change on a device's History page in Control Hub. This configuration doesn't have any effect on the device and can be ignored.
 
@@ -528,11 +520,9 @@ Benefits include:
 * CSCwj91288 - Had to toggle mute button to get the device to send audio to the far-end site.
 * CSCwk11016 - Unify the xStatus output for devices with and without Microsoft Teams Rooms.
 
-## May 2024
+## RoomOS 11.16.1.7
 
-### RoomOS May
-
-**Software version: RoomOS 11.16.1.7 81e0063ac75**
+**May 13, 2024**
 
 ### New and changed features
 
@@ -548,13 +538,13 @@ Requires Control Hub registration.
 
 Read more about [the call app](/doc/MTR/RoomOSCalling).
 
-## April 2024
+## RoomOS 11.15.1.8
 
-### RoomOS April
+**May 8, 2024**
 
-**Software version: RoomOS 11.15.1.8 08c1fed621a**
+## RoomOS 11.15.1.6
 
-**Software version: RoomOS 11.15.1.6 ab740596da6**
+**April 11, 2024**
 
 ### New and changed features
 
@@ -611,11 +601,9 @@ Read more about [setting up presenter tracking](https://help.webex.com/9ur0g6/).
 * CSCwj14420 - Disable the Webex Assistant wakeword.
 
 
-## March 2024
+## RoomOS 11.14.1.5
 
-### RoomOS March
-
-**Software version: RoomOS 11.14.1.5 1bf4e96858f**
+**March 6, 2024**
 
 ### New and changed features
 

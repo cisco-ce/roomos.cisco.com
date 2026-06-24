@@ -1,5 +1,5 @@
 # Release notes
-(Updated June 22, 2026) 
+(Updated June 24, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -81,21 +81,17 @@ Requires Control Hub registration.
 
 Read more about [custom software channels](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades).
 
+## RoomOS 26.5.1.5
+
+**June 17, 2026**
+
+### Fixed issues
+
+* CSCwu53670 - After upgrading from RoomOS 26.4.1.4 to 26.5.1.3 some Room Navigators fail to start the Microsoft Teams Rooms application. Symptom is that the Room Navigator is showing three dots on the screen, while the RoomOs sidebar works. This was due to a bug in the software upgrade handling.
+
 ## RoomOS 26.6.1.4
 
 **May 11, 2026**
-
-### Side panel and UI extensions for Microsoft Teams Panel 
-
-We have added support for settings, UI extensions, check-in/check-out controls on the side panel for Room Navigator with Microsoft Teams Panel. Now you can get the same programmability through macros, extensions and web views that have been available on other Cisco devices with Microsoft Teams Rooms.
-
-The existing automatic check-in/ccheck-out behavior works as it has been before, while adding manual controls for a more flexible room experience. 
-
-NOTE: RoomOS check-in/check-out can't be used together with Microsoft's buildt-in Microsoft Teams Panel check-in and auto-release implementation.
-
-We've added a side panel on Microsoft Teams Panels which allows for UI Extensions, UI Messages, and Apps on the Room Navigator. This update sdditionally provides Check In and Check out buttons for configured spaces. 
-
-Read more about [side panel and UI extensions](https://roomos.cisco.com/doc/MTR/side-bar-and-extensions-for-MTP).
 
 ## RoomOS 26.5.1.3
 

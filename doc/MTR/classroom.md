@@ -36,7 +36,7 @@ The classroom setup is available as a room type template. When you set up a room
 *	For most setups, we recommend that you use two screens.
 
 ### Two cameras:
-*	Audience camera: Use the integrated camera for devices that have that. For other devices, we recommend the Quad Camera or SpeakerTrack 60 camera. We recommend a camera that supports speaker tracking, but it is also possible to use a camera without speaker tracking capabilities.
+*	Audience camera: Use the integrated camera for devices that have that. For other devices, we recommend the Quad Camera or SpeakerTrack 60 camera.
 *	Presenter camera: A PTZ 4K or Precision 60 camera with presenter tracking enabled.
 
 ### Microphones:

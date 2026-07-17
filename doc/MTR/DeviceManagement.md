@@ -77,7 +77,7 @@ The update path for your Cisco collaboration devices depends on how they are reg
 
 ### 1. Management models
 - **Devices not registered to Control Hub:** These devices are managed exclusively through the **Teams Admin Center (TAC)**. Updates are subject to Microsoft’s verification process, which may result in a different update cadence than Cisco-managed releases. Note that if the Microsoft verification process is delayed, specific releases may be skipped.
-- **Devices registered to Control Hub:** You can designate either **Cisco** or **Microsoft** as the software provider. Selecting Cisco enables advanced software upgrade features and granular channel control. See details below. [^comment-0] [^comment-1]
+- **Devices registered to Control Hub:** You can designate either **Cisco** or **Microsoft** as the software provider. Selecting Cisco enables advanced software upgrade features and granular channel control. 
 
 ### Important: Microsoft application lifecycle
 

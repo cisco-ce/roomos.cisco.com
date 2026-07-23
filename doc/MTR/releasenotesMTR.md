@@ -1,9 +1,9 @@
 # Release notes
-(Updated June 24, 2026) 
+(Updated July 23, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 26.5.1.5, based on RoomOS April 2026. This software version includes Teams Rooms App 1449/1.0.96.2026048906.**
+**The latest software version supported by Microsoft: RoomOS 26.6.1.8, based on RoomOS July 2026. This software version includes Teams Rooms App 1449/1.0.96.2026048906.**
 
 **NOTE: From RoomOS 11.29.1, which introduces Android 13, it is not possible to downgrade to an earlier version of RoomOS. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms. This is due that Android 13 cannot downgrade between security patches. Read more about this on the [Software Upgrade](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades) page.**
 
@@ -12,6 +12,7 @@ This release note describes new software features and capabilities included in C
 * Cisco Board Pro 55
 * Cisco Board Pro 75
 * Cisco Board Pro G2
+* Cisco Board Pro G3
 * Cisco Desk Pro
 * Cisco Desk Pro G2
 * Cisco Room Bar
@@ -19,6 +20,7 @@ This release note describes new software features and capabilities included in C
 * Cisco Room Kit EQ
 * Cisco Room Kit EQX
 * Cisco Room Kit Pro with Room Navigator
+* Cisco Room Kit Pro G2 with Room Navigator
 * Cisco Room Navigator for Microsoft Teams panels
 
 Room Navigator with Board Pro is now supported. 
@@ -46,15 +48,25 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
 
-## Announcements
 
-**Updated: Custom backgrounds**
+## RoomOS 26.7.1.12
 
-Microsoft has fixed the issues with custom backgrounds in Microsoft Teams. If you have been experiencing issues with custom backgrounds, you can manually upgrade to Microsoft Teams version 1449/1.0.96.2025328903 from TAC.
+**July 23, 2026**
 
-**Updated: Teams App Version 1449/1.0.96.2025325609**
+### Fixed issues
 
-Issues related to volume control when using Cisco Room Navigator with Teams app version 1449/1.0.96.2025325609 have been resolved by Microsoft.
+* CSCwu07275 - Quad Camera intermittent focusing issues.
+* CSCwu84627 - Active speaker not present in filmstrip on Room Kit Pro.
+* CSCwu19242 - A dual-screen Room Kit device left display goes blank.
+
+## RoomOS 26.6.1.8 
+
+**July 23, 2026**
+
+### Fixed issues
+
+* CSCwu53670 - Room Navigator fails to start Microsoft Teams Rooms app.
+* CSCwu46096 - Remote access connection to Room Navigator is lost when starting the remote access session with a RoomOS MTR device with a Navigator connected.
 
 ## RoomOS 26.7.1.7 
 

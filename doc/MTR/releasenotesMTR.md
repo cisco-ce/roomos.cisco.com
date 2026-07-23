@@ -53,6 +53,10 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 
 **July 23, 2026**
 
+### Support for Cisco Codec Pro G2, Cisco Board Pro 55 G3, and Cisco Board Pro 75 G3
+
+We've added support for Codec Pro G2,  Board Pro 55 G3, and Board Pro 75 G3 devices.
+
 ### Fixed issues
 
 * CSCwu07275 - Quad Camera intermittent focusing issues.

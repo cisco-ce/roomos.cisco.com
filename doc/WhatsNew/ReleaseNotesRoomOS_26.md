@@ -2,7 +2,7 @@
 # RoomOS 26
 # Release notes
 ---
-D15563.02 - June 2026
+D15563.03 - August 2026
 
 ## Document revision history
 
@@ -13,17 +13,24 @@ D15563.02 - June 2026
 		<th>Description</th>
 	</tr>
 	<tr>
+		<td>03</td>
+		<td>August 3rd, 2026</td>
+		<td>
+			Release of <a href='#26.7' title='Jump to section'>RoomOS 26.7.2.2</a> 402ae006770, Minor<br>
+		</td>
+	</tr>
+	<tr>
 		<td>02</td> 
 		<td>June 1, 2026</td> 
 		<td>
-			Release of <a href='#26.5' title='Jump to section'>RoomOS 26.5.2.2</a>, Minor<br>
+			Release of <a href='#26.5' title='Jump to section'>RoomOS 26.5.2.2</a> fb095ca4236, Minor<br>
 		</td>
 	</tr>
 	<tr>
 		<td>01</td> 
 		<td>March 13, 2026</td> 
 		<td>
-			Release of <a href='#26.2' title='Jump to section'>RoomOS 26.2.2.2</a>, Major<br>
+			Release of <a href='#26.2' title='Jump to section'>RoomOS 26.2.2.2</a> 6f5a9c4b07c, Major<br>
 		</td>
 	</tr>
 </table>
@@ -55,7 +62,8 @@ This release note describes new software features and capabilities included in R
 	<tr>
 		<td>
 			Cisco Board Pro 55 and 75<br>
-			Cisco Board Pro 55 and 75 G2
+			Cisco Board Pro 55 and 75 G2<br>
+			Cisco Board Pro 55 and 75 G3
 		</td>
 	</tr>
 	<tr>
@@ -107,6 +115,52 @@ Note: SpeakerTrack 60 has limited support in Microsoft Teams Rooms (MTR) scenari
 For more information about End of Life of Cisco RoomOS Devices, please find a detailed overview here: [End of Support for RoomOS Devices](https://help.webex.com/en-us/article/n9qmylfb/End-of-support-for-RoomOS-devices)
 
 <br><br>  
+
+<a name='26.7'></a>
+
+# Release summary for RoomOS 26.7
+
+## Notes and warnings for this software release
+
+### RoomOS 26.7
+
+This release builds on the previous RoomOS 26 release and adds support for Cisco Board Pro 55 and 75 G3 together with quality and stability improvements for selected devices.
+
+<a name="limitations-roomos267"></a>
+
+**Current known limitations**
+
+No noteworthy limitations to mention at this time.
+
+## RoomOS 26.7.2.2
+
+* [Support for Cisco Board Pro 55 and 75 G3](#26722-1)
+* [Quality and stability improvements for Codec Pro G2 and Desk Pro G2](#26722-2)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 26.7.2.2](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=26.7.2.2&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 26.7.2.2 feature descriptions
+
+<a name='26722-1'></a>
+
+## Support for Cisco Board Pro 55 and 75 G3
+
+RoomOS 26 now adds support for Cisco Board Pro 55 and 75 G3. Cisco Board Pro G3 is an all-in-one video device and collaboration board designed as a complete hybrid meeting room solution for small and medium spaces. It combines a dual camera system, built-in speakers and microphones, an interactive touch screen, an AI-powered computing engine, and flexible mounting options in a premium, integrated design.
+
+Powered by the Cisco RoomOS core operating system, Cisco Board Pro G3 supports both Cisco Rooms and Microsoft Teams Rooms experiences. It enables AI-enhanced video meetings, touch-enabled collaborative teamwork, streamlined deployment, and scalable cloud management with a single solution.
+
+See the Cisco Board Pro G3 data sheet [for more information](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/webex-board/board-pro-g3-ds.html).
+
+<a name='26722-2'></a>
+
+## Quality and stability improvements for Codec Pro G2 and Desk Pro G2
+
+This release includes quality and stability improvements for Codec Pro G2 and Desk Pro G2. The updates improve overall reliability and help provide a more stable meeting experience on these devices.
+
+<br><br>
 
 <a name='26.5'></a>
 
@@ -407,16 +461,16 @@ Before you start, make sure you download software for the correct platform.
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS 26 software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_5_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_5_2_2.k4.cop.sha512</b>***</td>
+		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_7_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_7_2_2.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Desk Pro G2, Cisco Room Kit Pro G2</td> <td><b>s53600</b></td> <td><b>cmterm-s53600ce26_5_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53600-mtr-ce26_5_2_2.k4.cop.sha512</b>***</td>
+		<td>Cisco Desk Pro G2, Cisco Room Kit Pro G2, Cisco Board Pro 55 and 75 G3</td> <td><b>s53600</b></td> <td><b>cmterm-s53600ce26_7_2_2.k4.cop.sha512</b>*<br><b>cmterm-s53600-mtr-ce26_7_2_2.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_5_2_2.pkg</b><br><b>cmterm-s53350-mtp-ce26_5_2_2.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_7_2_2.pkg</b><br><b>cmterm-s53350-mtp-ce26_7_2_2.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_5_2_2.k4.cop.sha512</b></td>
+		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_7_2_2.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -426,6 +480,16 @@ Before you start, make sure you download software for the correct platform.
 *** Contains the MTR module, you can upgrade using this package in order to get the option to select between RoomOS and MTR
 
 ## MTR version contained in the MTR cop file
+
+### RoomOS 26.7
+- cmterm-s53300-mtr-ce26_7_2_2.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026087210
+
+- cmterm-s53600-mtr-ce26_7_2_2.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026087210
+
+- cmterm-s53350-mtp-ce26_7_2_2.k4.cop.sha512
+    - MTP: 1449/1.0.97.2025385601
 
 ### RoomOS 26.5
 - cmterm-s53300-mtr-ce26_5_2_2.k4.cop.sha512
@@ -895,6 +959,10 @@ Devices flagged with "NR" (No Radio) do not have Wi-Fi capability.
 	<tr>
 		<td>Cisco Board Pro 55 and 75 G2</td> 
 		<td>All revisions</td> <td>26.2.2.2</td>
+	</tr>
+	<tr>
+		<td>Cisco Board Pro 55 and 75 G3</td>
+		<td>All revisions</td> <td>26.7.2.2</td>
 	</tr>
 </table>
 

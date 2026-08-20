@@ -1,5 +1,5 @@
 # Release notes
-(Updated August 11, 2026) 
+(Updated August 20, 2026) 
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -47,6 +47,15 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## RoomOS 26.8.1.6
+
+**August 17, 2026**
+
+### Fixed issues
+
+* CSCww07424 - AES67 audio output stopped after a while.
+* CSCwv92008 - Quad Camera fails to upgrade from 11.14.2.3 with Codec Pro G2.
 
 ## RoomOS 26.8.1.3
 

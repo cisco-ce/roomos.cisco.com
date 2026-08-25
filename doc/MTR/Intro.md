@@ -29,6 +29,7 @@ Supported devices:
 * Cisco Board Pro 55
 * Cisco Board Pro 75
 * Cisco Board Pro G2
+* Cisco Board Pro G3
 * Cisco Desk Pro
 * Cisco Desk Pro G2
 * Cisco Room Bar
@@ -36,6 +37,7 @@ Supported devices:
 * Cisco Room Kit EQ
 * Cisco Room Kit EQX
 * Cisco Room Kit Pro with Room Navigator
+* Cisco Room Kit Pro G2
 * Cisco Room Navigator for Microsoft Teams panel
 
 Room Navigator with Board Pro and Board Pro G2 is now supported. 

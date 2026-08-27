@@ -46,7 +46,7 @@
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/environmental-sensors.png"
     },
     {
-      "id": "PeopleCount",
+      "id": "HotDesking",
       "title": "Hot desking",
       "description": "Use the presence sensors and people count features of the video device to show which hot desks are available etc.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/hotdesking.jpg"

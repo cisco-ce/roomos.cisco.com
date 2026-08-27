@@ -48,7 +48,7 @@
     {
       "id": "HotDesking",
       "title": "Hot desking",
-      "description": "Use the presence sensors and people count features of the video device to show which hot desks are available etc.",
+      "description": "With hot desking, you can sign in seamlessly, access personalized features, and quickly see which desks are available.",
       "image": "https://raw.githubusercontent.com/cisco-ce/roomos.cisco.com/master/doc/images/usecases/hotdesking.jpg"
     },
     {

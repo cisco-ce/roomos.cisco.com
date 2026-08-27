@@ -8,7 +8,6 @@ The device will clearly indicate with bright red/green colors on screen so emplo
 
 **Relevant APIs:**
 
-* [xCommand Webex Hotdesking SetSupport](/xapi/Command.Webex.Hotdesking.SetSupport/) - Configure whether the system supports hot desking
 * [xConfiguration Webex Hotdesking DefaultBookingEndTime](https://roomos.cisco.com/xapi/Configuration.Webex.Hotdesking.DefaultBookingEndTime/) - Configure the default end of day time
 * [xCommand Webex Registration Logout](https://roomos.cisco.com/xapi/Command.Webex.Registration.Logout/) - programatically end a hot desking session
 

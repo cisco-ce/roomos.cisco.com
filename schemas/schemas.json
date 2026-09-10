@@ -183,5 +183,10 @@
         "name": "26.8.1 August 2026",
         "active": 1,
         "lastUpdated": "2026-08-19T14:36:00.000Z"
+    },
+    {
+        "name": "26.9.1 September 2026",
+        "active": 1,
+        "lastUpdated": "2026-09-10T14:36:00.000Z"
     }
 ]

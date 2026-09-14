@@ -58,6 +58,8 @@ Tapping one of these buttons opens the relevant settings inside the control pane
 
 You can share content from your computer with other participants during calls or meetings. When you aren’t in a call, connect your computer to use the device as an extension for your laptop screen. 
 
+Note that [live annotation on shared content](https://help.webex.com/article/q1hs6cb/Live-annotation-on-Board-and-Desk-Series) and collaborating on [Webex Whiteboards](https://help.webex.com/article/up6k4ab/Webex-Whiteboards) are supported only during Webex meetings.
+
 ### Share with a cable
 
 Connect your computer to the device with a USB-C or HDMI cable.

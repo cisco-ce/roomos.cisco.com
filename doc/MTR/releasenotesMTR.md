@@ -1,5 +1,5 @@
 # Release notes
-(Updated September 28, 2026) 
+(Updated October 5, 2026)
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -39,6 +39,17 @@ Software versions for onboarding new devices or devices registered to other call
 * Room Kit EQX, Board Pro G2: Minimum software version RoomOS 11.15.1.6
 
 Read about software upgrades on the [Requirements page](/doc/MTR/Requirements).
+
+## Current Android security patch levels
+
+The following Android security patch levels apply to RoomOS 26.8 and 26.9 running Microsoft Teams Rooms. The patch level is the date reported by Android. It can differ between a room device and its paired Room Navigator.
+
+| Device | Android version | Security patch level |
+| --- | --- | --- |
+| Board Pro, Board Pro G2, Desk Pro, Room Bar, Room Bar Pro, Room Kit EQ, Room Kit EQX, and Room Kit Pro | 13 | 2025-12-01 |
+| Room Navigator paired with an Android 13 device, or running Microsoft Teams panels | 13 | 2025-12-05 |
+| Board Pro G3, Desk Pro G2, and Room Kit Pro G2 | 15 (Microsoft Device Ecosystem Platform, MDEP) | 2026-01-01 |
+| Room Navigator paired with an Android 15 device | 15 (MDEP) | 2025-10-01 |
 
 ## Additional resources
 
@@ -82,6 +93,12 @@ For new features and capabilities supported on RoomOS with Control Hub registrat
 ### Support for Cisco Codec Pro G2, Cisco Board Pro 55 G3, and Cisco Board Pro 75 G3
 
 We've added support for Codec Pro G2,  Board Pro 55 G3, and Board Pro 75 G3 devices.
+
+These devices run Android 15 (MDEP) with security patch level **2026-01-01**. Their paired Room Navigators run Android 15 (MDEP) with security patch level **2025-10-01**.
+
+### Android security patch level
+
+The Android 13 security patch level for Room Navigator is updated to **2025-12-05**. This applies to Room Navigators paired with Android 13 devices and to Microsoft Teams panels.
 
 ### Fixed issues
 
@@ -139,6 +156,10 @@ Read more about [custom software channels](https://roomos.cisco.com/doc/MTR/Devi
 
 **April 15, 2026**
 
+### Support for Cisco Desk Pro G2 with Android 15
+
+This release introduces Microsoft Teams Rooms support for Cisco Desk Pro G2, running Android 15 (MDEP) with security patch level **2026-01-01**.
+
 ### Join Google Meet meetings
 
 You can now enable users to join Google Meet meetings from the devices side control panel. 
@@ -187,6 +208,10 @@ Note: Dynamic Mode remains the default camera experience and there is no change 
 
 A Remote Access key is no longer required to take screenshots of a Microsoft Teams Panel from the device's web interface.
 
+### Android security patch level
+
+The security patch level for room devices and Room Navigators running Android 13 is updated to **2025-12-01**.
+
 ### Fixed issues
 * CSCws67180 - Green feed from Room Vision PTZ.
 * CSCws41827 - Screen flickering using Miracast sharing.
@@ -206,6 +231,10 @@ Previously, HDMI out was not enabled by default and required being explicitly co
 
 Work is ongoing to ensure proper software behavior when a new screen is connected, and we are currently awaiting documentation from Microsoft to specify which configurations are officially supported.
 
+### Android security patch level
+
+The security patch level for room devices and Room Navigators running Android 13 is updated to **2025-11-01**.
+
 ### Fixed issues
 
 * CSCwq37949 - Room Navigator becomes unresponsive when tapping the reaction button during a meeting.
@@ -216,6 +245,10 @@ Work is ongoing to ensure proper software behavior when a new screen is connecte
 ## RoomOS 26.0.1.2
 
 **November 10, 2025**
+
+### Android security patch level
+
+The Android 13 security patch level for Room Navigator is updated to **2025-09-01**. This applies to Room Navigators paired with Android 13 devices and to Microsoft Teams panels.
 
 ### Wireless touch forwarding on Miracast shares
 

@@ -65,15 +65,14 @@ Note that [live annotation on shared content](https://help.webex.com/article/q1h
 Connect your computer to the device with a USB-C or HDMI cable.
 
 1. A dialog opens showing content sources and your connected screen. Or, if you aren't already in a call, start one, and then tap the **Share** button in the call controls.
-2. Once you're in a call, tap **Preview** on the Sharing dialog to take an advance look at your content. Tap **Dismiss** if you change your mind and don't want to share content after all. You can change content sources by tapping another one on the left side of the dialog, if available.
    
       <img src="/doc/images/MTR/share-experience-1.png" style="width: 500px" />
 
-3. When you're ready, tap **Share in call**.
+2. When you're ready, tap **Share in call**.
 
    <img src="/doc/images/MTR/share-experience-2.png" style="width: 500px" />
 
-4. Tap **Stop sharing** to end the share when you're finished.
+3. Tap **Stop sharing** to end the share when you're finished.
 
 **NOTE:** if *PresentationSelection* is set to *Manual* for your device, HDMI inputs need to be selected in RoomOS to be available for content sharing. If they aren't, when you connect a device and click **Share**, you'll see a message that 'no device is connected'. 
 

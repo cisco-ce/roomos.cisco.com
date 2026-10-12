@@ -1,5 +1,5 @@
 # Release notes
-(Updated October 5, 2026)
+(Updated October 12, 2026)
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
@@ -58,6 +58,15 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+## RoomOS 26.10.1.4
+
+**October 12, 2026**
+
+### Fixed issues
+
+* CSCww00573 - Device goes into standby while in a call.
+* CSCww30147 - Codec Pro G2 has black secondary screen when block screen capture is enabled in Intune.
 
 ## RoomOS 26.9.1.4
 

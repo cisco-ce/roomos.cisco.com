@@ -163,6 +163,12 @@
       "symbol": "🌍"
     },
 
+   {
+      "id": "ThirdpartyOccupancySensors",
+      "title": "Third party occupancy sensors",
+      "description": "Third party occupancy sensors",
+      "symbol": "🎓"
+    },
     {
       "id": "",
       "title": "",

@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.34 - August 2026
+D15504.35 - October 2026
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.34 - August 2026
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>35</td>
+		<td>October 26th 2026</td>
+		<td>
+			Release of <a href='#11.41' title='Jump to section'>RoomOS 11.41.2.3</a> de405a9064e, Patch<br>
+		</td>
 	</tr>
 	<tr>
 		<td>34</td>
@@ -337,9 +344,59 @@ Snap to whiteboard is not available in RoomOS 11
 We have made a permanent change on the upgrade files that we release for our devices. This is a very important change and we recommend you to read the updated [software upgrade section](#software-upgrade) in this document. In short, we have deprecated the xx.k3.cop.sgn files by only releasing xx.k4.cop.sha512 files as these are signed with a more secure signature. This may affect your upgrade path depending on what software version you are currently upgrading from. We have released the xx.k4.cop.sha512 files for a while together with the xx.k3.cop.sgn files but the latter is now deprecated. 
 
 <br><br>
+<a name='11.41'></a>
+
+# RoomOS 11.41 and later – Product support transition
+
+## Notes and warnings for RoomOS 11.41 and later
+
+RoomOS 11.41 starts a new RoomOS 11 release era, separate from RoomOS 11.32 and earlier. The product support changes below apply to RoomOS 11.41 and later releases.
+
+From RoomOS 11.41.2 and later, the s53300 RoomOS 11 software package supports only Codec Pro based systems with a Cisco Touch 10, Cisco TelePresence Precision 60 camera, or Cisco TelePresence SpeakerTrack 60 connected. The supported products are Cisco Codec Pro, Cisco Room Kit Pro, Cisco Room 70 G2, Cisco Room Panorama, and Cisco Room 70 Panorama. Other products previously supported by the s53300 RoomOS 11 package are no longer supported in this release era and should use RoomOS 26 or greater.
+
+The s53200 package continues to support the same products as before. Cisco Room Navigator touch software (s53350) also continues to support the same products as before. No MTR or MTP packages are released for RoomOS 11.41 and later.
+
+### Software packages for RoomOS 11.41 and later
+
+The following four packages are available for RoomOS 11.41.2.3:
+
+<table>
+	<tr>
+		<th>Device or package</th>
+		<th>Software package</th>
+	</tr>
+	<tr>
+		<td>s53200 products (same product support as before)</td>
+		<td>cmterm-s53200ce11_41_2_3.k4.cop.sha512</td>
+	</tr>
+	<tr>
+		<td>Cisco Codec Pro, Cisco Room Kit Pro, Cisco Room 70 G2, Cisco Room Panorama, Cisco Room 70 Panorama, with Touch 10, Precision 60, or SpeakerTrack 60 connected (s53300)</td>
+		<td>cmterm-s53300ce11_41_2_3.k4.cop.sha512</td>
+	</tr>
+	<tr>
+		<td>Cisco Room Navigator touch software (s53350)</td>
+		<td>s53350ce11_41_2_3.pkg</td>
+	</tr>
+	<tr>
+		<td>All supported products (super cop)</td>
+		<td>cmterm-ce11_41_2_3.k4.cop.sha512</td>
+	</tr>
+</table>
+
+The super cop contains the products supported by s53200 and the s53300 products listed above. No MTR or MTP cop packages are available for this release.
+
+## RoomOS 11.41.2.3
+
+RoomOS 11.41.2.3 is a maintenance release (patch) and contains only bugfixes.<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.41.2.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.41.2.3&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
+
 <a name='11.32'></a>
 
-# Release summary for RoomOS 11.32
+# Release summary for RoomOS 11.32 and earlier
 
 ## Notes and warnings for this software release
 
@@ -2123,9 +2180,11 @@ To illustrate the upgrade pattern using the files from https://www.cisco.com :
 
 Before you start, please make sure you have downloaded the software for the correct platform.
 
+The following package list applies to RoomOS 11.32 and earlier. For RoomOS 11.41 and later, use the separate package list in the [RoomOS 11.41 and later release section](#11.41).
+
 <table  width="100%">
 	<tr>
-		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS software</b></th>
+		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS 11.32 and earlier software</b></th>
 	</tr>
 	<tr>
 		<td>Cisco Codec Plus, Room USB, Room Kit Mini, Room Kit, Room 55, Room 55 Dual, Room 70, Board Series (except Cisco Board Pro 55 and 75)</td> <td><b>s53200</b></td> <td><b>cmterm-s53200ce11_32_7_0.k4.cop.sha512</b>*</td>

@@ -352,7 +352,7 @@ We have made a permanent change on the upgrade files that we release for our dev
 
 RoomOS 11.41 starts a new RoomOS 11 release era, separate from RoomOS 11.32 and earlier. The product support changes below apply to RoomOS 11.41 and later releases.
 
-From RoomOS 11.41.2 and later, the s53300 RoomOS 11 software package supports only Codec Pro based systems with a Cisco Touch 10, Cisco TelePresence Precision 60 camera, or Cisco TelePresence SpeakerTrack 60 connected. The supported products are Cisco Codec Pro, Cisco Room Kit Pro, Cisco Room 70 G2, Cisco Room Panorama, and Cisco Room 70 Panorama. Other products previously supported by the s53300 RoomOS 11 package are no longer supported in this release era and should use RoomOS 26 or greater.
+From RoomOS 11.41.2 and later, the s53300 software package supports only Codec Pro based systems with a Cisco Touch 10, Cisco TelePresence Precision 60 camera, or Cisco TelePresence SpeakerTrack 60 connected. The supported products are Cisco Codec Pro, Cisco Room Kit Pro, Cisco Room 70 G2, Cisco Room Panorama, and Cisco Room 70 Panorama. Other products previously supported by the s53300 package are no longer supported in this release era.
 
 The s53200 package continues to support the same products as before. Cisco Room Navigator touch software (s53350) also continues to support the same products as before. No MTR or MTP packages are released for RoomOS 11.41 and later.
 
@@ -391,6 +391,8 @@ RoomOS 11.41.2.3 is a maintenance release (patch) and contains only bugfixes.<br
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 11.41.2.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.41.2.3&bt=custV&sts=fd&sb=fr)
+    * Fix for CVE-2026-111497.
+    * Removal of compromised eMudhra CAs.
 
 <hr style='width: 70%'>
 

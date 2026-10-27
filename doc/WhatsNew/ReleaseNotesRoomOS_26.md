@@ -152,6 +152,8 @@ RoomOS 26.7.4.3 is a patch release and contains only bugfixes.<br>
 
 * <b>Bug fixes</b>
     * [Click here for a list of resolved defects in RoomOS 26.7.4.3](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=26.7.4.3&bt=custV&sts=fd&sb=fr)
+    * Fix for CVE-2026-111497.
+    * Removal of compromised eMudhra CAs.
 
 <br><br>
 

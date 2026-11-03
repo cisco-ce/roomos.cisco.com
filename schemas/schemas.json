@@ -193,5 +193,10 @@
         "name": "26.10.1 October 2026",
         "active": 1,
         "lastUpdated": "2026-10-10T14:36:00.000Z"
+    },
+    {
+        "name": "27.0.1 November 2026",
+        "active": 1,
+        "lastUpdated": "2026-11-03T14:36:00.000Z"
     }
 ]

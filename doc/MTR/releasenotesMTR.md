@@ -1,9 +1,9 @@
 # Release notes
-(Updated November 2, 2026)
+(Updated November 4, 2026)
 
 **For Cisco collaboration devices for Microsoft Teams Rooms, Microsoft only supports RoomOS software that they have released on Teams Admin Center. RoomOS versions on the Stable channel are therefore not necessarily supported by Microsoft. See: [latest RoomOS software version supported by Microsoft](https://learn.microsoft.com/microsoftteams/devices/certified-hardware-android?tabs=firmware#cisco).**
 
-**The latest software version supported by Microsoft: RoomOS 26.9.1.7, based on RoomOS September 2026. This software version includes Teams Rooms App 1449/1.0.96.2026144512.**
+**The latest software version supported by Microsoft: RoomOS 26.9.1.10, based on RoomOS September 2026. This software version includes Teams Rooms App 1449/1.0.96.2026144512.**
 
 **NOTE:** From RoomOS 11.29.1, which introduces Android 13, it is not possible to downgrade to an earlier version of RoomOS. If you must downgrade, you need to first factory reset the device and then onboard it as a RoomOS device with the software version you want to downgrade to. Then you can onboard it the device to Microsoft Teams Rooms. This is due that Android 13 cannot downgrade between security patches. Read more about this on the [Software Upgrade](https://roomos.cisco.com/doc/MTR/DeviceManagement#software-upgrades) page.
 
@@ -58,6 +58,17 @@ For release notes covering Microsoft Teams Rooms on Android see: https://learn.m
 For new features and capabilities supported on RoomOS with Control Hub registration see: 
 * [Release notes for RoomOS devices](https://help.webex.com/6ger7db/)
 * [What’s new in Control Hub](https://help.webex.com/u9dlxd/)
+
+
+## RoomOS 26.9.1.10
+
+**November 4, 2026**
+
+### Fixed issues
+
+* CSCwx24718 - DNSSEC Mode On fails after the root KSK rollover.
+* CSCwx37551 - Remove Compromised eMudhra CAs.
+* CVE-2026-111497 - Buffer overflow vulnerability in the Brotli decoder.
 
 ## RoomOS 27.0.1.3
 

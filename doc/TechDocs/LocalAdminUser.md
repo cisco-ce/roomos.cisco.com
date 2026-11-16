@@ -16,7 +16,6 @@ This guide is also available as a step-by-step video:
     loading="lazy" allowfullscreen style="position:absolute; top:0; left: 0"></iframe>
 </div>
 
-
 <div style="color: red; background: #ffe8e3; padding: 1em">
 Warning: Do NOT follow this procedure if your device is registered on Webex Edge.
 </div>
@@ -37,9 +36,14 @@ If your video device is straight out of the box, you need to boot it up first, c
 
 Before you start, remember to check that you **can** create a registration code as you'll need to factory reset the video device. If you skip this step, you could end up with a video device that won't work.
 
-* Go to **settings.webex.com**, log in.
-* Tap **My devices > Generate Activation Code**.
-* Copy and save the code you got. You will need this to re-register your device.
+- Go to **settings.webex.com**, log in.
+- Tap **My devices > Generate Activation Code**.
+- Copy and save the code you got. You will need this to re-register your device.
+
+💡 If you are using the Webex app, you can also create a registration code here:
+
+- Go to **Settings > Devices > Activate a new device**
+- Click **Generate activation code**
 
 ## Factory reset your device
 
@@ -47,9 +51,9 @@ Go to the settings page on your device, and write down its IP address. If you're
 
 <img src="/doc/images/localadmin/factory-reset.png" />
 
-* Tap **Factory reset** on the settings page and wait for your device to reboot.
-* Tap **Start**.
-* If you are on a wireless network, connect to it.
+- Tap **Factory reset** on the settings page and wait for your device to reboot.
+- Tap **Start**.
+- If you are on a wireless network, connect to it.
 
 ```alert
 DO NOT register your device yet.
@@ -71,16 +75,9 @@ You should then see the login page of the web interface of your video device.
 
 <img src="/doc/images/localadmin/login-vega.png" />
 
-* Log in as user **admin** with no password
-* Go to **Users > Create User**
-* Choose a user name, make sure all the roles are selected
-* Set Status **Active**
-* Un-select **Require passphrase change**
-* Select a passphrase, add it again in the **Repeat passphrase** field
-* Leave **Your passphrase** field empty
-* Click **Create**. Scroll up and verify that there is a message confirming that the user was created
-
-<img src="/doc/images/localadmin/create-user.png" />
+- Log in as user **admin** with no password
+- You will be prompted to set a password for this admin user. Choose a password and remember it.
+- Select a passphrase, add it again in the **Repeat passphrase** field
 
 ## Registering your device
 
@@ -88,13 +85,13 @@ You will now register the device, but from the web admin interface instead of on
 
 <img src="/doc/images/localadmin/register-webex.png" />
 
-
 With the device's web interface:
 
-* Go to **Home**.
-* Under **Register device**, click **Register to Webex**.
-* Uncheck **Disable local users and integrations**. This means your admin user will still be active after registering your device.
-* Enter the registration code you obtained earlier, and click **Register**.
+- Go to **Home**.
+- Under **Register device**, click **Register to Webex**.
+- Select the **Activation code** tab.
+- 👉 Uncheck **Disable local users and integrations**. This means your admin user will still be active after registering your device. 👈
+- Enter the registration code you obtained earlier, and click **Register**.
 
 **Note:** If your device software is older than May 2021, the **Register device** menu may not be available. Don't worry; check the bottom of this document for an alternative solution.
 
@@ -106,7 +103,7 @@ Your device should now be registered, but might still be on the **network** page
 
 ## Verify your admin account
 
-On the web interface on your laptop, tap the avatar in the top right corner and log out, then back in with your new user.
+On the web interface on your laptop, tap the avatar in the top right corner and log out, then back in with your new user (the username is admin and the password is what you chose).
 
 🥳 Congratulations! You are now the master of your own video device. You should now be able to change wallpapers, configure advanced settings, add macros, add user interface extensions, web applications, create external integrations etc. But remember, with great power comes great responsibility.
 
@@ -116,20 +113,18 @@ On the web interface on your laptop, tap the avatar in the top right corner and 
 
 If you don't have the **Register device** button on the home screen of your device's local web interface, you can register with a command instead:
 
-* Go to **Developer API**.
-* Copy and paste the following command into the text area that says **Enter commands**.
+- Go to **Developer API**.
+- Copy and paste the following command into the text area that says **Enter commands**.
 
 <img src="/doc/images/localadmin/register-code.png" />
-
 
 ```
 xCommand Webex Registration Start ActivationCode: 0123456789 SecurityAction: NoAction
 ```
 
-* Be sure to enter the command on **one line**.
-* Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
-* Click **Execute**.
+- Be sure to enter the command on **one line**.
+- Replace the activation code above with the one you created. Be sure to remove any - dashes in the code if you copy and paste it.
+- Click **Execute**.
 
 There should now be an answer saying "1 of 1 applied succesfully".
 That means your device has been registered again, and that the user you created is not disabled.
-

@@ -2,7 +2,7 @@
 # RoomOS 11
 # Release notes
 ---
-D15504.35 - October 2026
+D15504.36 - November 2026
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15504.35 - October 2026
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>36</td>
+		<td>November 19th 2026</td>
+		<td>
+			Release of <a href='#11.41' title='Jump to section'>RoomOS 11.41.3.1</a> e023cda6551, Patch<br>
+		</td>
 	</tr>
 	<tr>
 		<td>35</td>
@@ -358,7 +365,7 @@ The s53200 package continues to support the same products as before. Cisco Room 
 
 ### Software packages for RoomOS 11.41 and later
 
-The following four packages are available for RoomOS 11.41.2.3:
+The following four packages are available for RoomOS 11.41.3.1:
 
 <table>
 	<tr>
@@ -367,23 +374,32 @@ The following four packages are available for RoomOS 11.41.2.3:
 	</tr>
 	<tr>
 		<td>s53200 products (same product support as before)</td>
-		<td>cmterm-s53200ce11_41_2_3.k4.cop.sha512</td>
+		<td>cmterm-s53200ce11_41_3_1.k4.cop.sha512</td>
 	</tr>
 	<tr>
 		<td>Cisco Codec Pro, Cisco Room Kit Pro, Cisco Room 70 G2, Cisco Room Panorama, Cisco Room 70 Panorama, with Touch 10, Precision 60, or SpeakerTrack 60 connected (s53300)</td>
-		<td>cmterm-s53300ce11_41_2_3.k4.cop.sha512</td>
+		<td>cmterm-s53300ce11_41_3_1.k4.cop.sha512</td>
 	</tr>
 	<tr>
 		<td>Cisco Room Navigator touch software (s53350)</td>
-		<td>s53350ce11_41_2_3.pkg</td>
+		<td>s53350ce11_41_3_1.pkg</td>
 	</tr>
 	<tr>
 		<td>All supported products (super cop)</td>
-		<td>cmterm-ce11_41_2_3.k4.cop.sha512</td>
+		<td>cmterm-ce11_41_3_1.k4.cop.sha512</td>
 	</tr>
 </table>
 
 The super cop contains the products supported by s53200 and the s53300 products listed above. No MTR or MTP cop packages are available for this release.
+
+## RoomOS 11.41.3.1
+
+RoomOS 11.41.3.1 is a maintenance release (patch) and contains only bugfixes.<br>
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 11.41.3.1](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=11.41.3.1&bt=custV&sts=fd&sb=fr)
+
+<hr style='width: 70%'>
 
 ## RoomOS 11.41.2.3
 

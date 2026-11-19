@@ -2,7 +2,7 @@
 # RoomOS 26
 # Release notes
 ---
-D15563.05 - October 2026
+D15563.06 - November 2026
 
 ## Document revision history
 
@@ -11,6 +11,13 @@ D15563.05 - October 2026
 		<th>Revision</th>
 		<th>Date</th> 
 		<th>Description</th>
+	</tr>
+	<tr>
+		<td>06</td>
+		<td>November 19th, 2026</td>
+		<td>
+			Release of <a href='#26.10' title='Jump to section'>RoomOS 26.10.2.6</a> d94e9b24bd3, Minor<br>
+		</td>
 	</tr>
 	<tr>
 		<td>05</td>
@@ -129,6 +136,118 @@ Note: SpeakerTrack 60 has limited support in Microsoft Teams Rooms (MTR) scenari
 For more information about End of Life of Cisco RoomOS Devices, please find a detailed overview here: [End of Support for RoomOS Devices](https://help.webex.com/en-us/article/n9qmylfb/End-of-support-for-RoomOS-devices)
 
 <br><br>  
+
+<a name='26.10'></a>
+
+# Release summary for RoomOS 26.10
+
+## Notes and warnings for this software release
+
+### RoomOS 26.10
+
+This release builds on the previous RoomOS 26 release and adds new camera, calibration, collaboration, analytics, provisioning, and content sharing capabilities.
+
+<a name="limitations-roomos2610"></a>
+
+**Current known limitations**
+
+No noteworthy limitations to mention at this time.
+
+## RoomOS 26.10.2.6
+
+* [Multicamera tracking with two Room Vision PTZ cameras](#261026-1)
+* [Unique MAC address for peripheral network interface](#261026-2)
+* [3D visualization for cinematic multicamera setups](#261026-3)
+* [Improved camera calibration](#261026-4)
+* [Improved microphone calibration](#261026-5)
+* [Improved whiteboard PDF generation](#261026-6)
+* [Live annotation on Desk and Desk Mini](#261026-7)
+* [Pinch-to-zoom on shared content](#261026-8)
+* [Third-party occupancy sensor integration](#261026-9)
+* [Room analytics for outside Room Navigators](#261026-10)
+* [Webex Edge for Devices: Zero Touch Provisioning](#261026-11)
+* [Improved content sharing recovery after network interruptions](#261026-12)
+
+* <b>Bug fixes</b>
+    * [Click here for a list of resolved defects in RoomOS 26.10.2.6](https://bst.cloudapps.cisco.com/bugsearch?pf=prdNm&kw=*&rls=26.10.2.6&bt=custV&sts=fd&sb=fr)
+
+<br><br>
+
+# RoomOS 26.10.2.6 feature descriptions
+
+<a name='261026-1'></a>
+
+## Multicamera tracking with two Room Vision PTZ cameras
+
+Support for multicamera tracking using two Room Vision PTZ cameras, enabling more dynamic camera coverage and intelligent framing in meeting rooms.
+
+<a name='261026-2'></a>
+
+## Unique MAC address for peripheral network interface
+
+The peripheral network interface now uses a unique, locally administered MAC address derived from the device's physical network interface MAC address.
+
+<a name='261026-3'></a>
+
+## 3D visualization for cinematic multicamera setups
+
+Introduced a 3D room visualization to assist with troubleshooting and debugging cinematic multicamera configurations.
+
+<a name='261026-4'></a>
+
+## Improved camera calibration
+
+Camera calibration now supports automatic image capture every five seconds, with visual feedback highlighting successful captures. Typically, 5–10 images per camera pair are required for calibration.
+
+<a name='261026-5'></a>
+
+## Improved microphone calibration
+
+Introduced high-accuracy microphone calibration for cross-view rooms. Guided voice sampling from multiple room positions enables precise microphone positioning, supported by step-by-step visual feedback.
+
+<a name='261026-6'></a>
+
+## Improved whiteboard PDF generation
+
+Whiteboard PDF generation now uses a background web-based rendering engine instead of native RoomOS functionality. This architectural improvement enables greater flexibility and supports future whiteboard enhancements.
+
+<a name='261026-7'></a>
+
+## Live annotation on Desk and Desk Mini
+
+Live annotation is now supported on Desk and Desk Mini devices, allowing users to annotate shared content during meetings.
+
+<a name='261026-8'></a>
+
+## Pinch-to-zoom on shared content
+
+RoomOS touch devices now support pinch-to-zoom on shared content, improving readability. Zoom adjustments are applied locally and do not affect other meeting participants.
+
+<a name='261026-9'></a>
+
+## Third-party occupancy sensor integration
+
+New xAPIs allow third-party occupancy sensors to override built-in presence detection, including support for room occupancy reporting with standalone Room Navigators.
+
+<a name='261026-10'></a>
+
+## Room analytics for outside Room Navigators
+
+Environmental data, including temperature and humidity, from outside Room Navigators is now accessible through xAPI for external monitoring and analytics.
+
+<a name='261026-11'></a>
+
+## Webex Edge for Devices: Zero Touch Provisioning
+
+Zero Touch Provisioning now supports Webex Edge for Devices, allowing administrators to pre-stage devices using MAC addresses or bulk CSV imports for simplified activation in on-premises calling deployments.
+
+<a name='261026-12'></a>
+
+## Improved content sharing recovery after network interruptions
+
+Resolved an issue where shared content could remain black after network interruptions during Microsoft Teams or Zoom meetings, requiring users to reconnect. RTP keepalive traffic now uses STUN packets instead of legacy PINH packets to improve session recovery. The previous behavior can be restored using `xConfiguration RTP UseLegacyKeepalive`.
+
+<br><br>
 
 <a name='26.7'></a>
 
@@ -495,16 +614,16 @@ Before you start, make sure you download software for the correct platform.
 		<th><b>Device</b></th><th><b>Software platform identifier</b></th> <th><b>Latest available RoomOS 26 software</b></th>
 	</tr>
 	<tr>
-		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_7_4_3.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_7_4_3.k4.cop.sha512</b>***</td>
+		<td>Cisco Room Kit Pro, Room Kit EQ, Room Kit EQX, Room Bar, Room Bar Pro, Codec Pro, Codec EQ, Room 70 G2, Room Panorama, Room 70 Panorama, Desk, Desk Pro, Desk Mini, Cisco Board Pro 55 and 75, Cisco Board Pro 55 and 75 G2</td> <td><b>s53300</b></td> <td><b>cmterm-s53300ce26_10_2_6.k4.cop.sha512</b>*<br><b>cmterm-s53300-mtr-ce26_10_2_6.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Desk Pro G2, Cisco Room Kit Pro G2, Cisco Board Pro 55 and 75 G3</td> <td><b>s53600</b></td> <td><b>cmterm-s53600ce26_7_4_3.k4.cop.sha512</b>*<br><b>cmterm-s53600-mtr-ce26_7_4_3.k4.cop.sha512</b>***</td>
+		<td>Cisco Desk Pro G2, Cisco Room Kit Pro G2, Cisco Board Pro 55 and 75 G3</td> <td><b>s53600</b></td> <td><b>cmterm-s53600ce26_10_2_6.k4.cop.sha512</b>*<br><b>cmterm-s53600-mtr-ce26_10_2_6.k4.cop.sha512</b>***</td>
 	</tr>
 	<tr>
-		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_7_4_3.pkg</b><br><b>cmterm-s53350-mtp-ce26_7_4_3.k4.cop.sha512</b></td>
+		<td>Cisco Room Navigator (standalone)</td> <td><b>s53350</b></td> <td><b>s53350ce26_10_2_6.pkg</b><br><b>cmterm-s53350-mtp-ce26_10_2_6.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
-		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_7_4_3.k4.cop.sha512</b></td>
+		<td>All RoomOS 26-supported products</td> <td><b>N/A</b></td> <td><b>cmterm-ce26_10_2_6.k4.cop.sha512</b></td>
 	</tr>
 	<tr>
 		<th colspan="3"><a href="https://software.cisco.com/download/home/283611944?catid=280789323" target="_blank">Follow this link</a> to find and download software for the device you are about to upgrade.</th>
@@ -514,6 +633,16 @@ Before you start, make sure you download software for the correct platform.
 *** Contains the MTR module, you can upgrade using this package in order to get the option to select between RoomOS and MTR
 
 ## MTR version contained in the MTR cop file
+
+### RoomOS 26.10
+- cmterm-s53300-mtr-ce26_10_2_6.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026144512
+
+- cmterm-s53600-mtr-ce26_10_2_6.k4.cop.sha512
+    - MTR: 1449/1.0.96.2026144512
+
+- cmterm-s53350-mtp-ce26_10_2_6.k4.cop.sha512
+    - MTP: 1449/1.0.97.2026286706
 
 ### RoomOS 26.7
 - cmterm-s53300-mtr-ce26_7_2_2.k4.cop.sha512
